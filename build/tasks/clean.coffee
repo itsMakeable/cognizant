@@ -17,7 +17,7 @@ gulp.task 'clean:docs', ->
 
 gulp.task 'clean', ->
 	return del [
-		'./.tmp/**/*'
+		'./tmp/**/*'
 		'docs/**/*'
 		'app/**/*'
 		# 'src/components/**/*'

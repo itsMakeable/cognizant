@@ -39,6 +39,7 @@
     "gulp-rename": "*",
     "gulp-replace": "*",
     "gulp-styledocco": "0.0.3",
+    "gulp-styleguide": "^0.3.1",
     "gulp-stylus": "*",
     "gulp-svgmin": "*",
     "gulp-svgstore": "*",

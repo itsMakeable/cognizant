@@ -1,39 +1,62 @@
 // CTA LINKS ////////////////////////////////////
-
+/*!**
+  title: Links
+  section: Buttons & Links
+  example: |
+    <a href="#">Link</a>
+    <a href="#" disabled>Disabled</a>
+***/
 a
 	border-bottom 1px solid gray
 	padding-bottom 1px
-	&:hover
-		color darkblue
-	&:active
-		color darkblue
-	&[disabled]
-		color gray
+	transition color 0.2s linear
+	font-family proxSbold
+	fs(1.6rem)
 	&:link
 		color blue
+	&:hover
+		color darkblue
+		border-bottom 1px solid gray
+	&:active
+		color darkblue
+		transform scale(0.98)
+	&[disabled]
+		color gray !important
+		transform scale(1) !important
 	&:visited
 		color blue
 		
-
-/* #Primary Button
-```
-<button class='button--primary'>Button</button>
-```
-*/
+/*!**
+  title: Buttons
+  section: Buttons & Links
+  example: |
+    <button>button</button>
+    <button disabled>Disabled</button>
+***/
 button
+	line-height 4.2rem
+	upcase()
 	min-width 20.8rem
+	fs(1.6rem)
+	border none
+	color white
+	background-color blue
+	text-align center
+	transition background-color 0.1s ease, transform 0.1s linear
+	text-decoration none
+	transform scale(1)
 	&:hover
 		color white
 		background-color darkblue
+		transition background-color 0.2s ease, transform 0.1s linear
 	&:active
 		color white
 		background-color darkblue
+		transform scale(0.98)
 	&[disabled]
 		color gray
 		background-color darkgray
-	&:link
-		color white
-		background-color blue
+		transform scale(1) !important
 	&:visited
 		color white
 		background-color blue
