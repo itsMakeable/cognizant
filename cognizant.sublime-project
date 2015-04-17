@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"folder_exclude_patterns": [
+				"app",
+				"node_modules",
+				// ".tmp",
+			]
+		}
+	]
+}
