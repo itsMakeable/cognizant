@@ -44,6 +44,11 @@ gulp.task 'styleguide', ->
 	sg = new StyleGuide
 	sg.addFile 'tmp/css/index.css'
 	sg.render
-		# extraCss: [ 'append-custom.css' ]
-		# extraJs: [ 'jquery.js' ]
+		extraCss: [ 
+			'tmp/css/ProximaNova-Bold.css', 
+			'tmp/css/ProximaNova-Reg.css',
+			'tmp/css/ProximaNova-RegIt.css',
+			'tmp/css/ProximaNova-Sbold.css' 
+		]
+		extraJs: [ 'docs/holder.min.js' ]
 		outputFile: 'docs/styleguide/index.html'

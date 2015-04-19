@@ -45,9 +45,23 @@ gulp.task 'browser-sync', ->
 		open: false
 		tunnel: false
 		online: true
-		files: 'app/**/*'
+		logPrefix: 'Cognizant'
+		logLevel: 'debug'
+		snippetOptions:
+		    ignorePaths: "templates/*.html",
+		    rule:
+		        match: /<body>/i,
+		        fn: (snippet, match) ->
+		            return snippet + match;
+		files: {
+			'app/**/*'
+			'docs/styleguide/**/*'
+		}
 		server: {
-			baseDir: 'app'
+			baseDir: [
+				'app'
+				'docs'
+			]
 		}
 
 
