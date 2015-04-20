@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="search" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M20.76,26.52 C22.12384,26.52 23.37696,26.04128 24.36512,25.24576 L29.26624,30.1712 C29.39104,30.29728 29.55552,30.36 29.72,30.36 C29.8832,30.36 30.0464,30.29792 30.1712,30.17376 C30.42208,29.9248 30.42272,29.51904 30.17376,29.2688 L25.26688,24.33696 C26.04896,23.35328 26.52,22.11168 26.52,20.76 C26.52,17.58432 23.93568,15 20.76,15 C17.58368,15 15,17.58432 15,20.76 C15,23.93632 17.58368,26.52 20.76,26.52 L20.76,26.52 Z M20.76,16.28 C23.2304,16.28 25.24,18.2896 25.24,20.76 C25.24,23.2304 23.2304,25.24 20.76,25.24 C18.2896,25.24 16.28,23.2304 16.28,20.76 C16.28,18.2896 18.2896,16.28 20.76,16.28 L20.76,16.28 Z" id="Imported-Layers" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

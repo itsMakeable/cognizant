@@ -9,5 +9,9 @@
 				"tmp"
 			]
 		}
-	]
+	],
+	"settings":
+	{
+		"tab_size": 4
+	},
 }
