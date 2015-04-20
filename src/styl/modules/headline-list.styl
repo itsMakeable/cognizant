@@ -4,7 +4,7 @@
   title: Headline List
   section: List Modules
   example: |
-    <div class="headline-list">
+    <div class="headline-list-module">
       <div class="headline-list__items">
         <div class="headline-list__item">
      		<div class="headline-list__item-title-section">
@@ -13,15 +13,16 @@
      		    <div class="headline-list__item-title-img">
      		      <img data-src="holder.js/100%x40/size:6/#50b3cf:#fff" alt=""i>
      		    </div>
-     		    <div class="headline-list__item-title">Mobile <br>First</div>
+     		    <div class="headline-list__item-title">Decisive <br>Infrastructure</div>
      		  </div>
      		</div>
      		<div class="headline-list__item-content">
-     		  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut expedita quae distinctio magnam saepe sunt, incidunt repellat sapiente vero. Nostrum excepturi hic   earum impedit, ex necessitatibus repellendus cum eius accusantium!</p>
+     		  <p>There’s outsourcing, then there’s Smart Sourcing. Over the last two decades, Cognizant has built its business doing the latter. And it’s more than just labor arbitrage.</p>
      		</div>    
           <i class="headline-list__item-CTA">
             <img data-src="holder.js/20x35/size:6/#50b3cf:#fff" alt="">
           </i>
+          
      	  </div>
       </div>
       <div class="headline-list__footer">
@@ -30,16 +31,17 @@
     </div>
 ***/
 
-.headline-list
+.headline-list-module
 	position relative
+	col(10/12, offset: 1/12)
 	
 .headline-list__items
 	cf()
 	
 .headline-list__item
-	cf()
+	overflow hidden
 	height 100%
-	margin 4.8rem 0
+	padding 3.8rem 0
 	position relative
 	&:after
 		content ''
@@ -56,36 +58,46 @@
 		color gray
 
 .headline-list__item-title-section
-	col(3/12)
+	col(3/10)
 	cf()
 	h3
 		color gray
-		text-transform capitalize
+		padding-bottom 1rem
 	
 .headline-list__item-title-img
-	width 6rem
-	float left
-	height 100%
+	width 5.8rem
+	display inline-block
+	vertical-align middle
 
 .headline-list__item-title
 	fs(3.2rem)
-	upcase()
 	font-family proxBold
-	line-height 1.25
+	line-height .875
+	display inline-block
+	vertical-align middle
 	
 .headline-list__item-content
-	col(6/12)
-
+	col(6/10)
+	min-height 9rem
+	position relative
+	p
+		color darkgray
+		@extend $vertical-align
+		
+		
 .headline-list__item-CTA
 	height 100%
 	position relative
-	col(1/12)
+	col(1/10)
 	float right
-	display block
+	position absolute
+	top 0
+	bottom 0
+	right 0rem
 	img, svg
 		width 2.5rem
 		height 1.5rem
-		// position absolute
+		position absolute
 		top 0
 		bottom 0
 		margin auto

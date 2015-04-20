@@ -1,0 +1,92 @@
+// 3 GROUP MODULE ////////////////////////////////////
+
+/*!**
+  title: Three Group Module
+  section: Group Modules
+  example: |
+    <div class="three-group-module">
+     <div class="row">
+       <div class="three-group__hr"></div>
+     </div>
+     <div class="three-group__groups">
+       <div class="three-group__group">
+         <i class="three-group__icon">
+           <img data-src="holder.js/55x55/size:10vi/#72cdf1:#fff"z alt="">
+         </i>
+         <div class="three-group__title">
+           <h2>Future Of Work</h2>
+         </div>
+  
+         <div class="three-group__content">
+           <p>How your business takes care of business today determines how far it will go tomorrow. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore.
+           </p>
+         </div>
+         <a href="" class='button--silent'>Visit Site</a>
+       </div>
+       <div class="three-group__group">
+         <i class="three-group__icon">
+           <img data-src="holder.js/55x55/size:10vi/#72cdf1:#fff"z alt="">
+         </i>
+         <div class="three-group__title">
+           <h2>Future Of Work</h2>
+         </div>
+       
+         <div class="three-group__content">
+           <p>How your business takes care of business today determines how far it will go tomorrow. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore.
+           </p>
+         </div>
+         <a href="" class='button--silent'>Visit Site</a>
+       </div>
+       <div class="three-group__group">
+         <i class="three-group__icon">
+           <img data-src="holder.js/55x55/size:10vi/#72cdf1:#fff"z alt="">
+         </i>
+         <div class="three-group__title">
+           <h2>Future Of Work</h2>
+         </div>
+       
+         <div class="three-group__content">
+           <p>How your business takes care of business today determines how far it will go tomorrow. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt ut labore.
+           </p>
+         </div>
+         <a href="" class='button--silent'>Visit Site</a>
+       </div>
+     </div>
+    </div>
+***/
+.three-group-module
+	position relative
+	text-align center
+	
+.three-group__hr
+	height 1px
+	// @extend .gradient5--horizontal
+	background-color backgray
+	position relative
+	margin 0 11%
+	top 70px
+	z-index -1
+  
+.three-group__groups
+	cf()
+
+.three-group__group
+	col(4/12)
+
+.three-group__title
+	margin 2rem 0 2.4rem
+
+.three-group__icon
+	background-color backgray
+	size 13rem
+	box-shadow: 0 2px 2px -1px green
+	border-radius 50%
+	position relative
+	img, svg
+		@extend $center-align
+
+.three-group__content
+	background-color backgray
+	padding 3rem 3rem 4rem
+	color darkgray
+	margin-bottom 4rem

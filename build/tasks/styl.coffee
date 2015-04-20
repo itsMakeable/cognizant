@@ -50,6 +50,7 @@ gulp.task 'styleguide', ->
 		extraCss: [ 
 			'tmp/css/ProximaNova-Bold.css', 
 			'tmp/css/ProximaNova-Reg.css',
+			'tmp/css/ProximaNova-Light.css',
 			'tmp/css/ProximaNova-RegIt.css',
 			'tmp/css/ProximaNova-Sbold.css' 
 		]
