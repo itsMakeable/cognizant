@@ -68,5 +68,5 @@ gulp.task 'browser-sync', ->
 gulp.task 'bs-reload', ->
 	browserSync.reload()
 
-# gulp.task 'server', () ->
-# 	$.nodemon(script: './bin/www').on 'start', ->
+gulp.task 'clear', (done) ->
+  cache.clearAll done

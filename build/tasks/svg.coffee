@@ -5,13 +5,13 @@ onError = require('../errors')
 gulp.task 'svgmin', ['clean:svg'], ->
 	return gulp.src('src/svg/**/*.svg')
 		.pipe $.plumber(errorHandler: onError)
-		.pipe $.svgmin()
+		.pipe $.cache($.svgmin())
 		.pipe gulp.dest('app/svg/')
 
 gulp.task 'symbols', ['svgmin'], ->
 	return gulp.src('src/svg/symbols/*.svg')
 		.pipe $.plumber(errorHandler: onError)
-		.pipe $.svgmin()
+		.pipe $.cache($.svgmin())
 		.pipe $.cheerio(
 			run: (find) ->
 				find('[fill]').attr 'fill', 'currentColor'

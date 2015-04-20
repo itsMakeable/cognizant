@@ -4,9 +4,9 @@
 		{
 			"path": ".",
 			"folder_exclude_patterns": [
-				// "app",
-				"node_modules"
-				// ".tmp"
+				"app",
+				"node_modules",
+				"tmp"
 			]
 		}
 	]

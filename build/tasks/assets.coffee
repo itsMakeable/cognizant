@@ -8,8 +8,8 @@ gulp.task 'img', ->
     'src/img/**/*.jpg'
     'src/img/**/*.png'
   ])
-  	.pipe($.plumber(errorHandler: onError))
-  	.pipe($.imagemin())
+  	.pipe $.plumber(errorHandler: onError)
+  	.pipe $.cache($.imagemin())
   	.pipe gulp.dest('app/img/')
 
 
@@ -18,8 +18,8 @@ gulp.task 'font', ->
     'src/font/*.ttf',
     'src/font/*.otf'
   ])
-  	.pipe($.plumber(errorHandler: onError))
-  	.pipe($.cssfont64())
+  	.pipe $.plumber(errorHandler: onError)
+  	.pipe $.cache($.cssfont64())
   	.pipe gulp.dest('./tmp/css')
 
 

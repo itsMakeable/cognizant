@@ -9,6 +9,7 @@ del = require('del')
 axis = require('axis')
 rupture = require('rupture')
 jeet = require('jeet')
+autoprefixer = require('autoprefixer-stylus')
 
 
 gulp.task 'styl', ->
@@ -22,12 +23,14 @@ gulp.task 'styl', ->
 				jeet()
 				rupture()
 				nib()
+				autoprefixer()
 			]
 			include: ['src/styl']
 			url: true
 			compress: false
 		})
 		.pipe $.rename('index.css')
+		.pipe $.csscomb()
 		.pipe gulp.dest('./tmp/css')
 
 

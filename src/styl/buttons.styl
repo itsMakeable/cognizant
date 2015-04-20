@@ -1,25 +1,19 @@
-// CTA LINKS ////////////////////////////////////
-/*!**
-  title: Links
-  section: Buttons & Links
-  example: |
-    <a href="#">Link</a>
-    <a href="#" disabled>Disabled</a>
-***/
+z
 a
 	border-bottom 1px solid gray
 	padding-bottom 1px
 	transition color 0.2s linear
 	font-family proxSbold
 	fs(1.6rem)
+	transition all 0.2s ease
 	&:link
 		color blue
 	&:hover
 		color darkblue
-		border-bottom 1px solid gray
 	&:active
 		color darkblue
 		transform scale(0.98)
+		transform-origin 50% 50%
 	&[disabled]
 		color gray !important
 		transform scale(1) !important
@@ -27,13 +21,13 @@ a
 		color blue
 		
 /*!**
-  title: Buttons
+  title: Primary Button
   section: Buttons & Links
   example: |
-    <button>button</button>
-    <button disabled>Disabled</button>
+    <button class='button--primary'>button</button>
+    <button class='button--primary' disabled>Disabled</button>
 ***/
-button
+$button
 	line-height 4.2rem
 	upcase()
 	min-width 20.8rem
@@ -42,9 +36,13 @@ button
 	color white
 	background-color blue
 	text-align center
-	transition background-color 0.1s ease, transform 0.1s linear
+	transition background-color 0.1s ease, transform 0.1s linear, color 0.1s ease
 	text-decoration none
 	transform scale(1)
+	border-bottom transparent
+	
+.button--primary
+	@extend $button
 	&:hover
 		color white
 		background-color darkblue
@@ -53,6 +51,7 @@ button
 		color white
 		background-color darkblue
 		transform scale(0.98)
+		transform-origin 50% 50%
 	&[disabled]
 		color gray
 		background-color darkgray
@@ -60,4 +59,30 @@ button
 	&:visited
 		color white
 		background-color blue
-	
+
+/*!**
+  title: Silent Button
+  section: Buttons & Links
+  example: |
+    <button class='button--silent'>button</button>
+    <button class='button--silent' disabled>Disabled</button>
+***/
+.button--silent
+	@extend $button
+	background-color transparent
+	color blue
+	border-bottom 1px solid rgba(blue,0.2)
+	line-height 1
+	&:link
+		color blue
+	&:hover
+		color darkblue
+	&:active
+		color darkblue
+		transform scale(0.98)
+		transform-origin 50% 50%
+	&[disabled]
+		color gray !important
+		transform scale(1) !important
+	&:visited
+		color blue

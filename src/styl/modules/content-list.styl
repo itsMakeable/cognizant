@@ -1,0 +1,73 @@
+// CONTENT LIST ////////////////////////////////////
+
+/*!**
+  title: Content List
+  section: List Modules
+  example: |
+    <div class="content-list">
+      <div class="content-list__header">
+      	<h2>SMAC</h2>
+      	<h3>Social Mobile Analytics Cloud</h3>
+      </div>
+      <div class="content-list__header-border"></div>
+      <div class="content-list__items">
+      	<div class="content-list__item">
+      		<h4>
+      			Article | <i><img data-src="holder.js/12x12/size:6/#c4bdc0:#fff"></i> 25k
+      		</h4>
+      		<p>
+      			<strong>
+      				It’s Time for Learning to Go Back to School
+      			</strong>
+      		</p>
+      		<i class="content-list__item-CTA">
+      			<img data-src="holder.js/100%x25/size:6/#50b3cf:#fff" alt="">
+      		</i>
+      	</div>
+      </div>
+      <div class="content-list__footer">
+      	<a href='#' class='button--silent'>View SMAC</a>
+      </div>
+    </div>
+
+***/
+
+.content-list
+	position relative
+	col(6/12)
+.content-list__header
+	h3
+		color gray
+		padding-top 0.2rem
+	
+.content-list__header-border
+	height 0.2rem
+	@extend .gradient5--vertical
+	margin-top 2rem 
+	
+.content-list__item
+	padding 2rem 0
+	border-bottom 1px solid backgray
+	position relative
+	h4
+		color darkgray
+		font-family proxReg
+	p
+		color darkblue
+		display inline-block
+		max-width 90%
+		height 2.8rem
+		overflow hidden
+
+.content-list__item-CTA
+	position absolute
+	top 0
+	bottom 0
+	right 1rem
+	margin auto
+	size 1.5rem 2.5rem
+	
+.content-list__footer
+	margin-top 3rem
+	text-align center
+	
