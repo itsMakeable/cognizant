@@ -2,16 +2,20 @@
 	"folders":
 	[
 		{
-			"path": ".",
-			"folder_exclude_patterns": [
+			"folder_exclude_patterns":
+			[
 				"app",
-				// "node_modules",
+				"node_modules",
 				"tmp"
-			]
+			],
+			"path": "."
+		},
+		{
+			"path": "/Users/Kyla/Sites/styleguide.js"
 		}
 	],
 	"settings":
 	{
 		"tab_size": 4
-	},
+	}
 }

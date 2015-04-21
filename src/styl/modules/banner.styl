@@ -1,0 +1,37 @@
+// BANNERS ////////////////////////////////////
+
+/*!**
+  title: Main Banner
+  section: Banner Modules
+  example: |
+    <div class='banner-module'>
+      <div class='banner__text'>
+        <h2>Cognizant Connections</h2>
+        <p>An exclusive online community for technology and business leaders.</p>
+      </div>
+      <div class='banner__CTA'>
+        <button class='button--primary'>Sign In</button>
+        <button class='button--silent'>Learn More</button>
+      </div>
+    </div>
+***/
+.banner-module
+    background url(svg/bg-diamond.svg)
+    col(1/1)
+    color white
+    padding 5.4rem 0
+    h2
+        fs(4rem)
+        upcase()
+    button
+        display block
+        float right
+        color white
+        &.button--silent
+            boder-bottom 1px solid rgba(white,0.2)
+            
+.banner__text
+    col(6/10)
+    
+.banner__CTA
+    col(4/10)

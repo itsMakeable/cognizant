@@ -55,4 +55,7 @@ gulp.task 'styleguide', ->
 			'tmp/css/ProximaNova-Sbold.css' 
 		]
 		extraJs: [ 'docs/holder.min.js' ]
+		templateCss: 'docs/styleguide/template/styleguide.css'
+		templateJs: 'docs/styleguide/template/styleguide.js'
+		template: 'docs/styleguide/template/index.jade'
 		outputFile: 'docs/styleguide/index.html'

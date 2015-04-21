@@ -23,8 +23,9 @@ gulp.task 'symbols', ['svgmin'], ->
 			fileName: 'symbols.svg'
 			inlineSvg: true
 		)
-
-		.pipe gulp.dest('src/jade/includes')
+		
+		.pipe gulp.dest( 'docs/styleguide/includes' )
+		.pipe gulp.dest( 'src/jade/includes' )
 	# gulp.src('src/svg/symbols/*.svg')
 	#	.pipe($.plumber(errorHandler: onError))
 	# 	.pipe($.replace(/(#010101)/g, 'currentColor'))

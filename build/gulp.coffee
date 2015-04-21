@@ -20,6 +20,7 @@ gulp.task 'watch', ['browser-sync'], ->
 	gulp.watch [ 'src/font/**/*' ], ['font']
 	gulp.watch [ 'src/coffee/**/**/*.coffee' ], ['coffee']
 	gulp.watch [ './tmp/css/*' ], ['css', 'styleguide']
+	gulp.watch [ './docs/styleguide/template/*' ], ['styleguide']
 	gulp.watch [ './tmp/js/*' ], ['js']
 
 

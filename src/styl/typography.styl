@@ -1,7 +1,7 @@
 // TYPOGRPAHY ////////////////////////////////////
 /*!**
   title: Headers
-  section: Typgraphy
+  section: Typography
   example: |
     <h1>H1 Header</h1>
     <h2>H2 Header</h2>
@@ -14,6 +14,11 @@
 html
 	font-family proxReg
 
+h1, h2, h3, h4, h5, h6
+	text-rendering optimizeLegibility
+	font-smooth always
+	-moz-osx-font-smoothing: grayscale
+	
 h1, h2, h3, h4, h5, h6, p, li
 	font-weight: normal
 	color inherit
@@ -25,24 +30,23 @@ h1
 	upcase()
 
 h2
-	font-family proxSbold
+	font-family proxBold
 	fs(2.8rem)
 	line-height 1.14
 
 h3
-	font-family proxSbold
+	font-family proxBold
 	fs(1.6rem)
 	line-height 1.25
 	upcase()
 
 h4
-	font-family proxSbold
+	font-family proxReg
 	fs(1.6rem)
 	line-height 1.25
-	upcase()
 
 h5
-	font-family proxReg
+	font-family proxBold
 	fs(5.8rem)
 	line-height 1.03
 
@@ -53,21 +57,22 @@ h6
 	
 /*!**
   title: Body
-  section: Typgraphy
+  section: Typography
   example: |
     <p>Paragraph Text and <b>something bold!</b></p>
     <small>Small Text</small>
 ***/
-
 small
 	font-family proxLight
 	fs(1.4rem)
 	line-height 1.4
-
+	letter-spacing 0.02em
+	
 p
 	font-family proxReg
 	fs(1.8rem)
 	line-height 1.4
+	letter-spacing 0.02em
 
 strong
 	font-family proxSbold

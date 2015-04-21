@@ -1,148 +1,224 @@
 // FLOW BOX ////////////////////////////////////
 
 /*!**
-  title: Flow Box Small
-  section: Box Modules
-  example: |
-    <div class="flow-box gradient1--vertical" style='width: 340px; height: 260px;'>
-    	<div class="flow-box__content">
-    		<div class="flow-box__tag">
-    			<h4>Article | <i><img data-src="holder.js/12x12/size:6/#c4bdc0:#fff"></i> <span>10k</span></h4>
-    		</div>
-    		<i class="flow-box__icon">
-    			<img data-src="holder.js/25x25/size:6/#fff:#50b3cf">
-    		</i>
-    		<div class="flow-box__title">
-    			<h2>A Systematic Approach To Optimizing Collateral</h2>
-    		</div>
-    		<div class="flow-box__CTA">
-    			<i class="flow-box__CTA--left">
-    				<img data-src="holder.js/30x30/size:6/#50b3cf:#fff">
-    			</i>
-    			<i class="flow-box__CTA--right">
-    				<img data-src="holder.js/30x30/size:6/#50b3cf:#fff">
-    			</i>
-    		</div>
-    	</div>
-    </div>
+    title: Flow Box Small
+    section: Box Modules
+    example: |
+        <div class="flow-box gradient1--vertical" style='width: 340px; height: 260px;'>
+            <div class="flow-box__tag">
+                <h4>Article | <i><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_share"></use></svg></i> <span>10k</span></h4>
+            </div>
+            <i class="flow-box__icon">
+                <svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_pdf">
+            </i>
+            <div class="flow-box__content">
+                
+                <div class="flow-box__title">
+                    <h2>A Systematic Approach To Optimizing Collateral</h2>
+                </div>
+                <div class="flow-box__CTA">
+                    <i class="flow-box__CTA--left">
+                        <svg viewBox="0 0 100 100">
+                            <use xlink:href="includes/symbols.svg#icon_star"></use>
+                        </svg>
+                    </i>
+                    <i class="flow-box__CTA--right">
+                       <svg viewBox="0 0 100 100">
+                          <use xlink:href="includes/symbols.svg#icon_carrot"></use>
+                       </svg>
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="flow-box gradient1--vertical" style='width: 340px; height: 260px;'>
+            <div class="flow-box__meta">
+                <div class='flow-box__meta-img'>
+                    <img data-src="holder.js/44x44/size:6/#c4bdc0:#fff">
+                </div>
+                <div class='flow-box__meta-text'>
+                    <p><strong>Added by Kyla Medina</strong></p>
+                    <h4>Article | <i><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_share"></use></svg></i> <span>10k</span></h4>
+                </div>
+            </div>
+            <div class="flow-box__content">
+                <div class="flow-box__title">
+                    <h2>A Systematic Approach To Optimizing Collateral</h2>
+                </div>
+                <div class="flow-box__CTA">
+                    <i class="flow-box__CTA--left">
+                        <svg viewBox="0 0 100 100">
+                            <use xlink:href="includes/symbols.svg#icon_star"></use>
+                        </svg>
+                    </i>
+                    <i class="flow-box__CTA--right">
+                       <svg viewBox="0 0 100 100">
+                          <use xlink:href="includes/symbols.svg#icon_carrot"></use>
+                       </svg>
+                    </i>
+                </div>
+            </div>
+        </div>
 ***/
 
 .flow-box
-	padding 2%
-	display inline-block
-	&.gradient1--vertical
-		color darkblue
-	&.gradient2--vertical
-		color darkgreen
+    padding 2.2rem
+    display inline-block
+    position relative
+    &.gradient1--vertical
+        color darkblue
+    &.gradient2--vertical
+        color darkgreen
+    p
+        font-family proxLight
 
 .flow-box__content
-	position relative
-	height 100%
+    position relative
+    height 100%
+    margin-top 5rem
 
 .flow-box__tag
-	display inline-block
-	background-color white
-	color currentColor
-	padding 0.4rem 1rem
-	min-width 18rem
-	i
-		color gray
-		size 1.2rem
-	h4 
-		
-		span
-			font-family proxReg
+    display inline-block
+    background-color white
+    color currentColor
+    padding 0.4rem 1rem
+    min-width 18rem
+    position absolute
+    left 2.2rem
+    top 2.2rem
+    i
+        color gray
+        size 1.2rem
+    h4 
+        span
+            font-family proxReg
+
+.flow-box__meta-img
+    display inline-block
+    vertical-align middle
+    margin 0 1rem
+    
+    img
+        border-radius 50%
+
+.flow-box__tag,
+.flow-box__meta-text
+    i
+        color gray
+        size 1.2rem
+        [fill]
+            fill currentColor
+            
+.flow-box__meta-text
+    display inline-block
+    vertical-align middle
+    h4, p
+        line-height 1.1
+    
+.flow-box__meta
+    background-color white
+    position absolute
+    top 0
+    left 0
+    width 100%
+    padding 0.5rem 1rem
+    p
+        color black
 
 .flow-box__icon
-	color white
-	position absolute
-	top 0
-	right 0
-	size 2.5rem
+    color white
+    position absolute
+    top 2.2rem
+    right 2.2rem
+    size 2.5rem
 
 .flow-box__title
-	color white
-	margin 2rem 0
-	p
-		padding-top 3.6rem
-	h2
-		max-height 10rem
-		overflow hidden
-	h5
-		max-height 18.7rem
-		overflow hidden
-		
+    color white
+    margin 2rem 0
+    p
+        padding-top 3.6rem
+    h2
+        max-height 10rem
+        overflow hidden
+    h5
+        max-height 18.7rem
+        overflow hidden
+        
 .flow-box__CTA
-	color blue
-	position absolute
-	bottom 0
-	width 100%
-	height 5rem
-	border-top 1px solid currentColor
+    color blue
+    position absolute
+    bottom 5rem
+    width 100%
+    height 5rem
+    border-top 1px solid currentColor
 
 .flow-box__CTA-description
-	padding 3rem 0
-	color white	
-	strong, b
-		display block
+    padding 3rem 0
+    color white 
+    strong, b
+        display block
+    
 
 .flow-box__CTA--left
 .flow-box__CTA--right
 .flow-box__CTA--share
-	position absolute
-	bottom 0
-	size 3rem
-	
+    position absolute
+    bottom 0
+    size 3rem
+    
 .flow-box__CTA--left
-	left 0
-	
+    left 0
+    
 .flow-box__CTA--right
-	right 0
+    right 0
 
 .flow-box__CTA--share
-	left 7rem
+    left 7rem
 
 /*!**
   title: Flow Box Large
   section: Box Modules
   example: |
     <div class="flow-box flow-box--large gradient2--vertical" style='width: 715px; height: 560px;'>
-     	<div class="flow-box__content">
-     		<div class="flow-box__tag">
-     			<h4>Article | <i><img data-src="holder.js/12x12/size:6/#c4bdc0:#fff"></i> <span>10k</span></h4>
-     		</div>
-     		<i class="flow-box__icon">
-     			<img data-src="holder.js/25x25/size:6/#fff:#50b3cf">
-     		</i>
-     		<div class="flow-box__title">
-     			<h3>Healthcare Consumerism:</h3>
-     			<h5>The Rise of the Empowered Healthcare Consumer</h5>
-     			<p>Added for you on 12.14.14<p>
-     		</div>
-     		<div class="flow-box__CTA">
-     			<div class="flow-box__CTA-description">
-     				<p>
-     				<strong>
-     					A shift to individual healthcare.
-     				</strong>
-     				Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.
-     				</p>
-     			</div>
-     			<i class="flow-box__CTA--left">
-     				<img data-src="holder.js/30x30/size:6/#50b3cf:#fff">
-     			</i>
-     			<i class='flow-box__CTA--share'>
-     				<img data-src="holder.js/30x30/size:6/#50b3cf:#fff">
-     			</i>
-     			<i class="flow-box__CTA--right">
-     				<img data-src="holder.js/30x30/size:6/#50b3cf:#fff">
-     			</i>
-     		</div>
-     	</div>
+        <div class="flow-box__tag">
+            <h4>Article | <i><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_share"></use></svg></i> <span>10k</span></h4>
+        </div>
+        <i class="flow-box__icon">
+            <svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_pdf">
+        </i>
+        <div class="flow-box__content">
+            <div class="flow-box__title">
+                <h3>Healthcare Consumerism:</h3>
+                <h5>The Rise of the Empowered Healthcare Consumer</h5>
+                <p>Added for you on 12.14.14<p>
+            </div>
+            <div class="flow-box__CTA">
+                <div class="flow-box__CTA-description">
+                    <p>
+                    <strong>
+                        A shift to individual healthcare.
+                    </strong>
+                    Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.
+                    </p>
+                </div>
+                <i class="flow-box__CTA--left">
+                    <svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_star"></use></svg>
+                </i>
+                <i class='flow-box__CTA--share'>
+                    <svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_share"></use></svg>
+                </i>
+                <i class="flow-box__CTA--right">
+                    <svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_carrot"></use></svg>
+                </i>
+            </div>
+        </div>
      </div>
 ***/
 
 .flow-box.flow-box--large
-	padding 3%
-	.flow-box__CTA
-		height 16.2rem
+    padding 3.5rem
+    .flow-box__CTA
+        height 16.2rem
+    .flow-box__tag
+        left 3.5rem
+    .flow-box__icon
+        right 3.5rem
