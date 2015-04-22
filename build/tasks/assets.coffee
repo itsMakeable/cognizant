@@ -9,8 +9,10 @@ gulp.task 'img', ->
     'src/img/**/*.png'
   ])
   	.pipe $.plumber(errorHandler: onError)
-  	.pipe $.cache($.imagemin())
+    .pipe $.cache($.imagemin())
+  	# .pipe $.imagemin()
   	.pipe gulp.dest('app/img/')
+    .pipe gulp.dest( 'docs/styleguide/img' )
 
 
 gulp.task 'font', ->

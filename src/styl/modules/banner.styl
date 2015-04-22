@@ -5,33 +5,44 @@
   section: Banner Modules
   example: |
     <div class='banner-module'>
+      
       <div class='banner__text'>
         <h2>Cognizant Connections</h2>
         <p>An exclusive online community for technology and business leaders.</p>
       </div>
       <div class='banner__CTA'>
         <button class='button--primary'>Sign In</button>
-        <button class='button--silent'>Learn More</button>
+        <a class='button--silent'>Learn More</a>
       </div>
     </div>
 ***/
 .banner-module
-    background url(svg/bg-diamond.svg)
+    background url(./img/bg-diamonds.jpg) repeat
+    background-size cover
+    background-position 50% 50%
     col(1/1)
     color white
     padding 5.4rem 0
+    position relative
+    height 100%
     h2
         fs(4rem)
         upcase()
     button
+        color white
         display block
         float right
+    .button--silent
+        boder-bottom 1px solid rgba(white,0.2)
         color white
-        &.button--silent
-            boder-bottom 1px solid rgba(white,0.2)
-            
+    
 .banner__text
-    col(6/10)
+    col(6/12, offset: 1/12)
+    position relative
+    z-index 1
     
 .banner__CTA
-    col(4/10)
+    col(3/12, offset: 1/12)
+    text-align right
+    position relative
+    z-index 1

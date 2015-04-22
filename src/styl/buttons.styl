@@ -1,7 +1,6 @@
 a
 	border-bottom 1px solid gray
 	padding-bottom 0
-	transition color 0.2s linear
 	font-family proxSbold
 	fs(1.6rem)
 	transition all 0.2s ease
@@ -40,9 +39,11 @@ $button
 	transform scale(1)
 	border-bottom transparent
 	font-family proxSbold
+	display inline-block
 	
 .button--primary
 	@extend $button
+	padding 0 5.1rem
 	&:hover
 		color white
 		background-color darkblue
@@ -58,7 +59,7 @@ $button
 		transform scale(1) !important
 	&:visited
 		color white
-		background-color blue
+		background-color border-left 
 
 /*!**
   title: Silent Button
@@ -72,9 +73,11 @@ $button
 	background-color transparent
 	color blue
 	border-bottom 1px solid rgba(blue,0.2)
-	line-height 1
-	min-width 0rem
+	line-height 1.2
+	min-width 0
 	padding 0
+	margin 1.4rem 5.1rem
+	display inline-block
 	&:link
 		color blue
 	&:hover
@@ -85,6 +88,7 @@ $button
 		transform-origin 50% 50%
 	&[disabled]
 		color gray !important
+		border-bottom 1px solid rgba(gray,0.2) !important
 		transform scale(1) !important
 	&:visited
 		color blue

@@ -9,34 +9,19 @@
        <div class="social-group__hr"></div>
      </div>
      <div class="social-group__groups">
-      <i class="social-group__icon">
-        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           viewBox="0 0 22.3 22.3" enable-background="new 0 0 22.3 22.3" xml:space="preserve">
-        <path fill="#FFFFFF" d="M0,0v22.3h22.3V0H0z M15.7,7.7l-0.2,3.1h-3.1v10.6h-4V10.7H6.2V7.7h2.1V5.6c0-0.9,0-2.3,0.7-3.2
-          c0.7-0.9,1.6-1.5,3.3-1.5c2.7,0,3.8,0.4,3.8,0.4l-0.5,3.1c0,0-0.9-0.3-1.7-0.3c-0.8,0-1.6,0.3-1.6,1.1v2.4H15.7z"/>
-        </svg>
+      <i class="social-group__icon facebook is-active">
         <div class='social-group__icon-slide'>
           <div class='social-group__icon-slide--on'></div>
           <div class='social-group__icon-slide--off'></div>
         </div>
       </i>
-      <i class="social-group__icon">
-        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           viewBox="0 0 22.3 22.3" enable-background="new 0 0 22.3 22.3" xml:space="preserve">
-        <path fill="#FFFFFF" d="M0,0v22.3h22.3V0H0z M15.7,7.7l-0.2,3.1h-3.1v10.6h-4V10.7H6.2V7.7h2.1V5.6c0-0.9,0-2.3,0.7-3.2
-          c0.7-0.9,1.6-1.5,3.3-1.5c2.7,0,3.8,0.4,3.8,0.4l-0.5,3.1c0,0-0.9-0.3-1.7-0.3c-0.8,0-1.6,0.3-1.6,1.1v2.4H15.7z"/>
-        </svg>
+      <i class="social-group__icon twitter">
         <div class='social-group__icon-slide'>
           <div class='social-group__icon-slide--on'></div>
           <div class='social-group__icon-slide--off'></div>
         </div>
       </i>
-      <i class="social-group__icon">
-        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           viewBox="0 0 22.3 22.3" enable-background="new 0 0 22.3 22.3" xml:space="preserve">
-        <path fill="#FFFFFF" d="M0,0v22.3h22.3V0H0z M15.7,7.7l-0.2,3.1h-3.1v10.6h-4V10.7H6.2V7.7h2.1V5.6c0-0.9,0-2.3,0.7-3.2
-          c0.7-0.9,1.6-1.5,3.3-1.5c2.7,0,3.8,0.4,3.8,0.4l-0.5,3.1c0,0-0.9-0.3-1.7-0.3c-0.8,0-1.6,0.3-1.6,1.1v2.4H15.7z"/>
-        </svg>
+      <i class="social-group__icon linkedin">
         <div class='social-group__icon-slide'>
           <div class='social-group__icon-slide--on'></div>
           <div class='social-group__icon-slide--off'></div>
@@ -88,13 +73,25 @@
   // @extend .gradient5--horizontal
   background-color blue
   position relative
-  top 105px
-  z-index -1
+  top 116px
+  z-index 0
+  width 100%
 
 .social-group__icon
   text-align center
   col(4/12)
-  background-color gray
+  &.facebook
+    background transparent url(svg/symbols/social_facebook.svg) no-repeat
+    background-size 100% 100%
+    background-position 50% 50%
+  &.twitter
+    background transparent url(svg/symbols/social_twitter.svg) no-repeat
+    background-size 100% 100%
+    background-position 50% 50%
+  &.linkedin
+    background transparent url(svg/symbols/social_linkedin.svg) no-repeat
+    background-size 100% 100%
+    background-position 50% 50%
   img, svg
     margin auto
     display block
@@ -109,26 +106,36 @@
     float left
 
 .social-group__icon-slide
-  size 16.4rem 8.2rem
+  size 16.4rem 8rem
   position absolute
   z-index -1
-  top 1px
-  bottom 1px
+  top 2px
+  bottom 0
+  left 0
+  right 0
   margin auto
+  transform translateX(-40px)
+.is-active .social-group__icon-slide
+    transform translateX(40px)
+
+.social-group__icon
+  height 8.2rem
+  position relative
 
 .social-group__icon-slide--on,
 .social-group__icon-slide--off
-  display inline-block
-  size 8.2rem
+  display block
+  size 8.2rem 8rem
+  margin 0
   group()
 
 .social-group__icon-slide--off
-  color gray
-  float left
+  background-color gray
+  float right
 
 .social-group__icon-slide--on
-  background-color  blue  
-  float right
+  background-color blue  
+  float left
 
 .social-group__groups
   col(10/12, offset: 1/12)

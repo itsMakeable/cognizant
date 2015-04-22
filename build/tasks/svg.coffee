@@ -7,6 +7,7 @@ gulp.task 'svgmin', ['clean:svg'], ->
 		.pipe $.plumber(errorHandler: onError)
 		.pipe $.cache($.svgmin())
 		.pipe gulp.dest('app/svg/')
+		.pipe gulp.dest( 'docs/styleguide/svg' )
 
 gulp.task 'symbols', ['svgmin'], ->
 	return gulp.src('src/svg/symbols/*.svg')
