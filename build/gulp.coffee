@@ -70,4 +70,4 @@ gulp.task 'bs-reload', ->
 	browserSync.reload()
 
 gulp.task 'clear', (done) ->
-  cache.clearAll done
+  $.cache.clearAll done

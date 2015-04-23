@@ -28,13 +28,19 @@
     h2
         fs(4rem)
         upcase()
-    button
+    .button--primary
         color white
         display block
         float right
+        &:hover
+            background-color lightblue
+            
     .button--silent
         boder-bottom 1px solid rgba(white,0.2)
         color white
+        &:hover
+            color lightblue
+            border-bottom 1px solid rgba(lightblue,0.2)
     
 .banner__text
     col(6/12, offset: 1/12)

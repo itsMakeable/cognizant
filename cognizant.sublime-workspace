@@ -4,201 +4,538 @@
 		"selected_items":
 		[
 			[
-				"po",
-				"position"
-			],
-			[
-				"di",
-				"div"
-			],
-			[
-				"back",
-				"background"
-			],
-			[
-				"trans",
-				"transparent"
-			],
-			[
-				"tra",
-				"transparent"
-			],
-			[
-				"clear",
-				"clearfix"
-			],
-			[
-				"pos",
-				"position"
-			],
-			[
-				"marg",
-				"margin-top"
-			],
-			[
-				"pa",
-				"padding"
-			],
-			[
-				"ter",
-				"tertiaryeggplant"
-			],
-			[
-				"leader",
-				"leaderboard__rank"
-			],
-			[
-				"margin",
-				"margin-top"
-			],
-			[
-				"$h",
-				"$horizontal"
-			],
-			[
-				"$",
-				"$horizontal-align"
-			],
-			[
-				"bord",
-				"border-radius"
-			],
-			[
-				"Pri",
-				"ProximaNovaLight"
-			],
-			[
-				"fon",
-				"font-family"
-			],
-			[
-				"con",
-				"console"
-			],
-			[
-				"re",
-				"relative"
-			],
-			[
-				"is",
-				"is-active"
-			],
-			[
-				"dar",
-				"darkgray"
-			],
-			[
-				"tran",
-				"transition"
-			],
-			[
 				"backgr",
-				"background-color"
+				"background-position"
 			],
 			[
-				"cur",
-				"cursor"
-			],
-			[
-				"lig",
-				"lightblue"
-			],
-			[
-				"line",
-				"line-height"
-			],
-			[
-				"Pr",
-				"ProximaNova"
-			],
-			[
-				"key",
-				"keyCode"
-			],
-			[
-				"cu",
-				"cursor"
+				"in",
+				"inline"
 			],
 			[
 				"dark",
 				"darkblue"
 			],
 			[
-				"inline",
-				"inline-block"
+				"fon",
+				"fonts"
 			],
 			[
-				"Pro",
-				"ProximaNovaLight"
+				"text",
+				"text-transform"
 			],
 			[
-				"tr",
-				"trigger"
+				"font-s",
+				"font-size"
 			],
 			[
-				"field",
-				"fieldset"
+				"fo",
+				"font"
 			],
 			[
-				"hid",
-				"hidden"
+				"bor",
+				"border-radius"
 			],
 			[
-				"nex",
-				"nextField"
+				"max",
+				"max-width"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"no",
+				"not-allowed"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"check",
+				"checkboxImg"
+			],
+			[
+				"st",
+				"style"
+			],
+			[
+				"k",
+				"keyCode"
 			],
 			[
 				"rem",
 				"removeClass"
 			],
 			[
-				"li",
+				"light",
 				"lightgray"
 			],
 			[
-				"backg",
+				"li",
+				"lightblue"
+			],
+			[
+				"mkbl",
+				"mkbl-sselect"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"lig",
+				"lightblue"
+			],
+			[
+				"tran",
+				"transparent"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"dis",
+				"disabled"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"tra",
+				"translateX"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"bac",
 				"background-color"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"zi",
+				"z-index"
+			],
+			[
+				"pr",
+				"primary"
+			],
+			[
+				"b",
+				"bd	border"
+			],
+			[
+				"ro",
+				"rotate"
+			],
+			[
+				"translate",
+				"translateY"
+			],
+			[
+				"Cam",
+				"Campton-Book"
+			],
+			[
+				"$cet",
+				"$center-align"
+			],
+			[
+				"view",
+				"viewmodel"
+			],
+			[
+				"templa",
+				"templatizer"
+			],
+			[
+				"brow",
+				"browserify"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"letter",
+				"letter-spacing"
+			],
+			[
+				"se",
+				"secondary"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"bro",
+				"browser"
+			],
+			[
+				"packer",
+				"packery"
+			],
+			[
+				"cont",
+				"container"
+			],
+			[
+				"dra",
+				"draggability"
+			],
+			[
+				"coff",
+				"coffeeify"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"trn",
+				"transform"
+			],
+			[
+				"cla",
+				"className"
 			],
 			[
 				"op",
 				"opacity"
 			],
 			[
-				"ne",
-				"nextField"
+				"bo",
+				"bottom"
 			],
 			[
-				"has",
-				"hasError"
+				"dee",
+				"deepcoquelicot"
 			],
 			[
-				"wid",
-				"width"
+				"sta",
+				"static"
 			],
 			[
-				"rel",
-				"relative"
+				"fir",
+				"first-of-type"
 			],
 			[
-				"dis",
-				"display"
+				"backg",
+				"background"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"backgro",
+				"background"
+			],
+			[
+				"ex",
+				"extends"
+			],
+			[
+				"vis",
+				"visibility"
+			],
+			[
+				"ter",
+				"tertiarytaupe"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"whi",
+				"white-space"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"mon",
+				"montserrat"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"wrap",
+				"wrapper"
+			],
+			[
+				"hi",
+				"hidden"
+			],
+			[
+				"backgroun",
+				"background-position"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"sec",
+				"select__cta"
+			],
+			[
+				"col",
+				"coquelicot"
+			],
+			[
+				"$ver",
+				"$vertical-align"
+			],
+			[
+				"ba",
+				"background-color"
 			],
 			[
 				"lin",
 				"line-height"
 			],
 			[
-				"w",
+				"bg--",
+				"bg--white"
+			],
+			[
+				"aut",
+				"auto"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"blo",
+				"block"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"ext",
+				"extend"
+			],
+			[
+				"bakc",
+				"background-color"
+			],
+			[
+				"$center",
+				"$center-align"
+			],
+			[
+				"rel",
+				"relative"
+			],
+			[
+				"sty",
+				"style"
+			],
+			[
+				"plac",
+				"placeholder"
+			],
+			[
+				"$L",
+				"$LighterGray"
+			],
+			[
+				"$Lig",
+				"$LightGray"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"list__",
+				"list__select"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"wit",
 				"width"
 			],
 			[
-				"a",
-				"absolute"
+				"style",
+				"styledoc"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"fi",
+				"fieldgroup"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"coffee",
+				"coffeelint"
+			],
+			[
+				"brows",
+				"browserSync"
+			],
+			[
+				"com",
+				"components"
+			],
+			[
+				"node",
+				"node_modules"
+			],
+			[
+				"x",
+				"xlink"
+			],
+			[
+				"an",
+				"angular-ui-router"
+			],
+			[
+				"fam",
+				"famous-angular"
+			],
+			[
+				"not",
+				"notify"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"$v",
+				"$vertical-align"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"He",
+				"Helvetica"
+			],
+			[
+				"font",
+				"font-family"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "src/styl/modules/social-group.styl",
+			"settings":
+			{
+				"buffer_size": 4421,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/styl/grid.styl",
+			"settings":
+			{
+				"buffer_size": 30,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/styl/modules/search.styl",
+			"settings":
+			{
+				"buffer_size": 1429,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/styleguide/svg/social_carrot.svg",
+			"settings":
+			{
+				"buffer_size": 182,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/svg/social_carrot.svg",
+			"settings":
+			{
+				"buffer_size": 495,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/styl/settings.styl",
+			"settings":
+			{
+				"buffer_size": 1228,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/styl/gradients.styl",
+			"settings":
+			{
+				"buffer_size": 2383,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/styl/base.styl",
+			"settings":
+			{
+				"buffer_size": 838,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/styl/inputs.styl",
+			"settings":
+			{
+				"buffer_size": 448,
+				"line_ending": "Unix",
+				"name": "input"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -208,7 +545,7 @@
 	"command_palette":
 	{
 		"height": 400.0,
-		"last_filter": "ins",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -216,30 +553,30 @@
 				"Package Control: Install Package"
 			],
 			[
-				"inst",
-				"Package Control: Install Package"
-			],
-			[
 				"insta",
-				"Package Control: Install Package"
-			],
-			[
-				"in",
 				"Package Control: Install Package"
 			],
 			[
 				"instal",
 				"Package Control: Install Package"
+			],
+			[
+				"tod",
+				"TodoReview: Project Files"
+			],
+			[
+				"todo",
+				"TodoReview: Project Files"
 			]
 		],
-		"width": 601.0
+		"width": 457.0
 	},
 	"console":
 	{
-		"height": 126.0,
+		"height": 166.0,
 		"history":
 		[
-			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
 	"distraction_free":
@@ -253,169 +590,182 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Kyla/Sites/cognizant-grid"
+		"/Users/Kyla/Sites/cognizant",
+		"/Users/Kyla/Sites/cognizant/docs",
+		"/Users/Kyla/Sites/cognizant/docs/styleguide",
+		"/Users/Kyla/Sites/cognizant/docs/styleguide/svg"
 	],
 	"file_history":
 	[
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/listing/type/_dog.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/src/scss/modules/_tertiary-nav.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/listing/type/_product.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/storefront/index.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/src/scss/pages/_storefront.scss",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/forms.styl",
+		"/Users/Kyla/Sites/cognizant/cognizant.sublime-project",
+		"/Users/Kyla/.profile",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/base.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/index.styl",
+		"/Users/Kyla/Sites/cognizant/node_modules/nib/index.styl",
+		"/Users/Kyla/Sites/cognizant/node_modules/autoprefixer-stylus/index.js",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/social-group.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/buttons.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/banner.styl",
+		"/Users/Kyla/Sites/cognizant-prototype/build/tasks/coffee.coffee",
+		"/Users/Kyla/Downloads/akc-logo-teal.svg",
+		"/Users/Kyla/Downloads/html5-boilerplate_v5.1.0/index.html",
+		"/Users/Kyla/Sites/marketplace.akc.org/build/.sass-cache/dd7002cac676ddf7eb4ae65354df6d4dedbc7de1/_typography.scssc",
 		"/Users/Kyla/Sites/marketplace.akc.org/src/scss/pages/_account.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/src/scss/main.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/layout.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/listing/index.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/listing/types/_dog.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/listing/types/_event.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/build/akc.org/public_html/src/scss/pages/_mydog.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/src/scss/modules/_content-box.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/invitation/require_login.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/build/akc.org/public_html/src/scss/components/_typography.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/src/scss/components/_typography.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/invitation/index.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/invitation/confirm.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/storefront/invitation_email.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/build/akc.org/public_html/src/scss/pages/_events.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/header.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/index/index.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/storefront/location.blade.php",
-		"/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/create.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/src/scss/components/_items-list.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/search/index.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/storefront/services/_club.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/storefront/services/_boarder.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/storefront/services/_groomer.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/storefront/services/_dog-walker.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/storefront/services/_breeding.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/storefront/services/_merchant.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/storefront/services/_handler.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/storefront/services/_trainer.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/storefront/services/_veterinarian.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/choose-plan.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/billing/billing-payment.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/src/scss/modules/_download-upload.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/src/scss/pages/_index.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/marketplace/services/_breeding.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/src/scss/modules/_submit-area.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/src/scss/_index.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/search/filters/_dog-walkers.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/marketplace/services/_dog-walker.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/storefront/service.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/src/scss/modules/_listing-box.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/src/scss/pages/_search.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/src/scss/modules/_footer.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/src/scss/components/_footer.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/src/scss/_components.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/build/akc.org/public_html/src/scss/components/_footer.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/build/akc.org/public_html/src/scss/_components.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/build/akc.org/public_html/src/scss/base/_typography.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/build/akc.org/public_html/src/scss/pages/_generic.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/app/views/free-token/index.blade.php",
-		"/Users/Kyla/Sites/marketplace.akc.org/build/akc.org/public_html/src/scss/shame.scss",
-		"/Users/Kyla/Sites/marketplace.akc.org/build/akc.org/public_html/src/scss/pages/_home.scss",
-		"/Users/Kyla/Dropbox/_makeable/marketplace.akc.org/bootstrap/autoload.php",
-		"/Users/Kyla/Dropbox/_makeable/marketplace.akc.org/app/config/database.php",
-		"/Users/Kyla/Dropbox/_makeable/marketplace.akc.org/bootstrap/start.php",
-		"/Users/Kyla/Dropbox/_makeable/marketplace.akc.org/app/config/local/database.php",
-		"/Users/Kyla/Dropbox/_makeable/marketplace.akc.org/public/index.php",
-		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/feed/feed.tpl.jade",
+		"/Users/Kyla/Sites/marketplace.akc.org/app/views/account/storefront/overview.blade.php",
+		"/Users/Kyla/Sites/marketplace.akc.org/build/marketplace.TODO",
+		"/Users/Kyla/Sites/kyla/src/styl/header.styl",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/wrapper.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/common/services/community-feed.srv.js",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/build/gulpfile.js",
+		"/Users/Kyla/Sites/cognizant-prototype/src/jade/form.jade",
+		"/Users/Kyla/Sites/cognizant-prototype/src/styl/animations.styl",
+		"/Users/Kyla/Sites/cognizant-prototype/src/styl/settings.styl",
+		"/Users/Kyla/Sites/cognizant-prototype/src/styl/gradient.styl",
+		"/Users/Kyla/Sites/cognizant-prototype/src/styl/forms.styl",
+		"/Users/Kyla/Sites/cognizant-prototype/app/index.css",
+		"/Users/Kyla/Sites/cognizant-prototype/.csscomb.json",
+		"/Users/Kyla/Sites/cognizant-prototype/node_modules/jade/node_modules/with/node_modules/acorn/tools/generate-identifier-regex.js",
+		"/Users/Kyla/Sites/cognizant-prototype/build/gulp.coffee",
+		"/Users/Kyla/Sites/cognizant-prototype/node_modules/gulp-jshint/node_modules/jshint/node_modules/shelljs/src/grep.js",
+		"/Users/Kyla/Sites/cognizant-prototype/node_modules/gulp-stylus/examples/css/sourcemaps-external.styl",
+		"/Users/Kyla/Sites/cognizant-prototype/cognizant.sublime-project",
+		"/Users/Kyla/Sites/cognizant-prototype/build/tasks/styl.coffee",
+		"/Users/Kyla/Sites/cognizant-prototype/gulpfile.js",
+		"/Users/Kyla/Sites/cognizant-prototype/node_modules/gulp-csscomb/node_modules/csscomb/node_modules/gonzales-pe/doc/Gonzales-Usage.md",
+		"/Users/Kyla/Sites/cognizant-prototype/bower.json",
+		"/Users/Kyla/Sites/cognizant-prototype/.tmp/css/swiper.css",
+		"/Users/Kyla/Sites/cognizant-prototype/.tmp/js/vendor/noframework.waypoints.min.js",
+		"/Users/Kyla/Sites/cognizant-prototype/.tmp/js/vendor/swiper.jquery.min.js",
+		"/Users/Kyla/Sites/cognizant-prototype/node_modules/stylus/node_modules/sax/test/buffer-overrun.js",
+		"/Users/Kyla/Sites/cognizant-prototype/src/styl/buttons.styl",
+		"/Users/Kyla/Sites/cognizant-prototype/node_modules/.bin/stylus",
+		"/Users/Kyla/Sites/cognizant-prototype/node_modules/browser-sync/lib/templates/script-tags.tmpl",
+		"/Users/Kyla/Sites/cognizant-prototype/src/jade/index.jade",
+		"/Users/Kyla/Sites/cognizant-prototype/src/coffee/app.coffee",
+		"/Users/Kyla/Sites/cognizant-prototype/src/styl/slider.styl",
+		"/Users/Kyla/Sites/cognizant-prototype/node_modules/gulp/node_modules/liftoff/appveyor.yml",
+		"/Users/Kyla/Sites/cognizant-prototype/.tmp/js/app.js",
+		"/Users/Kyla/Sites/cognizant-prototype/app/app.js",
+		"/Users/Kyla/Sites/cognizant-prototype/node_modules/svgo/node_modules/js-yaml/node_modules/argparse/lib/argument_parser.js",
+		"/Users/Kyla/Sites/cognizant-prototype/node_modules/browser-sync/node_modules/lodash/lang/isNative.js",
+		"/Users/Kyla/Sites/cognizant-prototype/node_modules/browser-sync/node_modules/lodash/array/sortedLastIndex.js",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/build/wooftagg.sublime-project",
+		"/Users/Kyla/Sites/kyla/src/styl/base.styl",
+		"/Users/Kyla/Sites/kyla/node_modules/axis/index.js",
+		"/Users/Kyla/Sites/kyla/app/index.css",
+		"/Users/Kyla/Sites/kyla/node_modules/gulp/node_modules/gulp-util/lib/isNull.js",
+		"/Users/Kyla/Sites/kyla/node_modules/gulp-accord/node_modules/accord/node_modules/lodash/object/values.js",
+		"/Users/Kyla/Sites/kyla/node_modules/gulp-accord/node_modules/accord/node_modules/lodash/chain/value.js",
+		"/Users/Kyla/Sites/kyla/node_modules/gulp-autoprefixer/node_modules/autoprefixer-core/lib/hacks/transform-value.js",
+		"/Users/Kyla/Sites/kyla/node_modules/gulp-autoprefixer/node_modules/autoprefixer-core/lib/hacks/flex-values.js",
+		"/Users/Kyla/Sites/kyla/node_modules/gulp-autoprefixer/node_modules/autoprefixer-core/lib/hacks/filter-value.js",
+		"/Users/Kyla/Sites/kyla/node_modules/handlebars/dist/amd/handlebars/compiler/visitor.js",
+		"/Users/Kyla/Sites/kyla/node_modules/gulp-autoprefixer/node_modules/autoprefixer-core/lib/old-value.js",
+		"/Users/Kyla/Sites/kyla/node_modules/gulp-autoprefixer/node_modules/autoprefixer-core/lib/value.js",
+		"/Users/Kyla/Sites/kyla/node_modules/gulp-autoprefixer/node_modules/autoprefixer-core/lib/hacks/fill-available.js",
+		"/Users/Kyla/Sites/kyla/node_modules/axis/axis/vendor.styl",
+		"/Users/Kyla/Sites/kyla/node_modules/gulp-autoprefixer/node_modules/autoprefixer-core/node_modules/caniuse-db/features-json/nav-timing.json",
+		"/Users/Kyla/Sites/kyla/.tmp/components/skrollr/examples/fixed_nav.html",
+		"/Users/Kyla/Sites/kyla/.tmp/components/famous/src/widgets/NavigationBar.js",
+		"/Users/Kyla/Sites/kyla/src/styl/nav.styl",
+		"/Users/Kyla/Sites/kyla/src/jade/index.jade",
+		"/Users/Kyla/Sites/kyla/app/index.html",
+		"/Users/Kyla/Sites/kyla/node_modules/gulp-filter/node_modules/plexer/tests/index.mocha.js",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/modules/module-navbar.styl",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/modules/module-post.styl",
 		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/home/home.tpl.jade",
-		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/variables.styl",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/feed/feed.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/mixins.styl",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/build/node_modules/bower/node_modules/.bin/nopt",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/common/directives/media-content/media-ios.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/build/node_modules/gulp-accord/Makefile",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/buttons.styl",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/home/home.ctrl.js",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/build/node_modules/bower/node_modules/mout/object/hasOwn.js",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/build/node_modules/bower/HOOKS.md",
 		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/common/modals/menu/menu.tpl.jade",
-		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/modules/module-summary.styl",
-		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/feed/post-type-summary.jade",
-		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/woofomatic/woofomatic.tpl.jade",
-		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/svg/symbols/icon__miles.svg",
-		"/Users/Kyla/Sites/wooftagg.akc.org/app/www/svg/icon__calories.svg",
-		"/Users/Kyla/Sites/cog-prototype/src/styl/settings.styl",
-		"/Users/Kyla/Sites/cog-prototype/src/styl/grid.styl",
-		"/Users/Kyla/Sites/cog-prototype/src/styl/forms.styl",
-		"/Users/Kyla/Sites/cog-prototype/cognizant.sublime-project",
-		"/Users/Kyla/Sites/cog-prototype/src/styl/typography.styl",
-		"/Users/Kyla/Sites/cog-prototype/build/tasks/styl.coffee",
-		"/Users/Kyla/Sites/cog-prototype/src/jade/includes/symbols.svg",
-		"/Users/Kyla/Sites/cog-prototype/src/styl/buttons.styl",
-		"/Users/Kyla/Sites/cog-prototype/src/svg/symbols/icon-tab.svg",
-		"/Users/Kyla/Sites/cog-prototype/app/svg/symbols/icon-ellipse.svg",
-		"/Users/Kyla/Sites/cog-prototype/src/svg/symbols/icon-updown.svg",
-		"/Users/Kyla/Sites/cog-prototype/src/styl/slider.styl",
-		"/Users/Kyla/Google Drive/ADAM - ASSets/Files/icon-updown1.svg",
-		"/Users/Kyla/Google Drive/ADAM - ASSets/Files/icon-tab.svg",
-		"/Users/Kyla/Google Drive/ADAM - ASSets/Files/icon-updown.svg",
-		"/Users/Kyla/Sites/cog-prototype/src/styl/animations.styl",
-		"/Users/Kyla/Sites/cog-prototype/.tmp/js/app.js",
-		"/Users/Kyla/Sites/cog-prototype/src/styl/base.styl",
-		"/Users/Kyla/Sites/cog-prototype/src/svg/symbols/icon-ellipse.svg",
-		"/Users/Kyla/Sites/cog-prototype/bower.json",
-		"/Users/Kyla/Sites/cog-prototype/src/styl/index.styl",
-		"/Users/Kyla/Sites/cog-prototype/src/styl/css.css",
-		"/Users/Kyla/Sites/cog-prototype/app/img/svg.css",
-		"/Users/Kyla/Sites/cog-prototype/build/tasks/svg.coffee",
-		"/Users/Kyla/Sites/cog-prototype/src/jade/index.jade",
-		"/Users/Kyla/Sites/cog-prototype/app/form.html",
-		"/Users/Kyla/Sites/cog-prototype/src/styl/gradient.styl",
-		"/Users/Kyla/Sites/cog-prototype/README.md",
-		"/Users/Kyla/Sites/cog-prototype/src/font/ProximaNova-Bold.otf",
-		"/Users/Kyla/Sites/cog-prototype/src/jade/form.jade",
-		"/Users/Kyla/Sites/cog-prototype/build/gulp.coffee",
-		"/Users/Kyla/Sites/cog-prototype/src/font/ProximaNova-Light.otf",
-		"/Users/Kyla/Sites/cog-prototype/src/styl/mixins.styl",
-		"/Users/Kyla/Sites/cog-prototype/gulpfile.js",
-		"/Users/Kyla/Sites/cog-prototype/build/tasks/jade.coffee",
-		"/Users/Kyla/Sites/cog-prototype/app/app.js",
-		"/Users/Kyla/Sites/cog-prototype/app/index.html",
-		"/Users/Kyla/Sites/cog-prototype/app/index.css",
-		"/Users/Kyla/Sites/cog-prototype/app/form.jade",
-		"/Users/Kyla/Sites/cog-prototype/app/index.jade",
-		"/Users/Kyla/Sites/cog-prototype/node_modules/browser-sync/node_modules/lodash/function/bindAll.js",
-		"/Users/Kyla/Sites/cog-prototype/src/svg/symbols/icon-carrot.svg",
-		"/Users/Kyla/Sites/cog-prototype/build/tasks/bower.coffee",
-		"/Users/Kyla/Sites/cog-prototype/build/tasks/coffee.coffee",
-		"/Users/Kyla/Downloads/codecanyon-5951671-storyline-3d-slider/demo styles/19-colors-text-style.html",
-		"/Users/Kyla/Sites/cog-prototype/src/coffee/app.coffee",
-		"/Users/Kyla/Sites/cog-prototype/src/css/slider.css",
-		"/Users/Kyla/Sites/cog-prototype/src/css/flexslider.css",
-		"/Users/Kyla/Sites/cog-prototype/node_modules/jshint-stylish/stylish.js",
-		"/Users/Kyla/Sites/cog-prototype/node_modules/stylus/bin/stylus",
-		"/Users/Kyla/Sites/cog-prototype/node_modules/browser-sync/lib/templates/script-tags.tmpl",
-		"/Users/Kyla/Sites/cog-prototype/node_modules/.bin/svgo",
-		"/Users/Kyla/Sites/cog-prototype/src/js/bespoke.js",
-		"/Users/Kyla/Sites/cog-prototype/src/js/all-functions.js",
-		"/Users/Kyla/Sites/cog-prototype/node_modules/jade/node_modules/with/node_modules/acorn/tools/generate-identifier-regex.js",
-		"/Users/Kyla/Sites/cog-prototype/node_modules/.bin/coffee"
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/common/modals/remove-dog-confirmation/remove-dog-confirmation.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/common/modals/remove-friend-confirmation/remove-friend-confirmation.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/modules/module-list.styl",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/variables.styl",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/modules/module-modal.styl",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/settings/my-friends/settings-my-friends.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/common/modals/unfollow-dog-confirmation/unfollow-dog-confirmation.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/common/directives/current-day-summary/current-day-summary.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/settings/about/settings-about.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/create-post/create-post.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/create-post/lost-dog/lost-dog.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/dog-profile/dog-profile.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/create-post/add-post-place/add-post-place.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/create-post/add-post-groups/add-post-groups.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/create-post/add-post-fun-quote/add-post-fun-quote.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/user-profile/user-profile.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/feed/post-types.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/placeholders.styl",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/build/node_modules/bower/node_modules/inquirer/node_modules/cli-color/node_modules/es5-ext/array/valid-array.js",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/build/node_modules/axis/axis/settings.styl",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/build/node_modules/jeet/stylus/jeet/_settings.styl",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/settings/my-dogs/settings-my-dogs.ctrl.js",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/settings/dog-diary/settings-dog-diary.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/settings/dog-diary/settings-dog-diary.ctrl.js",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/settings/groups/settings-groups.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/settings/groups/settings-groups.ctrl.js",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/settings/about/settings-about.ctrl.js",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/build/node_modules/bower/node_modules/cardinal/settings.js",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/settings/settings.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/settings/settings.ctrl.js",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/common/directives/stop-event.dir.js",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/build/node_modules/.bin/shjs",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/feed/my-dogs/my-dogs.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/show-post/show-post.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/common/directives/main-footer/main-footer.tpl.jade",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/feed/feed.ctrl.js",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/footer.styl",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/build/node_modules/bower/node_modules/fstream/lib/proxy-reader.js",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/build/node_modules/gulp-webp/node_modules/cwebp-bin/node_modules/bin-build/node_modules/decompress/node_modules/vinyl-fs/lib/src/getContents/readDir.js",
+		"/Users/Kyla/Sites/wooftagg.akc.org/app/build/node_modules/gulp-imagemin/node_modules/imagemin/node_modules/imagemin-svgo/node_modules/svgo/node_modules/js-yaml/node_modules/argparse/lib/help/added_formatters.js"
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
-		"height": 124.0,
+		"height": 106.0,
 		"where_history":
 		[
-			"",
-			"*.scss",
 			"*.php",
+			"*.scss",
+			"src/*.js",
 			"*.js",
+			"*.jade",
 			"",
-			"*.php",
-			"*.scss",
-			"*.js",
-			"*.scss",
-			"*.blade.php",
-			"*.scss",
-			"*.php",
-			"*.blade.php",
-			"*.scss",
-			"*.php",
-			"*.scss",
-			"*.styl",
-			"",
-			"*.js",
 			"*.styl",
 			"*.jade",
+			"",
+			"*.styl",
+			"*.jade",
+			"*.js",
+			"",
+			"*.scss",
+			"*.styl",
+			"",
+			"*.jade",
+			"*.styl",
+			"",
+			"*.styl",
+			"",
+			"*.styl",
+			"",
+			"*.jade",
+			"*.styl",
+			"",
+			"*.styl",
+			"",
+			"*.styl",
+			".styl",
+			"",
 			"*.styl"
 		]
 	},
@@ -424,134 +774,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"stashed changes",
-			">>>",
-			"you don",
-			"mydog-uploads-complete",
-			"add-text",
-			"sha",
-			"(limit 500 characters)",
-			"\nListing Type",
-			"location-span",
-			"Describe your listing",
-			"\nDescribe your listing",
-			"what is this?",
-			"what",
-			"(what is this?) ",
-			"Describe your listing",
-			"\nDescribe your listing",
-			"you don't",
-			"you tdo",
-			"h1",
-			"<section style='margin-top: 100px'>",
-			"bucket",
-			"h2",
-			"1024px",
-			"1220px",
-			"1400px",
-			"400",
-			"1220px",
-			"024",
-			"publ",
-			".four-buckets",
-			"<h5>",
-			"<h3>",
-			"<h3",
-			"<h3>",
-			"<h2>",
-			"p><em",
-			"\"",
-			"li>",
-			"<li",
-			"li",
-			"label",
-			"applicable-breed",
-			"<h2",
-			".event",
-			"after",
-			"event",
-			"> h2",
-			"event-cont",
-			"btn btn-link big",
-			">>>",
-			"form-group",
-			"Practice",
-			"Are you a Breeder of Merit?",
-			"\nApplicable Breeds",
-			"Applicable Breeds",
-			"applicable",
-			"all breeds",
-			"applicable",
-			".dateviews",
-			"div",
-			".padding-fix",
-			"big",
-			".bb",
-			"</h3>",
-			"<h3 class=\"simple\">",
+			"cover",
+			"width",
+			"100% 100%",
+			" <div class='social-group__icon-slide--on'></div>\n          <div class='social-group__icon-slide--off'></div>",
+			"20",
+			"17",
+			"50px",
+			": ",
+			";",
+			"	",
+			"WEBSITE PRIVACY STATEMENT",
+			"margin-top: 100px; text-align: center;",
+			"link",
+			".bucket",
 			"h3",
-			"100",
-			"100%",
-			"transform: translateY(-50%);",
-			"&.empty",
-			".dog-wrapper",
-			".add",
-			".submit-area",
-			".add",
-			".coming-soon",
-			"coming",
-			"upload",
-			"content-box-container",
-			"choose",
+			"bucket",
+			"content-bo",
+			"3px",
+			"img",
+			"primary",
+			":*",
+			"h3",
+			"<small>&nbsp;</small>",
+			"form-gr",
+			"form",
+			"</h3>",
+			"<h3>",
+			".form-group",
+			":*",
+			".add-text",
+			"add-t",
+			"<h3>",
 			"50%",
-			"pagination",
-			"full-width-ad",
-			"width: 70%;",
-			".full-width-ad",
-			"full-width-ad",
-			"10px auto",
-			"50;",
-			".full-width-ad",
-			".wrapper",
-			".dog-block-group",
-			"welcom",
-			"submit-area",
-			"dog-block-group",
-			"div",
-			".welcome-back",
-			"h2",
-			" h2, h3",
-			"#cbc2bd",
-			"border-bottom: 0.1em solid",
-			".dateviews",
-			"width: 20% !important",
-			"event-image",
-			"border-top: 0.1em solid",
-			".dateviews",
-			"dateviews",
-			"date",
-			"datev",
-			"dateview",
-			"h2",
-			"p {",
-			"1.775em",
-			"index-page",
-			".featured-story-content",
-			"!importa",
-			"1024px)",
-			"half",
-			".top",
-			"side-nav",
-			"side-nave",
-			".coming-soon",
-			"padding-right: 4.375em;",
-			".four",
-			".four-buckets",
-			"coming-soon",
-			"%outer-container",
-			".four-buckets",
-			".entry-contain",
-			"width: 65.812%;"
+			".project__bg",
+			"white",
+			"transition all 0.5s ease",
+			"\"",
+			"primary",
+			"toggleClass",
+			".mkbl-form-complete",
+			"on 'c",
+			"succes",
+			"keyCode",
+			",",
+			"not-filtered",
+			"val(",
+			" or keyCode != ",
+			"'.mkbl-main-input').val() != ''",
+			"$('.mkbl-form-hint.is-input').addClass('is-displayed')",
+			"is-displayed",
+			"s-displayed",
+			"is-displayed",
+			"$('.mkbl-form-hint.is-select').removeClass('is-displayed')\n				$('.mkbl-form-hint.is-input').removeClass('is-displayed')",
+			"input",
+			".mkbl-select-option",
+			"option",
+			"||",
+			", ",
+			" != 9 ||",
+			"==",
+			"trigger('fo",
+			".mkbl-sselect",
+			"trigger('focus",
+			"is-active",
+			"bl-select-option",
+			"remove",
+			"fadeIn",
+			"fade",
+			"trigger",
+			"tri",
+			"disabled",
+			"'.mkbl-select-bg.is-open'",
+			".mkbl-select-option",
+			"div.mkbl",
+			"list",
+			"   ",
+			"  ",
+			".mkbl-form-arrow",
+			"remove",
+			"error",
+			"add",
+			"==",
+			" ==",
+			"add",
+			"has-error",
+			"progress",
+			"this",
+			".is-active",
+			"gradien",
+			"45deg",
+			" 0%",
+			"5px",
+			"transform",
+			"fill",
+			"sparkle",
+			".mkbl-fieldset-bg",
+			"('.mkbl-select-bg')",
+			".addClass('is-hidden')",
+			" = \"off\"",
+			"thisField",
+			"$('.mkbl-form-hint.is-input').addClass('is-displayed')",
+			":last-of-type",
+			"console.log 'this is the last form field'",
+			"prev",
+			"\"disabled\"",
+			"$('.mkbl-button').addClass('is-active').trigger('focus')",
+			"), 300",
+			"last",
+			"'))\n",
+			"last",
+			"las",
+			"last",
+			"has-error",
+			".has-error",
+			"background-color rgba(0,0,0,0.1)",
+			"console",
+			"next(",
+			"next",
+			"$('.mkbl-form-subfields fieldset.is-active').next()",
+			"consol",
+			"fieldset#enter",
+			"-",
+			"type=\"",
+			"type",
+			"(type=\"text\")",
+			"$('.mkbl-button').addClass('is-active').trigger('focus')",
+			"==",
+			"nextField"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -559,8 +909,17 @@
 		"regex": false,
 		"replace_history":
 		[
-			"?",
-			"1023px)"
+			"<b>WOOF</b>tale",
+			"WOOFtale",
+			"	",
+			".icon__default-dog",
+			"trans-center",
+			"	defs\noverlay",
+			"darkbeige",
+			"darkeggplant",
+			" cyan",
+			" beige",
+			" eggplant"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -571,18 +930,358 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/styl/modules/social-group.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2818,
+								2818
+							],
+							[
+								2965,
+								2965
+							],
+							[
+								3114,
+								3114
+							],
+							[
+								3715,
+								3715
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 2.0,
+						"translation.y": 1995.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/styl/grid.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 30,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								24
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/styl/modules/search.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1429,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "docs/styleguide/svg/social_carrot.svg",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 100.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/svg/social_carrot.svg",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 495,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								495,
+								495
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 4.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/styl/settings.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1228,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								337,
+								337
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "src/styl/gradients.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2383,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2012,
+								2019
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 8.0,
+						"translation.y": 286.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/styl/settings.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1228,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								111,
+								104
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/styl/base.styl",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 838,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								272,
+								272
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 176.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 0,
+					"file": "src/styl/modules/social-group.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								513,
+								533
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 4.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/styl/inputs.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 448,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								277,
+								277
+							]
+						],
+						"settings":
+						{
+							"auto_name": "input",
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 36.0
+		"height": 29.0
 	},
 	"input":
 	{
-		"height": 44.0
+		"height": 38.0
 	},
 	"layout":
 	{
@@ -593,11 +1292,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.381187226531,
 			1.0
 		],
 		"rows":
@@ -612,10 +1318,10 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "cog-grid.sublime-project",
+	"project": "cognizant.sublime-project",
 	"replace":
 	{
-		"height": 68.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -625,516 +1331,516 @@
 		"selected_items":
 		[
 			[
-				"storefront/index",
-				"app/views/account/storefront/index.blade.php"
-			],
-			[
-				"account.s",
-				"src/scss/pages/_account.scss"
-			],
-			[
-				"index.bla",
-				"app/views/index/index.blade.php"
-			],
-			[
-				"index.ba",
-				"app/views/index/index.blade.php"
-			],
-			[
-				"content",
-				"src/scss/modules/_content-box.scss"
-			],
-			[
-				"main",
-				"src/scss/main.scss"
-			],
-			[
-				"account",
-				"src/scss/pages/_account.scss"
-			],
-			[
-				"layout",
-				"app/views/layout.blade.php"
-			],
-			[
-				"mydog.sc",
-				"build/akc.org/public_html/src/scss/pages/_mydog.scss"
-			],
-			[
-				"form.b",
-				"app/views/account/listing/form.blade.php"
-			],
-			[
-				"ter",
-				"src/scss/modules/_tertiary-nav.scss"
-			],
-			[
-				"dog.bl",
-				"app/views/listing/type/_dog.blade.php"
-			],
-			[
-				"invitat",
-				"app/views/account/storefront/invitation_email.blade.php"
-			],
-			[
-				"invita",
-				"app/views/account/storefront/invitation_email.blade.php"
-			],
-			[
-				"storef",
-				"src/scss/pages/_storefront.scss"
-			],
-			[
-				"index.bl",
-				"app/views/index/index.blade.php"
-			],
-			[
-				"typogr",
-				"src/scss/components/_typography.scss"
-			],
-			[
-				"ty",
-				"build/akc.org/public_html/src/scss/components/_typography.scss"
-			],
-			[
-				"event.sc",
-				"build/akc.org/public_html/src/scss/pages/_events.scss"
-			],
-			[
-				"event.s",
-				"build/akc.org/public_html/src/scss/pages/_events.scss"
-			],
-			[
-				"gulp",
-				"build/gulpfile.js"
-			],
-			[
-				"index.sc",
-				"src/scss/pages/_index.scss"
-			],
-			[
-				"layou",
-				"app/views/layout.blade.php"
-			],
-			[
-				"",
-				"Find Results"
-			],
-			[
-				"header",
-				"app/views/header.blade.php"
-			],
-			[
-				"location",
-				"app/views/account/storefront/location.blade.php"
-			],
-			[
-				"events",
-				"build/akc.org/public_html/src/scss/pages/_events.scss"
-			],
-			[
-				"index.b",
-				"app/views/index/index.blade.php"
-			],
-			[
-				"typ",
-				"build/akc.org/public_html/src/scss/components/_typography.scss"
-			],
-			[
-				"mai",
-				"src/scss/main.scss"
-			],
-			[
-				"index.scs",
-				"src/scss/pages/_index.scss"
-			],
-			[
-				"breeding",
-				"app/views/marketplace/services/_breeding.blade.php"
-			],
-			[
-				"tertiary",
-				"src/scss/modules/_tertiary-nav.scss"
-			],
-			[
-				"sub",
-				"src/scss/modules/_submit-area.scss"
-			],
-			[
-				"loca",
-				"app/views/account/storefront/location.blade.php"
-			],
-			[
-				"handler.b",
-				"app/views/account/storefront/services/_handler.blade.php"
-			],
-			[
-				"services/_dog",
-				"app/views/account/storefront/services/_dog-walker.blade.php"
-			],
-			[
-				"dog-walk",
-				"app/views/search/filters/_dog-walkers.blade.php"
-			],
-			[
-				"dog-wak",
-				"app/views/marketplace/services/_dog-walker.blade.php"
-			],
-			[
-				"product",
-				"app/views/listing/type/_product.blade.php"
-			],
-			[
-				"service.b",
-				"app/views/account/storefront/service.blade.php"
-			],
-			[
-				"locat",
-				"app/views/account/storefront/location.blade.php"
-			],
-			[
-				"billing",
-				"app/views/account/billing/billing-payment.blade.php"
-			],
-			[
-				"submit",
-				"src/scss/modules/_submit-area.scss"
-			],
-			[
-				"index.",
-				"app/views/index/index.blade.php"
-			],
-			[
-				"search/in",
-				"app/views/search/index.blade.php"
-			],
-			[
-				"item",
-				"src/scss/components/_items-list.scss"
-			],
-			[
-				"index.scss",
-				"src/scss/pages/_index.scss"
-			],
-			[
-				"search",
-				"src/scss/pages/_search.scss"
-			],
-			[
-				"index.php",
-				"app/views/index/index.blade.php"
-			],
-			[
-				"acc",
-				"src/scss/pages/_account.scss"
-			],
-			[
-				"locati",
-				"app/views/account/storefront/location.blade.php"
-			],
-			[
-				"grid",
-				"src/scss/components/_dog-grid.scss"
-			],
-			[
-				"acco",
-				"src/scss/pages/_account.scss"
-			],
-			[
-				"dog-gr",
-				"src/scss/components/_dog-grid.scss"
-			],
-			[
-				"choose",
-				"app/views/account/choose-plan.blade.php"
-			],
-			[
-				"content-bo",
-				"src/scss/modules/_content-box.scss"
-			],
-			[
-				"accoun",
-				"src/scss/pages/_account.scss"
-			],
-			[
-				"create",
-				"app/views/account/create.blade.php"
-			],
-			[
-				"footer",
-				"src/scss/modules/_footer.scss"
-			],
-			[
-				"search/ind",
-				"app/views/search/index.blade.php"
-			],
-			[
-				"index.blade",
-				"app/views/index/index.blade.php"
-			],
-			[
-				"home",
-				"build/akc.org/public_html/src/scss/pages/_home.scss"
-			],
-			[
-				"footer.sc",
-				"src/scss/components/_footer.scss"
-			],
-			[
-				"foo",
-				"build/akc.org/public_html/src/scss/components/_footer.scss"
-			],
-			[
-				"search/index.b",
-				"app/views/search/index.blade.php"
-			],
-			[
-				"sear",
-				"src/scss/pages/_search.scss"
-			],
-			[
-				"accou",
-				"src/scss/pages/_account.scss"
-			],
-			[
-				"accountsc",
-				"src/scss/pages/_account.scss"
-			],
-			[
-				"choose-pl",
-				"app/views/account/choose-plan.blade.php"
-			],
-			[
-				"events.sc",
-				"build/akc.org/public_html/src/scss/pages/_events.scss"
-			],
-			[
-				"typo",
-				"build/akc.org/public_html/src/scss/components/_typography.scss"
-			],
-			[
-				"home.sc",
-				"build/akc.org/public_html/src/scss/pages/_home.scss"
-			],
-			[
-				"components",
-				"src/scss/_components.scss"
-			],
-			[
-				"footer.scss",
-				"src/scss/components/_footer.scss"
-			],
-			[
-				"component.scss",
-				"build/akc.org/public_html/src/scss/_components.scss"
-			],
-			[
-				"components.sc",
-				"src/scss/_components.scss"
-			],
-			[
-				"store",
-				"src/scss/pages/_storefront.scss"
-			],
-			[
-				"generic",
-				"build/akc.org/public_html/src/scss/pages/_generic.scss"
-			],
-			[
-				"generic.sc",
-				"build/akc.org/public_html/src/scss/pages/_generic.scss"
-			],
-			[
-				"storefront",
-				"src/scss/pages/_storefront.scss"
-			],
-			[
-				"typog",
-				"build/akc.org/public_html/src/scss/components/_typography.scss"
-			],
-			[
-				"shame",
-				"build/akc.org/public_html/src/scss/shame.scss"
-			],
-			[
-				"itemlist",
-				"src/scss/components/_items-list.scss"
-			],
-			[
-				"event.scss",
-				"build/akc.org/public_html/src/scss/pages/_events.scss"
-			],
-			[
-				"index.ph",
-				"app/views/free-token/index.blade.php"
-			],
-			[
-				"auto",
-				"bootstrap/autoload.php"
-			],
-			[
-				"databas",
-				"app/config/database.php"
-			],
-			[
-				"star",
-				"bootstrap/start.php"
-			],
-			[
-				"hom",
-				"app/src/core/home/home.tpl.jade"
-			],
-			[
-				"ind",
-				"app/src/index.jade"
-			],
-			[
-				"bas",
-				"app/src/styl/base.styl"
-			],
-			[
-				"tricks",
-				"app/src/core/activities/tricks-and-training/tricks-and-training.tpl.jade"
-			],
-			[
-				"place",
-				"app/src/common/directives/placeholder.dir.js"
-			],
-			[
-				"button",
-				"app/src/styl/buttons.styl"
-			],
-			[
-				"user",
-				"app/src/core/user-profile/user-profile.tpl.jade"
-			],
-			[
-				"va",
-				"app/src/styl/variables.styl"
-			],
-			[
-				"ba",
-				"app/src/styl/base.styl"
-			],
-			[
-				"feed",
-				"app/src/core/feed/feed.tpl.jade"
-			],
-			[
-				"lis",
-				"app/src/styl/modules/module-list.styl"
-			],
-			[
-				"menu",
-				"app/src/common/modals/menu/menu.tpl.jade"
-			],
-			[
-				"col",
-				"app/src/styl/colors.styl"
-			],
-			[
-				"leader",
-				"app/src/styl/modules/module-leaderboard.styl"
-			],
-			[
-				"summ",
-				"app/src/styl/modules/module-summary.styl"
-			],
-			[
-				"list",
-				"app/src/styl/modules/module-list.styl"
-			],
-			[
-				"var",
-				"app/src/styl/variables.styl"
-			],
-			[
-				"icon__mi",
-				"app/src/svg/symbols/icon__miles.svg"
-			],
-			[
-				"icon__cal",
-				"app/src/svg/symbols/icon__calories.svg"
-			],
-			[
-				"icon__ca",
-				"app/www/svg/icon__calories.svg"
-			],
-			[
-				"icon__dogs",
-				"app/src/svg/symbols/icon__dogs-passed.svg"
-			],
-			[
-				"summa",
-				"app/src/styl/modules/module-summary.styl"
-			],
-			[
-				"woof",
-				"app/src/core/woofomatic/woofomatic.tpl.jade"
-			],
-			[
-				"fo",
-				"src/styl/forms.styl"
-			],
-			[
-				"cog",
-				"cognizant.sublime-project"
-			],
-			[
-				"styl.c",
-				"build/tasks/styl.coffee"
-			],
-			[
-				"gul",
-				"build/gulp.coffee"
-			],
-			[
-				"sli",
-				"src/styl/slider.styl"
-			],
-			[
-				"slider",
-				"src/styl/slider.styl"
-			],
-			[
-				"gr",
+				"gri",
 				"src/styl/grid.styl"
 			],
 			[
-				"form",
-				"src/styl/forms.styl"
-			],
-			[
-				"set",
+				"se",
 				"src/styl/settings.styl"
 			],
 			[
-				"app",
-				"src/coffee/app.coffee"
+				"social",
+				"src/styl/modules/social-group.styl"
 			],
 			[
 				"sett",
 				"src/styl/settings.styl"
 			],
 			[
-				"inde",
+				"index.st",
 				"src/styl/index.styl"
 			],
 			[
-				"in",
-				"src/jade/index.jade"
+				"index.s",
+				"node_modules/nib/index.styl"
 			],
 			[
-				"grad",
-				"src/styl/gradient.styl"
+				"index",
+				"node_modules/autoprefixer-stylus/index.js"
+			],
+			[
+				"set",
+				"src/styl/settings.styl"
 			],
 			[
 				"gra",
+				"src/styl/gradients.styl"
+			],
+			[
+				"soci",
+				"src/styl/modules/social-group.styl"
+			],
+			[
+				"soc",
+				"src/styl/modules/social-group.styl"
+			],
+			[
+				"button",
+				"src/styl/buttons.styl"
+			],
+			[
+				"ban",
+				"src/styl/modules/banner.styl"
+			],
+			[
+				"coff",
+				"build/tasks/coffee.coffee"
+			],
+			[
+				"head",
+				"src/styl/header.styl"
+			],
+			[
+				"pro",
+				"src/styl/projects.styl"
+			],
+			[
+				"home",
+				"src/jade/views/home.jade"
+			],
+			[
+				"main",
+				"src/scss/main.scss"
+			],
+			[
+				"index.sc",
+				"src/scss/pages/_index.scss"
+			],
+			[
+				"content",
+				"src/scss/modules/_content-box.scss"
+			],
+			[
+				"typogra",
+				"src/scss/components/_typography.scss"
+			],
+			[
+				"typ",
+				"build/.sass-cache/dd7002cac676ddf7eb4ae65354df6d4dedbc7de1/_typography.scssc"
+			],
+			[
+				"service.",
+				"app/views/account/storefront/service.blade.php"
+			],
+			[
+				"acc",
+				"src/scss/pages/_account.scss"
+			],
+			[
+				"account.sc",
+				"src/scss/pages/_account.scss"
+			],
+			[
+				"location",
+				"app/views/account/storefront/location.blade.php"
+			],
+			[
+				"over",
+				"app/views/account/storefront/overview.blade.php"
+			],
+			[
+				"doggrid",
+				"src/scss/components/_dog-grid.scss"
+			],
+			[
+				"content-box.sc",
+				"src/scss/modules/_content-box.scss"
+			],
+			[
+				"choose",
+				"app/views/account/choose-plan.blade.php"
+			],
+			[
+				"main.sc",
+				"src/scss/main.scss"
+			],
+			[
+				"foot",
+				"src/styl/footer.styl"
+			],
+			[
+				"nav",
+				"src/styl/nav.styl"
+			],
+			[
+				"ty",
 				"src/styl/typography.styl"
 			],
 			[
-				"fomr",
+				"hea",
+				"src/styl/header.styl"
+			],
+			[
+				"ba",
+				"src/styl/base.styl"
+			],
+			[
+				"proj",
+				"src/styl/projects.styl"
+			],
+			[
+				"gul",
+				"build/gulpfile.js"
+			],
+			[
+				"form",
 				"src/styl/forms.styl"
+			],
+			[
+				"slide",
+				"src/styl/slider.styl"
+			],
+			[
+				"anim",
+				"src/styl/animations.styl"
+			],
+			[
+				"but",
+				"src/styl/buttons.styl"
+			],
+			[
+				"for",
+				"src/styl/forms.styl"
+			],
+			[
+				"bow",
+				"bower.json"
+			],
+			[
+				"styl.c",
+				"build/tasks/styl.coffee"
+			],
+			[
+				"app",
+				"src/coffee/app.coffee"
+			],
+			[
+				"index.jad",
+				"src/jade/index.jade"
+			],
+			[
+				"slider",
+				"src/styl/slider.styl"
+			],
+			[
+				"foo",
+				"src/styl/footer.styl"
+			],
+			[
+				"menu",
+				"src/styl/menu.styl"
+			],
+			[
+				"bas",
+				"src/styl/base.styl"
+			],
+			[
+				"kyla",
+				"kyla.sublime-project"
+			],
+			[
+				"",
+				"src/jade/views/home.jade"
+			],
+			[
+				"index.ja",
+				"src/jade/index.jade"
+			],
+			[
+				"mix",
+				"src/styl/mixins.styl"
+			],
+			[
+				"gulp",
+				"build/gulpfile.js"
+			],
+			[
+				"pos",
+				"src/styl/modules/module-post.styl"
+			],
+			[
+				"varia",
+				"src/styl/variables.styl"
+			],
+			[
+				"settingssty",
+				"build/node_modules/axis/axis/settings.styl"
+			],
+			[
+				"settings",
+				"build/node_modules/axis/axis/settings.styl"
+			],
+			[
+				"wrapp",
+				"src/core/wrapper.tpl.jade"
+			],
+			[
+				"show",
+				"src/core/show-post/show-post.tpl.jade"
+			],
+			[
+				"ani",
+				"src/styl/animations.styl"
+			],
+			[
+				"dog",
+				"src/core/dog-profile/dog-profile.tpl.jade"
+			],
+			[
+				"post",
+				"src/styl/modules/module-post.styl"
+			],
+			[
+				"postt",
+				"src/core/feed/post-types.jade"
+			],
+			[
+				"about",
+				"src/core/settings/about/settings-about.tpl.jade"
+			],
+			[
+				"footer",
+				"src/common/directives/main-footer/main-footer.tpl.jade"
+			],
+			[
+				"profile",
+				"src/core/user-profile/user-profile.tpl.jade"
+			],
+			[
+				"profi",
+				"src/core/dog-profile/dog-profile.tpl.jade"
+			],
+			[
+				"create",
+				"src/core/create-post/create-post.tpl.jade"
+			],
+			[
+				"lost",
+				"src/core/create-post/lost-dog/lost-dog.tpl.jade"
+			],
+			[
+				"profil",
+				"src/core/dog-profile/dog-profile.tpl.jade"
+			],
+			[
+				"prfo",
+				"src/core/user-profile/user-profile.tpl.jade"
+			],
+			[
+				"wrapper",
+				"src/core/wrapper.tpl.jade"
+			],
+			[
+				"datefil",
+				"src/common/filters/diff-date.fil.js"
+			],
+			[
+				"an",
+				"src/styl/animations.styl"
+			],
+			[
+				"lis",
+				"src/styl/modules/module-list.styl"
+			],
+			[
+				"men",
+				"src/common/modals/menu/menu.tpl.jade"
+			],
+			[
+				"myfriends",
+				"src/core/settings/my-friends/settings-my-friends.tpl.jade"
+			],
+			[
+				"myfri",
+				"src/core/settings/my-friends/settings-my-friends.tpl.jade"
+			],
+			[
+				"diff",
+				"src/common/filters/diff-date.fil.js"
+			],
+			[
+				"mod",
+				"src/styl/modules/module-modal.styl"
+			],
+			[
+				"login",
+				"src/core/account/login/login.tpl.jade"
+			],
+			[
+				"modal",
+				"src/styl/modules/module-modal.styl"
+			],
+			[
+				"current",
+				"src/common/directives/current-day-summary/current-day-summary.tpl.jade"
+			],
+			[
+				"user",
+				"src/core/user-profile/user-profile.tpl.jade"
+			],
+			[
+				"my",
+				"src/core/feed/my-dogs/my-dogs.tpl.jade"
+			],
+			[
+				"mydog",
+				"src/core/feed/my-dogs/my-dogs.tpl.jade"
+			],
+			[
+				"misc",
+				"src/styl/modules/module-misc.styl"
+			],
+			[
+				"load",
+				"src/common/directives/loading/loading.tpl.jade"
+			],
+			[
+				"feed",
+				"src/core/feed/feed.ctrl.js"
+			],
+			[
+				"mapst",
+				"src/styl/modules/module-map.styl"
+			],
+			[
+				"base",
+				"src/styl/base.styl"
+			],
+			[
+				"prof",
+				"src/core/user-profile/user-profile.tpl.jade"
+			],
+			[
+				"toolt",
+				"src/common/modals/tooltip/tooltip.tpl.jade"
+			],
+			[
+				"summa",
+				"src/styl/modules/module-summary.styl"
+			],
+			[
+				"mis",
+				"src/styl/modules/module-misc.styl"
+			],
+			[
+				"friend",
+				"src/core/settings/my-friends/add-friends/add-friends.tpl.jade"
+			],
+			[
+				"setting",
+				"src/core/settings/my-friends/settings-my-friends.tpl.jade"
+			],
+			[
+				"b",
+				"src/styl/buttons.styl"
+			],
+			[
+				"typejade",
+				"src/core/dog-profile/owner-type/owner-type.tpl.jade"
+			],
+			[
+				"edit",
+				"src/core/settings/groups/edit-group/edit-group.tpl.jade"
+			],
+			[
+				"group",
+				"src/core/settings/groups/settings-groups.tpl.jade"
+			],
+			[
+				"editgr",
+				"src/core/settings/groups/edit-group/edit-group.tpl.jade"
+			],
+			[
+				"list",
+				"src/styl/modules/module-list.styl"
+			],
+			[
+				"buton",
+				"src/styl/buttons.styl"
+			],
+			[
+				"place",
+				"src/styl/placeholders.styl"
+			],
+			[
+				"bu",
+				"src/styl/buttons.styl"
+			],
+			[
+				"butotn",
+				"src/styl/buttons.styl"
+			],
+			[
+				"inde",
+				"app/src/index.jade"
+			],
+			[
+				"preor",
+				"src/core/order/preorder/preorder.tpl.jade"
+			],
+			[
+				"vend",
+				"public/js/vendor.js"
+			],
+			[
+				"bower.js",
+				"build/tasks/bower.js"
+			],
+			[
+				"bower",
+				"build/bower.json"
+			],
+			[
+				"clea",
+				"build/tasks/clean.js"
+			],
+			[
+				"hero",
+				"src/styl/modules/module-hero.styl"
+			],
+			[
+				"header",
+				"src/styl/modules/module-header.styl"
+			],
+			[
+				"listst",
+				"src/styl/modules/module-list.styl"
+			],
+			[
+				"preo",
+				"src/core/order/preorder/preorder.tpl.jade"
+			],
+			[
+				"lgoo",
+				"public/svg/symbols/logo.svg"
+			],
+			[
+				"logo",
+				"src/svg/symbols/logo.svg"
+			],
+			[
+				"faq",
+				"src/core/info/faq.tpl.jade"
+			],
+			[
+				"anima",
+				"src/styl/animations.styl"
+			],
+			[
+				"navbar",
+				"src/jade/includes/navbar.jade"
+			],
+			[
+				"act",
+				"app/src/core/activities/activities.tpl.jade"
+			],
+			[
+				"myfr",
+				"app/src/core/settings/my-friends/settings-my-friends.tpl.jade"
+			],
+			[
+				"wooftale",
+				"app/src/core/create-wooftale/create-wooftale.tpl.jade"
 			]
 		],
 		"width": 0.0
@@ -1165,7 +1871,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 395.0,
+	"side_bar_width": 183.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

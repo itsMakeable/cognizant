@@ -34,7 +34,7 @@ $button
 	color white
 	background-color blue
 	text-align center
-	transition background-color 0.1s ease, transform 0.1s linear, color 0.1s ease
+	transition background-color 0.2s ease, transform 0.1s linear, color 0.1s ease
 	text-decoration none
 	transform scale(1)
 	border-bottom transparent
@@ -47,7 +47,7 @@ $button
 	&:hover
 		color white
 		background-color darkblue
-		transition background-color 0.2s ease, transform 0.1s linear
+		transition background-color 0.2s ease, transform 0.1s linear, color 0.2s ease
 	&:active
 		color white
 		background-color darkblue
@@ -82,6 +82,7 @@ $button
 		color blue
 	&:hover
 		color darkblue
+		border-bottom 1px solid rgba(blue,0.2)
 	&:active
 		color darkblue
 		transform scale(0.98)

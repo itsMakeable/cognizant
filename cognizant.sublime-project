@@ -2,16 +2,15 @@
 	"folders":
 	[
 		{
+			"path": ".",
 			"folder_exclude_patterns":
 			[
-				// "app",
+				"app",
 				"node_modules",
-				"tmp"
-			],
-			"path": "."
-		},
-		{
-			"path": "/Users/Kyla/Sites/styleguide.js"
+				"tmp",
+				"design"
+			]
+
 		}
 	],
 	"settings":
