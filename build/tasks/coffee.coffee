@@ -12,17 +12,19 @@ gulp.task 'coffee', ->
 		.pipe($.order([
 			'**/plugins/*'
 		]))
-		.pipe $.concat('app.js')
+		.pipe $.concat('zapp.js')
 		.pipe $.accord('coffee-script')
 		.pipe $.jshint()
 		.pipe $.jshint.reporter(stylish)
 		.pipe gulp.dest('./tmp/js')
+		
 
 
 gulp.task 'js', ->
 	gulp.src(['./tmp/js/vendor/*.js','./tmp/js/*.js'])
 		.pipe($.order([
-			'**/jquery.*'
+			'tmp/js/vendor/*.js'
+			'tmp/js/*.js'
 		]))
 		# .pipe($.accord('uglify-js', {
 		# 	beautify: true
@@ -30,4 +32,4 @@ gulp.task 'js', ->
 		# }))
 		.pipe $.concat 'app.js'
 		.pipe gulp.dest 'app'
-		.pipe browserSync.reload({stream:true})
+		.pipe gulp.dest('./docs/styleguide/js')

@@ -1,0 +1,71 @@
+// SEARCH ////////////////////////////////////
+
+/*!**
+  title: Search
+  section: Main Search
+  example: |
+    <div class="search-module search-module--main">
+      <div class="search__icon gradient6--horizontal">
+        <i>
+        <svg viewBox="0 0 100 100">
+          <use xlink:href="includes/symbols.svg#icon_search"></use>
+        </svg>
+        </i>
+      </div>
+      <input type="text" class="search__input" placeholder='Search Within Folders'>
+      <div class="search__share">
+        <svg viewBox="0 0 100 100">
+          <use xlink:href="includes/symbols.svg#icon_share"></use>
+        </svg>
+      </div>
+    </div>
+***/
+.search-module--main
+  col(1/1)
+  color white
+  position relative
+  
+.search__input
+  padding 0 9.4rem
+  height 6.4rem
+  fs(2.5rem)
+  line-height 1
+  color black
+  font-family proxReg
+  
+.search__input::-webkit-input-placeholder
+  font-family proxRegIt
+  color gray
+
+.search__input::input-placeholder
+  font-family proxRegIt
+  color gray
+
+.search__icon,
+.search__share
+  size 6.4rem
+  display: block
+  position absolute
+  top 0
+  z-index 1
+  
+.search__icon
+  left 0
+  &:after
+    content ''
+    display block
+    position absolute
+    right -12px
+    z-index: -1
+    top 0
+    bottom 0
+    margin auto
+    width 0
+    height 0
+    border-style solid
+    border-width 13px 0 13px 15px
+    border-color transparent transparent transparent #6db33f
+
+.search__share
+  background-color blue
+  right 0

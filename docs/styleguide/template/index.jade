@@ -4,18 +4,17 @@ html
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
 
-    title Styleguide
+    title Cognizant Styleguide
 
     style
-      |!{ templateCss }
-  body
+      include:styl styleguide.styl
+
+  body(class = currentPath)
     .container
-      h1.title-large Styleguide
+      h1.title-large Cognizant Styleguide
       time.generated Generated at #{Date()}
 
       hr
-
-      include ../../../README.md
       
       nav.nav
         ul
@@ -48,21 +47,14 @@ html
                       | !{element.example.join(' ').trim()}
                     else
                       | !{element.example.trim()}
+          hr
 
-          //- hr.small
+      .markdown-container
+        p COGNIZANT README
+        include:md ../../../README.md
 
-      //- nav.index
-      //-   ul
-      //-     for elements, section in docs
-      //-       li
-      //-         a(href="##{section.replace(/[^a-z0-9]/ig,'')}") #{section}
-      //-         ul
-      //-           for element, i in elements
-      //-             if element.visible != 'false'
-      //-               li #{element.title}
-
-      textarea.sourceCss= css
       textarea.sourceJs= js
+      textarea.sourceCss= css
 
     script
       |!{ templateJs }

@@ -11,7 +11,6 @@ rupture = require('rupture')
 jeet = require('jeet')
 autoprefixer = require('autoprefixer-stylus')
 
-
 gulp.task 'styl', ->
 	# compress: true
 	# .pipe(autoprefixer())
@@ -54,8 +53,8 @@ gulp.task 'styleguide', ->
 			'tmp/css/ProximaNova-RegIt.css',
 			'tmp/css/ProximaNova-Sbold.css' 
 		]
-		extraJs: [ 'docs/holder.min.js' ]
-		templateCss: 'docs/styleguide/template/styleguide.css'
+		extraJs: [ 'docs/styleguide/js/app.js', 'docs/styleguide/js/holder.min.js' ]
+		# templateCss: 'docs/styleguide/template/styleguide.css'
 		templateJs: 'docs/styleguide/template/styleguide.js'
 		template: 'docs/styleguide/template/index.jade'
 		outputFile: 'docs/styleguide/index.html'

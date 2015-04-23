@@ -21,7 +21,7 @@ gulp.task 'watch', ['browser-sync'], ->
 	gulp.watch [ 'src/coffee/**/**/*.coffee' ], ['coffee']
 	gulp.watch [ './tmp/css/*' ], ['css', 'styleguide']
 	gulp.watch [ './docs/styleguide/template/*', './README.md' ], ['styleguide']
-	gulp.watch [ './tmp/js/*' ], ['js']
+	gulp.watch [ './tmp/js/**/*.js' ], ['js']
 
 
 gulp.task 'default', (cb) ->

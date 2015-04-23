@@ -1,14 +1,22 @@
-# Cognizant
-
 ## Build
-Install Node, on a Mac:
-'brew i node'
+If not already installed, install Node, on a Mac:
 
-If not already installed globally:
-'npm i gulp bower -g'
+`brew i node`
 
-'bower i'
+If not already installed globally, install gulp and bower:
 
-'npm i'
+`npm i gulp bower -g`
 
-'gulp'
+Install Bower Front-End Components:
+
+`bower i`
+
+Install Node Build Components:
+
+`npm i`
+
+$$$:
+
+`gulp`
+
+## Notes

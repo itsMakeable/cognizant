@@ -4,59 +4,59 @@
   title: Social Group Module
   section: Group Modules
   example: |
-    <div class="social-group-module">
-     <div class="row">
-       <div class="social-group__hr"></div>
-       <i class='social-group__hr-carrot'>
-       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 12.2"><path fill="currentColor" d="M21 0h-1.3l-9.2 10.6L1.3 0H0l10.5 12.2"/><path fill="#FFF" d="M19.7 0H1.3l9.2 10.6"/></svg>
+    <div class='social-group-module'>
+     <div class='row'>
+       <div class='social-group__hr'></div>
+       <i class='social-group__hr-carrot is-left'>
+       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21 12.2'><path fill='currentColor' d='M21 0h-1.3l-9.2 10.6L1.3 0H0l10.5 12.2'/><path fill='#FFF' d='M19.7 0H1.3l9.2 10.6'/></svg>
        </i>
      </div>
-     <div class="social-group__groups">
-      <i class="social-group__icon facebook is-active">
+     <div class='social-group__groups social-group__groups--icons'>
+      <i class='social-group__icon facebook is-active'>
         <div class='social-group__icon-slide'>
          
         </div>
       </i>
-      <i class="social-group__icon twitter">
+      <i class='social-group__icon twitter'>
         <div class='social-group__icon-slide'>
          
         </div>
       </i>
-      <i class="social-group__icon linkedin">
+      <i class='social-group__icon linkedin'>
         <div class='social-group__icon-slide'>
          
         </div>
       </i>
      </div>
-     <div class="social-group__groups">
-       <div class="social-group__group">
+     <div class='social-group__groups'>
+       <div class='social-group__group'>
          
-         <div class="social-group__content">
+         <div class='social-group__content'>
          	 <small>Cognizant @Cognizant - 34s ago</small>	
            <h2>80% surveyed agree that the speed of your #MobileApp determines its success! #UX #Mobility</h2>
          </div>
          <div class='social-group__CTA-container'>
-         <a href="" class='button--silent'>Read More</a>
+         <a href=' class='button--silent'>Read More</a>
          </div>
        </div>
-       <div class="social-group__group">
+       <div class='social-group__group'>
          
-         <div class="social-group__content">
+         <div class='social-group__content'>
          	 <small>Cognizant @Cognizant - 34s ago</small>	
            <h2>80% surveyed agree that the speed of your #MobileApp determines its success! #UX #Mobility</h2>
          </div>
          <div class='social-group__CTA-container'>
-         <a href="" class='button--silent'>Read More</a>
+         <a href=' class='button--silent'>Read More</a>
          </div>
        </div>
-       <div class="social-group__group">
+       <div class='social-group__group'>
          
-         <div class="social-group__content">
+         <div class='social-group__content'>
          	 <small>Cognizant @Cognizant - 34s ago</small>	
            <h2>80% surveyed agree that the speed of your #MobileApp determines its success! #UX #Mobility</h2>
          </div>
          <div class='social-group__CTA-container'>
-         <a href="" class='button--silent'>Read More</a>
+         <a href=' class='button--silent'>Read More</a>
          </div>
        </div>
      </div>
@@ -65,9 +65,11 @@
 .social-group-module
   position relative
   text-align center
-  
   .button--silent
     text-align center
+  @media screen and (max-width: 670px)
+    .row
+     display none
     
 .social-group__hr
   height 1px
@@ -77,6 +79,8 @@
   top 116px
   z-index 0
   width 100%
+  @media screen and (max-width: 940px)
+    top 86px
   
 .social-group__hr-carrot
   size 2.6rem
@@ -86,70 +90,134 @@
   right 0
   margin auto
   color blue
+  transform translateX(0rem)
+  transition 0.5s cubic-bezier(.73,.49,.28,1.21)
+  &.is-long-distance
+    transition 0.5s cubic-bezier(.73,.88,0,1.15) 0.02s
+  &.is-left
+    transform translateX(-780%)
+  &.is-right
+    transform translateX(780%)
+  @media screen and (max-width: 1024px)
+    &.is-left
+      transform translateX(-815%)
+    &.is-right
+      transform translateX(815%)
+  @media screen and (max-width: 940px)
+    &.is-left
+      transform translateX(-536%)
+    &.is-right
+      transform translateX(536%)
+  @media screen and (max-width: 940px)
+    top 86px
   
 .social-group__icon
   text-align center
-  col(4/12)
+  height 8.2rem
+  position relative
+  overflow hidden
+  width 24.6rem
   &.facebook
-    background transparent url(svg/symbols/social_facebook.svg) no-repeat
-    background-size auto 100%
+    background transparent url(svg/social__facebook.svg) no-repeat
+    background-size 24.6rem 8.2rem
     background-position 50% 50%
   &.twitter
-    background transparent url(svg/symbols/social_twitter.svg) no-repeat
-    background-size auto 100%
+    background transparent url(svg/social__twitter.svg) no-repeat
+    background-size 24.6rem 8.2rem
     background-position 50% 50%
   &.linkedin
-    background transparent url(svg/symbols/social_linkedin.svg) no-repeat
-    background-size auto 100%
+    background transparent url(svg/social__linkedin.svg) no-repeat
+    background-size 24.6rem 8.2rem
     background-position 50% 50%
+  @media screen and (max-width: 940px)
+    height 5.7rem 
+    width 17.2rem
+    &.facebook
+      background transparent url(svg/social__facebook.svg) no-repeat
+      background-size 17.2rem 5.7rem 
+      background-position 50% 50%
+    &.twitter
+      background transparent url(svg/social__twitter.svg) no-repeat
+      background-size 17.2rem 5.7rem 
+      background-position 50% 50%
+    &.linkedin
+      background transparent url(svg/social__linkedin.svg) no-repeat
+      background-size 17.2rem 5.7rem 
+      background-position 50% 50%
+    
   &:nth-child(1)
-    left 10%
+    left 5%
     .social-group__icon-slide
-      left 10%
+      left 5%
   &:nth-child(3)
-    right 10%
+    right 5%
     .social-group__icon-slide
-      right 10%
-  img, svg
-    margin auto
-    display block
-    size 100% 8.2rem
-    position relative
-    z-index 1
-  path
-    width 100%
-  &:nth-child(1) img
-    float right
-  &:nth-child(3) img
-    float left
+      right 5%
+      transform translateX(-8.2rem)
+      @media screen and (max-width: 940px)
+        transform translateX(-5.7rem)
+        
 
+  &.is-active .social-group__icon-slide
+    transform translateX(0rem)
+    transition all 0.35s ease 0.15s
+
+.social-group__icon.is-active
+  + .social-group__icon
+    .social-group__icon-slide
+      transform translateX(-8.2rem)
+      @media screen and (max-width: 940px)
+        transform translateX(-5.7rem)
+        
+  
 .social-group__icon-slide
-  height 24.6rem 
-  width 100%
+  height 8.2rem 
+  width 24.6rem
   position absolute
   z-index -1
   bottom 0
   left 0
   right 0
-  top -1px
+  top 0
   margin auto
-  background url(svg/social_bg.svg) no-repeat
-  background-size auto 100%
+  background url(svg/social__bg--middle.svg) no-repeat
+  background-size 24.6rem 8.2rem
   background-position 50% 50%
-    
-.is-active .social-group__icon-slide
-    transform translateX(40px)
-
-.social-group__icon
-  height 8.2rem
-  position relative
-
+  transform translateX(8.2rem)
+  transition all 0.35s ease 0s
+  @media screen and (max-width: 940px)
+    height 5.7rem 
+    width 17.2rem
+    background-size 17.2rem 5.7rem
+    transform translateX(5.7rem)
+  
+.is-active.is-long-distance 
+  .social-group__icon-slide
+    transition all 0.2s ease 0.2s
+  
 .social-group__groups
   col(10/12, offset: 1/12)
   overflow hidden
+  @media screen and (max-width: 1140px)
+    col(1/1, offset: 0/12)
 
+.social-group__groups--icons
+  @media screen and (max-width: 670px)
+    display none
+    
 .social-group__group
   col(4/12)
+  @media screen and (max-width: 670px)
+    stack(pad: 16%)
+    display none
+    &:first-of-type
+      display block
+  @media screen and (max-width: 540px)
+    stack(pad: 5%)
+    display none
+    &:first-of-type
+      display block
+
       
 .social-group__content
   padding 8rem 3rem 4rem
@@ -157,6 +225,8 @@
   margin-bottom 4rem
   background transparent
   text-align left
+  @media screen and (max-width: 1140px)
+    padding 8rem 0.5rem 4rem
   small
     color gray
     fs(1.6rem)
@@ -164,6 +234,11 @@
   h2
     color blue
     fs(2.4rem)
+  @media screen and (max-width: 940px)
+    small
+      fs(1.2rem)
+    h2
+      fs(1.9rem)
 
 .chrome,
 .safari
