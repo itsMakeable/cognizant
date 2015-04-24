@@ -25643,33 +25643,41 @@ return function (global, window, document, undefined) {
 
   MKBL = {};
 
+
+  /**
+   * This controls the social slider interaction
+   */
+
   MKBL.socialSlider = function() {
-    return $('.social-group__icon').on('click', function() {
-      var $this, curr, prev;
-      $this = $(this);
-      curr = $this.index();
-      prev = $('.social-group__icon.is-active').index();
-      $('.social-group__icon').removeClass('is-long-distance');
-      $('.social-group__hr-carrot').removeClass('is-long-distance');
-      if (Math.abs(prev - curr) === 2) {
-        $this.addClass('is-long-distance');
-        $('.social-group__hr-carrot').addClass('is-long-distance');
-      }
-      $('.social-group__icon').removeClass('is-active');
-      $this.addClass('is-active');
-      if ($this.index() === 0) {
-        $('.social-group__hr-carrot').removeClass('is-right');
-        return $('.social-group__hr-carrot').addClass('is-left');
-      } else if ($this.index() === 2) {
-        $('.social-group__hr-carrot').removeClass('is-left');
-        return $('.social-group__hr-carrot').addClass('is-right');
-      } else {
-        return $('.social-group__hr-carrot').removeClass('is-right').removeClass('is-left');
-      }
-    });
+    var $caret, $this, $thisRelatedContent, prevIndex, thisIndex;
+    $this = $(this);
+    $caret = $('#js-social-caret');
+    $thisRelatedContent = $('.social-group__groups--text');
+    thisIndex = $this.index();
+    prevIndex = $('.social-group__icon.is-active').index();
+    $('.social-group__icon').removeClass('is-long-distance').removeClass('is-active');
+    $caret.removeClass('is-long-distance');
+    $thisRelatedContent.removeClass('is-long-distance');
+    if (Math.abs(prevIndex - thisIndex) > 1) {
+      $this.addClass('is-long-distance');
+      $('.social-group__icon').eq(1).addClass('is-long-distance');
+      $caret.addClass('is-long-distance');
+      $thisRelatedContent.addClass('is-long-distance');
+    }
+    $this.addClass('is-active');
+    $thisRelatedContent.removeClass('is-active');
+    $thisRelatedContent.eq(thisIndex).addClass('is-active');
+    switch (thisIndex) {
+      case 0:
+        return $caret.removeClass('is-right').addClass('is-left');
+      case 2:
+        return $caret.removeClass('is-left').addClass('is-right');
+      default:
+        return $caret.removeClass('is-right').removeClass('is-left');
+    }
   };
 
-  $(function() {
+  $('.social-group__icon').on('click', function() {
     return MKBL.socialSlider();
   });
 
