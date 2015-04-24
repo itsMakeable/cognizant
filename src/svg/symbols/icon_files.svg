@@ -6,9 +6,9 @@
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="files" sketch:type="MSArtboardGroup" fill="#000000">
-            <g id="Imported-Layers" sketch:type="MSLayerGroup" transform="translate(14.000000, 14.000000)">
-                <path d="M5.28977273,3.73170732 L19,3.73170732 L19,16.8963415 L5.28977273,16.8963415 L5.28977273,3.73170732 Z M6.36931818,15.8597561 L17.9204545,15.8597561 L17.9204545,4.76829268 L6.36931818,4.76829268 L6.36931818,15.8597561 Z" id="Fill-1" sketch:type="MSShapeGroup"></path>
-                <path d="M0.107954545,0 L0.107954545,13.1646341 L3.36451136,13.1646341 L3.36451136,12.1280488 L1.1875,12.1280488 L1.1875,1.03658537 L12.7386364,1.03658537 L12.7386364,2.14220732 L13.8181818,2.14220732 L13.8181818,0 L0.107954545,0" id="Fill-2" sketch:type="MSShapeGroup"></path>
+            <g id="Imported-Layers" sketch:type="MSLayerGroup" transform="translate(0.000000, 2.000000)">
+                <path d="M12.5284091,9 L45,9 L45,40.75 L12.5284091,40.75 L12.5284091,9 Z M15.0852273,38.25 L42.4431818,38.25 L42.4431818,11.5 L15.0852273,11.5 L15.0852273,38.25 Z" id="Fill-1" sketch:type="MSShapeGroup"></path>
+                <path d="M0.255681818,0 L0.255681818,31.75 L7.96857955,31.75 L7.96857955,29.25 L2.8125,29.25 L2.8125,2.5 L30.1704545,2.5 L30.1704545,5.1665 L32.7272727,5.1665 L32.7272727,0 L0.255681818,0" id="Fill-2" sketch:type="MSShapeGroup"></path>
             </g>
         </g>
     </g>

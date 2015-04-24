@@ -40,6 +40,7 @@ MKBL.socialSlider = ($this) ->
 		else 
 			$caret.removeClass('is-right').removeClass('is-left')
 
+
 $('.social-group__icon').on 'click',  ->
 	$this = $(this)
 	MKBL.socialSlider($this)

@@ -55,38 +55,44 @@
     </div>
 ***/
 .three-group-module
-	position relative
-	text-align center
-	
+  position relative
+  text-align center
+  
 .three-group__hr
-	height 1px
-	// @extend .gradient5--horizontal
-	background-color backgray
-	position relative
-	margin 0 11%
-	top 70px
-	z-index -1
+  height 1px
+  // @extend .gradient5--horizontal
+  background-color backgray
+  position relative
+  margin 0 11%
+  top 70px
+  z-index -1
   
 .three-group__groups
-	cf()
+  cf()
 
 .three-group__group
-	col(4/12)
-
+  col(4/12)
+  @media screen and (max-width: 960px)
+    stack(pad: 25%)
+    margin-bottom 6rem
+    
 .three-group__title
-	margin 2rem 0 2.4rem
+  margin 2rem 0 2.4rem
 
 .three-group__icon
-	background-color backgray
-	size 13rem
-	box-shadow: 0 2px 2px -1px green
-	border-radius 50%
-	position relative
-	img, svg
-		@extend $center-align
+  background-color backgray
+  size 13rem
+  box-shadow: 0 2px 2px -1px green
+  border-radius 50%
+  position relative
+  img, svg
+    @extend $center-align
 
 .three-group__content
-	background-color backgray
-	padding 3rem 3rem 4rem
-	color darkgray
-	margin-bottom 4rem
+  background-color backgray
+  padding 3rem 3rem 4rem
+  color darkgray
+  margin-bottom 4rem
+  @media screen and (max-width: 960px)
+    padding 3rem 3rem 3rem
+    margin-bottom 1rem
