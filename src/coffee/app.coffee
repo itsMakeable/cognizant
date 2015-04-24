@@ -3,8 +3,8 @@ MKBL = {}
 ###*
  * This controls the social slider interaction
 ###
-MKBL.socialSlider = ->
-	$this = $(this)
+MKBL.socialSlider = ($this) ->
+	
 	$caret = $('#js-social-caret')
 	$thisRelatedContent = $('.social-group__groups--text')
 
@@ -41,4 +41,5 @@ MKBL.socialSlider = ->
 			$caret.removeClass('is-right').removeClass('is-left')
 
 $('.social-group__icon').on 'click',  ->
-	MKBL.socialSlider()
+	$this = $(this)
+	MKBL.socialSlider($this)

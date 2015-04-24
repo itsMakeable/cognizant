@@ -312,7 +312,7 @@ iframe body {
 .hljs-chunk {
   color: #aaa;
 }
-</style></head><body><div class="container"><h1 class="title-large">Cognizant Styleguide</h1><time class="generated">Generated at Fri Apr 24 2015 14:48:32 GMT-0400 (EDT)</time><hr><nav class="nav"><ul><li><a href="#BannerModules">Banner Modules</a><ul><li>Main Banner</li></ul></li><li><a href="#BoxModules">Box Modules</a><ul><li>Flow Box Large</li><li>Flow Box Small</li></ul></li><li><a href="#ButtonsLinks">Buttons &amp; Links</a><ul><li>Primary Button</li><li>Silent Button</li></ul></li><li><a href="#Colors">Colors</a><ul><li>Horizontal Gradients</li><li>Vertical Gradients</li></ul></li><li><a href="#GroupModules">Group Modules</a><ul><li>Social Group Module</li><li>Three Group Module</li></ul></li><li><a href="#ListModules">List Modules</a><ul><li>Content List</li><li>Headline List</li></ul></li><li><a href="#MainSearch">Main Search</a><ul><li>Search</li></ul></li><li><a href="#Typography">Typography</a><ul><li>Body</li><li>Headers</li></ul></li></ul></nav><div id="BannerModules" class="section"><h2 class="title-medium">Banner Modules</h2><div class="guide"><h3 class="title-small">Main Banner<a href="javascript:void(null)" class="toggle">Toggle source</a></h3><div class="preview"><iframe scrolling="no"></iframe></div><div class="source hidden"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'banner-module'</span>&gt;</span>
+</style></head><body><div class="container"><h1 class="title-large">Cognizant Styleguide</h1><time class="generated">Generated at Fri Apr 24 2015 14:55:12 GMT-0400 (EDT)</time><hr><nav class="nav"><ul><li><a href="#BannerModules">Banner Modules</a><ul><li>Main Banner</li></ul></li><li><a href="#BoxModules">Box Modules</a><ul><li>Flow Box Large</li><li>Flow Box Small</li></ul></li><li><a href="#ButtonsLinks">Buttons &amp; Links</a><ul><li>Primary Button</li><li>Silent Button</li></ul></li><li><a href="#Colors">Colors</a><ul><li>Horizontal Gradients</li><li>Vertical Gradients</li></ul></li><li><a href="#GroupModules">Group Modules</a><ul><li>Social Group Module</li><li>Three Group Module</li></ul></li><li><a href="#ListModules">List Modules</a><ul><li>Content List</li><li>Headline List</li></ul></li><li><a href="#MainSearch">Main Search</a><ul><li>Search</li></ul></li><li><a href="#Typography">Typography</a><ul><li>Body</li><li>Headers</li></ul></li></ul></nav><div id="BannerModules" class="section"><h2 class="title-medium">Banner Modules</h2><div class="guide"><h3 class="title-small">Main Banner<a href="javascript:void(null)" class="toggle">Toggle source</a></h3><div class="preview"><iframe scrolling="no"></iframe></div><div class="source hidden"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'banner-module'</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'banner__text'</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>Cognizant Connections<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>An exclusive online community for technology and business
@@ -26375,9 +26375,8 @@ return function (global, window, document, undefined) {
    * This controls the social slider interaction
    */
 
-  MKBL.socialSlider = function() {
-    var $caret, $this, $thisRelatedContent, prevIndex, thisIndex;
-    $this = $(this);
+  MKBL.socialSlider = function($this) {
+    var $caret, $thisRelatedContent, prevIndex, thisIndex;
     $caret = $('#js-social-caret');
     $thisRelatedContent = $('.social-group__groups--text');
     thisIndex = $this.index();
@@ -26405,7 +26404,9 @@ return function (global, window, document, undefined) {
   };
 
   $('.social-group__icon').on('click', function() {
-    return MKBL.socialSlider();
+    var $this;
+    $this = $(this);
+    return MKBL.socialSlider($this);
   });
 
 }).call(this);

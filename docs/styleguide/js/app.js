@@ -25648,9 +25648,8 @@ return function (global, window, document, undefined) {
    * This controls the social slider interaction
    */
 
-  MKBL.socialSlider = function() {
-    var $caret, $this, $thisRelatedContent, prevIndex, thisIndex;
-    $this = $(this);
+  MKBL.socialSlider = function($this) {
+    var $caret, $thisRelatedContent, prevIndex, thisIndex;
     $caret = $('#js-social-caret');
     $thisRelatedContent = $('.social-group__groups--text');
     thisIndex = $this.index();
@@ -25678,7 +25677,9 @@ return function (global, window, document, undefined) {
   };
 
   $('.social-group__icon').on('click', function() {
-    return MKBL.socialSlider();
+    var $this;
+    $this = $(this);
+    return MKBL.socialSlider($this);
   });
 
 }).call(this);
