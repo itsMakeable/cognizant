@@ -5,8 +5,8 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="cognizanti" sketch:type="MSArtboardGroup" fill="#231F1F">
-            <g id="Imported-Layers" sketch:type="MSLayerGroup" transform="translate(13.000000, 11.000000)">
+        <g id="cognizanti" sketch:type="MSArtboardGroup" fill="currentColor">
+            <g id="Imported-Layers" sketch:type="MSLayerGroup" transform="translate(13.000000, 11.000000)" >
                 <path d="M10.5,24 C10.424,24 10.347,23.983 10.276,23.947 L0.276,18.947 C0.107,18.862 0,18.69 0,18.5 L0,3 C0,2.827 0.09,2.666 0.237,2.575 C0.384,2.484 0.568,2.476 0.724,2.553 L10.5,7.441 L20.276,2.553 C20.432,2.475 20.615,2.483 20.763,2.575 C20.91,2.666 21,2.827 21,3 L21,18.5 C21,18.69 20.893,18.862 20.724,18.947 L10.724,23.947 C10.653,23.983 10.576,24 10.5,24 L10.5,24 Z M1,18.191 L10.5,22.941 L20,18.191 L20,3.809 L10.724,8.447 C10.583,8.518 10.417,8.518 10.276,8.447 L1,3.809 L1,18.191 L1,18.191 Z" id="Fill-1" sketch:type="MSShapeGroup"></path>
                 <path d="M10.499,6.024 C10.422,6.024 10.344,6.006 10.273,5.97 L2.273,1.922 C2.027,1.797 1.928,1.496 2.053,1.25 C2.177,1.003 2.479,0.905 2.725,1.029 L10.499,4.964 L18.273,1.029 C18.519,0.905 18.82,1.003 18.945,1.25 C19.07,1.496 18.971,1.797 18.725,1.922 L10.725,5.97 C10.654,6.006 10.576,6.024 10.499,6.024" id="Fill-2" sketch:type="MSShapeGroup"></path>
                 <path d="M10.5,24 C10.224,24 10,23.776 10,23.5 L10,8 C10,7.724 10.224,7.5 10.5,7.5 C10.776,7.5 11,7.724 11,8 L11,23.5 C11,23.776 10.776,24 10.5,24" id="Fill-3" sketch:type="MSShapeGroup"></path>

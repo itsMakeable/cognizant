@@ -13,33 +13,29 @@ gulp.task 'symbols', ['svgmin'], ->
 	return gulp.src('src/svg/symbols/*.svg')
 		.pipe $.plumber(errorHandler: onError)
 		.pipe $.cache($.svgmin())
-		.pipe $.cheerio(
-			run: (find) ->
-				find('[fill]').attr 'fill', 'currentColor'
-				find('[stroke]').attr 'fill', 'currentColor'
-				
-			parserOptions:
-				xmlMode: true
-		)
+		
 		.pipe $.svgstore(
 			fileName: 'symbols.svg'
 			inlineSvg: true
 		)
-		
+		.pipe $.cheerio(
+			run: (jQuery) ->
+				jQuery('[fill]').not('[fill="url(#gradient)"]').attr 'fill', 'currentColor'
+				jQuery('[stroke]').attr 'stroke', 'currentColor'
+			parserOptions:
+				xmlMode: true
+		)
 		.pipe gulp.dest( 'docs/styleguide/includes' )
 		.pipe gulp.dest( 'src/jade/includes' )
-	# gulp.src('src/svg/symbols/*.svg')
-	#	.pipe($.plumber(errorHandler: onError))
-	# 	.pipe($.replace(/(#010101)/g, 'currentColor'))
-	# 	.pipe($.svgmin())
-	# 	.pipe gulp.dest('app/svg/')
 
 gulp.task 'svg', ['symbols'], ->
 	return gulp.src('src/jade/includes/symbols.svg')
 		.pipe $.cheerio(
-			run: (find) ->
-				find('svg').css 
+			run: (jQuery) ->
+				jQuery('svg').css 
 					position: 'absolute'
-					left: '-9999px'
+					height: '0'
+					width: '0'
+					visibility: 'hidden'
 			)
 		.pipe gulp.dest('src/jade/includes')
