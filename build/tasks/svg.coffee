@@ -16,6 +16,7 @@ gulp.task 'symbols', ['svgmin'], ->
 		.pipe $.cheerio(
 			run: (find) ->
 				find('[fill]').attr 'fill', 'currentColor'
+				find('[stroke]').attr 'fill', 'currentColor'
 				
 			parserOptions:
 				xmlMode: true
