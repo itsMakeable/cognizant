@@ -25649,15 +25649,16 @@ return function (global, window, document, undefined) {
    */
 
   MKBL.socialSlider = function($this) {
-    var $caret, $thisRelatedContent, prevIndex, thisIndex;
+    var $caret, $thisMobileRelatedContent, $thisRelatedContent, prevIndex, thisIndex;
     $caret = $('#js-social-caret');
     $thisRelatedContent = $('.social-group__groups--text');
+    $thisMobileRelatedContent = $('.social-group__groups--mobile .social-group__groups');
+    $('.social-group__icon').removeClass('is-long-distance').removeClass('is-active');
     thisIndex = $this.index();
     prevIndex = $('.social-group__icon.is-active').index();
-    $('.social-group__icon').removeClass('is-long-distance').removeClass('is-active');
     $caret.removeClass('is-long-distance');
     $thisRelatedContent.removeClass('is-long-distance');
-    if (Math.abs(prevIndex - thisIndex) > 1) {
+    if (Math.abs(prevIndex - thisIndex) > 1 && $(window).outerWidth > 540) {
       $this.addClass('is-long-distance');
       $('.social-group__icon').eq(1).addClass('is-long-distance');
       $caret.addClass('is-long-distance');
@@ -25665,7 +25666,9 @@ return function (global, window, document, undefined) {
     }
     $this.addClass('is-active');
     $thisRelatedContent.removeClass('is-active');
+    $thisMobileRelatedContent.removeClass('is-active');
     $thisRelatedContent.eq(thisIndex).addClass('is-active');
+    $thisMobileRelatedContent.eq(thisIndex).addClass('is-active');
     switch (thisIndex) {
       case 0:
         return $caret.removeClass('is-right').addClass('is-left');

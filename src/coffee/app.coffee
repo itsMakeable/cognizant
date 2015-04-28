@@ -4,21 +4,22 @@ MKBL = {}
  * This controls the social slider interaction
 ###
 MKBL.socialSlider = ($this) ->
-	
 	$caret = $('#js-social-caret')
-	$thisRelatedContent = $('.social-group__groups--text')
 
-	thisIndex = $this.index()
-	prevIndex = $('.social-group__icon.is-active').index()		
+	$thisRelatedContent = $('.social-group__groups--text')	
+	$thisMobileRelatedContent = $('.social-group__groups--mobile .social-group__groups')
 
 	$('.social-group__icon')
 		.removeClass('is-long-distance')
 		.removeClass('is-active')
 
 	# Changes speed of the animation depeding on how far it has to go
+	thisIndex = $this.index()
+	prevIndex = $('.social-group__icon.is-active').index()	
+
 	$caret.removeClass('is-long-distance')
 	$thisRelatedContent.removeClass('is-long-distance')
-	if Math.abs(prevIndex - thisIndex) > 1
+	if Math.abs(prevIndex - thisIndex) > 1 && $(window).outerWidth > 540
 		$this.addClass('is-long-distance')
 		$('.social-group__icon').eq(1).addClass('is-long-distance')
 		$caret.addClass('is-long-distance')
@@ -26,7 +27,9 @@ MKBL.socialSlider = ($this) ->
 
 	$this.addClass('is-active')
 	$thisRelatedContent.removeClass('is-active')
+	$thisMobileRelatedContent.removeClass('is-active')
 	$thisRelatedContent.eq(thisIndex).addClass('is-active')
+	$thisMobileRelatedContent.eq(thisIndex).addClass('is-active')
 	switch thisIndex
 		# When the new active icon is the left icon 
 		when 0

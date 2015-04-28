@@ -98,7 +98,7 @@ xcuserdata/
 ignore
 tmp
 app
-#.tmp
+.tmp
 dev
 design
 node_modules

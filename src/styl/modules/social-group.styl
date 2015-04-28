@@ -139,7 +139,7 @@
        </div>
        <div class='social-group__groups--mobile'>
         
-         <div class='social-group__groups is-active'>
+         <div class='social-group__groups social-group__groups--text is-active'>
            <div class='social-group__content'>
              <small>Cognizant @Cognizant<span> - 34s ago</span></small> 
              <h2>80% surveyed agree that the speed of your #MobileApp determines its success! #UX #Mobility</h2>
@@ -149,7 +149,7 @@
            </div>
          </div>
          
-         <div class='social-group__groups'>
+         <div class='social-group__groups social-group__groups--text'>
            <div class='social-group__content'>
              <small>Cognizant @Cognizant<span> - 34s ago</span></small> 
              <h2>Our clients range from FTSE 300 companies, to large charitable organisations and some small local businesses who are striving to expand. </h2>
@@ -159,7 +159,7 @@
            </div>
          </div>
          
-         <div class='social-group__groups'>
+         <div class='social-group__groups social-group__groups--text'>
            <div class='social-group__content'>
              <small>Cognizant @Cognizant<span> - 34s ago</span></small> 
              <h2>80% surveyed agree that the speed of your #MobileApp determines its success! #UX #Mobility</h2>
@@ -190,7 +190,6 @@
   z-index 0
   width 100%
 
-  
 .social-group__hr-caret
   size 2.6rem
   position: absolute
@@ -213,6 +212,13 @@
     &.is-right
       transform translateX(815%)
   +below(940px)
+    transition 0.6s cubic-bezier(.73,.88,0,1.02)
+    &.is-left
+      transform translateX(-530%)
+    &.is-right
+      transform translateX(530%)
+  +below(768px)
+    transition 0.6s cubic-bezier(.73,.88,0,1.02)
     &.is-left
       transform translateX(-482%)
     &.is-right
@@ -229,6 +235,7 @@
   position relative
   overflow hidden
   color gray
+  transition 0.1s linear 0.25s
   svg
     display none
   &.facebook
@@ -274,8 +281,9 @@
       background-size (24.6rem * 0.6) (8.2rem * 0.6)
       background-position 50% 50%
   +below(540px)
-    height 3.42rem 
-    width 5.6rem
+    height auto
+    width 4rem
+    margin 0 1rem
     &.facebook,
     &.twitter,
     &.linkedin
@@ -300,9 +308,12 @@
         transform translateX(-8.2rem * 0.7)
       +below(768px)
         transform translateX(-8.2rem * 0.6)
-  &.is-active .social-group__icon-slide
-    transform translateX(0rem)
-    transition all 0.32s ease 0.15s
+  &.is-active 
+    color blue
+    transition 0.3s linear 0.25s
+    .social-group__icon-slide
+      transform translateX(0rem)
+      transition all 0.32s ease 0.15s
 
 .social-group__icon.is-active
   + .social-group__icon
@@ -384,18 +395,18 @@
       fs(1.9rem)
   +below(680px)
     padding 1rem 0rem 2rem
-    small
-      display none
     h2
       height auto
 
 .social-group__groups--mobile
   position relative
   margin-top 7rem
+  min-height 25rem
   +above(680px)    
     display none
   .social-group__groups
     margin-bottom 1rem
+    transform translateX(40rem)
     +below(680px)
       stack(pad: 16%)
       position absolute
@@ -405,7 +416,9 @@
         position relative
         opacity 1
         transform translateX(0rem)
-        transition opacity 0.2s linear 0.2s, transform 0.45s cubic-bezier(.73,.88,0,1.1) 0.12s
+        transition opacity 0.2s linear 0.05s, transform 0.68s cubic-bezier(.73,.88,0,1.02) 0s
+        ~ .social-group__groups
+          transform translateX(-40rem)
     +below(420px)
       stack(pad: 0)
       padding 0
