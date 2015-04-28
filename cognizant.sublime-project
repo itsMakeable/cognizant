@@ -6,7 +6,7 @@
 			"folder_exclude_patterns":
 			[
 				// "app",
-				// "node_modules",
+				"node_modules",
 				// "tmp",
 				"design"
 			]
