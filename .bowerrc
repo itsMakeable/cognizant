@@ -1,3 +1,4 @@
 {
-	"directory": "tmp/components/"
+	"directory": "tmp/components/",
+	"cwd": "build"
 }

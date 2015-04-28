@@ -36,7 +36,7 @@ gulp.task 'styl', ->
 gulp.task 'css', ->
 	return gulp.src('./tmp/css/**/*.css')
 		.pipe $.concat('index.css')
-		# .pipe $.cssmin()
+		.pipe $.csscomb()
 		.pipe gulp.dest('app')
 		.pipe browserSync.reload({stream:true})
 
@@ -54,11 +54,10 @@ gulp.task 'styleguide', ->
 			'tmp/css/ProximaNova-Sbold.css' 
 		]
 		extraJs: [ 
-			'docs/styleguide/js/holder.min.js' 
+			'build/styleguide/holder.min.js' 
 			'docs/styleguide/js/app.js', 
 			
 		]
-		# templateCss: 'docs/styleguide/template/styleguide.css'
-		templateJs: 'docs/styleguide/template/styleguide.js'
-		template: 'docs/styleguide/template/index.jade'
+		templateJs: 'build/styleguide/styleguide.js'
+		template: 'build/styleguide/index.jade'
 		outputFile: 'docs/styleguide/index.html'
