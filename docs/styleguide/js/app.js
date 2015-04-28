@@ -25649,10 +25649,9 @@ return function (global, window, document, undefined) {
    */
 
   MKBL.socialSlider = function($this) {
-    var $caret, $thisMobileRelatedContent, $thisRelatedContent, prevIndex, thisIndex;
+    var $caret, $thisRelatedContent, prevIndex, thisIndex;
     $caret = $('#js-social-caret');
     $thisRelatedContent = $('.social-group__groups--text');
-    $thisMobileRelatedContent = $('.social-group__groups--mobile .social-group__groups');
     $('.social-group__icon').removeClass('is-long-distance').removeClass('is-active');
     thisIndex = $this.index();
     prevIndex = $('.social-group__icon.is-active').index();
@@ -25668,7 +25667,6 @@ return function (global, window, document, undefined) {
     $thisRelatedContent.removeClass('is-active');
     $thisMobileRelatedContent.removeClass('is-active');
     $thisRelatedContent.eq(thisIndex).addClass('is-active');
-    $thisMobileRelatedContent.eq(thisIndex).addClass('is-active');
     switch (thisIndex) {
       case 0:
         return $caret.removeClass('is-right').addClass('is-left');
@@ -25678,6 +25676,16 @@ return function (global, window, document, undefined) {
         return $caret.removeClass('is-right').removeClass('is-left');
     }
   };
+
+  MKBL.shareFlyout = function($this) {
+    return $this.toggleClass('is-active').siblings('.search__share-flyout').eq(0).toggleClass('is-active');
+  };
+
+  $('.share-flyout__trigger').on('click', function() {
+    var $this;
+    $this = $(this);
+    return MKBL.shareFlyout($this);
+  });
 
   $('.social-group__icon').on('click', function() {
     var $this;

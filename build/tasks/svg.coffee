@@ -13,14 +13,13 @@ gulp.task 'symbols', ['svgmin'], ->
 	return gulp.src('src/svg/symbols/*.svg')
 		.pipe $.plumber(errorHandler: onError)
 		.pipe $.cache($.svgmin())
-		
 		.pipe $.svgstore(
 			fileName: 'symbols.svg'
 			inlineSvg: true
 		)
 		.pipe $.cheerio(
 			run: (jQuery) ->
-				jQuery('[fill]').not('[fill="url(#gradient)"]').attr 'fill', 'currentColor'
+				jQuery('[fill]').attr 'fill', 'currentColor'
 				jQuery('[stroke]').attr 'stroke', 'currentColor'
 			parserOptions:
 				xmlMode: true
@@ -29,7 +28,9 @@ gulp.task 'symbols', ['svgmin'], ->
 		.pipe gulp.dest( 'src/jade/includes' )
 
 gulp.task 'svg', ['symbols'], ->
-	return gulp.src('src/jade/includes/symbols.svg')
+	return gulp.src([
+		'src/jade/includes/symbols.svg'
+	])
 		.pipe $.cheerio(
 			run: (jQuery) ->
 				jQuery('svg').css 

@@ -7,7 +7,6 @@ MKBL.socialSlider = ($this) ->
 	$caret = $('#js-social-caret')
 
 	$thisRelatedContent = $('.social-group__groups--text')	
-	$thisMobileRelatedContent = $('.social-group__groups--mobile .social-group__groups')
 
 	$('.social-group__icon')
 		.removeClass('is-long-distance')
@@ -29,7 +28,6 @@ MKBL.socialSlider = ($this) ->
 	$thisRelatedContent.removeClass('is-active')
 	$thisMobileRelatedContent.removeClass('is-active')
 	$thisRelatedContent.eq(thisIndex).addClass('is-active')
-	$thisMobileRelatedContent.eq(thisIndex).addClass('is-active')
 	switch thisIndex
 		# When the new active icon is the left icon 
 		when 0
@@ -43,6 +41,17 @@ MKBL.socialSlider = ($this) ->
 		else 
 			$caret.removeClass('is-right').removeClass('is-left')
 
+
+MKBL.shareFlyout = ($this) ->
+	$this
+		.toggleClass('is-active')
+		.siblings('.search__share-flyout').eq(0)
+		.toggleClass('is-active')
+
+
+$('.share-flyout__trigger').on 'click',  ->
+	$this = $(this)
+	MKBL.shareFlyout($this)
 
 $('.social-group__icon').on 'click',  ->
 	$this = $(this)
