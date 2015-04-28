@@ -11,14 +11,23 @@
      
       <i class='social-group__icon facebook is-active'>
         <div class='social-group__icon-slide'></div>
+        <svg viewBox="0 0 100 100">
+          <use xlink:href="includes/symbols.svg#icon_facebook"></use>
+        </svg>
       </i>
       
       <i class='social-group__icon twitter'>
         <div class='social-group__icon-slide'></div>
+        <svg viewBox="0 0 100 100">
+          <use xlink:href="includes/symbols.svg#icon_twitter"></use>
+        </svg>
       </i>
       
       <i class='social-group__icon linkedin'>
         <div class='social-group__icon-slide'></div>
+        <svg viewBox="0 0 100 100">
+          <use xlink:href="includes/symbols.svg#icon_linkedin"></use>
+        </svg>
       </i>
       
      </div>
@@ -26,7 +35,7 @@
      <div class='row'>
        <div class='social-group__hr'></div>
        <i id='js-social-caret' class='social-group__hr-caret is-left'>
-       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21 12.2'><path fill='currentColor' d='M21 0h-1.3l-9.2 10.6L1.3 0H0l10.5 12.2'/><path fill='#FFF' d='M19.7 0H1.3l9.2 10.6'/></svg>
+       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21 12.2'><path fill='currentColor' d='M21 0h-1.3l-9.2 10.7L1.3 0H0l10.5 12.2'/><path fill='#FFF' d='M19.7 0H1.3l9.2 10.7'/></svg>
        </i>
      </div>
      <div class='row social-group__groups--texts'>
@@ -205,20 +214,23 @@
       transform translateX(815%)
   +below(940px)
     &.is-left
-      transform translateX(-536%)
+      transform translateX(-482%)
     &.is-right
-      transform translateX(536%)
+      transform translateX(482%)
   +below(540px)
     &.is-left
-      transform translateX(-170%)
+      transform translateX(-230%)
     &.is-right
-      transform translateX(170%)
+      transform translateX(230%)
 .social-group__icon
   text-align center
   height 8.2rem
+  width 24.6rem
   position relative
   overflow hidden
-  width 24.6rem 
+  color gray
+  svg
+    display none
   &.facebook
     background transparent url(svg/social__facebook.svg) no-repeat
     background-size 24.6rem 8.2rem
@@ -232,35 +244,45 @@
     background-size 24.6rem 8.2rem
     background-position 50% 50%
   +below(940px)
-    height 5.7rem 
-    width 17.2rem
+    height 8.2rem * 0.7
+    width 24.6rem * 0.7
     &.facebook
       background transparent url(svg/social__facebook.svg) no-repeat
-      background-size 17.2rem 5.7rem 
+      background-size (24.6rem * 0.7) (8.2rem * 0.7)
       background-position 50% 50%
     &.twitter
       background transparent url(svg/social__twitter.svg) no-repeat
-      background-size 17.2rem 5.7rem 
+      background-size (24.6rem * 0.7) (8.2rem * 0.7)
       background-position 50% 50%
     &.linkedin
       background transparent url(svg/social__linkedin.svg) no-repeat
-      background-size 17.2rem 5.7rem 
+      background-size (24.6rem * 0.7) (8.2rem * 0.7)
+      background-position 50% 50%
+  +below(768px)
+    height 8.2rem * 0.6
+    width 24.6rem * 0.6
+    &.facebook
+      background transparent url(svg/social__facebook.svg) no-repeat
+      background-size (24.6rem * 0.6) (8.2rem * 0.6)
+      background-position 50% 50%
+    &.twitter
+      background transparent url(svg/social__twitter.svg) no-repeat
+      background-size (24.6rem * 0.6) (8.2rem * 0.6)
+      background-position 50% 50%
+    &.linkedin
+      background transparent url(svg/social__linkedin.svg) no-repeat
+      background-size (24.6rem * 0.6) (8.2rem * 0.6)
       background-position 50% 50%
   +below(540px)
     height 3.42rem 
     width 5.6rem
-    &.facebook
-      background transparent url(svg/symbols/icon_facebook.svg) no-repeat
-      background-size 10.32rem 3.42rem
-      background-position 50% 50%
-    &.twitter
-      background transparent url(svg/symbols/icon_twitter.svg) no-repeat
-      background-size 10.32rem 3.42rem
-      background-position 50% 50%
+    &.facebook,
+    &.twitter,
     &.linkedin
-      background transparent url(svg/symbols/icon_linkedin.svg) no-repeat
-      background-size 10.32rem 3.42rem
-      background-position 50% 50%
+      background none
+      svg
+        display block
+
   &:nth-child(1)
     left 5%
     +below(540px)
@@ -275,8 +297,9 @@
       right 5%
       transform translateX(-8.2rem)
       +below(940px)
-        transform translateX(-5.7rem)
-
+        transform translateX(-8.2rem * 0.7)
+      +below(768px)
+        transform translateX(-8.2rem * 0.6)
   &.is-active .social-group__icon-slide
     transform translateX(0rem)
     transition all 0.32s ease 0.15s
@@ -286,8 +309,9 @@
     .social-group__icon-slide
       transform translateX(-8.2rem)
       +below(940px)
-        transform translateX(-5.7rem)
-        
+        transform translateX(-8.2rem * 0.7)
+      +below(768px)
+        transform translateX(-8.2rem * 0.6)
   
 .social-group__icon-slide
   height 8.2rem 
@@ -297,7 +321,7 @@
   bottom 0
   left 0
   right 0
-  top 0
+  top -0.1rem
   margin auto
   background url(svg/social__bg--middle.svg) no-repeat
   background-size 24.6rem 8.2rem
@@ -305,10 +329,15 @@
   transform translateX(8.2rem)
   transition all 0.35s ease 0s
   +below(940px)
-    height 5.7rem 
-    width 17.2rem
-    background-size 17.2rem 5.7rem
-    transform translateX(5.7rem)
+    height 8.2rem * 0.69
+    width 24.6rem * 0.69
+    background-size (24.6rem * 0.69) (8.2rem * 0.69)
+    transform translateX((8.2rem * 0.69))
+  +below(768px)
+    height 8.2rem * 0.59
+    width 24.6rem * 0.59
+    background-size (24.6rem * 0.59) (8.2rem * 0.59)
+    transform translateX((8.2rem * 0.59))
   +below(540px)
     display none
 .is-active
@@ -377,7 +406,7 @@
         opacity 1
         transform translateX(0rem)
         transition opacity 0.2s linear 0.2s, transform 0.45s cubic-bezier(.73,.88,0,1.1) 0.12s
-    +below(540px)
+    +below(420px)
       stack(pad: 0)
       padding 0
       
