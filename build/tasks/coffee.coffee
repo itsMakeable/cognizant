@@ -30,6 +30,6 @@ gulp.task 'js', ->
 		# 	beautify: true
 		# 	mangle: false
 		# }))
-		.pipe $.concat 'app.js'
+		.pipe $.concat 'main.js'
 		.pipe gulp.dest 'app'
 		.pipe gulp.dest('./docs/styleguide/js')

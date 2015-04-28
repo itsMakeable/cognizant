@@ -35,7 +35,7 @@ gulp.task 'styl', ->
 
 gulp.task 'css', ->
 	return gulp.src('./tmp/css/**/*.css')
-		.pipe $.concat('index.css')
+		.pipe $.concat('main.css')
 		.pipe $.csscomb()
 		.pipe gulp.dest('app')
 		.pipe browserSync.reload({stream:true})
@@ -55,8 +55,7 @@ gulp.task 'styleguide', ->
 		]
 		extraJs: [ 
 			'build/styleguide/holder.min.js' 
-			'docs/styleguide/js/app.js', 
-			
+			'docs/styleguide/js/main.js', 
 		]
 		templateJs: 'build/styleguide/styleguide.js'
 		template: 'build/styleguide/index.jade'
