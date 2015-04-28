@@ -4,6 +4,7 @@ del = require('del')
 gulp.task 'clean:svg', ->
 	return del [
 		'app/svg/**/*'
+		'docs/styleguide/svg/**/*'
 	],
 		force: true
 	, (err) ->
