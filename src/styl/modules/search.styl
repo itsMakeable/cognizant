@@ -5,7 +5,7 @@
   section: Main Search with Share Flyout
   example: |
     <div class="search-module search-module--main">
-      <div class="search__icon gradient6--horizontal">
+      <div class="search__icon">
         <i>
         <svg viewBox="0 0 100 100">
           <use xlink:href="includes/symbols.svg#icon_search"></use>
@@ -51,7 +51,7 @@
   padding 0 9.4rem
   height 6.4rem
   fs(2.5rem)
-  line-height 1
+  line-height: 4.8
   color black
   font-family proxReg
   
@@ -76,7 +76,9 @@
   
 .search__icon
   left 0
-  &:after
+  z-index 1
+  background hgradient66
+  &:before
     content ''
     display block
     position absolute

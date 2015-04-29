@@ -11,7 +11,7 @@ gulp.task 'svgmin', ['clean:svg'], ->
 		.pipe gulp.dest 'app/svg/'
 		.pipe gulp.dest 'docs/styleguide/svg'
 
-gulp.task 'symbols', ['svgmin'], ->
+gulp.task 'svg', ['svgmin'], ->
 	return gulp.src('src/svg/symbols/*.svg')
 		.pipe $.plumber(errorHandler: onError)
 		.pipe $.cache($.svgmin())
@@ -28,17 +28,3 @@ gulp.task 'symbols', ['svgmin'], ->
 		)
 		.pipe gulp.dest( 'docs/styleguide/includes' )
 		.pipe gulp.dest( 'src/jade/includes' )
-
-gulp.task 'svg', ['symbols'], ->
-	return gulp.src([
-		'src/jade/includes/symbols.svg'
-	])
-		.pipe $.cheerio(
-			run: (jQuery) ->
-				jQuery('svg').css 
-					position: 'absolute'
-					height: '0'
-					width: '0'
-					visibility: 'hidden'
-			)
-		.pipe gulp.dest('src/jade/includes')

@@ -64,7 +64,7 @@ $button
 	&.icon--left
 		padding-left 7.5rem
 		padding-right 1.6rem
-		i
+		i:first-of-type
 			size 4.5rem 2.75rem
 			position absolute
 			top 0
@@ -74,6 +74,19 @@ $button
 			margin auto
 			padding 0.2rem 0.9rem 0.2rem 0
 			border-right 1px solid rgba(white,0.2)
+	&.icon--floating--right
+		i:last-of-type
+			color blue
+			size 2.3rem
+			position absolute
+			top 0
+			bottom 0
+			margin auto
+			right -4rem
+			background-color transparent
+			transition color 0.2s ease
+			&:hover
+				color blue
 		
 
 /*!**
@@ -108,3 +121,12 @@ $button
 		transform scale(1) !important
 	&:visited
 		color blue
+
+/*!**
+  title: Linkedin Button
+  section: Buttons & Links
+  example: |
+    <a href="" class="button--primary icon--left icon--floating--right"><i class="icon"><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_linkedin"></use></svg></i>Sign In with Linkedin
+    <i class="icon question-mark"><svg viewbox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_info"></use></svg></i>
+    </a>
+***/

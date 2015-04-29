@@ -7,10 +7,11 @@
     <div class="header--main gradient1--horizontal">
       <h1>Latest Thinking</h1>
       <p>Explore our industry-leading insight. Tailored to solve your unique business challenges.</p>
-      <p class="subheader">Enhance with <i class="icon"><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_linkedin"></use></svg></i></p>
+      <p class="subheader">Enhance with <i class="icon"><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#logo_linkedin"></use></svg></i></p>
       <div>
-      <a href="" class="button--primary icon--left"><i class="icon"><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_linkedin"></use></svg></i>Sign In with Linkedin</a>
-      <i class="icon question-mark"></i>
+      <a href="" class="button--primary icon--left icon--floating--right"><i class="icon"><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_linkedin"></use></svg></i>Sign In with Linkedin
+      <i class="icon question-mark"><svg viewbox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_info"></use></svg></i>
+      </a>
       <div>
       <a href="" class="button--silent">Or tell us about yourself</a>
     </div>
@@ -20,6 +21,7 @@
     color white
     padding 7rem 0
     text-align center
+    position relative
     p
         color blue
         padding 2rem 0 0 0
@@ -30,6 +32,18 @@
     .subheader
         color white
         padding-bottom 9.5rem
+        line-height 1.35
         i
             height 2.4rem
             width 9.1rem
+            vertical-align top
+    .search-module--main
+      position absolute
+      bottom -9.2rem
+
+.header--section
+  padding 6rem 0
+  h1, h2, h3, h4, h5, h6, p
+    text-align center
+  p
+    color gray

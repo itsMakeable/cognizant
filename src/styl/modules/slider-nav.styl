@@ -1,0 +1,92 @@
+// HEADERS ////////////////////////////////////
+
+/*!**
+  title: Slider Nav Bar
+  section: Sliders
+  example: |
+    <div class="slider-nav-bar">
+      <div class="slider-nav-indicator"></div>
+    </div>
+***/
+.slider-nav-bar
+  height 0.5rem
+  background-color gray
+  
+.slider-nav-indicator
+  height inherit
+  width 10%
+  background: hgradient11
+
+/*!**
+  title: Slider Nav Controls
+  section: Sliders
+  example: |
+    <div class="slider-nav-controls">
+      <div class="slider-nav__control is-left">
+      <i class="icon is-right">
+        <svg viewBox="0 0 100 100">
+          <use xlink:href="includes/symbols.svg#icon_carrot"></use>
+        </svg>
+      </i>
+      <div class="button--silent">Previous</div>
+      </div>
+      <div class="slider-nav-controls__divider"></div>
+      <div class="slider-nav__control is-right">
+      <div class="button--silent">Next</div>
+      <i class="icon">
+        <svg viewBox="0 0 100 100">
+          <use xlink:href="includes/symbols.svg#icon_carrot"></use>
+        </svg>
+      </i>
+      </div>
+    </div>
+***/
+.slider-nav-controls
+  cf()
+  float none
+  margin 3rem auto 0
+  position: relative
+  max-width 26rem
+  .icon
+    size 2rem
+    color blue
+    position: absolute
+    right 0.6rem
+    top -0.1rem
+    &.is-right
+      transform rotate(180deg)
+      transform-origin 50% 50%
+      left 0
+
+.slider-nav-controls__divider
+  height 1.5rem
+  width 1px
+  background-color gray
+  display inline-block
+  margin auto
+  position: absolute
+  left 0
+  right 0
+  top 0
+  bottom 0
+  
+.slider-nav__control
+  width 50%
+  text-align center
+  .button--silent
+    margin 0 3rem
+  &.is-left
+    float left
+    text-align right
+    // .button--silent
+    //   margin-left 4rem
+  &.is-right
+    float right
+    text-align left
+    .button--silent
+      margin-left 2.2rem
+  &.is-disabled
+    .icon,
+    .button--silent
+      color gray
+  

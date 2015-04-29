@@ -60,12 +60,11 @@
     padding 2.2rem
     display inline-block
     position relative
+    height 26rem
     &.gradient1--vertical
         color darkblue
     &.gradient2--vertical
         color darkgreen
-    p
-        font-family proxLight
 
 .flow-box__content
     position relative
@@ -81,9 +80,12 @@
     position absolute
     left 2.2rem
     top 2.2rem
-    i
+    vertical-align baseline
+    .icon
         color gray
         size 1.2rem
+        margin-right 0.4rem
+        vertical-align inherit
     h4 
         span
             font-family proxReg
@@ -216,9 +218,19 @@
 
 .flow-box.flow-box--large
     padding 3.5rem
+    height 56rem
     .flow-box__CTA
         height 16.2rem
     .flow-box__tag
         left 3.5rem
     .flow-box__icon
         right 3.5rem
+
+.flow-box-slider
+    .flow-box--large
+        col(8/12)
+
+.flow-box__small-container
+    col(4/12)
+    .flow-box
+        margin-bottom 4rem
