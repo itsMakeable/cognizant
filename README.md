@@ -20,3 +20,5 @@ $$$:
 `gulp`
 
 ## Notes
+
+If images or svg are not being processed as expected, run `gulp clear` to clear the cache.

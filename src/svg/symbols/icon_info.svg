@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12005) - http://www.bohemiancoding.com/sketch -->
+    <title>info</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="100" sketch:type="MSArtboardGroup">
+            <g id="info" sketch:type="MSLayerGroup" transform="translate(3.000000, 3.000000)">
+                <circle id="Oval" stroke="#57B1CA" stroke-width="6.8889" sketch:type="MSShapeGroup" cx="47" cy="47" r="46.5"></circle>
+                <path d="M40.6,50.4 C40.6,40.5 52.7,39.4 52.7,33.7 C52.7,31.1 50.8,29 46.2,29 C42.1,29 38.6,31.1 36,34.1 L29.3,26.6 C33.7,21.5 40.3,18.6 47.4,18.6 C58.1,18.6 64.6,24 64.6,31.7 C64.6,43.8 50.8,44.7 50.8,51.7 C50.8,53 51.5,54.4 52.3,55.2 L43.3,57.8 C41.6,55.8 40.6,53.3 40.6,50.4 L40.6,50.4 Z M40.6,68.8 C40.6,65.2 43.7,62.1 47.3,62.1 C50.9,62.1 54,65.2 54,68.8 C54,72.4 50.9,75.5 47.3,75.5 C43.6,75.5 40.6,72.4 40.6,68.8 L40.6,68.8 Z" id="Shape" fill="#57B1CA" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

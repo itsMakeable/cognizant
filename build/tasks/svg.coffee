@@ -3,7 +3,9 @@ $ = require('gulp-load-plugins')(lazy: true)
 onError = require('../errors')
 
 gulp.task 'svgmin', ['clean:svg'], ->
-	return gulp.src('src/svg/**/*.svg')
+	gulp.src([
+			'src/svg/**/*.svg'
+		])
 		.pipe $.plumber errorHandler: onError
 		.pipe $.cache $.svgmin()
 		.pipe gulp.dest 'app/svg/'
