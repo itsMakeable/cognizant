@@ -36,11 +36,24 @@
 
 .content-list
     position relative
-    col(6/12)
+    col(6/12, gutter: 6)
+    margin-top 3rem
+    h2
+        font-family proxBold
+    @media screen and (max-width: 1024px)
+        stack(pad:10%)
+        margin-bottom 7rem
+        &:last-of-type
+            margin-bottom 0
+    @media screen and (max-width: 768px)
+        stack()
+        padding 0
+        
 .content-list__header
     h3
         color gray
         padding-top 0.2rem
+        font-family proxSbold
     
 .content-list__header-border
     height 0.2rem

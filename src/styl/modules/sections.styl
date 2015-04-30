@@ -15,13 +15,16 @@ section
 	color white
 		
 .top-bg
-	background-size: 100% auto !important
+	padding 3rem 0 0 0
 	background-position: 0% 0% !important
 	position static
+	// background-attachment: scroll !important
 	@media screen and (min-width: 1620px)
 		background-attachment: fixed !important
+		background-size: cover !important
 	@media screen and (max-width: 1619px)
 		background-attachment: scroll !important
+		background-size: 100% auto !important
 	.header--section
 		color white
 		h1,
@@ -38,3 +41,17 @@ section
 			background: url(svg/ui/bar_polygon.svg) no-repeat
 			background-size 100% 1.9rem
 			background-position 50% 0%
+	
+@media screen and (min-width: 1620px)
+	.height-overflow-section
+		height 57rem
+		overflow visible
+		.container
+			position absolute
+			left 0
+			right 0
+			margin auto
+			width 100%
+		+ section
+			padding-top 30rem
+	

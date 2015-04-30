@@ -22,6 +22,9 @@
     padding 7rem 0
     text-align center
     position relative
+    @media screen and (max-width: 1140px)
+      height auto
+      padding 3rem 0 1rem 0
     p
         color blue
         padding 2rem 0 0 0
@@ -40,6 +43,10 @@
     .search-module--main
       position absolute
       bottom -9.2rem
+      @media screen and (max-width: 1140px)
+        position: relative
+        bottom -8rem
+        
     @media screen and (max-width: 420px)
       .question-mark
         display none

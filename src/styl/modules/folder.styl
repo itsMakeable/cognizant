@@ -37,23 +37,33 @@
             </div>
         </div>
 ***/
-.folder-module-section
+.folder-module-headline-section
   background linear-gradient(35deg, darkblue 40%, lightblue 100%)
-  
+  .folder-module
+    margin 0
+  @media screen and (max-width: 1023px)
+    .folder-module
+      float none
+      width 34rem
+      margin 0 auto 4rem auto !important
+    .button--primary
+      align(horizontal)
+      
 .folder-module
   col(4/12)
   height 22.2rem
   position relative
   padding 2.2rem
   color white
-
+  box-shadow: 0 3px 3px -1px rgba(black,0.8)
+  
 .folder__profile-pic
-    position absolute
-    right 2.2rem
-    top 2.2rem
-    border-radius 50%
-    overflow: hidden
-    box-shadow: 0 2px 2px -1px rgba(black,0.5)
+  position absolute
+  right 2.2rem
+  top 2.2rem
+  border-radius 50%
+  overflow: hidden
+  box-shadow: 0 2px 2px -1px rgba(black,0.5)
     
 .folder__alert
     fs(1.2rem)
@@ -114,8 +124,9 @@
   
 .folder-module-callout
   col(7/12, offset: 1/12)
-  height 22rem
+  height 21rem
   position relative
+  float right
   > div
     align(vertical)
   h1
@@ -123,3 +134,29 @@
   p
     padding 1rem 0 2rem
     fs(1.5rem)
+  @media screen and (max-width: 1140px)
+    col(8/12)
+    float right
+    margin-left 3%
+    margin-right 0%
+  @media screen and (max-width: 1023px)
+    stack()
+    text-align center
+    height 18rem
+    padding-bottom 2rem
+    > div
+      position static
+      transform none
+    h1,
+    p
+      text-align center
+    .button--primary
+      margin auto
+      // display none
+      
+    
+.folder-module-callout__mobile-button
+  display none
+  // padding-bottom 6rem
+  // @media screen and (max-width: 1023px)
+  //   display block

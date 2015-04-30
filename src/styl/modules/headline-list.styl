@@ -35,6 +35,8 @@
 .headline-list-module
     position relative
     col(10/12, offset: 1/12)
+    @media screen and (max-width: 1140px)
+        stack()
     
 .headline-list__items
     cf()
@@ -64,19 +66,50 @@
     h3
         color gray
         padding-bottom 1rem
+        font-family proxSbold
+    @media screen and (max-width: 940px)
+        stack()
+        > h3
+            display none
     
 .headline-list__item-title-img
     width 5.8rem
     display inline-block
     vertical-align middle
     padding 0.5rem 1.2rem 0rem 0rem
-
+    @media screen and (max-width: 940px)
+        padding 0
+        col(1/10)
+    @media screen and (max-width: 620px)
+        col(2/10)
+        padding 0rem 1.2rem 0rem 0.5rem
+        // stack()
+        // svg
+        //     size 8rem
+        //     // margin 0 auto 1.6rem auto
+        //     margin 0 0 1.2rem 0
+        
 .headline-list__item-title
     fs(3rem)
     font-family proxBold
     line-height .875
     display inline-block
     vertical-align top
+    h3
+        display none
+        padding-top 0.2rem
+        padding-bottom 0.5rem
+    @media screen and (max-width: 1024px) and (min-width: 940px)
+        fs(2.4rem)
+    @media screen and (max-width: 940px)
+        br
+            display none
+        h3
+            display block
+    @media screen and (max-width: 620px)
+        col(8/10)
+            
+        
     
 .headline-list__item-content
     col(6/10)
@@ -85,8 +118,13 @@
     p
         color darkgray
         align(vertical)
-        
-        
+    @media screen and (max-width: 940px)
+        col(8/10, offset: 1/10)
+        margin-top 2rem
+    @media screen and (max-width: 620px)
+        stack()
+
+
 .headline-list__item-CTA
     height 100%
     position relative
@@ -106,6 +144,8 @@
         margin auto
         left 0
         right 0
+    @media screen and (max-width: 620px)
+        display none
     
 .headline-list__footer
     margin-top 3rem

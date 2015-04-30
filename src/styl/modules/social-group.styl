@@ -236,6 +236,7 @@
   overflow hidden
   color gray
   transition 0.1s linear 0.25s
+  cursor: pointer
   svg
     display none
   &.facebook
@@ -360,7 +361,7 @@
   
 .social-group__groups
   col(10/12, offset: 1/12)
-  overflow hidden
+  // overflow hidden
   +below(1024px)
     col(1/1, offset: 0/12)
     
@@ -368,7 +369,7 @@
   col(4/12)
   
 .social-group__content
-  padding 8rem 3rem 2rem
+  padding 8rem 0rem 2rem
   color darkgray
   background transparent
   text-align left
