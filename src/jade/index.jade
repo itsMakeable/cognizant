@@ -35,58 +35,59 @@ block content
 				h1 featured insight
 				p Subheader introducing Featured Thinking section.
 			.flow-box-slider
-				.row
-					.flow-box.flow-box--large.gradient2--vertical
-						.flow-box__tag
-							h4 Article | 
-								i.icon
-									svg(viewbox='0 0 100 100')
-										use(xlink:href='#icon_share')
-								span 10k
-						i.flow-box__icon
-							svg(viewbox='0 0 100 100')
-								use(xlink:href='#icon_pdf')
-						.flow-box__content
-							.flow-box__title
-								h3 Healthcare Consumerism:
-								h5 The Rise of the Empowered Healthcare Consumer
-								p Added for you on 12.14.14
-							.flow-box__CTA
-								.flow-box__CTA-description
-									p
-										strong A shift to individual healthcare.
-										| Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.
-								i.flow-box__CTA--left
-									svg(xmlns='http://www.w3.org/2000/svg', viewbox='-26 28 46 46')
-										title Favorite
-										path(stroke='#000', stroke-width='2.813', d='M17.6 44.3H3L-2.2 30c-.1-.4-.5-.6-.8-.6-.4 0-.7.2-.8.6L-9 44.3h-14.6c-.4 0-.7.2-.8.6-.1.4 0 .7.3 1l12.1 9.3-5.2 15.2c-.1.4 0 .8.3 1 .3.2.7.2 1.1 0L-3 62.1l12.9 9.3c.2.1.3.2.5.2s.4-.1.5-.2c.3-.2.4-.6.3-1L6.1 55.2l12.1-9.3c.3-.2.4-.6.3-1-.1-.3-.5-.6-.9-.6z')
-								i.flow-box__CTA--share
-									svg(width='46', height='46', viewbox='0 0 46 46', xmlns='http://www.w3.org/2000/svg')
-										title Share
-										path(d='M14.22 19.716l17.25-8.784-17.25 8.784zm-.32 5.886l17.25 8.784-17.25-8.784zM43.08 8.11c0 3.374-2.735 6.11-6.11 6.11-3.374 0-6.11-2.736-6.11-6.11 0-3.375 2.736-6.11 6.11-6.11 3.375 0 6.11 2.735 6.11 6.11zM14.22 22.677c0 3.375-2.736 6.11-6.11 6.11-3.375 0-6.11-2.735-6.11-6.11 0-3.373 2.735-6.11 6.11-6.11 3.374 0 6.11 2.737 6.11 6.11zM43.08 37.224c0 3.376-2.735 6.11-6.11 6.11-3.374 0-6.11-2.734-6.11-6.11 0-3.373 2.736-6.11 6.11-6.11 3.375 0 6.11 2.737 6.11 6.11z', stroke='#000', stroke-width='2.813', fill='none', fill-rule='evenodd')
-								i.flow-box__CTA--right
-									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_carrot')
-					.flow-box__small-container
-						each val, index in [1,2]
-							.flow-box.gradient1--vertical
-								.flow-box__tag
-									h4 Article | 
-										i.icon
-											svg(viewbox='0 0 100 100')
-												use(xlink:href='#icon_share')
-										span 10k
-								i.flow-box__icon
-									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_pdf')
-								.flow-box__content
-									.flow-box__title
-										h2 A Systematic Approach To Optimizing Collateral
-									.flow-box__CTA
-										i.flow-box__CTA--left
-											svg(xmlns='http://www.w3.org/2000/svg', viewbox='-26 28 46 46')
-												title Favorite
-												path(stroke='#000', stroke-width='2.813', d='M17.6 44.3H3L-2.2 30c-.1-.4-.5-.6-.8-.6-.4 0-.7.2-.8.6L-9 44.3h-14.6c-.4 0-.7.2-.8.6-.1.4 0 .7.3 1l12.1 9.3-5.2 15.2c-.1.4 0 .8.3 1 .3.2.7.2 1.1 0L-3 62.1l12.9 9.3c.2.1.3.2.5.2s.4-.1.5-.2c.3-.2.4-.6.3-1L6.1 55.2l12.1-9.3c.3-.2.4-.6.3-1-.1-.3-.5-.6-.9-.6z')
-										i.flow-box__CTA--right
-											svg(viewbox='0 0 100 100'): use(xlink:href='#icon_carrot')
+				each val, index in [1,2,3]
+					.row
+						.flow-box.flow-box--large.gradient2--vertical
+							.flow-box__tag
+								h4 Article | 
+									i.icon
+										svg(viewbox='0 0 100 100')
+											use(xlink:href='#icon_share')
+									span 10k
+							i.flow-box__icon
+								svg(viewbox='0 0 100 100')
+									use(xlink:href='#icon_pdf')
+							.flow-box__content
+								.flow-box__title
+									h3 Healthcare Consumerism:
+									h5 The Rise of the Empowered Healthcare Consumer
+									p Added for you on 12.14.14
+								.flow-box__CTA
+									.flow-box__CTA-description
+										p
+											strong A shift to individual healthcare.
+											| Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.
+									i.flow-box__CTA--left
+										svg(xmlns='http://www.w3.org/2000/svg', viewbox='-26 28 46 46')
+											title Favorite
+											path(stroke='#000', stroke-width='2.813', d='M17.6 44.3H3L-2.2 30c-.1-.4-.5-.6-.8-.6-.4 0-.7.2-.8.6L-9 44.3h-14.6c-.4 0-.7.2-.8.6-.1.4 0 .7.3 1l12.1 9.3-5.2 15.2c-.1.4 0 .8.3 1 .3.2.7.2 1.1 0L-3 62.1l12.9 9.3c.2.1.3.2.5.2s.4-.1.5-.2c.3-.2.4-.6.3-1L6.1 55.2l12.1-9.3c.3-.2.4-.6.3-1-.1-.3-.5-.6-.9-.6z')
+									i.flow-box__CTA--share
+										svg(width='46', height='46', viewbox='0 0 46 46', xmlns='http://www.w3.org/2000/svg')
+											title Share
+											path(d='M14.22 19.716l17.25-8.784-17.25 8.784zm-.32 5.886l17.25 8.784-17.25-8.784zM43.08 8.11c0 3.374-2.735 6.11-6.11 6.11-3.374 0-6.11-2.736-6.11-6.11 0-3.375 2.736-6.11 6.11-6.11 3.375 0 6.11 2.735 6.11 6.11zM14.22 22.677c0 3.375-2.736 6.11-6.11 6.11-3.375 0-6.11-2.735-6.11-6.11 0-3.373 2.735-6.11 6.11-6.11 3.374 0 6.11 2.737 6.11 6.11zM43.08 37.224c0 3.376-2.735 6.11-6.11 6.11-3.374 0-6.11-2.734-6.11-6.11 0-3.373 2.736-6.11 6.11-6.11 3.375 0 6.11 2.737 6.11 6.11z', stroke='#000', stroke-width='2.813', fill='none', fill-rule='evenodd')
+									i.flow-box__CTA--right
+										svg(viewbox='0 0 100 100'): use(xlink:href='#icon_carrot')
+						.flow-box__small-container
+							each val, index in [1,2]
+								.flow-box.gradient1--vertical
+									.flow-box__tag
+										h4 Article | 
+											i.icon
+												svg(viewbox='0 0 100 100')
+													use(xlink:href='#icon_share')
+											span 10k
+									i.flow-box__icon
+										svg(viewbox='0 0 100 100'): use(xlink:href='#icon_pdf')
+									.flow-box__content
+										.flow-box__title
+											h2 A Systematic Approach To Optimizing Collateral
+										.flow-box__CTA
+											i.flow-box__CTA--left
+												svg(xmlns='http://www.w3.org/2000/svg', viewbox='-26 28 46 46')
+													title Favorite
+													path(stroke='#000', stroke-width='2.813', d='M17.6 44.3H3L-2.2 30c-.1-.4-.5-.6-.8-.6-.4 0-.7.2-.8.6L-9 44.3h-14.6c-.4 0-.7.2-.8.6-.1.4 0 .7.3 1l12.1 9.3-5.2 15.2c-.1.4 0 .8.3 1 .3.2.7.2 1.1 0L-3 62.1l12.9 9.3c.2.1.3.2.5.2s.4-.1.5-.2c.3-.2.4-.6.3-1L6.1 55.2l12.1-9.3c.3-.2.4-.6.3-1-.1-.3-.5-.6-.9-.6z')
+											i.flow-box__CTA--right
+												svg(viewbox='0 0 100 100'): use(xlink:href='#icon_carrot')
 				.row
 					.slider-nav-bar
 						.slider-nav-indicator
@@ -152,12 +153,7 @@ block content
 				.folder__CTA
 					i.folder__CTA--right
 						svg(viewbox='0 0 100 100'): use(xlink:href='#icon_carrot')
-			div.row.folder-module-callout__mobile-button
-				a.button--primary.icon--left(href='')
-					i.icon
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_linkedin')
-					| Sign In with Linkedin
+
 	section
 		.container
 			header.header--section
@@ -263,8 +259,8 @@ block content
 										a(href='' class='button--silent') Read More
 						
 					.social-group__groups--mobile
-						each val, index in [1,2,3]
-							.social-group__groups.social-group__groups--text.is-active
+						each val, index in {1:'is-active',2:'',3:''}
+							.social-group__groups.social-group__groups--text(class="#{val}")
 								.social-group__content
 									small Cognizant @Cognizant
 										span - 34s ago

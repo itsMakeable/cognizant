@@ -11,7 +11,6 @@ MKBL.equalheight = (container, eqHeightChildren, cutoff) ->
 		# the height of the highest element (after the function runs)
 		t_elem = undefined
 		# the highest element (after the function runs)
-
 		$container = $(container)
 		$child = $(eqHeightChildren)
 		$($child, $container).each ->
