@@ -31,16 +31,22 @@ section
 		p
 			color inherit
 	.container
-		&:before
-			content ''
-			display block
-			width 100%
-			height 1.9rem
-			position relative
-			top -1.7rem
-			background: url(svg/ui/bar_polygon.svg) no-repeat
-			background-size 100% 1.9rem
-			background-position 50% 0%
+		@media screen and (min-width: 540px)
+			&:before
+				content ''
+				display block
+				width 100%
+				height 1.9rem
+				position relative
+				top -1.7rem
+				background: url(svg/ui/bar_polygon.svg) no-repeat
+				background-size 100% 1.9rem
+				background-position 50% 0%
+				@media screen and (max-width: 1140px)
+					position absolute
+					left 0
+					background-size auto 1.9rem
+			
 	
 @media screen and (min-width: 1620px)
 	.height-overflow-section

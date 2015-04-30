@@ -94,7 +94,6 @@
     display inline-block
     vertical-align middle
     margin 0 1rem
-    
     img
         border-radius 50%
 
@@ -135,8 +134,10 @@
     p
         padding-top 3.6rem
     h2
-        max-height 10rem
+        max-height 9.6rem
         overflow hidden
+        @media screen and (max-width: 1024px)
+            fs(2.4rem)
     h5
         max-height 18.7rem
         overflow hidden
@@ -245,14 +246,14 @@
 .flow-box-slider
     .flow-box--large
         col(8/12)
-    @media screen and (max-width: 1140px)
+    // @media screen and (max-width: 1140px)
+    //     .flow-box--large,
+    //     .slider-nav-bar
+    //         col(10/12, offset: 1/12)
+    @media screen and (max-width: 940px)
         .flow-box--large,
         .slider-nav-bar
-            col(10/12, offset: 1/12)
-    @media screen and (max-width: 1024px)
-        .flow-box--large,
-        .slider-nav-bar
-            col(12/12)
+            stack()
         .flow-box--large
             margin-bottom 4rem
             
@@ -261,10 +262,10 @@
     cf()
     .flow-box
         margin-bottom 4rem
-    @media screen and (max-width: 1140px)
-        col(10/12, offset: 1/12)
-        .flow-box
-            margin-top 3%
-            col(1/2)
-    @media screen and (max-width: 1024px)
+    // @media screen and (max-width: 1140px)
+    //     col(10/12, offset: 1/12)
+    //     .flow-box
+    //         margin-top 3%
+    //         col(1/2)
+    @media screen and (max-width: 940px)
         display none
