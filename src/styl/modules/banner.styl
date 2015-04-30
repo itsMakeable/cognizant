@@ -26,6 +26,7 @@
     position relative
     height 100%
     margin 2rem auto
+    cf()
     h2
         fs(4rem)
         upcase()
@@ -41,7 +42,7 @@
     .button--silent
         boder-bottom 1px solid rgba(white,0.2)
         color white
-        margin-top 1rem
+        margin 2rem 5.7rem 0 5.7rem
         &:hover
             color lightblue
             border-bottom 1px solid rgba(lightblue,0.2)
@@ -56,6 +57,9 @@
     text-align right
     position relative
     z-index 1
+    min-height 9rem
+    > div
+        align()
     
 @media screen and (max-width: 960px)
     .banner-module

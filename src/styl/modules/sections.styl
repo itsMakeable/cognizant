@@ -16,7 +16,6 @@ section
 		
 .top-bg
 	padding 3rem 0 0 0
-	
 	position static
 	// background-attachment: scroll !important
 	@media screen and (min-width: 1620px)
@@ -52,16 +51,17 @@ section
 				position absolute
 				left 0
 				background-size auto 1.9rem
-			
 	
 @media screen and (min-width: 1620px)
 	.height-overflow-section
 		height 57rem
 		overflow visible
-		.container
+		position: relative
+		.container.white-bg
 			position absolute
 			left 0
 			right 0
+			top 24rem
 			margin auto
 			width 100%
 		+ section

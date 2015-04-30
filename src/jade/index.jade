@@ -152,12 +152,12 @@ block content
 				.folder__CTA
 					i.folder__CTA--right
 						svg(viewbox='0 0 100 100'): use(xlink:href='#icon_carrot')
-			//- div.row.folder-module-callout__mobile-button
-			//- 	a.button--primary.icon--left(href='')
-			//- 		i.icon
-			//- 			svg(viewbox='0 0 100 100')
-			//- 				use(xlink:href='#icon_linkedin')
-			//- 		| Sign In with Linkedin
+			div.row.folder-module-callout__mobile-button
+				a.button--primary.icon--left(href='')
+					i.icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_linkedin')
+					| Sign In with Linkedin
 	section
 		.container
 			header.header--section
@@ -222,8 +222,9 @@ block content
 				h2 Cognizant Connections
 				p An exclusive online community for technology and business leaders.
 			.banner__CTA
-				button.button--primary Sign In
-				a.button--silent Learn More
+				div
+					button.button--primary Sign In
+					a.button--silent Learn More
 	
 	section
 		.container
@@ -248,93 +249,27 @@ block content
 						svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 21 12.2')
 							path(fill='currentColor', d='M21 0h-1.3l-9.2 10.7L1.3 0H0l10.5 12.2')
 							path(fill='#FFF', d='M19.7 0H1.3l9.2 10.7')
+
 				.row.social-group__groups--texts
-					.social-group__groups.social-group__groups--text.is-active
-						.social-group__group
-							.social-group__content
-								small Cognizant @Cognizant
-									span - 34s ago
-								h2 80% surveyed agree that the speed of your #MobileApp determines its success! #UX #Mobility
-							.social-group__CTA-container
-								a(href='' class='button--silent') Read More
-						.social-group__group
-							.social-group__content
-								small Cognizant @Cognizant
-									span - 34s ago
-								h2 Our clients range from FTSE 300 companies, to large charitable organisations and some small local businesses who are striving to expand.
-							.social-group__CTA-container
-								a(href='' class='button--silent') Read More
-						.social-group__group
-							.social-group__content
-								small Cognizant @Cognizant
-									span - 34s ago
-								h2 80% surveyed agree that the speed of your #MobileApp determines its success! #UX #Mobility
-							.social-group__CTA-container
-								a(href='' class='button--silent') Read More
-					.social-group__groups.social-group__groups--text
-						.social-group__group
-							.social-group__content
-								small Cognizant @Cognizant
-									span - 34s ago
-								h2 Our clients range from FTSE 300 companies, to large charitable organisations and some small local businesses who are striving to expand.
-							.social-group__CTA-container
-								a(href='' class='button--silent') Read More
-						.social-group__group
-							.social-group__content
-								small Cognizant @Cognizant
-									span - 34s ago
-								h2 80% surveyed agree that the speed of your #MobileApp determines its success! #UX #Mobility
-							.social-group__CTA-container
-								a(href='' class='button--silent') Read More
-						.social-group__group
-							.social-group__content
-								small Cognizant @Cognizant
-									span - 34s ago
-								h2 80% surveyed agree that the speed of your #MobileApp determines its success! #UX #Mobility
-							.social-group__CTA-container
-								a(href='' class='button--silent') Read More
-					.social-group__groups.social-group__groups--text
-						.social-group__group
-							.social-group__content
-								small Cognizant @Cognizant
-									span - 34s ago
-								h2 80% surveyed agree that the speed of your #MobileApp determines its success! #UX #Mobility
-							.social-group__CTA-container
-								a(href='' class='button--silent') Read More
-						.social-group__group
-							.social-group__content
-								small Cognizant @Cognizant
-									span - 34s ago
-								h2 Our clients range from FTSE 300 companies, to large charitable organisations and some small local businesses who are striving to expand.
-							.social-group__CTA-container
-								a(href='' class='button--silent') Read More
-						.social-group__group
-							.social-group__content
-								small Cognizant @Cognizant
-									span - 34s ago
-								h2 Our clients range from FTSE 300 companies, to large charitable organisations and some small local businesses who are striving to expand.
-							.social-group__CTA-container
-								a(href='' class='button--silent') Read More
+					each val, index in {1:'is-active',2:'',3:''}
+						.social-group__groups.social-group__groups--text(class="#{val}")
+							each val, index in [1,2,3]
+								.social-group__group
+									.social-group__content
+										small Cognizant @Cognizant
+											span - 34s ago
+										h2 80% surveyed agree that the speed of your #MobileApp determines its success! #UX #Mobility
+									.social-group__CTA-container
+										a(href='' class='button--silent') Read More
+						
 					.social-group__groups--mobile
-						.social-group__groups.social-group__groups--text.is-active
-							.social-group__content
-								small Cognizant @Cognizant
-									span - 34s ago
-								h2 80% surveyed agree that the speed of your #MobileApp determines its success! #UX #Mobility
-							.social-group__CTA-container
-								a(href='' class='button--silent') Read More
-						.social-group__groups.social-group__groups--text
-							.social-group__content
-								small Cognizant @Cognizant
-									span - 34s ago
-								h2 Our clients range from FTSE 300 companies, to large charitable organisations and some small local businesses who are striving to expand.
-							.social-group__CTA-container
-								a(href='' class='button--silent') Read More
-						.social-group__groups.social-group__groups--text
-							.social-group__content
-								small Cognizant @Cognizant
-									span - 34s ago
-								h2 80% surveyed agree that the speed of your #MobileApp determines its success! #UX #Mobility
-							.social-group__CTA-container
-								a(href='' class='button--silent') Read More
+						each val, index in [1,2,3]
+							.social-group__groups.social-group__groups--text.is-active
+								.social-group__content
+									small Cognizant @Cognizant
+										span - 34s ago
+									h2 80% surveyed agree that the speed of your #MobileApp determines its success! #UX #Mobility
+								.social-group__CTA-container
+									a(href='' class='button--silent') Read More
+						
 

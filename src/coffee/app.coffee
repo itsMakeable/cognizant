@@ -1,6 +1,27 @@
 MKBL = {}
 
 ###*
+ * Creates equal hieght divs
+ * @param  {[type]} container [description]
+ * @return {[type]}           [description]
+###
+MKBL.equalheight = (container, eqHeightChildren, cutoff) ->
+	if $(window).width() > cutoff
+		t = 0
+		# the height of the highest element (after the function runs)
+		t_elem = undefined
+		# the highest element (after the function runs)
+
+		$container = $(container)
+		$child = $(eqHeightChildren)
+		$($child, $container).each ->
+			$this = $(this)
+			if $this.outerHeight() > t
+				t_elem = this
+				t = $this.outerHeight()
+				$child.outerHeight(t)
+
+###*
  * This controls the social slider interaction
 ###
 MKBL.socialSlider = ($this) ->
@@ -56,3 +77,9 @@ $('.share-flyout__trigger').on 'click',  ->
 $('.social-group__icon').on 'click',  ->
 	$this = $(this)
 	MKBL.socialSlider($this)
+
+$ ->
+	MKBL.equalheight('.banner-module','.banner-module > div', 940)
+
+$(window).on 'resize', ->
+	MKBL.equalheight('.banner-module','.banner-module > div', 940)
