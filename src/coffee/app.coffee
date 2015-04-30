@@ -6,6 +6,7 @@ MKBL = {}
 MKBL.socialSlider = ($this) ->
 	$caret = $('#js-social-caret')
 	$thisRelatedContent = $('.social-group__groups--text')	
+	$thisMobileRelatedContent = $('.social-group__groups--mobile .social-group__groups')
 	# Changes speed of the animation depeding on how far it has to go
 	thisIndex = $this.index()
 	prevIndex = $('.social-group__icon.is-active').index()	
@@ -24,7 +25,9 @@ MKBL.socialSlider = ($this) ->
 
 	$this.addClass('is-active')
 	$thisRelatedContent.removeClass('is-active')
+	$thisMobileRelatedContent.removeClass('is-active')
 	$thisRelatedContent.eq(thisIndex).addClass('is-active')
+	$thisMobileRelatedContent.eq(thisIndex).addClass('is-active')
 	switch thisIndex
 		# When the new active icon is the left icon 
 		when 0

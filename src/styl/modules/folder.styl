@@ -48,7 +48,10 @@
       margin 0 auto 4rem auto !important
     .button--primary
       align(horizontal)
-      
+  @media screen and (max-width: 360px)
+      .folder-module
+        width 100%
+        
 .folder-module
   col(4/12)
   height 22.2rem
@@ -142,7 +145,8 @@
   @media screen and (max-width: 1023px)
     stack()
     text-align center
-    height 18rem
+    height auto
+    min-height 21rem
     padding-bottom 2rem
     > div
       position static

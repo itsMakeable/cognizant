@@ -16,36 +16,42 @@ section
 		
 .top-bg
 	padding 3rem 0 0 0
-	background-position: 0% 0% !important
+	
 	position static
 	// background-attachment: scroll !important
 	@media screen and (min-width: 1620px)
 		background-attachment: fixed !important
 		background-size: cover !important
+		background-position: 0% 0% !important
 	@media screen and (max-width: 1619px)
 		background-attachment: scroll !important
 		background-size: 100% auto !important
+		background-position: 0% 0% !important
+	@media screen and (max-width: 420px)
+		background-attachment: fixed !important
+		background-size: cover !important
+		background-position: 0% 100% !important
 	.header--section
 		color white
 		h1,
 		p
 			color inherit
-	.container
-		@media screen and (min-width: 540px)
-			&:before
-				content ''
-				display block
-				width 100%
-				height 1.9rem
+	.container.white-bg
+		&:before
+			content ''
+			display block
+			width 100%
+			height 1.9rem
+			background: url(svg/ui/bar_polygon.svg) no-repeat
+			background-size 100% 1.9rem
+			background-position 50% 0%
+			@media screen and (min-width: 540px)			
 				position relative
 				top -1.7rem
-				background: url(svg/ui/bar_polygon.svg) no-repeat
-				background-size 100% 1.9rem
-				background-position 50% 0%
-				@media screen and (max-width: 1140px)
-					position absolute
-					left 0
-					background-size auto 1.9rem
+			@media screen and (max-width: 1140px)
+				position absolute
+				left 0
+				background-size auto 1.9rem
 			
 	
 @media screen and (min-width: 1620px)
