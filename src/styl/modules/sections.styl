@@ -7,21 +7,27 @@ section
 	.header--section
 		h1
 			color blue
-			
+
+.white-bg
+	background-color white
+
+.color-bg
+	color white
+		
 .top-bg
 	background-size: 100% auto !important
-	background-position: 50% 50% !important
+	background-position: 0% 0% !important
 	position static
-	@media screen and (min-width: 1140px)
+	@media screen and (min-width: 1620px)
 		background-attachment: fixed !important
-	@media screen and (min-width: 1140px)
-		background-attachment: static !important
-	.header--section 
+	@media screen and (max-width: 1619px)
+		background-attachment: scroll !important
+	.header--section
 		color white
+		h1,
 		p
 			color inherit
 	.container
-		background-color white
 		&:before
 			content ''
 			display block

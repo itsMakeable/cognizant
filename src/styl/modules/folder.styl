@@ -37,7 +37,9 @@
             </div>
         </div>
 ***/
-
+.folder-module-section
+  background linear-gradient(35deg, darkblue 40%, lightblue 100%)
+  
 .folder-module
   col(4/12)
   height 22.2rem
@@ -68,9 +70,9 @@
     position relative
     display inline-block
     vertical-align top
-    margin-right 0.2rem
+    margin-right 0.8rem
     span
-        @extend $center-align
+        align()
         font-family proxSbold
 
 .folder__CTA
@@ -109,3 +111,15 @@
     left 0
 .folder__CTA--right
     right 0
+  
+.folder-module-callout
+  col(7/12, offset: 1/12)
+  height 22rem
+  position relative
+  > div
+    align(vertical)
+  h1
+    text-align left
+  p
+    padding 1rem 0 2rem
+    fs(1.5rem)

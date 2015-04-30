@@ -16,6 +16,9 @@
   height inherit
   width 10%
   background: hgradient11
+  cursor grab
+  &:active
+    cursor grabbing
 
 /*!**
   title: Slider Nav Controls
@@ -73,6 +76,7 @@
 .slider-nav__control
   width 50%
   text-align center
+  cursor pointer
   .button--silent
     margin 0 3rem
   &.is-left

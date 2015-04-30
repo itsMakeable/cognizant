@@ -17,7 +17,6 @@ MKBL.socialSlider = ($this) ->
 	$caret.removeClass('is-long-distance')
 	$thisRelatedContent.removeClass('is-long-distance')
 	if Math.abs(prevIndex - thisIndex) > 1 && $(window).outerWidth > 540
-		console.log thisIndex
 		$this.addClass('is-long-distance')
 		$('.social-group__icon').eq(1).addClass('is-long-distance')
 		$caret.addClass('is-long-distance')
