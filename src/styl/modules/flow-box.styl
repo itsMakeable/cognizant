@@ -66,6 +66,9 @@
     &.gradient2--vertical
         color darkgreen
 
+.no-gradient .flow-box
+    color darkblue !important
+
 .flow-box__content
     position relative
     height 100%
@@ -218,54 +221,24 @@
 ***/
 
     
-@media screen and (max-width: 768px)
-    .flow-box__CTA-description
-        display none
-    .flow-box.flow-box--large
-        min-height 36rem
+// @media screen and (max-width: 768px)
+//     // .flow-box__CTA-description
+//     //     display none
+//     .flow-box.flow-box--large
+//         min-height 36rem
 
-@media screen and (max-width: 420px)
-    .flow-box.flow-box--large
-        min-height 34rem
-    .flow-box__title h3
-        display none
-        
-@media screen and (min-width: 768px)
-    .flow-box.flow-box--large
-        padding 3.5rem
-        height 56rem
-        .flow-box__CTA
-            height 16.2rem
-        .flow-box__tag
-            left 3.5rem
-        .flow-box__icon
-            right 3.5rem
-    
-        
+// @media screen and (max-width: 420px)
+//     .flow-box.flow-box--large
+//         min-height 34rem
 
-.flow-box-slider
-    .flow-box--large
-        col(8/12)
-    // @media screen and (max-width: 1140px)
-    //     .flow-box--large,
-    //     .slider-nav-bar
-    //         col(10/12, offset: 1/12)
-    @media screen and (max-width: 940px)
-        .flow-box--large,
-        .slider-nav-bar
-            stack()
-        .flow-box--large
-            margin-bottom 4rem
-            
-.flow-box__small-container
-    col(4/12)
-    cf()
-    .flow-box
-        margin-bottom 4rem
-    // @media screen and (max-width: 1140px)
-    //     col(10/12, offset: 1/12)
-    //     .flow-box
-    //         margin-top 3%
-    //         col(1/2)
-    @media screen and (max-width: 940px)
-        display none
+        
+// @media screen and (min-width: 768px)
+.flow-box.flow-box--large
+    padding 3.5rem
+    height 56rem
+    .flow-box__CTA
+        height 16.2rem
+    .flow-box__tag
+        left 3.5rem
+    .flow-box__icon
+        right 3.5rem

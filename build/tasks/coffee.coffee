@@ -17,10 +17,8 @@ gulp.task 'coffee', ->
 		.pipe $.jshint()
 		.pipe $.jshint.reporter(stylish)
 		.pipe gulp.dest('./tmp/js')
-		
 
-
-gulp.task 'js', ->
+gulp.task 'js-watch', ->
 	gulp.src(['./tmp/js/vendor/*.js','./tmp/js/*.js'])
 		.pipe($.order([
 			'tmp/js/vendor/*.js'
@@ -33,3 +31,5 @@ gulp.task 'js', ->
 		.pipe $.concat 'main.js'
 		.pipe gulp.dest 'app'
 		.pipe gulp.dest('./docs/styleguide/js')
+
+gulp.task('js', ['js-watch'], browserSync.reload);

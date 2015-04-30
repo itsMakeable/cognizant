@@ -62,6 +62,29 @@ MKBL.socialSlider = ($this) ->
 			$caret.removeClass('is-right').removeClass('is-left')
 
 
+MKBL.flowBoxSliderSetup = ->
+	numOfSlides = $('.flow-box-slider').find('.flow-box-slider-group').length
+	$('.slider-nav-indicator').width((1/numOfSlides)*100 + '%')
+
+	MKBL.flowBoxSlider = ($slider, $slides, $activeSlide, direction) ->
+		if direction == 'next'
+			$slideNewActive = ($activeSlide.index() + 1) % numOfSlides
+			$slideNextIndex = ($slideNewActive + 1) % numOfSlides
+			$slidePrevIndex = ($slideNewActive - 1) % numOfSlides
+		else
+			$slideNewActive = ($activeSlide.index() - 1) % numOfSlides
+			$slideNextIndex = ($slideNewActive - 1) % numOfSlides
+			$slidePrevIndex = ($slideNewActive + 1) % numOfSlides
+
+		$slides
+			.removeClass('is-active')
+			.removeClass('is-prev')
+			.removeClass('is-next')
+		$slides.eq($slideNewActive).addClass('is-active')
+		$slides.eq($slidePrevIndex).addClass('is-prev')
+		$slides.eq($slideNextIndex).addClass('is-next')
+
+
 MKBL.shareFlyout = ($this) ->
 	$this
 		.toggleClass('is-active')
@@ -73,12 +96,25 @@ $('.share-flyout__trigger').on 'click',  ->
 	$this = $(this)
 	MKBL.shareFlyout($this)
 
+$('.slider-nav__control').on 'click', ->
+	$slider = $(this).closest('.flow-box-slider')
+	$slides = $slider.find('.flow-box-slider-group')
+	$activeSlide = $slider.find('.is-active')
+
+	direction = 'prev'
+	if $(this).hasClass('is-right')
+		direction = 'next'
+
+	MKBL.flowBoxSlider($slider, $slides, $activeSlide, direction)
+
+
 $('.social-group__icon').on 'click',  ->
 	$this = $(this)
 	MKBL.socialSlider($this)
 
 $ ->
 	MKBL.equalheight('.banner-module','.banner-module > div', 940)
+	MKBL.flowBoxSliderSetup()
 
 $(window).on 'resize', ->
 	MKBL.equalheight('.banner-module','.banner-module > div', 940)
