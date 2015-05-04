@@ -1,16 +1,15 @@
 MKBL = {}
 ###*
- * [matrixToArray description]
- * @param  {[type]} str [description]
- * @return {[type]}     [description]
+ * Converts matrix like rgba or transforms to an array
 ###
-matrixToArray = (str) ->
+MKBL.matrixToArray = (str) ->
   str.match /(-?[0-9\.]+)/g
 
 ###*
- * Creates equal hieght divs
- * @param  {[type]} container [description]
- * @return {[type]}           [description]
+ * [equalheight description]
+ * @param  {[type]} container        the container of the elements that will be equal height
+ * @param  {[type]} eqHeightChildren the elements that will be equal height
+ * @param  {[type]} cutoff           the window width cutoff for the elements to be equal height
 ###
 MKBL.equalheight = (container, eqHeightChildren, cutoff) ->
 	if $(window).width() > cutoff
@@ -68,50 +67,72 @@ MKBL.socialSlider = ($this) ->
 		else 
 			$caret.removeClass('is-right').removeClass('is-left')
 
-
+###*
+ * [flowBoxSliderSetup description]
+ * @return {[type]} [description]
+###
 MKBL.flowBoxSliderSetup = ->
 	numOfSlides = $('.flow-box-slider').find('.flow-box-slider-group').length
 	$slideIndicator = $('.slider-nav-indicator')
 	$slideIndicator.width((1/numOfSlides)*100 + '%')
 
-	slideAnimation = (translation, duration, delay) ->
+	###*
+	 * [flowBoxSlideAnimation description]
+	 * @param  {[type]} translation translation distance
+	 * @param  {[type]} duration    animation duration
+	 * @param  {[type]} delay       delay time
+	###
+	flowBoxSlideAnimation = (translation, duration, delay) ->
 		$slideIndicator.velocity({translateX: translation}, {
 				duration: duration || 900,
 				easing: [ 300, 28 ],
 				delay: delay || 150
 			})
+
+	###*
+	 * [flowBoxSlider description]
+	 * @param  {[type]} $slider      the parent slider element
+	 * @param  {[type]} $slides      the child slides
+	 * @param  {[type]} $activeSlide the slide that is visible
+	 * @param  {[type]} direction    the direction of the slide animation
+	###
 	MKBL.flowBoxSlider = ($slider, $slides, $activeSlide, direction) ->
 		$slideIndicator.setWidth = $slideIndicator.outerWidth()
-		$slideIndicator.position = Number(matrixToArray($slideIndicator.css('transform'))[4])
+		$slideIndicator.position = Number(MKBL.matrixToArray($slideIndicator.css('transform'))[4])
+
 		if direction == 'next'
 			$slideNewActive = ($activeSlide.index() + 1) % numOfSlides
+
+			# If the slider is starting over from the begining 
 			if $slideNewActive == 0
-				slideAnimation($slideIndicator.position += $slideIndicator.setWidth, 300, 1)
+				flowBoxSlideAnimation($slideIndicator.position += $slideIndicator.setWidth, 300, 1)
 				$slideIndicator.velocity({translateX: -$slideIndicator.setWidth}, {
 					duration: 0,
 					easing: "linear",
 					delay: 1
 				})
-				slideAnimation(0, 550, 1)
+				flowBoxSlideAnimation(0, 550, 1)
 			else
-				slideAnimation($slideIndicator.position += $slideIndicator.setWidth)
+				flowBoxSlideAnimation($slideIndicator.position += $slideIndicator.setWidth)
 
 		else
 			$slideNewActive = ($activeSlide.index() - 1) % numOfSlides
+			# If the slider is returning to the end slide
 			if $slideNewActive == -1
-				slideAnimation($slideIndicator.position -= $slideIndicator.setWidth, 300, 1)
+				flowBoxSlideAnimation($slideIndicator.position -= $slideIndicator.setWidth, 300, 1)
 				$slideIndicator.velocity({translateX: ($slideIndicator.setWidth * (numOfSlides))}, {
 					duration: 0,
 					easing: "linear",
 					delay: 1
 				})
-				slideAnimation($slideIndicator.setWidth * (numOfSlides - 1), 550, 1)
+				flowBoxSlideAnimation($slideIndicator.setWidth * (numOfSlides - 1), 550, 1)
 			else
-				slideAnimation($slideIndicator.position -= $slideIndicator.setWidth)
+				flowBoxSlideAnimation($slideIndicator.position -= $slideIndicator.setWidth)
 
 		$slideNextIndex = ($slideNewActive + 1) % numOfSlides
 		$slidePrevIndex = ($slideNewActive - 1) % numOfSlides
 
+		# Deque
 		if (!$slider.hasClass('locked'))
 			$slider.addClass('locked')
 
@@ -128,13 +149,18 @@ MKBL.flowBoxSliderSetup = ->
 				$slider.removeClass('locked')
 			, 750
 
-
+###*
+ * the share flyout that slides open to show didn't sharing options
+ * @param  {[type]} $this the parent element
+###
 MKBL.shareFlyout = ($this) ->
 	$this
 		.toggleClass('is-active')
 		.siblings('.search__share-flyout').eq(0)
 		.toggleClass('is-active')
 
+
+## EVENTS ###############################
 
 $('.share-flyout__trigger').on 'click',  ->
 	$this = $(this)
@@ -151,7 +177,6 @@ $('.slider-nav__control').on 'click', ->
 
 	MKBL.flowBoxSlider($slider, $slides, $activeSlide, direction)
 
-
 $('.social-group__icon').on 'click',  ->
 	$this = $(this)
 	MKBL.socialSlider($this)
@@ -162,3 +187,4 @@ $ ->
 
 $(window).on 'resize', ->
 	MKBL.equalheight('.banner-module','.banner-module > div', 940)
+	MKBL.flowBoxSliderSetup()
