@@ -97,7 +97,7 @@ MKBL.flowBoxSliderSetup = ->
 	 * @param  {[type]} direction    the direction of the slide animation
 	###
 	MKBL.flowBoxSlider = ($slider, $slides, $activeSlide, direction) ->
-		$slideIndicator.setWidth = $slideIndicator.outerWidth()
+		$slideIndicator.setWidth = $slideIndicator.width()
 		$slideIndicator.position = Number(MKBL.matrixToArray($slideIndicator.css('transform'))[4])
 
 		if direction == 'next'
@@ -160,7 +160,39 @@ MKBL.shareFlyout = ($this) ->
 		.toggleClass('is-active')
 
 
+MKBL.modal = ($this) ->
+	$modal = $($this.data('modal-id').toString())
+	$tooltip = $modal.find('.modal-tip')
+	console.log $this.position().top
+	console.log ($(window).width() - $modal.outerWidth())/2
+	# $this.top = $this.position.top
+	# $this.left = $this.position.left
+	$tooltip.css({
+		'left': $this.offset().left - ($(window).width() - $modal.outerWidth())/2
+		'right': 'auto'
+		})
+	# If there is enough space about the marker, add the tooptip above the marker, else add it below.
+	if (($this.position().top - $(window).scrollTop()) > $modal.height())
+		$modal.css({
+			'top': $this.offset().top - $modal.outerHeight() - 95
+			}).removeClass('is-reverse').removeClass('is-hidden')
+		$tooltip.css({
+			'bottom': '-1.3rem'
+			'top': 'auto'
+			})
+	else
+		$modal.css({
+			'top': $this.offset().top + $this.outerHeight() + 95
+			}).addClass('is-reverse').removeClass('is-hidden')
+		$tooltip.css({
+			'top': '-1.3rem'
+			'bottom': 'auto'
+			})
 ## EVENTS ###############################
+
+$('.js-open-modal-module').on 'click',  ->
+	$this = $(this)
+	MKBL.modal($this)
 
 $('.share-flyout__trigger').on 'click',  ->
 	$this = $(this)
@@ -181,6 +213,11 @@ $('.social-group__icon').on 'click',  ->
 	$this = $(this)
 	MKBL.socialSlider($this)
 
+# STOP EVENT PROPAGATION
+$(document).on 'click', (event) ->
+	if !$(event.target).closest('.js-open-modal-module').length
+		$('.modal-module').addClass('is-hidden')
+
 $ ->
 	MKBL.equalheight('.banner-module','.banner-module > div', 940)
 	MKBL.flowBoxSliderSetup()
@@ -188,3 +225,4 @@ $ ->
 $(window).on 'resize', ->
 	MKBL.equalheight('.banner-module','.banner-module > div', 940)
 	MKBL.flowBoxSliderSetup()
+	$('.modal-module').addClass('is-hidden')

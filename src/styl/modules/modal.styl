@@ -48,16 +48,26 @@
     </div>
 ***/
 .modal-module
-    background-color rgba(white,0.94)
+    background-color rgba(white,0.96)
     padding 3% 0
     center(70rem)
     position: absolute
     z-index: 999
     left 0
     right 0
-    margin auto
+    top 0
+    margin 0 auto
     text-align center
-    display none
+    transition opacity 0.1s ease, transform 0.4s cubic-bezier(.13,.23,0,1.2), visibility 0s linear
+    opacity: 1
+    transform translateY(7rem)
+    &.is-reverse
+      transform translateY(-7rem)
+    &.is-hidden
+      visibility hidden
+      opacity: 0
+      transform translateY(0rem)
+      transition opacity 0.2s ease 0.2s, transform 0.4s ease-out, visibility 0s linear 0.3s
     @media screen and (max-width: 716px)
         margin 0 1%
     p
@@ -87,7 +97,10 @@
     left 0
     right 0
     margin auto
-
+    transition 0s linear
+.is-reverse .modal-tip
+      border-width: 0 11px 13px 11px
+      border-color: transparent transparent rgba(white,0.94) transparent
 
 .modal__six-col
     col(6/8)
