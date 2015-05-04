@@ -1,4 +1,11 @@
 MKBL = {}
+###*
+ * [matrixToArray description]
+ * @param  {[type]} str [description]
+ * @return {[type]}     [description]
+###
+matrixToArray = (str) ->
+  str.match /(-?[0-9\.]+)/g
 
 ###*
  * Creates equal hieght divs
@@ -64,25 +71,62 @@ MKBL.socialSlider = ($this) ->
 
 MKBL.flowBoxSliderSetup = ->
 	numOfSlides = $('.flow-box-slider').find('.flow-box-slider-group').length
-	$('.slider-nav-indicator').width((1/numOfSlides)*100 + '%')
+	$slideIndicator = $('.slider-nav-indicator')
+	$slideIndicator.width((1/numOfSlides)*100 + '%')
 
+	slideAnimation = (translation, duration, delay) ->
+		$slideIndicator.velocity({translateX: translation}, {
+				duration: duration || 900,
+				easing: [ 300, 28 ],
+				delay: delay || 150
+			})
 	MKBL.flowBoxSlider = ($slider, $slides, $activeSlide, direction) ->
+		$slideIndicator.setWidth = $slideIndicator.outerWidth()
+		$slideIndicator.position = Number(matrixToArray($slideIndicator.css('transform'))[4])
 		if direction == 'next'
 			$slideNewActive = ($activeSlide.index() + 1) % numOfSlides
-			$slideNextIndex = ($slideNewActive + 1) % numOfSlides
-			$slidePrevIndex = ($slideNewActive - 1) % numOfSlides
+			if $slideNewActive == 0
+				slideAnimation($slideIndicator.position += $slideIndicator.setWidth, 300, 1)
+				$slideIndicator.velocity({translateX: -$slideIndicator.setWidth}, {
+					duration: 0,
+					easing: "linear",
+					delay: 1
+				})
+				slideAnimation(0, 550, 1)
+			else
+				slideAnimation($slideIndicator.position += $slideIndicator.setWidth)
+
 		else
 			$slideNewActive = ($activeSlide.index() - 1) % numOfSlides
-			$slideNextIndex = ($slideNewActive - 1) % numOfSlides
-			$slidePrevIndex = ($slideNewActive + 1) % numOfSlides
+			if $slideNewActive == -1
+				slideAnimation($slideIndicator.position -= $slideIndicator.setWidth, 300, 1)
+				$slideIndicator.velocity({translateX: ($slideIndicator.setWidth * (numOfSlides))}, {
+					duration: 0,
+					easing: "linear",
+					delay: 1
+				})
+				slideAnimation($slideIndicator.setWidth * (numOfSlides - 1), 550, 1)
+			else
+				slideAnimation($slideIndicator.position -= $slideIndicator.setWidth)
 
-		$slides
-			.removeClass('is-active')
-			.removeClass('is-prev')
-			.removeClass('is-next')
-		$slides.eq($slideNewActive).addClass('is-active')
-		$slides.eq($slidePrevIndex).addClass('is-prev')
-		$slides.eq($slideNextIndex).addClass('is-next')
+		$slideNextIndex = ($slideNewActive + 1) % numOfSlides
+		$slidePrevIndex = ($slideNewActive - 1) % numOfSlides
+
+		if (!$slider.hasClass('locked'))
+			$slider.addClass('locked')
+
+			$slides
+				.removeClass('is-active')
+				.removeClass('is-prev')
+				.removeClass('is-next')
+
+			$slides.eq($slideNewActive).addClass('is-active')
+			$slides.eq($slidePrevIndex).addClass('is-prev')
+			$slides.eq($slideNextIndex).addClass('is-next')
+
+			setTimeout ->
+				$slider.removeClass('locked')
+			, 750
 
 
 MKBL.shareFlyout = ($this) ->

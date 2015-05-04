@@ -1,0 +1,50 @@
+.flow-box-slider
+    overflow hidden
+    position: relative
+    .flow-box--large
+        col(8/12)
+    @media screen and (max-width: 1140px)
+        .flow-box--large,
+        .slider-nav-bar
+            col(10/12, offset: 1/12)
+    @media screen and (max-width: 940px)
+        .flow-box--large
+            stack()
+            
+.flow-box__small-container
+    col(4/12)
+    cf()
+    .flow-box
+        margin-bottom 4rem
+    @media screen and (max-width: 1140px)
+        col(10/12, offset: 1/12)
+        .flow-box
+            margin-top 3%
+            col(1/2)
+
+@media screen and (max-width: 1024px)
+    .slider-nav-bar,
+    .slider-nav-controls,
+    .flow-box__small-container
+        display none
+
+.flow-box-slider-group
+    position absolute
+    opacity 0
+    top 0
+    // transform translateX(0%)
+    transition transform 0.3s ease-in, opacity 0.1s linear 0.3s
+    display none
+    &.is-active
+        transform translateX(0%)
+        position relative
+        opacity 1
+        transition transform 0.75s cubic-bezier(.73,.88,0,1.02) 0.08s, opacity 0.2s linear 0.08s
+        display block
+    &.is-next
+        transform translateX(-100%)
+        display block
+    &.is-prev
+        transform translateX(100%)
+        display block
+            
