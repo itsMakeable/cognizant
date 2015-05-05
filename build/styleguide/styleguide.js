@@ -30,7 +30,7 @@ function createGuideElement(element) {
     // write the preview html to the iframe
     var d = iframe.contentWindow.document;
     d.open();
-    d.write("<!DOCTYPE html><html><head></head><body style='padding: 20px; background: rgba(251, 251, 251,1); border-top:1px solid #e1e1e1'>"+ source.textContent +"</body></html>");
+    d.write("<!DOCTYPE html><html class='gradient'><head></head><body style='padding: 20px; background: rgba(251, 251, 251,1); border-top:1px solid #e1e1e1'>"+ source.textContent +"</body></html>");
 
     // append stylesheet
     var stylesheet = d.createElement('style');

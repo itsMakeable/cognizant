@@ -13,23 +13,44 @@ html.no-js(lang='')
 		block head
 
 	body
-		div.hidden
-			include includes/symbols.svg
-		//if lt IE 8
-			p.browserupgrade
-				| You are using an 
-				strong outdated
-				|  browser. Please 
-				a(href='http://browsehappy.com/') upgrade your browser
-				|  to improve your experience.
-		nav
-			img(src="img/tmp/nav.jpg")
+		div.cognizant-container
 
-		block content
-		
-		block footer
-			footer
-				img(src="img/tmp/footer.jpg")
+			div.hidden
+				include includes/symbols.svg
+			//if lt IE 8
+				p.browserupgrade
+					| You are using an 
+					strong outdated
+					|  browser. Please 
+					a(href='http://browsehappy.com/') upgrade your browser
+					|  to improve your experience.
+			nav
+				img(src="img/tmp/nav.jpg")
+
+			block content
+			
+			block footer
+				footer
+					.footer--top
+						.container
+							.row
+								.footer__social-list
+									.container
+										.row
+											each val, index in [{name: 'linkedin'},{name: 'twitter'},{name: 'facebook'},{name: 'rss'}]
+												a(href="")
+													svg(viewbox='0 0 100 100')
+														use(xlink:href='#icon_#{val.name}')
+								.footer__subnav
+									.container
+										.row
+											a(href="#", target="_blank") Legal
+											a(href="#", target="_blank") Privacy Policy
+											a(href="#", target="_blank") Cookie Policy
+											a(href="#", target="_blank") Safe Harbor
+											span ©2015 Cognizant, all rights reserved
+					.footer--bottom
+						img(src="img/tmp/footer.jpg")
 		script.
 			head.load(
 				{ app: 'main.js' }, 

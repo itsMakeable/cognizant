@@ -58,16 +58,22 @@
     top 0
     margin 0 auto
     text-align center
-    transition opacity 0.1s ease, transform 0.4s cubic-bezier(.13,.23,0,1.2), visibility 0s linear
+    transition opacity 0.1s linear, transform 0.4s cubic-bezier(.13,.23,0,1.2), visibility 0s linear 0s
     opacity: 1
     transform translateY(7rem)
+    *
+      opacity 1
+      transition 0.1s linear
     &.is-reverse
       transform translateY(-7rem)
     &.is-hidden
       visibility hidden
       opacity: 0
       transform translateY(0rem)
-      transition opacity 0.2s ease 0.2s, transform 0.4s ease-out, visibility 0s linear 0.3s
+      transition opacity 0.2s linear 0.2s, transform 0.4s ease-out, visibility 0s linear 0.4s
+      *
+        opacity 0
+        transition 0.1s linear
     @media screen and (max-width: 716px)
         margin 0 1%
     p
