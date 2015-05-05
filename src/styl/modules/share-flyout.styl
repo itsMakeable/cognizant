@@ -1,15 +1,6 @@
 .share-flyout
-	display inline-block
-	position absolute
-	top 0
 	z-index: 0
 	transition transform 0.4s cubic-bezier(.4,-0.17,.33,1)
-	&.is-right
-		right 0
-		transform translateX(100%)
-	&.is-left
-		left 0
-		transform translateX(-100%)
 	&.is-active
 		transform translateX(0%)
 		transition transform 0.4s cubic-bezier(.73,.88,0,1.02)
@@ -21,12 +12,19 @@
 .share-flyout__trigger
 	z-index 1
 	transition 0.05s linear 0s
+	.is-filled
+		display none
 	&:active
 		svg
 			transform translate(-50%, -50%) scale(0.95)
 			transition transform 0.1s cubic-bezier(.73,.88,0,1.02)
 	&.is-active
 		transition 0.3s linear 0.1s
+		.is-empty
+			display none
+		.is-filled
+			display inline-block
+		
 	
 .share-flyout__icon
 	display inline-block

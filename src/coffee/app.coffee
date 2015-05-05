@@ -156,7 +156,7 @@ MKBL.flowBoxSliderSetup = ->
 MKBL.shareFlyout = ($this) ->
 	$this
 		.toggleClass('is-active')
-		.siblings('.search__share-flyout').eq(0)
+		.siblings('.js-share-flyout').eq(0)
 		.toggleClass('is-active')
 
 

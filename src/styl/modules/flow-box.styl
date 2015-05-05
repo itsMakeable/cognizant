@@ -162,7 +162,8 @@
 
 .flow-box__CTA--left,
 .flow-box__CTA--right,
-.flow-box__CTA--share
+.flow-box__CTA--share,
+.flow-box-flyout__icon
     position absolute
     bottom 0
     size 3rem
@@ -180,6 +181,36 @@
 .flow-box__CTA--share
     left 7rem
 
+.flow-box__share-flyout-wrapper
+    left 12rem
+    bottom 0
+    position absolute
+    overflow hidden
+    width 30rem
+    height 3rem
+    
+.flow-box__CTA--share.share-flyout__trigger
+    &:active svg
+        transform translate(0,0) scale(0.95)
+        
+.flow-box-flyout__icon.share-flyout__icon
+    display inline-block
+    margin 0 1.6rem
+    svg
+        transform none
+        position static
+        size 100%
+    
+.flow-box__share-flyout-wrapper
+    .flow-box__share-flyout
+        transform translateX(-100%)
+        transition transform 0.4s cubic-bezier(.4,-0.17,.33,1)
+        z-index -1
+    &.is-active
+        .flow-box__share-flyout
+            transform translateX(0%)
+            transition transform 0.4s cubic-bezier(.73,.88,0,1.02)
+        
 /*!**
   title: Flow Box Large
   section: Box Modules

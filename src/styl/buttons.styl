@@ -34,7 +34,7 @@ $button
 	color white
 	background-color blue
 	text-align center
-	transition background-color 0.2s ease, transform 0.1s linear, color 0.1s ease
+	transition background-color 0.3s ease, transform 0.1s linear, color 0.1s ease
 	text-decoration none
 	transform scale(1)
 	border-bottom transparent
@@ -51,7 +51,7 @@ $button
 	&:hover
 		color white
 		background-color darkblue
-		transition background-color 0.2s ease, transform 0.1s linear, color 0.2s ease
+		transition background-color 0.3s ease, transform 0.1s linear, color 0.3s ease
 	&:active
 		color white
 		background-color darkblue
@@ -77,6 +77,14 @@ $button
 			margin auto
 			padding 0.2rem 0.9rem 0.2rem 0
 			border-right 1px solid rgba(white,0.2)
+.color-bg
+	.button--primary:hover
+		color blue
+		background-color white
+		&.icon--left 
+			i:first-of-type
+				color blue
+				border-right 1px solid rgba(gray,0.2)
 			
 .icon.question-mark
 	color blue

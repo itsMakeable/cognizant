@@ -76,6 +76,10 @@
 				color darkgray
 			&:first-of-type
 				padding-left 0
+		span
+			align(vertical)
+			position: absolute
+			right 0
 			
 @media screen and (max-width: 640px)
 	.footer__social-list,
@@ -91,8 +95,11 @@
 		span
 			display block
 			padding 2rem 0 0 0
+			position: static
+			transform none
+			
 
-@media screen and (max-width: 420px)
+@media screen and (max-width: 540px)
 	.footer__social-list
 		.container
 			padding 0
