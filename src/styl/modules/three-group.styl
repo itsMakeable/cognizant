@@ -58,6 +58,8 @@
   position relative
   text-align center
   padding-bottom 13rem
+  @media screen and (max-width: 540px)
+    padding-bottom 2rem
   
 .three-group__hr
   height 1px
@@ -80,8 +82,12 @@
     margin-bottom 6rem
   @media screen and (max-width: 768px)
     stack(pad: 20%)
+    &:last-child
+      padding-bottom 0
+      margin-bottom 0
   @media screen and (max-width: 540px)
     stack(pad: 5%)
+    
 .three-group__title
   margin 2rem 0 2.4rem
 

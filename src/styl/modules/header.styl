@@ -24,7 +24,7 @@
     position relative
     @media screen and (max-width: 1140px)
       height auto
-      padding 3rem 0 1rem 0
+      padding 3rem 0 3rem 0
     p
         color blue
         padding 2rem 0 0 0
@@ -38,10 +38,13 @@
       position absolute
       bottom -9.2rem
       @media screen and (max-width: 1140px)
-        position: relative
-        bottom -8.6rem
-      @media screen and (max-width: 768px)
-        bottom -6rem
+        position: absolute
+        bottom -9.2rem
+        width 100%
+        left 0
+        right 0
+      @media screen and (max-width: 540px)
+        bottom -8rem
         
     // @media screen and (max-width: 420px)
     //   .question-mark
