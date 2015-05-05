@@ -46,8 +46,9 @@
     height 100%
     padding 3.8rem 0
     position relative
-    &:first-of-type
-        padding-top 1rem
+    @media screen and (min-width: 540px)
+        &:first-of-type
+            padding-top 2.8rem
     &:after
         content ''
         display block
@@ -113,10 +114,7 @@
     @media screen and (max-width: 420px)
         col(7/10)
         
-            
-            
-        
-    
+
 .headline-list__item-content
     col(6/10)
     min-height 9rem
@@ -129,7 +127,6 @@
         margin-top 2rem
     @media screen and (max-width: 620px)
         stack()
-
 
 .headline-list__item-CTA
     height 100%
