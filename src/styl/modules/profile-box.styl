@@ -1,0 +1,106 @@
+// PROFILE BOX //////////////////////////////////
+
+/*!**
+  title: Profile Box
+  section: Box Modules
+  example: |
+    <div class="profile-box-module">
+        <div class="profile-box__profile-pic"><img data-src="holder.js/110x110/" alt=""></div>
+        <i class="profile-box__profile-icon"><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_linkedin"></i>
+        <div class="profile-box__aside">
+          <i class="icon profile-box__settings"><svg viewBox="0 0 100 100"><use   xlink:href="includes/symbols.svg#icon_settings"></i>
+          <div class="profile-box__favorites-alerts"><span>3</span></div>
+          <i class="icon profile-box__favorites"><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_folders"></i>
+        </div>
+        
+        <div class="profile-box__text">
+            <h3>Good Morning</h3>
+            <h2>Kyla Medina</h2>
+            <p>VP, Healthcare IT Services</p>
+        </div>
+        <div class="profile-box__data">
+            <div>
+              <i class="icon"><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_location"></i>
+              <small>Dallas Fort Worth Area  </small>
+            </div>
+            <div>
+              <i class="icon"><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_industry"></i>
+              <small>Information Technology & Services.</small>
+            </div>
+            <div>
+              <i class="icon"><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_workplace"></i>
+              <small>United Healthcare</small>
+            </div>
+        </div>
+    </div>
+***/
+.profile-box-module
+  position relative
+  col(4/12)
+  // height 19.4rem
+  background-color: white
+  padding 2rem 0 5rem
+  
+.profile-box__profile-pic
+  overflow hidden
+  border-radius 50%
+  align(horizontal)
+  size 11rem
+
+.profile-box__profile-icon
+  size 2.6rem
+  background-color gray
+  color white
+  border-radius 0.3rem
+  position absolute
+  left 21.4rem
+  top 10.6rem
+  svg
+    size 1.8rem
+    align()
+
+.profile-box__text
+  padding 0 6.2rem
+  margin-top 14rem
+  h3
+    color gray
+  p
+    padding 2rem 0
+  
+.profile-box__data
+  padding 0 4rem
+  > div
+    padding 0.3rem 0
+    
+  small
+    display inline-block
+    vertical-align middle
+  .icon
+    size 1.1rem
+    margin-right 2rem
+    vertical-align middle
+
+.profile-box__aside
+  position absolute
+  right 2rem
+  top 2rem
+  .icon
+    size 4.5rem
+    padding 1rem
+    color blue
+    display block
+
+.profile-box__favorites-alerts
+  position absolute
+  size 1.5rem
+  background-color heavymustard
+  border-radius 50%
+  overflow: hidden
+  top 4.8rem
+  left 0.1rem
+  z-index: 1
+  span
+    align()
+    font-family proxSbold
+    color white
+    
