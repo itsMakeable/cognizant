@@ -15,7 +15,7 @@ gulp.task 'watch', ['browser-sync'], ->
 	gulp.watch [ 'src/img/**/*' ], ['img']
 	gulp.watch [ 'src/svg/**/*.svg' ], ['svg','jade']
 	gulp.watch [ 'src/styl/**/*.styl' ], ['styl']
-	gulp.watch [ 'src/jade/*.jade', 'src/jade/includes/*.jade' ], ['jade']
+	gulp.watch [ 'src/jade/**/*.jade' ], ['jade']
 	gulp.watch [ 'src/font/**/*' ], ['font']
 	gulp.watch [ 'src/coffee/**/**/*.coffee' ], ['coffee']
 	gulp.watch [ './tmp/css/*' ], ['css', 'styleguide']

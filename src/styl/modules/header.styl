@@ -4,7 +4,7 @@
   title: Main Header
   section: Headers
   example: |
-    <div class="header--main gradient1--horizontal">
+    <div class="main-header gradient1--horizontal">
       <h1>Latest Thinking</h1>
       <p>Explore our industry-leading insight. Tailored to solve your unique business challenges.</p>
       <div class="subheader">Enhance with <i class="icon icon-linkedin"><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#logo_linkedin"></use></svg></i></p>
@@ -16,7 +16,7 @@
       <a href="" class="button--silent">Or tell us about yourself</a>
     </div>
 ***/
-.header--main
+.main-header
     height 50rem
     color white
     padding 7rem 0
@@ -25,7 +25,7 @@
     @media screen and (max-width: 1140px)
       height auto
       padding 3rem 0 3rem 0
-    p
+    .main-header__body-copy
         color blue
         padding 2rem 0 0 0
         font-family proxLight
@@ -45,12 +45,11 @@
         right 0
       @media screen and (max-width: 540px)
         bottom -8rem
-        
-    // @media screen and (max-width: 420px)
-    //   .question-mark
-    //     display none
   .icon.question-mark
     overflow visible
+  @media screen and (min-width: 1140px)
+    .profile-box-module
+      top -2rem
 
 .header--section
   padding 6rem 0

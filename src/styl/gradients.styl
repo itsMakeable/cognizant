@@ -10,6 +10,7 @@
     <div class='gradient5--vertical' style='border: 2px solid white; height:200px;'></div>
 ***/
 vgradient1 = linear-gradient(35deg, darkblue 0%,deepblack 100%)
+vgradient1alt = linear-gradient(35deg, darkblue 40%,deepblack 100%)
 vgradient1reverse = linear-gradient(215deg, darkblue 0%,deepblack 100%)
 vgradient2 = linear-gradient(35deg, darkgreen 0%, deepblack 100%)
 vgradient2reverse = linear-gradient(215deg, darkgreen 0%, deepblack 100%)
@@ -22,36 +23,31 @@ vgradient5reverse = linear-gradient(215deg, green 0%, lightblue 100%)
 
 .gradient1--vertical
   background-color: darkblue
+  background: vgradient1
+
+.gradient1--vertical--alt
+  background-color: darkblue
+  background: vgradient1alt
 
 .gradient1--vertical--reverse
   background-color darkgreen
+  background: vgradient1reverse
 
-.gradient2--vertical,
+.gradient2--vertical
+  background-color darkblue
+  background: vgradient2
+
 .gradient3--vertical
   background-color darkblue
+  background: vgradient3
   
-.gradient4--vertical,
+.gradient4--vertical
+  background-color green
+  background: vgradient4
+
 .gradient5--vertical
   background-color green
-
-.gradient
-  .gradient1--vertical
-    background: vgradient1
-
-  .gradient1--vertical--reverse
-    background: vgradient1reverse
-
-  .gradient2--vertical
-    background: vgradient2
-
-  .gradient3--vertical
-    background: vgradient3
-    
-  .gradient4--vertical
-    background: vgradient4
-
-  .gradient5--vertical
-    background: vgradient5
+  background: vgradient5
 
 
 
@@ -66,58 +62,38 @@ vgradient5reverse = linear-gradient(215deg, green 0%, lightblue 100%)
     <div class='gradient5--horizontal' style='border: 2px solid white; height:200px;'></div>
 ***/
 hgradient1 = linear-gradient(180deg, darkblue 0%,deepblack 100%)
-hgradient11 = linear-gradient(90deg, darkblue 0%,deepblack 100%)
 hgradient2 = linear-gradient(180deg, darkgreen 0%, deepblack 100%)
-hgradient22 = linear-gradient(90deg, darkgreen 0%, deepblack 100%)
-hgradient30 = linear-gradient(0deg, darkblue 0%, lightblue 100%)
 hgradient3 = linear-gradient(180deg, darkblue 0%, lightblue 100%)
-hgradient33 = linear-gradient(90deg, darkblue 0%, lightblue 100%)
 hgradient4 = linear-gradient(180deg, green 0%, darkblue 100%)
-hgradient44 = linear-gradient(90deg, green 0%, darkblue 100%)
-hgradient50 = linear-gradient(0deg, green 0%, lightblue 100%)
 hgradient5 = linear-gradient(180deg, green 0%, lightblue 100%)
-hgradient55 = linear-gradient(90deg, green 0%, lightblue 100%)
 hgradient6 = linear-gradient(180deg, #149a4a 0%, #6db33f 100%)
 hgradient66 = linear-gradient(90deg, #149a4a 0%, #6db33f 100%)
 hreversegradient5 = linear-gradient(0deg, green 0%, lightblue 100%)
 
 .gradient1--horizontal
   background-color darkblue
+  background: hgradient1
 
 .gradient2--horizontal
   background-color darkgreen
+  background: hgradient2
   
 .gradient3--horizontal
   background-color darkblue
+  background: hgradient3
 
 .gradient4--horizontal
   background-color darkblue
+  background: hgradient4
   
 .gradient5--horizontal
   background-color green
+  background: hgradient5
 
 .gradient6--horizontal
+  background-color #149a4a
+  background: hgradient6
+
 .gradient6reverse--horizontal
   background-color #149a4a
-
-.gradient
-  .gradient1--horizontal
-    background: hgradient1
-
-  .gradient2--horizontal
-    background: hgradient2
-    
-  .gradient3--horizontal
-    background: hgradient3
-
-  .gradient4--horizontal
-    background: hgradient4
-    
-  .gradient5--horizontal
-    background: hgradient5
-
-  .gradient6--horizontal
-    background: hgradient6
-  
-  .gradient6reverse--horizontal
-    background: hgradient66
+  background: hgradient66

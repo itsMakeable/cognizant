@@ -5,45 +5,102 @@
   section: Box Modules
   example: |
     <div class="profile-box-module">
-      <div class='profile-box__default'>
-        <div class="profile-box__profile-pic">
-          <img data-src="holder.js/110x110/" alt="">
+      <div class="profile-box">
+        <div class="profile-box__indicator"></div>
+        <div class="profile-box__default">
+          <div class="profile-box__profile-pic"><img data-src="holder.js/110x110/"     alt=""/></div><i class="profile-box__profile-icon">
+            <svg viewbox="0 0 100 100">
+              <use xlink:href="includes/symbols.svg#icon_linkedin"></use>
+            </svg></i>
         </div>
-        <i class="profile-box__profile-icon"><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_linkedin"></i>
-      </div>
-      <div class="profile-box__aside">
-        <i class="icon profile-box__settings"><svg viewBox="0 0 100 100"><use   xlink:href="includes/symbols.svg#icon_settings"></i>
-        <div class="profile-box__alerts"><span>3</span></div>
-        <i class="icon profile-box__folders"><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_folders"></i>
-      </div>
-      
-      <div class="profile-box__text">
+        <div class="profile-box__aside"><i data-flyout="settings" class="icon">
+            <svg viewbox="0 0 100 100">
+              <use xlink:href="includes/symbols.svg#icon_settings"></use>
+            </svg></i>
+          <div class="profile-box__alert"><span>3</span></div>
+          <i data-flyout="alerts" class="icon">
+            <svg viewbox="0 0 100 100">
+              <use xlink:href="includes/symbols.svg#icon_folders"></use>
+            </svg></i>
+        </div>
+        <div class="profile-box__text">
           <h3>Good Morning</h3>
           <h2>Kyla Medina</h2>
           <p>VP, Healthcare IT Services</p>
+        </div>
+        <div class="profile-box__data">
+          <div><i class="icon">
+              <svg viewbox="0 0 100 100">
+                <use xlink:href="includes/symbols.svg#icon_location"></use>
+              </svg></i><small>Dallas Fort Worth Area  </small></div>
+          <div><i class="icon">
+              <svg viewbox="0 0 100 100">
+                <use xlink:href="includes/symbols.svg#icon_industry"></use>
+              </svg></i><small>Information Technology & Services.</small></div>
+          <div><i class="icon">
+              <svg viewbox="0 0 100 100">
+                <use xlink:href="includes/symbols.svg#icon_workplace"></use>
+              </svg></i><small>United Healthcare</small></div>
+        </div>
       </div>
-      <div class="profile-box__data">
-          <div>
-            <i class="icon"><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_location"></i>
-            <small>Dallas Fort Worth Area  </small>
+      <div class="profile-box-flyout profile-box-flyout--settings">
+        <header>
+          <p>Settings</p>
+          <hr/>
+        </header>
+        <div class="profile-box__button">
+          <button class="button--silent">Edit Info</button>
+        </div>
+        <div class="profile-box__button">
+          <button class="button--silent">Log Out</button>
+        </div>
+      </div>
+      <div class="profile-box-flyout profile-box-flyout--alerts">
+        <header>
+          <p>Recent Activity</p>
+          <hr/>
+        </header>
+        <div class="profile-box__list">
+          <div class="profile-box__list-item">
+            <div class="profile-box__list-alert"><span>1</span></div>
+            <p><strong><a href="">Industry Friends</a></strong></p>
+            <p>Invited by Larry</p><i class="icon profile-box__list-CTA">
+              <svg viewbox="0 0 100 100">
+                <use xlink:href="includes/symbols.svg#icon_caret"></use>
+              </svg></i>
           </div>
-          <div>
-            <i class="icon"><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_industry"></i>
-            <small>Information Technology & Services.</small>
+          <div class="profile-box__list-item">
+            <div class="profile-box__list-alert"><span>1</span></div>
+            <p><strong><a href="">Industry Friends</a></strong></p>
+            <p>Invited by Larry</p><i class="icon profile-box__list-CTA">
+              <svg viewbox="0 0 100 100">
+                <use xlink:href="includes/symbols.svg#icon_caret"></use>
+              </svg></i>
           </div>
-          <div>
-            <i class="icon"><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_workplace"></i>
-            <small>United Healthcare</small>
+          <div class="profile-box__list-item">
+            <div class="profile-box__list-alert"><span>1</span></div>
+            <p><strong><a href="">Industry Friends</a></strong></p>
+            <p>Invited by Larry</p><i class="icon profile-box__list-CTA">
+              <svg viewbox="0 0 100 100">
+                <use xlink:href="includes/symbols.svg#icon_caret"></use>
+              </svg></i>
           </div>
+        </div>
+        <button class="button--silent">View All</button>
       </div>
     </div>
 ***/
 .profile-box-module
   position relative
+
+.profile-box
+  position relative
   width 34rem
   height 39rem
   background-color: white
   padding 2rem 0 4rem
+  overflow hidden
+  z-index 1
   
 .profile-box__default
   align(horizontal)
@@ -68,6 +125,8 @@
 .profile-box__text
   padding 0 5.4rem
   margin-top 14rem
+  text-align left
+  color black
   h3
     color gray
   p
@@ -75,9 +134,10 @@
   
 .profile-box__data
   padding 0 3.2rem
+  color black
+  text-align left
   > div
     padding 0.3rem 0
-    
   small
     display inline-block
     vertical-align middle
@@ -95,18 +155,119 @@
     padding 1rem
     color blue
     display block
+    cursor pointer
 
-.profile-box__alerts
+.profile-box__alert
+  @extend $alert-circle
   position absolute
-  size 1.5rem
-  background-color heavymustard
-  border-radius 50%
-  overflow: hidden
   top 5rem
   left 0rem
   z-index: 1
-  span
-    align()
-    font-family proxSbold
-    color white
+
+@keyframes slideshuffle
+  0%
+    transform scale(0.9) translateX(-34rem)
+    animation-timing-function: ease
+  30%
+    transform scale(0.9) translateX(0rem)
+  40%
+    transform scale(0.9) translateX(0rem)
+  100%
+    transform scale(1) translateX(0rem)
     
+
+@keyframes slideshufflereverse
+  0%
+    transform scale(1) translateX(0rem)
+  30%
+    transform scale(0.9) translateX(0rem)
+  40%
+    transform scale(0.9) translateX(0rem)
+  100%
+    transform scale(0.9) translateX(-34rem)
+
+.profile-box-flyout
+  background-color backgray
+  position absolute
+  padding 2.6rem 1.8rem 1.8rem 4rem
+  width 33rem
+  top 0
+  left 34rem
+  max-height 39rem
+  text-align center
+  transform-origin 0% 0%
+  animation slideshufflereverse 1s cubic-bezier(.73,.49,.28,1.21) 0s 1 normal forwards
+  will-change: transform
+  color black
+  &.is-active
+    animation slideshuffle 1s cubic-bezier(.73,.49,.28,1.21) 0s 1 normal forwards
+  &.is-holding
+    transform scale(1) translateX(0rem)
+    animation none
+    box-shadow: -1px 1px 0px 1px rgba(black,.8)
+  &.is-closed
+    animation none
+    transform scale(0.9) translateX(-34rem)
+  header
+    text-align left
+  p
+    fs(1.4rem)
+  hr
+    border-bottom 1px solid gray
+    margin-bottom 2rem
+  .button--silent
+    padding 0
+    margin 1rem 0
+
+.profile-box__button
+  text-align left
+
+.profile-box__list-item
+  position relative
+  margin-bottom 1.6rem
+  text-align left
+  a
+    color black
+    border-bottom none
+    &:hover
+      color heavymustard
+      border-bottom none
+  p
+    color gray
+
+.profile-box__list-alert
+  @extend $alert-circle
+  position absolute
+  left -2.7rem
+  top 0.3rem
+  
+.profile-box__list-CTA
+  align(vertical)
+  right 0
+  size 2rem
+  color blue
+
+
+.profile-box__indicator
+  position absolute
+  right 0
+  top 5.5rem
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 1rem 1.7rem 1rem 0
+  border-color: transparent backgray transparent transparent
+  transform translate(2rem,0)
+  transition transform 0.5s ease 0.4s, top 0s linear 0.9s
+
+.settings-is-open
+  .profile-box__indicator
+    transform translate(0rem,0)
+    top 3.2rem
+    transition transform 0.5s ease 0.4s, top 0.3s cubic-bezier(.73,.49,.28,1.21) 1s
+
+.alerts-is-open
+  .profile-box__indicator
+    transform translate(0rem,0)
+    top 7.9rem
+    transition transform 0.5s ease 0.4s, top 0.3s cubic-bezier(.73,.49,.28,1.21) 1s

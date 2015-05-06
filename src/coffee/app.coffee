@@ -1,4 +1,20 @@
 MKBL = {}
+
+$.fn.alterClass = (removals, additions) ->
+  self = this
+  if removals.indexOf('*') == -1
+    # Use native jQuery methods if there is no wildcard matching
+    self.removeClass removals
+    return if !additions then self else self.addClass(additions)
+  patt = new RegExp('\\s' + removals.replace(/\*/g, '[A-Za-z0-9-_]+').split(' ').join('\\s|\\s') + '\\s', 'g')
+  self.each (i, it) ->
+    cn = ' ' + it.className + ' '
+    while patt.test(cn)
+      cn = cn.replace(patt, ' ')
+    it.className = $.trim(cn)
+    return
+  if !additions then self else self.addClass(additions)
+
 ###*
  * Converts matrix like rgba or transforms to an array
 ###
@@ -159,14 +175,48 @@ MKBL.shareFlyout = ($this) ->
 		.siblings('.js-share-flyout').eq(0)
 		.toggleClass('is-active')
 
+MKBL.profileFlyout = ($this, $flyoutType) ->
+	$module = $this.closest('.profile-box-module')
+	$activeFlyout = $this.closest('.profile-box-module').find('.profile-box-flyout.is-holding')
+	$flyout = $this.closest('.profile-box-module').find('.profile-box-flyout--'+$flyoutType)
+	
+	if !$module.hasClass('is-animating')
+		if $flyout.hasClass('is-holding')
+			$module.addClass('is-animating').alterClass('*-is-open')
+			$flyout.removeClass('is-active').removeClass('is-holding')
+			setTimeout ->
+				$flyout.addClass('is-closed')
+				$module.removeClass('is-animating')
+			, 1001
+			
+		else
+			$module.addClass('is-animating').alterClass('*-is-open').addClass($flyoutType+'-is-open')
+			$activeFlyout.removeClass('is-active').removeClass('is-holding')
+			setTimeout ->
+				$activeFlyout.addClass('is-closed')
+			, 1001
+			
+			if $activeFlyout.length > 0
+				setTimeout ->
+					$flyout.addClass('is-active').removeClass('is-closed')
+				, 800
+				setTimeout ->
+					$flyout.addClass('is-holding').removeClass('is-active')
+					$module.removeClass('is-animating')
+				, 2001
+				
+			else
+				$flyout.addClass('is-active').removeClass('is-closed')
+				setTimeout ->
+					$flyout.addClass('is-holding').removeClass('is-active')
+					$module.removeClass('is-animating')
+				, 1001
+
+			
 
 MKBL.modal = ($this) ->
 	$modal = $($this.data('modal-id').toString())
 	$tooltip = $modal.find('.modal-tip')
-	console.log $this.position().top
-	console.log ($(window).width() - $modal.outerWidth())/2
-	# $this.top = $this.position.top
-	# $this.left = $this.position.left
 	$tooltip.css({
 		'left': $this.offset().left - ($(window).width() - $modal.outerWidth())/2
 		'right': 'auto'
@@ -197,6 +247,11 @@ $('.js-open-modal-module').on 'click',  ->
 $('.share-flyout__trigger').on 'click',  ->
 	$this = $(this)
 	MKBL.shareFlyout($this)
+
+$('.profile-box__aside .icon').on 'click',  ->
+	$this = $(this)
+	$flyoutType = $this.data('flyout')
+	MKBL.profileFlyout($this, $flyoutType)
 
 $('.slider-nav__control').on 'click', ->
 	$slider = $(this).closest('.flow-box-slider')
