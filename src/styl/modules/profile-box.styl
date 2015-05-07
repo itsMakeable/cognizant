@@ -8,7 +8,7 @@
       <div class="profile-box">
         <div class="profile-box__indicator"></div>
         <div class="profile-box__default">
-          <div class="profile-box__profile-pic"><img data-src="holder.js/110x110/"     alt=""/></div><i class="profile-box__profile-icon">
+          <div class="profile-box__profile-pic"><img data-src="holder.js/110x110/" alt=""/></div><i class="profile-box__profile-icon">
             <svg viewbox="0 0 100 100">
               <use xlink:href="includes/symbols.svg#icon_linkedin"></use>
             </svg></i>
@@ -92,7 +92,8 @@
 ***/
 .profile-box-module
   position relative
-
+  float left
+  
 .profile-box
   position relative
   width 34rem
@@ -156,6 +157,10 @@
     color blue
     display block
     cursor pointer
+    transition 0.3s ease
+    &:hover
+      color darkblue
+      
 
 .profile-box__alert
   @extend $alert-circle
@@ -166,7 +171,7 @@
 
 @keyframes slideshuffle
   0%
-    transform scale(0.9) translateX(-34rem)
+    transform scale(0.9) translateX(-100%)
     animation-timing-function: ease
   30%
     transform scale(0.9) translateX(0rem)
@@ -184,7 +189,7 @@
   40%
     transform scale(0.9) translateX(0rem)
   100%
-    transform scale(0.9) translateX(-34rem)
+    transform scale(0.9) translateX(-100%)
 
 .profile-box-flyout
   background-color backgray
@@ -208,6 +213,10 @@
   &.is-closed
     animation none
     transform scale(0.9) translateX(-34rem)
+  @media screen and (max-width: 768px)
+    width 24rem
+  @media screen and (max-width: 640px)
+    display none
   header
     text-align left
   p

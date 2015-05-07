@@ -1,0 +1,56 @@
+.descriptor-module
+  span(8/12)
+  margin auto
+  float none
+  text-align: center
+  h2
+    font-size: 44px
+    font-family proxLight
+    color: gray
+    line-height: 1.5
+    span
+        display inline-block
+        position relative
+        color rgba(gray,0.5)
+        font-family proxLightIt
+        &:after
+            content ''
+            height 1px
+            position absolute
+            left 0
+            bottom 0.6rem
+            width 100%
+            background-color gray
+        .icon
+            size 2rem
+            margin-left 1.6rem
+            svg
+                transform rotate(90deg)
+                
+    span.is-filled
+        color green
+        font-family proxLight
+        &:after
+            background: vgradient5
+    
+            
+  .header--section
+      cf()
+      p
+        span(8/12)
+        margin auto
+        float none
+        
+.descriptor__text
+    margin-bottom 6rem
+    
+.descriptor__button-box
+  text-align center
+
+.chrome,
+.safari
+  .descriptor-module
+    h2 span.is-filled
+      background: vgradient5reverse 
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent

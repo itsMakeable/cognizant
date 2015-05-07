@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_rss</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="icon_rss" sketch:type="MSArtboardGroup" fill="#000000">
+            <g id="noun_27267_cc" sketch:type="MSLayerGroup" transform="translate(1.000000, 0.000000)">
+                <path d="M26.722575,85.7555556 C26.722575,93.0444444 20.7999,98.9530864 13.4949375,98.9530864 C6.189975,98.9530864 0.2660625,93.0444444 0.2660625,85.7555556 C0.2660625,78.4679012 6.1887375,72.5592593 13.4949375,72.5592593 C20.7999,72.5604938 26.722575,78.4679012 26.722575,85.7555556" id="Shape" sketch:type="MSShapeGroup"></path>
+                <path d="M0.2660625,33.5654321 L0.2660625,51.8135802 C0.2660625,51.8135802 44.6675625,53.0506173 46.0486125,98.954321 L65.60235,98.954321 C65.60235,98.954321 67.9028625,36.5728395 0.2660625,33.5654321" id="Shape" sketch:type="MSShapeGroup"></path>
+                <path d="M0.2660625,0.0333333333 L0.2660625,18.6234568 C0.2660625,18.6234568 72.505125,17.4765432 80.5563,98.954321 L98.730225,98.954321 C98.730225,98.954321 100.800562,5.54197531 0.2660625,0.0333333333" id="Shape" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

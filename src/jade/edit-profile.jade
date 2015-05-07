@@ -1,8 +1,33 @@
 extends layouts/layout-secondary
 
 block content
-	header.header--section
-		h1 Edit Your Profile
-		p Information about editing your profile infromation. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-		div
-			a.button--primary(href='') Continue
+	.descriptor-module
+		.container
+			i.icon.modal-close
+				svg(viewbox='0 0 100 100')
+					use(xlink:href='#icon_x')
+			header.header--section
+				h1 Edit Your Profile
+				p Information about editing your profile infromation. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			section.descriptor__text
+				h2
+					| I'm an 
+					span.is-filled Executive Account Director
+						i.icon
+							svg(viewbox='0 0 100 100')
+								use(xlink:href='#icon_caret')
+					|  interested in the 
+					span.is-filled Healthcare
+						i.icon
+							svg(viewbox='0 0 100 100')
+								use(xlink:href='#icon_caret')
+					|  Industry. I work for 
+					span workplace
+						i.icon
+							svg(viewbox='0 0 100 100')
+								use(xlink:href='#icon_caret')
+					|  in 
+					span zip code
+					| .
+			.descriptor__button-box
+				a.button--primary(href='') Continue

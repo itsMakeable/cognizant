@@ -5,7 +5,7 @@ section.section.flow-box-slider-section.backgray-bg
 			p Subheader introducing Featured Thinking section.
 		.flow-box-slider
 			each val, index in {1:'is-active',2:'is-next',3:'is-prev'}
-				.rw.flow-box-slider-group(class="#{val}")
+				.row.flow-box-slider-group(class="#{val}")
 					.flow-box.flow-box--large.gradient2--vertical
 						
 						h4.flow-box__tag Article | 
@@ -29,7 +29,7 @@ section.section.flow-box-slider-section.backgray-bg
 								i.flow-box__CTA--left
 									svg(viewbox='0 0 100 100')
 										use(xlink:href='#icon_star')
-								i.flow-box__CTA--share.share-flyout__trigger
+								i.flow-box__CTA--share.share-flyout__trigger.js-share-flyout__trigger
 									svg.is-empty(viewbox='0 0 100 100')
 										use(xlink:href='#icon_share')
 									svg.is-filled(viewbox='0 0 100 100')
@@ -50,7 +50,7 @@ section.section.flow-box-slider-section.backgray-bg
 												use(xlink:href='#icon_linkedin')
 
 								i.flow-box__CTA--right
-									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_caret')
+									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_triangle')
 					.flow-box__small-container
 						each val, index in [1,2]
 							.flow-box.gradient1--vertical
@@ -69,7 +69,7 @@ section.section.flow-box-slider-section.backgray-bg
 											svg(viewbox='0 0 100 100')
 												use(xlink:href='#icon_star')
 										i.flow-box__CTA--right
-											svg(viewbox='0 0 100 100'): use(xlink:href='#icon_caret')
+											svg(viewbox='0 0 100 100'): use(xlink:href='#icon_triangle')
 			.row
 				.slider-nav-bar
 					.slider-nav-indicator.velocity-animating
@@ -134,7 +134,7 @@ section.section.folder-headline-section.color-bg
 				span 2
 			.folder__CTA
 				i.folder__CTA--right
-					svg(viewbox='0 0 100 100'): use(xlink:href='#icon_caret')
+					svg(viewbox='0 0 100 100'): use(xlink:href='#icon_triangle')
 
 section.section.generic-section.white-bg
 	.container

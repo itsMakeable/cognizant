@@ -170,6 +170,7 @@ MKBL.flowBoxSliderSetup = ->
  * @param  {[type]} $this the parent element
 ###
 MKBL.shareFlyout = ($this) ->
+
 	$this
 		.toggleClass('is-active')
 		.siblings('.js-share-flyout').eq(0)
@@ -243,9 +244,10 @@ MKBL.modal = ($this) ->
 $('.js-open-modal-module').on 'click',  ->
 	$this = $(this)
 	MKBL.modal($this)
-
-$('.share-flyout__trigger').on 'click',  ->
+console.log '$this'
+$('.js-share-flyout__trigger').on 'click',  ->
 	$this = $(this)
+	console.log $this
 	MKBL.shareFlyout($this)
 
 $('.profile-box__aside .icon').on 'click',  ->
