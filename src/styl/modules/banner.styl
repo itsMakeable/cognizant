@@ -30,7 +30,7 @@
     h2
         fs(4rem)
         upcase()
-        @media screen and (max-width: 768px)
+        +below(768px)
             fs(3rem)
     .button--primary
         color white
@@ -61,7 +61,7 @@
     > div
         align()
     
-@media screen and (max-width: 960px)
++below(960px)
     .banner-module
         padding 3rem 1rem 2.2rem
         .button--primary

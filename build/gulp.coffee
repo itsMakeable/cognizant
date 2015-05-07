@@ -47,7 +47,7 @@ gulp.task 'browser-sync', ->
 		tunnel: false
 		online: true
 		logPrefix: 'Cognizant'
-		ghostMode: false
+		ghostMode: true
 		# logLevel: 'debug'
 		snippetOptions:
 		    ignorePaths: "templates/*.html",

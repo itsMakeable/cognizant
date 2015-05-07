@@ -1,5 +1,10 @@
 MKBL = {}
 
+###*
+ * Remove Classes based on partial matches
+ * @param  {[type]} removals  classes you want to remove
+ * @param  {[type]} additions classes you want to add
+###
 $.fn.alterClass = (removals, additions) ->
   self = this
   if removals.indexOf('*') == -1
@@ -170,7 +175,6 @@ MKBL.flowBoxSliderSetup = ->
  * @param  {[type]} $this the parent element
 ###
 MKBL.shareFlyout = ($this) ->
-
 	$this
 		.toggleClass('is-active')
 		.siblings('.js-share-flyout').eq(0)
@@ -244,10 +248,9 @@ MKBL.modal = ($this) ->
 $('.js-open-modal-module').on 'click',  ->
 	$this = $(this)
 	MKBL.modal($this)
-console.log '$this'
+
 $('.js-share-flyout__trigger').on 'click',  ->
 	$this = $(this)
-	console.log $this
 	MKBL.shareFlyout($this)
 
 $('.profile-box__aside .icon').on 'click',  ->
@@ -277,9 +280,14 @@ $(document).on 'click', (event) ->
 
 $ ->
 	MKBL.equalheight('.banner-module','.banner-module > div', 940)
+	MKBL.equalheight('.main-header','.equal-height', 1024)
 	MKBL.flowBoxSliderSetup()
 
 $(window).on 'resize', ->
+	MKBL.equalheight('.main-header','.equal-height', 1024)
 	MKBL.equalheight('.banner-module','.banner-module > div', 940)
 	MKBL.flowBoxSliderSetup()
 	$('.modal-module').addClass('is-hidden')
+
+$(window).on 'load', ->
+	$('body').css('opacity',1)

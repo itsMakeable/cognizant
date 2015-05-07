@@ -93,6 +93,8 @@
 .profile-box-module
   position relative
   float left
+  +below(1024px)
+    display none
   
 .profile-box
   position relative
@@ -101,7 +103,7 @@
   background-color: white
   padding 2rem 0 4rem
   overflow hidden
-  z-index 1
+  z-index 2
   
 .profile-box__default
   align(horizontal)
@@ -204,6 +206,7 @@
   animation slideshufflereverse 1s cubic-bezier(.73,.49,.28,1.21) 0s 1 normal forwards
   will-change: transform
   color black
+  z-index 1
   &.is-active
     animation slideshuffle 1s cubic-bezier(.73,.49,.28,1.21) 0s 1 normal forwards
   &.is-holding
@@ -213,10 +216,6 @@
   &.is-closed
     animation none
     transform scale(0.9) translateX(-34rem)
-  @media screen and (max-width: 768px)
-    width 24rem
-  @media screen and (max-width: 640px)
-    display none
   header
     text-align left
   p
@@ -280,3 +279,23 @@
     transform translate(0rem,0)
     top 7.9rem
     transition transform 0.5s ease 0.4s, top 0.3s cubic-bezier(.73,.49,.28,1.21) 1s
+    
+.profile-box__headline-push
+  col(7/12, offset: 1/12)
+  position relative
+  z-index 0
+  h4
+    text-align left
+  h5
+    text-align left
+    font-family proxReg
+  @media screen and (max-width: 1140px) and (min-width: 1024px)
+    col(7/12)
+    float right
+    .headline-push__center
+      align(vertical)
+  +below(1024px)
+    stack()
+    height 30rem !important
+    .headline-push__center
+      align(vertical)

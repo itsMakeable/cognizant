@@ -40,12 +40,12 @@
     margin-top 3rem
     h2
         font-family proxBold
-    @media screen and (max-width: 1024px)
+    +below(1024px)
         stack(pad:10%)
         margin-bottom 7rem
         &:last-of-type
             margin-bottom 0
-    @media screen and (max-width: 768px)
+    +below(768px)
         stack()
         padding 0
         

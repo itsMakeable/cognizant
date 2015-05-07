@@ -3,11 +3,11 @@
     position: relative
     .flow-box--large
         col(8/12)
-    @media screen and (max-width: 1140px)
+    +below(1140px)
         .flow-box--large,
         .slider-nav-bar
             col(10/12, offset: 1/12)
-    @media screen and (max-width: 940px)
+    +below(940px)
         .flow-box--large
             stack()
             
@@ -16,13 +16,13 @@
     cf()
     .flow-box
         margin-bottom 4rem
-    @media screen and (max-width: 1140px)
+    +below(1140px)
         col(10/12, offset: 1/12)
         .flow-box
             margin-top 3%
             col(1/2)
 
-@media screen and (max-width: 1024px)
++below(1024px)
     .slider-nav-bar,
     .slider-nav-controls,
     .flow-box__small-container

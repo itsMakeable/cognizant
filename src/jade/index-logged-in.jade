@@ -1,75 +1,117 @@
 extends layouts/layout-primary
 
 block content
+	.container.compact-profile-box__container
+		.compact-profile-box-module
+			.compact-profile-box__profile-pic
+				img(src="http://placehold.it/20x20", alt="")
+			p.compact-profile-box__details
+				b Kyla Medina
+				span  | Information Technology &amp; Services
+			.compact-profile-box__aside
+				i.icon
+					svg(viewbox='0 0 100 100')
+						use(xlink:href='#icon_settings')
+				.compact-profile-box__alert
+					span 3
+				i.icon
+					svg(viewbox='0 0 100 100')
+						use(xlink:href='#icon_folders')
+			//- .profile-box-flyout.profile-box-flyout--settings
+			//- 		header
+			//- 			p Settings
+			//- 			hr
+			//- 		.profile-box__button
+			//- 			button.button--silent Edit Info
+			//- 		.profile-box__button
+			//- 			button.button--silent Log Out
+			//- .profile-box-flyout.profile-box-flyout--alerts
+			//- 	header
+			//- 		p Recent Activity
+			//- 		hr
+			//- 	.profile-box__list
+			//- 		each val, index in [1,2,3]
+			//- 			.profile-box__list-item
+			//- 				.profile-box__list-alert
+			//- 					span 1
+			//- 				p
+			//- 					strong
+			//- 						a(href='') Industry Friends
+			//- 				p Invited by Larry
+			//- 				i.icon.profile-box__list-CTA
+			//- 					svg(viewbox='0 0 100 100')
+			//- 						use(xlink:href='#icon_caret')
 	header.main-header.gradient1--horizontal.color-bg
 		.container
-			.profile-box-module
-				.profile-box
-					.profile-box__indicator
-					.profile-box__default
-						.profile-box__profile-pic
-							img(src='http://placehold.it/110x110', alt='')
-						i.profile-box__profile-icon
-							svg(viewbox='0 0 100 100')
-								use(xlink:href='#icon_linkedin')
-					.profile-box__aside
-						i.icon(data-flyout='settings')
-							svg(viewbox='0 0 100 100')
-								use(xlink:href='#icon_settings')
-						.profile-box__alert
-							span 3
-						i.icon(data-flyout='alerts')
-							svg(viewbox='0 0 100 100')
-								use(xlink:href='#icon_folders')
-					.profile-box__text
-						h3 Good Morning
-						h2 Kyla Medina
-						p VP, Healthcare IT Services
-					.profile-box__data
-						div
-							i.icon
+			.row
+				.profile-box-module.equal-height
+					.profile-box
+						.profile-box__indicator
+						.profile-box__default
+							.profile-box__profile-pic
+								img(src='http://placehold.it/110x110', alt='')
+							i.profile-box__profile-icon
 								svg(viewbox='0 0 100 100')
-									use(xlink:href='#icon_location')
-							small Dallas Fort Worth Area	
-						div
-							i.icon
+									use(xlink:href='#icon_linkedin')
+						.profile-box__aside
+							i.icon(data-flyout='settings')
 								svg(viewbox='0 0 100 100')
-									use(xlink:href='#icon_industry')
-							small Information Technology &amp; Services.
-						div
-							i.icon
+									use(xlink:href='#icon_settings')
+							.profile-box__alert
+								span 3
+							i.icon(data-flyout='alerts')
 								svg(viewbox='0 0 100 100')
-									use(xlink:href='#icon_workplace')
-							small United Healthcare
-				.profile-box-flyout.profile-box-flyout--settings
-					header
-						p Settings
-						hr
-					.profile-box__button
-						button.button--silent Edit Info
-					.profile-box__button
-						button.button--silent Log Out
-				.profile-box-flyout.profile-box-flyout--alerts
-					header
-						p Recent Activity
-						hr
-					.profile-box__list
-						each val, index in [1,2,3]
-							.profile-box__list-item
-								.profile-box__list-alert
-									span 1
-								p
-									strong
-										a(href='') Industry Friends
-								p Invited by Larry
-								i.icon.profile-box__list-CTA
+									use(xlink:href='#icon_folders')
+						.profile-box__text
+							h3 Good Morning
+							h2 Kyla Medina
+							p VP, Healthcare IT Services
+						.profile-box__data
+							div
+								i.icon
 									svg(viewbox='0 0 100 100')
-										use(xlink:href='#icon_caret')
-							
-					button.button--silent View All
-			.headline-push
-				h4 Did you know?
-				h5 This is a fact related to the user’s industry populated by demandbase.
+										use(xlink:href='#icon_location')
+								small Dallas Fort Worth Area	
+							div
+								i.icon
+									svg(viewbox='0 0 100 100')
+										use(xlink:href='#icon_industry')
+								small Information Technology &amp; Services.
+							div
+								i.icon
+									svg(viewbox='0 0 100 100')
+										use(xlink:href='#icon_workplace')
+								small United Healthcare
+					.profile-box-flyout.profile-box-flyout--settings
+						header
+							p Settings
+							hr
+						.profile-box__button
+							button.button--silent Edit Info
+						.profile-box__button
+							button.button--silent Log Out
+					.profile-box-flyout.profile-box-flyout--alerts
+						header
+							p Recent Activity
+							hr
+						.profile-box__list
+							each val, index in [1,2,3]
+								.profile-box__list-item
+									.profile-box__list-alert
+										span 1
+									p
+										strong
+											a(href='') Industry Friends
+									p Invited by Larry
+									i.icon.profile-box__list-CTA
+										svg(viewbox='0 0 100 100')
+											use(xlink:href='#icon_caret')
+								
+						button.button--silent View All
+				.profile-box__headline-push.equal-height
+					.headline-push__center
+						h4 Did you know?
+						h5 This is a fact related to the user’s industry populated by demandbase.
 
 	include includes/index-include
 	include includes/linkedin-modal

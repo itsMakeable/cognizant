@@ -36,7 +36,7 @@ gulp.task 'styl', ->
 gulp.task 'css', ->
 	return gulp.src('./tmp/css/**/*.css')
 		.pipe $.concat('main.css')
-		.pipe $.csscomb()
+		# .pipe $.csscomb()
 		.pipe gulp.dest('app')
 		.pipe browserSync.reload({stream:true})
 
