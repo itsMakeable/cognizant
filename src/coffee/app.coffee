@@ -180,6 +180,21 @@ MKBL.shareFlyout = ($this) ->
 		.siblings('.js-share-flyout').eq(0)
 		.toggleClass('is-active')
 
+MKBL.profileCompactFlyout = ($this, $flyoutType) ->
+	$module = $this.closest('.compact-profile-box-module')
+	$flyout = $module.find('.compact-profile-box__flyout--'+$flyoutType)
+	if $flyout.hasClass('is-active')
+		$('.compact-profile-box__flyout').removeClass('is-active')
+	else
+		$('.compact-profile-box__flyout').removeClass('is-active')
+		$flyout.addClass('is-active')
+
+###*
+ * This controls the settings and message alert flyouts associated with the desktop profile box module
+ * @param  {[type]} $this           the icon clicked
+ * @param  {[type]} $flyoutType     which flyout is it?
+ * @param  {[type]} $activeFlyout 	which flyout is currently active
+###
 MKBL.profileFlyout = ($this, $flyoutType) ->
 	$module = $this.closest('.profile-box-module')
 	$activeFlyout = $this.closest('.profile-box-module').find('.profile-box-flyout.is-holding')
@@ -252,6 +267,11 @@ $('.js-open-modal-module').on 'click',  ->
 $('.js-share-flyout__trigger').on 'click',  ->
 	$this = $(this)
 	MKBL.shareFlyout($this)
+
+$('.compact-profile-box__aside .icon').on 'click',  ->
+	$this = $(this)
+	$flyoutType = $this.data('flyout')
+	MKBL.profileCompactFlyout($this, $flyoutType)
 
 $('.profile-box__aside .icon').on 'click',  ->
 	$this = $(this)

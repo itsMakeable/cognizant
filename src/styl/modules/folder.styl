@@ -42,14 +42,14 @@
   background linear-gradient(35deg, darkblue 40%, lightblue 100%)
   .folder-module
     margin 0
-  @media screen and (max-width: 1023px)
+  +below(1023px)
     .folder-module
       float none
       width 34rem
       margin 0 auto 4rem auto !important
     .button--primary
       align(horizontal)
-  @media screen and (max-width: 360px)
+  +below(360px)
       .folder-module
         width 100%
 
@@ -139,24 +139,24 @@
   p
     padding 1rem 0 2rem
     fs(1.5rem)
-  @media screen and (max-width: 1140px)
+  +below(1140px)
     col(8/12)
     float right
     margin-left 3%
     margin-right 0%
-  @media screen and (max-width: 1023px)
+  +below(1023px)
     stack()
     text-align center
     height auto
     min-height 21rem
     padding-bottom 2rem
-    > div
+    .folder-headline-section__callout-center
       position static
       transform none
     h1,
     p
       text-align center
-  @media screen and (max-width: 420px)
+  +below(420px)
     margin-bottom 3rem
     .button--primary
       margin auto

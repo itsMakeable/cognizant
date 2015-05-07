@@ -58,7 +58,7 @@
   position relative
   text-align center
   padding-bottom 13rem
-  @media screen and (max-width: 540px)
+  +below(540px)
     padding-bottom 2rem
   
 .three-group__hr
@@ -69,7 +69,7 @@
   margin 0 11%
   top 70px
   z-index -1
-  @media screen and (max-width: 960px)
+  +below(960px)
     display none
   
 .three-group__groups
@@ -77,15 +77,15 @@
 
 .three-group__group
   col(4/12)
-  @media screen and (max-width: 960px)
+  +below(960px)
     stack(pad: 25%)
     margin-bottom 6rem
-  @media screen and (max-width: 768px)
+  +below(768px)
     stack(pad: 20%)
     &:last-child
       padding-bottom 0
       margin-bottom 0
-  @media screen and (max-width: 540px)
+  +below(540px)
     stack(pad: 5%)
     
 .three-group__title
@@ -107,6 +107,6 @@
   padding 3rem 3rem 4rem
   color darkgray
   margin-bottom 4rem
-  @media screen and (max-width: 960px)
+  +below(960px)
     padding 3rem 3rem 3rem
     margin-bottom 1rem

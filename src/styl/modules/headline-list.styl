@@ -35,7 +35,7 @@
 .headline-list-module
     position relative
     col(10/12, offset: 1/12)
-    @media screen and (max-width: 1140px)
+    +below(1140px)
         stack()
     
 .headline-list__items
@@ -46,7 +46,7 @@
     height 100%
     padding 3.8rem 0
     position relative
-    @media screen and (min-width: 540px)
+    +above(540px)
         &:first-of-type
             padding-top 2.8rem
     &:after
@@ -70,7 +70,7 @@
         color gray
         padding-bottom 1rem
         font-family proxSbold
-    @media screen and (max-width: 940px)
+    +below(940px)
         stack()
         > h3
             display none
@@ -80,13 +80,13 @@
     display inline-block
     vertical-align middle
     padding 0.5rem 1.2rem 0rem 0rem
-    @media screen and (max-width: 940px)
+    +below(940px)
         padding 0
         col(1/10)
-    @media screen and (max-width: 620px)
+    +below(620px)
         col(2/10)
         padding 0rem 1.2rem 0rem 0.5rem
-    @media screen and (max-width: 420px)
+    +below(420px)
         col(3/10)
         
 .headline-list__item-title
@@ -99,19 +99,19 @@
         display none
         padding-top 0.2rem
         padding-bottom 0.5rem
-    @media screen and (max-width: 1024px) and (min-width: 940px)
+    +between(1024px, 940px)
         fs(2.4rem)
-    @media screen and (max-width: 940px)
+    +below(940px)
         br
             display none
         h3
             display block
-    @media screen and (max-width: 620px)
+    +below(620px)
         col(8/10)
         fs(2.2rem)
         h3
             fs(1.3rem)
-    @media screen and (max-width: 420px)
+    +below(420px)
         col(7/10)
         
 
@@ -122,10 +122,10 @@
     p
         color darkgray
         align(vertical)
-    @media screen and (max-width: 940px)
+    +below(940px)
         col(8/10, offset: 1/10)
         margin-top 2rem
-    @media screen and (max-width: 620px)
+    +below(620px)
         stack()
 
 .headline-list__item-CTA
@@ -147,7 +147,7 @@
         margin auto
         left 0
         right 0
-    @media screen and (max-width: 620px)
+    +below(620px)
         display none
     
 .headline-list__footer

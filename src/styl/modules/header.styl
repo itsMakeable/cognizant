@@ -22,7 +22,7 @@
     padding 7rem 0
     text-align center
     position relative
-    @media screen and (max-width: 1140px)
+    +below(1140px)
       // height auto
       padding 3rem 0 3rem 0
     .main-header__body-copy
@@ -37,13 +37,13 @@
     .search-module--main
       position absolute
       bottom -9.2rem
-      @media screen and (max-width: 1140px)
+      +below(1140px)
         position: absolute
         bottom -9.2rem
         width 100%
         left 0
         right 0
-      @media screen and (max-width: 540px)
+      +below(540px)
         bottom -8rem
   .icon.question-mark
     overflow visible

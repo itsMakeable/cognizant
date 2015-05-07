@@ -17,8 +17,8 @@
             <svg viewbox="0 0 100 100">
               <use xlink:href="includes/symbols.svg#icon_settings"></use>
             </svg></i>
-          <div class="profile-box__alert"><span>3</span></div>
-          <i data-flyout="alerts" class="icon">
+          <div class="profile-box__notification"><span>3</span></div>
+          <i data-flyout="notifications" class="icon">
             <svg viewbox="0 0 100 100">
               <use xlink:href="includes/symbols.svg#icon_folders"></use>
             </svg></i>
@@ -55,14 +55,14 @@
           <button class="button--silent">Log Out</button>
         </div>
       </div>
-      <div class="profile-box-flyout profile-box-flyout--alerts">
+      <div class="profile-box-flyout profile-box-flyout--notifications">
         <header>
           <p>Recent Activity</p>
           <hr/>
         </header>
         <div class="profile-box__list">
           <div class="profile-box__list-item">
-            <div class="profile-box__list-alert"><span>1</span></div>
+            <div class="profile-box__list-notification"><span>1</span></div>
             <p><strong><a href="">Industry Friends</a></strong></p>
             <p>Invited by Larry</p><i class="icon profile-box__list-CTA">
               <svg viewbox="0 0 100 100">
@@ -70,7 +70,7 @@
               </svg></i>
           </div>
           <div class="profile-box__list-item">
-            <div class="profile-box__list-alert"><span>1</span></div>
+            <div class="profile-box__list-notification"><span>1</span></div>
             <p><strong><a href="">Industry Friends</a></strong></p>
             <p>Invited by Larry</p><i class="icon profile-box__list-CTA">
               <svg viewbox="0 0 100 100">
@@ -78,7 +78,7 @@
               </svg></i>
           </div>
           <div class="profile-box__list-item">
-            <div class="profile-box__list-alert"><span>1</span></div>
+            <div class="profile-box__list-notification"><span>1</span></div>
             <p><strong><a href="">Industry Friends</a></strong></p>
             <p>Invited by Larry</p><i class="icon profile-box__list-CTA">
               <svg viewbox="0 0 100 100">
@@ -95,6 +95,9 @@
   float left
   +below(1024px)
     display none
+  .profile-box__indicator
+    right 0
+    top 5.5rem
   
 .profile-box
   position relative
@@ -162,18 +165,59 @@
     transition 0.3s ease
     &:hover
       color darkblue
-      
 
-.profile-box__alert
-  @extend $alert-circle
+.profile-box__notification
+  @extend $notification-circle
   position absolute
   top 5rem
   left 0rem
   z-index: 1
 
+
+// FLYOUT SECTION ///////////////////////////////
+
+.compact-profile-box-module,
+.profile-box-flyout
+  header
+    text-align left
+  p
+    fs(1.4rem)
+  hr
+    border-bottom 1px solid gray
+    margin-bottom 2rem
+    padding-top 0.2rem
+  .button--silent
+    padding 0
+    margin 1rem 0
+    
+.profile-box-flyout
+  background-color backgray
+  position absolute
+  padding 2.6rem 1.8rem 1.8rem 4rem
+  width 33rem
+  top 0
+  left 34rem
+  max-height 39rem
+  text-align center
+  transform-origin 0% 50%
+  animation slideshufflereverse 1s cubic-bezier(.73,.49,.28,1.21) 0s 1 normal forwards
+  will-change: transform
+  color black
+  z-index 1
+  &.is-active
+    animation slideshuffle 1s cubic-bezier(.73,.49,.28,1.21) 0s 1 normal forwards
+  &.is-holding
+    transform scale(1) translateX(0rem)
+    animation none
+    box-shadow: -1px 1px 0px 1px rgba(black,.8)
+  &.is-closed
+    animation none
+    transform scale(0.9) translateX(-36rem)
+
+// ANIMATION FOR FLYOUT
 @keyframes slideshuffle
   0%
-    transform scale(0.9) translateX(-100%)
+    transform scale(0.9) translateX(-110%)
     animation-timing-function: ease
   30%
     transform scale(0.9) translateX(0rem)
@@ -191,48 +235,15 @@
   40%
     transform scale(0.9) translateX(0rem)
   100%
-    transform scale(0.9) translateX(-100%)
-
-.profile-box-flyout
-  background-color backgray
-  position absolute
-  padding 2.6rem 1.8rem 1.8rem 4rem
-  width 33rem
-  top 0
-  left 34rem
-  max-height 39rem
-  text-align center
-  transform-origin 0% 0%
-  animation slideshufflereverse 1s cubic-bezier(.73,.49,.28,1.21) 0s 1 normal forwards
-  will-change: transform
-  color black
-  z-index 1
-  &.is-active
-    animation slideshuffle 1s cubic-bezier(.73,.49,.28,1.21) 0s 1 normal forwards
-  &.is-holding
-    transform scale(1) translateX(0rem)
-    animation none
-    box-shadow: -1px 1px 0px 1px rgba(black,.8)
-  &.is-closed
-    animation none
-    transform scale(0.9) translateX(-34rem)
-  header
-    text-align left
-  p
-    fs(1.4rem)
-  hr
-    border-bottom 1px solid gray
-    margin-bottom 2rem
-  .button--silent
-    padding 0
-    margin 1rem 0
+    transform scale(0.9) translateX(-110%)
 
 .profile-box__button
   text-align left
 
 .profile-box__list-item
   position relative
-  margin-bottom 1.6rem
+  margin-top 0.4rem
+  margin-bottom 1.4rem
   text-align left
   a
     color black
@@ -242,9 +253,10 @@
       border-bottom none
   p
     color gray
+    line-height 1.2
 
-.profile-box__list-alert
-  @extend $alert-circle
+.profile-box__list-notification
+  @extend $notification-circle
   position absolute
   left -2.7rem
   top 0.3rem
@@ -258,12 +270,10 @@
 
 .profile-box__indicator
   position absolute
-  right 0
-  top 5.5rem
   width: 0
   height: 0
   border-style: solid
-  border-width: 1rem 1.7rem 1rem 0
+  border-width: 1.3rem 1.3rem 1.3rem 0
   border-color: transparent backgray transparent transparent
   transform translate(2rem,0)
   transition transform 0.5s ease 0.4s, top 0s linear 0.9s
@@ -274,12 +284,15 @@
     top 3.2rem
     transition transform 0.5s ease 0.4s, top 0.3s cubic-bezier(.73,.49,.28,1.21) 1s
 
-.alerts-is-open
+.notifications-is-open
   .profile-box__indicator
     transform translate(0rem,0)
     top 7.9rem
     transition transform 0.5s ease 0.4s, top 0.3s cubic-bezier(.73,.49,.28,1.21) 1s
-    
+
+
+// HEADLINE NEXT TO PROFILE BOX ON DESKTOP //////
+
 .profile-box__headline-push
   col(7/12, offset: 1/12)
   position relative
@@ -289,7 +302,7 @@
   h5
     text-align left
     font-family proxReg
-  @media screen and (max-width: 1140px) and (min-width: 1024px)
+  +between(1140px, 1024px)
     col(7/12)
     float right
     .headline-push__center
@@ -299,3 +312,4 @@
     height 30rem !important
     .headline-push__center
       align(vertical)
+  
