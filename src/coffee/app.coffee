@@ -184,6 +184,11 @@ MKBL.shareFlyout = ($this) ->
 		.siblings('.js-share-flyout').eq(0)
 		.toggleClass('is-active')
 
+###*
+ * Flyout interaction for the mobile profile bar
+ * @param  {[type]} $this       the icon being clicked
+ * @param  {[type]} $flyoutType which flyout is being called?
+###
 MKBL.profileCompactFlyout = ($this, $flyoutType) ->
 	$module = $this.closest('.compact-profile-box-module')
 	$flyout = $module.find('.compact-profile-box__flyout--'+$flyoutType)
@@ -237,7 +242,10 @@ MKBL.profileFlyout = ($this, $flyoutType) ->
 			, 1001
 
 			
-
+###*
+ * Opens the modal
+ * @param  {[type]} $this button that opened the modal
+###
 MKBL.modal = ($this) ->
 	$modal = $($this.data('modal-id').toString())
 	$tooltip = $modal.find('.modal-tip')
@@ -263,7 +271,11 @@ MKBL.modal = ($this) ->
 			'bottom': 'auto'
 			})
 
-MKBL.dropdown = ($dropdown) ->
+###*
+ * Opens the dropdown for the content editable module
+ * @param  {[type]} $dropdown the dropdown being called
+###
+MKBL.contenteditableDropdown = ($dropdown) ->
 	$li = $dropdown.find('li')
 	dropdownHeight = $li.length * $li.outerHeight()
 
@@ -286,7 +298,11 @@ MKBL.dropdown = ($dropdown) ->
 			complete: () ->
 				$(this).removeClass('is-active')
 
-MKBL.dropdownSelect = ($this) ->
+###*
+ * Fills the content editable section with the selected dropdown option
+ * @param  {[type]} $this the button clicked
+###
+MKBL.contenteditableDropdownSelect = ($this) ->
 	$contenteditable = $this.closest('.js-dropdown-option-parent').find('[contenteditable]')
 	
 	$this
@@ -301,11 +317,18 @@ MKBL.dropdownSelect = ($this) ->
 			$contenteditable.css('min-width', $contenteditable.width())
 		, 900
 
+###*
+ * animation for the content editable div on click
+ * @param  {[type]} $this the content editable div
+###
 MKBL.prepareContenteditable = ($this) ->
 	$this.closest('.is-editable').addClass('is-active')
 	if !$this.closest('.is-editable').hasClass('is-filled')
 		$this.text('')
 
+###*
+ * animation for leaving focus of the content editable div
+###
 MKBL.endContenteditable = ->
 	$('[contenteditable]').removeClass('is-active')
 	$('[contenteditable]').each ->
@@ -328,6 +351,9 @@ MKBL.endContenteditable = ->
 					$this.css('min-width', $this.width())
 				, 900
 
+###*
+ * Sets up the content editable div on load
+###
 MKBL.setupContenteditable = ->
 	$('[contenteditable]').each ->
 		$this = $(this)

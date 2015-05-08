@@ -18,18 +18,18 @@ $('body')
 			$this.trigger('change')
 			if $this.closest('.js-dropdown-option-parent').find('.dropdown-module').length
 				$dropdown = $(this).closest('.js-dropdown-option-parent').find('.dropdown-module')
-				MKBL.dropdown($dropdown)
+				MKBL.contenteditableDropdown($dropdown)
 
 $('.js-dropdown-trigger').on 'click',  ->
 	if $(this).find('.dropdown-module').length
 		$dropdown = $(this).closest('.dropdown-module')
 	else
 		$dropdown = $(this).siblings('.dropdown-module')
-	MKBL.dropdown($dropdown)
+	MKBL.contenteditableDropdown($dropdown)
 
 $('.js-dropdown-option').on 'click',  ->
 	$this = $(this)
-	MKBL.dropdownSelect($this)
+	MKBL.contenteditableDropdownSelect($this)
 
 $('.js-open-modal-module').on 'click',  ->
 	$this = $(this)
