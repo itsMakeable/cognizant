@@ -1,8 +1,56 @@
 extends layouts/layout-secondary
 
 block content
-	header.header--section
-		h1 Tell Us About Yourself
-		p You don't need to Sign In with LinkedIn to enjoy personalized results. Tell us about yourself to get started.
-	div
-		a.button--primary(href='') Continue
+	.container
+		i.icon.modal-close
+			svg(viewbox='0 0 100 100')
+				use(xlink:href='#icon_x')
+		header.header--section
+			h1 Edit Your Profile
+			p Information about editing your profile infromation. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	component.contenteditable-module
+		.container
+			.contenteditable__text
+				h2
+					div.noneditable I'm an 
+					div.is-editable.js-dropdown-option-parent.has-dropdown
+						div.js-dropdown-option-holder(contenteditable data-placeholder='Occupation') Occupation
+						i.icon.js-dropdown-trigger
+							svg(viewbox='0 0 100 100')
+								use(xlink:href='#icon_caret')
+						subcomponent.contenteditable-dropdown
+							ul
+								li.js-dropdown-option Seach Suggestion
+								li.js-dropdown-option Search Suggestion
+								li.js-dropdown-option: span Seach Suggestion
+								li.js-dropdown-option Search Suggestion
+								li.js-dropdown-option Seach Suggestion
+								li.js-dropdown-option Seach Suggestion
+								li.js-dropdown-option Seach Suggestion
+
+					div.noneditable  interested in the
+					
+					div.is-editable.js-dropdown-option-parent.has-dropdown
+						div.js-dropdown-option-holder(contenteditable data-placeholder='Industry') Industry
+						i.icon.js-dropdown-trigger
+							svg(viewbox='0 0 100 100')
+								use(xlink:href='#icon_caret')
+						subcomponent.contenteditable-dropdown
+							ul
+								li.js-dropdown-option Seach Suggestion
+								li.js-dropdown-option Search Suggestion
+								li.js-dropdown-option: span Seach Suggestion
+								li.js-dropdown-option Search Suggestion
+								li.js-dropdown-option Seach Suggestion
+								li.js-dropdown-option Seach Suggestion
+					br 
+					div.noneditable  Industry. I work for 
+					div.is-editable
+						div(contenteditable data-placeholder='Workplace') Workplace
+				
+					div.noneditable  in 
+					div.is-editable
+						div(contenteditable data-placeholder='Zip Code') Zip Code
+					span.noneditable .
+			.contenteditable__button-box
+				a.button--primary(href='') Continue
