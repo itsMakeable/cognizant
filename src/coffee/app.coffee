@@ -330,8 +330,11 @@ MKBL.endContenteditable = ->
 
 MKBL.setupContenteditable = ->
 	$('[contenteditable]').each ->
-		$(this).css('max-width', $(window).width()*0.7)
-		if $(this).outerWidth() < $(window).width()*0.7
-			$(this).css('min-width',$(this).outerWidth())
+		$this = $(this)
+		$this
+			.css('height', $this.outerHeight())
+			.css('max-width', $(window).width()*0.7)
+		if $this.outerWidth() < $(window).width()*0.7
+			$this.css('min-width',$this.outerWidth())
 		else
-			$(this).css('min-width', $(window).width()*0.7)
+			$this.css('min-width', $(window).width()*0.7)

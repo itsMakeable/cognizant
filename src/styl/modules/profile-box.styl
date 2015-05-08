@@ -1,8 +1,7 @@
-// PROFILE BOX //////////////////////////////////
-
 /*!**
   title: Profile Box Desktop
   section: Profile Box
+  description: The box that appears when the user logs in.
   example: |
     <div class="profile-box-module">
       <div class="profile-box">
@@ -93,7 +92,7 @@
 .profile-box-module
   position relative
   float left
-  +below(1024px)
+  +below(1024)
     display none
   .profile-box__indicator
     right 0
@@ -240,12 +239,6 @@
     opacity 0
     transform scale(1) translateX(0rem)
     animation-timing-function: linear
-  // 30%
-  //   transform scale(0.9) translateX(0rem)
-  //   animation-timing-function: linear
-  // 40%
-  //   transform scale(0.9) translateX(0rem)
-  //   animation-timing-function: ease-in-back
   100%
     opacity 0
     transform scale(0.9) translateX(-110%)
@@ -321,7 +314,7 @@
     float right
     .headline-push__center
       align(vertical)
-  +below(1024px)
+  +below(1024)
     stack()
     height 30rem !important
     .headline-push__center

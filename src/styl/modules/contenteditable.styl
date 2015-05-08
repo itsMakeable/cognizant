@@ -1,6 +1,7 @@
 /*!**
   title: Editable Module
   section: Editable Content
+  description: Can't input text in the styleguide but works on the site.
   example: |
     <component class="contenteditable-module">
       <div class="container">
@@ -12,7 +13,7 @@
                 <svg viewbox="0 0 100 100">
                   <use xlink:href="includes/symbols.svg#icon_caret"></use>
                 </svg></i>
-              <div class="dropdown-module">
+              <subcomponent class="contenteditable-dropdown">
                 <ul>
                   <li class="js-dropdown-option">Search Suggestion</li>
                   <li class="js-dropdown-option">Search Suggestion</li>
@@ -22,7 +23,7 @@
                   <li class="js-dropdown-option">Search Suggestion</li>
                   <li class="js-dropdown-option">Search Suggestion</li>
                 </ul>
-              </div>
+              </subcomponent>
             </div>
             <div class="noneditable"> interested in the</div>
             <div class="is-editable js-dropdown-option-parent has-dropdown">
@@ -30,7 +31,7 @@
                 <svg viewbox="0 0 100 100">
                   <use xlink:href="includes/symbols.svg#icon_caret"></use>
                 </svg></i>
-              <div class="dropdown-module">
+              <subcomponent class="contenteditable-dropdown">
                 <ul>
                   <li class="js-dropdown-option">Search Suggestion</li>
                   <li class="js-dropdown-option">Search Suggestion</li>
@@ -39,7 +40,7 @@
                   <li class="js-dropdown-option">Search Suggestion</li>
                   <li class="js-dropdown-option">Search Suggestion</li>
                 </ul>
-              </div>
+              </subcomponent>
             </div><br/>
             <div class="noneditable"> Industry. I work for </div>
             <div class="is-editable">
@@ -103,7 +104,7 @@
      &.has-dropdown
        [contenteditable]
          margin-right 4rem
-     .dropdown-module
+     .contenteditable-dropdown
        position absolute
        width 100%
        z-index: 10
@@ -126,7 +127,7 @@
     .is-editable 
       .icon
         top 0.7rem
-      .dropdown-module
+      .contenteditable-dropdown
         top 3.5rem
 
       

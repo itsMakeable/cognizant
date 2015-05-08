@@ -3,10 +3,10 @@ section.section.flow-box-slider-section.backgray-bg
 		header.header--section
 			h1 featured insight
 			p Subheader introducing Featured Thinking section.
-		.flow-box-slider
+		component.flow-box-slider
 			each val, index in {1:'is-active',2:'is-next',3:'is-prev'}
 				.row.flow-box-slider-group(class="#{val}")
-					component.flow-box.flow-box--large.gradient2--vertical
+					article.flow-box.flow-box--large.gradient2--vertical
 						
 						h4.flow-box__tag Article | 
 							i.icon
@@ -34,7 +34,7 @@ section.section.flow-box-slider-section.backgray-bg
 										use(xlink:href='#icon_share')
 									svg.is-filled(viewbox='0 0 100 100')
 										use(xlink:href='#icon_share-filled')
-								.flow-box__share-flyout-wrapper.js-share-flyout
+								component.flow-box__share-flyout-wrapper.js-share-flyout
 									.flow-box__share-flyout.share-flyout
 										.flow-box-flyout__icon.share-flyout__icon
 											svg(viewbox='0 0 100 100')
@@ -51,9 +51,9 @@ section.section.flow-box-slider-section.backgray-bg
 
 								i.flow-box__CTA--right
 									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_triangle')
-					component.flow-box__small-container
+					article.flow-box__small-container
 						each val, index in [1,2]
-							.flow-box.gradient1--vertical
+							component.flow-box.gradient1--vertical
 								h4.flow-box__tag Article | 
 									i.icon
 										svg(viewbox='0 0 100 100')
@@ -71,9 +71,9 @@ section.section.flow-box-slider-section.backgray-bg
 										i.flow-box__CTA--right
 											svg(viewbox='0 0 100 100'): use(xlink:href='#icon_triangle')
 			.row
-				.slider-nav-bar
+				subcomponent.slider-nav-bar
 					.slider-nav-indicator.velocity-animating
-				.slider-nav-controls
+				subcomponent.slider-nav-controls
 					.slider-nav__control.is-left
 						i.icon.is-right
 							svg(viewbox='0 0 100 100'): use(xlink:href='#icon_caret')
@@ -86,7 +86,7 @@ section.section.flow-box-slider-section.backgray-bg
 section.section.generic-section.white-bg
 	.container
 		each val, index in [1,2]
-			component.content-list
+			.content-list
 				header.content-list__header
 					h2 SMAC
 					h3 Social Mobile Analytics Cloud

@@ -10,7 +10,7 @@ block content
 			p Information about editing your profile infromation. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 	component.contenteditable-module
 		.container
-			section.contenteditable__text
+			.contenteditable__text
 				h2
 					div.noneditable I'm an 
 					div.is-editable.js-dropdown-option-parent.has-dropdown
@@ -18,7 +18,7 @@ block content
 						i.icon.js-dropdown-trigger
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_caret')
-						.dropdown-module
+						subcomponent.contenteditable-dropdown
 							ul
 								li.js-dropdown-option Seach Suggestion
 								li.js-dropdown-option Search Suggestion
@@ -35,7 +35,7 @@ block content
 						i.icon.js-dropdown-trigger
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_caret')
-						.dropdown-module
+						subcomponent.contenteditable-dropdown
 							ul
 								li.js-dropdown-option Seach Suggestion
 								li.js-dropdown-option Search Suggestion
