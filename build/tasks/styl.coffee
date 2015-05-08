@@ -44,14 +44,10 @@ gulp.task 'css', ->
 gulp.task 'styleguide', ->
 	StyleGuide = require('styleguidejs')
 	sg = new StyleGuide
-	sg.addFile 'tmp/css/index.css'
+	sg.addFile 'app/main.css'
 	sg.render
 		extraCss: [ 
-			'tmp/css/ProximaNova-Bold.css', 
-			'tmp/css/ProximaNova-Reg.css',
-			'tmp/css/ProximaNova-Light.css',
-			'tmp/css/ProximaNova-RegIt.css',
-			'tmp/css/ProximaNova-Sbold.css' 
+
 		]
 		extraJs: [ 
 			'build/styleguide/holder.min.js' 

@@ -1,14 +1,15 @@
 extends layouts/layout-secondary
 
 block content
+	.container
+		i.icon.modal-close
+			svg(viewbox='0 0 100 100')
+				use(xlink:href='#icon_x')
+		header.header--section
+			h1 Edit Your Profile
+			p Information about editing your profile infromation. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 	component.contenteditable-module
 		.container
-			i.icon.modal-close
-				svg(viewbox='0 0 100 100')
-					use(xlink:href='#icon_x')
-			header.header--section
-				h1 Edit Your Profile
-				p Information about editing your profile infromation. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 			section.contenteditable__text
 				h2
 					div.noneditable I'm an 
@@ -19,13 +20,13 @@ block content
 								use(xlink:href='#icon_caret')
 						.dropdown-module
 							ul
-								li.js-dropdown-option this
-								li.js-dropdown-option that
-								li.js-dropdown-option: span this
-								li.js-dropdown-option that
-								li.js-dropdown-option this
-								li.js-dropdown-option tthathis
-								li.js-dropdown-option tthathis
+								li.js-dropdown-option Seach Suggestion
+								li.js-dropdown-option Search Suggestion
+								li.js-dropdown-option: span Seach Suggestion
+								li.js-dropdown-option Search Suggestion
+								li.js-dropdown-option Seach Suggestion
+								li.js-dropdown-option Seach Suggestion
+								li.js-dropdown-option Seach Suggestion
 
 					div.noneditable  interested in the
 					
@@ -36,12 +37,12 @@ block content
 								use(xlink:href='#icon_caret')
 						.dropdown-module
 							ul
-								li.js-dropdown-option this
-								li.js-dropdown-option that
-								li.js-dropdown-option: span this
-								li.js-dropdown-option that
-								li.js-dropdown-option this
-								li.js-dropdown-option tthathis
+								li.js-dropdown-option Seach Suggestion
+								li.js-dropdown-option Search Suggestion
+								li.js-dropdown-option: span Seach Suggestion
+								li.js-dropdown-option Search Suggestion
+								li.js-dropdown-option Seach Suggestion
+								li.js-dropdown-option Seach Suggestion
 					br 
 					div.noneditable  Industry. I work for 
 					div.is-editable

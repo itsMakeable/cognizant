@@ -1,3 +1,7 @@
+###*
+ * COGNIZANT START APP.JS
+###
+
 MKBL = {}
 
 ###*
@@ -261,12 +265,12 @@ MKBL.modal = ($this) ->
 
 MKBL.dropdown = ($dropdown) ->
 	$li = $dropdown.find('li')
-	dropdownHeight = $li.length * $li.height()
+	dropdownHeight = $li.length * $li.outerHeight()
 
 	if dropdownHeight > 342
 		dropdownHeight = 372
 
-	if $dropdown.height() < 1
+	if !$dropdown.hasClass('is-active')
 		$dropdown.velocity { height: dropdownHeight }, 
 			duration: 600,
 			easing: [ 300, 30 ],
@@ -297,127 +301,37 @@ MKBL.dropdownSelect = ($this) ->
 			$contenteditable.css('min-width', $contenteditable.width())
 		, 900
 
-MKBL.contenteditable = ($this) ->
+MKBL.prepareContenteditable = ($this) ->
 	$this.closest('.is-editable').addClass('is-active')
 	if !$this.closest('.is-editable').hasClass('is-filled')
 		$this.text('')
 
-MKBL.contenteditableSetup = ->
+MKBL.endContenteditable = ->
+	$('[contenteditable]').removeClass('is-active')
+	$('[contenteditable]').each ->
+		$this = $(this)
+		if $this.text() == ''
+			$this
+				.text($this.data('placeholder'))
+				.closest('.is-editable')
+				.removeClass('is-filled')
+				.removeClass('is-active')
+		else 
+			if $this.text() != $this.data('placeholder')
+				$this
+					.closest('.is-editable')
+					.addClass('is-filled')
+			if $this.prop('scrollWidth') < $(window).width()*0.7 and $this.css('min-width') != $this.width()
+				$this
+					.css('min-width', '40px')
+				setTimeout ->
+					$this.css('min-width', $this.width())
+				, 900
+
+MKBL.setupContenteditable = ->
 	$('[contenteditable]').each ->
 		$(this).css('max-width', $(window).width()*0.7)
 		if $(this).outerWidth() < $(window).width()*0.7
 			$(this).css('min-width',$(this).outerWidth())
 		else
 			$(this).css('min-width', $(window).width()*0.7)
-
-## EVENTS ###############################
-
-$('[contenteditable]').on 'click',  ->
-	$this = $(this)
-	MKBL.contenteditable($this)
-
-$('body')
-	.on 'focus', '[contenteditable]', ->
-		$this = $(this)
-		$this.data 'before', $this.html()
-		return $this
-	.on 'blur keyup paste input', '[contenteditable]', ->
-		$this = $(this)
-		if $this.data('before') isnt $this.html()
-			$this.data 'before', $this.html()
-			$this.trigger('change')
-			console.log '$dropdown'
-			if $this.closest('.js-dropdown-option-parent').find('.dropdown-module').length
-				$dropdown = $(this).closest('.js-dropdown-option-parent').find('.dropdown-module')
-				MKBL.dropdown($dropdown)
-				# $this.closest('.js-dropdown-option-parent').find('.js-dropdown-trigger').click()
-
-$('.js-dropdown-trigger').on 'click',  ->
-	if $(this).find('.dropdown-module').length
-		$dropdown = $(this).closest('.dropdown-module')
-	else
-		$dropdown = $(this).siblings('.dropdown-module')
-	MKBL.dropdown($this)
-
-$('.js-dropdown-option').on 'click',  ->
-	$this = $(this)
-	MKBL.dropdownSelect($this)
-
-$('.js-open-modal-module').on 'click',  ->
-	$this = $(this)
-	MKBL.modal($this)
-
-$('.js-share-flyout__trigger').on 'click',  ->
-	$this = $(this)
-	MKBL.shareFlyout($this)
-
-$('.compact-profile-box__aside .icon').on 'click',  ->
-	$this = $(this)
-	$flyoutType = $this.data('flyout')
-	MKBL.profileCompactFlyout($this, $flyoutType)
-
-$('.profile-box__aside .icon').on 'click',  ->
-	$this = $(this)
-	$flyoutType = $this.data('flyout')
-	MKBL.profileFlyout($this, $flyoutType)
-
-$('.slider-nav__control').on 'click', ->
-	$slider = $(this).closest('.flow-box-slider')
-	$slides = $slider.find('.flow-box-slider-group')
-	$activeSlide = $slider.find('.is-active')
-
-	direction = 'prev'
-	if $(this).hasClass('is-right')
-		direction = 'next'
-
-	MKBL.flowBoxSlider($slider, $slides, $activeSlide, direction)
-
-$('.social-group__icon').on 'click',  ->
-	$this = $(this)
-	MKBL.socialSlider($this)
-
-# STOP EVENT PROPAGATION
-$(document).on 'click', (event) ->
-	if !$(event.target).closest('.js-open-modal-module').length
-		$('.modal-module').addClass('is-hidden')
-	if !$(event.target).closest('.js-dropdown-trigger').length
-		$('.dropdown-module').velocity {height: 0}, 
-			duration: 600,
-			easing: [ 300, 30 ],
-			delay: 0
-			complete: () ->
-				$(this).removeClass('is-active')
-	if !$(event.target).closest('[contenteditable]').length and !$(event.target).closest('.is-editable .js-dropdown-option').length
-		$('[contenteditable]').removeClass('is-active')
-		$('[contenteditable]').each ->
-			$this = $(this)
-			if $this.text() == ''
-				$this
-					.text($this.data('placeholder'))
-					.closest('.is-editable')
-					.removeClass('is-filled')
-					.removeClass('is-active')
-			else 
-				if $this.prop('scrollWidth') < $(window).width()*0.7 and $this.css('min-width') != $this.width()
-					$this
-						.css('min-width', '40px')
-					setTimeout ->
-						$this.css('min-width', $this.width())
-					, 900
-
-$ ->
-	MKBL.equalheight('.banner-module','.banner-module > div', 940)
-	MKBL.equalheight('.main-header','.equal-height', 1024)
-	MKBL.flowBoxSliderSetup()
-	MKBL.contenteditableSetup()
-	
-
-$(window).on 'resize', ->
-	MKBL.equalheight('.main-header','.equal-height', 1024)
-	MKBL.equalheight('.banner-module','.banner-module > div', 940)
-	MKBL.flowBoxSliderSetup()
-	$('.modal-module').addClass('is-hidden')
-	MKBL.contenteditableSetup()
-
-$(window).on 'load', ->
-	$('body').css('opacity',1)
