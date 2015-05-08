@@ -9,11 +9,11 @@ block content
 			header.header--section
 				h1 Edit Your Profile
 				p Information about editing your profile infromation. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			section.descriptor__text
+			section.contenteditable__text
 				h2
 					div.noneditable I'm an 
-					div.is-editable.is-filled.js-dropdown-option-parent.has-dropdown
-						div.js-dropdown-option-holder(contenteditable data-placeholder='occupation') Executive Account Director
+					div.is-editable.js-dropdown-option-parent.has-dropdown
+						div.js-dropdown-option-holder(contenteditable data-placeholder='Occupation') Occupation
 						i.icon.js-dropdown-trigger
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_caret')
@@ -27,7 +27,8 @@ block content
 								li.js-dropdown-option tthathis
 								li.js-dropdown-option tthathis
 
-					div.noneditable  interested in the 
+					div.noneditable  interested in the
+					
 					div.is-editable.js-dropdown-option-parent.has-dropdown
 						div.js-dropdown-option-holder(contenteditable data-placeholder='Industry') Industry
 						i.icon.js-dropdown-trigger
@@ -41,7 +42,7 @@ block content
 								li.js-dropdown-option that
 								li.js-dropdown-option this
 								li.js-dropdown-option tthathis
-
+					br 
 					div.noneditable  Industry. I work for 
 					div.is-editable
 						div(contenteditable data-placeholder='Workplace') Workplace
@@ -50,5 +51,5 @@ block content
 					div.is-editable
 						div(contenteditable data-placeholder='Zip Code') Zip Code
 					span.noneditable .
-			.descriptor__button-box
+			.contenteditable__button-box
 				a.button--primary(href='') Continue

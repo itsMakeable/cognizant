@@ -6,19 +6,19 @@ MKBL = {}
  * @param  {[type]} additions classes you want to add
 ###
 $.fn.alterClass = (removals, additions) ->
-  self = this
-  if removals.indexOf('*') == -1
-    # Use native jQuery methods if there is no wildcard matching
-    self.removeClass removals
-    return if !additions then self else self.addClass(additions)
-  patt = new RegExp('\\s' + removals.replace(/\*/g, '[A-Za-z0-9-_]+').split(' ').join('\\s|\\s') + '\\s', 'g')
-  self.each (i, it) ->
-    cn = ' ' + it.className + ' '
-    while patt.test(cn)
-      cn = cn.replace(patt, ' ')
-    it.className = $.trim(cn)
-    return
-  if !additions then self else self.addClass(additions)
+	self = this
+	if removals.indexOf('*') == -1
+		# Use native jQuery methods if there is no wildcard matching
+		self.removeClass removals
+		return if !additions then self else self.addClass(additions)
+	patt = new RegExp('\\s' + removals.replace(/\*/g, '[A-Za-z0-9-_]+').split(' ').join('\\s|\\s') + '\\s', 'g')
+	self.each (i, it) ->
+		cn = ' ' + it.className + ' '
+		while patt.test(cn)
+			cn = cn.replace(patt, ' ')
+		it.className = $.trim(cn)
+		return
+	if !additions then self else self.addClass(additions)
 
 ###*
  * Converts matrix like rgba or transforms to an array
@@ -259,15 +259,15 @@ MKBL.modal = ($this) ->
 			'bottom': 'auto'
 			})
 
-MKBL.dropdown = ($this) ->
-	$li = $this.find('li')
+MKBL.dropdown = ($dropdown) ->
+	$li = $dropdown.find('li')
 	dropdownHeight = $li.length * $li.height()
 
 	if dropdownHeight > 342
 		dropdownHeight = 372
 
-	if $this.height() < 1
-		$this.velocity { height: dropdownHeight }, 
+	if $dropdown.height() < 1
+		$dropdown.velocity { height: dropdownHeight }, 
 			duration: 600,
 			easing: [ 300, 30 ],
 			delay: 0
@@ -275,7 +275,7 @@ MKBL.dropdown = ($this) ->
 				$(this).addClass('is-active')
 
 	else
-		$this.velocity {height: 0},
+		$dropdown.velocity {height: 0},
 			duration: 600,
 			easing: [ 300, 30 ],
 			delay: 0
@@ -292,11 +292,10 @@ MKBL.dropdownSelect = ($this) ->
 		.text($this.text())
 
 	if $contenteditable.prop('scrollWidth') < $(window).width()*0.7
-		$contenteditable
-			.css('min-width', 0)
+		$contenteditable.css('min-width', '40px')
 		setTimeout ->
 			$contenteditable.css('min-width', $contenteditable.width())
-		, 300
+		, 900
 
 MKBL.contenteditable = ($this) ->
 	$this.closest('.is-editable').addClass('is-active')
@@ -317,11 +316,27 @@ $('[contenteditable]').on 'click',  ->
 	$this = $(this)
 	MKBL.contenteditable($this)
 
+$('body')
+	.on 'focus', '[contenteditable]', ->
+		$this = $(this)
+		$this.data 'before', $this.html()
+		return $this
+	.on 'blur keyup paste input', '[contenteditable]', ->
+		$this = $(this)
+		if $this.data('before') isnt $this.html()
+			$this.data 'before', $this.html()
+			$this.trigger('change')
+			console.log '$dropdown'
+			if $this.closest('.js-dropdown-option-parent').find('.dropdown-module').length
+				$dropdown = $(this).closest('.js-dropdown-option-parent').find('.dropdown-module')
+				MKBL.dropdown($dropdown)
+				# $this.closest('.js-dropdown-option-parent').find('.js-dropdown-trigger').click()
+
 $('.js-dropdown-trigger').on 'click',  ->
 	if $(this).find('.dropdown-module').length
-		$this = $(this).closest('.dropdown-module')
+		$dropdown = $(this).closest('.dropdown-module')
 	else
-		$this = $(this).siblings('.dropdown-module')
+		$dropdown = $(this).siblings('.dropdown-module')
 	MKBL.dropdown($this)
 
 $('.js-dropdown-option').on 'click',  ->
@@ -372,7 +387,7 @@ $(document).on 'click', (event) ->
 			delay: 0
 			complete: () ->
 				$(this).removeClass('is-active')
-	if !$(event.target).closest('[contenteditable]').length and !$(event.target).closest('.is-editable .dropdown-module').length
+	if !$(event.target).closest('[contenteditable]').length and !$(event.target).closest('.is-editable .js-dropdown-option').length
 		$('[contenteditable]').removeClass('is-active')
 		$('[contenteditable]').each ->
 			$this = $(this)
@@ -382,12 +397,13 @@ $(document).on 'click', (event) ->
 					.closest('.is-editable')
 					.removeClass('is-filled')
 					.removeClass('is-active')
-			else if $this.prop('scrollWidth') < $(window).width()*0.7
-				$this
-					.css('min-width', 0)
-				setTimeout ->
-					$this.css('min-width', $this.width())
-				, 300
+			else 
+				if $this.prop('scrollWidth') < $(window).width()*0.7 and $this.css('min-width') != $this.width()
+					$this
+						.css('min-width', '40px')
+					setTimeout ->
+						$this.css('min-width', $this.width())
+					, 900
 
 $ ->
 	MKBL.equalheight('.banner-module','.banner-module > div', 940)

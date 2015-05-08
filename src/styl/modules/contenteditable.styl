@@ -41,7 +41,7 @@
              transform rotate(90deg)
      [contenteditable]
        text-align left
-       transition all 0.3s ease 0s
+       transition min-width 0.8s ease-out 0.1s, color 0.3s ease, background 0.3s ease
      &.has-dropdown
        [contenteditable]
          margin-right 4rem
@@ -79,7 +79,7 @@
         top 3.5rem
 
       
-.descriptor__text
+.contenteditable__text
   margin-bottom 6rem
   h2
     > div
@@ -87,7 +87,7 @@
   .noneditable
     overflow hidden    
     display inline-block
-.descriptor__button-box
+.contenteditable__button-box
   text-align center
 
 .chrome,
