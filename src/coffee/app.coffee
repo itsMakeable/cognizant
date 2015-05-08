@@ -283,11 +283,20 @@ MKBL.dropdown = ($this) ->
 				$(this).removeClass('is-active')
 
 MKBL.dropdownSelect = ($this) ->
+	$contenteditable = $this.closest('.js-dropdown-option-parent').find('[contenteditable]')
+	
 	$this
 		.closest('.js-dropdown-option-parent')
 		.addClass('is-filled')
 		.find('.js-dropdown-option-holder')
 		.text($this.text())
+
+	if $contenteditable.prop('scrollWidth') < $(window).width()*0.7
+		$contenteditable
+			.css('min-width', 0)
+		setTimeout ->
+			$contenteditable.css('min-width', $contenteditable.width())
+		, 300
 
 MKBL.contenteditable = ($this) ->
 	$this.closest('.is-editable').addClass('is-active')
@@ -296,10 +305,11 @@ MKBL.contenteditable = ($this) ->
 
 MKBL.contenteditableSetup = ->
 	$('[contenteditable]').each ->
-		if $(this).outerWidth() < ($(window).width()*0.7)
-			$(this).css('width',$(this).outerWidth())
+		$(this).css('max-width', $(window).width()*0.7)
+		if $(this).outerWidth() < $(window).width()*0.7
+			$(this).css('min-width',$(this).outerWidth())
 		else
-			$(this).css('width',($(window).width()*0.7))
+			$(this).css('min-width', $(window).width()*0.7)
 
 ## EVENTS ###############################
 
@@ -362,7 +372,7 @@ $(document).on 'click', (event) ->
 			delay: 0
 			complete: () ->
 				$(this).removeClass('is-active')
-	if !$(event.target).closest('[contenteditable]').length
+	if !$(event.target).closest('[contenteditable]').length and !$(event.target).closest('.is-editable .dropdown-module').length
 		$('[contenteditable]').removeClass('is-active')
 		$('[contenteditable]').each ->
 			$this = $(this)
@@ -372,6 +382,13 @@ $(document).on 'click', (event) ->
 					.closest('.is-editable')
 					.removeClass('is-filled')
 					.removeClass('is-active')
+			else if $this.prop('scrollWidth') < $(window).width()*0.7
+				$this
+					.css('min-width', 0)
+				setTimeout ->
+					$this.css('min-width', $this.width())
+				, 300
+
 $ ->
 	MKBL.equalheight('.banner-module','.banner-module > div', 940)
 	MKBL.equalheight('.main-header','.equal-height', 1024)

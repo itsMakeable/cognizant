@@ -2,7 +2,7 @@ extends layouts/layout-primary
 
 block content
 	.container.compact-profile-box__container
-		.compact-profile-box-module
+		component.compact-profile-box-module
 			.compact-profile-box-bar
 				.compact-profile-box__profile-pic
 					img(src="http://placehold.it/20x20", alt="")
@@ -19,7 +19,7 @@ block content
 						svg(viewbox='0 0 100 100')
 							use(xlink:href='#icon_settings')
 				
-			.compact-profile-box__flyout.compact-profile-box__flyout--settings
+			subcomponent.compact-profile-box__flyout.compact-profile-box__flyout--settings
 				.profile-box__indicator
 				header
 					p Settings
@@ -28,7 +28,7 @@ block content
 					button.button--silent Edit Info
 				.profile-box__button
 					button.button--silent Log Out
-			.compact-profile-box__flyout.compact-profile-box__flyout--notifications
+			subcomponent.compact-profile-box__flyout.compact-profile-box__flyout--notifications
 				.profile-box__indicator
 				header
 					p Recent Activity
@@ -49,7 +49,7 @@ block content
 	header.main-header.gradient1--horizontal.color-bg
 		.container
 			.row
-				.profile-box-module.equal-height
+				component.profile-box-module.equal-height
 					.profile-box
 						.profile-box__indicator
 						.profile-box__default
@@ -87,7 +87,7 @@ block content
 									svg(viewbox='0 0 100 100')
 										use(xlink:href='#icon_workplace')
 								small United Healthcare
-					.profile-box-flyout.profile-box-flyout--settings
+					subcomponent.profile-box-flyout.profile-box-flyout--settings
 						header
 							p Settings
 							hr
@@ -95,7 +95,7 @@ block content
 							button.button--silent Edit Info
 						.profile-box__button
 							button.button--silent Log Out
-					.profile-box-flyout.profile-box-flyout--notifications
+					subcomponent.profile-box-flyout.profile-box-flyout--notifications
 						header
 							p Recent Activity
 							hr

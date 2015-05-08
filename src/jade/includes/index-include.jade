@@ -6,7 +6,7 @@ section.section.flow-box-slider-section.backgray-bg
 		.flow-box-slider
 			each val, index in {1:'is-active',2:'is-next',3:'is-prev'}
 				.row.flow-box-slider-group(class="#{val}")
-					.flow-box.flow-box--large.gradient2--vertical
+					component.flow-box.flow-box--large.gradient2--vertical
 						
 						h4.flow-box__tag Article | 
 							i.icon
@@ -51,7 +51,7 @@ section.section.flow-box-slider-section.backgray-bg
 
 								i.flow-box__CTA--right
 									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_triangle')
-					.flow-box__small-container
+					component.flow-box__small-container
 						each val, index in [1,2]
 							.flow-box.gradient1--vertical
 								h4.flow-box__tag Article | 
@@ -86,7 +86,7 @@ section.section.flow-box-slider-section.backgray-bg
 section.section.generic-section.white-bg
 	.container
 		each val, index in [1,2]
-			.content-list
+			component.content-list
 				header.content-list__header
 					h2 SMAC
 					h3 Social Mobile Analytics Cloud
@@ -116,7 +116,7 @@ section.section.folder-headline-section.color-bg
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_linkedin')
 						| Sign In with Linkedin
-		div.folder-module.gradient1--vertical--reverse
+		component.folder-module.gradient1--vertical--reverse
 			p.folder__alert
 				span.folder__alert-number
 					span 1
@@ -142,12 +142,12 @@ section.section.generic-section.white-bg
 			h1 All Latest Thinking
 			p Subheader introducing Featured Thinking section.
 	.container
-		.three-group-module
+		component.three-group-module
 			.row
 				.three-group__hr
 			.three-group__groups
 				each val, index in [1,2,3]
-					.three-group__group
+					subcomponent.three-group__group
 						i.three-group__icon
 							svg(xmlns='http://www.w3.org/2000/svg', viewbox='-27.4 -25.8 75 67.4')
 								lineargradient#a(gradientunits='userSpaceOnUse', x1='5.653', y1='47.184', x2='18.642', y2='-26.483')
@@ -167,7 +167,7 @@ section.section.scrolling-photo-offset-bg.height-overflow-section(style='backgro
 			h1 Latest Strategies
 			p Subheader introducing Featured Thinking section.
 	.container.white-bg
-		.headline-list-module
+		component.headline-list-module
 			.headline-list__items
 				each val, index in [1,2,3]
 					.headline-list__item
@@ -195,7 +195,7 @@ section.section.scrolling-photo-offset-bg.height-overflow-section(style='backgro
 					a.button--silent(href='#') View SMAC
 
 section.section.generic-section
-	.banner-module
+	component.banner-module
 		.banner__text
 			h2 Cognizant Connections
 			p An exclusive online community for technology and business leaders.
@@ -206,7 +206,7 @@ section.section.generic-section
 
 section.section.generic-section
 	.container
-		.social-group-module
+		component.social-group-module
 			.row
 				.social-group__groups.social-group__groups--icons
 					i.social-group__icon.facebook.is-active
