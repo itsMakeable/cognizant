@@ -4,53 +4,101 @@
   float none
   text-align: center
   h2
-    font-size: 44px
+    fs(4.4rem)
     font-family proxLight
     color: gray
-    line-height: 1.5
-    span
-        display inline-block
-        position relative
-        color rgba(gray,0.5)
-        font-family proxLightIt
-        &:after
-            content ''
-            height 1px
-            position absolute
-            left 0
-            bottom 0.6rem
-            width 100%
-            background-color gray
-        .icon
-            size 2rem
-            margin-left 1.6rem
-            svg
-                transform rotate(90deg)
-                
-    span.is-filled
+    line-height: 1.3
+  .is-editable
+     display inline-block
+     position relative
+     color rgba(gray,0.5)
+     font-family proxLightIt
+     cursor pointer
+     &:after,
+     &:before
+         content ''
+         height 1px
+         position absolute
+         left 0
+         right 0
+         bottom 0.6rem
+     &:before
+         background-color gray
+         width 100%
+         z-index: 1
+     &:after
+         background: vgradient5
+         width 0%
+         transition width 0.6s ease-out
+         z-index: 2
+     .icon
+         size 2rem
+         right 0
+         top 2.4rem
+         position absolute
+         color blue
+         svg
+             transform rotate(90deg)
+     [contenteditable]
+       text-align left
+       transition all 0.3s ease 0s
+     &.has-dropdown
+       [contenteditable]
+         margin-right 4rem
+     .dropdown-module
+       position absolute
+       width 100%
+       z-index: 10
+       top 6rem        
+  .is-filled,
+  .is-active
+      .icon
+        color blue
+      [contenteditable]
         color green
         font-family proxLight
-        &:after
-            background: vgradient5
+      &:after
+        width 100%
+        transition width 0.6s ease-out
     
-            
+
   .header--section
       cf()
       p
         span(8/12)
         margin auto
         float none
-        
+  +below(1024)
+    stack()
+    h2
+      fs(3.2rem)
+    .is-editable 
+      .icon
+        top 0.7rem
+      .dropdown-module
+        top 3.5rem
+
+      
 .descriptor__text
-    margin-bottom 6rem
-    
+  margin-bottom 6rem
+  h2
+    > div
+      display inline-block
+  .noneditable
+    overflow hidden    
+    display inline-block
 .descriptor__button-box
   text-align center
 
 .chrome,
 .safari
   .descriptor-module
-    h2 span.is-filled
-      background: vgradient5reverse 
+    h2 [contenteditable]
+      background: rgba(gray,0.5) 
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+    h2 .is-filled [contenteditable],
+    h2 .is-active [contenteditable]
+      background: vgradient5
       -webkit-background-clip: text
       -webkit-text-fill-color: transparent

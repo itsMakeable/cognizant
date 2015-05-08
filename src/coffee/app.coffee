@@ -216,21 +216,21 @@ MKBL.profileFlyout = ($this, $flyoutType) ->
 				$activeFlyout.addClass('is-closed')
 			, 1001
 			
-			if $activeFlyout.length > 0
-				setTimeout ->
-					$flyout.addClass('is-active').removeClass('is-closed')
-				, 800
-				setTimeout ->
-					$flyout.addClass('is-holding').removeClass('is-active')
-					$module.removeClass('is-animating')
-				, 2001
+			# if $activeFlyout.length > 0
+			# 	setTimeout ->
+			# 		$flyout.addClass('is-active').removeClass('is-closed')
+			# 	, 800
+			# 	setTimeout ->
+			# 		$flyout.addClass('is-holding').removeClass('is-active')
+			# 		$module.removeClass('is-animating')
+			# 	, 2001
 				
-			else
-				$flyout.addClass('is-active').removeClass('is-closed')
-				setTimeout ->
-					$flyout.addClass('is-holding').removeClass('is-active')
-					$module.removeClass('is-animating')
-				, 1001
+			# else
+			$flyout.addClass('is-active').removeClass('is-closed')
+			setTimeout ->
+				$flyout.addClass('is-holding').removeClass('is-active')
+				$module.removeClass('is-animating')
+			, 1001
 
 			
 
@@ -258,7 +258,65 @@ MKBL.modal = ($this) ->
 			'top': '-1.3rem'
 			'bottom': 'auto'
 			})
+
+MKBL.dropdown = ($this) ->
+	$li = $this.find('li')
+	dropdownHeight = $li.length * $li.height()
+
+	if dropdownHeight > 342
+		dropdownHeight = 372
+
+	if $this.height() < 1
+		$this.velocity { height: dropdownHeight }, 
+			duration: 600,
+			easing: [ 300, 30 ],
+			delay: 0
+			complete: () ->
+				$(this).addClass('is-active')
+
+	else
+		$this.velocity {height: 0},
+			duration: 600,
+			easing: [ 300, 30 ],
+			delay: 0
+			complete: () ->
+				$(this).removeClass('is-active')
+
+MKBL.dropdownSelect = ($this) ->
+	$this
+		.closest('.js-dropdown-option-parent')
+		.addClass('is-filled')
+		.find('.js-dropdown-option-holder')
+		.text($this.text())
+
+MKBL.contenteditable = ($this) ->
+	$this.closest('.is-editable').addClass('is-active')
+	if !$this.closest('.is-editable').hasClass('is-filled')
+		$this.text('')
+
+MKBL.contenteditableSetup = ->
+	$('[contenteditable]').each ->
+		if $(this).outerWidth() < ($(window).width()*0.7)
+			$(this).css('width',$(this).outerWidth())
+		else
+			$(this).css('width',($(window).width()*0.7))
+
 ## EVENTS ###############################
+
+$('[contenteditable]').on 'click',  ->
+	$this = $(this)
+	MKBL.contenteditable($this)
+
+$('.js-dropdown-trigger').on 'click',  ->
+	if $(this).find('.dropdown-module').length
+		$this = $(this).closest('.dropdown-module')
+	else
+		$this = $(this).siblings('.dropdown-module')
+	MKBL.dropdown($this)
+
+$('.js-dropdown-option').on 'click',  ->
+	$this = $(this)
+	MKBL.dropdownSelect($this)
 
 $('.js-open-modal-module').on 'click',  ->
 	$this = $(this)
@@ -297,17 +355,36 @@ $('.social-group__icon').on 'click',  ->
 $(document).on 'click', (event) ->
 	if !$(event.target).closest('.js-open-modal-module').length
 		$('.modal-module').addClass('is-hidden')
-
+	if !$(event.target).closest('.js-dropdown-trigger').length
+		$('.dropdown-module').velocity {height: 0}, 
+			duration: 600,
+			easing: [ 300, 30 ],
+			delay: 0
+			complete: () ->
+				$(this).removeClass('is-active')
+	if !$(event.target).closest('[contenteditable]').length
+		$('[contenteditable]').removeClass('is-active')
+		$('[contenteditable]').each ->
+			$this = $(this)
+			if $this.text() == ''
+				$this
+					.text($this.data('placeholder'))
+					.closest('.is-editable')
+					.removeClass('is-filled')
+					.removeClass('is-active')
 $ ->
 	MKBL.equalheight('.banner-module','.banner-module > div', 940)
 	MKBL.equalheight('.main-header','.equal-height', 1024)
 	MKBL.flowBoxSliderSetup()
+	MKBL.contenteditableSetup()
+	
 
 $(window).on 'resize', ->
 	MKBL.equalheight('.main-header','.equal-height', 1024)
 	MKBL.equalheight('.banner-module','.banner-module > div', 940)
 	MKBL.flowBoxSliderSetup()
 	$('.modal-module').addClass('is-hidden')
+	MKBL.contenteditableSetup()
 
 $(window).on 'load', ->
 	$('body').css('opacity',1)

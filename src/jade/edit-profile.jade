@@ -11,23 +11,44 @@ block content
 				p Information about editing your profile infromation. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 			section.descriptor__text
 				h2
-					| I'm an 
-					span.is-filled Executive Account Director
-						i.icon
+					div.noneditable I'm an 
+					div.is-editable.is-filled.js-dropdown-option-parent.has-dropdown
+						div.js-dropdown-option-holder(contenteditable data-placeholder='occupation') Executive Account Director
+						i.icon.js-dropdown-trigger
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_caret')
-					|  interested in the 
-					span.is-filled Healthcare
-						i.icon
+						.dropdown-module
+							ul
+								li.js-dropdown-option this
+								li.js-dropdown-option that
+								li.js-dropdown-option: span this
+								li.js-dropdown-option that
+								li.js-dropdown-option this
+								li.js-dropdown-option tthathis
+								li.js-dropdown-option tthathis
+
+					div.noneditable  interested in the 
+					div.is-editable.js-dropdown-option-parent.has-dropdown
+						div.js-dropdown-option-holder(contenteditable data-placeholder='Industry') Industry
+						i.icon.js-dropdown-trigger
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_caret')
-					|  Industry. I work for 
-					span workplace
-						i.icon
-							svg(viewbox='0 0 100 100')
-								use(xlink:href='#icon_caret')
-					|  in 
-					span zip code
-					| .
+						.dropdown-module
+							ul
+								li.js-dropdown-option this
+								li.js-dropdown-option that
+								li.js-dropdown-option: span this
+								li.js-dropdown-option that
+								li.js-dropdown-option this
+								li.js-dropdown-option tthathis
+
+					div.noneditable  Industry. I work for 
+					div.is-editable
+						div(contenteditable data-placeholder='Workplace') Workplace
+				
+					div.noneditable  in 
+					div.is-editable
+						div(contenteditable data-placeholder='Zip Code') Zip Code
+					span.noneditable .
 			.descriptor__button-box
 				a.button--primary(href='') Continue
