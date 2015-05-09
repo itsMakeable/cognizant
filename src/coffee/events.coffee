@@ -16,15 +16,15 @@ $('body')
 		if $this.data('before') isnt $this.html()
 			$this.data 'before', $this.html()
 			$this.trigger('change')
-			if $this.closest('.js-dropdown-option-parent').find('.dropdown-module').length
-				$dropdown = $(this).closest('.js-dropdown-option-parent').find('.dropdown-module')
+			if $this.closest('.js-dropdown-option-parent').find('.contenteditable-dropdown').length
+				$dropdown = $(this).closest('.js-dropdown-option-parent').find('.contenteditable-dropdown')
 				MKBL.contenteditableDropdown($dropdown)
 
 $('.js-dropdown-trigger').on 'click',  ->
-	if $(this).find('.dropdown-module').length
-		$dropdown = $(this).closest('.dropdown-module')
+	if $(this).find('.contenteditable-dropdown').length
+		$dropdown = $(this).closest('.contenteditable-dropdown')
 	else
-		$dropdown = $(this).siblings('.dropdown-module')
+		$dropdown = $(this).siblings('.contenteditable-dropdown')
 	MKBL.contenteditableDropdown($dropdown)
 
 $('.js-dropdown-option').on 'click',  ->
@@ -69,7 +69,7 @@ $(document).on 'click', (event) ->
 	if !$(event.target).closest('.js-open-modal-module').length
 		$('.modal-module').addClass('is-hidden')
 	if !$(event.target).closest('.js-dropdown-trigger').length
-		$('.dropdown-module').velocity {height: 0}, 
+		$('.contenteditable-dropdown').velocity {height: 0}, 
 			duration: 600,
 			easing: [ 300, 30 ],
 			delay: 0
