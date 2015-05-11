@@ -278,7 +278,7 @@ MKBL.modal = ($this) ->
 MKBL.contenteditableDropdown = ($dropdown) ->
 	$li = $dropdown.find('li')
 	dropdownHeight = $li.length * $li.outerHeight()
-
+	
 	if dropdownHeight > 342
 		dropdownHeight = 372
 		setTimeout ->
@@ -286,15 +286,16 @@ MKBL.contenteditableDropdown = ($dropdown) ->
 				suppressScrollX: true
 			})
 		, 900
-		
 
-	if !$dropdown.hasClass('is-active')
+	if $dropdown.height() == 0 or $dropdown.height() == null
+	# if !$dropdown.hasClass('is-active')
 		$dropdown.velocity { height: dropdownHeight }, 
 			duration: 600,
 			easing: [ 300, 30 ],
 			delay: 0
 			complete: () ->
 				$(this).addClass('is-active')
+		
 
 	else
 		$dropdown.velocity {height: 0},
@@ -303,6 +304,28 @@ MKBL.contenteditableDropdown = ($dropdown) ->
 			delay: 0
 			complete: () ->
 				$(this).removeClass('is-active')
+		
+
+MKBL.contenteditableDropdownAutocomplete = ($this) ->
+	if $this.closest('.js-dropdown-option-parent').find('.contenteditable-dropdown').length
+		$dropdown = $this.closest('.js-dropdown-option-parent').find('.contenteditable-dropdown')
+
+		if $dropdown.height() == 0 or $dropdown.height() == null
+			MKBL.contenteditableDropdown($dropdown)
+
+		searchInputText = $this.html().replace(/^\s+|\s+$/g, '')
+		if searchInputText != '' and searchInputText != ' '
+		  pattern = new RegExp(searchInputText, 'gi')
+
+		matchingLetters = null
+		$dropdown.find('.js-dropdown-option').each ->
+			matchingLetters = $(this).text()
+			matchingLetters = matchingLetters.replace(pattern, ($1) ->
+			  '<span>' + $1 + '</span>'
+			)
+			
+			$(this).html matchingLetters
+
 
 ###*
  * Fills the content editable section with the selected dropdown option

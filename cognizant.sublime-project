@@ -2,15 +2,15 @@
 	"folders":
 	[
 		{
-			"path": ".",
 			"folder_exclude_patterns":
 			[
-				// "app",
 				"node_modules",
-				// "tmp",
 				"design"
-			]
-
+			],
+			"path": "."
+		},
+		{
+			"path": "/Users/Kyla/Downloads/jet.com/dev"
 		}
 	],
 	"settings":

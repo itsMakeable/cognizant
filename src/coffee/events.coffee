@@ -16,9 +16,7 @@ $('body')
 		if $this.data('before') isnt $this.html()
 			$this.data 'before', $this.html()
 			$this.trigger('change')
-			if $this.closest('.js-dropdown-option-parent').find('.contenteditable-dropdown').length
-				$dropdown = $(this).closest('.js-dropdown-option-parent').find('.contenteditable-dropdown')
-				MKBL.contenteditableDropdown($dropdown)
+			MKBL.contenteditableDropdownAutocomplete($this)
 
 $('.js-dropdown-trigger').on 'click',  ->
 	if $(this).find('.contenteditable-dropdown').length
