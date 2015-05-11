@@ -164,10 +164,15 @@
     position absolute
     bottom 0
     size 3rem
-    svg
-        path
-            stroke currentColor
-            fill transparent
+    .is-filled
+        display none
+    .is-empty
+        display block
+    &:hover
+        .is-filled
+            display block
+        .is-empty
+            display none
     
 .flow-box__CTA--left
     left 0

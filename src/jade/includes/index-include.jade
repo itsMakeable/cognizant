@@ -27,8 +27,10 @@ section.section.flow-box-slider-section.backgray-bg
 										strong A shift to individual healthcare.
 										| Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.
 								i.flow-box__CTA--left
-									svg(viewbox='0 0 100 100')
+									svg.is-empty(viewbox='0 0 100 100')
 										use(xlink:href='#icon_star')
+									svg.is-filled(viewbox='0 0 100 100')
+										use(xlink:href='#icon_star-filled')
 								i.flow-box__CTA--share.share-flyout__trigger.js-share-flyout__trigger
 									svg.is-empty(viewbox='0 0 100 100')
 										use(xlink:href='#icon_share')
@@ -50,7 +52,11 @@ section.section.flow-box-slider-section.backgray-bg
 												use(xlink:href='#icon_linkedin')
 
 								i.flow-box__CTA--right
-									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_triangle')
+									svg.is-empty(viewbox='0 0 100 100')
+										use(xlink:href='#icon_triangle')
+									svg.is-filled(viewbox='0 0 100 100')
+										use(xlink:href='#icon_triangle-filled')
+
 					article.flow-box__small-container
 						each val, index in [1,2]
 							component.flow-box.gradient1--vertical

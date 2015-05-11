@@ -5,12 +5,11 @@
 			"folder_exclude_patterns":
 			[
 				"node_modules",
-				"design"
+				"design",
+				// "app",
+				"tmp"
 			],
 			"path": "."
-		},
-		{
-			"path": "/Users/Kyla/Downloads/jet.com/dev"
 		}
 	],
 	"settings":
