@@ -211,7 +211,7 @@ MKBL.profileFlyout = ($this, $flyoutType) ->
 	
 	if !$module.hasClass('is-animating')
 		if $flyout.hasClass('is-holding')
-			$module.addClass('is-animating').alterClass('*-is-open')
+			$module.addClass('is-animating')
 			$flyout.removeClass('is-active').removeClass('is-holding')
 			setTimeout ->
 				$flyout.addClass('is-closed')
@@ -219,7 +219,7 @@ MKBL.profileFlyout = ($this, $flyoutType) ->
 			, 1001
 			
 		else
-			$module.addClass('is-animating').alterClass('*-is-open').addClass($flyoutType+'-is-open')
+			$module.addClass('is-animating')
 			$activeFlyout.removeClass('is-active').removeClass('is-holding')
 			setTimeout ->
 				$activeFlyout.addClass('is-closed')
@@ -281,6 +281,12 @@ MKBL.contenteditableDropdown = ($dropdown) ->
 
 	if dropdownHeight > 342
 		dropdownHeight = 372
+		setTimeout ->
+			$dropdown.perfectScrollbar({
+				suppressScrollX: true
+			})
+		, 900
+		
 
 	if !$dropdown.hasClass('is-active')
 		$dropdown.velocity { height: dropdownHeight }, 
@@ -303,6 +309,11 @@ MKBL.contenteditableDropdown = ($dropdown) ->
  * @param  {[type]} $this the button clicked
 ###
 MKBL.contenteditableDropdownSelect = ($this) ->
+	if $(window).width()*0.7 > 840
+		maxWidth = 840
+	else
+		maxWidth = $(window).width()*0.7
+
 	$contenteditable = $this.closest('.js-dropdown-option-parent').find('[contenteditable]')
 	
 	$this
@@ -311,8 +322,8 @@ MKBL.contenteditableDropdownSelect = ($this) ->
 		.find('.js-dropdown-option-holder')
 		.text($this.text())
 
-	if $contenteditable.prop('scrollWidth') < $(window).width()*0.7
-		$contenteditable.css('min-width', '40px')
+	if $contenteditable.prop('scrollWidth') < maxWidth
+		$contenteditable.css('min-width', '100px')
 		setTimeout ->
 			$contenteditable.css('min-width', $contenteditable.width())
 		, 900
@@ -330,6 +341,11 @@ MKBL.prepareContenteditable = ($this) ->
  * animation for leaving focus of the content editable div
 ###
 MKBL.endContenteditable = ->
+	if $(window).width()*0.7 > 840
+			maxWidth = 840
+	else
+		maxWidth = $(window).width()*0.7
+
 	$('[contenteditable]').removeClass('is-active')
 	$('[contenteditable]').each ->
 		$this = $(this)
@@ -339,14 +355,19 @@ MKBL.endContenteditable = ->
 				.closest('.is-editable')
 				.removeClass('is-filled')
 				.removeClass('is-active')
+			$this
+				.css('min-width', '100px')
+			setTimeout ->
+				$this.css('min-width', $this.width())
+			, 900
 		else 
 			if $this.text() != $this.data('placeholder')
 				$this
 					.closest('.is-editable')
 					.addClass('is-filled')
-			if $this.prop('scrollWidth') < $(window).width()*0.7 and $this.css('min-width') != $this.width()
+			if $this.prop('scrollWidth') < maxWidth and $this.css('min-width') != $this.width()
 				$this
-					.css('min-width', '40px')
+					.css('min-width', '100px')
 				setTimeout ->
 					$this.css('min-width', $this.width())
 				, 900
@@ -356,11 +377,20 @@ MKBL.endContenteditable = ->
 ###
 MKBL.setupContenteditable = ->
 	$('[contenteditable]').each ->
-		$this = $(this)
+		$this = $(this).closest('.is-editable').find('.contenteditable__wrapper')
+		if $(window).width()*0.7 > 840
+			maxWidth = 840
+		else
+			maxWidth = $(window).width()*0.7
 		$this
 			.css('height', $this.outerHeight())
-			.css('max-width', $(window).width()*0.7)
-		if $this.outerWidth() < $(window).width()*0.7
+			.css('max-width', maxWidth)
+			.perfectScrollbar()
+		if $this.outerWidth() < maxWidth
 			$this.css('min-width',$this.outerWidth())
 		else
-			$this.css('min-width', $(window).width()*0.7)
+			$this.css('min-width', maxWidth)
+
+		$this.perfectScrollbar()
+
+		

@@ -51,7 +51,7 @@ block content
 			.row
 				component.profile-box-module.equal-height
 					.profile-box
-						.profile-box__indicator
+						
 						.profile-box__default
 							.profile-box__profile-pic
 								img(src='http://placehold.it/110x110', alt='')
@@ -88,6 +88,7 @@ block content
 										use(xlink:href='#icon_workplace')
 								small United Healthcare
 					subcomponent.profile-box-flyout.profile-box-flyout--settings
+						.profile-box__indicator
 						header
 							p Settings
 							hr
@@ -96,6 +97,7 @@ block content
 						.profile-box__button
 							button.button--silent Log Out
 					subcomponent.profile-box-flyout.profile-box-flyout--notifications
+						.profile-box__indicator
 						header
 							p Recent Activity
 							hr

@@ -14,7 +14,8 @@ block content
 				h2
 					div.noneditable I'm an 
 					div.is-editable.js-dropdown-option-parent.has-dropdown
-						div.js-dropdown-option-holder(contenteditable data-placeholder='Occupation') Occupation
+						.contenteditable__wrapper
+							div.js-dropdown-option-holder(contenteditable data-placeholder='Occupation') Occupation
 						i.icon.js-dropdown-trigger
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_caret')
@@ -31,7 +32,8 @@ block content
 					div.noneditable  interested in the
 					
 					div.is-editable.js-dropdown-option-parent.has-dropdown
-						div.js-dropdown-option-holder(contenteditable data-placeholder='Industry') Industry
+						.contenteditable__wrapper
+							div.js-dropdown-option-holder(contenteditable data-placeholder='Industry') Industry
 						i.icon.js-dropdown-trigger
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_caret')
@@ -46,11 +48,13 @@ block content
 					br 
 					div.noneditable  Industry. I work for 
 					div.is-editable
-						div(contenteditable data-placeholder='Workplace') Workplace
+						.contenteditable__wrapper
+							div(contenteditable data-placeholder='Workplace') Workplace
 				
 					div.noneditable  in 
 					div.is-editable
-						div(contenteditable data-placeholder='Zip Code') Zip Code
+						.contenteditable__wrapper
+							div(contenteditable data-placeholder='Zip Code') Zip Code
 					span.noneditable .
 			.contenteditable__button-box
 				a.button--primary(href='') Continue

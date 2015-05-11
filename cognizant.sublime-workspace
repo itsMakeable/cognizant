@@ -4,12 +4,140 @@
 		"selected_items":
 		[
 			[
-				"syl",
-				"styleguide"
+				"comp",
+				"component"
+			],
+			[
+				"po",
+				"pointer"
+			],
+			[
+				"scroll",
+				"scrollWidth"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"con",
+				"contenteditable"
+			],
+			[
+				"w",
+				"window"
+			],
+			[
+				"trn",
+				"transparent"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"z",
+				"z	z-index"
+			],
+			[
+				"transi",
+				"translation"
+			],
+			[
+				"backgr",
+				"backgray"
 			],
 			[
 				"tran",
-				"transition"
+				"transform"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"fo",
+				"focus"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"bu",
+				"button--silent"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"hea",
+				"heavymustard"
+			],
+			[
+				"tra",
+				"transforms"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"transla",
+				"translateX"
+			],
+			[
+				"ve",
+				"velocity"
+			],
+			[
+				"num",
+				"numOfSlides"
+			],
+			[
+				"i",
+				"icon"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"pr",
+				"proxReg"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"mari",
+				"margin-bottom"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"qui",
+				"question-mark"
+			],
+			[
+				"syl",
+				"styleguide"
 			],
 			[
 				"app",
@@ -18,10 +146,6 @@
 			[
 				"ver",
 				"vertical-align"
-			],
-			[
-				"backgr",
-				"background"
 			],
 			[
 				"dis",
@@ -40,16 +164,8 @@
 				"fonts"
 			],
 			[
-				"text",
-				"text-transform"
-			],
-			[
 				"font-s",
 				"font-size"
-			],
-			[
-				"fo",
-				"font"
 			],
 			[
 				"bor",
@@ -58,10 +174,6 @@
 			[
 				"max",
 				"max-width"
-			],
-			[
-				"border",
-				"border"
 			],
 			[
 				"no",
@@ -100,32 +212,16 @@
 				"mkbl-sselect"
 			],
 			[
-				"trans",
-				"transparent"
-			],
-			[
 				"lig",
 				"lightblue"
-			],
-			[
-				"con",
-				"console"
 			],
 			[
 				"co",
 				"console"
 			],
 			[
-				"tra",
-				"translateX"
-			],
-			[
 				"line",
 				"line-height"
-			],
-			[
-				"bac",
-				"background-color"
 			],
 			[
 				"min",
@@ -138,10 +234,6 @@
 			[
 				"zi",
 				"z-index"
-			],
-			[
-				"pr",
-				"primary"
 			],
 			[
 				"b",
@@ -174,10 +266,6 @@
 			[
 				"brow",
 				"browserify"
-			],
-			[
-				"back",
-				"background-color"
 			],
 			[
 				"letter",
@@ -216,10 +304,6 @@
 				"require"
 			],
 			[
-				"trn",
-				"transform"
-			],
-			[
 				"cla",
 				"className"
 			],
@@ -246,10 +330,6 @@
 			[
 				"backg",
 				"background"
-			],
-			[
-				"pad",
-				"padding"
 			],
 			[
 				"backgro",
@@ -308,10 +388,6 @@
 				"select__cta"
 			],
 			[
-				"col",
-				"coquelicot"
-			],
-			[
 				"$ver",
 				"$vertical-align"
 			],
@@ -330,10 +406,6 @@
 			[
 				"aut",
 				"auto"
-			],
-			[
-				"mar",
-				"margin"
 			],
 			[
 				"blo",
@@ -442,109 +514,43 @@
 			[
 				"fam",
 				"famous-angular"
-			],
-			[
-				"not",
-				"notify"
-			],
-			[
-				"pos",
-				"position"
-			],
-			[
-				"background",
-				"background-size"
-			],
-			[
-				"$v",
-				"$vertical-align"
-			],
-			[
-				"re",
-				"relative"
-			],
-			[
-				"He",
-				"Helvetica"
-			],
-			[
-				"font",
-				"font-family"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "src/styl/modules/search.styl",
+			"file": "src/jade/edit-profile.jade",
 			"settings":
 			{
-				"buffer_size": 3717,
+				"buffer_size": 2060,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/styl/modules/flow-box.styl",
+			"file": "src/styl/modules/contenteditable.styl",
 			"settings":
 			{
-				"buffer_size": 8009,
+				"buffer_size": 5221,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "build/tasks/bower.coffee",
+			"file": "src/coffee/app.coffee",
 			"settings":
 			{
-				"buffer_size": 623,
+				"buffer_size": 11998,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "build/gulp.coffee",
+			"contents": "###*\n * COGNIZANT START EVENTS.JS\n###\n\n$('[contenteditable]').on 'click',  ->\n	$this = $(this)\n	MKBL.prepareContenteditable($this)\n\n$('body')\n	.on 'focus', '[contenteditable]', ->\n		$this = $(this)\n		$this.data 'before', $this.html()\n		return $this\n	.on 'blur keyup paste input', '[contenteditable]', ->\n		$this = $(this)\n		if $this.data('before') isnt $this.html()\n			$this.data 'before', $this.html()\n			$this.trigger('change')\n			if $this.closest('.js-dropdown-option-parent').find('.contenteditable-dropdown').length\n				$dropdown = $(this).closest('.js-dropdown-option-parent').find('.contenteditable-dropdown')\n				MKBL.contenteditableDropdown($dropdown)\n\n$('.js-dropdown-trigger').on 'click',  ->\n	if $(this).find('.contenteditable-dropdown').length\n		$dropdown = $(this).closest('.contenteditable-dropdown')\n	else\n		$dropdown = $(this).siblings('.contenteditable-dropdown')\n	MKBL.contenteditableDropdown($dropdown)\n\n$('.js-dropdown-option').on 'click',  ->\n	$this = $(this)\n	MKBL.contenteditableDropdownSelect($this)\n\n$('.js-open-modal-module').on 'click',  ->\n	$this = $(this)\n	MKBL.modal($this)\n\n$('.js-share-flyout__trigger').on 'click',  ->\n	$this = $(this)\n	MKBL.shareFlyout($this)\n\n$('.compact-profile-box__aside .icon').on 'click',  ->\n	$this = $(this)\n	$flyoutType = $this.data('flyout')\n	MKBL.profileCompactFlyout($this, $flyoutType)\n\n$('.profile-box__aside .icon').on 'click',  ->\n	$this = $(this)\n	$flyoutType = $this.data('flyout')\n	MKBL.profileFlyout($this, $flyoutType)\n\n$('.slider-nav__control').on 'click', ->\n	$slider = $(this).closest('.flow-box-slider')\n	$slides = $slider.find('.flow-box-slider-group')\n	$activeSlide = $slider.find('.is-active')\n\n	direction = 'prev'\n	if $(this).hasClass('is-right')\n		direction = 'next'\n\n	MKBL.flowBoxSlider($slider, $slides, $activeSlide, direction)\n\n$('.social-group__icon').on 'click',  ->\n	$this = $(this)\n	MKBL.socialSlider($this)\n\n# STOP EVENT PROPAGATION\n$(document).on 'click', (event) ->\n	if !$(event.target).closest('.js-open-modal-module').length\n		$('.modal-module').addClass('is-hidden')\n	if !$(event.target).closest('.js-dropdown-trigger').length\n		console.log 'thisopen'\n		$('.contenteditable-dropdown').velocity {height: 0}, \n			duration: 600,\n			easing: [ 300, 30 ],\n			delay: 0\n			complete: () ->\n				$(this).removeClass('is-active')\n	if !$(event.target).closest('[contenteditable]').length and !$(event.target).closest('.is-editable .js-dropdown-option').length\n		MKBL.endContenteditable()\n\n$ ->\n	MKBL.equalheight('.banner-module','.banner-module > div', 940)\n	MKBL.equalheight('.main-header','.equal-height', 1024)\n	MKBL.flowBoxSliderSetup()\n	MKBL.setupContenteditable()\n	\n\n$(window).on 'resize', ->\n	MKBL.equalheight('.main-header','.equal-height', 1024)\n	MKBL.equalheight('.banner-module','.banner-module > div', 940)\n	MKBL.flowBoxSliderSetup()\n	$('.modal-module').addClass('is-hidden')\n	MKBL.setupContenteditable()\n\n$(window).on 'load', ->\n	$('body').css('opacity',1)",
+			"file": "src/coffee/events.coffee",
+			"file_size": 2948,
+			"file_write_time": 130756148030000000,
 			"settings":
 			{
-				"buffer_size": 1624,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/styl/modules/folder.styl",
-			"settings":
-			{
-				"buffer_size": 3034,
-				"line_ending": "Unix",
-				"name": ".folder-module"
-			}
-		},
-		{
-			"file": "build/tasks/svg.coffee",
-			"settings":
-			{
-				"buffer_size": 1082,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "cognizant.sublime-project",
-			"settings":
-			{
-				"buffer_size": 183,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "build/tasks/styl.coffee",
-			"settings":
-			{
-				"buffer_size": 1442,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/jade/layout.jade",
-			"settings":
-			{
-				"buffer_size": 1308,
+				"buffer_size": 2952,
 				"line_ending": "Unix"
 			}
 		}
@@ -557,7 +563,7 @@
 	"command_palette":
 	{
 		"height": 400.0,
-		"last_filter": "",
+		"last_filter": "ins",
 		"selected_items":
 		[
 			[
@@ -581,7 +587,7 @@
 				"TodoReview: Project Files"
 			]
 		],
-		"width": 457.0
+		"width": 497.0
 	},
 	"console":
 	{
@@ -606,45 +612,87 @@
 	],
 	"file_history":
 	[
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/social-group.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/flow-box.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/settings.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/buttons.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/typography.styl",
-		"/Users/Kyla/Sites/cognizant/.gitignore",
-		"/Users/Kyla/Sites/cognizant/build/tasks/svg.coffee",
-		"/Users/Kyla/Sites/cognizant/build/tasks/clean.coffee",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/three-group.styl",
-		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_star-filled.svg",
-		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_star.svg",
-		"/Users/Kyla/Sites/cognizant/build/bower.json",
-		"/Users/Kyla/Sites/cognizant/cognizant.sublime-project",
-		"/Users/Kyla/Sites/cognizant/.bowerrc",
-		"/Users/Kyla/Sites/cognizant/build/tasks/coffee.coffee",
-		"/Users/Kyla/Sites/cognizant/build/tasks/styl.coffee",
-		"/Users/Kyla/Sites/cognizant/build/styleguide/index.jade",
-		"/Users/Kyla/Sites/cognizant/src/styl/base.styl",
 		"/Users/Kyla/Sites/cognizant/build/gulp.coffee",
-		"/Users/Kyla/Sites/cognizant/docs/styleguide/template/index.jade",
-		"/Users/Kyla/Sites/cognizant/docs/styleguide/js/app.js",
-		"/Users/Kyla/Sites/cognizant/src/styl/gradients.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/headline-list.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/banner.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/header.styl",
-		"/Users/Kyla/Sites/cognizant/src/coffee/app.coffee",
-		"/Users/Kyla/Sites/cognizant/bower.json",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/share-flyout.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/search.styl",
+		"/Users/Kyla/Sites/cognizant/src/coffee/events.coffee",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/profile-box.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/edit-profile.jade",
+		"/Users/Kyla/Sites/cognizant/build/tasks/styl.coffee",
+		"/Users/Kyla/Sites/cognizant/src/coffee/app.coffee",
+		"/Users/Kyla/Sites/cognizant/cognizant.sublime-project",
+		"/Users/Kyla/Sites/cognizant/tmp/css/index.css",
+		"/Users/Kyla/Sites/cognizant/src/jade/layouts/layout-primary.jade",
+		"/Users/Kyla/Sites/cognizant/src/jade/layouts/layout-secondary.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/gradients.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/create-profile.jade",
+		"/Users/Kyla/Sites/cognizant/README.md",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/headline-list.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/three-group.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/content-list.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/sections.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/flow-box.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/includes/index-include.jade",
+		"/Users/Kyla/Sites/cognizant/src/jade/includes/linkedin-modal.jade",
+		"/Users/Kyla/Sites/cognizant/build/tasks/coffee.coffee",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/dropdown.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/flow-box-slider.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/modal.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/header.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/settings.styl",
+		"/Users/Kyla/Sites/cognizant/build/styleguide/styleguide.js",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/contenteditable.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/index.jade",
+		"/Users/Kyla/Sites/cognizant/docs/styleguide/js/main.js",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/compact-profile-box.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/index-logged-in.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/slider-nav.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/base.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/social-group.styl",
+		"/Users/Kyla/Sites/cognizant/build/styleguide/styleguide.styl",
+		"/Users/Kyla/Downloads/x-tag-master/dist/x-tag-components.js",
+		"/Users/Kyla/Sites/cognizant/src/styl/mixins.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/folder.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/footer.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/grid.styl",
+		"/Users/Kyla/Sites/cognizant/build/tasks/jade.coffee",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/banner.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/descriptor.styl",
+		"/Users/Kyla/Downloads/Articles 2/icon_caret.svg",
+		"/Users/Kyla/Downloads/Articles 2/icon_rss.svg",
+		"/Users/Kyla/Sites/cognizant/src/styl/typography.styl",
+		"/Users/Kyla/Sites/cognizant/build/tasks/svg.coffee",
+		"/Users/Kyla/Sites/cognizant/app/main.css",
+		"/Users/Kyla/Sites/cognizant/src/styl/buttons.styl",
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_share-filled.svg",
+		"/Users/Kyla/Sites/cognizant/src/jade/layout.jade",
+		"/Users/Kyla/Sites/cognizant/build/styleguide/index.jade",
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_star.svg",
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_share.svg",
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_search-article.svg",
+		"/Users/Kyla/Sites/cognizant-grid/src/jade/index.jade",
+		"/Users/Kyla/Sites/cognizant/app/includes/linkedin-modal.html",
+		"/Users/Kyla/Sites/cognizant/.gitignore",
+		"/Users/Kyla/Sites/cognizant/build/bower.json",
+		"/Users/Kyla/Sites/cognizant/app/main.js",
+		"/Users/Kyla/Sites/cognizant-prototype/src/coffee/app.coffee",
+		"/Users/Kyla/Sites/cognizant/node_modules/jeet/stylus/jeet/_functions.styl",
+		"/Users/Kyla/Sites/cognizant/node_modules/jeet/stylus/jeet/_grid.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/index.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/colors.styl",
+		"/Users/Kyla/Sites/cognizant/build/tasks/bower.coffee",
+		"/Users/Kyla/Sites/cognizant/build/tasks/clean.coffee",
+		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_star-filled.svg",
+		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_star.svg",
+		"/Users/Kyla/Sites/cognizant/.bowerrc",
+		"/Users/Kyla/Sites/cognizant/docs/styleguide/template/index.jade",
+		"/Users/Kyla/Sites/cognizant/docs/styleguide/js/app.js",
+		"/Users/Kyla/Sites/cognizant/bower.json",
 		"/Users/Kyla/Sites/cognizant/docs/styleguide/includes/color-symbols.svg",
 		"/Users/Kyla/Downloads/color/icon_value-webs-color.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_share.svg",
 		"/Users/Kyla/.profile",
-		"/Users/Kyla/Sites/cognizant/src/jade/layout.jade",
 		"/Users/Kyla/Sites/cognizant/package.json",
-		"/Users/Kyla/Sites/cognizant/build/tasks/bower.coffee",
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_twitter.svg",
-		"/Users/Kyla/Sites/cognizant/src/styl/grid.styl",
 		"/Users/Kyla/Sites/cognizant/docs/styleguide/includes/symbols.svg",
 		"/Users/Kyla/Sites/cognizant/src/styl/inputs.styl",
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_our-latest-thinking.svg",
@@ -652,12 +700,10 @@
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_cognizanti.svg",
 		"/Users/Kyla/Sites/cognizant/src/jade/includes/symbols.svg",
 		"/Users/Kyla/Sites/cognizant/docs/styleguide/svg/symbols/icon_global-sourcing.svg",
-		"/Users/Kyla/Sites/cognizant/README.md",
 		"/Users/Kyla/Sites/cognizant/src/svg/social_carrot.svg",
 		"/Users/Kyla/Sites/cognizant/docs/styleguide/svg/social_carrot.svg",
 		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/forms.styl",
 		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/base.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/index.styl",
 		"/Users/Kyla/Sites/cognizant/node_modules/nib/index.styl",
 		"/Users/Kyla/Sites/cognizant/node_modules/autoprefixer-stylus/index.js",
 		"/Users/Kyla/Sites/cognizant-prototype/build/tasks/coffee.coffee",
@@ -693,47 +739,7 @@
 		"/Users/Kyla/Sites/cognizant-prototype/node_modules/stylus/node_modules/sax/test/buffer-overrun.js",
 		"/Users/Kyla/Sites/cognizant-prototype/src/styl/buttons.styl",
 		"/Users/Kyla/Sites/cognizant-prototype/node_modules/.bin/stylus",
-		"/Users/Kyla/Sites/cognizant-prototype/node_modules/browser-sync/lib/templates/script-tags.tmpl",
-		"/Users/Kyla/Sites/cognizant-prototype/src/jade/index.jade",
-		"/Users/Kyla/Sites/cognizant-prototype/src/coffee/app.coffee",
-		"/Users/Kyla/Sites/cognizant-prototype/src/styl/slider.styl",
-		"/Users/Kyla/Sites/cognizant-prototype/node_modules/gulp/node_modules/liftoff/appveyor.yml",
-		"/Users/Kyla/Sites/cognizant-prototype/.tmp/js/app.js",
-		"/Users/Kyla/Sites/cognizant-prototype/app/app.js",
-		"/Users/Kyla/Sites/cognizant-prototype/node_modules/svgo/node_modules/js-yaml/node_modules/argparse/lib/argument_parser.js",
-		"/Users/Kyla/Sites/cognizant-prototype/node_modules/browser-sync/node_modules/lodash/lang/isNative.js",
-		"/Users/Kyla/Sites/cognizant-prototype/node_modules/browser-sync/node_modules/lodash/array/sortedLastIndex.js",
-		"/Users/Kyla/Sites/wooftagg.akc.org/app/build/wooftagg.sublime-project",
-		"/Users/Kyla/Sites/kyla/src/styl/base.styl",
-		"/Users/Kyla/Sites/kyla/node_modules/axis/index.js",
-		"/Users/Kyla/Sites/kyla/app/index.css",
-		"/Users/Kyla/Sites/kyla/node_modules/gulp/node_modules/gulp-util/lib/isNull.js",
-		"/Users/Kyla/Sites/kyla/node_modules/gulp-accord/node_modules/accord/node_modules/lodash/object/values.js",
-		"/Users/Kyla/Sites/kyla/node_modules/gulp-accord/node_modules/accord/node_modules/lodash/chain/value.js",
-		"/Users/Kyla/Sites/kyla/node_modules/gulp-autoprefixer/node_modules/autoprefixer-core/lib/hacks/transform-value.js",
-		"/Users/Kyla/Sites/kyla/node_modules/gulp-autoprefixer/node_modules/autoprefixer-core/lib/hacks/flex-values.js",
-		"/Users/Kyla/Sites/kyla/node_modules/gulp-autoprefixer/node_modules/autoprefixer-core/lib/hacks/filter-value.js",
-		"/Users/Kyla/Sites/kyla/node_modules/handlebars/dist/amd/handlebars/compiler/visitor.js",
-		"/Users/Kyla/Sites/kyla/node_modules/gulp-autoprefixer/node_modules/autoprefixer-core/lib/old-value.js",
-		"/Users/Kyla/Sites/kyla/node_modules/gulp-autoprefixer/node_modules/autoprefixer-core/lib/value.js",
-		"/Users/Kyla/Sites/kyla/node_modules/gulp-autoprefixer/node_modules/autoprefixer-core/lib/hacks/fill-available.js",
-		"/Users/Kyla/Sites/kyla/node_modules/axis/axis/vendor.styl",
-		"/Users/Kyla/Sites/kyla/node_modules/gulp-autoprefixer/node_modules/autoprefixer-core/node_modules/caniuse-db/features-json/nav-timing.json",
-		"/Users/Kyla/Sites/kyla/.tmp/components/skrollr/examples/fixed_nav.html",
-		"/Users/Kyla/Sites/kyla/.tmp/components/famous/src/widgets/NavigationBar.js",
-		"/Users/Kyla/Sites/kyla/src/styl/nav.styl",
-		"/Users/Kyla/Sites/kyla/src/jade/index.jade",
-		"/Users/Kyla/Sites/kyla/app/index.html",
-		"/Users/Kyla/Sites/kyla/node_modules/gulp-filter/node_modules/plexer/tests/index.mocha.js",
-		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/modules/module-navbar.styl",
-		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/modules/module-post.styl",
-		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/home/home.tpl.jade",
-		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/core/feed/feed.tpl.jade",
-		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/mixins.styl",
-		"/Users/Kyla/Sites/wooftagg.akc.org/app/build/node_modules/bower/node_modules/.bin/nopt",
-		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/common/directives/media-content/media-ios.tpl.jade",
-		"/Users/Kyla/Sites/wooftagg.akc.org/app/build/node_modules/gulp-accord/Makefile",
-		"/Users/Kyla/Sites/wooftagg.akc.org/app/src/styl/buttons.styl"
+		"/Users/Kyla/Sites/cognizant-prototype/node_modules/browser-sync/lib/templates/script-tags.tmpl"
 	],
 	"find":
 	{
@@ -744,6 +750,8 @@
 		"height": 106.0,
 		"where_history":
 		[
+			"*.styl",
+			"src/styl/**/*.styl",
 			"",
 			"*.php",
 			"*.scss",
@@ -784,134 +792,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"(",
-			"color-symbols",
-			"icons",
-			" Medium",
-			"svg/social",
-			"template/s",
-			"template",
-			"docs",
-			"90",
-			"link",
-			"          <svg viewBox=\"0 0 100 100\">\n            <use xlink:href=\"includes/color-symbols.svg#icon_mobile-first\"></use>\n          </svg>",
-			"s/sym",
-			"1.7)",
-			"/ 2)",
-			"1",
-			"transfrom",
-			"0.3s ease 0.3s",
-			"535",
-			"500",
-			"small",
-			"__icon",
-			"is-ac",
-			"536",
-			"0.7",
-			".69",
-			"0.59",
-			"0.6",
-			"background-size 17.2rem 5.7rem ",
-			"170",
-			"social_",
-			"gray",
-			"#FF0000",
-			"social_",
-			"10.3",
-			"3.42rem",
-			"536",
-			"17.2rem 5.7rem ",
-			"social-group-hide-small",
-			".social-group__group",
-			" .social-group__group",
-			"640",
-			" <div class='social-group-show-small'>\n          <i class='social-group__icon--small'>\n           <svg viewBox=\"0 0 100 100\">\n              <use xlink:href=\"includes/symbols.svg#icon_facebook\"></use>\n           </svg>\n         </i>\n         <p><b>Facebook</b>\n          <small>Cognizant @Cognizant</small>\n        </p>\n         <hr/>\n         </div>",
-			"+below(680px)",
-			" fill=\"url(#gradient)\"",
-			"find",
-			"; stop-opacity:1",
-			"gradient",
-			"Gradient",
-			"gradient",
-			"global-sourcing",
-			"'",
-			"include",
-			"social-group-show-small",
-			"icon_facebook",
-			"<img data-src=\"holder.js/55x55/size:10vi/#72cdf1:#fff\"z alt=\"\">",
-			"<strong>Facebook</strong>",
-			"<p>Facebook<br>",
-			"icon--",
-			"3rem",
-			"<p>Facebook<br>\n          <small>Cognizant @Cognizant<span> - 34s ago</span></small>",
-			"Facebook\n          <small>Cognizant @Cognizant<span> - 34s ago</span></small>",
-			"<p>Facebook</p>\n        <small>Cognizant @Cognizant<span> - 34s ago</span></small>",
-			" <i class='social-group__icon--small'>",
-			"</svg>\n         </i>",
-			"<div class='social-group-show-small'>",
-			"first-of-type",
-			":first-of-type",
-			"margin-bottom 6rem",
-			"<div class=''",
-			"<i class='social-group__icon--small'>",
-			" - 34s ago",
-			"icon_carrot",
-			"@media screen and (max-width: ",
-			"+below(3)",
-			"@media screen and (max-width: ",
-			"media screen and (max-width: 540px)",
-			"@media screen and (max-width: 540px)",
-			"brlow",
-			"social-group__groups--text",
-			"icon_carrot",
-			"@media screen and (max-width: 940px)",
-			"@media screen and (max-width: 1140px)",
-			"@media screen and (max-width: 540px)",
-			" - 34s ago",
-			"<i class='social-group__icon--small'>",
-			"<i class='social-group__icon twitter'>\n          <div class='social-group__icon-slide'></div>\n       </i>",
-			"social-group-hide-mobile",
-			"social-group-show-mobile",
-			"@media screen and (max-width: 670px)",
-			"@media screen and (max-width: 1140px)",
-			"@media screen and (max-width: 540px)",
-			"@media screen and (max-width: 670px)",
-			"@media screen and (max-width: 940px)",
-			"@media screen and (max-width: 1024px)",
-			"+below(4)",
-			"+below(3)",
-			"@media screen and (max-width: 940px)",
-			"@media screen and (max-width: 1140px)",
-			"@media screen and (max-width: 540px)",
-			"@media screen and (max-width: 670px)",
-			"cover",
-			"width",
-			"100% 100%",
-			" <div class='social-group__icon-slide--on'></div>\n          <div class='social-group__icon-slide--off'></div>",
+			"40px",
+			".text()",
+			"$(window).width()*0.7",
+			"__text",
+			".dropdown-module'",
+			".dropdown-module",
+			".profile-box-module",
+			".profile-box",
+			"display non",
+			"above",
+			"below",
+			"contenteditableDropdownSelect",
+			"MKBL.dropdown",
+			"dropdown",
+			"MKBL.dropdown",
+			"-- ",
+			"xlink:href=\"#",
+			"flyout__icon\"",
+			"xlink:href=\"#",
+			"xlink:href=\"",
+			"share",
+			"px)",
+			".dropdown-module",
+			"dropdown-module",
+			"<div class=\"dropdown-module\">",
+			"$(this)",
+			"cognizant",
+			"Cognizant",
+			"Cognizant Start APP.JS",
+			".dropdown-module.is-active",
+			"contenteditableSetup",
+			"MKBL.contenteditable($this)",
+			"MKBL.contenteditable",
+			"that",
+			"tthaSeach",
+			"this",
+			"tthaSearch",
+			"that",
+			"this",
+			"xlink:href=\"#",
+			"Search Suggestion<<",
+			"Search Suggestion<",
+			"xlink:href=\"#",
+			"this",
+			"xlink:href=\"#",
 			"20",
-			"17",
-			"50px",
-			": ",
-			";",
-			"	",
-			"WEBSITE PRIVACY STATEMENT",
-			"margin-top: 100px; text-align: center;",
-			"link",
-			".bucket",
-			"h3",
-			"bucket",
-			"content-bo",
-			"3px",
-			"img",
-			"primary",
-			":*",
-			"h3",
-			"<small>&nbsp;</small>",
-			"form-gr",
-			"form",
-			"</h3>",
-			"<h3>",
-			".form-group"
+			"icon_carrot",
+			" <component",
+			"component",
+			"  ",
+			"$this",
+			"console",
+			".css('min-width', $this.width())\n				, 1000",
+			".descriptor",
+			".css('min-width', '10px')",
+			".css('min-width', 0)",
+			", 300",
+			"[contenteditable]",
+			"$contenteditable",
+			"removeClass('is-active')",
+			"$contenteditable",
+			"scrollWidth",
+			"scrollbarWidth",
+			".scrollWidth()",
+			"$contenteditable",
+			".descriptor-module",
+			"contenteditable",
+			"cubic-bezier(.73,.49,.28,1.21)",
+			"linear",
+			"ease-out-back",
+			"-out",
+			"in-",
+			"Industry",
+			"vgradient5reverse ",
+			".is-editable",
+			"text-ali",
+			"text",
+			"dropdown-parent",
+			"transition all 0.1s ease 0s",
+			"$(this)",
+			"transition width 0.8s ease-out",
+			"is-active",
+			":focus",
+			"li",
+			"width",
+			"(contenteditable)",
+			".editable",
+			"complete: (this) ->",
+			"this",
+			"complete: (this) ->",
+			"complete: (this) -> ",
+			"function(this) {",
+			" 30 ]",
+			"30",
+			"35",
+			"40",
+			"900",
+			"backgray",
+			"@media screen and (min-width: ",
+			"editable",
+			"|",
+			"span",
+			"flow-box-slider-section",
+			"details",
+			".compact-profile-box-flyo",
+			"box-flyo",
+			".profile-box-flyout",
+			"profile-box-flyout",
+			"profile-box",
+			"1rem",
+			".profile-box__indicator",
+			"india",
+			"indie",
+			"-34rem",
+			"alert",
+			"alerts",
+			"3.9",
+			"and",
+			"center",
+			"@media screen and (max-width: ",
+			"@media screen and (min-width: ",
+			"@media screen and (max-width: ",
+			"@media screen and (min-width: ",
+			"@media screen and (max-width: ",
+			"detail",
+			"button",
+			"aler",
+			".profile-box-flyout"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -919,6 +927,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"align(vertical)",
+			"align()",
 			"<b>WOOF</b>tale",
 			"WOOFtale",
 			"	",
@@ -940,24 +950,60 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/styl/modules/search.styl",
+					"file": "src/jade/edit-profile.jade",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3717,
+						"buffer_size": 2060,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2062,
-								2062
+								103,
+								103
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 14.0,
+						"translation.y": 2.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "src/styl/modules/contenteditable.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5221,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4537,
+								4537
 							]
 						],
 						"settings":
@@ -967,209 +1013,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 816.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/styl/modules/flow-box.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8009,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 986.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 3,
-			"sheets":
-			[
-				{
-					"buffer": 2,
-					"file": "build/tasks/bower.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 623,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								519,
-								519
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "build/gulp.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1624,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								500,
-								500
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/styl/modules/folder.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3034,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_name": ".folder-module",
-							"syntax": "Packages/Stylus/Stylus.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "build/tasks/svg.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1082,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								235,
-								235
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "cognizant.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 183,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								105,
-								105
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2685.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "build/tasks/styl.coffee",
+					"buffer": 2,
+					"file": "src/coffee/app.coffee",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1442,
+						"buffer_size": 11998,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								717,
-								717
+								11080,
+								11080
 							]
 						],
 						"settings":
@@ -1177,40 +1041,40 @@
 							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 373.0,
+						"translation.x": 11.0,
+						"translation.y": 7724.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "src/jade/layout.jade",
+					"buffer": 3,
+					"file": "src/coffee/events.coffee",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1308,
+						"buffer_size": 2952,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								378,
-								378
+								2146,
+								2146
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 17.0,
+						"translation.y": 1235.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1244,7 +1108,7 @@
 		"cols":
 		[
 			0.0,
-			0.297308467742,
+			0.411846191505,
 			1.0
 		],
 		"rows":
@@ -1272,40 +1136,464 @@
 		"selected_items":
 		[
 			[
+				"eve",
+				"src/coffee/events.coffee"
+			],
+			[
+				"app",
+				"src/coffee/app.coffee"
+			],
+			[
+				"cont",
+				"src/styl/modules/contenteditable.styl"
+			],
+			[
+				"edi",
+				"src/jade/edit-profile.jade"
+			],
+			[
+				"edit",
+				"src/jade/edit-profile.jade"
+			],
+			[
 				"gul",
 				"build/gulp.coffee"
 			],
 			[
-				"svg",
-				"build/tasks/svg.coffee"
+				"styl",
+				"build/tasks/styl.coffee"
 			],
 			[
-				"clean",
-				"build/tasks/clean.coffee"
+				"rpof",
+				"src/styl/modules/profile-box.styl"
 			],
 			[
-				"gro",
-				"src/styl/modules/three-group.styl"
+				"even",
+				"src/coffee/events.coffee"
 			],
 			[
-				"socia",
-				"src/styl/modules/social-group.styl"
+				"gra",
+				"src/styl/gradients.styl"
 			],
 			[
-				"typ",
-				"src/styl/typography.styl"
+				"share",
+				"src/styl/modules/share-flyout.styl"
 			],
 			[
-				"but",
-				"src/styl/buttons.styl"
+				"search",
+				"src/styl/modules/search.styl"
+			],
+			[
+				"se",
+				"src/jade/layouts/layout-secondary.jade"
+			],
+			[
+				"prim",
+				"src/jade/layouts/layout-primary.jade"
+			],
+			[
+				"moda",
+				"src/jade/includes/linkedin-modal.jade"
+			],
+			[
+				"con",
+				"src/styl/modules/content-list.styl"
+			],
+			[
+				"index",
+				"src/jade/includes/index-include.jade"
 			],
 			[
 				"sett",
 				"src/styl/settings.styl"
 			],
 			[
+				"ind",
+				"src/jade/includes/index-include.jade"
+			],
+			[
 				"flo",
 				"src/styl/modules/flow-box.styl"
+			],
+			[
+				"incl",
+				"src/jade/includes/index-include.jade"
+			],
+			[
+				"inde",
+				"src/jade/includes/index-include.jade"
+			],
+			[
+				"",
+				"src/styl/modules/contenteditable.styl"
+			],
+			[
+				"la",
+				"src/jade/layouts/layout-primary.jade"
+			],
+			[
+				"drop",
+				"src/styl/modules/dropdown.styl"
+			],
+			[
+				"sp",
+				"src/jade/edit-profile.jade"
+			],
+			[
+				"coff",
+				"build/tasks/coffee.coffee"
+			],
+			[
+				"a",
+				"src/coffee/app.coffee"
+			],
+			[
+				"head",
+				"src/styl/modules/header.styl"
+			],
+			[
+				"st",
+				"build/styleguide/styleguide.styl"
+			],
+			[
+				"slid",
+				"src/styl/modules/slider-nav.styl"
+			],
+			[
+				"logg",
+				"src/jade/index-logged-in.jade"
+			],
+			[
+				"com",
+				"src/styl/modules/compact-profile-box.styl"
+			],
+			[
+				"profil",
+				"src/styl/modules/profile-box.styl"
+			],
+			[
+				"soc",
+				"src/styl/modules/social-group.styl"
+			],
+			[
+				"de",
+				"src/styl/modules/descriptor.styl"
+			],
+			[
+				"secon",
+				"src/jade/layouts/layout-secondary.jade"
+			],
+			[
+				"ba",
+				"src/styl/base.styl"
+			],
+			[
+				"prof",
+				"src/jade/edit-profile.jade"
+			],
+			[
+				"pro",
+				"src/styl/modules/profile-box.styl"
+			],
+			[
+				"bas",
+				"src/styl/base.styl"
+			],
+			[
+				"ed",
+				"src/jade/edit-profile.jade"
+			],
+			[
+				"slider",
+				"src/styl/modules/flow-box-slider.styl"
+			],
+			[
+				"section",
+				"src/styl/modules/sections.styl"
+			],
+			[
+				"hea",
+				"src/styl/modules/header.styl"
+			],
+			[
+				"mi",
+				"src/styl/mixins.styl"
+			],
+			[
+				"compl",
+				"src/styl/modules/compact-profile-box.styl"
+			],
+			[
+				"fold",
+				"src/styl/modules/folder.styl"
+			],
+			[
+				"gu",
+				"build/gulp.coffee"
+			],
+			[
+				"ja",
+				"build/tasks/jade.coffee"
+			],
+			[
+				"header",
+				"src/styl/modules/header.styl"
+			],
+			[
+				"log",
+				"src/jade/index-logged-in.jade"
+			],
+			[
+				"sty",
+				"build/styleguide/styleguide.js"
+			],
+			[
+				"base",
+				"src/styl/base.styl"
+			],
+			[
+				"lay",
+				"src/jade/layouts/layout-secondary.jade"
+			],
+			[
+				"lo",
+				"src/jade/index-logged-in.jade"
+			],
+			[
+				"index-in",
+				"src/jade/includes/index-include.jade"
+			],
+			[
+				"mod",
+				"src/styl/modules/modal.styl"
+			],
+			[
+				"set",
+				"src/styl/settings.styl"
+			],
+			[
+				"typ",
+				"src/styl/typography.styl"
+			],
+			[
+				"soci",
+				"src/styl/modules/social-group.styl"
+			],
+			[
+				"he",
+				"src/styl/modules/header.styl"
+			],
+			[
+				"index-",
+				"src/jade/includes/index-include.jade"
+			],
+			[
+				"co",
+				"cognizant.sublime-project"
+			],
+			[
+				"logi",
+				"src/jade/index-logged-in.jade"
+			],
+			[
+				"social",
+				"src/styl/modules/social-group.styl"
+			],
+			[
+				"flow",
+				"src/styl/modules/flow-box.styl"
+			],
+			[
+				"mix",
+				"src/styl/mixins.styl"
+			],
+			[
+				"svg",
+				"build/tasks/svg.coffee"
+			],
+			[
+				"crea",
+				"src/jade/create-profile.jade"
+			],
+			[
+				"thre",
+				"src/styl/modules/three-group.styl"
+			],
+			[
+				"fo",
+				"src/styl/modules/folder.styl"
+			],
+			[
+				"lis",
+				"src/styl/modules/content-list.styl"
+			],
+			[
+				"but",
+				"src/styl/buttons.styl"
+			],
+			[
+				"jad",
+				"build/tasks/jade.coffee"
+			],
+			[
+				"share-fi",
+				"src/svg/symbols/icon_share-filled.svg"
+			],
+			[
+				"jade",
+				"build/tasks/jade.coffee"
+			],
+			[
+				"folder",
+				"src/styl/modules/folder.styl"
+			],
+			[
+				"fol",
+				"src/styl/modules/folder.styl"
+			],
+			[
+				"f",
+				"src/styl/modules/folder.styl"
+			],
+			[
+				"fl",
+				"src/styl/modules/flow-box.styl"
+			],
+			[
+				"ty",
+				"src/styl/typography.styl"
+			],
+			[
+				"sear",
+				"src/styl/modules/search.styl"
+			],
+			[
+				"foot",
+				"src/styl/modules/footer.styl"
+			],
+			[
+				"sec",
+				"src/styl/modules/sections.styl"
+			],
+			[
+				"searh",
+				"src/styl/modules/search.styl"
+			],
+			[
+				"buton",
+				"src/styl/buttons.styl"
+			],
+			[
+				"gro",
+				"src/styl/modules/three-group.styl"
+			],
+			[
+				"gir",
+				"src/styl/grid.styl"
+			],
+			[
+				"gr",
+				"src/styl/grid.styl"
+			],
+			[
+				"sect",
+				"src/styl/modules/sections.styl"
+			],
+			[
+				"socia",
+				"src/styl/modules/social-group.styl"
+			],
+			[
+				"lin",
+				"src/jade/includes/linkedin-modal.jade"
+			],
+			[
+				"giti",
+				".gitignore"
+			],
+			[
+				"nav",
+				"src/styl/modules/slider-nav.styl"
+			],
+			[
+				"bow",
+				"build/bower.json"
+			],
+			[
+				"cof",
+				"build/tasks/coffee.coffee"
+			],
+			[
+				"tp",
+				"src/styl/typography.styl"
+			],
+			[
+				"ban",
+				"src/styl/modules/banner.styl"
+			],
+			[
+				"bann",
+				"src/styl/modules/banner.styl"
+			],
+			[
+				"butt",
+				"src/styl/buttons.styl"
+			],
+			[
+				"list",
+				"src/styl/modules/headline-list.styl"
+			],
+			[
+				"secion",
+				"src/styl/modules/sections.styl"
+			],
+			[
+				"gri",
+				"src/styl/grid.styl"
+			],
+			[
+				"cogn",
+				"cognizant.sublime-project"
+			],
+			[
+				"functions.st",
+				"node_modules/jeet/stylus/jeet/_functions.styl"
+			],
+			[
+				"grid",
+				"node_modules/jeet/stylus/jeet/_grid.styl"
+			],
+			[
+				"index.j",
+				"src/jade/index.jade"
+			],
+			[
+				"index.",
+				"src/jade/index.jade"
+			],
+			[
+				"col",
+				"src/styl/colors.styl"
+			],
+			[
+				"color",
+				"src/styl/colors.styl"
+			],
+			[
+				"box",
+				"src/styl/modules/flow-box.styl"
+			],
+			[
+				"searhc",
+				"src/styl/modules/search.styl"
+			],
+			[
+				"button",
+				"src/styl/buttons.styl"
+			],
+			[
+				"clean",
+				"build/tasks/clean.coffee"
 			],
 			[
 				"star-fi",
@@ -1316,40 +1604,12 @@
 				"app/svg/symbols/icon_star.svg"
 			],
 			[
-				"search",
-				"src/styl/modules/search.styl"
-			],
-			[
-				"styl",
-				"build/tasks/styl.coffee"
-			],
-			[
-				"coff",
-				"build/tasks/coffee.coffee"
-			],
-			[
-				"sty",
-				"build/tasks/styl.coffee"
-			],
-			[
-				"lay",
-				"src/jade/layout.jade"
-			],
-			[
 				"bower",
 				"build/tasks/bower.coffee"
 			],
 			[
-				"set",
-				"src/styl/settings.styl"
-			],
-			[
 				"so",
 				"src/styl/modules/social-group.styl"
-			],
-			[
-				"gu",
-				"build/gulp.coffee"
 			],
 			[
 				"syl",
@@ -1360,48 +1620,16 @@
 				"src/styl/modules/three-group.styl"
 			],
 			[
-				"list",
-				"src/styl/modules/headline-list.styl"
-			],
-			[
-				"bann",
-				"src/styl/modules/banner.styl"
-			],
-			[
-				"gra",
-				"src/styl/gradients.styl"
-			],
-			[
 				"socio",
 				"src/styl/modules/social-group.styl"
-			],
-			[
-				"button",
-				"src/styl/buttons.styl"
 			],
 			[
 				"svg.c",
 				"build/tasks/svg.coffee"
 			],
 			[
-				"",
-				"src/styl/modules/content-list.styl"
-			],
-			[
-				"share",
-				"src/svg/symbols/icon_share.svg"
-			],
-			[
-				"app",
-				"docs/styleguide/js/app.js"
-			],
-			[
 				"app.",
 				"src/coffee/app.coffee"
-			],
-			[
-				"fl",
-				"src/styl/modules/share-flyout.styl"
 			],
 			[
 				"s",
@@ -1418,370 +1646,6 @@
 			[
 				".git",
 				".gitignore"
-			],
-			[
-				"se",
-				"src/styl/settings.styl"
-			],
-			[
-				"icon_",
-				"src/svg/symbols/icon_twitter.svg"
-			],
-			[
-				"ack",
-				"package.json"
-			],
-			[
-				"icon_tw",
-				"src/svg/symbols/icon_twitter.svg"
-			],
-			[
-				"soci",
-				"src/styl/modules/social-group.styl"
-			],
-			[
-				"la",
-				"src/jade/layout.jade"
-			],
-			[
-				"soc",
-				"src/styl/modules/social-group.styl"
-			],
-			[
-				"ban",
-				"src/styl/modules/banner.styl"
-			],
-			[
-				"gri",
-				"src/styl/grid.styl"
-			],
-			[
-				"social",
-				"src/styl/modules/social-group.styl"
-			],
-			[
-				"index.st",
-				"src/styl/index.styl"
-			],
-			[
-				"index.s",
-				"node_modules/nib/index.styl"
-			],
-			[
-				"index",
-				"node_modules/autoprefixer-stylus/index.js"
-			],
-			[
-				"head",
-				"src/styl/header.styl"
-			],
-			[
-				"pro",
-				"src/styl/projects.styl"
-			],
-			[
-				"home",
-				"src/jade/views/home.jade"
-			],
-			[
-				"main",
-				"src/scss/main.scss"
-			],
-			[
-				"index.sc",
-				"src/scss/pages/_index.scss"
-			],
-			[
-				"content",
-				"src/scss/modules/_content-box.scss"
-			],
-			[
-				"typogra",
-				"src/scss/components/_typography.scss"
-			],
-			[
-				"service.",
-				"app/views/account/storefront/service.blade.php"
-			],
-			[
-				"acc",
-				"src/scss/pages/_account.scss"
-			],
-			[
-				"account.sc",
-				"src/scss/pages/_account.scss"
-			],
-			[
-				"location",
-				"app/views/account/storefront/location.blade.php"
-			],
-			[
-				"over",
-				"app/views/account/storefront/overview.blade.php"
-			],
-			[
-				"doggrid",
-				"src/scss/components/_dog-grid.scss"
-			],
-			[
-				"content-box.sc",
-				"src/scss/modules/_content-box.scss"
-			],
-			[
-				"choose",
-				"app/views/account/choose-plan.blade.php"
-			],
-			[
-				"main.sc",
-				"src/scss/main.scss"
-			],
-			[
-				"foot",
-				"src/styl/footer.styl"
-			],
-			[
-				"nav",
-				"src/styl/nav.styl"
-			],
-			[
-				"ty",
-				"src/styl/typography.styl"
-			],
-			[
-				"hea",
-				"src/styl/header.styl"
-			],
-			[
-				"ba",
-				"src/styl/base.styl"
-			],
-			[
-				"proj",
-				"src/styl/projects.styl"
-			],
-			[
-				"form",
-				"src/styl/forms.styl"
-			],
-			[
-				"slide",
-				"src/styl/slider.styl"
-			],
-			[
-				"anim",
-				"src/styl/animations.styl"
-			],
-			[
-				"for",
-				"src/styl/forms.styl"
-			],
-			[
-				"bow",
-				"bower.json"
-			],
-			[
-				"styl.c",
-				"build/tasks/styl.coffee"
-			],
-			[
-				"index.jad",
-				"src/jade/index.jade"
-			],
-			[
-				"slider",
-				"src/styl/slider.styl"
-			],
-			[
-				"foo",
-				"src/styl/footer.styl"
-			],
-			[
-				"menu",
-				"src/styl/menu.styl"
-			],
-			[
-				"bas",
-				"src/styl/base.styl"
-			],
-			[
-				"kyla",
-				"kyla.sublime-project"
-			],
-			[
-				"index.ja",
-				"src/jade/index.jade"
-			],
-			[
-				"mix",
-				"src/styl/mixins.styl"
-			],
-			[
-				"gulp",
-				"build/gulpfile.js"
-			],
-			[
-				"pos",
-				"src/styl/modules/module-post.styl"
-			],
-			[
-				"varia",
-				"src/styl/variables.styl"
-			],
-			[
-				"settingssty",
-				"build/node_modules/axis/axis/settings.styl"
-			],
-			[
-				"settings",
-				"build/node_modules/axis/axis/settings.styl"
-			],
-			[
-				"wrapp",
-				"src/core/wrapper.tpl.jade"
-			],
-			[
-				"show",
-				"src/core/show-post/show-post.tpl.jade"
-			],
-			[
-				"ani",
-				"src/styl/animations.styl"
-			],
-			[
-				"dog",
-				"src/core/dog-profile/dog-profile.tpl.jade"
-			],
-			[
-				"post",
-				"src/styl/modules/module-post.styl"
-			],
-			[
-				"postt",
-				"src/core/feed/post-types.jade"
-			],
-			[
-				"about",
-				"src/core/settings/about/settings-about.tpl.jade"
-			],
-			[
-				"footer",
-				"src/common/directives/main-footer/main-footer.tpl.jade"
-			],
-			[
-				"profile",
-				"src/core/user-profile/user-profile.tpl.jade"
-			],
-			[
-				"profi",
-				"src/core/dog-profile/dog-profile.tpl.jade"
-			],
-			[
-				"create",
-				"src/core/create-post/create-post.tpl.jade"
-			],
-			[
-				"lost",
-				"src/core/create-post/lost-dog/lost-dog.tpl.jade"
-			],
-			[
-				"profil",
-				"src/core/dog-profile/dog-profile.tpl.jade"
-			],
-			[
-				"prfo",
-				"src/core/user-profile/user-profile.tpl.jade"
-			],
-			[
-				"wrapper",
-				"src/core/wrapper.tpl.jade"
-			],
-			[
-				"datefil",
-				"src/common/filters/diff-date.fil.js"
-			],
-			[
-				"an",
-				"src/styl/animations.styl"
-			],
-			[
-				"lis",
-				"src/styl/modules/module-list.styl"
-			],
-			[
-				"men",
-				"src/common/modals/menu/menu.tpl.jade"
-			],
-			[
-				"myfriends",
-				"src/core/settings/my-friends/settings-my-friends.tpl.jade"
-			],
-			[
-				"myfri",
-				"src/core/settings/my-friends/settings-my-friends.tpl.jade"
-			],
-			[
-				"diff",
-				"src/common/filters/diff-date.fil.js"
-			],
-			[
-				"mod",
-				"src/styl/modules/module-modal.styl"
-			],
-			[
-				"login",
-				"src/core/account/login/login.tpl.jade"
-			],
-			[
-				"modal",
-				"src/styl/modules/module-modal.styl"
-			],
-			[
-				"current",
-				"src/common/directives/current-day-summary/current-day-summary.tpl.jade"
-			],
-			[
-				"user",
-				"src/core/user-profile/user-profile.tpl.jade"
-			],
-			[
-				"my",
-				"src/core/feed/my-dogs/my-dogs.tpl.jade"
-			],
-			[
-				"mydog",
-				"src/core/feed/my-dogs/my-dogs.tpl.jade"
-			],
-			[
-				"misc",
-				"src/styl/modules/module-misc.styl"
-			],
-			[
-				"load",
-				"src/common/directives/loading/loading.tpl.jade"
-			],
-			[
-				"feed",
-				"src/core/feed/feed.ctrl.js"
-			],
-			[
-				"mapst",
-				"src/styl/modules/module-map.styl"
-			],
-			[
-				"base",
-				"src/styl/base.styl"
-			],
-			[
-				"prof",
-				"src/core/user-profile/user-profile.tpl.jade"
-			],
-			[
-				"toolt",
-				"src/common/modals/tooltip/tooltip.tpl.jade"
-			],
-			[
-				"summa",
-				"src/styl/modules/module-summary.styl"
 			]
 		],
 		"width": 0.0
@@ -1812,7 +1676,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 235.0,
+	"side_bar_width": 153.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -76,3 +76,19 @@
         svg
             transform translate(-50%, -50%) scale(0.95)
             transition transform 0.1s cubic-bezier(.73,.88,0,1.02)
+            
+
+.profile-box__indicator
+  position absolute
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 1.3rem 1.3rem 1.3rem 0
+  border-color: transparent backgray transparent transparent
+  left -1.3rem
+.profile-box-flyout--settings
+  .profile-box__indicator
+    top 2.9rem
+.profile-box-flyout--notifications
+  .profile-box__indicator
+    top 7.5rem

@@ -69,6 +69,7 @@ $(document).on 'click', (event) ->
 	if !$(event.target).closest('.js-open-modal-module').length
 		$('.modal-module').addClass('is-hidden')
 	if !$(event.target).closest('.js-dropdown-trigger').length
+		
 		$('.contenteditable-dropdown').velocity {height: 0}, 
 			duration: 600,
 			easing: [ 300, 30 ],

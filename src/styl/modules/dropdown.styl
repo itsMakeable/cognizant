@@ -9,8 +9,16 @@
   height 0
   overflow hidden
   transition height 0.5s ease
-  &.is-active
-    overflow scroll
+  position: relative
+  // &.is-active
+  //   overflow scroll
+  &.ps-container > .ps-scrollbar-x-rail,
+  &.ps-container > .ps-scrollbar-x-rail > .ps-scrollbar-x
+    opacity 0
+  &.ps-container > .ps-scrollbar-y-rail,
+  &.ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y
+    width 1px
+    right -3px
   ul
     li
       color darkgray
