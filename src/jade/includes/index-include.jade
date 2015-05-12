@@ -7,75 +7,76 @@ section.section.flow-box-slider-section.backgray-bg
 			each val, index in {1:'is-active',2:'is-next',3:'is-prev'}
 				.row.flow-box-slider-group(class="#{val}")
 					article.flow-box.flow-box--large.gradient2--vertical
-						
-						h4.flow-box__tag Article | 
-							i.icon
-								svg(viewbox='0 0 100 100')
-									use(xlink:href='#icon_share-filled')
-							span 10k
-						i.flow-box__icon
-							svg(viewbox='0 0 100 100')
-								use(xlink:href='#icon_pdf')
-						.flow-box__content
-							.flow-box__title
-								h3 Healthcare Consumerism:
-								h5 The Rise of the Empowered Healthcare Consumer
-								p Added for you on 12.14.14
-							.flow-box__CTA
-								.flow-box__CTA-description
-									p
-										strong A shift to individual healthcare.
-										| Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.
-								i.flow-box__CTA--left
-									svg.is-empty(viewbox='0 0 100 100')
-										use(xlink:href='#icon_star')
-									svg.is-filled(viewbox='0 0 100 100')
-										use(xlink:href='#icon_star-filled')
-								i.flow-box__CTA--share.share-flyout__trigger.js-share-flyout__trigger
-									svg.is-empty(viewbox='0 0 100 100')
-										use(xlink:href='#icon_share')
-									svg.is-filled(viewbox='0 0 100 100')
-										use(xlink:href='#icon_share-filled')
-								component.flow-box__share-flyout-wrapper.js-share-flyout
-									.flow-box__share-flyout.share-flyout
-										.flow-box-flyout__icon.share-flyout__icon
-											svg(viewbox='0 0 100 100')
-												use(xlink:href='#icon_email')
-										.flow-box-flyout__icon.share-flyout__icon
-											svg(viewbox='0 0 100 100')
-												use(xlink:href='#icon_twitter')
-										.flow-box-flyout__icon.share-flyout__icon
-											svg(viewbox='0 0 100 100')
-												use(xlink:href='#icon_facebook')
-										.flow-box-flyout__icon.share-flyout__icon
-											svg(viewbox='0 0 100 100')
-												use(xlink:href='#icon_linkedin')
+						.flow-box__gradient-bg
+							h4.flow-box__tag 
+								i.icon
+									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_pdf')
+								| Article | Added for you on 12.14.14
+							.flow-box__content
+								.flow-box__title
+									h3 Healthcare Consumerism:
+									h5 The Rise of the Empowered Healthcare Consumer
+									.flow-box__CTA-description
+										p
+											strong A shift to individual healthcare.
+											| Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.
+								.flow-box__CTA
+									i.flow-box__CTA--left
+										svg.is-empty(viewbox='0 0 100 100')
+											use(xlink:href='#icon_star')
+										svg.is-filled(viewbox='0 0 100 100')
+											use(xlink:href='#icon_star-filled')
+									i.flow-box__CTA--share.share-flyout__trigger.js-share-flyout__trigger
+										svg.is-empty(viewbox='0 0 100 100')
+											use(xlink:href='#icon_share')
+										svg.is-filled(viewbox='0 0 100 100')
+											use(xlink:href='#icon_share-filled')
+									component.flow-box__share-flyout-wrapper.js-share-flyout
+										.flow-box__share-flyout.share-flyout
+											.flow-box-flyout__icon.share-flyout__icon
+												svg(viewbox='0 0 100 100')
+													use(xlink:href='#icon_email')
+											.flow-box-flyout__icon.share-flyout__icon
+												svg(viewbox='0 0 100 100')
+													use(xlink:href='#icon_twitter')
+											.flow-box-flyout__icon.share-flyout__icon
+												svg(viewbox='0 0 100 100')
+													use(xlink:href='#icon_facebook')
+											.flow-box-flyout__icon.share-flyout__icon
+												svg(viewbox='0 0 100 100')
+													use(xlink:href='#icon_linkedin')
 
-								i.flow-box__CTA--right
-									svg.is-empty(viewbox='0 0 100 100')
-										use(xlink:href='#icon_triangle')
-									svg.is-filled(viewbox='0 0 100 100')
-										use(xlink:href='#icon_triangle-filled')
+									i.flow-box__CTA--right
+										svg.is-empty(viewbox='0 0 100 100')
+											use(xlink:href='#icon_triangle')
+										svg.is-filled(viewbox='0 0 100 100')
+											use(xlink:href='#icon_triangle-filled')
 
 					article.flow-box__small-container
 						each val, index in [1,2]
 							component.flow-box.gradient1--vertical
-								h4.flow-box__tag Article | 
-									i.icon
-										svg(viewbox='0 0 100 100')
-											use(xlink:href='#icon_share-filled')
-									span 10k
-								i.flow-box__icon
-									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_pdf')
-								.flow-box__content
-									.flow-box__title
-										h2 A Systematic Approach To Optimizing Collateral
-									.flow-box__CTA
-										i.flow-box__CTA--left
-											svg(viewbox='0 0 100 100')
-												use(xlink:href='#icon_star')
-										i.flow-box__CTA--right
-											svg(viewbox='0 0 100 100'): use(xlink:href='#icon_triangle')
+								.flow-box__gradient-bg
+									h4.flow-box__tag
+										i.icon
+											svg(viewbox='0 0 100 100'): use(xlink:href='#icon_pdf')
+										| Article
+
+									.flow-box__content
+										.flow-box__title
+											h2 A Systematic Approach To Optimizing Collateral
+										.flow-box__CTA-description.truncate
+											p A Systematic Approach To Optimizing Collateral
+										.flow-box__CTA
+											i.flow-box__CTA--left
+												svg.is-empty(viewbox='0 0 100 100')
+													use(xlink:href='#icon_star')
+												svg.is-filled(viewbox='0 0 100 100')
+													use(xlink:href='#icon_star-filled')
+											i.flow-box__CTA--right
+												svg.is-empty(viewbox='0 0 100 100')
+													use(xlink:href='#icon_triangle')
+												svg.is-filled(viewbox='0 0 100 100')
+													use(xlink:href='#icon_triangle-filled')
 			.row
 				subcomponent.slider-nav-bar
 					.slider-nav-indicator.velocity-animating
@@ -89,27 +90,57 @@ section.section.flow-box-slider-section.backgray-bg
 						.button--silent Next
 						i.icon
 							svg(viewbox='0 0 100 100'): use(xlink:href='#icon_caret')
+
+section.black-bg
+	.container
+		.video-module
+			.video-module__overlay
+				.video-module__center.js-video-play
+					img.video__message(src="svg/coderules.svg", alt="")
+					svg.play-button(viewbox='0 0 100 100'): use(xlink:href='#icon_playbutton')
+			iframe(width='650', height='400', src='https://www.youtube.com/embed/XYwiDJ7UWHo?rel=0&enablejsapi=1', frameborder='0', allowfullscreen='')
+
 section.section.generic-section.white-bg
 	.container
-		each val, index in [1,2]
-			.content-list
-				header.content-list__header
-					h2 SMAC
-					h3 Social Mobile Analytics Cloud
-				.content-list__header-border
-				each val, index in [1,2,3]
-					article.content-list__items
-						.content-list__item
-							h4
-								| Article | 
-								i.icon
-									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_share-filled')
-								| 25k
-							p: strong It’s Time for Learning to Go Back to School
-							i.content-list__item-CTA
-								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_caret')
-				footer.content-list__footer
-					a.button--silent(href='#') View SMAC
+		.content-list
+			header.content-list__header
+				h2 Digital Business
+				//- h3 Social Mobile Analytics Cloud
+				p: small  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat qui est minima quae, velit modi eos earum! Adipisci sunt, doloremque quisquam sint doloribus ullam debitis. Esse placeat voluptate temporibus excepturi.
+			.content-list__header-border
+			each val, index in [1,2,3]
+				article.content-list__items
+					.content-list__item
+						h4
+							| Article | 
+							i.icon
+								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_share-filled')
+							| 25k
+						p: strong It’s Time for Learning to Go Back to School
+						i.content-list__item-CTA
+							svg(viewbox='0 0 100 100'): use(xlink:href='#icon_caret')
+			footer.content-list__footer
+				a.button--silent(href='#') View SMAC
+		.content-list
+			header.content-list__header
+				h2 Code Halos&trade;
+				//- h3 Social Mobile Analytics Cloud
+				p: small  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat qui est minima quae, velit modi eos earum! Adipisci sunt, doloremque quisquam sint doloribus ullam debitis. Esse placeat voluptate temporibus excepturi.
+			.content-list__header-border
+			each val, index in [1,2,3]
+				article.content-list__items
+					.content-list__item
+						h4
+							| Article | 
+							i.icon
+								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_share-filled')
+							| 25k
+						p: strong It’s Time for Learning to Go Back to School
+						i.content-list__item-CTA
+							svg(viewbox='0 0 100 100'): use(xlink:href='#icon_caret')
+			footer.content-list__footer
+				a.button--silent(href='#') View Code Halos&trade;
+
 section.section.folder-headline-section.color-bg
 	.container
 		div.folder-headline-section__callout

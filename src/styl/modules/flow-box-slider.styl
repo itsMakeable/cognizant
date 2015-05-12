@@ -4,8 +4,6 @@
     +below(540px)
         .header--section
             padding 6rem 2rem
-        .container
-            padding 0
 
 .flow-box-slider
     overflow hidden
@@ -30,11 +28,19 @@
         .flow-box
             margin-top 3%
             col(1/2)
+    +below(1024px)
+        display none
+    +below(540px)
+        stack()
+        display block
+        .flow-box
+            stack()
+            margin-top 3rem
+            margin-bottom 3rem
 
 +below(1024px)
     .slider-nav-bar,
-    .slider-nav-controls,
-    .flow-box__small-container
+    .slider-nav-controls
         display none
 
 .flow-box-slider-group
@@ -56,4 +62,3 @@
     &.is-prev
         transform translateX(100%)
         display block
-            

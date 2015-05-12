@@ -62,6 +62,10 @@ $('.social-group__icon').on 'click',  ->
 	$this = $(this)
 	MKBL.socialSlider($this)
 
+$('.js-video-play').on 'click', (e) ->
+	$this = $(this)
+	MKBL.playVideo(e, $this)
+
 # STOP EVENT PROPAGATION
 $(document).on 'click', (event) ->
 	if !$(event.target).closest('.js-open-modal-module').length
@@ -77,6 +81,15 @@ $(document).on 'click', (event) ->
 	if !$(event.target).closest('[contenteditable]').length and !$(event.target).closest('.is-editable .js-dropdown-option').length
 		MKBL.endContenteditable()
 
+	if !$(event.target).closest('.js-video-play').length
+		$('.video-module').each ->
+			$video = $(this).find('iframe')
+			videoURL = $video.attr('src')
+			videoURL.replace("&autoplay=1", "")
+			$video.attr('src','')
+			$video.attr('src',videoURL)
+		$('.video-module').removeClass('is-active')
+		
 $ ->
 	MKBL.equalheight('.banner-module','.banner-module > div', 940)
 	MKBL.equalheight('.main-header','.equal-height', 1024)

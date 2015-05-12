@@ -25,11 +25,13 @@ gulp.task 'styl', ->
 				autoprefixer()
 			]
 			include: ['src/styl']
-			url: true
+			# url: true
 			compress: false
+			url:
+    			name: 'embedurl'
 		})
 		.pipe $.rename('index.css')
-		.pipe $.csscomb()
+		# .pipe $.csscomb()
 		.pipe gulp.dest('./tmp/css')
 
 

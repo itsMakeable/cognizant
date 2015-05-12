@@ -49,17 +49,15 @@
     z-index 1
     transition 0.05s linear 0s
     .is-filled
-        display none
+        opacity 0
     &:active
         svg
             transform translate(-50%, -50%) scale(0.95)
             transition transform 0.1s cubic-bezier(.73,.88,0,1.02)
     &.is-active
         transition 0.3s linear 0.1s
-        .is-empty
-            display none
         .is-filled
-            display inline-block
+            opacity 1
         
     
 .share-flyout__icon

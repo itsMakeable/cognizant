@@ -1,17 +1,18 @@
 extends layouts/layout-primary
 
 block content
-	header.main-header.gradient1--horizontal.color-bg
+	header.main-header.gradient1--horizontal.color-bg(style='background: url("img/bg-latest-thinking.jpg") no-repeat')
 		.container
-			h1 Latest Thinking
-			p.main-header__body-copy
-				| Explore our industry-leading insight. Tailored to solve your unique business challenges.
-			.subheader
-				| Enhance with 
-				i.icon.icon-linkedin
-					svg(viewbox='0 0 91 24')
-						use(xlink:href='#logo_linkedin')
-			div
+			h1 Explore our 
+				span.nowrap industry-leading
+				|  insight. 
+			p.main-header__body-copy Tailored to solve your unique business challenges.
+			//- .subheader
+			//- 	| Enhance with 
+			//- 	i.icon.icon-linkedin
+			//- 		svg(viewbox='0 0 91 24')
+			//- 			use(xlink:href='#logo_linkedin')
+			div.main-header__button-container
 				a.button--primary.icon--left(href='')
 					i.icon.icon-linkedin
 						svg(viewbox='0 0 100 100')
@@ -21,8 +22,9 @@ block content
 					svg(viewbox='0 0 100 100')
 						use(xlink:href='#icon_info')
 
-			div
-				a.button--silent(href='') Or tell us about yourself
+			//- div
+			//- 	a.button--silent(href='') Or tell us about yourself
+		.container.main-header__search-container
 			component.search-module.search-module--main
 				.search__icon.gradient6reverse--horizontal
 					i

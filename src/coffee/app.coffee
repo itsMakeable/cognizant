@@ -416,4 +416,14 @@ MKBL.setupContenteditable = ->
 
 		$this.perfectScrollbar()
 
-		
+
+MKBL.playVideo = (e, $this) ->
+	$parent = $this.closest('.video-module')
+	$video = $parent.find('iframe')
+
+	$parent.addClass('is-active')
+	setTimeout ->
+		$video[0].src += '&autoplay=1'
+	, 300
+
+	e.preventDefault()
