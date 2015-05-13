@@ -6,7 +6,7 @@ section.section.flow-box-slider-section.backgray-bg
 		component.flow-box-slider
 			each val, index in {1:'is-active',2:'is-next',3:'is-prev'}
 				.row.flow-box-slider-group(class="#{val}")
-					article.flow-box.flow-box--large.gradient2--vertical
+					article.flow-box.flow-box--large
 						.flow-box__gradient-bg
 							h4.flow-box__tag 
 								i.icon
@@ -54,7 +54,7 @@ section.section.flow-box-slider-section.backgray-bg
 
 					article.flow-box__small-container
 						each val, index in [1,2]
-							component.flow-box.gradient1--vertical
+							component.flow-box
 								.flow-box__gradient-bg
 									h4.flow-box__tag
 										i.icon
@@ -90,6 +90,19 @@ section.section.flow-box-slider-section.backgray-bg
 						.button--silent Next
 						i.icon
 							svg(viewbox='0 0 100 100'): use(xlink:href='#icon_caret')
+
+section.section.generic-section
+	component.banner-module
+		.banner__text
+			h4 STAY AGILE WITH OUR INDUSTRY-LEADING INSIGHT.
+			img(src="img/perspectives-ad.png", alt="")
+		.banner__CTA
+			h4 DOWNLOAD OUR NEW PERSPECTIVES APP 
+			img.app-store-button(src="img/apple-store.png", alt="")
+			img.app-store-button(src="img/play-store.png", alt="")
+
+				
+
 
 section.black-bg
 	.container
@@ -198,7 +211,7 @@ section.section.generic-section.white-bg
 								| How your business takes care of business today determines how far it will go tomorrow. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor	incididunt ut labore.
 						a.button--silent(href='') Visit Site
 
-section.section.scrolling-photo-offset-bg.height-overflow-section(style='background: url(img/bg-man.jpg) no-repeat;')
+section.section.scrolling-photo-offset-bg.height-overflow-section.has-container-overflow(style='background: url(img/bg-man.jpg) no-repeat;')
 	.container
 		header.header--section
 			h1 Latest Strategies
@@ -286,3 +299,120 @@ section.section.generic-section
 								h2 80% surveyed agree that the speed of your #MobileApp determines its success! #UX #Mobility
 							.social-group__CTA-container
 								a(href='' class='button--silent') Read More
+
+section.section.scrolling-photo-offset-bg.height-overflow-section(style='background: url(img/bg-more-men.jpg) no-repeat;')
+	.container
+		header.header--section
+			h1 Continue the conversation
+			p Now, that we have spent some time together, let's chat. Fill out your information below and let us know what you are thinking.
+	.container.white-bg
+		form.mkbl-form
+			.mkbl-form-main-field
+				fieldset#enter-field-name.mkbl-fieldset.is-hidden
+					label.mkbl-main-label What is your Name?* 
+					input.mkbl-main-input(type="text" autocomplete='off' required)
+					i.js-form-next.mkbl-right-arrow.mkbl-form-arrow
+						svg: use(xlink:href='#icon-caret')
+				fieldset#enter-field-email.mkbl-fieldset.is-hidden
+					label.mkbl-main-label What is your email?* 
+					input.mkbl-main-input(type="email" autocomplete='off' required)
+					i.js-form-next.mkbl-right-arrow.mkbl-form-arrow
+						svg: use(xlink:href='#icon-caret')
+				fieldset#enter-field-org.mkbl-fieldset.is-hidden
+					label.mkbl-main-label What is your Organization?* 
+					input.mkbl-main-input(type="text" autocomplete='off' required)
+					i.js-form-next.mkbl-right-arrow.mkbl-form-arrow
+						svg: use(xlink:href='#icon-caret')
+				fieldset#enter-field-phone.mkbl-fieldset.is-hidden
+					label.mkbl-main-label What is your Phone Number?* 
+					input.mkbl-main-input(type="tel" autocomplete='off' required)
+					i.js-form-next.mkbl-right-arrow.mkbl-form-arrow
+						svg: use(xlink:href='#icon-caret')
+				fieldset#enter-field-region.mkbl-fieldset.is-hidden
+					label.mkbl-main-label What is your region?*
+					input.mkbl-main-input.mkbl-sselect(type="text" placeholder='Select Region' autocomplete='off' required)
+					ul.mkbl-select-bg
+						li.mkbl-select-option.not-filtered: span North America
+						li.mkbl-select-option.not-filtered: span South America
+						li.mkbl-select-option.not-filtered: span Europe
+						li.mkbl-select-option.not-filtered: span Middle East
+						li.mkbl-select-option.not-filtered: span APAC
+						li.mkbl-select-option.not-filtered: span India
+					i.js-form-next.mkbl-right-arrow.mkbl-form-arrow
+						svg: use(xlink:href='#icon-caret')
+				fieldset#enter-field-inquiry.mkbl-fieldset.is-hidden
+					label.mkbl-main-label What type of inquiry is this?*
+					input.mkbl-main-input.mkbl-sselect(type="text" placeholder='Select Inquiry Type' autocomplete='off' required)
+					ul.mkbl-select-bg
+						li.mkbl-select-option.not-filtered: span Alliance
+						li.mkbl-select-option.not-filtered: span Alumni
+						li.mkbl-select-option.not-filtered: span Career Services
+						li.mkbl-select-option.not-filtered: span Investor Relations
+						li.mkbl-select-option.not-filtered: span Media
+						li.mkbl-select-option.not-filtered: span Request for Services
+					i.js-form-next.mkbl-right-arrow.mkbl-form-arrow
+						svg: use(xlink:href='#icon-caret')
+				.mkbl-form-complete
+					h3 Great! Please Review and Submit
+				.mkbl-form-progress-bar
+					.mkbl-form-progress-bar-progress
+				.mkbl-form-hint.is-input
+					i.icon
+						svg: use(xlink:href='#icon-tab')
+					span.mkbl-input-hint TAB to Continue
+				.mkbl-form-hint.is-select
+					i.icon
+						svg: use(xlink:href='#icon-updown')
+					span.mkbl-select-hint Use arrows to select
+			.mkbl-form-subfields
+				fieldset#field-name.mkbl-fieldset.is-clean
+					label.mkbl-label(for="") Name*
+					div.mkbl-subinput
+						i: svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='62px', height='32.667px', viewbox='0 0 62 32.667', enable-background='new 0 0 62 32.667', xml:space='preserve')
+								circle.circle-3(fill='currentColor', cx='45', cy='16', r='4')
+								circle.circle-2(fill='currentColor', cx='32', cy='16', r='4')
+								circle.circle-1(fill='currentColor', cx='19', cy='16', r='4')
+
+					div.mkbl-fieldset-bg
+				fieldset#field-email.mkbl-fieldset.is-clean
+					label.mkbl-label(for="") Email*
+					div.mkbl-subinput
+						i: svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='62px', height='32.667px', viewbox='0 0 62 32.667', enable-background='new 0 0 62 32.667', xml:space='preserve')
+								circle.circle-3(fill='currentColor', cx='45', cy='16', r='4')
+								circle.circle-2(fill='currentColor', cx='32', cy='16', r='4')
+								circle.circle-1(fill='currentColor', cx='19', cy='16', r='4')
+					div.mkbl-fieldset-bg
+				fieldset#field-org.mkbl-fieldset.is-clean
+					label.mkbl-label(for="") Organization*
+					div.mkbl-subinput
+						i: svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='62px', height='32.667px', viewbox='0 0 62 32.667', enable-background='new 0 0 62 32.667', xml:space='preserve')
+								circle.circle-3(fill='currentColor', cx='45', cy='16', r='4')
+								circle.circle-2(fill='currentColor', cx='32', cy='16', r='4')
+								circle.circle-1(fill='currentColor', cx='19', cy='16', r='4')
+					div.mkbl-fieldset-bg
+				fieldset#field-phone.mkbl-fieldset.is-clean
+					label.mkbl-label(for="") Phone Number*
+					div.mkbl-subinput
+						i: svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='62px', height='32.667px', viewbox='0 0 62 32.667', enable-background='new 0 0 62 32.667', xml:space='preserve')
+								circle.circle-3(fill='currentColor', cx='45', cy='16', r='4')
+								circle.circle-2(fill='currentColor', cx='32', cy='16', r='4')
+								circle.circle-1(fill='currentColor', cx='19', cy='16', r='4')
+					div.mkbl-fieldset-bg
+				fieldset#field-region.mkbl-fieldset.is-clean
+					label.mkbl-label(for="") Region*
+					div.mkbl-subinput
+						i: svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='62px', height='32.667px', viewbox='0 0 62 32.667', enable-background='new 0 0 62 32.667', xml:space='preserve')
+								circle.circle-3(fill='currentColor', cx='45', cy='16', r='4')
+								circle.circle-2(fill='currentColor', cx='32', cy='16', r='4')
+								circle.circle-1(fill='currentColor', cx='19', cy='16', r='4')
+					div.mkbl-fieldset-bg
+				fieldset#field-inquiry.mkbl-fieldset.is-clean
+					label.mkbl-label(for="") Inquiry Type*
+					div.mkbl-subinput
+						i: svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='62px', height='32.667px', viewbox='0 0 62 32.667', enable-background='new 0 0 62 32.667', xml:space='preserve')
+								circle.circle-3(fill='currentColor', cx='45', cy='16', r='4')
+								circle.circle-2(fill='currentColor', cx='32', cy='16', r='4')
+								circle.circle-1(fill='currentColor', cx='19', cy='16', r='4')
+					div.mkbl-fieldset-bg
+		.mkbl-form-button__container
+			a(href="/form.html").button--primary.mkbl-form-button Submit

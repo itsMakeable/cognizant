@@ -4,6 +4,10 @@
 
 MKBL = {}
 
+## plugin for jQuery :contains to be case-insensitive
+$.expr[':'].Contains = (a, i, m) ->
+	(a.textContent or a.innerText or '').toUpperCase().indexOf(m[3].toUpperCase()) >= 0
+	
 ###*
  * Remove Classes based on partial matches
  * @param  {[type]} removals  classes you want to remove

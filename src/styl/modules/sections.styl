@@ -14,6 +14,7 @@
 	
 .white-bg
 	background-color white
+	
 
 .color-bg
 	color white
@@ -56,19 +57,25 @@
 				position absolute
 				left 0
 				background-size auto 1.9rem
+	.mkbl-form
+		margin-top 10rem
+		margin-bottom 10rem
+	
 	
 +above(1620px)
-	.height-overflow-section
+	.height-overflow-section.has-container-overflow
 		height 57rem
 		overflow visible
 		position: relative
++above(1620px)
+	.height-overflow-section.has-container-overflow
 		.container.white-bg
-			position absolute
 			left 0
 			right 0
-			top 24rem
 			margin auto
 			width 100%
-		+ .section
-			padding-top 30rem
+			position absolute
+			top 24rem
+			+ .section
+				padding-top 30rem
 	

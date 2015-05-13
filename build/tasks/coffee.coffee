@@ -11,6 +11,7 @@ gulp.task 'coffee', ->
 		.pipe $.plumber(errorHandler: onError)
 		.pipe($.order([
 			'**/plugins/*'
+			'**/app.coffee'
 		]))
 		.pipe $.concat('zapp.js')
 		.pipe $.accord('coffee-script')

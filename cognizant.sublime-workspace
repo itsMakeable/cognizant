@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"trans",
+				"transition"
+			],
+			[
+				"ease",
+				"ease-out"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
 				"cu",
 				"currentColor"
 			],
@@ -33,10 +45,6 @@
 			],
 			[
 				"trn",
-				"transparent"
-			],
-			[
-				"trans",
 				"transparent"
 			],
 			[
@@ -90,10 +98,6 @@
 			[
 				"border",
 				"border-bottom"
-			],
-			[
-				"back",
-				"background-color"
 			],
 			[
 				"transla",
@@ -510,10 +514,6 @@
 			[
 				"x",
 				"xlink"
-			],
-			[
-				"an",
-				"angular-ui-router"
 			]
 		]
 	},
@@ -523,15 +523,7 @@
 			"file": "src/styl/modules/header.styl",
 			"settings":
 			{
-				"buffer_size": 2486,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/styl/modules/flow-box.styl",
-			"settings":
-			{
-				"buffer_size": 9143,
+				"buffer_size": 2540,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,39 +531,63 @@
 			"file": "src/jade/includes/index-include.jade",
 			"settings":
 			{
-				"buffer_size": 13215,
+				"buffer_size": 14845,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/svg/symbols/icon_triangle.svg",
+			"file": "src/styl/base.styl",
 			"settings":
 			{
-				"buffer_size": 940,
+				"buffer_size": 1221,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/svg/symbols/icon_star-filled.svg",
+			"file": "src/styl/modules/flow-box.styl",
 			"settings":
 			{
-				"buffer_size": 1362,
-				"line_ending": "Windows"
+				"buffer_size": 10948,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "src/styl/modules/sections.styl",
 			"settings":
 			{
-				"buffer_size": 1429,
+				"buffer_size": 1477,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/styl/modules/flow-box-slider.styl",
+			"file": "src/coffee/app.coffee",
 			"settings":
 			{
-				"buffer_size": 1353,
+				"buffer_size": 13144,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/styl/modules/video.styl",
+			"settings":
+			{
+				"buffer_size": 1264,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/coffee/events.coffee",
+			"settings":
+			{
+				"buffer_size": 3128,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/jade/index.jade",
+			"settings":
+			{
+				"buffer_size": 1252,
 				"line_ending": "Unix"
 			}
 		}
@@ -629,37 +645,47 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Kyla/Sites/cognizant",
-		"/Users/Kyla/Sites/cognizant/app",
-		"/Users/Kyla/Sites/cognizant/app/svg",
-		"/Users/Kyla/Sites/cognizant/src",
-		"/Users/Kyla/Sites/cognizant/src/svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/symbols"
+		"/Users/Kyla/Sites/cognizant"
 	],
 	"file_history":
 	[
+		"/Users/Kyla/Sites/cognizant/cognizant.sublime-project",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/video.styl",
+		"/Users/Kyla/Sites/cognizant/tmp/js/zapp.js",
+		"/Users/Kyla/Sites/cognizant/src/jade/index.jade",
+		"/Users/Kyla/Sites/cognizant/src/jade/includes/index-include.jade",
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_playbutton.svg",
+		"/Users/Kyla/Sites/cognizant/src/jade/layouts/includes/symbols.svg",
+		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_playbutton.svg",
+		"/Users/Kyla/Sites/cognizant/build/tasks/styl.coffee",
+		"/Users/Kyla/Sites/cognizant/src/svg/coderules.svg",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/flow-box.styl",
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_star-filled.svg",
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_triangle.svg",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/flow-box-slider.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/settings.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/grid.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/header.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/base.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/share-flyout.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/content-list.styl",
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_triangle-filled.svg",
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_share-filled.svg",
-		"/Users/Kyla/Sites/cognizant/src/jade/includes/index-include.jade",
-		"/Users/Kyla/Sites/cognizant/cognizant.sublime-project",
 		"/Users/Kyla/Sites/cognizant/app/index-logged-in.html",
 		"/Users/Kyla/Sites/cognizant/src/styl/mixins.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/profile-box.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/base.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/contenteditable.styl",
 		"/Users/Kyla/Sites/cognizant/src/coffee/app.coffee",
 		"/Users/Kyla/Sites/cognizant/src/jade/edit-profile.jade",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/dropdown.styl",
 		"/Users/Kyla/Sites/cognizant/src/jade/create-profile.jade",
 		"/Users/Kyla/Sites/cognizant/src/coffee/events.coffee",
-		"/Users/Kyla/Sites/cognizant/build/tasks/styl.coffee",
 		"/Users/Kyla/Sites/cognizant/app/main.js",
 		"/Users/Kyla/Sites/cognizant/src/jade/index-logged-in.jade",
 		"/Users/Kyla/Sites/cognizant/build/bower.json",
 		"/Users/Kyla/Sites/cognizant/build/styleguide/styleguide.styl",
 		"/Users/Kyla/Sites/cognizant/tmp/js/vendor/perfect-scrollbar.js",
 		"/Users/Kyla/Sites/cognizant/package.json",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/share-flyout.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/buttons.styl",
 		"/Users/Kyla/Sites/cognizant/build/gulp.coffee",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/search.styl",
@@ -670,17 +696,11 @@
 		"/Users/Kyla/Sites/cognizant/README.md",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/headline-list.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/three-group.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/content-list.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/sections.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/flow-box.styl",
 		"/Users/Kyla/Sites/cognizant/src/jade/includes/linkedin-modal.jade",
 		"/Users/Kyla/Sites/cognizant/build/tasks/coffee.coffee",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/flow-box-slider.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/modal.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/header.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/settings.styl",
 		"/Users/Kyla/Sites/cognizant/build/styleguide/styleguide.js",
-		"/Users/Kyla/Sites/cognizant/src/jade/index.jade",
 		"/Users/Kyla/Sites/cognizant/docs/styleguide/js/main.js",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/compact-profile-box.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/slider-nav.styl",
@@ -688,7 +708,6 @@
 		"/Users/Kyla/Downloads/x-tag-master/dist/x-tag-components.js",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/folder.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/footer.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/grid.styl",
 		"/Users/Kyla/Sites/cognizant/build/tasks/jade.coffee",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/banner.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/descriptor.styl",
@@ -757,15 +776,7 @@
 		"/Users/Kyla/Sites/cognizant-prototype/build/gulp.coffee",
 		"/Users/Kyla/Sites/cognizant-prototype/node_modules/gulp-jshint/node_modules/jshint/node_modules/shelljs/src/grep.js",
 		"/Users/Kyla/Sites/cognizant-prototype/node_modules/gulp-stylus/examples/css/sourcemaps-external.styl",
-		"/Users/Kyla/Sites/cognizant-prototype/cognizant.sublime-project",
-		"/Users/Kyla/Sites/cognizant-prototype/build/tasks/styl.coffee",
-		"/Users/Kyla/Sites/cognizant-prototype/gulpfile.js",
-		"/Users/Kyla/Sites/cognizant-prototype/node_modules/gulp-csscomb/node_modules/csscomb/node_modules/gonzales-pe/doc/Gonzales-Usage.md",
-		"/Users/Kyla/Sites/cognizant-prototype/bower.json",
-		"/Users/Kyla/Sites/cognizant-prototype/.tmp/css/swiper.css",
-		"/Users/Kyla/Sites/cognizant-prototype/.tmp/js/vendor/noframework.waypoints.min.js",
-		"/Users/Kyla/Sites/cognizant-prototype/.tmp/js/vendor/swiper.jquery.min.js",
-		"/Users/Kyla/Sites/cognizant-prototype/node_modules/stylus/node_modules/sax/test/buffer-overrun.js"
+		"/Users/Kyla/Sites/cognizant-prototype/cognizant.sublime-project"
 	],
 	"find":
 	{
@@ -818,6 +829,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"prop",
+			"ev",
+			"tag",
+			"flow-box__content",
+			"content",
+			"cta",
+			"tag",
+			"title",
+			"rgba(gray,0.2)",
+			"gray",
+			"#ffffff",
+			":",
+			";",
+			"share",
+			"--share",
+			".flow-box__CTA--share",
+			".share-flyout__icon",
+			"trigger",
 			"share",
 			"console",
 			"contenteditableDropdown",
@@ -927,25 +956,7 @@
 			"complete: (this) ->",
 			"this",
 			"complete: (this) ->",
-			"complete: (this) -> ",
-			"function(this) {",
-			" 30 ]",
-			"30",
-			"35",
-			"40",
-			"900",
-			"backgray",
-			"@media screen and (min-width: ",
-			"editable",
-			"|",
-			"span",
-			"flow-box-slider-section",
-			"details",
-			".compact-profile-box-flyo",
-			"box-flyo",
-			".profile-box-flyout",
-			"profile-box-flyout",
-			"profile-box"
+			"complete: (this) -> "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -976,6 +987,7 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -984,45 +996,108 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2486,
+						"buffer_size": 2540,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								202,
-								202
+								1529,
+								1529
 							]
 						],
 						"settings":
 						{
+							"history_list_is_closing": true,
 							"syntax": "Packages/Stylus/Stylus.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 669.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/jade/includes/index-include.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14845,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								422,
+								422
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 113.0,
+						"translation.y": 2214.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/styl/base.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1221,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1109,
+								1109
+							],
+							[
+								1199,
+								1192
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1027.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 3,
 					"file": "src/styl/modules/flow-box.styl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9143,
+						"buffer_size": 10948,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9120,
-								9120
+								3270,
+								3270
 							]
 						],
 						"settings":
@@ -1031,106 +1106,20 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 9.0,
-						"translation.y": 6168.0,
+						"translation.x": 76.0,
+						"translation.y": 1360.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/jade/includes/index-include.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 13215,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2342,
-								2342
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1195.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/svg/symbols/icon_triangle.svg",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 940,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								606,
-								606
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.tmLanguage"
-						},
-						"translation.x": 35.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "src/svg/symbols/icon_star-filled.svg",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1362,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								574,
-								574
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
 					"file": "src/styl/modules/sections.styl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1429,
+						"buffer_size": 1477,
 						"regions":
 						{
 						},
@@ -1143,6 +1132,7 @@
 						],
 						"settings":
 						{
+							"history_list_is_closing": true,
 							"syntax": "Packages/Stylus/Stylus.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -1150,73 +1140,160 @@
 						"translation.y": 192.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
-					"buffer": 1,
-					"file": "src/styl/modules/flow-box.styl",
+					"buffer": 5,
+					"file": "src/coffee/app.coffee",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9143,
+						"buffer_size": 13144,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4594,
-								4594
+								13065,
+								13065
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 8946.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/styl/modules/video.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1264,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								132,
+								132
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3241.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "src/styl/modules/flow-box-slider.styl",
+					"buffer": 7,
+					"file": "src/coffee/events.coffee",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1353,
+						"buffer_size": 3128,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								525,
-								525
+								2644,
+								2644
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2.0,
+						"translation.y": 1564.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/jade/index.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1252,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								147,
+								147
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/styl/modules/sections.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1477,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1254,
+								1254
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
@@ -1250,7 +1327,7 @@
 		"cols":
 		[
 			0.0,
-			0.590598302371,
+			0.226112443581,
 			1.0
 		],
 		"rows":
@@ -1278,36 +1355,108 @@
 		"selected_items":
 		[
 			[
-				"in",
+				"vid",
+				"src/styl/modules/video.styl"
+			],
+			[
+				"zap",
+				"tmp/js/zapp.js"
+			],
+			[
+				"co",
+				"cognizant.sublime-project"
+			],
+			[
+				"eve",
+				"src/coffee/events.coffee"
+			],
+			[
+				"inde",
 				"src/jade/includes/index-include.jade"
 			],
 			[
-				"slid",
-				"src/styl/modules/flow-box-slider.styl"
+				"ind",
+				"src/jade/index.jade"
 			],
 			[
-				"sec",
-				"src/styl/modules/sections.styl"
+				"app",
+				"src/coffee/app.coffee"
 			],
 			[
-				"",
+				"bas",
+				"src/styl/base.styl"
+			],
+			[
+				"he",
 				"src/styl/modules/header.styl"
+			],
+			[
+				"styl",
+				"build/tasks/styl.coffee"
 			],
 			[
 				"fl",
 				"src/styl/modules/flow-box.styl"
 			],
 			[
+				"sec",
+				"src/styl/modules/sections.styl"
+			],
+			[
+				"se",
+				"src/styl/settings.styl"
+			],
+			[
+				"set",
+				"src/styl/settings.styl"
+			],
+			[
+				"sl",
+				"src/styl/modules/flow-box-slider.styl"
+			],
+			[
+				"flw",
+				"src/styl/modules/flow-box.styl"
+			],
+			[
+				"gr",
+				"src/styl/grid.styl"
+			],
+			[
 				"head",
 				"src/styl/modules/header.styl"
+			],
+			[
+				"gri",
+				"src/styl/grid.styl"
+			],
+			[
+				"ba",
+				"src/styl/base.styl"
+			],
+			[
+				"conte",
+				"src/styl/modules/content-list.styl"
+			],
+			[
+				"in",
+				"src/jade/includes/index-include.jade"
 			],
 			[
 				"flo",
 				"src/styl/modules/flow-box.styl"
 			],
 			[
-				"inde",
-				"src/jade/includes/index-include.jade"
+				"share",
+				"src/styl/modules/share-flyout.styl"
+			],
+			[
+				"slid",
+				"src/styl/modules/flow-box-slider.styl"
+			],
+			[
+				"",
+				"src/styl/modules/header.styl"
 			],
 			[
 				"profi",
@@ -1320,10 +1469,6 @@
 			[
 				"dr",
 				"src/styl/modules/dropdown.styl"
-			],
-			[
-				"styl",
-				"build/tasks/styl.coffee"
 			],
 			[
 				"sty",
@@ -1342,14 +1487,6 @@
 				"package.json"
 			],
 			[
-				"eve",
-				"src/coffee/events.coffee"
-			],
-			[
-				"app",
-				"src/coffee/app.coffee"
-			],
-			[
 				"drop",
 				"src/styl/modules/dropdown.styl"
 			],
@@ -1360,10 +1497,6 @@
 			[
 				"con",
 				"src/styl/modules/contenteditable.styl"
-			],
-			[
-				"bas",
-				"src/styl/base.styl"
 			],
 			[
 				"logg",
@@ -1406,16 +1539,8 @@
 				"src/styl/gradients.styl"
 			],
 			[
-				"share",
-				"src/styl/modules/share-flyout.styl"
-			],
-			[
 				"search",
 				"src/styl/modules/search.styl"
-			],
-			[
-				"se",
-				"src/jade/layouts/layout-secondary.jade"
 			],
 			[
 				"prim",
@@ -1432,10 +1557,6 @@
 			[
 				"sett",
 				"src/styl/settings.styl"
-			],
-			[
-				"ind",
-				"src/jade/includes/index-include.jade"
 			],
 			[
 				"incl",
@@ -1480,10 +1601,6 @@
 			[
 				"secon",
 				"src/jade/layouts/layout-secondary.jade"
-			],
-			[
-				"ba",
-				"src/styl/base.styl"
 			],
 			[
 				"prof",
@@ -1558,10 +1675,6 @@
 				"src/styl/modules/modal.styl"
 			],
 			[
-				"set",
-				"src/styl/settings.styl"
-			],
-			[
 				"typ",
 				"src/styl/typography.styl"
 			],
@@ -1570,16 +1683,8 @@
 				"src/styl/modules/social-group.styl"
 			],
 			[
-				"he",
-				"src/styl/modules/header.styl"
-			],
-			[
 				"index-",
 				"src/jade/includes/index-include.jade"
-			],
-			[
-				"co",
-				"cognizant.sublime-project"
 			],
 			[
 				"logi",
@@ -1674,10 +1779,6 @@
 				"src/styl/grid.styl"
 			],
 			[
-				"gr",
-				"src/styl/grid.styl"
-			],
-			[
 				"sect",
 				"src/styl/modules/sections.styl"
 			],
@@ -1726,10 +1827,6 @@
 				"src/styl/modules/sections.styl"
 			],
 			[
-				"gri",
-				"src/styl/grid.styl"
-			],
-			[
 				"cogn",
 				"cognizant.sublime-project"
 			],
@@ -1768,26 +1865,6 @@
 			[
 				"button",
 				"src/styl/buttons.styl"
-			],
-			[
-				"clean",
-				"build/tasks/clean.coffee"
-			],
-			[
-				"star-fi",
-				"app/svg/symbols/icon_star-filled.svg"
-			],
-			[
-				"starsv",
-				"app/svg/symbols/icon_star.svg"
-			],
-			[
-				"bower",
-				"build/tasks/bower.coffee"
-			],
-			[
-				"so",
-				"src/styl/modules/social-group.styl"
 			]
 		],
 		"width": 0.0
@@ -1810,7 +1887,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -1818,7 +1895,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 236.0,
+	"side_bar_width": 231.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

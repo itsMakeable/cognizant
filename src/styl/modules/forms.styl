@@ -1,0 +1,357 @@
+$input
+	// background-color rgba(0,0,0,0.1)
+	border: 0px solid transparent
+	width 100%
+	color blue
+
+.mkbl-form
+	col(10/12)
+	float none
+	margin auto
+
+.mkbl-form-button__container
+	text-align center
+	
+.mkbl-form-button
+	opacity 0
+	margin-bottom 6rem
+	&.is-active,
+	&:focus
+		opacity 1
+	
+.mkbl-form-main-field
+	position relative
+	min-height 94px
+	.mkbl-fieldset
+		margin-top 0
+
+.mkbl-fieldset
+	display block
+	margin-top 50px
+	position relative
+	width 100%
+	transition all 0.4s ease-in 0s
+	&.is-hidden
+		display none
+	&.is-active
+		visibility visible
+		.mkbl-label
+			top -10px
+			color currentColor
+			transition all 0.4s cubic-bezier(0.68, 0, 0.2, 1.05) 0.1s
+			opacity 1
+		.mkbl-subinput
+			transition all 0.3s ease
+			opacity 1
+			i
+				opacity 1
+				transition all 0.3s ease 0.3s
+		.mkbl-fieldset-bg
+			height 40px
+			background-color rgba(0,0,0,0.1)
+			transition all 0.4s ease-in-out 0.2s
+	&.is-filled
+		.mkbl-label
+			top -10px
+		
+	&.is-typing
+		svg circle
+			&:nth-of-type(3)
+				-webkit-animation sparkle 0.8s infinite 0s
+				animation sparkle 0.8s infinite 0s
+			&:nth-of-type(2)
+				-webkit-animation sparkle 0.8s infinite 0.2s
+				animation sparkle 0.8s infinite 0.2s
+			&:nth-of-type(1)
+				-webkit-animation sparkle 0.8s infinite 0.4s
+				animation sparkle 0.8s infinite 0.4s
+
+.mkbl-fieldset-bg
+	height 0px
+	background-color rgba(0,0,0,0)
+	position absolute
+	width 100%
+	bottom 0px
+	transform-origin 50% 50%
+	transition all 0.1s ease
+	
+.mkbl-form-subfields
+	cf()
+	.mkbl-fieldset
+		cursor pointer
+		col(1/3, cycle:3, gutter: 6)
+		transform translateX(0px)
+		transition all 0.4s ease-in 0s
+		@media screen and (max-width: 960px)
+			col(1/2, cycle:2, uncycle:1, gutter: 6)
+		@media screen and (max-width: 620px)
+			col(1/1, cycle:1, uncycle:2, gutter: 6)	
+		&.is-clean
+			visibility hidden
+			// transform translateY(-40px)
+			.mkbl-label
+				opacity 0
+			.mkbl-subinput
+				// width 0%
+				opacity 0
+		&.is-filled,
+		&.is-active
+			opacity 1
+			.mkbl-subinput
+				opacity 1
+				// width 100%
+		&.is-filled
+			&.is-clean
+				opacity 1
+				visibility visible
+				.mkbl-label
+					opacity 1
+				.mkbl-subinput
+					opacity 1
+.mkbl-label,
+.mkbl-main-label
+	upcase()
+	color lightgray
+	font-family proxBold
+	fs(1.4rem)
+	position relative
+	transition all 0.3s ease-in 0s
+	
+.mkbl-label
+	top 27px
+	
+.mkbl-main-label
+	color currentColor
+	top -3rem
+	
+.mkbl-subinput
+	@extend $input
+	padding 11px 1px
+	height 40px
+	line-height 1
+	border-bottom 1px solid lightgray
+	fs(1.8rem)
+	position relative
+	font-family proxReg
+	i
+		size 30px 20px
+		position absolute
+		left 5px
+		top 0
+		bottom 0
+		margin auto
+		color darkblue
+		opacity 0
+		transition all 0.3s ease
+	
+.mkbl-main-input
+	@extend $input
+	height 80px
+	fs(3.2rem)
+	padding 0 3rem
+	background-color transparent
+	background-color rgba(0,0,0,0.1)
+	+ i
+		color lightgray
+	&:focus
+		// background-color rgba(0,0,0,0.1)
+		+ i
+			color lightblue
+	&.has-error
+		animation wiggle 0.2s linear
+		color red
+		border-top 1px solid red
+		border-left 1px solid red
+		border-right 1px solid red
+		&.mkbl-sselect
+			border-bottom 1px solid red
+		+ i
+			color red
+
+.mkbl-form-progress-bar
+	width 100%
+	height 3px 
+	background-color lightgray
+	position absolute
+	bottom -3px
+	&.has-error
+		animation wiggle 0.2s linear
+
+.mkbl-form-progress-bar-progress
+	width 0%
+	height 3px
+	position absolute
+	top 0
+	left 0
+	bottom 0
+	left 0
+	transition width 0.5s cubic-bezier(0.68, 0, 0.2, 1.05) 0.2s
+	background-color green
+
+.mkbl-form-progress-bar-progress
+	background-color green
+	transition width 0.5s cubic-bezier(0.68, 0, 0.2, 1.05) 0.2s
+	
+.gradient .mkbl-form-progress-bar-progress
+	background vgradient4
+
+	
+.mkbl-form-arrow
+	position absolute
+	right 20px
+	top 40px
+	// bottom -20px
+	margin auto
+	size 32px
+	color blue
+	transition all 0.4s ease-in 0s
+	&.mkbl-down-arrow
+		transform rotate(450deg)
+
+// .mkbl-select
+// 	-webkit-appearance: none
+// 	background transparent
+// 	width 100%
+// 	width calc(100% +15px)
+// 	border-radius: 0
+// 	outline 0		
+// 	-webkit-box-shadow: none;
+// 	-moz-box-shadow: none;
+// 	box-shadow: none
+// 	border: 0px solid transparent
+// 	position:absolute
+// 	left:-9999px
+// 	opacity:0
+// 	&:focus
+// 		outline 0
+// 	+ .mkbl-right-arrow
+// 		transform rotate(450deg)
+// 	option
+// 		border: 0px solid transparent
+// 		fs(1.8rem)
+// 		padding 16px 20px
+// 		box-shadow none
+// 		color darkblue
+// 		background: white
+		
+.mkbl-form-hint
+	position absolute
+	right 0
+	top -48px
+	margin-top 5px
+	color gray
+	fs(1.2rem)
+	font-family proxRegIt
+	opacity 0
+	display inline-block
+	vertical-align middle
+	transform translateX(-16px)
+	transition all 0.3s ease-out
+	&.is-displayed
+		opacity 1
+		transform translateX(0px)
+	i
+		width 25px
+		height 20px
+		margin-right 8px
+		color lightblue
+		opacity 0.9
+	span
+		position relative
+		top 1px
+		margin-right 24px
+
+.js-form-next
+	cursor pointer
+
+.mkbl-sselect
+	background-color rgba(0,0,0,0.1)
+	&:placeholder
+		color darkgray
+.mkbl-sselect
+	&::-webkit-input-placeholder
+		color darkgray
+
+.mkbl-select-option
+	// display none
+	position relative
+	cursor pointer
+	opacity 0
+	padding 20px 30px
+	transition all 0.3s ease
+	color lightgray
+	@media screen and (max-height: 768px) and (min-width: 1024px)
+		col(1/2, cycle:2, gutter: 0)
+	
+.mkbl-select-bg
+	height 0px
+	position relative
+	top 3px
+	background-color rgba(0,0,0,0.1)
+	fs(1.8rem)
+	font-family proxReg
+	color blue
+	transition height 0.3s ease-in 0s
+	overflow: hidden
+	&.is-open
+		height 349px
+		transition height 0.4s cubic-bezier(0.68, 0, 0.2, 1.05)
+		@media screen and (max-height: 768px) and (min-width: 1024px)
+			height 182px
+		.mkbl-select-option
+			// display block
+			opacity 0.5
+			background-color rgba(0,0,0,0)
+			transition opacity 0.4s ease 0.2s, background-color 0.2s ease, color 0.2s ease
+			&.not-filtered
+				color lightblue
+				opacity 1
+				transition opacity 0.4s ease, background-color 0.2s ease, color 0.2s ease
+			span
+				position relative
+				left 0
+				transition 0.3s ease
+			&.is-active
+				background-color rgba(0,0,0,0.05)
+				span
+					left 5px
+.mkbl-form-complete
+	position relative
+	z-index: -999
+	opacity 0
+	padding 20px 0px
+	position absolute
+	top 23px
+	transition opacity 0.2s ease
+	h3
+		fs(2.2rem)
+		font-family proxReg
+		text-transform capitalize
+	&.is-active
+		transition opacity 0.3s ease
+		opacity 1
+		z-index: 1
+	
+.white-bg
+	.mkbl-main-input
+		background-color rgba(black,0.1)
+	.mkbl-main-label,
+	.is-active .mkbl-label
+		color blue
+	.mkbl-select-bg
+		background-color white
+		border-left 1px solid rgba(gray, 0.2)
+		border-right 1px solid rgba(gray, 0.2)
+	.mkbl-select-option
+		&:after
+			content ''
+			height 1px
+			display block
+			background-color gray
+			bottom 0
+			left 1.3rem
+			right 1.3rem
+			position: absolute
+		&:last-of-type
+			&:after
+				background-color transparent

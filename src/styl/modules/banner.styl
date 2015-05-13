@@ -22,7 +22,7 @@
     background-position 50% 50%
     center(109.2rem)
     color white
-    padding 5.4rem 0 4.4rem
+    padding 5.4rem 0 5.4rem
     position relative
     height 100%
     margin 2rem auto
@@ -46,15 +46,26 @@
         &:hover
             color lightblue
             border-bottom 1px solid rgba(lightblue,0.2)
-    
+    +below(960px)
+        .app-store-button
+            display inline-block
+            margin 2rem
 .banner__text
     col(6/12, offset: 1/12)
     position relative
     z-index 1
-    
+    h4
+        fs(2rem)
+    img
+        max-width 54rem
+        margin 2rem auto 0 auto
+    +below(960px)
+        img
+            margin-bottom 2rem
+            
 .banner__CTA
     col(3/12, offset: 1/12)
-    text-align right
+    text-align center
     position relative
     z-index 1
     min-height 9rem
@@ -73,3 +84,7 @@
         text-align center
         padding 1rem 0
         
+.app-store-button
+    width 11rem
+    height auto
+    margin 1rem auto
