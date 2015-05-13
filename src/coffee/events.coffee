@@ -18,6 +18,10 @@ $('body')
 			$this.trigger('change')
 			MKBL.contenteditableDropdownAutocomplete($this)
 
+$('.search-module').on 'click', '.js-dropdown-trigger',  ->
+	$parent = $(this).closest('.search-module')
+	MKBL.activationToggle($parent, 'is-active')
+
 $('.js-dropdown-trigger').on 'click',  ->
 	if $(this).find('.contenteditable-dropdown').length
 		$dropdown = $(this).closest('.contenteditable-dropdown')
@@ -80,6 +84,9 @@ $(document).on 'click', (event) ->
 				$(this).removeClass('is-active')
 	if !$(event.target).closest('[contenteditable]').length and !$(event.target).closest('.is-editable .js-dropdown-option').length
 		MKBL.endContenteditable()
+
+	if !$(event.target).closest('.search-module .js-dropdown-trigger').length
+		MKBL.activationOff($('.search-module'))
 
 	if !$(event.target).closest('.js-video-play').length
 		$('.video-module').each ->

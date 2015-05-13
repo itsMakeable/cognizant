@@ -184,7 +184,11 @@ section.section.folder-headline-section.color-bg
 				span 2
 			.folder__CTA
 				i.folder__CTA--right
-					svg(viewbox='0 0 100 100'): use(xlink:href='#icon_triangle')
+					svg.is-empty(viewbox='0 0 100 100')
+						use(xlink:href='#icon_triangle')
+					svg.is-filled(viewbox='0 0 100 100')
+						use(xlink:href='#icon_triangle-filled')
+
 
 section.section.generic-section.white-bg
 	.container

@@ -1,0 +1,41 @@
+.search-module.is-active
+	.search__icon
+		transform translate(-200%)
+		transition all 0.4s cubic-bezier(.73,.49,.28,1.21)
+	.search__dropdown__active-selection
+		left 21%
+		transition all 0.4s cubic-bezier(.73,.49,.28,1.21) 0.1s
+	.search__dropdown__icon
+		transform rotate(180deg)
+		
+.search__dropdown
+	display inline-block
+	width 30rem
+	background-color rgba(lightblue,0.2)
+	color blue
+	position: absolute
+	top 0
+	bottom 0
+	left 0
+	border-right 1px solid lightgray
+	.contenteditable-dropdown
+		top 6.4rem
+	
+.search__dropdown__active-selection
+	align()
+	fs(1.8rem)
+	font-family proxLight
+	transition all 0.4s cubic-bezier(.73,.49,.28,1.21)
+	
+.search__dropdown__icon
+	position: absolute
+	right 2rem
+	top 0
+	bottom 0
+	margin auto
+	size 2.2rem
+	color blue
+	transition all 0.3s cubic-bezier(.73,.49,.28,1.21)
+	z-index: 1
+	svg
+		transform rotate(90deg)

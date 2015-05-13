@@ -125,6 +125,21 @@
     left 0
 .folder__CTA--right
     right 0
+    svg
+        transition all 0.2s ease-out
+        position: absolute
+        size 3rem
+    .is-filled
+        opacity 0
+        z-index: 0
+    .is-empty
+        opacity 1
+        z-index: 1
+    &:hover
+        .is-filled
+            opacity 0.5
+        .is-empty
+            opacity 1
   
 // Beyond here is styles that are section specific  
 .folder-headline-section__callout

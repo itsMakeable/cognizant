@@ -87,12 +87,14 @@ MKBL.prepareField = (nextField) ->
 	$('.mkbl-form-complete').removeClass('is-active')
 	$('.mkbl-form-hint.is-select').removeClass('is-displayed')
 	$('.mkbl-form-hint.is-input').removeClass('is-displayed')
+
 	if $('#enter-' + nextField).find('.mkbl-select-bg').length
 		if MKBL.currentField != nextField
 			setTimeout (->
 				$('#enter-' + nextField).removeClass('is-hidden')
 				setTimeout (->
-					$('#enter-' + nextField).find('.mkbl-main-input').trigger('focus')
+					if $('#enter-' + nextField).index() > 0
+						$('#enter-' + nextField).find('.mkbl-main-input').trigger('focus')
 					$('.mkbl-form-hint.is-select').addClass('is-displayed')
 					MKBL.listFilter('.mkbl-sselect','.mkbl-select-bg.is-open')
 					$('#enter-'+ nextField).find('.mkbl-select-bg').addClass('is-open')
@@ -102,10 +104,11 @@ MKBL.prepareField = (nextField) ->
 		setTimeout (->
 			$('#enter-' + nextField).removeClass('is-hidden')
 			setTimeout (->
-				$('#enter-' + nextField)
-					.find('.mkbl-main-input')
-					.trigger('focus')
-				), 1
+				if $('#enter-' + nextField).index() > 0
+					$(this)
+						.find('.mkbl-main-input')
+						.trigger('focus')
+					), 1
 		), MKBL.waitToShow
 	
 	$('#' + nextField)

@@ -46,6 +46,7 @@ block content
 								svg(viewbox='0 0 100 100')
 									use(xlink:href='#icon_caret')
 				button.button--silent View All
+
 	header.main-header.gradient1--horizontal.color-bg
 		.container
 			.row
@@ -119,6 +120,28 @@ block content
 					.headline-push__center
 						h4 Did you know?
 						h5 This is a fact related to the user’s industry populated by demandbase.
+		.container.main-header__search-container
+			component.search-module.search-module--main.has-dropdown
+				.search__icon__wrapper
+					.search__icon.gradient6reverse--horizontal
+						i
+							svg(viewbox='0 0 100 100')
+								use(xlink:href='#icon_search')
+				.search__dropdown.js-dropdown-option-parent
+					span.search__dropdown__active-selection.js-dropdown-option-holder All Industries
+					.search__dropdown__icon.js-dropdown-trigger
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_caret')
+					subcomponent.contenteditable-dropdown
+						ul
+							li.js-dropdown-option Search Suggestion
+							li.js-dropdown-option Another Suggestion
+							li.js-dropdown-option Yet Anonther Suggestion
+							li.js-dropdown-option Alternative Suggestion
+							li.js-dropdown-option Possible Suggestion
+							li.js-dropdown-option Consider this Suggestion
+							li.js-dropdown-option One More Suggestion
+				input.search__input(type='text', placeholder='Search Within Folders')
 
 	include includes/index-include
 	include includes/linkedin-modal

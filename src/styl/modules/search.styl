@@ -42,17 +42,19 @@
   col(1/1)
   color white
   position relative
-  overflow hidden
+  // overflow hidden
   cf()
 
 .search__input
   padding 0 9.4rem
   height 6.4rem
   fs(2.5rem)
-  padding-top 0.5%
   color black
   font-family proxReg
   
+.has-dropdown .search__input
+  padding-left 33rem
+
 .search__input::-webkit-input-placeholder
   font-family proxRegIt
   color gray
@@ -62,20 +64,30 @@
   color gray
 
 .search__icon,
+.search__icon__wrapper,
 .search__share
   size 6.4rem
   display: block
   position absolute
   top 0
   z-index 1
+  
+.search__icon,
+.search__share
   svg
     size 50%
     align()
+
+.search__icon__wrapper
+  overflow: hidden
+  width 7.6rem
   
 .search__icon
   left 0
   z-index 1
   background hgradient66
+  transition all 0.4s ease-out
+  transform translate(0%)
   &:before
     content ''
     display block
