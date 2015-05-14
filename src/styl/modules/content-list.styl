@@ -55,7 +55,7 @@
     col(6/12, gutter: 6)
     margin-top 3rem
     h2
-        font-family proxBold
+        font-family proxReg
     +below(1024px)
         stack(pad:10%)
         margin-bottom 7rem
@@ -66,14 +66,14 @@
         padding 0
         
 .content-list__header
-    h3
-        color gray
+    h2
         padding 0.2rem 0 0.6rem
-        font-family proxSbold
+        font-family proxReg
     p
       color gray
-      small 
-        line-height 1.2
+      line-height 1.2
+      small
+        fs(1.6rem)
     
 .content-list__header-border
     height 0.2rem
@@ -87,6 +87,7 @@
     h4
         color darkgray
         font-family proxReg
+        upcase()
         i
             color gray
             size 1.2rem

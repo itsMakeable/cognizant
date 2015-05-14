@@ -13,7 +13,7 @@ $input
 	text-align center
 	
 .mkbl-form-button
-	opacity 0
+	// opacity 0
 	margin-bottom 6rem
 	&.is-active,
 	&:focus
@@ -86,14 +86,14 @@ $input
 			col(1/2, cycle:2, uncycle:1, gutter: 6)
 		@media screen and (max-width: 620px)
 			col(1/1, cycle:1, uncycle:2, gutter: 6)	
-		&.is-clean
-			visibility hidden
-			// transform translateY(-40px)
-			.mkbl-label
-				opacity 0
-			.mkbl-subinput
-				// width 0%
-				opacity 0
+		// &.is-clean
+		// 	visibility hidden
+		// 	// transform translateY(-40px)
+		// 	.mkbl-label
+		// 		opacity 0
+		// 	.mkbl-subinput
+		// 		// width 0%
+		// 		opacity 0
 		&.is-filled,
 		&.is-active
 			opacity 1
@@ -112,7 +112,7 @@ $input
 .mkbl-main-label
 	upcase()
 	color lightgray
-	font-family proxBold
+	font-family proxSbold
 	fs(1.4rem)
 	position relative
 	transition all 0.3s ease-in 0s
@@ -123,6 +123,7 @@ $input
 .mkbl-main-label
 	color currentColor
 	top -3rem
+
 	
 .mkbl-subinput
 	@extend $input
@@ -144,29 +145,37 @@ $input
 		opacity 0
 		transition all 0.3s ease
 	
-.mkbl-main-input
-	@extend $input
-	height 80px
-	fs(3.2rem)
-	padding 0 3rem
-	background-color transparent
-	background-color rgba(0,0,0,0.1)
-	+ i
-		color lightgray
-	&:focus
-		// background-color rgba(0,0,0,0.1)
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=search],
+input[type=number],
+input[type=password],
+textarea
+	&.mkbl-main-input
+		@extend $input
+		height 80px
+		fs(3.2rem)
+		padding 0 3rem
+		background-color transparent
+		background-color rgba(0,0,0,0.1)
 		+ i
-			color lightblue
-	&.has-error
-		animation wiggle 0.2s linear
-		color red
-		border-top 1px solid red
-		border-left 1px solid red
-		border-right 1px solid red
-		&.mkbl-sselect
-			border-bottom 1px solid red
-		+ i
+			color lightgray
+		&:focus
+			// background-color rgba(0,0,0,0.1)
+			+ i
+				color lightblue
+		&.has-error
+			animation wiggle 0.2s linear
 			color red
+			border-top 1px solid red
+			border-left 1px solid red
+			border-right 1px solid red
+			&.mkbl-sselect
+				border-bottom 1px solid red
+			+ i
+				color red
 
 .mkbl-form-progress-bar
 	width 100%
@@ -333,8 +342,20 @@ $input
 		z-index: 1
 	
 .white-bg
-	.mkbl-main-input
-		background-color rgba(black,0.1)
+	input[type=text],
+	input[type=email],
+	input[type=tel],
+	input[type=url],
+	input[type=search],
+	input[type=number],
+	input[type=password],
+	textarea
+		&.mkbl-main-input
+			background-color rgba(gray,0.1)
+	.mkbl-fieldset.is-active .mkbl-fieldset-bg
+		background-color rgba(gray,0.1)
+	.mkbl-subinput
+		background-color rgba(gray,0)
 	.mkbl-main-label,
 	.is-active .mkbl-label
 		color blue
@@ -355,3 +376,11 @@ $input
 		&:last-of-type
 			&:after
 				background-color transparent
+	@media screen and (max-height: 768px) and (min-width: 1024px)
+		.mkbl-select-option
+			&:after
+				content ''				
+				background-color transparent
+			&:last-of-type
+				&:after
+					background-color transparent

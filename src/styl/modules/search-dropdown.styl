@@ -1,12 +1,10 @@
 .search-module.is-active
 	.search__icon
 		transform translate(-200%)
-		transition all 0.4s cubic-bezier(.73,.49,.28,1.21)
+		transition all 0.6s cubic-bezier(.73,.49,.28,1.21)
 	.search__dropdown__active-selection
 		left 21%
-		transition all 0.4s cubic-bezier(.73,.49,.28,1.21) 0.1s
-	.search__dropdown__icon
-		transform rotate(180deg)
+		transition all 0.6s cubic-bezier(.73,.49,.28,1.21) 0.1s
 		
 .search__dropdown
 	display inline-block
@@ -26,6 +24,7 @@
 	fs(1.8rem)
 	font-family proxLight
 	transition all 0.4s cubic-bezier(.73,.49,.28,1.21)
+	white-space nowrap
 	
 .search__dropdown__icon
 	position: absolute
@@ -34,8 +33,10 @@
 	bottom 0
 	margin auto
 	size 2.2rem
-	color blue
+	color darkblue
 	transition all 0.3s cubic-bezier(.73,.49,.28,1.21)
 	z-index: 1
-	svg
-		transform rotate(90deg)
+	transform rotate(90deg)
+	transform-origin 50% 50%
+	&.is-active
+		transform rotate(-90deg)

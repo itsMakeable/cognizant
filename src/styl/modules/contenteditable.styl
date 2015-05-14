@@ -68,48 +68,51 @@
     line-height: 1.7
     
   .is-editable
-     display inline-block
-     position relative
-     color rgba(gray,0.5)
-     font-family proxLightIt
-     &:after,
-     &:before
-         content ''
-         height 1px
-         position absolute
-         left 0
-         right 0
-         bottom 1.4rem
-     &:before
-         background-color gray
-         width 100%
-         z-index: 1
-     &:after
-         background: vgradient5
-         width 0%
-         transition width 0.6s ease-out
-         z-index: 2
-     .icon
-         size 2rem
-         right 0
-         top 2.4rem
-         position absolute
-         color blue
-         cursor pointer
-         svg
-             transform rotate(90deg)
-     [contenteditable]
-       text-align left
-       transition min-width 0.8s ease-out 0.1s, color 0.3s ease, background 0.3s ease
-       // width 100%
-     &.has-dropdown
-       [contenteditable]
-         margin-right 4rem
-     .contenteditable-dropdown
-       position absolute
-       width 100%
-       z-index: 10
-       top 6rem        
+    display inline-block
+    position relative
+    color rgba(gray,0.5)
+    font-family proxLightIt
+    &:after,
+    &:before
+      content ''
+      height 1px
+      position absolute
+      left 0
+      right 0
+      bottom 1.4rem
+    &:before
+      background-color gray
+      width 100%
+      z-index: 1
+    &:after
+      background: vgradient5
+      width 0%
+      transition width 0.6s ease-out
+      z-index: 2
+    .icon
+      size 2rem
+      right 0
+      top 2.4rem
+      position absolute
+      color blue
+      cursor pointer
+      transform rotate(90deg)
+      transform-origin 50% 50%
+      transition all 0.3s cubic-bezier(.73,.49,.28,1.21)
+      &.is-active
+        transform rotate(-90deg)
+    [contenteditable]
+      text-align left
+      transition min-width 0.8s ease-out 0.1s, color 0.3s ease, background 0.3s ease
+      // width 100%
+    &.has-dropdown
+      [contenteditable]
+        margin-right 4rem
+    .contenteditable-dropdown
+      position absolute
+      width 100%
+      z-index: 10
+      top 6rem        
   .is-filled,
   .is-active
       .icon

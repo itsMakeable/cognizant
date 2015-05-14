@@ -135,7 +135,7 @@
            </div>
          </div>
        </div>
-       <div class='social-group__groups--mobile'>
+       <div class='social-group__groups--small'>
         
          <div class='social-group__groups social-group__groups--text is-active'>
            <div class='social-group__content'>
@@ -308,6 +308,7 @@
   &.is-active 
     color blue
     transition 0.3s linear 0.25s
+    
     .social-group__icon-slide
       transform translateX(0rem)
       transition all 0.32s ease 0.15s
@@ -363,6 +364,7 @@
     
 .social-group__group
   col(4/12)
+  padding 0 1.6rem
   
 .social-group__content
   padding 8rem 0rem 2rem
@@ -378,14 +380,9 @@
   h2
     color darkgray
     fs(2.4rem)
-    overflow hidden
-    height 22rem
-    +below(1220px)
-      height 14rem
-    +below(1140px)
-      height 22rem
-    +below(940px)
-      height 16rem
+    // overflow hidden
+    a
+      word-break: break-all
     
   +below(940px)
     small
@@ -402,7 +399,7 @@
 .social-group__groups--texts
   overflow hidden
 
-.social-group__groups--mobile
+.social-group__groups--small
   position relative
   margin-top 7rem
   min-height 25rem
@@ -440,6 +437,7 @@
       transition opacity 0.3s linear, transform 0.5s cubic-bezier(.73,.88,0,1.1)
   &.is-active
     position relative
+    z-index: 10
     .social-group__group
       opacity 1
       transform translateX(0rem)

@@ -23,11 +23,12 @@ $('.search-module').on 'click', '.js-dropdown-trigger',  ->
 	MKBL.activationToggle($parent, 'is-active')
 
 $('.js-dropdown-trigger').on 'click',  ->
+	$trigger = $(this)
 	if $(this).find('.contenteditable-dropdown').length
 		$dropdown = $(this).closest('.contenteditable-dropdown')
 	else
 		$dropdown = $(this).siblings('.contenteditable-dropdown')
-	MKBL.contenteditableDropdown($dropdown)
+	MKBL.contenteditableDropdown($dropdown, $trigger)
 
 $('.js-dropdown-option').on 'click',  ->
 	$this = $(this)
@@ -70,12 +71,10 @@ $('.js-video-play').on 'click', (e) ->
 	$this = $(this)
 	MKBL.playVideo(e, $this)
 
-# STOP EVENT PROPAGATION
 $(document).on 'click', (event) ->
 	if !$(event.target).closest('.js-open-modal-module').length
 		$('.modal-module').addClass('is-hidden')
 	if !$(event.target).closest('.js-dropdown-trigger').length
-		
 		$('.contenteditable-dropdown').velocity {height: 0}, 
 			duration: 600,
 			easing: [ 300, 30 ],
@@ -89,24 +88,29 @@ $(document).on 'click', (event) ->
 		MKBL.activationOff($('.search-module'))
 
 	if !$(event.target).closest('.js-video-play').length
-		$('.video-module').each ->
-			$video = $(this).find('iframe')
-			videoURL = $video.attr('src')
-			videoURL.replace("&autoplay=1", "")
-			$video.attr('src','')
-			$video.attr('src',videoURL)
 		$('.video-module').removeClass('is-active')
+		$('.video-module').each ->
+			if $(this).hasClass('is-active')
+				$video = $(this).find('iframe')
+				videoURL = $video.attr('src')
+				videoURL.replace("&autoplay=1", "")
+				$video.attr('src','')
+				setTimeout ->
+					$video.attr('src',videoURL)
+				, 1
 		
 $ ->
-	MKBL.equalheight('.banner-module','.banner-module > div', 940)
-	MKBL.equalheight('.main-header','.equal-height', 1024)
+	MKBL.equalheight('.banner-module','.js-equal-height', 940)
+	MKBL.equalheight('.main-header','.js-equal-height', 1024)
+	MKBL.equalheight('.social-group__groups','.js-equal-height', 680)
 	MKBL.flowBoxSliderSetup()
 	MKBL.setupContenteditable()
 	
 
 $(window).on 'resize', ->
-	MKBL.equalheight('.main-header','.equal-height', 1024)
+	MKBL.equalheight('.main-header','.js-equal-height', 1024)
 	MKBL.equalheight('.banner-module','.banner-module > div', 940)
+	MKBL.equalheight('.social-group__groups','.js-equal-height', 680)
 	MKBL.flowBoxSliderSetup()
 	$('.modal-module').addClass('is-hidden')
 	MKBL.setupContenteditable()

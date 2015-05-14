@@ -1,3 +1,6 @@
+/////////////////////////////////////////////////////////////////////////////
+// This is somewhat of a shame.css file http://csswizardry.com/2013/04/shame-css/
+/////////////////////////////////////////////////////////////////////////////
 .section
   padding 5rem 0 4rem 0
  
@@ -7,6 +10,8 @@
 	.header--section
 		h1
 			color blue
+		p
+			color darkgray
 
 .black-bg
 	background-color #000
@@ -21,21 +26,13 @@
 
 // Beyond here is styles that are section specific		
 .scrolling-photo-offset-bg
-	padding 3rem 0 0 0
+	padding 0
 	position static
 	// background-attachment: scroll !important
-	+above(1620px)
-		background-attachment: fixed !important
-		background-size: cover !important
-		background-position: 0% 0% !important
-	+below(1619px)
-		background-attachment: scroll !important
-		background-size: 100% auto !important
-		background-position: 0% 0% !important
-	+below(420px)
-		background-attachment: fixed !important
-		background-size: cover !important
-		background-position: 0% 100% !important
+	background-attachment: fixed !important
+	background-size: cover !important
+	background-position: 0% 0% !important
+
 	.header--section
 		color white
 		h1,
@@ -58,17 +55,19 @@
 				left 0
 				background-size auto 1.9rem
 	.mkbl-form
-		margin-top 10rem
-		margin-bottom 10rem
+		padding-top 10rem
+		padding-bottom 10rem
 	
-	
-+above(1620px)
-	.height-overflow-section.has-container-overflow
+
+			
+.height-overflow-section.has-container-overflow
+	+above(1620px)
 		height 57rem
 		overflow visible
 		position: relative
-+above(1620px)
-	.height-overflow-section.has-container-overflow
+		background-attachment: fixed !important
+		background-size: cover !important
+		background-position: 0% 0% !important
 		.container.white-bg
 			left 0
 			right 0
@@ -78,4 +77,11 @@
 			top 24rem
 		+ .section
 			padding-top 30rem
-	
+	+below(1619px)
+		background-attachment: scroll !important
+		background-size: 100% auto !important
+		background-position: 0% 0% !important
+	+below(420px)
+		background-attachment: fixed !important
+		background-size: cover !important
+		background-position: 0% 100% !important

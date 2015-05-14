@@ -35,7 +35,7 @@ MKBL.matrixToArray = (str) ->
   str.match /(-?[0-9\.]+)/g
 
 ###*
- * [equalheight description]
+ * This creates equal height children relative to the parent
  * @param  {[type]} container        the container of the elements that will be equal height
  * @param  {[type]} eqHeightChildren the elements that will be equal height
  * @param  {[type]} cutoff           the window width cutoff for the elements to be equal height
@@ -47,13 +47,13 @@ MKBL.equalheight = (container, eqHeightChildren, cutoff) ->
 		t_elem = undefined
 		# the highest element (after the function runs)
 		$container = $(container)
-		$child = $(eqHeightChildren)
-		$($child, $container).each ->
+		$child = $container.find(eqHeightChildren)
+		$child.each ->
 			$this = $(this)
 			if $this.outerHeight() > t
 				t_elem = this
 				t = $this.outerHeight()
-				$child.outerHeight(t)
+		$child.outerHeight(t)
 
 ###*
  * This controls the social slider interaction
@@ -279,7 +279,7 @@ MKBL.modal = ($this) ->
  * Opens the dropdown for the content editable module
  * @param  {[type]} $dropdown the dropdown being called
 ###
-MKBL.contenteditableDropdown = ($dropdown) ->
+MKBL.contenteditableDropdown = ($dropdown, $trigger) ->
 	$li = $dropdown.find('li')
 	dropdownHeight = $li.length * $li.outerHeight()
 	
@@ -293,6 +293,7 @@ MKBL.contenteditableDropdown = ($dropdown) ->
 
 	if $dropdown.height() == 0 or $dropdown.height() == null
 	# if !$dropdown.hasClass('is-active')
+		$trigger.addClass('is-active')
 		$dropdown.velocity { height: dropdownHeight }, 
 			duration: 600,
 			easing: [ 300, 30 ],
@@ -302,6 +303,7 @@ MKBL.contenteditableDropdown = ($dropdown) ->
 		
 
 	else
+		$trigger.removeClass('is-active')
 		$dropdown.velocity {height: 0},
 			duration: 600,
 			easing: [ 300, 30 ],
