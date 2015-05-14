@@ -1,0 +1,47 @@
+section.section.generic-section
+	.container
+		component.social-group-module
+			.row
+				.social-group__groups.social-group__groups--icons
+					i.social-group__icon.twitter.is-active
+						.social-group__icon-slide
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_twitter')
+
+					i.social-group__icon.facebook
+						.social-group__icon-slide
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_facebook')
+					
+					i.social-group__icon.linkedin
+						.social-group__icon-slide
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_linkedin')
+			.row
+				.social-group__hr
+				i#js-social-caret.social-group__hr-caret.is-left
+					svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 21 12.2')
+						path(fill='currentColor', d='M21 0h-1.3l-9.2 10.7L1.3 0H0l10.5 12.2')
+						path(fill='#FFF', d='M19.7 0H1.3l9.2 10.7')
+
+			.row.social-group__groups--texts
+				each val, index in {1:'is-active',2:'',3:''}
+					.social-group__groups.social-group__groups--text(class="#{val}")
+						each val, index in {1:'80% surveyed agree that the speed of your #MobileApp determines its success! #UX #Mobility',2:'Blinky ads have morphed into sophisticated real-time algorithms. http://cogniz.at/FoDigitalAds  #Digital #CIO #Advertising ',3:'The @ClimateCorp is powered by #bigdata #analytics, climatology and agronomy! http://cogniz.at/CHInsurance #Insurance '}
+							.social-group__group
+								.social-group__content
+									small Cognizant @Cognizant
+										span  - 34s ago
+									h2.js-equal-height= val
+								.social-group__CTA-container
+									a(href='' class='button--silent') Read More
+					
+				.social-group__groups--small
+					each val, index in {1:'is-active',2:'',3:''}
+						.social-group__groups.social-group__groups--text(class="#{val}")
+							.social-group__content
+								small Cognizant @Cognizant
+									span - 34s ago
+								h2 80% surveyed agree that the speed of your #MobileApp determines its success! #UX #Mobility
+							.social-group__CTA-container
+								a(href='' class='button--silent') Read More

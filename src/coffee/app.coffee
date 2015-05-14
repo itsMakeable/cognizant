@@ -258,22 +258,14 @@ MKBL.modal = ($this) ->
 		'right': 'auto'
 		})
 	# If there is enough space about the marker, add the tooptip above the marker, else add it below.
-	if (($this.position().top - $(window).scrollTop()) > $modal.height())
-		$modal.css({
-			'top': $this.offset().top - $modal.outerHeight() - 95
-			}).removeClass('is-reverse').removeClass('is-hidden')
-		$tooltip.css({
-			'bottom': '-1.3rem'
-			'top': 'auto'
-			})
-	else
-		$modal.css({
-			'top': $this.offset().top + $this.outerHeight() + 95
-			}).addClass('is-reverse').removeClass('is-hidden')
-		$tooltip.css({
-			'top': '-1.3rem'
-			'bottom': 'auto'
-			})
+	$modal.css({
+		'top': $this.offset().top - $modal.outerHeight() - 95
+		}).removeClass('is-reverse').removeClass('is-hidden')
+	$tooltip.css({
+		'bottom': '-1.3rem'
+		'top': 'auto'
+		})
+	$('html, body').animate { scrollTop: $modal.position().top }, 'slow'
 
 ###*
  * Opens the dropdown for the content editable module

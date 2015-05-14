@@ -105,10 +105,11 @@ MKBL.prepareField = (nextField) ->
 			$('#enter-' + nextField).removeClass('is-hidden')
 			setTimeout (->
 				if $('#enter-' + nextField).index() > 0
-					$(this)
+					$('#enter-' + nextField)
 						.find('.mkbl-main-input')
 						.trigger('focus')
-					), 1
+			), 1
+					
 		), MKBL.waitToShow
 	
 	$('#' + nextField)

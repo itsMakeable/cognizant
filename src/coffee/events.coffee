@@ -103,6 +103,7 @@ $ ->
 	MKBL.equalheight('.banner-module','.js-equal-height', 940)
 	MKBL.equalheight('.main-header','.js-equal-height', 1024)
 	MKBL.equalheight('.social-group__groups','.js-equal-height', 680)
+	MKBL.equalheight('.three-group__groups','.three-group__content', 940)
 	MKBL.flowBoxSliderSetup()
 	MKBL.setupContenteditable()
 	
@@ -111,6 +112,7 @@ $(window).on 'resize', ->
 	MKBL.equalheight('.main-header','.js-equal-height', 1024)
 	MKBL.equalheight('.banner-module','.banner-module > div', 940)
 	MKBL.equalheight('.social-group__groups','.js-equal-height', 680)
+	MKBL.equalheight('.three-group__groups','.three-group__content', 940)
 	MKBL.flowBoxSliderSetup()
 	$('.modal-module').addClass('is-hidden')
 	MKBL.setupContenteditable()
