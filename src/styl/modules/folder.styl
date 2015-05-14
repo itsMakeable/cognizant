@@ -60,11 +60,29 @@
   padding 2.2rem
   color white
   box-shadow: 0 3px 3px -1px rgba(black,0.8)
+  background-size cover !important
+  background-position 50% 50% !important
+
+.folder__overlay
+  // background-color rgba(0,0,0, 0.7)
+  background vgradient1reverse
+  position: absolute
+  top 0
+  bottom 0
+  right 0
+  left 0
+  margin auto
+  z-index: 1
+  opacity 0.95
+
+.folder__content
+  position relative
+  z-index: 2
   
 .folder__profile-pic
   position absolute
-  right 2.2rem
-  top 2.2rem
+  right 0
+  top 0
   border-radius 50%
   overflow: hidden
   box-shadow: 0 2px 2px -1px rgba(black,0.5)
@@ -141,7 +159,9 @@
         .is-empty
             opacity 1
   
-// Beyond here is styles that are section specific  
+// Beyond here is styles that are section specific 
+
+// FOLDER HEADLINE SECTION 
 .folder-headline-section__callout
   col(7/12, offset: 1/12)
   height 21rem
@@ -175,3 +195,24 @@
     margin-bottom 3rem
     .button--primary
       margin auto
+
+// FOLDER MODULE SECTION 
+.folder-module-section
+  background-color lightblue
+  background vgradient3
+  .folder-module
+    margin 2rem auto
+    col(4/12, cycle: 3)
+    +below(1140px)
+      col(6/12, uncycle: 3, cycle: 2)
+    +below(768px)
+      stack()
+      max-width 42rem
+      margin 2rem auto !important
+      float none !important
+      &:nth-child(n+4)
+        display none
+    &:nth-child(2n)
+      .folder__overlay
+        background-color green
+        background vgradient2reverse

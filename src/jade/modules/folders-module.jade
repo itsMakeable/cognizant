@@ -1,0 +1,61 @@
+section.section.folder-module-section.color-bg
+	.container
+		header.header--section
+			h1 Your Folders
+			p Organize your insight. Share with colleagues. Collaborate and inspire results.
+		.row
+			component.folder-module(style='background:url(http://www.cognizant.com/dotcom-images/Perspectives/twelve_ways_SMAC_hp.jpg) no-repeat')
+					.folder__overlay
+					.folder__content
+						p.folder__alert
+							span.folder__alert-number
+								span 1
+							span New Video Added
+
+						.folder__profile-pic
+							img(src='http://placehold.it/44x44')
+						.folder__data
+							p: strong Favorites
+							i.icon
+								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_files')
+							span 0
+							i.icon
+								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_collaborators')
+							span 0
+						.folder__CTA
+							i.folder__CTA--right
+								svg.is-empty(viewbox='0 0 100 100')
+									use(xlink:href='#icon_triangle')
+								svg.is-filled(viewbox='0 0 100 100')
+									use(xlink:href='#icon_triangle-filled')
+
+			each val, index in [1,2,3,4,5]
+				component.folder-module(style='background:url(http://www.cognizant.com/dotcom-images/Perspectives/twelve_ways_SMAC_hp.jpg) no-repeat')
+					.folder__overlay
+					.folder__content
+						p.folder__alert
+							span.folder__alert-number
+								span 1
+							span New Video Added
+
+						.folder__profile-pic
+							img(src='http://placehold.it/44x44')
+						.folder__data
+							p: strong Favorites
+							i.icon
+								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_files')
+							span 22
+							i.icon
+								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_collaborators')
+							span 100
+						.folder__CTA
+							i.folder__CTA--left
+								svg.is-empty(viewbox='0 0 100 100')
+									use(xlink:href='#icon_exit')
+							i.folder__CTA--right
+								svg.is-empty(viewbox='0 0 100 100')
+									use(xlink:href='#icon_triangle')
+								svg.is-filled(viewbox='0 0 100 100')
+									use(xlink:href='#icon_triangle-filled')
+		.button__container
+			a.button--silent(href='#') View All

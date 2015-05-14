@@ -74,6 +74,7 @@ $('.js-video-play').on 'click', (e) ->
 $(document).on 'click', (event) ->
 	if !$(event.target).closest('.js-open-modal-module').length
 		$('.modal-module').addClass('is-hidden')
+		
 	if !$(event.target).closest('.js-dropdown-trigger').length
 		$('.contenteditable-dropdown').velocity {height: 0}, 
 			duration: 600,
@@ -81,6 +82,7 @@ $(document).on 'click', (event) ->
 			delay: 0
 			complete: () ->
 				$(this).removeClass('is-active')
+
 	if !$(event.target).closest('[contenteditable]').length and !$(event.target).closest('.is-editable .js-dropdown-option').length
 		MKBL.endContenteditable()
 
