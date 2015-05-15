@@ -51,9 +51,10 @@
   fs(2.5rem)
   color black
   font-family proxReg
-  
-.has-dropdown .search__input
-  padding-left 33rem
+
++above(768px)
+  .has-dropdown .search__input
+    padding-left 33rem
 
 .search__input::-webkit-input-placeholder
   font-family proxRegIt
@@ -75,7 +76,7 @@
 .search__icon,
 .search__share
   svg
-    size 50%
+    size 2.8rem
     align()
 
 .search__icon__wrapper
@@ -134,17 +135,54 @@
     size 6.4rem
     border-right 1px solid rgba(darkblue, 0.2)
 
-@media screen and (max-width: 540px)
-  .search__icon,
-  .search__share,
-  .search__share-flyout .share-flyout__icon
-    size (6.4rem / 1.2)
-  .search__share-flyout
-    padding-right (6.4rem / 1.2)
-  .search__input
-    padding 0 (9.4rem / 1.2)
-    height (6.4rem / 1.2)
-  .search__icon
-    &:after
-      right -7px
-      border-width 6px 0 6px 7px
+// @media screen and (max-width: 540px)
+//   .search__icon,
+//   .search__share,
+//   .search__share-flyout .share-flyout__icon
+//     size (6.4rem / 1.2)
+//   .search__share-flyout
+//     padding-right (6.4rem / 1.2)
+//   .search__input
+//     padding 0 (9.4rem / 1.2)
+//     height (6.4rem / 1.2)
+//   .search__icon
+//     &:after
+//       right -7px
+//       border-width 6px 0 6px 7px
+
+.search__smart-search
+  width 16rem
+  height 2rem
+  color blue
+  position: absolute
+  left 8rem
+  top 0
+  bottom 0
+  margin auto
+  fs(1.6rem)
+  border-right 1px solid gray
+  p
+    line-height 1.3
+  +below(540px)
+    display none
+    
++above(540px)
+  .has-smartsearch .search__input
+    padding-left 26rem
+
+.search__icon--right
+  right 2rem
+  size 2.8rem
+  position absolute
+
+.search__CTA
+  align(vertical)
+  right 3rem
+  opacity 0
+  transition 0.3s ease-out
+  color blue
+  +below(1024px)
+    display none
+  &.is-active
+    right 2rem
+    opacity 1

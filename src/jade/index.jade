@@ -32,12 +32,17 @@ block content
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_search')
 				.search__dropdown.js-dropdown-option-parent
-					span.search__dropdown__active-selection.js-dropdown-option-holder All Industries
-					.search__dropdown__icon.js-dropdown-trigger
+					span.search__dropdown__active-selection.js-dropdown-option-holder(data-default='All Industries') All Industries
+					i.search__dropdown__icon.js-dropdown-trigger
 						svg(viewbox='0 0 100 100')
 							use(xlink:href='#icon_caret')
+					i.icon.search__icon--right.search__icon-filter.js-dropdown-trigger
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_filter')
+					
 					subcomponent.contenteditable-dropdown
 						ul
+							li.js-dropdown-option All Industries
 							li.js-dropdown-option Search Suggestion
 							li.js-dropdown-option Another Suggestion
 							li.js-dropdown-option Yet Anonther Suggestion
@@ -45,7 +50,12 @@ block content
 							li.js-dropdown-option Possible Suggestion
 							li.js-dropdown-option Consider this Suggestion
 							li.js-dropdown-option One More Suggestion
+				i.icon.search__icon--right.search__CTA
+					svg(viewbox='0 0 100 100')
+						use(xlink:href='#icon_triangle')
 				input.search__input(type='text', placeholder='Search Within Folders')
+				
+
 	
 	include modules/flowbox-slider
 	include modules/banner-perspectives-app

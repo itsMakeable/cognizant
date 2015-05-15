@@ -2,6 +2,15 @@
  * COGNIZANT START EVENTS.JS
 ###
 
+$('input').on 'touchstart', ->
+	$(this).focus()
+
+$('.search-module--main .search__input').on 'keyup',  ->
+	if $(this).val() != ''
+		MKBL.activationOn($('.search__CTA'))
+	else
+		MKBL.activationOff($('.search__CTA'))
+
 $('[contenteditable]').on 'click',  ->
 	$this = $(this)
 	MKBL.prepareContenteditable($this)
@@ -17,6 +26,11 @@ $('body')
 			$this.data 'before', $this.html()
 			$this.trigger('change')
 			MKBL.contenteditableDropdownAutocomplete($this)
+	.on 'keydown', '[contenteditable]', (e) ->
+		keyCode = e.keyCode or e.which
+		if keyCode == 13
+			e.preventDefault()
+
 
 $('.search-module').on 'click', '.js-dropdown-trigger',  ->
 	$parent = $(this).closest('.search-module')
@@ -76,6 +90,7 @@ $(document).on 'click', (event) ->
 		$('.modal-module').addClass('is-hidden')
 		
 	if !$(event.target).closest('.js-dropdown-trigger').length
+		MKBL.activationOff($('js-dropdown-trigger'))
 		$('.contenteditable-dropdown').velocity {height: 0}, 
 			duration: 600,
 			easing: [ 300, 30 ],
@@ -110,7 +125,7 @@ $ ->
 	MKBL.setupContenteditable()
 	
 
-$(window).on 'resize', ->
+$(window).on 'debouncedresize', ->
 	MKBL.equalheight('.main-header','.js-equal-height', 1024)
 	MKBL.equalheight('.banner-module','.banner-module > div', 940)
 	MKBL.equalheight('.social-group__groups','.js-equal-height', 680)

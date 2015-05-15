@@ -120,12 +120,17 @@ block content
 						h4 Did you know?
 						h5 This is a fact related to the user’s industry populated by demandbase.
 		.container.main-header__search-container
-			component.search-module.search-module--main
+			component.search-module.search-module--main.has-smartsearch
 				.search__icon__wrapper
 					.search__icon.gradient6reverse--horizontal
-						i
+						i.icon
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_search')
+				.icon.search__smart-search
+					p <strong>Smart</strong>Search&reg;
+				i.icon.search__icon--right.search__CTA
+					svg(viewbox='0 0 100 100')
+						use(xlink:href='#icon_triangle')
 				input.search__input(type='text', placeholder='Search Within Folders')
 	
 	include modules/flowbox-slider

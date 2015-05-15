@@ -1,10 +1,11 @@
-.search-module.is-active
-	.search__icon
-		transform translate(-200%)
-		transition all 0.6s cubic-bezier(.73,.49,.28,1.21)
-	.search__dropdown__active-selection
-		left 21%
-		transition all 0.6s cubic-bezier(.73,.49,.28,1.21) 0.1s
++above(768px)
+	.search-module.is-active
+		.search__icon
+			transform translate(-200%)
+			transition all 0.6s cubic-bezier(.73,.49,.28,1.21)
+		.search__dropdown__active-selection
+			left 2rem
+			transition all 0.6s cubic-bezier(.73,.49,.28,1.21) 0.1s
 		
 .search__dropdown
 	display inline-block
@@ -18,14 +19,31 @@
 	border-right 1px solid lightgray
 	.contenteditable-dropdown
 		top 6.4rem
+	+below(768px)
+		// top 6rem
+		// bottom auto
+		top 6.4rem
+		left auto
+		right 0
+		background-color rgba(lightblue,0)
+		.contenteditable-dropdown
+			top 0.1rem
+	+below(540px)
+		left 0
+		width 100%
 	
 .search__dropdown__active-selection
-	align()
+	align(vertical)
+	left 9rem
 	fs(1.8rem)
 	font-family proxLight
 	transition all 0.5s cubic-bezier(.73,.49,.28,1.21)
 	white-space nowrap
-	
+	max-width 15.6rem
+	overflow hidden
+	+below(768px)
+		visibility hidden
+		
 .search__dropdown__icon
 	position: absolute
 	right 2rem
@@ -40,3 +58,17 @@
 	transform-origin 50% 50%
 	&.is-active
 		transform rotate(-90deg)
+	+below(768px)
+		display none
+
+.search__icon-filter
+	display none
+	position absolute
+	top -4.8rem
+	color gray
+	transition color 0.3s ease
+	+below(768px)
+		display inline-block
+		
+.is-filled .search__icon-filter
+	color lightblue

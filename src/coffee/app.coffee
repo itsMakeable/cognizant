@@ -28,6 +28,38 @@ $.fn.alterClass = (removals, additions) ->
 		return
 	if !additions then self else self.addClass(additions)
 
+
+(($) ->
+  $event = $.event
+  $special = undefined
+  resizeTimeout = undefined
+  $special = $event.special.debouncedresize =
+    setup: ->
+      $(this).on 'resize', $special.handler
+      return
+    teardown: ->
+      $(this).off 'resize', $special.handler
+      return
+    handler: (event, execAsap) ->
+      # Save the context
+      context = this
+      args = arguments
+
+      dispatch = ->
+        # set correct event type
+        event.type = 'debouncedresize'
+        $event.dispatch.apply context, args
+        return
+
+      if resizeTimeout
+        clearTimeout resizeTimeout
+      if execAsap then dispatch() else (resizeTimeout = setTimeout(dispatch, $special.threshold))
+      return
+    threshold: 150
+  return
+) jQuery
+
+
 ###*
  * Converts matrix like rgba or transforms to an array
 ###
@@ -61,7 +93,7 @@ MKBL.equalheight = (container, eqHeightChildren, cutoff) ->
 MKBL.socialSlider = ($this) ->
 	$caret = $('#js-social-caret')
 	$thisRelatedContent = $('.social-group__groups--text')	
-	$thisMobileRelatedContent = $('.social-group__groups--mobile .social-group__groups')
+	$thisMobileRelatedContent = $('.social-group__groups--small .social-group__groups')
 	# Changes speed of the animation depeding on how far it has to go
 	thisIndex = $this.index()
 	prevIndex = $('.social-group__icon.is-active').index()	
@@ -253,20 +285,24 @@ MKBL.profileFlyout = ($this, $flyoutType) ->
 MKBL.modal = ($this) ->
 	$modal = $($this.data('modal-id').toString())
 	$tooltip = $modal.find('.modal-tip')
-	$tooltip.css({
-		'left': $this.offset().left - ($(window).width() - $modal.outerWidth())/2
-		'right': 'auto'
-		})
-	# If there is enough space about the marker, add the tooptip above the marker, else add it below.
-	$modal.css({
-		'top': $this.offset().top - $modal.outerHeight() - 95
-		}).removeClass('is-reverse').removeClass('is-hidden')
-	$tooltip.css({
-		'bottom': '-1.3rem'
-		'top': 'auto'
-		})
-	$('html, body').animate { scrollTop: $modal.position().top }, 'slow'
 
+	if $modal.hasClass('is-hidden')
+		$tooltip.css({
+			'left': $this.offset().left - ($(window).width() - $modal.outerWidth())/2
+			'right': 'auto'
+			})
+		# If there is enough space about the marker, add the tooptip above the marker, else add it below.
+		$modal.css({
+			'top': $this.offset().top - $modal.outerHeight() - 95
+			}).removeClass('is-reverse').removeClass('is-hidden')
+		$tooltip.css({
+			'bottom': '-1.3rem'
+			'top': 'auto'
+			})
+		$('html, body').animate { scrollTop: $modal.position().top }, 'slow'
+	else
+		$modal.addClass('is-hidden')
+		
 ###*
  * Opens the dropdown for the content editable module
  * @param  {[type]} $dropdown the dropdown being called
@@ -285,17 +321,15 @@ MKBL.contenteditableDropdown = ($dropdown, $trigger) ->
 
 	if $dropdown.height() == 0 or $dropdown.height() == null
 	# if !$dropdown.hasClass('is-active')
-		$trigger.addClass('is-active')
+		MKBL.activationOn($trigger)
 		$dropdown.velocity { height: dropdownHeight }, 
 			duration: 600,
 			easing: [ 300, 30 ],
 			delay: 0
 			complete: () ->
 				$(this).addClass('is-active')
-		
-
 	else
-		$trigger.removeClass('is-active')
+		MKBL.activationOff($trigger)
 		$dropdown.velocity {height: 0},
 			duration: 600,
 			easing: [ 300, 30 ],
@@ -334,14 +368,21 @@ MKBL.contenteditableDropdownSelect = ($this) ->
 		maxWidth = 840
 	else
 		maxWidth = $(window).width()*0.7
-
+	$this.siblings().removeClass('is-active')
+	$this.addClass('is-active')
+	$contenteditableParent = $this.closest('.js-dropdown-option-parent')
 	$contenteditable = $this.closest('.js-dropdown-option-parent').find('[contenteditable]')
-	
-	$this
-		.closest('.js-dropdown-option-parent')
-		.addClass('is-filled')
+
+	MKBL.activationOff($('js-dropdown-trigger'))
+
+	$contenteditableParent
 		.find('.js-dropdown-option-holder')
 		.text($this.text())
+
+	if $this.text() != $contenteditableParent.find('.js-dropdown-option-holder').data('default')
+		$contenteditableParent.addClass('is-filled')
+	else
+		$contenteditableParent.removeClass('is-filled')
 
 	if $contenteditable.prop('scrollWidth') < maxWidth
 		$contenteditable.css('min-width', '100px')
@@ -367,7 +408,7 @@ MKBL.endContenteditable = ->
 	else
 		maxWidth = $(window).width()*0.7
 
-	$('[contenteditable]').removeClass('is-active')
+	MKBL.activationOff($('[contenteditable]'))
 	$('[contenteditable]').each ->
 		$this = $(this)
 		if $this.text() == ''
@@ -404,7 +445,7 @@ MKBL.setupContenteditable = ->
 		else
 			maxWidth = $(window).width()*0.7
 		$this
-			.css('height', $this.outerHeight())
+			# .css('height', $this.outerHeight())
 			.css('max-width', maxWidth)
 			.perfectScrollbar()
 		if $this.outerWidth() < maxWidth
