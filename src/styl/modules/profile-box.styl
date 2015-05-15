@@ -181,7 +181,7 @@
     fs(1.4rem)
   hr
     border-bottom 1px solid gray
-    margin-bottom 2rem
+    margin-bottom 1rem
     padding-top 0.2rem
   .button--silent
     color blue
@@ -226,19 +226,22 @@
     &.is-closed
       display none
     
-
 .profile-box__button
   text-align left
 
 .profile-box__list-item
   position relative
-  margin-top 0.4rem
-  margin-bottom 1.4rem
+  padding-top 1rem
+  padding-bottom 1rem
   text-align left
-  a
+  display block
+  border-bottom none
+  strong
     color black
     border-bottom none
-    &:hover
+  &:hover
+    border-bottom none
+    strong
       color heavymustard
       border-bottom none
   p
@@ -249,14 +252,14 @@
   @extend $notification-circle
   position absolute
   left -2.7rem
-  top 0.3rem
+  top 1rem
   
 .profile-box__list-CTA
   align(vertical)
   right 0
   size 2rem
   color blue
-
+  transition 0.3s ease-out
 
 .profile-box__indicator
   position absolute
