@@ -209,11 +209,23 @@
     transform scale(1) translateX(0rem)
     animation none
     box-shadow: 2px 0px 1px 0px rgba(black,.7)
-    z-index: 10
+    z-index: 999
   &.is-closed
     animation none
     transform scale(0.9) translateX(-110%)
     z-index 0
+
+.lt-ie10,
+.no-csstransforms
+  .profile-box-flyout
+    display none
+    z-index: 10
+    &.is-active,
+    &.is-holding
+      display block
+    &.is-closed
+      display none
+    
 
 .profile-box__button
   text-align left
@@ -283,6 +295,8 @@
   +below(1024px)
     stack()
     height 30rem !important
+    h4, h5
+      text-align center
     .headline-push__center
       align(vertical)
   

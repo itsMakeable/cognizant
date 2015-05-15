@@ -25,9 +25,9 @@ block content
 					p Settings
 					hr
 				.profile-box__button
-					button.button--silent Edit Info
+					button.button--silent.js-edit-profile Edit Info
 				.profile-box__button
-					button.button--silent Log Out
+					a(href="/").button--silent Log Out
 			subcomponent.compact-profile-box__flyout.compact-profile-box__flyout--notifications
 				.profile-box__indicator
 				header
@@ -93,9 +93,9 @@ block content
 							p Settings
 							hr
 						.profile-box__button
-							button.button--silent Edit Info
+							button.button--silent.js-edit-profile Edit Info
 						.profile-box__button
-							button.button--silent Log Out
+							a(href="/").button--silent Log Out
 					subcomponent.profile-box-flyout.profile-box-flyout--notifications
 						.profile-box__indicator
 						header
@@ -144,5 +144,6 @@ block content
 	include modules/social-slider
 	include modules/form
 	include includes/linkedin-modal
+	include modules/edit-profile-overlay
 						
 

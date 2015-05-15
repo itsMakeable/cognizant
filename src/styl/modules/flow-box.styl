@@ -233,7 +233,7 @@
     .flow-box__share-flyout
         transform translateX(-100%)
         transition transform 0.4s cubic-bezier(.4,-0.17,.33,1)
-        z-index -1
+        // z-index -1
     &.is-active
         .flow-box__share-flyout
             transform translateX(0%)
@@ -334,5 +334,20 @@
             bottom 0
             position: relative
     
-        
-        
+.flow-box__CTA__alt-text
+    fs(1.4rem)
+    align()
+    opacity 0
+    transition opacity 0.2s ease-out 0.05s, top 0.3s ease-out
+    margin-top 0rem
+
+.flow-box__CTA--left,
+.flow-box__CTA--right,
+.flow-box__CTA--share
+    &:hover
+        svg
+            transform translateY(-1.2rem)
+        .flow-box__CTA__alt-text
+            opacity 1
+            top 100%
+            transition opacity 0.1s ease-out, top 0.3s ease-out

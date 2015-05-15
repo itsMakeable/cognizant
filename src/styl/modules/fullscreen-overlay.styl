@@ -1,0 +1,28 @@
+.fullscreen-overlay
+	position fixed
+	top 0
+	bottom 0
+	right 0
+	left 0
+	width 100%
+	height 100%
+	background-color rgba(255,255,255,0.97)
+	opacity 0
+	transition opacity 0.3s ease-out, z-index 0s linear 0.3s
+	z-index: -99999
+	&.is-active
+		opacity 1
+		z-index: 9999
+		transition opacity 0.3s ease-out, z-index 0s linear 0s
+
+.fullscreen-overlay__center
+	align()
+	width 100%
+
+.fullscreen-overlay__icon
+	size 3rem
+	position fixed
+	top 5%
+	right 5%
+	color gray
+	

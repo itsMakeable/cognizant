@@ -33,12 +33,9 @@
         font-family proxReg
         +below(768px)
             fs(3rem)
-    .button--primary
-        color white
-        display block
-        float right
-        &:hover
-            background-color lightblue
+    // .button--primary
+    //     &:hover
+    //         background-color lightblue
             
     .button--silent
         boder-bottom 1px solid rgba(white,0.2)
@@ -56,9 +53,10 @@
     position relative
     z-index 1
     h4
-        fs(2.4rem)
-        text-align center
+        fs(2.8rem)
+        // text-align center
         font-family proxReg
+        upcase()
     img
         max-width 54rem
         margin 2rem auto 0 auto
@@ -66,14 +64,16 @@
         img
             margin-bottom 2rem
             
+// .banner__center
+//     align()
+//     width 100%
+    
 .banner__CTA
     col(3/12)
     text-align center
     position relative
     z-index 1
     min-height 9rem
-    > div
-        align()
     
 +below(960px)
     .banner-module

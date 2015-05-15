@@ -78,14 +78,14 @@ MKBL.equalheight = (container, eqHeightChildren, cutoff) ->
 		# the height of the highest element (after the function runs)
 		t_elem = undefined
 		# the highest element (after the function runs)
-		$container = $(container)
-		$child = $container.find(eqHeightChildren)
+		# $container = $(container)
+		$child = $(container).find(eqHeightChildren)
 		$child.each ->
 			$this = $(this)
 			if $this.outerHeight() > t
 				t_elem = this
 				t = $this.outerHeight()
-		$child.outerHeight(t)
+		$child.css('min-height',t)
 
 ###*
  * This controls the social slider interaction
@@ -468,6 +468,7 @@ MKBL.playVideo = (e, $this) ->
 	e.preventDefault()
 
 MKBL.activationToggle = ($parent, cssClass) ->
+	console.log $parent
 	cssClass = cssClass || 'is-active'
 	$parent.toggleClass(cssClass)
 

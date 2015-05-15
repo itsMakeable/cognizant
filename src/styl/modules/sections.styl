@@ -65,26 +65,28 @@
 
 			
 .height-overflow-section.has-container-overflow
-	+above(1620px)
-		height 57rem
-		overflow visible
-		position: relative
-		background-attachment: fixed !important
-		background-size: cover !important
-		background-position: 0% 0% !important
-		.container.white-bg
-			left 0
-			right 0
-			margin auto
-			width 100%
-			position absolute
-			top 24rem
-		+ .section
-			padding-top 30rem
-	+below(1619px)
-		background-attachment: scroll !important
-		background-size: 100% auto !important
-		background-position: 0% 0% !important
+	// + .section
+	// 	padding-top 30rem
+	// +above(1620px)
+	height 57rem
+	overflow visible
+	position: relative
+	background-attachment: fixed !important
+	background-size: cover !important
+	background-position: 0% 0% !important
+	margin-bottom 30rem
+	.container.white-bg
+		left 0
+		right 0
+		margin auto
+		width 100%
+		position absolute
+		top 24rem
+	
+	// +below(1619px)
+	// 	background-attachment: scroll !important
+	// 	background-size: 100% auto !important
+	// 	background-position: 0% 0% !important
 	+below(1024px)
 		background-attachment: fixed !important
 		background-size: cover !important

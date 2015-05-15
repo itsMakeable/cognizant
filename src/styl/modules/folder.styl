@@ -65,7 +65,7 @@
 
 .folder__overlay
   // background-color rgba(0,0,0, 0.7)
-  background vgradient1reverse
+  background black vgradient1reverse
   position: absolute
   top 0
   bottom 0
@@ -74,6 +74,10 @@
   margin auto
   z-index: 1
   opacity 0.95
+
+.no-gradient 
+  .folder__overlay
+    background-color #000 !important
 
 .folder__content
   position relative

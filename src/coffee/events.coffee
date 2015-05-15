@@ -48,6 +48,9 @@ $('.js-dropdown-option').on 'click',  ->
 	$this = $(this)
 	MKBL.contenteditableDropdownSelect($this)
 
+$('.js-edit-profile').on 'click',  ->
+	MKBL.activationToggle($('.edit-profile-overlay'))
+
 $('.js-open-modal-module').on 'click',  ->
 	$this = $(this)
 	MKBL.modal($this)
@@ -117,17 +120,14 @@ $(document).on 'click', (event) ->
 				, 1
 		
 $ ->
-	MKBL.equalheight('.banner-module','.js-equal-height', 940)
-	MKBL.equalheight('.main-header','.js-equal-height', 1024)
-	MKBL.equalheight('.social-group__groups','.js-equal-height', 680)
-	MKBL.equalheight('.three-group__groups','.three-group__content', 940)
 	MKBL.flowBoxSliderSetup()
 	MKBL.setupContenteditable()
 	
 
 $(window).on 'debouncedresize', ->
 	MKBL.equalheight('.main-header','.js-equal-height', 1024)
-	MKBL.equalheight('.banner-module','.banner-module > div', 940)
+	# MKBL.equalheight('#banner-unique-ID1','.js-equal-height', 940)
+	# MKBL.equalheight('#banner-unique-ID2','.js-equal-height', 940)
 	MKBL.equalheight('.social-group__groups','.js-equal-height', 680)
 	MKBL.equalheight('.three-group__groups','.three-group__content', 940)
 	MKBL.flowBoxSliderSetup()
@@ -135,4 +135,9 @@ $(window).on 'debouncedresize', ->
 	MKBL.setupContenteditable()
 
 $(window).on 'load', ->
+	MKBL.equalheight('.main-header','.js-equal-height', 1024)
+	# MKBL.equalheight('#banner-unique-ID1','.js-equal-height', 940)
+	# MKBL.equalheight('#banner-unique-ID2','.js-equal-height', 940)
+	MKBL.equalheight('.social-group__groups','.js-equal-height', 680)
+	MKBL.equalheight('.three-group__groups','.three-group__content', 940)
 	$('body').css('opacity',1)
