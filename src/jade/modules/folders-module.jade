@@ -4,7 +4,8 @@ section.section.folder-module-section.color-bg
 			h1 Your Folders
 			p Organize your insight. Share with colleagues. Collaborate and inspire results.
 		.row
-			component.folder-module(style='background:url(http://www.cognizant.com/dotcom-images/Perspectives/twelve_ways_SMAC_hp.jpg) no-repeat')
+			// This is a component
+			a.folder-module(style='background:url(http://www.cognizant.com/dotcom-images/Perspectives/twelve_ways_SMAC_hp.jpg) no-repeat')
 					.folder__overlay
 					.folder__content
 						p.folder__alert
@@ -30,7 +31,8 @@ section.section.folder-module-section.color-bg
 									use(xlink:href='#icon_triangle-filled')
 
 			each val, index in [1,2,3,4,5]
-				component.folder-module(style='background:url(http://www.cognizant.com/dotcom-images/Perspectives/twelve_ways_SMAC_hp.jpg) no-repeat')
+				// This is a component
+				a.folder-module(style='background:url(http://www.cognizant.com/dotcom-images/Perspectives/twelve_ways_SMAC_hp.jpg) no-repeat')
 					.folder__overlay
 					.folder__content
 						p.folder__alert

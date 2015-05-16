@@ -17,9 +17,8 @@
     </div>
 ***/
 .banner-module
-    background url(./img/bg-diamonds.jpg) repeat
-    background-size cover
-    background-position 50% 50%
+    background-size cover !important
+    background-position 50% 50% !important
     center(109.2rem)
     color white
     padding 5.4rem 0 5.4rem
@@ -74,7 +73,17 @@
     position relative
     z-index 1
     min-height 9rem
-    
+
++above(960px)
+    .banner-module
+        display table
+        width 100%
+    .banner__text,
+    .banner__CTA
+        float none
+        display table-cell
+        vertical-align middle
+  
 +below(960px)
     .banner-module
         padding 3rem 2rem 2.2rem

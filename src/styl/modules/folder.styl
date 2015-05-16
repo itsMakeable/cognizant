@@ -62,6 +62,12 @@
   box-shadow: 0 3px 3px -1px rgba(black,0.8)
   background-size cover !important
   background-position 50% 50% !important
+  display block
+  color white
+  border-bottom none
+  &:hover
+    border-bottom none
+    color white
 
 .folder__overlay
   // background-color rgba(0,0,0, 0.7)
@@ -82,6 +88,7 @@
 .folder__content
   position relative
   z-index: 2
+
   
 .folder__profile-pic
   position absolute
@@ -118,6 +125,8 @@
   width 100%
   height 5rem
   border-top 1px solid currentColor
+  svg path
+    fill blue
 
 .folder__data
   position relative

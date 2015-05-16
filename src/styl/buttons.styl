@@ -62,10 +62,7 @@ a.button--primary
 	&:visited
 		color white
 		background-color blue
-	&:hover
-		color white
-		background-color darkblue
-		transition background-color 0.3s ease, transform 0.1s linear, color 0.1s ease
+	
 	&.icon--left
 		padding-left 7.5rem
 		padding-right 1.6rem
@@ -79,6 +76,11 @@ a.button--primary
 			margin auto
 			padding 0.2rem 0.9rem 0.2rem 0
 			border-right 1px solid rgba(white,0.2)
+			transition all 0.3s ease
+	&:hover
+		color white
+		background-color darkblue
+		transition background-color 0.3s ease, transform 0.1s linear, color 0.1s ease
 .color-bg
 	.button--primary:hover
 		// color darkblue
@@ -86,7 +88,7 @@ a.button--primary
 		&.icon--left 
 			i:first-of-type
 				// color darkblue
-				border-right 1px solid rgba(gray,0.2)
+				border-right 1px solid rgba(darkblue,0.2)
 			
 .icon.question-mark
 	color blue
@@ -128,8 +130,8 @@ a.button--silent
 	&:visited
 		color blue
 	&:hover
-		color darkblue
-		border-bottom 1px solid rgba(blue,0.2)
+		color darkblue !important
+		border-bottom 1px solid rgba(darkblue,0.2) !important
 	&.is-white
 		color white
 		&:hover
