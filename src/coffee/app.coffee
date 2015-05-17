@@ -468,7 +468,6 @@ MKBL.playVideo = (e, $this) ->
 	e.preventDefault()
 
 MKBL.activationToggle = ($parent, cssClass) ->
-	console.log $parent
 	cssClass = cssClass || 'is-active'
 	$parent.toggleClass(cssClass)
 
