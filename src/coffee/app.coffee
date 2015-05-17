@@ -339,11 +339,12 @@ MKBL.contenteditableDropdown = ($dropdown, $trigger) ->
 		
 
 MKBL.contenteditableDropdownAutocomplete = ($this) ->
+	$trigger = $this.closest('.js-dropdown-option-parent').find('.js-dropdown-trigger')
 	if $this.closest('.js-dropdown-option-parent').find('.contenteditable-dropdown').length
 		$dropdown = $this.closest('.js-dropdown-option-parent').find('.contenteditable-dropdown')
 
 		if $dropdown.height() == 0 or $dropdown.height() == null
-			MKBL.contenteditableDropdown($dropdown)
+			MKBL.contenteditableDropdown($dropdown, $trigger)
 
 		searchInputText = $this.html().replace(/^\s+|\s+$/g, '')
 		if searchInputText != '' and searchInputText != ' '

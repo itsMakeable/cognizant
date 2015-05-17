@@ -231,13 +231,13 @@
     +below(540px)
       left 0
     .social-group__icon-slide
-      left 5%
+      left 3%
   &:nth-child(3)
     right 5%
     +below(540px)
       right 0
     .social-group__icon-slide
-      right 5%
+      right 3%
       transform translateX(-8.2rem)
       +below(940px)
         transform translateX(-8.2rem * 0.7)
@@ -245,11 +245,11 @@
         transform translateX(-8.2rem * 0.6)
   &.is-active 
     color blue
-    transition 0.3s linear 0.25s
+    transition 0.3s linear 0.1s
     
     .social-group__icon-slide
       transform translateX(-1%)
-      transition all 0.32s ease 0.15s
+      transition all 0.32s ease 0.05s
 
 .social-group__icon.is-active
   + .social-group__icon
@@ -290,9 +290,9 @@
 .is-active
   .is-long-distance 
     .social-group__icon-slide
-      transition all 0.2s ease 0.2s
-    &:nth-child(2)
       transition all 0.2s ease 0.1s
+    &:nth-child(2)
+      transition all 0.2s ease 0s
   
 .social-group__groups
   col(10/12, offset: 1/12)
