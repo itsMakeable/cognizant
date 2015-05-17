@@ -5,53 +5,62 @@
   example: |
     <component class="contenteditable-module">
       <div class="container">
-        <section class="contenteditable__text">
+        <div class="contenteditable__text">
           <h2>
-            <div class="noneditable">I'm an </div>
+            <div class="noneditable">I'm a(n) </div>
             <div class="is-editable js-dropdown-option-parent has-dropdown">
-              <div contenteditable="contenteditable" data-placeholder="Occupation" class="js-dropdown-option-holder">Occupation</div><i class="icon js-dropdown-trigger">
+              <div class="contenteditable__wrapper">
+                <div contenteditable data-placeholder="Occupation" class="js-dropdown-option-holder">Occupation</div>
+              </div><i class="icon js-dropdown-trigger">
                 <svg viewbox="0 0 100 100">
                   <use xlink:href="includes/symbols.svg#icon_caret"></use>
                 </svg></i>
               <subcomponent class="contenteditable-dropdown">
                 <ul>
                   <li class="js-dropdown-option">Search Suggestion</li>
-                  <li class="js-dropdown-option">Search Suggestion</li>
-                  <li class="js-dropdown-option"><span>Search Suggestion</span></li>
-                  <li class="js-dropdown-option">Search Suggestion</li>
-                  <li class="js-dropdown-option">Search Suggestion</li>
-                  <li class="js-dropdown-option">Search Suggestion</li>
-                  <li class="js-dropdown-option">Search Suggestion</li>
+                  <li class="js-dropdown-option">Another Suggestion</li>
+                  <li class="js-dropdown-option">Yet Anonther Suggestion</li>
+                  <li class="js-dropdown-option">Alternative Suggestion</li>
+                  <li class="js-dropdown-option">Possible Suggestion</li>
+                  <li class="js-dropdown-option">Consider this Suggestion</li>
+                  <li class="js-dropdown-option">One More Suggestion</li>
                 </ul>
               </subcomponent>
             </div>
             <div class="noneditable"> interested in the</div>
             <div class="is-editable js-dropdown-option-parent has-dropdown">
-              <div contenteditable="contenteditable" data-placeholder="Industry" class="js-dropdown-option-holder">Industry</div><i class="icon js-dropdown-trigger">
+              <div class="contenteditable__wrapper">
+                <div contenteditable data-placeholder="Industry" class="js-dropdown-option-holder">Industry</div>
+              </div><i class="icon js-dropdown-trigger">
                 <svg viewbox="0 0 100 100">
                   <use xlink:href="includes/symbols.svg#icon_caret"></use>
                 </svg></i>
               <subcomponent class="contenteditable-dropdown">
                 <ul>
                   <li class="js-dropdown-option">Search Suggestion</li>
-                  <li class="js-dropdown-option">Search Suggestion</li>
-                  <li class="js-dropdown-option"><span>Search</span> Suggestion</li>
-                  <li class="js-dropdown-option">Search Suggestion</li>
-                  <li class="js-dropdown-option">Search Suggestion</li>
-                  <li class="js-dropdown-option">Search Suggestion</li>
+                  <li class="js-dropdown-option">Another Suggestion</li>
+                  <li class="js-dropdown-option">Yet Anonther Suggestion</li>
+                  <li class="js-dropdown-option">Alternative Suggestion</li>
+                  <li class="js-dropdown-option">Possible Suggestion</li>
+                  <li class="js-dropdown-option">Consider this Suggestion</li>
+                  <li class="js-dropdown-option">One More Suggestion</li>
                 </ul>
               </subcomponent>
-            </div><br/>
+            </div>
             <div class="noneditable"> Industry. I work for </div>
             <div class="is-editable">
-              <div contenteditable="contenteditable" data-placeholder="Workplace">Workplace</div>
+              <div class="contenteditable__wrapper">
+                <div contenteditable data-placeholder="Workplace">Workplace</div>
+              </div>
             </div>
             <div class="noneditable"> in </div>
             <div class="is-editable">
-              <div contenteditable="contenteditable" data-placeholder="Zip Code">Zip Code</div>
+              <div class="contenteditable__wrapper">
+                <div contenteditable data-placeholder="Zip Code / City">Zip Code / City</div>
+              </div>
             </div><span class="noneditable">.</span>
           </h2>
-        </section>
+        </div>
         <div class="contenteditable__button-box"><a href="" class="button--primary">Continue</a></div>
       </div>
     </component>

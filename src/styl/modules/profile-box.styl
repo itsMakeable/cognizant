@@ -3,12 +3,10 @@
   section: Profile Box
   description: The box that appears when the user logs in.
   example: |
-    <div class="profile-box-module">
+    <component class="profile-box-module js-equal-height">
       <div class="profile-box">
-      <div class="profile-box">
-        <div class="profile-box__indicator"></div>
         <div class="profile-box__default">
-          <div class="profile-box__profile-pic"><img data-src="holder.js/110x110/" alt=""/></div><i class="profile-box__profile-icon">
+          <div class="profile-box__profile-pic"><img src="http://placehold.it/110x110" alt=""></div><i class="profile-box__profile-icon">
             <svg viewbox="0 0 100 100">
               <use xlink:href="includes/symbols.svg#icon_linkedin"></use>
             </svg></i>
@@ -17,8 +15,7 @@
             <svg viewbox="0 0 100 100">
               <use xlink:href="includes/symbols.svg#icon_settings"></use>
             </svg></i>
-          <div class="profile-box__notification"><span>3</span></div>
-          <i data-flyout="notifications" class="icon">
+          <div class="profile-box__notification"><span>3</span></div><i data-flyout="notifications" class="icon">
             <svg viewbox="0 0 100 100">
               <use xlink:href="includes/symbols.svg#icon_folders"></use>
             </svg></i>
@@ -32,63 +29,57 @@
           <div><i class="icon">
               <svg viewbox="0 0 100 100">
                 <use xlink:href="includes/symbols.svg#icon_location"></use>
-              </svg></i><small>Dallas Fort Worth Area  </small></div>
+              </svg></i><small>Dallas Fort Worth Area </small></div>
           <div><i class="icon">
               <svg viewbox="0 0 100 100">
                 <use xlink:href="includes/symbols.svg#icon_industry"></use>
-              </svg></i><small>Information Technology & Services.</small></div>
+              </svg></i><small>Information Technology &amp; Services.</small></div>
           <div><i class="icon">
               <svg viewbox="0 0 100 100">
                 <use xlink:href="includes/symbols.svg#icon_workplace"></use>
               </svg></i><small>United Healthcare</small></div>
         </div>
       </div>
-      <div class="profile-box-flyout profile-box-flyout--settings">
+      <subcomponent class="profile-box-flyout profile-box-flyout--settings">
+        <div class="profile-box__indicator"></div>
         <header>
           <p>Settings</p>
-          <hr/>
+          <hr>
         </header>
         <div class="profile-box__button">
-          <button class="button--silent">Edit Info</button>
+          <button class="button--silent js-edit-profile">Edit Info</button>
         </div>
-        <div class="profile-box__button">
-          <button class="button--silent">Log Out</button>
-        </div>
-      </div>
-      <div class="profile-box-flyout profile-box-flyout--notifications">
+        <div class="profile-box__button"><a href="/" class="button--silent">Log Out</a></div>
+      </subcomponent>
+      <subcomponent class="profile-box-flyout profile-box-flyout--notifications">
+        <div class="profile-box__indicator"></div>
         <header>
           <p>Recent Activity</p>
-          <hr/>
+          <hr>
         </header>
-        <div class="profile-box__list">
-          <div class="profile-box__list-item">
+        <div class="profile-box__list"><a class="profile-box__list-item">
             <div class="profile-box__list-notification"><span>1</span></div>
-            <p><strong><a href="">Industry Friends</a></strong></p>
+            <p><strong>Industry Friends</strong></p>
             <p>Invited by Larry</p><i class="icon profile-box__list-CTA">
               <svg viewbox="0 0 100 100">
                 <use xlink:href="includes/symbols.svg#icon_caret"></use>
-              </svg></i>
-          </div>
-          <div class="profile-box__list-item">
+              </svg></i></a><a class="profile-box__list-item">
             <div class="profile-box__list-notification"><span>1</span></div>
-            <p><strong><a href="">Industry Friends</a></strong></p>
+            <p><strong>Industry Friends</strong></p>
             <p>Invited by Larry</p><i class="icon profile-box__list-CTA">
               <svg viewbox="0 0 100 100">
                 <use xlink:href="includes/symbols.svg#icon_caret"></use>
-              </svg></i>
-          </div>
-          <div class="profile-box__list-item">
+              </svg></i></a><a class="profile-box__list-item">
             <div class="profile-box__list-notification"><span>1</span></div>
-            <p><strong><a href="">Industry Friends</a></strong></p>
+            <p><strong>Industry Friends</strong></p>
             <p>Invited by Larry</p><i class="icon profile-box__list-CTA">
               <svg viewbox="0 0 100 100">
                 <use xlink:href="includes/symbols.svg#icon_caret"></use>
-              </svg></i>
-          </div>
+              </svg></i></a>
         </div>
         <button class="button--silent">View All</button>
-      </div>
-    </div>
+      </subcomponent>
+    </component>
 ***/
 .profile-box-module
   position relative

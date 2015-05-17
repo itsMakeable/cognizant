@@ -4,38 +4,24 @@
     title: Folder
     section: Box Modules
     example: |
-        <div class="folder-module gradient1--vertical">
-            <p class="folder__alert">
-              <span class="folder__alert-number"><span>1</span></span>
-              <span>New Video Added<span>
-            </p>
-            <div class="folder__profile-pic">
-              <img data-src="holder.js/44x44/size:6/#c4bdc0:#fff">
-            </div>
-            <div class="folder__data">
-              <p><strong>Favorites</strong></p>
-              <i class="icon">
-                <svg viewBox="0 0 100 100">
-                  <use xlink:href="includes/symbols.svg#icon_files"></use>
-                </svg>
-              </i><span>1</span>
-              <i class="icon">
-                <svg viewBox="0 0 100 100">
-                  <use xlink:href="includes/symbols.svg#icon_collaborators"></use>
-                </svg>
-              </i><span>2</span>
-            </div>
-            <div class="folder__CTA">
-              <i class="folder__CTA--left">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-26 28 46 46"><title>star filled</title><path stroke="#000" stroke-width="2.813" d="M17.6 44.3H3L-2.2 30c-.1-.4-.5-.6-.8-.6-.4 0-.7.2-.8.6L-9 44.3h-14.6c-.4 0-.7.2-.8.6-.1.4 0 .7.3 1l12.1 9.3-5.2 15.2c-.1.4 0 .8.3 1 .3.2.7.2 1.1 0L-3 62.1l12.9 9.3c.2.1.3.2.5.2s.4-.1.5-.2c.3-.2.4-.6.3-1L6.1 55.2l12.1-9.3c.3-.2.4-.6.3-1-.1-.3-.5-.6-.9-.6z"/></svg>
-              </i>
-              <i class="folder__CTA--right">
-                <svg viewBox="0 0 100 100">
-                   <use xlink:href="includes/symbols.svg#icon_caret"></use>
-                </svg>
-              </i>
-            </div>
+      <component class="folder-module gradient1--vertical--reverse">
+        <div class="folder__data">
+          <p><strong>Favorites</strong></p><i class="icon">
+            <svg viewbox="0 0 100 100">
+              <use xlink:href="includes/symbols.svg#icon_files"></use>
+            </svg></i><span>0</span><i class="icon">
+            <svg viewbox="0 0 100 100">
+              <use xlink:href="includes/symbols.svg#icon_collaborators"></use>
+            </svg></i><span>0</span>
         </div>
+        <div class="folder__CTA"><i class="folder__CTA--right">
+            <svg viewbox="0 0 100 100" class="is-empty">
+              <use xlink:href="includes/symbols.svg#icon_triangle"></use>
+            </svg>
+            <svg viewbox="0 0 100 100" class="is-filled">
+              <use xlink:href="includes/symbols.svg#icon_triangle-filled"></use>
+            </svg></i></div>
+      </component>
 ***/
 .folder-headline-section
   background-color darkblue

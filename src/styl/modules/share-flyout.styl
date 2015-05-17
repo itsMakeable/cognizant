@@ -46,14 +46,16 @@
             transition opacity 0.3s ease
             
 .share-flyout__trigger
-    z-index 1
+    z-index 10
     transition 0.05s linear 0s
+    size 6.4rem
+    svg
+      size 2.8rem
+      align(vertical)
+      right 2rem
+      z-index: 1
     .is-filled
         opacity 0
-    &:active
-        svg
-            transform translate(-50%, -50%) scale(0.95)
-            transition transform 0.1s cubic-bezier(.73,.88,0,1.02)
     &.is-active
         transition 0.3s linear 0.1s
         .is-filled

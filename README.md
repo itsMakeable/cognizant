@@ -4,7 +4,7 @@
   |
   |- Build - Gulp tasks and other files not associated with the actual site
   |
-  |- Src - Preprocessed filed
+  |- Src - Preprocessed files
      |
      |- coffee - proprocessed JS files
      |

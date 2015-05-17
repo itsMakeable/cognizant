@@ -6,7 +6,7 @@ section.section.flow-box-slider-section.backgray-bg
 		component.flow-box-slider
 			each val, index in {1:'is-active',2:'is-next',3:'is-prev'}
 				.row.flow-box-slider-group(class="#{val}")
-					article.flow-box.flow-box--large(style='background: url(https://download.unsplash.com/photo-1425141750113-187b6a13e28c) no-repeat')
+					article.flow-box.flow-box--large(style='background: url(http://placehold.it/550x550) no-repeat')
 						.flow-box__gradient-bg
 							h4.flow-box__tag 
 								i.icon
@@ -56,9 +56,9 @@ section.section.flow-box-slider-section.backgray-bg
 											use(xlink:href='#icon_triangle-filled')
 										span.flow-box__CTA__alt-text View
 
-					article.flow-box__small-container
+					div.flow-box__small-container
 						each val, index in [1,2]
-							component.flow-box(style='background: url(https://download.unsplash.com/photo-1429043794791-eb8f26f44081) no-repeat')
+							article.flow-box(style='background: url(http://placehold.it/350x350) no-repeat')
 								.flow-box__gradient-bg
 									h4.flow-box__tag
 										i.icon

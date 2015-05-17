@@ -2,56 +2,78 @@
   title: Main Header
   section: Headers
   example: |
-    <header class="main-header gradient1--horizontal color-bg">
+    <header style="background: url(&quot;http://placehold.it/2250x1000&quot;) no-repeat" class="main-header gradient1--horizontal color-bg">
       <div class="container">
-        <h1>Latest Thinking</h1>
-        <p class="main-header__body-copy">Explore our industry-leading insight. Tailored to solve your unique business challenges.</p>
-        <div class="subheader">Enhance with <i class="icon icon-linkedin">
-            <svg viewbox="0 0 91 24">
-              <use xlink:href="includes/symbols.svg#logo_linkedin"></use>
-            </svg></i></div>
-        <div><a href="" class="button--primary icon--left"><i class="icon icon-linkedin">
+        <h1>Explore our <span class="nowrap">industry-leading</span> insight. </h1>
+        <p class="main-header__body-copy">Tailored to solve your unique business challenges.</p>
+        <div class="main-header__button-container"><a href="/index-logged-in.html" class="button--primary icon--left"><i class="icon icon-linkedin">
               <svg viewbox="0 0 100 100">
-                <use xlink:href="includes/symbols.svg#icon_linkedin"></use>
+                <use xlink:href="#icon_linkedin"></use>
               </svg></i>Sign In with Linkedin</a><i data-modal-id="#modal-1" class="js-open-modal-module icon question-mark">
             <svg viewbox="0 0 100 100">
-              <use xlink:href="includes/symbols.svg#icon_info"></use>
+              <use xlink:href="#icon_info"></use>
             </svg></i></div>
-        <div><a href="" class="button--silent">Or tell us about yourself</a></div>
-        <component class="search-module search-module--main">
-          <div class="search__icon gradient6reverse--horizontal"><i>
+      </div>
+      <div class="container main-header__search-container">
+        <component class="search-module search-module--main has-dropdown">
+          <div class="search__icon__wrapper">
+            <div class="search__icon gradient6reverse--horizontal"><i>
+                <svg viewbox="0 0 100 100">
+                  <use xlink:href="#icon_search"></use>
+                </svg></i></div>
+          </div>
+          <div class="search__dropdown js-dropdown-option-parent"><span data-default="All Industries" class="search__dropdown__active-selection js-dropdown-option-holder js-dropdown-trigger">All Industries</span><i class="search__dropdown__icon js-dropdown-trigger">
               <svg viewbox="0 0 100 100">
-                <use xlink:href="includes/symbols.svg#icon_search"></use>
-              </svg></i></div>
-          <input type="text" placeholder="Search Within Folders"     class="search__input"/>
+                <use xlink:href="#icon_caret"></use>
+              </svg></i><i class="icon search__icon--right search__icon-filter js-dropdown-trigger">
+              <svg viewbox="0 0 100 100">
+                <use xlink:href="#icon_filter"></use>
+              </svg></i>
+            <subcomponent class="contenteditable-dropdown">
+              <ul>
+                <li class="js-dropdown-option">All Industries</li>
+                <li class="js-dropdown-option">Search Suggestion</li>
+                <li class="js-dropdown-option">Another Suggestion</li>
+                <li class="js-dropdown-option">Yet Anonther Suggestion</li>
+                <li class="js-dropdown-option">Alternative Suggestion</li>
+                <li class="js-dropdown-option">Possible Suggestion</li>
+                <li class="js-dropdown-option">Consider this Suggestion</li>
+                <li class="js-dropdown-option">One More Suggestion</li>
+              </ul>
+            </subcomponent>
+          </div><i class="icon search__icon--right search__CTA">
+            <svg viewbox="0 0 100 100">
+              <use xlink:href="#icon_triangle"></use>
+            </svg></i>
+          <input type="text" placeholder="Search Within Folders" class="search__input">
         </component>
       </div>
     </header>
 ***/
 .main-header
-    height 50rem
-    color white
-    padding-top 10rem
-    text-align center
-    position relative
-    background-size cover !important
-    background-position 50% 50% !important
-    +below(1140px)
-      height auto
-      padding-bottom 10rem
-    h1
-      max-width 60rem
+  height 50rem
+  color white
+  padding-top 10rem
+  text-align center
+  position relative
+  background-size cover !important
+  background-position 50% 50% !important
+  +below(1140px)
+    height auto
+    padding-bottom 10rem
+  h1
+    max-width 60rem
+    margin auto
+  h4
+    upcase()
+  .main-header__body-copy
+      padding 1rem 0 0 0
+      font-family proxLight
+      display block
+      max-width 46rem
       margin auto
-    h4
-      upcase()
-    .main-header__body-copy
-        padding 1rem 0 0 0
-        font-family proxLight
-        display block
-        max-width 46rem
-        margin auto
-    .subheader
-      color white
+  .subheader
+    color white
     
         
   .icon.question-mark

@@ -53,10 +53,11 @@
 	margin auto
 	size 2.2rem
 	color darkblue
-	transition all 0.3s cubic-bezier(.73,.49,.28,1.21)
+	transition all 0.3s cubic-bezier(.73,.49,.28,1.21) 0.1s
 	z-index: 1
 	transform rotate(90deg)
 	transform-origin 50% 50%
+	cursor: pointer
 	&.is-active
 		transform rotate(-90deg)
 	+below(768px)

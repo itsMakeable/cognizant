@@ -2,55 +2,35 @@
     title: Flow Box Small
     section: Box Modules
     example: |
-        <component class="flow-box gradient1--vertical">
-          <h4 class="flow-box__tag">Article | <i class="icon">
-              <svg viewbox="0 0 100 100">
-                <use xlink:href="includes/symbols.svg#icon_share-filled"></use>
-              </svg></i><span>10k</span></h4><i class="flow-box__icon">
-            <svg viewbox="0 0 100 100">
-              <use xlink:href="includes/symbols.svg#icon_pdf"></use>
-            </svg></i>
-          <div class="flow-box__content">
-            <div class="flow-box__title">
-              <h2>A Systematic Approach To Optimizing Collateral</h2>
-            </div>
-            <div class="flow-box__CTA"><i class="flow-box__CTA--left">
+        <article style="background: url(http://placehold.it/350x350) no-repeat" class="flow-box">
+          <div class="flow-box__gradient-bg">
+            <h4 class="flow-box__tag"><i class="icon">
                 <svg viewbox="0 0 100 100">
-                  <use xlink:href="includes/symbols.svg#icon_star"></use>
-                </svg></i><i class="flow-box__CTA--right">
-                <svg viewbox="0 0 100 100">
-                  <use xlink:href="includes/symbols.svg#icon_triangle"></use>
-                </svg></i></div>
-          </div>
-        </component>
-        <div class="flow-box gradient1--vertical" style='width: 340px; height: 260px;'>
-            <div class="flow-box__meta">
-                <div class='flow-box__meta-img'>
-                    <img data-src="holder.js/44x44/size:6/#c4bdc0:#fff">
-                </div>
-                <div class='flow-box__meta-text'>
-                    <p><strong>Added by Kyla Medina</strong></p>
-                    <h4>Article | <i><svg viewBox="0 0 100 100"><use xlink:href="includes/symbols.svg#icon_share"></use></svg></i> <span>10k</span></h4>
-                </div>
-            </div>
+                  <use xlink:href="includes/symbols.svg#icon_pdf"></use>
+                </svg></i><strong>Article</strong>  |  Added for you on 12.14.14</h4>
             <div class="flow-box__content">
-                <div class="flow-box__title">
-                    <h2>A Systematic Approach To Optimizing Collateral</h2>
-                </div>
-                <div class="flow-box__CTA">
-                    <i class="flow-box__CTA--left">
-                        <svg viewbox="0 0 100 100">
-                          <use xlink:href="includes/symbols.svg#icon_star"></use>
-                        </svg>
-                    </i>
-                    <i class="flow-box__CTA--right">
-                       <svg viewBox="0 0 100 100">
-                          <use xlink:href="includes/symbols.svg#icon_triangle">
-                       </svg>
-                    </i>
-                </div>
+              <div class="flow-box__title">
+                <h2>A Systematic Approach To Optimizing Collateral</h2>
+              </div>
+              <div class="flow-box__CTA-description truncate">
+                <p>A Systematic Approach To Optimizing Collateral</p>
+              </div>
+              <div class="flow-box__CTA"><i class="flow-box__CTA--left">
+                  <svg viewbox="0 0 100 100" class="is-empty">
+                    <use xlink:href="includes/symbols.svg#icon_star"></use>
+                  </svg>
+                  <svg viewbox="0 0 100 100" class="is-filled">
+                    <use xlink:href="includes/symbols.svg#icon_star-filled"></use>
+                  </svg><span class="flow-box__CTA__alt-text">Save</span></i><i class="flow-box__CTA--right">
+                  <svg viewbox="0 0 100 100" class="is-empty">
+                    <use xlink:href="includes/symbols.svg#icon_triangle"></use>
+                  </svg>
+                  <svg viewbox="0 0 100 100" class="is-filled">
+                    <use xlink:href="includes/symbols.svg#icon_triangle-filled"></use>
+                  </svg><span class="flow-box__CTA__alt-text">View</span></i></div>
             </div>
-        </div>
+          </div>
+        </article>
 ***/
 
 .flow-box
@@ -243,33 +223,33 @@
   title: Flow Box Large
   section: Box Modules
   example: |
-        <component class="flow-box flow-box--large gradient2--vertical">
-          <h4 class="flow-box__tag">Article | <i class="icon">
+    <article style="background: url(http://placehold.it/550x550) no-repeat" class="flow-box flow-box--large">
+        <div class="flow-box__gradient-bg">
+          <h4 class="flow-box__tag"> <i class="icon">
               <svg viewbox="0 0 100 100">
-                <use xlink:href="includes/symbols.svg#icon_share-filled"></use>
-              </svg></i><span>10k</span></h4><i class="flow-box__icon">
-            <svg viewbox="0 0 100 100">
-              <use xlink:href="includes/symbols.svg#icon_pdf"></use>
-            </svg></i>
+                <use xlink:href="includes/symbols.svg#icon_pdf"></use>
+              </svg></i><strong>Article</strong>  |  Added for you on 12.14.14</h4>
           <div class="flow-box__content">
             <div class="flow-box__title">
               <h3>Healthcare Consumerism:</h3>
               <h5>The Rise of the Empowered Healthcare Consumer</h5>
-              <p>Added for you on 12.14.14</p>
-            </div>
-            <div class="flow-box__CTA">
               <div class="flow-box__CTA-description">
                 <p><strong>A shift to individual healthcare.</strong>Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.</p>
-              </div><i class="flow-box__CTA--left">
-                <svg viewbox="0 0 100 100">
+              </div>
+            </div>
+            <div class="flow-box__CTA"><i class="flow-box__CTA--left">
+                <svg viewbox="0 0 100 100" class="is-empty">
                   <use xlink:href="includes/symbols.svg#icon_star"></use>
-                </svg></i><i class="flow-box__CTA--share share-flyout__trigger js-share-flyout__trigger">
+                </svg>
+                <svg viewbox="0 0 100 100" class="is-filled">
+                  <use xlink:href="includes/symbols.svg#icon_star-filled"></use>
+                </svg><span class="flow-box__CTA__alt-text">Save</span></i><i class="flow-box__CTA--share share-flyout__trigger js-share-flyout__trigger">
                 <svg viewbox="0 0 100 100" class="is-empty">
                   <use xlink:href="includes/symbols.svg#icon_share"></use>
                 </svg>
                 <svg viewbox="0 0 100 100" class="is-filled">
                   <use xlink:href="includes/symbols.svg#icon_share-filled"></use>
-                </svg></i>
+                </svg><span class="flow-box__CTA__alt-text">Share</span></i>
               <component class="flow-box__share-flyout-wrapper js-share-flyout">
                 <div class="flow-box__share-flyout share-flyout">
                   <div class="flow-box-flyout__icon share-flyout__icon">
@@ -293,15 +273,17 @@
                     </svg>
                   </div>
                 </div>
-              </component>
-              <i class="flow-box__CTA--right">
-                <svg viewbox="0 0 100 100">
+              </component><i class="flow-box__CTA--right">
+                <svg viewbox="0 0 100 100" class="is-empty">
                   <use xlink:href="includes/symbols.svg#icon_triangle"></use>
                 </svg>
-              </i>
+                <svg viewbox="0 0 100 100" class="is-filled">
+                  <use xlink:href="includes/symbols.svg#icon_triangle-filled"></use>
+                </svg><span class="flow-box__CTA__alt-text">View</span></i>
             </div>
           </div>
-        </component>
+        </div>
+      </article>
 ***/
 
 .flow-box.flow-box--large
