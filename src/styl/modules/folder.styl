@@ -1,44 +1,34 @@
-// FOLDER ////////////////////////////////////
-
 /*!**
     title: Folder
     section: Box Modules
     example: |
-      <component class="folder-module gradient1--vertical--reverse">
-        <div class="folder__data">
-          <p><strong>Favorites</strong></p><i class="icon">
-            <svg viewbox="0 0 100 100">
-              <use xlink:href="includes/symbols.svg#icon_files"></use>
-            </svg></i><span>0</span><i class="icon">
-            <svg viewbox="0 0 100 100">
-              <use xlink:href="includes/symbols.svg#icon_collaborators"></use>
-            </svg></i><span>0</span>
+      <a style="background:url(http://placehold.it/350x222) no-repeat" class="folder-module">
+        <div class="folder__overlay"></div>
+        <div class="folder__content">
+          <p class="folder__alert"><span class="folder__alert-number"><span>1</span></span><span>New Video Added</span></p>
+          <div class="folder__profile-pic"><img src="http://placehold.it/44x44"></div>
+          <div class="folder__data">
+            <p><strong>Favorites</strong></p><i class="icon">
+              <svg viewbox="0 0 100 100">
+                <use xlink:href="#icon_files"></use>
+              </svg></i><span>22</span><i class="icon">
+              <svg viewbox="0 0 100 100">
+                <use xlink:href="#icon_collaborators"></use>
+              </svg></i><span>100</span>
+          </div>
+          <div class="folder__CTA"><i class="folder__CTA--left">
+              <svg viewbox="0 0 100 100" class="is-empty">
+                <use xlink:href="#icon_exit"></use>
+              </svg></i><i class="folder__CTA--right">
+              <svg viewbox="0 0 100 100" class="is-empty">
+                <use xlink:href="#icon_triangle"></use>
+              </svg>
+              <svg viewbox="0 0 100 100" class="is-filled">
+                <use xlink:href="#icon_triangle-filled"></use>
+              </svg></i></div>
         </div>
-        <div class="folder__CTA"><i class="folder__CTA--right">
-            <svg viewbox="0 0 100 100" class="is-empty">
-              <use xlink:href="includes/symbols.svg#icon_triangle"></use>
-            </svg>
-            <svg viewbox="0 0 100 100" class="is-filled">
-              <use xlink:href="includes/symbols.svg#icon_triangle-filled"></use>
-            </svg></i></div>
-      </component>
+      </a>
 ***/
-.folder-headline-section
-  background-color darkblue
-  background linear-gradient(35deg, darkblue 40%, lightblue 100%)
-  .folder-module
-    margin 0
-  +below(1023px)
-    .folder-module
-      float none
-      width 34rem
-      margin 0 auto 4rem auto !important
-    .button--primary
-      align(horizontal)
-  +below(360px)
-      .folder-module
-        width 100%
-
 .folder-module
   col(4/12)
   height 22.2rem
@@ -161,6 +151,22 @@
 // Beyond here is styles that are section specific 
 
 // FOLDER HEADLINE SECTION 
+.folder-headline-section
+  background-color darkblue
+  background linear-gradient(35deg, darkblue 40%, lightblue 100%)
+  .folder-module
+    margin 0
+  +below(1023px)
+    .folder-module
+      float none
+      width 34rem
+      margin 0 auto 4rem auto !important
+    .button--primary
+      align(horizontal)
+  +below(360px)
+      .folder-module
+        width 100%
+        
 .folder-headline-section__callout
   col(7/12, offset: 1/12)
   height 21rem

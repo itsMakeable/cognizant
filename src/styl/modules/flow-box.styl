@@ -218,7 +218,26 @@
         .flow-box__share-flyout
             transform translateX(0%)
             transition transform 0.4s cubic-bezier(.73,.88,0,1.02)
-        
+
+.flow-box__CTA__alt-text
+    fs(1.4rem)
+    align()
+    opacity 0
+    transition opacity 0.2s cubic-bezier(.73,.88,0,1.1) 0.05s, top 0.3s cubic-bezier(.73,.88,0,1.1)
+    margin-top 0rem
+    cursor: pointer
+
+.flow-box__CTA--left,
+.flow-box__CTA--right,
+.flow-box__CTA--share
+    &:hover
+        svg
+            transform translateY(-1.2rem)
+        .flow-box__CTA__alt-text
+            opacity 1
+            top 100%
+            transition opacity 0.1s cubic-bezier(.73,.88,0,1.1), top 0.3s cubic-bezier(.73,.88,0,1.1)
+
 /*!**
   title: Flow Box Large
   section: Box Modules
@@ -315,22 +334,3 @@
         .flow-box__CTA--share
             bottom 0
             position: relative
-    
-.flow-box__CTA__alt-text
-    fs(1.4rem)
-    align()
-    opacity 0
-    transition opacity 0.2s ease-out 0.05s, top 0.3s ease-out
-    margin-top 0rem
-    cursor: pointer
-
-.flow-box__CTA--left,
-.flow-box__CTA--right,
-.flow-box__CTA--share
-    &:hover
-        svg
-            transform translateY(-1.2rem)
-        .flow-box__CTA__alt-text
-            opacity 1
-            top 100%
-            transition opacity 0.1s ease-out, top 0.3s ease-out
