@@ -79,16 +79,33 @@
   // overflow hidden
   cf()
 
-.search__input
-  padding 0 9.4rem
-  height 6.4rem
-  fs(2.5rem)
-  color black
-  font-family proxReg
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=search],
+input[type=number],
+input[type=password],
+textarea
+  &.search__input
+    padding 0 9.4rem
+    height 6.4rem
+    fs(1.8rem)
+    color darkgray
+    font-family proxReg
 
 +above(768px)
-  .has-dropdown .search__input
-    padding-left 33rem
+  .has-dropdown 
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    input[type=url],
+    input[type=search],
+    input[type=number],
+    input[type=password],
+    textarea
+      &.search__input
+        padding-left 33rem
 
 .search__input::-webkit-input-placeholder
   font-family proxRegIt
@@ -209,8 +226,17 @@
     display none
     
 +above(540px)
-  .has-smartsearch .search__input
-    padding-left 26rem
+  .has-smartsearch 
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    input[type=url],
+    input[type=search],
+    input[type=number],
+    input[type=password],
+    textarea
+      &.search__input
+        padding-left 26rem
 
 .search__icon--right
   right 2rem
@@ -228,3 +254,13 @@
   &.is-active
     right 2rem
     opacity 1
+  svg
+    position absolute
+    transition 0.3s ease
+  .is-empty
+    z-index 1
+  .is-filled
+    opacity 0
+  &:hover
+    .is-filled
+      opacity 1

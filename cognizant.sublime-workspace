@@ -520,82 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "src/styl/modules/folder.styl",
-			"settings":
-			{
-				"buffer_size": 5240,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/coffee/events.coffee",
-			"settings":
-			{
-				"buffer_size": 4106,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/coffee/app.coffee",
-			"settings":
-			{
-				"buffer_size": 14829,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/styl/modules/banner.styl",
-			"settings":
-			{
-				"buffer_size": 2537,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "src/styl/modules/flow-box.styl",
 			"settings":
 			{
-				"buffer_size": 11073,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/styl/modules/profile-box.styl",
-			"settings":
-			{
-				"buffer_size": 7815,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/jade/modules/folder-headerline.jade",
-			"settings":
-			{
-				"buffer_size": 1186,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/styl/modules/video.styl",
-			"settings":
-			{
-				"buffer_size": 2356,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/jade/modules/folders-module.jade",
-			"settings":
-			{
-				"buffer_size": 2227,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/jade/index-logged-in.jade",
-			"settings":
-			{
-				"buffer_size": 4669,
+				"buffer_size": 11068,
 				"line_ending": "Unix"
 			}
 		},
@@ -603,39 +531,31 @@
 			"file": "src/jade/index.jade",
 			"settings":
 			{
-				"buffer_size": 2638,
+				"buffer_size": 2735,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/styl/modules/share-flyout.styl",
+			"file": "src/styl/modules/search.styl",
 			"settings":
 			{
-				"buffer_size": 2416,
+				"buffer_size": 6854,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/styl/modules/header.styl",
+			"file": "src/styl/buttons.styl",
 			"settings":
 			{
-				"buffer_size": 3932,
+				"buffer_size": 3323,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/jade/modules/flowbox-slider.jade",
+			"file": "src/styl/inputs.styl",
 			"settings":
 			{
-				"buffer_size": 4193,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/styl/base.styl",
-			"settings":
-			{
-				"buffer_size": 1343,
+				"buffer_size": 451,
 				"line_ending": "Unix"
 			}
 		}
@@ -656,6 +576,14 @@
 				"Package Control: Install Package"
 			],
 			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
 				"insta",
 				"Package Control: Install Package"
 			],
@@ -672,7 +600,7 @@
 				"TodoReview: Project Files"
 			]
 		],
-		"width": 497.0
+		"width": 529.0
 	},
 	"console":
 	{
@@ -693,51 +621,52 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Kyla/Sites/cognizant",
-		"/Users/Kyla/Sites/cognizant/app",
-		"/Users/Kyla/Sites/cognizant/app/svg",
-		"/Users/Kyla/Sites/cognizant/app/svg/icons"
 	],
 	"file_history":
 	[
-		"/Users/Kyla/Sites/cognizant/build/styleguide/index.jade",
+		"/Users/Kyla/Sites/cognizant/src/jade/layouts/layout-primary.jade",
+		"/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/Gutter Color/GutterColor.sublime-settings",
+		"/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/User/GutterColor.sublime-settings",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/profile-box.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/folder.styl",
+		"/Users/Kyla/Sites/cognizant/src/coffee/events.coffee",
+		"/Users/Kyla/Sites/cognizant/src/coffee/app.coffee",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/banner.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/flow-box.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/base.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/flowbox-slider.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/header.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/share-flyout.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/index.jade",
+		"/Users/Kyla/Sites/cognizant/src/jade/index-logged-in.jade",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/folders-module.jade",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/folder-headerline.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/video.styl",
+		"/Users/Kyla/Sites/cognizant/build/styleguide/index.jade",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/social-group.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/contenteditable.styl",
 		"/Users/Kyla/Sites/cognizant/src/jade/modules/headline-list.jade",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/fullscreen-overlay.styl",
 		"/Users/Kyla/Sites/cognizant/app/index.html",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/slider-nav.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/video.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/share-flyout.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/sections.styl",
-		"/Users/Kyla/Sites/cognizant/src/jade/index-logged-in.jade",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/search.styl",
-		"/Users/Kyla/Sites/cognizant/src/coffee/app.coffee",
-		"/Users/Kyla/Sites/cognizant/src/jade/index.jade",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/search-dropdown.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/flow-box.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/folder.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/three-group.styl",
 		"/Users/Kyla/Sites/cognizant/src/jade/modules/social-slider.jade",
-		"/Users/Kyla/Sites/cognizant/src/jade/modules/folders-module.jade",
 		"/Users/Kyla/Sites/cognizant/app/index-logged-in.html",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/header.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/modal.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/compact-profile-box.styl",
 		"/Users/Kyla/Sites/cognizant/README.md",
-		"/Users/Kyla/Sites/cognizant/src/jade/modules/flowbox-slider.jade",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/footer.styl",
-		"/Users/Kyla/Sites/cognizant/src/coffee/events.coffee",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/forms.styl",
 		"/Users/Kyla/Sites/cognizant/build/gulp.coffee",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/profile-box.styl",
 		"/Users/Kyla/Sites/cognizant/src/jade/modules/form.jade",
 		"/Users/Kyla/Sites/cognizant/src/styl/gradients.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/buttons.styl",
 		"/Users/Kyla/Sites/cognizant/cognizant.sublime-project",
 		"/Users/Kyla/Sites/cognizant/src/styl/mixins.styl",
-		"/Users/Kyla/Sites/cognizant/src/jade/modules/folder-headerline.jade",
 		"/Users/Kyla/Sites/cognizant/src/jade/modules/banner-perspectives-app.jade",
 		"/Users/Kyla/Sites/cognizant/src/jade/modules/banner-cognizant-connections.jade",
 		"/Users/Kyla/.profile",
@@ -747,9 +676,7 @@
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/flow-box-slider.styl",
 		"/Users/Kyla/Sites/cognizant/src/jade/modules/edit-profile-overlay.jade",
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_close.svg",
-		"/Users/Kyla/Sites/cognizant/src/jade/layouts/layout-primary.jade",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/headline-list.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/base.styl",
 		"/Users/Kyla/Sites/cognizant/src/jade/edit-profile.jade",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/content-list.styl",
 		"/Users/Kyla/Sites/cognizant/src/coffee/form.coffee",
@@ -824,14 +751,11 @@
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_twitter.svg",
 		"/Users/Kyla/Sites/cognizant/docs/styleguide/includes/symbols.svg",
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_our-latest-thinking.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_future-of-work.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_cognizanti.svg",
-		"/Users/Kyla/Sites/cognizant/src/jade/includes/symbols.svg",
-		"/Users/Kyla/Sites/cognizant/docs/styleguide/svg/symbols/icon_global-sourcing.svg"
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_future-of-work.svg"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 30.0
 	},
 	"find_in_files":
 	{
@@ -1040,359 +964,661 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/styl/modules/folder.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5240,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3848,
-								3848
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/Theme - Afterglow/Afterglow-monokai.tmTheme",
-							"history_list_is_closing": true,
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 120.0,
-						"translation.y": 3351.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/coffee/events.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4106,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2752,
-								2752
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/Theme - Afterglow/Afterglow-monokai.tmTheme",
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1677.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/coffee/app.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14829,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11001,
-								11001
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/Theme - Afterglow/Afterglow-monokai.tmTheme",
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 7335.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/styl/modules/banner.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2537,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1617,
-								1617
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1115.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "src/styl/modules/flow-box.styl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11073,
+						"buffer_size": 11068,
 						"regions":
 						{
+							"gutter_color_1973":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#e3e3e3.png",
+								"regions":
+								[
+									[
+										1973,
+										2006
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_1978":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#e3e3e3.png",
+								"regions":
+								[
+									[
+										1973,
+										2006
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_2007":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#e3e3e3.png",
+								"regions":
+								[
+									[
+										2007,
+										2041
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_2012":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#e3e3e3.png",
+								"regions":
+								[
+									[
+										2007,
+										2041
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_2066":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/rgba(255,255,255,0.96).png",
+								"regions":
+								[
+									[
+										2066,
+										2184
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_2071":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/rgba(255,255,255,0.96).png",
+								"regions":
+								[
+									[
+										2066,
+										2184
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_9978":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/rgba(255,255,255,0.96).png",
+								"regions":
+								[
+									[
+										9978,
+										10132
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_9983":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/rgba(255,255,255,0.96).png",
+								"regions":
+								[
+									[
+										9978,
+										10132
+									]
+								],
+								"scope": "gutter_color"
+							}
 						},
 						"selection":
 						[
 							[
-								4699,
-								4699
+								2626,
+								2626
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/Theme - Afterglow/Afterglow-monokai.tmTheme",
-							"history_list_is_closing": true,
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
 							"syntax": "Packages/Stylus/Stylus.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 11.0,
-						"translation.y": 3318.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/styl/modules/profile-box.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7815,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3923,
-								3923
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/Theme - Afterglow/Afterglow-monokai.tmTheme",
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
 						"translation.x": 0.0,
-						"translation.y": 1759.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
-				{
-					"buffer": 6,
-					"file": "src/jade/modules/folder-headerline.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1186,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								829,
-								829
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": -0.0,
-						"translation.y": 243.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "src/styl/modules/video.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2356,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1886,
-								1886
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1296.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "src/jade/modules/folders-module.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2227,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								220,
-								331
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 641.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 0,
-					"file": "src/styl/modules/folder.styl",
+					"buffer": 1,
+					"file": "src/jade/index.jade",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5240,
+						"buffer_size": 2735,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2875,
-								2875
+								2134,
+								2134
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/Theme - Afterglow/Afterglow-monokai.tmTheme",
-							"history_list_is_closing": true,
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 292.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/styl/modules/search.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6854,
+						"regions":
+						{
+							"gutter_color_2146":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#000.png",
+								"regions":
+								[
+									[
+										2146,
+										2804
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_4699":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#6db33f.png",
+								"regions":
+								[
+									[
+										5043,
+										5103
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_4857":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#6db33f.png",
+								"regions":
+								[
+									[
+										5043,
+										5103
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_4907":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#6db33f.png",
+								"regions":
+								[
+									[
+										5090,
+										5112
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_5043":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#6db33f.png",
+								"regions":
+								[
+									[
+										5043,
+										5103
+									]
+								],
+								"scope": "gutter_color"
+							}
+						},
+						"selection":
+						[
+							[
+								4300,
+								4300
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
 							"syntax": "Packages/Stylus/Stylus.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2249.0,
+						"translation.y": 2052.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "src/jade/index-logged-in.jade",
+					"buffer": 3,
+					"file": "src/styl/buttons.styl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4669,
+						"buffer_size": 3323,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1433,
-								1433
+								341,
+								341
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 956.0,
+						"translation.y": 3.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "src/jade/index.jade",
+					"buffer": 4,
+					"file": "src/styl/inputs.styl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2638,
+						"buffer_size": 451,
 						"regions":
 						{
+						},
+						"selection":
+						[
+							[
+								435,
+								294
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "src/styl/modules/search.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6854,
+						"regions":
+						{
+							"gutter_color_2146":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#000.png",
+								"regions":
+								[
+									[
+										2146,
+										2804
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_4699":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#6db33f.png",
+								"regions":
+								[
+									[
+										5043,
+										5103
+									]
+								],
+								"scope": "gutter_color"
+							}
 						},
 						"selection":
 						[
@@ -1403,195 +1629,74 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 628.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "src/styl/modules/share-flyout.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2416,
-						"regions":
-						{
-						},
-						"selection":
-						[
+							"BracketHighlighterBusy": false,
+							"bh_regions":
 							[
-								2140,
-								2140
-							]
-						],
-						"settings":
-						{
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
 							"syntax": "Packages/Stylus/Stylus.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1045.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/styl/modules/flow-box.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11073,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5721,
-								5721
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/Theme - Afterglow/Afterglow-monokai.tmTheme",
-							"history_list_is_closing": true,
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4322.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "src/styl/modules/header.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3932,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3768,
-								3752
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1857.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "src/jade/modules/flowbox-slider.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4193,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1366,
-								1366
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 28.0,
-						"translation.y": 631.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/styl/modules/banner.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2537,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								26,
-								26
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 28.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "src/styl/base.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1343,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								840,
-								840
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1599,7 +1704,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 30.0
 	},
 	"input":
 	{
@@ -1625,7 +1730,7 @@
 		"cols":
 		[
 			0.0,
-			0.318339451685,
+			0.530836955678,
 			1.0
 		],
 		"rows":
@@ -1643,7 +1748,7 @@
 	"project": "cognizant.sublime-project",
 	"replace":
 	{
-		"height": 54.0
+		"height": 56.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1653,16 +1758,40 @@
 		"selected_items":
 		[
 			[
+				"buton",
+				"src/styl/buttons.styl"
+			],
+			[
+				"inp",
+				"src/styl/inputs.styl"
+			],
+			[
+				"sear",
+				"src/styl/modules/search.styl"
+			],
+			[
+				"la",
+				"src/jade/layouts/layout-primary.jade"
+			],
+			[
+				"ind",
+				"src/jade/index.jade"
+			],
+			[
+				"search",
+				"src/styl/modules/search.styl"
+			],
+			[
+				"fl",
+				"src/styl/modules/flow-box.styl"
+			],
+			[
 				"vid",
 				"src/styl/modules/video.styl"
 			],
 			[
 				"folder",
 				"src/jade/modules/folder-headerline.jade"
-			],
-			[
-				"ind",
-				"src/jade/index.jade"
 			],
 			[
 				"hea",
@@ -1733,10 +1862,6 @@
 				"src/styl/modules/social-group.styl"
 			],
 			[
-				"sear",
-				"src/styl/modules/search.styl"
-			],
-			[
 				"se",
 				"src/styl/modules/sections.styl"
 			],
@@ -1791,10 +1916,6 @@
 			[
 				"",
 				"src/jade/index.jade"
-			],
-			[
-				"search",
-				"src/styl/modules/search-dropdown.styl"
 			],
 			[
 				"re",
@@ -1853,10 +1974,6 @@
 				"src/styl/modules/fullscreen-overlay.styl"
 			],
 			[
-				"buton",
-				"src/styl/buttons.styl"
-			],
-			[
 				"ban",
 				"src/jade/modules/banner-cognizant-connections.jade"
 			],
@@ -1887,10 +2004,6 @@
 			[
 				"buto",
 				"src/styl/buttons.styl"
-			],
-			[
-				"fl",
-				"src/styl/modules/flow-box.styl"
 			],
 			[
 				"fle",
@@ -2007,10 +2120,6 @@
 			[
 				"fro",
 				"src/styl/modules/forms.styl"
-			],
-			[
-				"inp",
-				"src/styl/inputs.styl"
 			],
 			[
 				"typ",
@@ -2145,10 +2254,6 @@
 				"src/styl/settings.styl"
 			],
 			[
-				"la",
-				"src/jade/layouts/layout-primary.jade"
-			],
-			[
 				"sp",
 				"src/jade/edit-profile.jade"
 			],
@@ -2185,7 +2290,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},

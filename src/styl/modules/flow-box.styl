@@ -34,7 +34,6 @@
 ***/
 
 .flow-box
-    
     display inline-block
     position relative
     height 26rem
@@ -44,6 +43,8 @@
     border-bottom 2px solid gray
     border-left 1px solid #e3e3e3
     border-right 1px solid #e3e3e3
+    h3
+        font-family proxSbold
 
 .flow-box__gradient-bg
     // background: linear-gradient(0deg, rgba(255,255,255,0.96) 0%,rgba(255,255,255,0.90) 62%,rgba(255,255,255,0) 78%)
@@ -155,14 +156,14 @@
 .flow-box__CTA-icon
     position absolute
     bottom 0rem
-    size 3rem 4rem
+    size 3rem
     overflow visible
     font-family proxLight
     svg
         transition all 0.2s ease-out
         position: absolute
         bottom 0rem
-        size 3rem 4rem
+        size 3rem
     .is-filled
         opacity 0
         z-index: 0
@@ -175,7 +176,7 @@
         .is-empty
             opacity 1
         svg
-            transform translateY(-0.5rem)
+            transform translateY(-1rem)
         .flow-box__CTA__alt-text
             opacity 1
             top 100%

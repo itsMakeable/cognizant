@@ -6,7 +6,11 @@
         <div class="folder__overlay"></div>
         <div class="folder__content">
           <p class="folder__alert"><span class="folder__alert-number"><span>1</span></span><span>New Video Added</span></p>
-          <div class="folder__profile-pic"><img src="http://placehold.it/44x44"></div>
+          <div class="folder__profile-pic">
+            <svg viewbox="0 0 100 100">
+              <use xlink:href="#icon_default"></use>
+            </svg>
+          </div>
           <div class="folder__data">
             <p><strong>Favorites</strong></p><i class="icon">
               <svg viewbox="0 0 100 100">
@@ -73,6 +77,7 @@
   border-radius 50%
   overflow: hidden
   box-shadow: 0 2px 2px -1px rgba(black,0.5)
+  size 4.4rem
     
 .folder__alert
   fs(1.2rem)
@@ -212,9 +217,10 @@
       margin auto
 
 // FOLDER MODULE SECTION 
-.folder-module-section
+.section.folder-module-section
   background-color lightblue
   background vgradient3
+  padding-top 0
   .folder-module
     margin 2rem auto
     col(4/12, cycle: 3)
