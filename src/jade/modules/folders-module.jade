@@ -4,8 +4,7 @@ section.section.folder-module-section.color-bg
 			h1 Your Folders
 			p Organize your insight. Share with colleagues. Collaborate and inspire results.
 		.row
-			// This is a component
-			a.folder-module(style='background:url(http://www.cognizant.com/dotcom-images/Perspectives/twelve_ways_SMAC_hp.jpg) no-repeat')
+			component.folder-module(style='background:url(http://www.cognizant.com/dotcom-images/Perspectives/twelve_ways_SMAC_hp.jpg) no-repeat')
 					.folder__overlay
 					.folder__content
 						p.folder__alert
@@ -24,15 +23,15 @@ section.section.folder-module-section.color-bg
 								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_collaborators')
 							span 0
 						.folder__CTA
-							i.folder__CTA--right
+							i.folder__CTA-icon.folder__CTA--right
 								svg.is-empty(viewbox='0 0 100 100')
 									use(xlink:href='#icon_triangle')
 								svg.is-filled(viewbox='0 0 100 100')
 									use(xlink:href='#icon_triangle-filled')
+								span.folder__CTA__alt-text View
 
 			each val, index in [1,2,3,4,5]
-				// This is a component
-				a.folder-module(style='background:url(http://www.cognizant.com/dotcom-images/Perspectives/twelve_ways_SMAC_hp.jpg) no-repeat')
+				component.folder-module(style='background:url(http://www.cognizant.com/dotcom-images/Perspectives/twelve_ways_SMAC_hp.jpg) no-repeat')
 					.folder__overlay
 					.folder__content
 						p.folder__alert
@@ -51,13 +50,15 @@ section.section.folder-module-section.color-bg
 								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_collaborators')
 							span 100
 						.folder__CTA
-							i.folder__CTA--left
+							i.folder__CTA-icon.folder__CTA--left
 								svg.is-empty(viewbox='0 0 100 100')
 									use(xlink:href='#icon_exit')
-							i.folder__CTA--right
+								span.folder__CTA__alt-text Remove
+							i.folder__CTA-icon.folder__CTA--right
 								svg.is-empty(viewbox='0 0 100 100')
 									use(xlink:href='#icon_triangle')
 								svg.is-filled(viewbox='0 0 100 100')
 									use(xlink:href='#icon_triangle-filled')
+								span.folder__CTA__alt-text View
 		.button__container
 			a.button--silent.is-white(href='#') View All

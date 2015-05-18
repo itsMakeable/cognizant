@@ -152,15 +152,12 @@
         text-overflow: ellipsis
     
     
-
-.flow-box__CTA--left,
-.flow-box__CTA--right,
-.flow-box__CTA--share,
-.flow-box-flyout__icon
+.flow-box__CTA-icon
     position absolute
     bottom 0rem
     size 3rem 4rem
     overflow visible
+    font-family proxLight
     svg
         transition all 0.2s ease-out
         position: absolute
@@ -177,6 +174,12 @@
             opacity 0.5
         .is-empty
             opacity 1
+        svg
+            transform translateY(-0.5rem)
+        .flow-box__CTA__alt-text
+            opacity 1
+            top 100%
+            transition opacity 0.1s cubic-bezier(.73,.88,0,1.1), top 0.3s cubic-bezier(.73,.88,0,1.1)
     
 .flow-box__CTA--left
     left 0
@@ -206,6 +209,7 @@
 .flow-box-flyout__icon.share-flyout__icon
     display inline-block
     margin 0 1.6rem
+    size 3rem
     svg
         transform none
         position static
@@ -228,18 +232,7 @@
     transition opacity 0.2s cubic-bezier(.73,.88,0,1.1) 0.05s, top 0.3s cubic-bezier(.73,.88,0,1.1)
     margin-top 0rem
     cursor: pointer
-
-.flow-box__CTA--left,
-.flow-box__CTA--right,
-.flow-box__CTA--share
-    &:hover
-        svg
-            transform translateY(-0.5rem)
-        .flow-box__CTA__alt-text
-            opacity 1
-            top 100%
-            transition opacity 0.1s cubic-bezier(.73,.88,0,1.1), top 0.3s cubic-bezier(.73,.88,0,1.1)
-
+    
 /*!**
   title: Flow Box Large
   section: Box Modules

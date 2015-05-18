@@ -31,7 +31,6 @@ $('body')
 		if keyCode == 13
 			e.preventDefault()
 
-
 $('.search-module').on 'click', '.js-dropdown-trigger',  ->
 	$parent = $(this).closest('.search-module')
 	MKBL.activationToggle($parent, 'is-active')
@@ -93,7 +92,7 @@ $(document).on 'click', (event) ->
 		$('.modal-module').addClass('is-hidden')
 		
 	if !$(event.target).closest('.js-dropdown-trigger').length
-		MKBL.activationOff($('js-dropdown-trigger'))
+		MKBL.activationOff($('.js-dropdown-trigger'))
 		$('.contenteditable-dropdown').velocity {height: 0}, 
 			duration: 600,
 			easing: [ 300, 30 ],

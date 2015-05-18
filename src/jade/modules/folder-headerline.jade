@@ -10,25 +10,28 @@ section.section.folder-headline-section.color-bg
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_linkedin')
 						| Sign In with Linkedin
-		component.folder-module.gradient1--vertical--reverse
-			//- p.folder__alert
-			//- 	span.folder__alert-number
-			//- 		span 1
-			//- 	span New Video Added
+		component.folder-module
+			.folder__overlay
+			.folder__content
+				//- p.folder__alert
+				//- 	span.folder__alert-number
+				//- 		span 1
+				//- 	span New Video Added
 
-			//- .folder__profile-pic
-			//- 	img(src='http://placehold.it/44x44')
-			.folder__data
-				p: strong Favorites
-				i.icon
-					svg(viewbox='0 0 100 100'): use(xlink:href='#icon_files')
-				span 0
-				i.icon
-					svg(viewbox='0 0 100 100'): use(xlink:href='#icon_collaborators')
-				span 0
-			.folder__CTA
-				i.folder__CTA--right
-					svg.is-empty(viewbox='0 0 100 100')
-						use(xlink:href='#icon_triangle')
-					svg.is-filled(viewbox='0 0 100 100')
-						use(xlink:href='#icon_triangle-filled')
+				.folder__profile-pic
+					img(src='http://placehold.it/44x44')
+				.folder__data
+					p: strong Favorites
+					i.icon
+						svg(viewbox='0 0 100 100'): use(xlink:href='#icon_files')
+					span 0
+					i.icon
+						svg(viewbox='0 0 100 100'): use(xlink:href='#icon_collaborators')
+					span 0
+				.folder__CTA
+					i.folder__CTA-icon.folder__CTA--right
+						svg.is-empty(viewbox='0 0 100 100')
+							use(xlink:href='#icon_triangle')
+						svg.is-filled(viewbox='0 0 100 100')
+							use(xlink:href='#icon_triangle-filled')
+						span.folder__CTA__alt-text View

@@ -64,7 +64,7 @@
 .folder__content
   position relative
   z-index: 2
-
+  height 20rem
   
 .folder__profile-pic
   position absolute
@@ -96,9 +96,10 @@
 
 .folder__CTA
   color blue
-  position relative
-  top  7.6rem
-  width 100%
+  position absolute
+  left 0rem
+  right 0rem
+  bottom 2rem
   height 5rem
   border-top 1px solid currentColor
   svg path
@@ -116,37 +117,46 @@
     margin-right 1rem
     vertical-align middle
             
-
-.folder__CTA--left,
-.folder__CTA--right,
-.folder__CTA--share
+.folder__CTA-icon
   position absolute
   bottom 0
   size 3rem
+  font-family proxLight
+  text-align center
   svg
-      path
-          stroke currentColor
-          fill transparent
+    transition all 0.2s ease-out
+    position: absolute
+    size 3rem
+    path
+        stroke currentColor
+        fill transparent
+        
+  .is-filled
+    opacity 0
+    z-index: 0
+  .is-empty
+    opacity 1
+    z-index: 1
+  &:hover
+    .is-filled
+      opacity 0.5
+    .is-empty
+      opacity 1
+    svg
+      transform translateY(-1rem)
+    .folder__CTA__alt-text
+      opacity 1
+      top 100%
+      transition opacity 0.1s cubic-bezier(.73,.88,0,1.1), top 0.3s cubic-bezier(.73,.88,0,1.1)
 
 .folder__CTA--left
     left 0
+    
 .folder__CTA--right
     right 0
-    svg
-        transition all 0.2s ease-out
-        position: absolute
-        size 3rem
-    .is-filled
-        opacity 0
-        z-index: 0
-    .is-empty
-        opacity 1
-        z-index: 1
-    &:hover
-        .is-filled
-            opacity 0.5
-        .is-empty
-            opacity 1
+
+.folder__CTA__alt-text
+  @extend .flow-box__CTA__alt-text
   
 // Beyond here is styles that are section specific 
 
@@ -221,3 +231,4 @@
       .folder__overlay
         background-color green
         background vgradient2reverse
+    
