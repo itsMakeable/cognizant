@@ -305,12 +305,20 @@
     height 56rem
     .flow-box__content
         padding-top 16rem
-        +below(768px)
+    +below(768px)
+        .flow-box__content
+            padding-top 10rem
             h5
                 padding-bottom 2rem
-    .flow-box__gradient-bg
-        //     background: linear-gradient(20deg, rgba(255,255,255,0.96) 0%,rgba(255,255,255,0.90) 62%,rgba(255,255,255,0.7) 70%, rgba(255,255,255,0) 78%)
-        background: url(unquote('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAIwCAYAAABOR6HSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAL1JREFUeNrs10EOgzAMRFGwuf+V064rkEzN2EH5SGyeMB6SCMI+xth+D9tODhAEQRCcAY/vuVfcM94oXr7yPS/LrSK8IlK8/N5juqA8OXSWa2SCSJ5rZP8/ZnLe741nfJAPwdAlc7ogkgsWgwsilc1RcjbjOW2+Na9Y3iZYyWUvVRO8k+0l3WPlD+wuFJ+z3kZlO6u+3Voy5yJX9jbqDT/hn2lvo0V+/0EQBEEQBEEQBEEQBEEQBEHwpfgRYAAX8wlyL6yh1wAAAABJRU5ErkJggg==')) repeat-x
+    +below(540px)
+        height 26rem
+        .flow-box__content
+            padding-top 7rem
+    +above(540px)
+        .flow-box__gradient-bg
+            //     background: linear-gradient(20deg, rgba(255,255,255,0.96) 0%,rgba(255,255,255,0.90) 62%,rgba(255,255,255,0.7) 70%, rgba(255,255,255,0) 78%)
+            background: url(unquote('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAIwCAYAAABOR6HSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAL1JREFUeNrs10EOgzAMRFGwuf+V064rkEzN2EH5SGyeMB6SCMI+xth+D9tODhAEQRCcAY/vuVfcM94oXr7yPS/LrSK8IlK8/N5juqA8OXSWa2SCSJ5rZP8/ZnLe741nfJAPwdAlc7ogkgsWgwsilc1RcjbjOW2+Na9Y3iZYyWUvVRO8k+0l3WPlD+wuFJ+z3kZlO6u+3Voy5yJX9jbqDT/hn2lvo0V+/0EQBEEQBEEQBEEQBEEQBEHwpfgRYAAX8wlyL6yh1wAAAABJRU5ErkJggg==')) repeat-x
+            background-position 0% 100%
     .flow-box__icon
         right 3.5rem
     .flow-box__CTA-description

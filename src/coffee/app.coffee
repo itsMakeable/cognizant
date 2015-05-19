@@ -336,7 +336,10 @@ MKBL.contenteditableDropdown = ($dropdown, $trigger) ->
 			delay: 0
 			complete: () ->
 				$(this).removeClass('is-active')
-		
+
+MKBL.contenteditableMobileScroll = ($this) ->
+	$('html, body').animate { scrollTop: $this.position().top }, 'slow'
+	console.log $this
 
 MKBL.contenteditableDropdownAutocomplete = ($this) ->
 	$trigger = $this.closest('.js-dropdown-option-parent').find('.js-dropdown-trigger')

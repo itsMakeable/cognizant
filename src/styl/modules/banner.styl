@@ -17,7 +17,7 @@
 ***/
 .banner-module
     background-size cover !important
-    background-position 50% 50% !important
+    background-position 0% 0% !important
     center(109.2rem)
     color white
     padding 5.4rem 0 5.4rem
@@ -47,7 +47,7 @@
             display inline-block
             margin 2rem
 .banner__text
-    col(7/12, offset: 1/12)
+    col(8/12)
     position relative
     z-index 1
     h4
@@ -74,15 +74,15 @@
     h4
         upcase()
         
-// +above(960px)
-//     .banner-module
-//         display table
-//         width 100%
-//     .banner__text,
-//     .banner__CTA
-//         float none
-//         display table-cell
-//         vertical-align middle
++above(960px)
+    .banner-module
+        display table
+        width 100%
+    .banner__text,
+    .banner__CTA
+        float none
+        display table-cell
+        vertical-align middle
   
 +below(960px)
     .banner-module

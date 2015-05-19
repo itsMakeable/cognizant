@@ -86,14 +86,25 @@ input[type=url],
 input[type=search],
 input[type=number],
 input[type=password],
-textarea
+textarea,
+div
   &.search__input
     padding 0 9.4rem
     height 6.4rem
     fs(1.8rem)
     color darkgray
     font-family proxReg
+    background-color white
+    +below(768px)
+      fs(1.4rem)
+      padding 0 8.6rem
 
+div.search__input
+  text-align left
+  color gray
+  font-family proxRegIt
+  line-height 6.4rem
+          
 +above(768px)
   .has-dropdown 
     input[type=text],
@@ -103,7 +114,8 @@ textarea
     input[type=search],
     input[type=number],
     input[type=password],
-    textarea
+    textarea,
+    div
       &.search__input
         padding-left 33rem
 
@@ -234,7 +246,8 @@ textarea
     input[type=search],
     input[type=number],
     input[type=password],
-    textarea
+    textarea,
+    div
       &.search__input
         padding-left 26rem
 

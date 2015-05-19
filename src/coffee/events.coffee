@@ -19,6 +19,7 @@ $('body')
 	.on 'focus', '[contenteditable]', ->
 		$this = $(this)
 		$this.data 'before', $this.html()
+		MKBL.contenteditableMobileScroll($this)
 		return $this
 	.on 'blur keyup paste input', '[contenteditable]', ->
 		$this = $(this)
@@ -106,7 +107,7 @@ $(document).on 'click', (event) ->
 	if !$(event.target).closest('.search-module .js-dropdown-trigger').length
 		MKBL.activationOff($('.search-module'))
 
-	if !$(event.target).closest('.js-video-play').length
+	if !$(event.target).closest('.js-video-play').length and !$(event.target).closest('.video-module').length
 		$('.video-module').removeClass('is-active')
 		$('.video-module').each ->
 			if $(this).hasClass('is-active')

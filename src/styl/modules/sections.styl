@@ -3,15 +3,14 @@
 /////////////////////////////////////////////////////////////////////////////
 .section
   padding 5rem 0 
- 
+
+.generic-section
+  .header--section
+  	padding-top 0rem
+  	
 .backgray-bg
 	background-color backgray
 	border-bottom 1px solid rgba(gray,0.2)
-.header--section
-	h1
-		color blue
-	p
-		color darkgray
 
 .black-bg
 	background-color #000
@@ -83,7 +82,12 @@
 		position absolute
 		top 24rem
 	
-	// +below(1619px)
+	+below(960px)
+		height auto
+		margin-bottom 3rem
+		.container.white-bg
+			position relative
+			top 0
 	// 	background-attachment: scroll !important
 	// 	background-size: 100% auto !important
 	// 	background-position: 0% 0% !important

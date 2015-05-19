@@ -7,7 +7,10 @@ gulp.task 'svgmin', ['clean:svg'], ->
 			'src/svg/**/*.svg'
 		])
 		.pipe $.plumber errorHandler: onError
-		.pipe $.cache $.svgmin()
+		.pipe $.svgmin
+			plugins: [
+				{ cleanupIDs: false }
+			]
 		.pipe gulp.dest 'app/svg/'
 		.pipe gulp.dest 'docs/styleguide/svg'
 
