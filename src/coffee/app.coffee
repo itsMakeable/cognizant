@@ -85,6 +85,7 @@ MKBL.equalheight = (container, eqHeightChildren, cutoff) ->
 			if $this.outerHeight() > t
 				t_elem = this
 				t = $this.outerHeight()
+				return t
 		$child.css('min-height',t)
 
 ###*
@@ -209,6 +210,7 @@ MKBL.flowBoxSliderSetup = ->
 			setTimeout ->
 				$slider.removeClass('locked')
 			, 750
+	return MKBL.flowBoxSlider
 
 ###*
  * the share flyout that slides open to show didn't sharing options

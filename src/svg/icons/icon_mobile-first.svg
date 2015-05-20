@@ -2,11 +2,11 @@
 <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="data_science" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 	 y="0px" viewBox="1390 850 100 100" enable-background="new 1390 850 100 100" xml:space="preserve">
-<linearGradient id="icon_mobile-first" gradientUnits="userSpaceOnUse" x1="43.376" y1="9.6236" x2="43.4046" y2="9.4617" gradientTransform="matrix(641.5848 0 0 641.5848 -26401.627 -5222.0537)">
+<linearGradient id="mobile-first" gradientUnits="userSpaceOnUse" x1="43.376" y1="9.6236" x2="43.4046" y2="9.4617" gradientTransform="matrix(641.5848 0 0 641.5848 -26401.627 -5222.0537)">
 	<stop  offset="0" style="stop-color:#6DB33F"/>
 	<stop  offset="1" style="stop-color:#72CDF4"/>
 </linearGradient>
-<path fill="url(#icon_mobile-first)" d="M1462.2,915.2c-1,0-1.6,0.8-1.6,1.6v12.9h-53.4v-59.8h53.2v3.8c0,1,0.8,1.6,1.6,1.6
+<path fill="url(#mobile-first)" d="M1462.2,915.2c-1,0-1.6,0.8-1.6,1.6v12.9h-53.4v-59.8h53.2v3.8c0,1,0.8,1.6,1.6,1.6
 	c1,0,1.6-0.8,1.6-1.6V860c0-5.6-4.6-9.9-9.9-9.9h-39.8c-5.6,0-9.9,4.6-9.9,9.9v80c0,5.6,4.6,9.9,9.9,9.9h40c5.6,0,9.9-4.6,9.9-9.9
 	v-23.1C1463.8,916,1463,915.2,1462.2,915.2z M1414,853.2h40c3.8,0,6.8,3,6.8,6.8v6.8h-53.4V860
 	C1407.2,856.2,1410.2,853.2,1414,853.2z M1453.9,946.4h-40c-3.8,0-6.8-3-6.8-6.8v-6.8h53.2v6.8

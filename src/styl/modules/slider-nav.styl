@@ -15,7 +15,7 @@
 .slider-nav-indicator
   height inherit
   width 10%
-  background: vgradient4reverse
+  background: darkblue vgradient4reverse
   // cursor grab
   transform translateX(0)
   // &:active
@@ -80,6 +80,11 @@
   cursor pointer
   .button--silent
     margin 0 3rem
+  .icon
+    transition 0.3s ease
+  &:hover
+    .icon
+      color darkblue
   &.is-left
     float left
     text-align right

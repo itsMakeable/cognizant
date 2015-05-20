@@ -1,8 +1,12 @@
 gulp = require('gulp')
 $ = require('gulp-load-plugins')(lazy: true)
-onError = require('../errors')
 
-
+onError = (error) ->
+  $.notify.onError('ERROR: <%- error.plugin %>') error
+  $.util.beep()
+  $.util.log '======= ERROR. ========\n'
+  $.util.log error
+  
 gulp.task 'img', ->
   return gulp.src([
     'src/img/**/*.jpg'

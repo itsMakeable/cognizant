@@ -79,6 +79,7 @@
   // overflow hidden
   cf()
 
+input,
 input[type=text],
 input[type=email],
 input[type=tel],
@@ -95,6 +96,7 @@ div
     color darkgray
     font-family proxReg
     background-color white
+    width 100%
     +below(768px)
       fs(1.4rem)
       padding 0 8.6rem
@@ -106,7 +108,8 @@ div.search__input
   line-height 6.4rem
           
 +above(768px)
-  .has-dropdown 
+  .has-dropdown
+    input,
     input[type=text],
     input[type=email],
     input[type=tel],
@@ -138,7 +141,7 @@ div.search__input
   
 .search__icon
   svg
-    size 2.8rem
+    size r(2.8rem)
     align()
     z-index: 1
 
@@ -148,8 +151,8 @@ div.search__input
   
 .search__icon
   left 0
-  z-index 1
-  background hgradient66
+  z-index 11
+  background green hgradient66
   transition all 0.4s ease-out
   transform translate(0%)
   &:before
@@ -167,10 +170,11 @@ div.search__input
     border-width 13px 0 13px 15px
     border-color transparent transparent transparent #6db33f
   &.is-blue
-    background vgradient3flat
+    background-color darkblue
+    background darkblue vgradient3flat
     &:before
       border-color transparent transparent transparent lightblue
-
+    
 .no-gradient,
 .lt-ie10
   .search__icon:before
@@ -239,6 +243,7 @@ div.search__input
     
 +above(540px)
   .has-smartsearch 
+    input,
     input[type=text],
     input[type=email],
     input[type=tel],

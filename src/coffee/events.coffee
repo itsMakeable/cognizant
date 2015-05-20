@@ -19,7 +19,6 @@ $('body')
 	.on 'focus', '[contenteditable]', ->
 		$this = $(this)
 		$this.data 'before', $this.html()
-		MKBL.contenteditableMobileScroll($this)
 		return $this
 	.on 'blur keyup paste input', '[contenteditable]', ->
 		$this = $(this)

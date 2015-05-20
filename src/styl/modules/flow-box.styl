@@ -36,7 +36,7 @@
 .flow-box
     display inline-block
     position relative
-    height 26rem
+    height r(26rem)
     color darkblue
     background-size cover !important
     background-position 50% 50% !important
@@ -56,22 +56,22 @@
     right 0
     width 100%
     height 100%
-    padding 2.2rem
+    padding r(2.2rem)
     
 .flow-box__content
     position relative
     height 100%
-    padding-top 6rem
+    padding-top r(6rem)
 
 .flow-box__tag
     display inline-block
     background-color blue
     color white
-    padding 0.4rem 1rem
+    padding r(0.4rem) r(1rem)
     // min-width 18rem
     position absolute
     left 0
-    top 1.1rem
+    top r(1.1rem)
     vertical-align baseline
     font-family proxLight
     fs(1.4rem)
@@ -79,14 +79,14 @@
         upcase()
     .icon
         color white
-        size 1.2rem
-        margin-right 0.6rem
+        size r(1.2rem)
+        margin-right r(0.6rem)
         vertical-align inherit
         
 .flow-box__meta-img
     display inline-block
     vertical-align middle
-    margin 0 1rem
+    margin 0 r(1rem)
     img
         border-radius 50%
 
@@ -94,7 +94,7 @@
 .flow-box__meta-text
     i
         color white
-        size 1.2rem
+        size r(1.2rem)
             
 .flow-box__meta-text
     display inline-block
@@ -108,7 +108,7 @@
     top 0
     left 0
     width 100%
-    padding 0.5rem 1rem
+    padding r(0.5rem) r(1rem)
     p
         color black
         
@@ -116,28 +116,28 @@
     color darkblue
     // margin 2rem 0 0 0
     h2
-        max-height 6.2rem
+        max-height r(6.2rem)
         overflow hidden
         +below(1024px)
             fs(2.4rem)
     h5
-        max-height 18.7rem
+        max-height r(18.7rem)
         overflow hidden
         font-family proxSbold
         
 .flow-box__CTA
     color blue
     position absolute
-    bottom 0rem
+    bottom 0
     width 100%
-    height 5rem
+    height r(5rem)
     border-top 1px solid currentColor
     cf()
 
 .flow-box__CTA-description
-    padding 1rem 0 0 0 
+    padding r(1rem) 0 0 0 
     color black 
-    height 3.5rem
+    height r(3.5rem)
     strong, b
         display block
         
@@ -155,15 +155,15 @@
     
 .flow-box__CTA-icon
     position absolute
-    bottom 0rem
-    size 3rem
+    bottom 0
+    size r(3rem)
     overflow visible
     font-family proxLight
     svg
         transition all 0.2s ease-out
         position: absolute
-        bottom 0rem
-        size 3rem
+        bottom 0
+        size r(3rem)
     .is-filled
         opacity 0
         z-index: 0
@@ -176,7 +176,7 @@
         .is-empty
             opacity 1
         svg
-            transform translateY(-1rem)
+            transform translateY(r(-1rem))
         .flow-box__CTA__alt-text
             opacity 1
             top 100%
@@ -191,17 +191,17 @@
     float right
 
 .flow-box__CTA--share
-    left 7rem
+    left r(7rem)
     +below(768px)
        display none
 
 .flow-box__share-flyout-wrapper
-    left 12rem
+    left r(12rem)
     bottom 0
     position absolute
     overflow hidden
-    width 30rem
-    height 3rem
+    width r(30rem)
+    height r(3rem)
     
 .flow-box__CTA--share.share-flyout__trigger
     &:active svg
@@ -209,8 +209,8 @@
         
 .flow-box-flyout__icon.share-flyout__icon
     display inline-block
-    margin 0 1.6rem
-    size 3rem
+    margin 0 r(1.6rem)
+    size r(3rem)
     svg
         transform none
         position static
@@ -231,7 +231,7 @@
     align()
     opacity 0
     transition opacity 0.2s cubic-bezier(.73,.88,0,1.1) 0.05s, top 0.3s cubic-bezier(.73,.88,0,1.1)
-    margin-top 0rem
+    margin-top 0
     cursor: pointer
     
 /*!**
@@ -302,36 +302,36 @@
 ***/
 
 .flow-box.flow-box--large
-    height 56rem
+    height r(56rem)
     .flow-box__content
-        padding-top 16rem
+        padding-top r(16rem)
     +below(768px)
         .flow-box__content
-            padding-top 10rem
+            padding-top r(10rem)
             h5
-                padding-bottom 2rem
+                padding-bottom r(2rem)
     +below(540px)
-        height 26rem
+        height r(26rem)
         .flow-box__content
-            padding-top 7rem
+            padding-top r(7rem)
     +above(540px)
         .flow-box__gradient-bg
             //     background: linear-gradient(20deg, rgba(255,255,255,0.96) 0%,rgba(255,255,255,0.90) 62%,rgba(255,255,255,0.7) 70%, rgba(255,255,255,0) 78%)
             background: url(unquote('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAIwCAYAAABOR6HSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAL1JREFUeNrs10EOgzAMRFGwuf+V064rkEzN2EH5SGyeMB6SCMI+xth+D9tODhAEQRCcAY/vuVfcM94oXr7yPS/LrSK8IlK8/N5juqA8OXSWa2SCSJ5rZP8/ZnLe741nfJAPwdAlc7ogkgsWgwsilc1RcjbjOW2+Na9Y3iZYyWUvVRO8k+0l3WPlD+wuFJ+z3kZlO6u+3Voy5yJX9jbqDT/hn2lvo0V+/0EQBEEQBEEQBEEQBEEQBEHwpfgRYAAX8wlyL6yh1wAAAABJRU5ErkJggg==')) repeat-x
             background-position 0% 100%
     .flow-box__icon
-        right 3.5rem
+        right r(3.5rem)
     .flow-box__CTA-description
-        height 8rem
+        height r(8rem)
     +below(540px)
         height auto
         .flow-box__CTA
             height auto
             position: relative
             bottom 0
-            padding-top 2rem
+            padding-top r(2rem)
         .flow-box__CTA-description
-            padding 1rem 0
+            padding r(1rem) 0
             display none
         .flow-box__CTA--left,
         .flow-box__CTA--right,

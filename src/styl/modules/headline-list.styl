@@ -43,11 +43,11 @@
 .headline-list__item
     overflow hidden
     height 100%
-    padding 3.8rem 0
+    padding r(3.8rem) 0
     position relative
     +above(540px)
         &:first-of-type
-            padding-top 2.8rem
+            padding-top r(2.8rem)
     &:after
         content ''
         display block
@@ -68,7 +68,7 @@
     
     h3
         color gray
-        padding-bottom 1rem
+        padding-bottom r(1rem)
         font-family proxSbold
     +below(940px)
         stack()
@@ -76,21 +76,21 @@
             display none
     
 .headline-list__item-title-img
-    width 5.8rem
+    width r(5.8rem)
     display inline-block
     vertical-align middle
-    padding 0.5rem 1.2rem 0rem 0rem
+    padding r(0.5rem) r(1.2rem) 0 0
     +below(940px)
         padding 0
         col(1/10)
     +below(620px)
         col(2/10)
-        padding 0rem 1.2rem 0rem 0.5rem
+        padding 0 r(1.2rem) 0 r(0.5rem)
     +below(420px)
         col(3/10)
 
 .lt-ie10 .headline-list__item-title-img
-    height 5.8rem
+    height r(5.8rem)
     
 .headline-list__item-title
     fs(2.8rem)
@@ -100,8 +100,8 @@
     vertical-align top
     h3
         display none
-        padding-top 0.2rem
-        padding-bottom 0.5rem
+        padding-top r(0.2rem)
+        padding-bottom r(0.5rem)
     +between(1024px, 940px)
         fs(2.4rem)
     +below(940px)
@@ -120,14 +120,14 @@
 
 .headline-list__item-content
     col(6/10)
-    min-height 9rem
+    min-height r(9rem)
     position relative
     p
         color darkgray
         align(vertical)
     +below(940px)
         col(8/10, offset: 1/10)
-        margin-top 2rem
+        margin-top r(2rem)
     +below(620px)
         stack()
 
@@ -139,11 +139,11 @@
     position absolute
     top 0
     bottom 0
-    right 0rem
+    right 0
     color blue
     img, svg
-        width 3.5rem
-        height 2.5rem
+        width r(3.5rem)
+        height r(2.5rem)
         position absolute
         top 0
         bottom 0
@@ -154,6 +154,6 @@
         display none
     
 .headline-list__footer
-    margin-top 3rem
+    margin-top r(3rem)
     text-align center
     

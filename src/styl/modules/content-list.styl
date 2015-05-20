@@ -53,12 +53,12 @@
 .content-list
     position relative
     col(6/12, gutter: 6)
-    margin-top 3rem
+    margin-top r(3rem)
     h2
         font-family proxReg
     +below(1024px)
         stack(pad:10%)
-        margin-bottom 7rem
+        margin-bottom r(7rem)
         &:last-of-type
             margin-bottom 0
     +below(768px)
@@ -67,7 +67,7 @@
         
 .content-list__header
     h2
-        padding 0.2rem 0 0.6rem
+        padding r(0.2rem) 0 r(0.6rem)
         font-family proxSbold
     p
       color gray
@@ -76,12 +76,12 @@
         fs(1.6rem)
     
 .content-list__header-border
-    height 0.2rem
+    height r(0.2rem)
     @extend .gradient5--vertical
-    margin-top 2rem 
+    margin-top r(2rem)
     
 .content-list__item
-    padding 2rem 0
+    padding r(2rem) 0
     border-bottom 1px solid backgray
     position relative
     h4
@@ -90,18 +90,18 @@
         upcase()
         i
             color gray
-            size 1.2rem
-            margin-right 0.4rem
+            size r(1.2rem)
+            margin-right r(0.4rem)
             position relative
-            top -0.1rem
+            top r(-0.1rem)
     p
         color darkblue
         display inline-block
         max-width 90%
-        height 2.8rem
+        height r(2.8rem)
         overflow hidden
         +below(540px)
-            height 2.6rem
+            height r(2.6rem)
         a
           color inherit
           border-bottom none
@@ -111,15 +111,15 @@
     position absolute
     top 0
     bottom 0
-    right 1rem
+    right r(1rem)
     margin auto
-    size 1.7rem 2.7rem
+    size r(1.7rem) r(2.7rem)
     color blue
     a
       border-bottom none
       color inherit
     
 .content-list__footer
-    margin-top 3rem
+    margin-top r(3rem)
     text-align center
     

@@ -1,9 +1,14 @@
 gulp = require('gulp')
 $ = require('gulp-load-plugins')(lazy: true)
-onError = require('../errors')
 browserSync = require('browser-sync')
 stylish = require('jshint-stylish')
 
+onError = (error) ->
+	$.notify.onError('ERROR: <%- error.plugin %>') error
+	$.util.beep()
+	$.util.log '======= ERROR. ========\n'
+	$.util.log error
+	
 gulp.task 'coffee', ->
 	gulp.src([
 		'src/coffee/**/**/*.coffee'
@@ -21,14 +26,15 @@ gulp.task 'coffee', ->
 
 gulp.task 'js-watch', ->
 	gulp.src(['./tmp/js/vendor/*.js','./tmp/js/*.js'])
+		.pipe $.plumber(errorHandler: onError)
 		.pipe($.order([
 			'tmp/js/vendor/*.js'
 			'tmp/js/*.js'
 		]))
-		# .pipe($.accord('uglify-js', {
-		# 	beautify: true
-		# 	mangle: false
-		# }))
+		.pipe($.accord('uglify-js', {
+			beautify: true
+			mangle: false
+		}))
 		.pipe $.concat 'main.js'
 		.pipe gulp.dest 'app'
 		.pipe gulp.dest('./docs/styleguide/js')

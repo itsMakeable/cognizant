@@ -121,6 +121,7 @@ MKBL.prepareField = (nextField) ->
 	else
 		MKBL.waitToShow = 0;
 	MKBL.currentField = nextField
+	return MKBL.currentField
 
 
 MKBL.moveToField = (nextField) ->
@@ -206,6 +207,7 @@ MKBL.formInit = ->
 			clearTimeout MKBL.timeout
 			MKBL.timeout = null
 		MKBL.timeout = setTimeout(deanimateEllipse, 1500)
+		return MKBL.timeout
 
 	### removes hints to selects ###
 	$('.mkbl-main-input').on 'blur', ->
@@ -214,9 +216,8 @@ MKBL.formInit = ->
 	### the form button trigger ###
 	$('.js-form-next').on 'click', (e) ->
 		MKBL.requestNextField();
-		return
 		thisField = $(this).closest('fieldset').attr('id').substring(6)
-
+		return thisField
 	$(window).on 'keydown', (e) ->
 		if $('#enter-' + MKBL.currentField).length
 			thisField = $('#enter-' + MKBL.currentField).attr('id').substring(6)

@@ -26,9 +26,9 @@ a
     <button class='button--primary' disabled>Disabled</button>
 ***/
 $button
-	line-height 4.2rem
+	line-height r(4.2rem)
 	upcase()
-	min-width 20.8rem
+	min-width r(20.8rem)
 	fs(1.6rem)
 	border none
 	color white
@@ -48,7 +48,7 @@ $button
 .button--primary,
 a.button--primary
 	@extend $button
-	padding 0 5.1rem
+	padding 0 r(5.1rem)
 
 	&:active
 		color white
@@ -64,17 +64,17 @@ a.button--primary
 		background-color blue
 	
 	&.icon--left
-		padding-left 6.8rem
-		padding-right 1.6rem
+		padding-left r(6.8rem)
+		padding-right r(1.6rem)
 		i:first-of-type
-			size 4.3rem 2.75rem
+			size r(4.3rem) r(2.75rem)
 			position absolute
 			top 0
 			bottom 0
-			left 1.3rem
+			left r(1.3rem)
 			color white
 			margin auto
-			padding 0.2rem 0.9rem 0.2rem 0
+			padding r(0.2rem) r(0.9rem) r(0.2rem) 0
 			border-right 1px solid rgba(white,0.2)
 			transition all 0.3s ease
 	&:hover
@@ -93,7 +93,7 @@ a.button--primary
 .icon.question-mark
 	color blue
 	position: relative
-	size 2.3rem
+	size r(2.3rem)
 	background-color transparent
 	transition color 0.2s ease
 	&:hover
@@ -115,7 +115,7 @@ a.button--silent
 	line-height 1.2
 	min-width 0
 	padding 0
-	margin 2.4rem 0rem
+	margin r(2.4rem) 0
 	display inline-block
 	&:link
 		color blue

@@ -3,9 +3,15 @@ gulp = require('gulp')
 $ = require('gulp-load-plugins')(lazy: true)
 browserSync = require('browser-sync')
 runSequence = require('run-sequence').use(gulp)
-onError = require('./errors')
 
+onError = (error) ->
+	$.notify.onError('ERROR: <%- error.plugin %>') error
+	$.util.beep()
+	$.util.log '======= ERROR. ========\n'
+	$.util.log error
+	
 requireDir = require('require-dir')
+
 # Require all tasks in gulp/tasks, including subfolders
 requireDir './tasks',
   recurse: true
@@ -18,11 +24,9 @@ gulp.task 'watch', ['browser-sync'], ->
 	gulp.watch [ 'src/jade/**/*.jade' ], ['jade']
 	gulp.watch [ 'src/font/**/*' ], ['font']
 	gulp.watch [ 'src/coffee/**/**/*.coffee' ], ['coffee']
-	gulp.watch [ './tmp/css/*' ], ['css']
-	gulp.watch [ './tmp/css/*' ], ['css', 'styleguide']
+	gulp.watch [ './tmp/css/*' ], ['css', 'styleguide', ]
 	gulp.watch [ './build/styleguide/**/*', './README.md' ], ['styleguide']
 	gulp.watch [ './tmp/js/**/*.js' ], ['js']
-
 
 gulp.task 'default', (cb) ->
 	runSequence 'coffee',
@@ -41,21 +45,19 @@ gulp.task 'default', (cb) ->
 
 
 gulp.task 'browser-sync', ->
-	browserSync 
-		# proxy: 'localhost:3000'
+	browserSync
 		port: 8088
 		open: false
-		tunnel: false
+		tunnel: true
 		online: true
-		logPrefix: 'Cognizant'
-		ghostMode: true
-		# logLevel: 'debug'
-		snippetOptions:
-		    ignorePaths: "templates/*.html",
-		    rule:
-		        match: /<body>/i,
-		        fn: (snippet, match) ->
-		            return snippet + match;
+		ghostMode: false
+		logConnections: true
+		notify: false
+		# snippetOptions:
+		#     rule:
+		#         match: /<body>/i,
+		#         fn: (snippet, match) ->
+		#             return snippet + match;
 		files: {
 			'app/**/*'
 			'docs/styleguide/**/*'
@@ -69,7 +71,7 @@ gulp.task 'browser-sync', ->
 
 
 gulp.task 'bs-reload', ->
-	browserSync.reload()
+	browserSync.reload
 
 gulp.task 'clear', (done) ->
   $.cache.clearAll done

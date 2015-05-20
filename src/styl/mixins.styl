@@ -2,7 +2,7 @@ font-size = 10
 fs(size)
 	if (unit(size) == 'rem')
 		font-size round(unit((font-size*size), px))
-		font-size size
+		// font-size size
 	else
 		font-size size
 
@@ -17,3 +17,11 @@ $notification-circle
 		font-family proxSbold
 		color white
 		fs(1.2rem)
+
+r(value)
+	u = unit(value);
+
+	if (u is 'rem')        
+		return unit(value*10, 'px');
+	else
+		return unit(value, u)

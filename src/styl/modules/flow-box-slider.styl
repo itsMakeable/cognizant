@@ -3,7 +3,11 @@
 .flow-box-slider-section
     +below(540px)
         .header--section
-            padding 6rem 2rem
+            padding r(6rem) r(2rem)
+    +below(1140px)
+        .slider-nav-bar,
+        .slider-nav-controls
+            display none
 
 .flow-box-slider
     overflow hidden
@@ -17,31 +21,34 @@
     +below(940px)
         .flow-box--large
             stack()
+    +below(768px)
+        .flow-box--large
+            max-width r(54rem)
+            margin-left auto !important
+            margin-right auto !important
             
 .flow-box__small-container
     col(4/12)
     cf()
     .flow-box
-        margin-bottom 4rem
+        margin-bottom r(4rem)
     +below(1140px)
         col(10/12, offset: 1/12)
         .flow-box
             margin-top 3%
             col(1/2)
-    +below(1024px)
-        display none
-    +below(540px)
+    +below(940px)
+        col(1/1)
+    +below(768px)
         stack()
         display block
+        max-width r(54rem)
+        margin-left auto !important
+        margin-right auto !important
         .flow-box
             stack()
-            margin-top 3rem
-            margin-bottom 3rem
-
-+below(1024px)
-    .slider-nav-bar,
-    .slider-nav-controls
-        display none
+            margin-top r(3rem)
+            margin-bottom r(3rem)
 
 .flow-box-slider-group
     position absolute
@@ -63,9 +70,9 @@
         transform translateX(100%)
         display block
         
-.lt-ie10
-    .flow-box-slider-section
-        .slider-nav-bar,
-        .slider-nav-indicator,
-        .slider-nav__control
-            display none
+// .lt-ie10
+//     .flow-box-slider-section
+//         .slider-nav-bar,
+//         .slider-nav-indicator,
+//         .slider-nav__control
+//             display none

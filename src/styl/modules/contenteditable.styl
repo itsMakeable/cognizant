@@ -90,7 +90,7 @@
       position absolute
       left 0
       right 0
-      bottom 0.6rem
+      bottom r(0.6rem)
     &:before
       background-color gray
       width 100%
@@ -101,11 +101,11 @@
       transition width 0.6s ease-out
       z-index: 2
     .icon
-      size 3rem
+      size r(3rem)
       right 0
-      top 3rem
+      top r(1.7rem)
       background-color white
-      padding 0.7rem
+      padding r(0.7rem)
       position absolute
       color blue
       cursor pointer
@@ -120,14 +120,17 @@
       // width 100%
     &.has-dropdown
       [contenteditable]
-        margin-right 4rem
+        margin-right r(4rem)
         +below(768px)
-          margin-right 3rem
+          margin-right r(3rem)
     .contenteditable-dropdown
       position absolute
       width 100%
       z-index: 10
-      top 5.1rem        
+      top r(5.1rem)
+      +below(768px)
+        li
+          fs(1.4rem)
   .is-filled,
   .is-active
       .icon
@@ -142,25 +145,22 @@
 
   +below(1024px)
     stack()
-    // h2
-    //   // fs(3.2rem)
     .is-editable
       .icon
-        top 0.7rem
+        top r(0.7rem)
       .contenteditable-dropdown
-        top 4.3rem
+        top r(4.3rem)
 
   +below(768px)
     .is-editable
       .icon
-        top 0.3rem
+        top r(0.3rem)
       .contenteditable-dropdown
-        top 3.3rem
+        top r(3.3rem)
         
 .contenteditable__text
-  // max-width 84rem
   margin auto
-  margin-bottom 6rem
+  margin-bottom r(6rem)
   h2
     > div
       display inline-block
@@ -169,9 +169,9 @@
     overflow hidden
   .ps-container > .ps-scrollbar-x-rail > .ps-scrollbar-x
     height 1px
-    bottom 1.1rem
+    bottom r(1.1rem)
     +below(768px)
-      bottom 0.4rem
+      bottom r(0.4rem)
 
 .contenteditable__wrapper
   overflow hidden

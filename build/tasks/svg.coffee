@@ -1,12 +1,17 @@
 gulp = require('gulp')
 $ = require('gulp-load-plugins')(lazy: true)
-onError = require('../errors')
 
+onError = (error) ->
+	$.notify.onError('ERROR: <%- error.plugin %>') error
+	$.util.beep()
+	$.util.log '======= ERROR. ========\n'
+	$.util.log error
+	
 gulp.task 'svgmin', ['clean:svg'], ->
 	gulp.src([
 			'src/svg/**/*.svg'
 		])
-		.pipe $.plumber errorHandler: onError
+		.pipe $.plumber(errorHandler: onError)
 		.pipe $.svgmin
 			plugins: [
 				{ cleanupIDs: false }

@@ -18,9 +18,9 @@
 .banner-module
     background-size cover !important
     background-position 0% 0% !important
-    center(109.2rem)
+    center(r(109.2rem))
     color white
-    padding 5.4rem 0 5.4rem
+    padding r(5.4rem) 0 r(5.4rem)
     position relative
     height 100%
     margin 0 auto
@@ -38,14 +38,14 @@
     a.button--silent
         boder-bottom 1px solid rgba(white,0.2)
         color white
-        margin 2rem 5.7rem 0 5.7rem
+        margin r(2rem) r(5.7rem) 0 r(5.7rem)
         &:hover
             color lightblue
             border-bottom 1px solid rgba(lightblue,0.2)
     +below(960px)
         .app-store-button
             display inline-block
-            margin 2rem
+            margin r(2rem)
 .banner__text
     col(8/12)
     position relative
@@ -55,11 +55,11 @@
         font-family proxReg
         upcase()
     img
-        max-width 54rem
-        margin 2rem auto 0 auto
+        max-width r(54rem)
+        margin r(2rem) auto 0 auto
     +below(960px)
         img
-            margin-bottom 2rem
+            margin-bottom r(2rem)
             
 // .banner__center
 //     align()
@@ -70,7 +70,7 @@
     text-align center
     position relative
     z-index 1
-    min-height 9rem
+    min-height r(9rem)
     h4
         upcase()
         
@@ -86,18 +86,18 @@
   
 +below(960px)
     .banner-module
-        padding 3rem 2rem 2.2rem
+        padding r(3rem) r(2rem) r(2.2rem)
         .button--primary
             float none
-            margin 1.5rem auto 0
+            margin r(1.5rem) auto 0
     .banner__text,
     .banner__CTA
         stack()
         text-align center
-        padding 1rem 0
-        min-height 10rem
+        padding r(1rem) 0
+        min-height r(10rem)
         
 .app-store-button
-    width 11rem
+    width r(11rem)
     height auto
-    margin 1rem auto
+    margin r(1rem) auto

@@ -1,7 +1,12 @@
 gulp = require('gulp')
 $ = require('gulp-load-plugins')(lazy: true)
-onError = require('../errors')
 browserSync = require('browser-sync')
+
+onError = (error) ->
+	$.notify.onError('ERROR: <%- error.plugin %>') error
+	$.util.beep()
+	$.util.log '======= ERROR. ========\n'
+	$.util.log error
 
 # Stylus Plugins
 nib = require('nib')
@@ -37,8 +42,10 @@ gulp.task 'styl', ->
 
 gulp.task 'css', ->
 	return gulp.src('./tmp/css/**/*.css')
+		.pipe $.plumber(errorHandler: onError)
 		.pipe $.concat('main.css')
-		# .pipe $.csscomb()
+		.pipe $.csscomb()
+		.pipe $.bless()
 		.pipe gulp.dest('app')
 		.pipe browserSync.reload({stream:true})
 
