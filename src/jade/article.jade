@@ -1,0 +1,112 @@
+extends layouts/layout-primary
+
+block content
+	component.container.compact-profile-box__container
+		.compact-profile-box-module
+			.compact-profile-box-bar
+				.compact-profile-box__profile-pic
+					img(src="http://placehold.it/20x20", alt="")
+				p.compact-profile-box__details
+					b Kyla Medina
+					span.hide-small &nbsp; | &nbsp;Information Technology &amp; Services
+				.compact-profile-box__aside
+					.compact-profile-box__notification
+						span 3
+					i.icon(data-flyout='notifications')
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_folders')
+					i.icon(data-flyout='settings')
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_settings')
+				
+			subcomponent.compact-profile-box__flyout.compact-profile-box__flyout--settings
+				.profile-box__indicator
+				header
+					p Settings
+					hr
+				.profile-box__button
+					button.button--silent.js-edit-profile Edit Info
+				.profile-box__button
+					a(href="/").button--silent Log Out
+			subcomponent.compact-profile-box__flyout.compact-profile-box__flyout--notifications
+				.profile-box__indicator
+				header
+					p Recent Activity
+					hr
+				.profile-box__list
+					each val, index in [1,2,3]
+						.profile-box__list-item
+							.profile-box__list-notification
+								span 1
+							p
+								strong
+									a(href='') Industry Friends
+							p Invited by Larry
+							i.icon.profile-box__list-CTA
+								svg(viewbox='0 0 100 100')
+									use(xlink:href='#icon_caret')
+				button.button--silent View All
+
+	header.cogv1_article-header.color-bg(style='background: url("http://lorempixel.com/500/1250/technics") no-repeat;')
+		.cogv1_article-header__overlay
+		.container
+			.row
+				.cogv1_article-header__tag 
+					h4 Perspective
+
+				h3 Healthcare Consumerism: 
+				h1 The Rise of the Empowered Healthcare Consumer
+				p.cogv1_article-header__meta
+					| Hank Mardukkas   |  01.29.2014
+				hr
+				p.cogv1_article-header__description
+					strong A shift to individual healthcare. 
+					| Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.Curabitur blandit tempus porttitor vestibulum id ligul.
+		component.container.main-header__search-container
+			.search-module.search-module--main
+				.search__icon__wrapper
+					.search__icon.gradient6reverse--horizontal
+						i
+							svg(viewbox='0 0 100 100')
+								use(xlink:href='#icon_search-article')
+				
+				i.icon.search__icon--right.search__CTA
+					svg(viewbox='0 0 100 100')
+						use(xlink:href='#icon_triangle')
+				input.search__input(type='text', placeholder='Search Within Folders')
+				.cogv1_search__favorites.cogv1_search__right-icon
+					svg(viewbox='0 0 100 100')
+						use(xlink:href='#icon_star')
+				.cogv1_search__download.cogv1_search__right-icon
+					svg(viewbox='0 0 100 100')
+						use(xlink:href='#icon_download')
+				subcomponent.search__share-flyout__wrapper
+					.search__share
+						.share-flyout__trigger.js-share-flyout__trigger
+							svg(width='46', height='46', viewbox='0 0 46 46', xmlns='http://www.w3.org/2000/svg')
+								title share
+								path(d='M14.22 19.716l17.25-8.784-17.25 8.784zm-.32 5.886l17.25 8.784-17.25-8.784zM43.08 8.11c0 3.374-2.735 6.11-6.11 6.11-3.374 0-6.11-2.736-6.11-6.11 0-3.375 2.736-6.11 6.11-6.11 3.375 0 6.11 2.735 6.11 6.11zM14.22 22.677c0 3.375-2.736 6.11-6.11 6.11-3.375 0-6.11-2.735-6.11-6.11 0-3.373 2.735-6.11 6.11-6.11 3.374 0 6.11 2.737 6.11 6.11zM43.08 37.224c0 3.376-2.735 6.11-6.11 6.11-3.374 0-6.11-2.734-6.11-6.11 0-3.373 2.736-6.11 6.11-6.11 3.375 0 6.11 2.737 6.11 6.11z', stroke='#000', stroke-width='2.813', fill='none', fill-rule='evenodd')
+						.search__share-flyout.gradient5--horizontal.share-flyout.js-share-flyout.is-right
+							.share-flyout__icon
+								svg(viewbox='0 0 100 100')
+									use(xlink:href='#icon_email')
+							.share-flyout__icon
+								svg(viewbox='0 0 100 100')
+									use(xlink:href='#icon_twitter')
+							.share-flyout__icon
+								svg(viewbox='0 0 100 100')
+									use(xlink:href='#icon_facebook')
+							.share-flyout__icon
+								svg(viewbox='0 0 100 100')
+									use(xlink:href='#icon_linkedin')
+				subcomponent.cogv1_search__flyout.cogv1_search__flyout--settings
+					.profile-box__indicator
+					header
+						p Settings
+						hr
+					.profile-box__button
+						button.button--silent.js-edit-profile Edit Info
+					.profile-box__button
+						a(href="/").button--silent Log Out
+	
+	section(style='height:1000px;')

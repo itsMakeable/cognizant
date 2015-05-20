@@ -1,0 +1,41 @@
+.cogv1_article-header
+	padding r(15rem) 0 r(20rem) 0
+	background-size cover !important
+	background-position 50% 50% !important
+	position relative
+	h1
+		text-align left
+		padding-bottom r(5rem)
+		max-width r(71rem)
+		fs(5.8rem)
+	h3
+		padding-bottom r(1rem)
+	hr
+		border-bottom 1px solid blue
+		padding-top r(1rem)
+		margin-bottom r(3rem)
+	
+
+.cogv1_article-header__tag
+	background-color blue
+	color white
+	display inline-block
+	padding r(0.5rem) r(1rem)
+	margin-bottom r(2rem)
+	h4
+		upcase()
+
+.cogv1_article-header__meta
+	font-family proxReg
+
+.cogv1_article-header__description
+	font-family proxLight
+	display inline-block
+	max-width r(71rem)
+	strong
+		display block
+
+.cogv1_article-header__overlay
+	@extend $abolute-cover
+	background-color deepblack
+	opacity 0.6
