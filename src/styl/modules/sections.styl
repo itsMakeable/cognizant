@@ -2,11 +2,11 @@
 // This is somewhat of a shame.css file http://csswizardry.com/2013/04/shame-css/
 /////////////////////////////////////////////////////////////////////////////
 .section
-  padding 5rem 0 
+  padding r(5rem) 0 
 
 .generic-section
   .header--section
-  	padding-top 0rem
+  	padding-top 0
   	
 .backgray-bg
 	background-color backgray
@@ -46,9 +46,9 @@
 			content ''
 			display block
 			width 100%
-			height 1.9rem
+			height r(1.9rem)
 			background: url(svg/ui/bar_polygon.svg) no-repeat
-			background-size 100% 1.9rem
+			background-size 100% r(1.9rem)
 			background-position 50% 0%
 			+above(540px)			
 				position relative
@@ -56,35 +56,32 @@
 			+below(1140px)
 				position absolute
 				left 0
-				background-size auto 1.9rem
+				background-size auto r(1.9rem)
 	.mkbl-form
-		padding-top 10rem
-		padding-bottom 10rem
+		padding-top r(10rem)
+		padding-bottom r(10rem)
 	
 
 			
 .height-overflow-section.has-container-overflow
-	// + .section
-	// 	padding-top 30rem
-	// +above(1620px)
-	height 57rem
+	height r(57rem)
 	overflow visible
 	position: relative
 	background-attachment: fixed !important
 	background-size: cover !important
 	background-position: 50% 0% !important
-	margin-bottom 30rem
+	margin-bottom r(30rem)
 	.container.white-bg
 		left 0
 		right 0
 		margin auto
 		width 100%
 		position absolute
-		top 24rem
+		top r(24rem)
 	
 	+below(960px)
 		height auto
-		margin-bottom 3rem
+		margin-bottom r(3rem)
 		.container.white-bg
 			position relative
 			top 0

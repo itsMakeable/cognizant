@@ -24,8 +24,8 @@ gulp.task 'watch', ['browser-sync'], ->
 	gulp.watch [ 'src/jade/**/*.jade' ], ['jade']
 	gulp.watch [ 'src/font/**/*' ], ['font']
 	gulp.watch [ 'src/coffee/**/**/*.coffee' ], ['coffee']
-	gulp.watch [ './tmp/css/*' ], ['css', 'styleguide', ]
-	gulp.watch [ './build/styleguide/**/*', './README.md' ], ['styleguide']
+	# gulp.watch [ './tmp/css/*' ], ['css', 'styleguide', ]
+	# gulp.watch [ './build/styleguide/**/*', './README.md' ], ['styleguide']
 	gulp.watch [ './tmp/js/**/*.js' ], ['js']
 
 gulp.task 'default', (cb) ->
@@ -48,7 +48,7 @@ gulp.task 'browser-sync', ->
 	browserSync
 		port: 8088
 		open: false
-		tunnel: true
+		tunnel: false
 		online: true
 		ghostMode: false
 		logConnections: true

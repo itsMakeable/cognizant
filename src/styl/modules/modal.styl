@@ -45,7 +45,7 @@
 .modal-module
     background-color rgba(white,0.96)
     padding 3% 0
-    center(70rem)
+    center(r(70rem))
     position: absolute
     z-index: 999
     left 0
@@ -55,13 +55,13 @@
     text-align center
     transition opacity 0.1s linear, transform 0.4s cubic-bezier(.13,.23,0,1.2), visibility 0s linear 0s
     opacity: 1
-    transform translateY(7rem)
+    transform translateY(r(7rem))
     &.is-reverse
-      transform translateY(-7rem)
+      transform translateY(r(-7rem))
     &.is-hidden
       visibility hidden
       opacity: 0
-      transform translateY(0rem)
+      transform translateY(0)
       transition opacity 0.2s linear 0.2s, transform 0.4s ease-out, visibility 0s linear 0.4s
 
     +below(716px)
@@ -69,10 +69,10 @@
     p
         color black
         max-width 100%
-        padding-top 1rem
+        padding-top r(1rem)
         +below(420px)
             fs(1.2rem)
-            padding-top 0.6rem
+            padding-top r(0.6rem)
             
     .subheader
         color black
@@ -86,16 +86,16 @@
     width: 0
     height: 0
     border-style: solid
-    border-width: 13px 11px 0 11px
+    border-width: r(1.3rem) r(1.1rem) 0 r(1.1rem)
     border-color: rgba(white,0.94) transparent transparent transparent
     position: absolute
-    bottom -1.4rem
+    bottom r(-1.4rem)
     left 0
     right 0
     margin auto
     transition 0s linear
 .is-reverse .modal-tip
-      border-width: 0 11px 13px 11px
+      border-width: 0 r(1.1rem) r(1.3rem) r(1.1rem)
       border-color: transparent transparent rgba(white,0.94) transparent
 
 .modal__six-col
@@ -105,16 +105,16 @@
     
 .modal__three-col
     col(1/3)
-    margin-top 4rem
+    margin-top r(4rem)
     text-align center
     pointer cursor
     border-bottom none
     +below(420px)
         stack()
-        margin 2rem 0 1rem 0
+        margin r(2rem) 0 r(1rem) 0
     .icon
-        size 2.6rem
-        margin-right 1.7rem
+        size r(2.6rem)
+        margin-right r(1.7rem)
         display inline-block
         vertical-align middle
     span,
@@ -127,12 +127,12 @@
         
 
 .modal-close
-  size 4rem
+  size r(4rem)
   position fixed
-  top 6rem
+  top r(6rem)
   right 0
   
 .lt-ie10
   .modal-module
     margin 0 auto !important
-    width 70rem
+    width r(70rem)

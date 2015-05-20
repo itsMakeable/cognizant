@@ -89,10 +89,10 @@
   
 .profile-box
   position relative
-  width 34rem
-  height 39rem
+  width r(34rem)
+  height r(39rem)
   background-color: white
-  padding 2rem 0 4rem
+  padding r(2rem) 0 r(4rem)
   overflow hidden
   z-index 2
   
@@ -102,51 +102,51 @@
 .profile-box__profile-pic
   overflow hidden
   border-radius 50%
-  size 11rem
+  size r(11rem)
 
 .profile-box__profile-icon
-  size 2.6rem
+  size r(2.6rem)
   background-color gray
   color white
-  border-radius 0.2rem
+  border-radius r(0.2rem)
   position absolute
-  top 8.4rem
-  left 8.4rem
+  top r(8.4rem)
+  left r(8.4rem)
   svg
-    size 1.8rem
+    size r(1.8rem)
     align()
 
 .profile-box__text
-  padding 0 5.4rem
-  margin-top 14rem
+  padding 0 r(5.4rem)
+  margin-top r(14rem)
   text-align left
   color black
   h3
     color gray
   p
-    padding 2rem 0
+    padding r(2rem) 0
   
 .profile-box__data
-  padding 0 3.2rem
+  padding 0 r(3.2rem)
   color black
   text-align left
   > div
-    padding 0.3rem 0
+    padding r(0.3rem) 0
   small
     display inline-block
     vertical-align middle
   .icon
-    size 1.1rem
-    margin-right 2rem
+    size r(1.1rem)
+    margin-right r(2rem)
     vertical-align middle
 
 .profile-box__aside
   position absolute
-  right 2rem
-  top 2rem
+  right r(2rem)
+  top r(2rem)
   .icon
-    size 4.5rem
-    padding 1rem
+    size r(4.5rem)
+    padding r(1rem)
     color blue
     display block
     cursor pointer
@@ -157,8 +157,8 @@
 .profile-box__notification
   @extend $notification-circle
   position absolute
-  top 5rem
-  left 0rem
+  top r(5rem)
+  left 0
   z-index: 1
 
 
@@ -171,22 +171,22 @@
   p
     fs(1.4rem)
   hr
-    border-bottom 1px solid gray
-    margin-bottom 1rem
-    padding-top 0.2rem
+    border-bottom r(0.1rem) solid gray
+    margin-bottom r(1rem)
+    padding-top r(0.2rem)
   .button--silent
     color blue
     padding 0
-    margin 1rem 0
+    margin r(1rem) 0
     
 .profile-box-flyout
   background-color backgray
   position absolute
-  padding 2.6rem 1.8rem 1.8rem 4rem
-  width 33rem
+  padding r(2.6rem) r(1.8rem) r(1.8rem) r(4rem)
+  width r(33rem)
   top 0
-  left 34rem
-  max-height 39rem
+  left r(34rem)
+  max-height r(39rem)
   text-align center
   transform-origin 0% 50%
   animation slideshufflereverse 1s cubic-bezier(.73,.49,.28,1.21) 0s 1 
@@ -197,7 +197,7 @@
     animation slideshuffle 1.1s cubic-bezier(.73,.49,.28,1.21) 0s 1 
     animation-fill-mode forwards
   &.is-holding
-    transform scale(1) translateX(0rem)
+    transform scale(1) translateX(0)
     animation none
     box-shadow: 1px 2px 2px -1px rgba(black,.2)
     z-index: 999
@@ -222,8 +222,8 @@
 
 .profile-box__list-item
   position relative
-  padding-top 1rem
-  padding-bottom 1rem
+  padding-top r(1rem)
+  padding-bottom r(1rem)
   text-align left
   display block
   border-bottom none
@@ -243,13 +243,13 @@
 .profile-box__list-notification
   @extend $notification-circle
   position absolute
-  left -2.7rem
-  top 1rem
+  left r(-2.7rem)
+  top r(1rem)
   
 .profile-box__list-CTA
   align(vertical)
   right 0
-  size 2rem
+  size r(2rem)
   color blue
   transition 0.3s ease-out
 
@@ -258,17 +258,17 @@
   width: 0
   height: 0
   border-style: solid
-  border-width: 1.3rem 1.3rem 1.3rem 0
+  border-width: r(1.3rem) r(1.3rem) r(1.3rem) 0
   border-color: transparent backgray transparent transparent
-  left -1.2rem
+  left r(-1.2rem)
   
 .profile-box-flyout--settings
   .profile-box__indicator
-    top 2.9rem
+    top r(2.9rem)
     
 .profile-box-flyout--notifications
   .profile-box__indicator
-    top 7.5rem
+    top r(7.5rem)
     
 /////////////////////////////////////////////////
 // HEADLINE NEXT TO PROFILE BOX ON DESKTOP //////
@@ -289,7 +289,7 @@
       align(vertical)
   +below(1024px)
     stack()
-    height 30rem !important
+    height r(30rem) !important
     h4, h5
       text-align center
     .headline-push__center

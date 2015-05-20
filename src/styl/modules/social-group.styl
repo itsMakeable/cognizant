@@ -116,23 +116,23 @@
     text-align center
 
 .social-group__hr
-  height 1px
+  height r(0.1rem)
   // @extend .gradient5--horizontal
   background-color blue
   position relative
-  top 30px
+  top r(3rem)
   z-index 0
   width 100%
 
 .social-group__hr-caret
-  size 2.6rem
+  size r(2.6rem)
   position: absolute
-  top 30px
+  top r(3rem)
   left 0
   right 0
   margin auto
   color blue
-  transform translateX(0rem)
+  transform translateX(0)
   transition 0.5s cubic-bezier(.73,.49,.28,1.21)
   &.is-long-distance
     transition 0.5s cubic-bezier(.73,.88,0,1.1) 0.02s
@@ -164,8 +164,8 @@
       transform translateX(230%)
 .social-group__icon
   text-align center
-  height 8.2rem
-  width 24.6rem
+  height r(8.2rem)
+  width r(24.6rem)
   position relative
   overflow hidden
   color gray
@@ -175,50 +175,50 @@
     display none
   &.facebook
     background transparent url(svg/social-slider/social__facebook.svg) no-repeat
-    background-size 24.6rem 8.2rem
+    background-size r(24.6rem) r(8.2rem)
     background-position 50% 50%
   &.twitter
     background transparent url(svg/social-slider/social__twitter.svg) no-repeat
-    background-size 24.6rem 8.2rem
+    background-size r(24.6rem) r(8.2rem)
     background-position 50% 50%
   &.linkedin
     background transparent url(svg/social-slider/social__linkedin.svg) no-repeat
-    background-size 24.6rem 8.2rem
+    background-size r(24.6rem) r(8.2rem)
     background-position 50% 50%
   +below(940px)
-    height 8.2rem * 0.7
-    width 24.6rem * 0.7
+    height r(8.2rem) * 0.7
+    width r(24.6rem) * 0.7
     &.facebook
       background transparent url(svg/social-slider/social__facebook.svg) no-repeat
-      background-size (24.6rem * 0.7) (8.2rem * 0.7)
+      background-size (r(24.6rem) * 0.7) (r(8.2rem) * 0.7)
       background-position 50% 50%
     &.twitter
       background transparent url(svg/social-slider/social__twitter.svg) no-repeat
-      background-size (24.6rem * 0.7) (8.2rem * 0.7)
+      background-size (r(24.6rem) * 0.7) (r(8.2rem) * 0.7)
       background-position 50% 50%
     &.linkedin
       background transparent url(svg/social-slider/social__linkedin.svg) no-repeat
-      background-size (24.6rem * 0.7) (8.2rem * 0.7)
+      background-size (r(24.6rem) * 0.7) (r(8.2rem) * 0.7)
       background-position 50% 50%
   +below(768px)
-    height 8.2rem * 0.6
-    width 24.6rem * 0.6
+    height r(8.2rem) * 0.6
+    width r(24.6rem) * 0.6
     &.facebook
       background transparent url(svg/social-slider/social__facebook.svg) no-repeat
-      background-size (24.6rem * 0.6) (8.2rem * 0.6)
+      background-size (r(24.6rem) * 0.6) (r(8.2rem) * 0.6)
       background-position 50% 50%
     &.twitter
       background transparent url(svg/social-slider/social__twitter.svg) no-repeat
-      background-size (24.6rem * 0.6) (8.2rem * 0.6)
+      background-size (r(24.6rem) * 0.6) (r(8.2rem) * 0.6)
       background-position 50% 50%
     &.linkedin
       background transparent url(svg/social-slider/social__linkedin.svg) no-repeat
-      background-size (24.6rem * 0.6) (8.2rem * 0.6)
+      background-size (r(24.6rem) * 0.6) (r(8.2rem) * 0.6)
       background-position 50% 50%
   +below(540px)
     height auto
-    width 4rem
-    margin 0 1rem
+    width r(4rem)
+    margin 0 r(1rem)
     &.facebook,
     &.twitter,
     &.linkedin
@@ -238,11 +238,11 @@
       right 0
     .social-group__icon-slide
       right 3%
-      transform translateX(-8.2rem)
+      transform translateX(r(-8.2rem))
       +below(940px)
-        transform translateX(-8.2rem * 0.7)
+        transform translateX(r(-8.2rem) * 0.7)
       +below(768px)
-        transform translateX(-8.2rem * 0.6)
+        transform translateX(r(-8.2rem) * 0.6)
   &.is-active 
     color blue
     transition 0.3s linear 0.1s
@@ -254,37 +254,36 @@
 .social-group__icon.is-active
   + .social-group__icon
     .social-group__icon-slide
-      transform translateX(-8.2rem)
+      transform translateX(r(-8.2rem))
       +below(940px)
-        transform translateX(-8.2rem * 0.7)
+        transform translateX(r(-8.2rem) * 0.7)
       +below(768px)
-        transform translateX(-8.2rem * 0.6)
+        transform translateX(r(-8.2rem) * 0.6)
   
 .social-group__icon-slide
-  height 8.2rem 
-  width 24.6rem
+  height r(8.2rem) 
+  width r(24.6rem)
   position absolute
   z-index -1
   bottom 0
   left 0
   right 0
-  // top -0.1rem
   margin auto
   background url(svg/social-slider/social__bg--middle.svg) no-repeat
-  background-size 24.6rem 8.2rem
+  background-size r(24.6rem) r(8.2rem)
   background-position 50% 50%
-  transform translateX(8.2rem)
+  transform translateX(r(8.2rem))
   transition all 0.35s ease 0s
   +below(940px)
-    height 8.2rem * 0.69
-    width 24.6rem * 0.69
-    background-size (24.6rem * 0.69) (8.2rem * 0.69)
-    transform translateX((8.2rem * 0.69))
+    height r(8.2rem) * 0.69
+    width r(24.6rem) * 0.69
+    background-size (r(24.6rem) * 0.69) (r(8.2rem) * 0.69)
+    transform translateX((r(8.2rem) * 0.69))
   +below(768px)
-    height 8.2rem * 0.59
-    width 24.6rem * 0.59
-    background-size (24.6rem * 0.59) (8.2rem * 0.59)
-    transform translateX((8.2rem * 0.59))
+    height r(8.2rem) * 0.59
+    width r(24.6rem) * 0.59
+    background-size (r(24.6rem) * 0.59) (r(8.2rem) * 0.59)
+    transform translateX((r(8.2rem) * 0.59))
   +below(540px)
     display none
 .is-active
@@ -302,15 +301,15 @@
     
 .social-group__group
   col(4/12)
-  padding 0 1.6rem
+  padding 0 r(1.6rem)
   
 .social-group__content
-  padding 8rem 0rem 2rem
+  padding r(8rem) 0 r(2rem)
   color darkgray
   background transparent
   text-align left
   +below(1140px)
-    padding 8rem 0.5rem 0rem
+    padding r(8rem) r(0.5rem) 0
   small
     color gray
     fs(1.4rem)
@@ -330,7 +329,7 @@
     h2
       fs(1.9rem)
   +below(680px)
-    padding 1rem 0rem 2rem
+    padding r(1rem) 0 r(2rem)
     h2
       height auto
 
@@ -339,12 +338,12 @@
 
 .social-group__groups--small
   position relative
-  margin-top 7rem
-  min-height 25rem
+  margin-top r(7rem)
+  min-height r(25rem)
   +above(680px)    
     display none
   .social-group__groups
-    margin-bottom 1rem
+    margin-bottom r(1rem)
     transform translateX(40rem)
     +below(680px)
       stack(pad: 16%)
@@ -354,7 +353,7 @@
       &.is-active
         position relative
         opacity 1
-        transform translateX(0rem)
+        transform translateX(0)
         transition opacity 0.2s linear 0.05s, transform 0.68s cubic-bezier(.73,.88,0,1.02) 0s
         ~ .social-group__groups
           transform translateX(-40rem)
@@ -370,7 +369,7 @@
     top 0
     left 0
     .social-group__group
-      transform translateX(30rem)
+      transform translateX(r(30rem))
       opacity 0
       transition opacity 0.3s linear, transform 0.5s cubic-bezier(.73,.88,0,1.1)
   &.is-active
@@ -378,11 +377,11 @@
     z-index: 10
     .social-group__group
       opacity 1
-      transform translateX(0rem)
+      transform translateX(0)
       transition opacity 0.2s linear 0.2s, transform 0.45s cubic-bezier(.73,.88,0,1.1) 0.12s
     ~ .social-group__groups--text
       .social-group__group
-        transform translateX(-30rem)
+        transform translateX(r(-30rem))
     &.is-long-distance
       .social-group__group
         transition opacity 0.2s linear 0.2s, transform 0.5s cubic-bezier(.73,.88,0,1.1) 0.05s

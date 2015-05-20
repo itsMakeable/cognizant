@@ -9,7 +9,7 @@
     </div>
 ***/
 .slider-nav-bar
-  height 0.5rem
+  height r(0.5rem)
   background-color gray
   
 .slider-nav-indicator
@@ -48,23 +48,23 @@
 .slider-nav-controls
   cf()
   float none
-  margin 3rem auto 0
+  margin r(3rem) auto 0
   position: relative
-  max-width 26rem
+  max-width r(26rem)
   .icon
-    size 2rem
+    size r(2rem)
     color blue
     position: absolute
-    right 0.6rem
-    top -0.1rem
+    right r(0.6rem)
+    top r(-0.1rem)
     &.is-right
       transform rotate(180deg)
       transform-origin 50% 50%
       left 0
 
 .slider-nav-controls__divider
-  height 1.5rem
-  width 1px
+  height r(1.5rem)
+  width r(0.1rem)
   background-color gray
   display inline-block
   margin auto
@@ -79,7 +79,7 @@
   text-align center
   cursor pointer
   .button--silent
-    margin 0 3rem
+    margin 0 r(3rem)
   .icon
     transition 0.3s ease
   &:hover
@@ -94,7 +94,7 @@
     float right
     text-align left
     .button--silent
-      margin-left 2.2rem
+      margin-left r(2.2rem)
   &.is-disabled
     .icon,
     .button--silent

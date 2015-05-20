@@ -90,8 +90,8 @@ input[type=password],
 textarea,
 div
   &.search__input
-    padding 0 9.4rem
-    height 6.4rem
+    padding 0 r(9.4rem)
+    height r(6.4rem)
     fs(1.8rem)
     color darkgray
     font-family proxReg
@@ -99,13 +99,13 @@ div
     width 100%
     +below(768px)
       fs(1.4rem)
-      padding 0 8.6rem
+      padding 0 r(8.6rem)
 
 div.search__input
   text-align left
   color gray
   font-family proxRegIt
-  line-height 6.4rem
+  line-height r(6.4rem)
           
 +above(768px)
   .has-dropdown
@@ -120,7 +120,7 @@ div.search__input
     textarea,
     div
       &.search__input
-        padding-left 33rem
+        padding-left r(33rem)
 
 .search__input::-webkit-input-placeholder
   font-family proxRegIt
@@ -133,7 +133,7 @@ div.search__input
 .search__icon,
 .search__icon__wrapper,
 .search__share
-  size 6.4rem
+  size r(6.4rem)
   display: block
   position absolute
   top 0
@@ -147,7 +147,7 @@ div.search__input
 
 .search__icon__wrapper
   overflow: hidden
-  width 7.6rem
+  width r(7.6rem)
   
 .search__icon
   left 0
@@ -159,7 +159,7 @@ div.search__input
     content ''
     display block
     position absolute
-    right -1.3rem
+    right r(-1.3rem)
     z-index: -1
     top 0
     bottom 0
@@ -167,7 +167,7 @@ div.search__input
     width 0
     height 0
     border-style solid
-    border-width 13px 0 13px 15px
+    border-width r(1.3rem) 0 r(1.3rem) r(1.5rem)
     border-color transparent transparent transparent #6db33f
   &.is-blue
     background-color darkblue
@@ -184,13 +184,13 @@ div.search__input
   background-color blue
   right 0
   overflow hidden
-  width 6.4rem
+  width r(6.4rem)
   .share-flyout__trigger
-    size 6.4rem
+    size r(6.4rem)
     svg
-      size 2.8rem
+      size r(2.8rem)
       align(vertical)
-      right 2rem
+      right r(2rem)
       z-index: 1
   svg
     path 
@@ -202,7 +202,7 @@ div.search__input
     background-color darkblue
   &.is-active
     background-color rgba(blue,0.4)
-    width 33rem
+    width r(33rem)
     svg
       path 
         fill white
@@ -211,26 +211,26 @@ div.search__input
       background-color rgba(blue,0.6)
 
 .search__share-flyout
-  padding-right 6.4rem
+  padding-right r(6.4rem)
   top 0
   display inline-block
   position absolute
   right 0
   transform translateX(100%)
   .share-flyout__icon
-    size 6.4rem
+    size r(6.4rem)
     border-right 1px solid rgba(darkblue, 0.2)
 .search__share.is-active
   .search__share-flyout
-    width 33rem
+    width r(33rem)
     transform translateX(0%)
 
 .search__smart-search
-  width 16rem
-  height 2rem
+  width r(16rem)
+  height r(2rem)
   color blue
   position: absolute
-  left 8rem
+  left r(8rem)
   top 0
   bottom 0
   margin auto
@@ -254,23 +254,23 @@ div.search__input
     textarea,
     div
       &.search__input
-        padding-left 26rem
+        padding-left r(26rem)
 
 .search__icon--right
-  right 2rem
-  size 2.8rem
+  right r(2rem)
+  size r(2.8rem)
   position absolute
 
 .search__CTA
   align(vertical)
-  right 3rem
+  right r(3rem)
   opacity 0
   transition 0.3s ease-out
   color blue
   +below(1024px)
     display none
   &.is-active
-    right 2rem
+    right r(2rem)
     opacity 1
   svg
     position absolute
