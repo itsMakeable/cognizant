@@ -528,6 +528,86 @@
 			}
 		},
 		{
+			"file": "src/styl/base.styl",
+			"settings":
+			{
+				"buffer_size": 1343,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/styl/modules/article-header.styl",
+			"settings":
+			{
+				"buffer_size": 761,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/styl/modules/search.styl",
+			"settings":
+			{
+				"buffer_size": 9381,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/jade/index.jade",
+			"settings":
+			{
+				"buffer_size": 2726,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/jade/index-logged-in.jade",
+			"settings":
+			{
+				"buffer_size": 4676,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/styl/typography.styl",
+			"settings":
+			{
+				"buffer_size": 1960,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/styl/modules/share-flyout.styl",
+			"settings":
+			{
+				"buffer_size": 2416,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/jade/article.jade",
+			"settings":
+			{
+				"buffer_size": 4436,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build/gulp.coffee",
+			"settings":
+			{
+				"buffer_size": 1666,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/styl/modules/compact-profile-box.styl",
+			"settings":
+			{
+				"buffer_size": 5392,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "src/coffee/app.coffee",
 			"settings":
 			{
@@ -536,114 +616,26 @@
 			}
 		},
 		{
-			"file": "src/styl/modules/header.styl",
+			"file": "src/styl/modules/modal.styl",
 			"settings":
 			{
-				"buffer_size": 3994,
+				"buffer_size": 9982,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/styl/modules/flow-box.styl",
+			"file": "src/styl/modules/profile-box.styl",
 			"settings":
 			{
-				"buffer_size": 11407,
+				"buffer_size": 7947,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/styl/modules/search.styl",
+			"file": "src/styl/modules/search-dropdown.styl",
 			"settings":
 			{
-				"buffer_size": 7349,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "build/cognizant.TODO",
-			"settings":
-			{
-				"buffer_size": 59,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/PlainTasks/PlainTasks (OSX).sublime-settings",
-			"settings":
-			{
-				"buffer_size": 1489,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/jade/modules/social-slider.jade",
-			"settings":
-			{
-				"buffer_size": 2215,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/styl/modules/sections.styl",
-			"settings":
-			{
-				"buffer_size": 2094,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/styl/modules/fullscreen-overlay.styl",
-			"settings":
-			{
-				"buffer_size": 519,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/coffee/events.coffee",
-			"settings":
-			{
-				"buffer_size": 4159,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/styl/modules/video.styl",
-			"settings":
-			{
-				"buffer_size": 2381,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/jade/modules/banner-cognizant-connections.jade",
-			"settings":
-			{
-				"buffer_size": 414,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/jade/modules/banner-perspectives-app.jade",
-			"settings":
-			{
-				"buffer_size": 521,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/jade/index-logged-in.jade",
-			"settings":
-			{
-				"buffer_size": 4661,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/User/PlainTasks.sublime-settings",
-			"settings":
-			{
-				"buffer_size": 172,
+				"buffer_size": 1471,
 				"line_ending": "Unix"
 			}
 		}
@@ -710,37 +702,54 @@
 	"expanded_folders":
 	[
 		"/Users/Kyla/Sites/cognizant",
-		"/Users/Kyla/Sites/cognizant/build",
-		"/Users/Kyla/Sites/cognizant/src",
-		"/Users/Kyla/Sites/cognizant/src/font"
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols"
 	],
 	"file_history":
 	[
-		"/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/PlainTasks/tasks-eighties-colored.hidden-tmTheme",
-		"/Users/Kyla/Sites/cognizant/build/cognizant.TODO",
-		"/Users/Kyla/Sites/cognizant/src/styl/inputs.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/modal.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/buttons.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/header.styl",
+		"/Users/Kyla/Sites/cognizant/build/gulp.coffee",
+		"/Users/Kyla/Sites/cognizant/src/jade/index.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/video.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/mixins.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/social-slider.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/three-group.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/sections.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/slider-nav.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/social-group.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/index-logged-in.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/fullscreen-overlay.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/search.styl",
+		"/Users/Kyla/Sites/cognizant/cognizant.sublime-project",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/compact-profile-box.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/settings.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/typography.styl",
+		"/Users/Kyla/Sites/cognizant/src/coffee/app.coffee",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/flow-box.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/inputs.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/index.styl",
+		"/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/PlainTasks/PlainTasks (OSX).sublime-settings",
+		"/Users/Kyla/Sites/cognizant/build/tasks/styl.coffee",
+		"/Users/Kyla/Sites/cognizant/src/jade/layouts/layout-primary.jade",
+		"/Users/Kyla/Sites/cognizant/src/coffee/events.coffee",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/banner-cognizant-connections.jade",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/banner-perspectives-app.jade",
+		"/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/User/PlainTasks.sublime-settings",
+		"/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/PlainTasks/tasks-eighties-colored.hidden-tmTheme",
+		"/Users/Kyla/Sites/cognizant/build/cognizant.TODO",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/modal.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/buttons.styl",
 		"/Users/Kyla/Sites/cognizant/src/jade/modules/folders-module.jade",
 		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_create-folders.svg",
 		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_save-articles.svg",
 		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_searches.svg",
 		"/Users/Kyla/Sites/cognizant/README.md",
-		"/Users/Kyla/Sites/cognizant/src/jade/index-logged-in.jade",
 		"/Users/Kyla/Sites/cognizant/src/jade/modules/flowbox-slider.jade",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/folder.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/fullscreen-overlay.styl",
 		"/Users/Kyla/Sites/cognizant/src/jade/modules/edit-profile-overlay.jade",
 		"/Users/Kyla/Sites/cognizant/src/jade/modules/three-group.jade",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/contenteditable.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/content-list.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/search.styl",
-		"/Users/Kyla/Sites/cognizant/src/jade/index.jade",
 		"/Users/Kyla/Sites/cognizant/app/svg/icons/icon_change-centers.svg",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/flow-box.styl",
 		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_data-science.svg",
 		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_cognizanti.svg",
 		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_change-centers.svg",
@@ -765,36 +774,22 @@
 		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_smart-search.svg",
 		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_save-article.svg",
 		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_create-folder.svg",
-		"/Users/Kyla/Sites/cognizant/src/jade/layouts/layout-primary.jade",
 		"/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/Gutter Color/GutterColor.sublime-settings",
 		"/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/User/GutterColor.sublime-settings",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/profile-box.styl",
-		"/Users/Kyla/Sites/cognizant/src/coffee/events.coffee",
-		"/Users/Kyla/Sites/cognizant/src/coffee/app.coffee",
 		"/Users/Kyla/Sites/cognizant/src/styl/base.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/share-flyout.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/video.styl",
 		"/Users/Kyla/Sites/cognizant/build/styleguide/index.jade",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/social-group.styl",
 		"/Users/Kyla/Sites/cognizant/app/index.html",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/search-dropdown.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/three-group.styl",
-		"/Users/Kyla/Sites/cognizant/src/jade/modules/social-slider.jade",
 		"/Users/Kyla/Sites/cognizant/app/index-logged-in.html",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/compact-profile-box.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/footer.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/forms.styl",
-		"/Users/Kyla/Sites/cognizant/build/gulp.coffee",
 		"/Users/Kyla/Sites/cognizant/src/jade/modules/form.jade",
 		"/Users/Kyla/Sites/cognizant/src/styl/gradients.styl",
-		"/Users/Kyla/Sites/cognizant/cognizant.sublime-project",
-		"/Users/Kyla/Sites/cognizant/src/styl/mixins.styl",
-		"/Users/Kyla/Sites/cognizant/src/jade/modules/banner-perspectives-app.jade",
-		"/Users/Kyla/Sites/cognizant/src/jade/modules/banner-cognizant-connections.jade",
 		"/Users/Kyla/.profile",
 		"/Users/Kyla/Sites/cognizant/src/jade/modules/video-module.jade",
-		"/Users/Kyla/Sites/cognizant/src/styl/index.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/flow-box-slider.styl",
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_close.svg",
 		"/Users/Kyla/Sites/cognizant/src/jade/edit-profile.jade",
@@ -805,10 +800,8 @@
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_filter.svg",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/folder-section.styl",
 		"/Users/Kyla/Sites/cognizant-prototype/node_modules/gulp-imagemin/node_modules/imagemin/node_modules/imagemin-pngquant/node_modules/pngquant-bin/node_modules/bin-wrapper/node_modules/download/node_modules/vinyl-fs/node_modules/glob-stream/node_modules/unique-stream/node_modules/es6-set/node_modules/es5-ext/function/#/copy.js",
-		"/Users/Kyla/Sites/cognizant/src/styl/typography.styl",
 		"/Users/Kyla/Sites/cognizant/src/jade/includes/index-include.jade",
 		"/Users/Kyla/Sites/cognizant/build/tasks/jade.coffee",
-		"/Users/Kyla/Sites/cognizant/src/styl/settings.styl",
 		"/Users/Kyla/Sites/cognizant/src/jade/create-profile.jade",
 		"/Users/Kyla/Sites/cognizant/src/styl/animations.styl",
 		"/Users/Kyla/Sites/cognizant/tmp/js/zapp.js",
@@ -821,7 +814,6 @@
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_playbutton.svg",
 		"/Users/Kyla/Sites/cognizant/src/jade/layouts/includes/symbols.svg",
 		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_playbutton.svg",
-		"/Users/Kyla/Sites/cognizant/build/tasks/styl.coffee",
 		"/Users/Kyla/Sites/cognizant/src/svg/coderules.svg",
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_star-filled.svg",
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_triangle.svg",
@@ -841,9 +833,7 @@
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/descriptor.styl",
 		"/Users/Kyla/Downloads/Articles 2/icon_caret.svg",
 		"/Users/Kyla/Downloads/Articles 2/icon_rss.svg",
-		"/Users/Kyla/Sites/cognizant/app/main.css",
-		"/Users/Kyla/Sites/cognizant/src/jade/layout.jade",
-		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_star.svg"
+		"/Users/Kyla/Sites/cognizant/app/main.css"
 	],
 	"find":
 	{
@@ -898,6 +888,32 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"profile-box__",
+			"compact-profile-box__",
+			"compact-",
+			"profile-box__",
+			"trigger",
+			"darkblue",
+			"wrapper",
+			"flyout",
+			"Flyout",
+			"__icon",
+			"search__share",
+			"  ",
+			"includes/symbols.svg",
+			"  ",
+			"svg(",
+			"svg",
+			"  ",
+			".cogv1_article-header",
+			"cogv1",
+			"mkbl_",
+			"rem",
+			"px",
+			"rem",
+			"em",
+			"rem",
+			"px",
 			"#f99157",
 			"--section",
 			">\n",
@@ -999,33 +1015,7 @@
 			"social-group__group",
 			"margin",
 			"headline-list__item-title",
-			"title",
-			"h3",
-			"proxBold",
-			"banner",
-			"MKBL.equalheight('.social-group__groups','.js-equal-height', 680)",
-			"height",
-			"is-ac",
-			"h2",
-			".social-group__groups--texts",
-			"socia",
-			".equal-height",
-			"social-group__groups--s",
-			"social-group__groups--mobile",
-			".social-group__groups--mobile",
-			"  ",
-			"box__indicator",
-			"indi",
-			"ease-out",
-			"(class)",
-			"class",
-			"Class",
-			"class",
-			"'is-active'",
-			"line-he",
-			"__input",
-			"focus",
-			"trigger"
+			"title"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1056,7 +1046,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1072,8 +1062,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								951,
+								951
 							]
 						],
 						"settings":
@@ -1081,88 +1071,101 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
 							],
 							"history_list_is_closing": true,
 							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 605.0,
+						"translation.y": 610.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/coffee/app.coffee",
+					"file": "src/styl/base.styl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 15001,
+						"buffer_size": 1343,
 						"regions":
 						{
+							"gutter_color_615":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/rgba(0,0,0,0).png",
+								"regions":
+								[
+									[
+										615,
+										657
+									]
+								],
+								"scope": "gutter_color"
+							}
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								260,
+								260
 							]
 						],
 						"settings":
@@ -1170,87 +1173,87 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
 							],
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 6974.0,
+						"translation.y": 185.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "src/styl/modules/header.styl",
+					"file": "src/styl/modules/article-header.styl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3994,
+						"buffer_size": 761,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								225,
+								225
 							]
 						],
 						"settings":
@@ -1258,169 +1261,78 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
 							],
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1427.0,
+						"translation.y": 1.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "src/styl/modules/flow-box.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11407,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 6935.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "src/styl/modules/search.styl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7349,
+						"buffer_size": 9381,
 						"regions":
 						{
 							"gutter_color_2146":
@@ -1436,15 +1348,433 @@
 								],
 								"scope": "gutter_color"
 							},
-							"gutter_color_5289":
+							"gutter_color_5328":
 							{
 								"flags": 144,
 								"icon": "Cache/GutterColor/#6db33f.png",
 								"regions":
 								[
 									[
-										5289,
-										5349
+										5328,
+										5388
+									]
+								],
+								"scope": "gutter_color"
+							}
+						},
+						"selection":
+						[
+							[
+								8727,
+								8727
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7239.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/jade/index.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2726,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1343,
+								1343
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 336.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/jade/index-logged-in.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4676,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1601,
+								1601
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2253.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/styl/typography.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1960,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								465,
+								465
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/styl/modules/share-flyout.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2416,
+						"regions":
+						{
+							"gutter_color_1047":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#50b3cf.png",
+								"regions":
+								[
+									[
+										1047,
+										1134
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_1285":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#50b3cf.png",
+								"regions":
+								[
+									[
+										1285,
+										1372
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_575":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#50b3cf.png",
+								"regions":
+								[
+									[
+										575,
+										662
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_65":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#50b3cf.png",
+								"regions":
+								[
+									[
+										65,
+										173
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_810":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#50b3cf.png",
+								"regions":
+								[
+									[
+										810,
+										897
 									]
 								],
 								"scope": "gutter_color"
@@ -1462,11 +1792,26 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
@@ -1477,21 +1822,11 @@
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -1502,230 +1837,49 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_unmatched_content"
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
 							],
 							"syntax": "Packages/Stylus/Stylus.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1725.0,
+						"translation.y": 471.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "build/cognizant.TODO",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 59,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								59,
-								59
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/PlainTasks/PlainTasks (OSX).sublime-settings",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1489,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								967,
-								919
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 154.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
+					"stack_index": 11,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 9,
+			"selected": 2,
 			"sheets":
 			[
 				{
-					"buffer": 7,
-					"file": "src/jade/modules/social-slider.jade",
+					"buffer": 8,
+					"file": "src/jade/article.jade",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2215,
+						"buffer_size": 4436,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1452,
-								1452
+								4215,
+								4192
 							]
 						],
 						"settings":
@@ -1733,90 +1887,420 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2252.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "build/gulp.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1666,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1223,
+								1223
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
-								"bh_regex_content"
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
 							],
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 416.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "src/styl/modules/sections.styl",
+					"buffer": 10,
+					"file": "src/styl/modules/compact-profile-box.styl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2094,
+						"buffer_size": 5392,
 						"regions":
 						{
-							"gutter_color_471":
+						},
+						"selection":
+						[
+							[
+								4288,
+								4288
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2957.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/coffee/app.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6859,
+								6865
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4410.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/styl/modules/modal.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9982,
+						"regions":
+						{
+							"gutter_color_1061":
 							{
 								"flags": 144,
-								"icon": "Cache/GutterColor/#000.png",
+								"icon": "Cache/GutterColor/#6DB33F.png",
 								"regions":
 								[
 									[
-										417,
-										439
+										1061,
+										1122
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_1123":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#72CDF4.png",
+								"regions":
+								[
+									[
+										1123,
+										1184
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3421":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#6DB33F.png",
+								"regions":
+								[
+									[
+										3421,
+										3482
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_3483":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#72CDF4.png",
+								"regions":
+								[
+									[
+										3483,
+										3544
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_5782":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#6DB33F.png",
+								"regions":
+								[
+									[
+										5782,
+										5843
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_5844":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/#72CDF4.png",
+								"regions":
+								[
+									[
+										5844,
+										5905
 									]
 								],
 								"scope": "gutter_color"
@@ -1825,8 +2309,8 @@
 						"selection":
 						[
 							[
-								405,
-								405
+								9359,
+								9359
 							]
 						],
 						"settings":
@@ -1834,61 +2318,240 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3811.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "src/styl/modules/profile-box.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7947,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7849,
+								7849
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
-								"bh_regex_content"
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"history_list_is_closing": true,
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2792.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "src/styl/modules/search-dropdown.styl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1213,
+								1213
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
 							],
 							"history_list_is_closing": true,
 							"syntax": "Packages/Stylus/Stylus.tmLanguage",
@@ -1898,738 +2561,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/styl/modules/header.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3994,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1462.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "src/styl/modules/fullscreen-overlay.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 519,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "src/coffee/events.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4159,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1661.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "src/styl/modules/video.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2381,
-						"regions":
-						{
-							"gutter_color_1762":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#ffffff.png",
-								"regions":
-								[
-									[
-										1787,
-										1880
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1787":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#ffffff.png",
-								"regions":
-								[
-									[
-										1787,
-										1880
-									]
-								],
-								"scope": "gutter_color"
-							}
-						},
-						"selection":
-						[
-							[
-								1359,
-								1359
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 571.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "src/jade/modules/banner-cognizant-connections.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 414,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "src/jade/modules/banner-perspectives-app.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 521,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content"
-							],
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "src/jade/index-logged-in.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4661,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3572,
-								3572
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2263.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/User/PlainTasks.sublime-settings",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 172,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								20,
-								77
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -2663,7 +2595,7 @@
 		"cols":
 		[
 			0.0,
-			0.289265071305,
+			0.35769392506,
 			1.0
 		],
 		"rows":
@@ -2691,20 +2623,100 @@
 		"selected_items":
 		[
 			[
+				"com",
+				"src/styl/modules/compact-profile-box.styl"
+			],
+			[
+				"gu",
+				"build/gulp.coffee"
+			],
+			[
+				"log",
+				"src/jade/index-logged-in.jade"
+			],
+			[
+				"ind",
+				"src/jade/index.jade"
+			],
+			[
+				"tp",
+				"src/styl/typography.styl"
+			],
+			[
+				"hea",
+				"src/styl/modules/header.styl"
+			],
+			[
+				"fly",
+				"src/styl/modules/share-flyout.styl"
+			],
+			[
+				"slider",
+				"src/jade/modules/flowbox-slider.jade"
+			],
+			[
+				"app",
+				"src/coffee/app.coffee"
+			],
+			[
 				"sear",
 				"src/styl/modules/search.styl"
+			],
+			[
+				"",
+				"src/styl/modules/search.styl"
+			],
+			[
+				"lo",
+				"src/jade/index-logged-in.jade"
+			],
+			[
+				"set",
+				"src/styl/settings.styl"
+			],
+			[
+				"mi",
+				"src/styl/mixins.styl"
+			],
+			[
+				"t",
+				"src/styl/typography.styl"
+			],
+			[
+				"in",
+				"src/styl/index.styl"
+			],
+			[
+				"gul",
+				"build/gulp.coffee"
+			],
+			[
+				"styl",
+				"build/tasks/styl.coffee"
+			],
+			[
+				"co",
+				"cognizant.sublime-project"
+			],
+			[
+				"he",
+				"src/styl/modules/header.styl"
 			],
 			[
 				"logg",
 				"src/jade/index-logged-in.jade"
 			],
 			[
-				"flo",
-				"src/styl/modules/flow-box.styl"
+				"la",
+				"src/jade/layouts/layout-primary.jade"
 			],
 			[
-				"he",
-				"src/styl/modules/header.styl"
+				"ba",
+				"src/styl/base.styl"
+			],
+			[
+				"flo",
+				"src/styl/modules/flow-box.styl"
 			],
 			[
 				"ban",
@@ -2715,10 +2727,6 @@
 				"src/styl/modules/video.styl"
 			],
 			[
-				"app",
-				"src/coffee/app.coffee"
-			],
-			[
 				"eve",
 				"src/coffee/events.coffee"
 			],
@@ -2727,16 +2735,8 @@
 				"src/styl/modules/fullscreen-overlay.styl"
 			],
 			[
-				"hea",
-				"src/styl/modules/header.styl"
-			],
-			[
 				"sec",
 				"src/styl/modules/sections.styl"
-			],
-			[
-				"slider",
-				"src/jade/modules/social-slider.jade"
 			],
 			[
 				"head",
@@ -2811,10 +2811,6 @@
 				"src/styl/modules/slider-nav.styl"
 			],
 			[
-				"",
-				"src/jade/index-logged-in.jade"
-			],
-			[
 				"cont",
 				"src/styl/modules/contenteditable.styl"
 			],
@@ -2829,10 +2825,6 @@
 			[
 				"section",
 				"src/styl/modules/sections.styl"
-			],
-			[
-				"ba",
-				"src/styl/modules/banner.styl"
 			],
 			[
 				"mod",
@@ -2851,14 +2843,6 @@
 				"src/styl/inputs.styl"
 			],
 			[
-				"la",
-				"src/jade/layouts/layout-primary.jade"
-			],
-			[
-				"ind",
-				"src/jade/index.jade"
-			],
-			[
 				"search",
 				"src/styl/modules/search.styl"
 			],
@@ -2873,10 +2857,6 @@
 			[
 				"share",
 				"src/styl/modules/share-flyout.styl"
-			],
-			[
-				"log",
-				"src/jade/index-logged-in.jade"
 			],
 			[
 				"bas",
@@ -2907,10 +2887,6 @@
 				"src/styl/modules/video.styl"
 			],
 			[
-				"com",
-				"src/styl/modules/compact-profile-box.styl"
-			],
-			[
 				"pro",
 				"src/styl/modules/profile-box.styl"
 			],
@@ -2925,10 +2901,6 @@
 			[
 				"logi",
 				"app/index-logged-in.html"
-			],
-			[
-				"in",
-				"app/index.html"
 			],
 			[
 				"sh",
@@ -2955,14 +2927,6 @@
 				"src/jade/modules/form.jade"
 			],
 			[
-				"lo",
-				"src/jade/index-logged-in.jade"
-			],
-			[
-				"gul",
-				"build/gulp.coffee"
-			],
-			[
 				"cog",
 				"cognizant.sublime-project"
 			],
@@ -2973,10 +2937,6 @@
 			[
 				"bann",
 				"src/styl/modules/banner.styl"
-			],
-			[
-				"mi",
-				"src/styl/mixins.styl"
 			],
 			[
 				"gra",
@@ -3021,10 +2981,6 @@
 			[
 				"index",
 				"src/styl/index.styl"
-			],
-			[
-				"co",
-				"cognizant.sublime-project"
 			],
 			[
 				"edi",
@@ -3083,10 +3039,6 @@
 				"build/tasks/jade.coffee"
 			],
 			[
-				"gu",
-				"build/gulp.coffee"
-			],
-			[
 				"fro",
 				"src/styl/modules/forms.styl"
 			],
@@ -3131,10 +3083,6 @@
 				"src/styl/modules/flow-box.styl"
 			],
 			[
-				"set",
-				"src/styl/settings.styl"
-			],
-			[
 				"zp",
 				"tmp/js/zapp.js"
 			],
@@ -3153,10 +3101,6 @@
 			[
 				"inde",
 				"src/jade/includes/index-include.jade"
-			],
-			[
-				"styl",
-				"build/tasks/styl.coffee"
 			],
 			[
 				"sl",
@@ -3189,18 +3133,6 @@
 			[
 				"ack",
 				"package.json"
-			],
-			[
-				"m",
-				"src/styl/mixins.styl"
-			],
-			[
-				"fly",
-				"src/styl/modules/share-flyout.styl"
-			],
-			[
-				"bu",
-				"src/styl/buttons.styl"
 			]
 		],
 		"width": 0.0

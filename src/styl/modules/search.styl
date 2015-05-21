@@ -306,7 +306,7 @@ div.search__input
       
 .cogv1_search__right-icon
   position absolute
-  size r(6.4rem)
+  size r(11rem) r(6.4rem)
   background-color blue
   top 0
   svg
@@ -315,24 +315,23 @@ div.search__input
     z-index: 1
 
 .cogv1_search__download
-  right r(6.4rem)
+  right r(11rem)
       
 .cogv1_search__favorites
-  right r(6.4rem * 2)
+  right r(11rem * 2)
 
 .cogv1_search__flyout
   background-color: white
   position: absolute
   padding: r(2.6rem) r(3rem) r(1.8rem)
   width: r(33rem)
-  top: r(5.9rem)
   right: 0
   max-height: r(39rem)
   text-align: center
   z-index: 1
   opacity 1
   z-index 99
-  bottom -2rem
+  bottom -49.6rem
   transform translateY(-100%)
   transition transform 0s linear 0.1s, opacity 0.1s linear
   border 1px solid gray
@@ -341,10 +340,10 @@ div.search__input
     width: 100%
   .profile-box__indicator
     top r(-1.8rem)
+    left r(4.7rem)
     transform rotate(90deg)
     transform-origin 50% 50%
     border-color: transparent white transparent transparent
-    left auto
   &.is-active
     opacity 1
     transform translateY(0%)
