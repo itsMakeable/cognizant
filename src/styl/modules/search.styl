@@ -130,8 +130,9 @@ div.search__input
   font-family proxRegIt
   color gray
 
+
 .search__icon,
-.search__icon__wrapper,
+.search__share .share-flyout__trigger,
 .search__share
   size r(6.4rem)
   display: block
@@ -148,6 +149,11 @@ div.search__input
 .search__icon__wrapper
   overflow: hidden
   width r(7.6rem)
+  height r(6.4rem)
+  display: block
+  position absolute
+  top 0
+  z-index 1
   
 .search__icon
   left 0
@@ -187,38 +193,18 @@ div.search__input
   width r(6.4rem)
   background-color lightblue
   .share-flyout__trigger
-    size r(6.4rem)
+    // size r(6.4rem)
     position relative
     background-color blue
-    transition background-color 0.2s ease 
+    transition background-color 0.2s ease
     &:hover
       background-color lightblue
+      transition background-color 0.3s ease
     svg
       size r(2.8rem)
       align(vertical)
       right r(2rem)
       z-index: 1
-    &.is-active
-      background-color transparent !important
-      svg
-        path 
-          fill white
-    svg
-      path 
-        fill transparent
-        stroke white
-        transition 0.2s linear 0.1s
-  
-  // &.is-active
-  //   background-color rgba(blue,0.4)
-  //   width r(33rem)
-  //   overflow visible
-  //   svg
-  //     path 
-  //       fill white
-  //       stroke white
-  //   &:hover
-  //     background-color rgba(blue,0.6)
 
 .search__share-flyout__wrapper
   overflow hidden
@@ -227,10 +213,12 @@ div.search__input
   display inline-block
   position absolute
   right 0
-  padding-right r(6.4rem)
   height r(6.4rem)
+  transition all 0.4s ease-in
+  &.has-padding
+    padding-right r(6.4rem)
   
-.search__share-flyout
+.search__share-flyout.share-flyout
   transform translateX(100%)
   width r(33rem)
   height r(6.4rem)
@@ -238,13 +226,19 @@ div.search__input
   display inline-block
   position absolute
   right 0
+  cf()
+  transition: transform .4s cubic-bezier(.4, -.17, .33, 1) 0.1s
   .share-flyout__icon
-    size r(6.4rem) r(6.2rem)
+    size r(6.6rem) r(6.4rem)
+    float left
     border-right 1px solid rgba(darkblue, 0.2)
-.search__share.is-active
+
+.search__share-flyout__wrapper.flyout-is-active
+  .share-flyout__trigger
+    background-color transparent
+    transition background-color 0.3s ease 0.3s
   .search__share-flyout
-    width r(33rem)
-    transform translateX(0%)
+    transform translateX(0)
 
 .search__smart-search
   width r(16rem)
@@ -298,71 +292,170 @@ div.search__input
     transition 0.3s ease
   .is-empty
     z-index 1
-  .is-filled
-    opacity 0
-  &:hover
-    .is-filled
-      opacity 1
       
 .cogv1_search__right-icon
   position absolute
   size r(11rem) r(6.4rem)
-  background-color blue
   top 0
+  transition 0.2s ease-out
   svg
     size r(2.8rem)
     align()
     z-index: 1
 
-.cogv1_search__download
-  right r(11rem)
-      
-.cogv1_search__favorites
-  right r(11rem * 2)
+  &.cogv1_search__share
+    right 0
+  &.cogv1_search__download
+    right r(11rem)
+  &.cogv1_search__favorites 
+    right r(11rem * 2)
+  +below(768px)
+    size r(6.4rem)
+    &.cogv1_search__share
+      display none
+    &.cogv1_search__download
+      right 0
+    &.cogv1_search__favorites 
+      right r(6.4rem)
 
 .cogv1_search__flyout
   background-color: white
   position: absolute
-  padding: r(2.6rem) r(3rem) r(1.8rem)
+  padding: r(2.2rem) r(3rem) r(1.8rem)
   width: r(33rem)
   right: 0
-  max-height: r(39rem)
+  max-height: r(30rem)
   text-align: center
-  z-index: 1
-  opacity 1
+  opacity 0
   z-index 99
-  bottom -49.6rem
-  transform translateY(-100%)
-  transition transform 0s linear 0.1s, opacity 0.1s linear
-  border 1px solid gray
+  top r(10.4rem)
+  transform translateY(0)
+  transition opacity 0.2s linear, transform 0.4s ease-out
+  box-shadow 0 1px 1px gray
+  color gray
   cf()
-  +below(420px)
-    width: 100%
-  .profile-box__indicator
-    top r(-1.8rem)
-    left r(4.7rem)
-    transform rotate(90deg)
-    transform-origin 50% 50%
-    border-color: transparent white transparent transparent
+  +below(768px)
+    width 100%
+    box-shadow 0px 0px 1px gray
+  +between(660px, 768px)
+    .cogv1_search__flyout__section1
+      col(1/2)
+      text-align left
+  +below(660px)
+    .cogv1_search__flyout__section1
+      max-width r(33rem)
+      margin auto
+      text-align center
+    
+  .button--primary
+    margin r(1.4rem) auto
+  p
+    line-height 1.2
+    b
+      color black
+    small
+      line-height 1
   &.is-active
     opacity 1
-    transform translateY(0%)
-    transition transform 0.4s cubic-bezier(.73,.88,0,1.1) 0.1s, opacity 0.1s linear 0.1s, z-index 0s linear 0.45s
-    z-index: 501
-  .cogv1_search__list-notification
-    left r(-1.9rem)
-    top r(0.1rem)
-  .cogv1_search__list-item
-    padding 0 0 r(2rem) r(1rem)
-  .cogv1_search__indicator
-    top r(-1.8rem)
-    transform rotate(90deg)
-    transform-origin 50% 50%
-    border-color: transparent white transparent transparent
-    left auto
-  &.cogv1_search__flyout--settings
-    .cogv1_search__indicator
-      right r(4rem)
-  &.cogv1_search__flyout--notifications
-    .profile-box__indicator
-      right r(9em)
+    transform translateY(-4rem)
+    transition opacity 0.2s ease, transform 0.3s ease-out-back
+  header
+    color black
+    text-align left
+    hr
+      border-bottom 1px solid gray
+      margin-bottom r(2rem)
+    
+.cogv1_search__list-notification
+  left r(-1.9rem)
+  top r(0.1rem)
+  
+.cogv1_search__list-item
+  padding 0 0 r(2rem) r(1rem)
+  
+.cogv1_search__indicator
+  top r(-1.8rem)
+  transform rotate(90deg)
+  transform-origin 50% 50%
+  border-color: transparent white transparent transparent
+  left auto
+
+.cogv1_search__flyout__indicator
+  top r(-1.8rem)
+  right r(26.9rem)
+  position absolute
+  transform rotate(90deg)
+  transform-origin 50% 50%
+  border-color: transparent white transparent transparent
+  +below(768px)
+    right r(9rem)
+    
+.cogv1_search__section-right
+  height r(6.4rem)
+  width r(11rem * 3)
+  overflow hidden
+  position absolute
+  right 0
+  top 0
+  transition background-color 0.2s ease
+  &.is-blue
+    background-color blue
+  +below(768px)
+    width r(6.4rem * 2)
+  .search__share
+    background transparent
+    background-color transparent
+    width 100%
+    svg
+      opacity 0
+  .search__share-flyout__wrapper
+    transform translateX(100%)
+  &.flyout-is-active
+    .cogv1_search__favorites,
+    .cogv1_search__download
+      opacity 0
+    .search__share
+      svg
+        opacity 1
+    .search__share-flyout__wrapper
+      transform translateX(0%)
+      transition 0.4s cubic-bezier(.73,.88,0,1.1)
+    .cogv1_search__share
+      z-index 999
+      width r(6.4rem)
+      .fill
+        fill white
+    .search__share-flyout
+      transform translateX(0%)
+
+.cogv1_search__flyout__add
+  position relative
+  color gray
+  text-align left
+  padding-left r(4rem)
+  position relative
+  svg
+    position absolute
+    size r(2rem)
+    left r(-0.5rem)
+    top 0
+    bottom 0
+    margin auto
+     
+.cogv1_search__flyout__list
+  color black
+  text-align left
+  padding 0 r(4rem)
+  margin r(1.5rem) 0
+  position relative
+  &:before
+    content ''
+    display inline-block
+    background-color blue
+    position absolute
+    top r(-0.1rem)
+    bottom 0
+    margin auto
+    left 0
+    size r(1rem)
+  

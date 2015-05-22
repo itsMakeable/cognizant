@@ -164,24 +164,26 @@
         position: absolute
         bottom 0
         size r(3rem)
-    .is-filled
-        opacity 0
-        z-index: 0
-    .is-empty
-        opacity 1
-        z-index: 1
+        .fill
+            fill transparent
+            transition 0.3s ease
     &:hover
-        .is-filled
-            opacity 0.5
-        .is-empty
-            opacity 1
         svg
             transform translateY(r(-1rem))
+            .fill
+                fill currentColor
+                opacity 0.5
         .flow-box__CTA__alt-text
             opacity 1
             top 100%
             transition opacity 0.1s cubic-bezier(.73,.88,0,1.1), top 0.3s cubic-bezier(.73,.88,0,1.1)
-    
+
+.flyout-is-active
+    .flow-box__CTA--share
+        .fill
+            fill currentColor
+            opacity 1
+
 .flow-box__CTA--left
     left 0
     float left
@@ -202,10 +204,6 @@
     overflow hidden
     width r(30rem)
     height r(3rem)
-    
-.flow-box__CTA--share.share-flyout__trigger
-    &:active svg
-        transform translate(0,0) scale(0.95)
         
 .flow-box-flyout__icon.share-flyout__icon
     display inline-block
@@ -221,10 +219,11 @@
         transform translateX(-100%)
         transition transform 0.4s cubic-bezier(.4,-0.17,.33,1)
         // z-index -1
-    &.is-active
-        .flow-box__share-flyout
-            transform translateX(0%)
-            transition transform 0.4s cubic-bezier(.73,.88,0,1.02)
+// .flyout-is-active
+//     .flow-box__share-flyout-wrapper
+//         .flow-box__share-flyout
+//             transform translateX(0%)
+//             transition transform 0.4s cubic-bezier(.73,.88,0,1.02)
 
 .flow-box__CTA__alt-text
     fs(1.4rem)

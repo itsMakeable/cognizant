@@ -5,7 +5,7 @@
 	 viewBox="-1389 851 100 100" enable-background="new -1389 851 100 100" xml:space="preserve">
 <g id="Page-1" sketch:type="MSPage">
 	<g id="icon_caret-filled" sketch:type="MSArtboardGroup">
-		<polygon id="fill" fill='currentColor' sketch:type="MSShapeGroup" points="-1317,901 -1362,945 -1362,856 		">
+		<polygon class='fill' fill='currentColor' sketch:type="MSShapeGroup" points="-1317,901 -1362,945 -1362,856 		">
 		</polygon>
 		<path id="outer-path" fill='currentColor' sketch:type="MSShapeGroup" d="M-1364.3,950.5V851l49.9,49.8L-1364.3,950.5L-1364.3,950.5z M-1358.8,864.1
 			v73.2l36.7-36.6L-1358.8,864.1L-1358.8,864.1z"/>

@@ -547,7 +547,7 @@
 			"file": "src/styl/modules/search.styl",
 			"settings":
 			{
-				"buffer_size": 9381,
+				"buffer_size": 9379,
 				"line_ending": "Unix"
 			}
 		},
@@ -701,8 +701,7 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Kyla/Sites/cognizant",
-		"/Users/Kyla/Sites/cognizant/src/svg/symbols"
+		"/Users/Kyla/Sites/cognizant"
 	],
 	"file_history":
 	[
@@ -888,6 +887,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"2",
+			"6.4",
+			"6.4rem",
 			"profile-box__",
 			"compact-profile-box__",
 			"compact-",
@@ -1012,10 +1014,7 @@
 			"upca",
 			"gray",
 			"bg-w",
-			"social-group__group",
-			"margin",
-			"headline-list__item-title",
-			"title"
+			"social-group__group"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1317,7 +1316,8 @@
 								"bh_default_close",
 								"bh_default_content"
 							],
-							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+							"syntax": "Packages/Stylus/Stylus.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 1.0,
@@ -1332,7 +1332,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9381,
+						"buffer_size": 9379,
 						"regions":
 						{
 							"gutter_color_2146":
@@ -1365,8 +1365,8 @@
 						"selection":
 						[
 							[
-								8727,
-								8727
+								8378,
+								8378
 							]
 						],
 						"settings":
@@ -1434,11 +1434,11 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 7239.0,
+						"translation.x": 2.0,
+						"translation.y": 7345.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -2124,10 +2124,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2957.0,
+						"translation.y": 2575.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -2595,7 +2595,7 @@
 		"cols":
 		[
 			0.0,
-			0.35769392506,
+			0.548992137031,
 			1.0
 		],
 		"rows":

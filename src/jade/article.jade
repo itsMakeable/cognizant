@@ -66,47 +66,87 @@ block content
 			.search-module.search-module--main
 				.search__icon__wrapper
 					.search__icon.gradient6reverse--horizontal
-						i
+						i.icon
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_search-article')
 				
 				i.icon.search__icon--right.search__CTA
 					svg(viewbox='0 0 100 100')
 						use(xlink:href='#icon_triangle')
-				input.search__input(type='text', placeholder='Search Within Folders')
-				.cogv1_search__favorites.cogv1_search__right-icon
-					svg(viewbox='0 0 100 100')
-						use(xlink:href='#icon_star')
-				.cogv1_search__download.cogv1_search__right-icon
-					svg(viewbox='0 0 100 100')
-						use(xlink:href='#icon_download')
-				subcomponent.search__share-flyout__wrapper
-					.search__share
-						.share-flyout__trigger.js-share-flyout__trigger
-							svg(width='46', height='46', viewbox='0 0 46 46', xmlns='http://www.w3.org/2000/svg')
-								title share
-								path(d='M14.22 19.716l17.25-8.784-17.25 8.784zm-.32 5.886l17.25 8.784-17.25-8.784zM43.08 8.11c0 3.374-2.735 6.11-6.11 6.11-3.374 0-6.11-2.736-6.11-6.11 0-3.375 2.736-6.11 6.11-6.11 3.375 0 6.11 2.735 6.11 6.11zM14.22 22.677c0 3.375-2.736 6.11-6.11 6.11-3.375 0-6.11-2.735-6.11-6.11 0-3.373 2.735-6.11 6.11-6.11 3.374 0 6.11 2.737 6.11 6.11zM43.08 37.224c0 3.376-2.735 6.11-6.11 6.11-3.374 0-6.11-2.734-6.11-6.11 0-3.373 2.736-6.11 6.11-6.11 3.375 0 6.11 2.737 6.11 6.11z', stroke='#000', stroke-width='2.813', fill='none', fill-rule='evenodd')
-						.search__share-flyout.gradient5--horizontal.share-flyout.js-share-flyout.is-right
-							.share-flyout__icon
-								svg(viewbox='0 0 100 100')
-									use(xlink:href='#icon_email')
-							.share-flyout__icon
-								svg(viewbox='0 0 100 100')
-									use(xlink:href='#icon_twitter')
-							.share-flyout__icon
-								svg(viewbox='0 0 100 100')
-									use(xlink:href='#icon_facebook')
-							.share-flyout__icon
+				input.search__input(type='text', placeholder='Search Article for Keywords')
+				.cogv1_search__section-right.is-blue
+					.cogv1_search__favorites.cogv1_search__right-icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_star')
+					.cogv1_search__download.cogv1_search__right-icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_download')
+					.cogv1_search__share.cogv1_search__right-icon.js-search-share-flyout__trigger
+						| <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="-1389 851 100 100"><g class="icon_share-filled"><circle class="fill" fill="transparent" cx="-1371" cy="901" r="13"/><circle class="fill" fill="transparent" cx="-1307" cy="868" r="13"/><circle class="fill" fill="transparent" cx="-1307" cy="933" r="13"/><path id="outer-path" fill="currentColor" d="M-1307.4 916.5c-5.4 0-10.2 2.6-13.2 6.6l-34.4-17.4c.4-1.5.7-3 .7-4.6s-.3-3.1-.7-4.6l34.4-17.4c3.1 4 7.8 6.6 13.2 6.6 9.3 0 16.8-7.5 16.8-16.8s-7.5-16.8-16.8-16.8-16.8 7.5-16.8 16.8c0 1.6.3 3.1.7 4.6l-34.4 17.4c-3.1-4-7.8-6.6-13.2-6.6-9.3 0-16.8 7.5-16.8 16.8s7.5 16.8 16.8 16.8c5.4 0 10.2-2.6 13.2-6.6l34.4 17.4c-.4 1.5-.7 3-.7 4.6 0 9.3 7.5 16.8 16.8 16.8s16.8-7.5 16.8-16.8-7.6-16.8-16.8-16.8zm0-58.1c5.8 0 10.4 4.7 10.4 10.5s-4.7 10.4-10.4 10.4c-5.8 0-10.4-4.7-10.4-10.4s4.6-10.5 10.4-10.5zm-63.8 53.1c-5.8 0-10.4-4.7-10.4-10.5s4.7-10.4 10.4-10.4c5.8 0 10.4 4.7 10.4 10.4.1 5.8-4.6 10.5-10.4 10.5zm63.8 32.2c-5.8 0-10.4-4.7-10.4-10.5s4.7-10.4 10.4-10.4c5.8 0 10.4 4.7 10.4 10.4 0 5.8-4.7 10.5-10.4 10.5z"/></g></svg>
+					subcomponent.search__share-flyout__wrapper
+						.search__share
+							.search__share-flyout.gradient5--vertical.share-flyout.js-share-flyout
+								.share-flyout__icon
+									svg(viewbox='0 0 100 100')
+										use(xlink:href='#icon_email')
+								.share-flyout__icon
+									svg(viewbox='0 0 100 100')
+										use(xlink:href='#icon_twitter')
+								.share-flyout__icon
+									svg(viewbox='0 0 100 100')
+										use(xlink:href='#icon_facebook')
+								.share-flyout__icon
+									svg(viewbox='0 0 100 100')
+										use(xlink:href='#icon_linkedin')
+
+				//- subcomponent.search__share-flyout__wrapper
+				//- 	.search__share
+				//- 		.share-flyout__trigger.js-share-flyout__trigger
+				//- 			svg(width='46', height='46', viewbox='0 0 46 46', xmlns='http://www.w3.org/2000/svg')
+				//- 				title share
+				//- 				path(d='M14.22 19.716l17.25-8.784-17.25 8.784zm-.32 5.886l17.25 8.784-17.25-8.784zM43.08 8.11c0 3.374-2.735 6.11-6.11 6.11-3.374 0-6.11-2.736-6.11-6.11 0-3.375 2.736-6.11 6.11-6.11 3.375 0 6.11 2.735 6.11 6.11zM14.22 22.677c0 3.375-2.736 6.11-6.11 6.11-3.375 0-6.11-2.735-6.11-6.11 0-3.373 2.735-6.11 6.11-6.11 3.374 0 6.11 2.737 6.11 6.11zM43.08 37.224c0 3.376-2.735 6.11-6.11 6.11-3.374 0-6.11-2.734-6.11-6.11 0-3.373 2.736-6.11 6.11-6.11 3.375 0 6.11 2.737 6.11 6.11z', stroke='currentColor', stroke-width='2.813', fill='none', fill-rule='evenodd')
+				//- 		.search__share-flyout.gradient5--vertical.share-flyout.js-share-flyout
+				//- 			.share-flyout__icon
+				//- 				svg(viewbox='0 0 100 100')
+				//- 					use(xlink:href='#icon_email')
+				//- 			.share-flyout__icon
+				//- 				svg(viewbox='0 0 100 100')
+				//- 					use(xlink:href='#icon_twitter')
+				//- 			.share-flyout__icon
+				//- 				svg(viewbox='0 0 100 100')
+				//- 					use(xlink:href='#icon_facebook')
+				//- 			.share-flyout__icon
+				//- 				svg(viewbox='0 0 100 100')
+				//- 					use(xlink:href='#icon_linkedin')
+				
+				// THIS IS THE LOGGED IN FLYOUT
+				// subcomponent.cogv1_search__flyout.is-signed-in
+					.cogv1_search__flyout__indicator.triangle
+					header
+						p: small Save this article to your folders
+						hr
+					.cogv1_search__flyout__add
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_add')
+						h6 Create New Folder
+					ul
+						li.cogv1_search__flyout__list
+							p: b Folder Title
+						li.cogv1_search__flyout__list
+							p: b Folder Title
+
+				// THIS IS THE LOGGED OUT FLYOUT
+				subcomponent.cogv1_search__flyout.is-signed-out
+					.cogv1_search__flyout__indicator.triangle
+					.cogv1_search__flyout__section1
+						p: b Article marked as favorite
+						p: small Sign in with LinkedIn to organize your favourites and share them with colleagues in your network.
+					.cogv1_search__flyout__section2
+						a.button--primary.icon--left(href='/index-logged-in.html')
+							i.icon.icon-linkedin
 								svg(viewbox='0 0 100 100')
 									use(xlink:href='#icon_linkedin')
-				subcomponent.cogv1_search__flyout.cogv1_search__flyout--settings
-					.profile-box__indicator
-					header
-						p Settings
-						hr
-					.profile-box__button
-						button.button--silent.js-edit-profile Edit Info
-					.profile-box__button
-						a(href="/").button--silent Log Out
-	
+							| Sign In with Linkedin
+							
+
 	section(style='height:1000px;')

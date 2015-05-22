@@ -5,11 +5,11 @@
 	 viewBox="-1389 851 100 100" enable-background="new -1389 851 100 100" xml:space="preserve">
 <g id="Page-1" sketch:type="MSPage">
 	<g id="icon_share-filled" sketch:type="MSArtboardGroup">
-		<circle id="fill" fill='currentColor' fill='transparent' sketch:type="MSShapeGroup" cx="-1371" cy="901" r="13">
+		<circle class='fill' fill='currentColor' fill='transparent' sketch:type="MSShapeGroup" cx="-1371" cy="901" r="13">
 		</circle>
-		<circle id="fill_1_" fill='currentColor' fill='transparent' sketch:type="MSShapeGroup" cx="-1307" cy="868" r="13">
+		<circle class='fill' fill='currentColor' fill='transparent' sketch:type="MSShapeGroup" cx="-1307" cy="868" r="13">
 		</circle>
-		<circle id="fill_2_" fill='currentColor' sketch:type="MSShapeGroup" cx="-1307" cy="933" r="13">
+		<circle class='fill' fill='currentColor' sketch:type="MSShapeGroup" cx="-1307" cy="933" r="13">
 		</circle>
 		<path id="outer-path" fill='currentColor' sketch:type="MSShapeGroup" d="M-1307.4,916.5c-5.4,0-10.2,2.6-13.2,6.6l-34.4-17.4c0.4-1.5,0.7-3,0.7-4.6
 			s-0.3-3.1-0.7-4.6l34.4-17.4c3.1,4,7.8,6.6,13.2,6.6c9.3,0,16.8-7.5,16.8-16.8s-7.5-16.8-16.8-16.8c-9.3,0-16.8,7.5-16.8,16.8

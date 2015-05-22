@@ -43,6 +43,9 @@ $('.js-dropdown-trigger').on 'click',  ->
 		$dropdown = $(this).siblings('.contenteditable-dropdown')
 	MKBL.contenteditableDropdown($dropdown, $trigger)
 
+$('.cogv1_search__favorites').on 'click',  ->
+	MKBL.activationToggle($(this).closest('.cogv1_search__section-right').siblings('.cogv1_search__flyout'))
+
 $('.js-dropdown-option').on 'click',  ->
 	$this = $(this)
 	MKBL.contenteditableDropdownSelect($this)
@@ -54,9 +57,17 @@ $('.js-open-modal-module').on 'click',  ->
 	$this = $(this)
 	MKBL.modal($this)
 
+$('.js-flow-box-flyout__trigger').on 'click',  ->
+	$parent = $(this).closest('.flow-box__CTA')
+	MKBL.activationToggle($parent)
+
+$('.js-search-share-flyout__trigger').on 'click',  ->
+	$parent = $(this).closest('.cogv1_search__section-right')
+	MKBL.activationToggle($parent, 'flyout-is-active')
+
 $('.js-share-flyout__trigger').on 'click',  ->
-	$this = $(this)
-	MKBL.shareFlyout($this)
+	$parent = $(this).closest('.search__share-flyout__wrapper')
+	MKBL.shareFlyout($parent)
 
 $('.compact-profile-box__aside .icon').on 'click',  ->
 	$this = $(this)

@@ -213,16 +213,6 @@ MKBL.flowBoxSliderSetup = ->
 	return MKBL.flowBoxSlider
 
 ###*
- * the share flyout that slides open to show didn't sharing options
- * @param  {[type]} $this the parent element
-###
-MKBL.shareFlyout = ($this) ->
-	$this
-		.toggleClass('is-active')
-		.siblings('.js-share-flyout').eq(0)
-		.toggleClass('is-active')
-
-###*
  * Flyout interaction for the mobile profile bar
  * @param  {[type]} $this       the icon being clicked
  * @param  {[type]} $flyoutType which flyout is being called?
