@@ -47,7 +47,7 @@ block content
 									use(xlink:href='#icon_caret')
 				button.button--silent View All
 
-	header.cogv1_article-header.color-bg(style='background: url("http://lorempixel.com/1250/500/technics") no-repeat;')
+	header.cogv1_article-header.color-bg.cogv1_has-overlay(style='background: url("http://lorempixel.com/1250/500/technics") no-repeat;')
 		.cogv1_article-header__overlay
 		.container
 			.row
@@ -173,19 +173,55 @@ block content
 					.article-data__column
 						h2 Popularity
 						img.article-data__graph(src="img/server-side-generated-graph.png", alt="")
-		article
-			footer
-				.row.share-icons-list
-					a.share-icon
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_email')
-					a.share-icon
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_twitter')
-					a.share-icon
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_facebook')
-					a.share-icon
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_linkedin')
+		article.article
+			.container
+				h2 Six Ways Analytics Can Improve Healthcare
+				hr
+			.container.article-body__container
+				h3 Better Collaboration
+				p Big data benefits healthcare, too. But only if medical providers know how to capture all patient data in a single place which helps them better interpret what the information is telling them. In other words, evidence-based medical decisions related to recent practitioner research, technical reports, clinical trial studies, expert views and patient characteristics (including those from their social Web site and app usage) to enable appropriate intervention at the point and time of care. Like all industries, healthcare-related data is growing at a rate of 35% per year. Analytics are required to effectively mine this data to improve health outcomes.
+				ul.unorder-list
+					each val, index in [1,2,3,4,5]
+						li Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+				p We are a friendly firm of Financial Advisors who are happy to meet with you face to face or liaise with you via the phone or email to provide a service that’s right for you. Our Services included offering advice and solutions on Mortgages, Insurance, Financial Protection, Investments and Pensions. Our aim is to leave you worry free about your finances because you know they are in safe hands.
+ 
+
+				h3 Smarter Outcomes
+				p We have specialist advisors in all areas of our business as well as fantastic support staff who will be able to help you if your advisor is unavailable when you make contact.
+ 
+
+			.container
+				h2 Proportional Data Infographics
+				hr
+				img(src="img/server-side-generated-charts.png", alt="")
+			.container.article-body__container
+				p Our clients range from FTSE 300 companies, to large charitable organisations and some small local businesses who are striving to expand. Most of our clients use our Data Analysis service to inform their strategic decision making and their targets for the immediate, mid-term and long-term future. The data sources that we use for this type of analysis include customer enquiry data, sales figures, costs, market data and customer feedback.
+				h3 Better Collaboration
+				p We are authorised and regulated by the Financial Services Authority (FSA).
+				p Brands may find out who their friends are through social media, but it's predictive analytics that lets them build lasting — and more profitable — relationships.
+	
+				p With analytics, brands get to know and communicate with their customers as individuals. They discover their likes, dislikes, preferences and habits. Analytics imbues the engagement with immediacy: Brands can communicate with consumers within hours and days and sometimes even as they shop.
+
+				p Immediacy alters the conversation, however, changing the quantity and quality of brand messaging. The more that marketers know about consumers, the more they can effectively communicate with them — and the more personalized and relevant the messaging can be. In a world gone social, the most compelling narrative to advance relationships isn't always a "buy" message; it's often a value exchange.
+
+			include modules/video-module2
+
+			.container.article-body__container
+				h3 Better Collaboration
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestias earum vero iste exercitationem. Accusamus Dolore molestias earum vero iste exercitationem. Accusamus deserunt consequuntur vitae quidem ex, non assumenda nihil reprehenderit vero aut maxime. nostrum, deleniti!
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestias earum vero iste exercitationem. Accusamus deserunt consequuntur vitae quidem ex, non assumenda nihil reprehenderit vero aut maxime. nostrum, deleniti!
+				footer
+					.row.share-icons-list
+						a.share-icon
+							svg(viewbox='0 0 100 100')
+								use(xlink:href='#icon_email')
+						a.share-icon
+							svg(viewbox='0 0 100 100')
+								use(xlink:href='#icon_twitter')
+						a.share-icon
+							svg(viewbox='0 0 100 100')
+								use(xlink:href='#icon_facebook')
+						a.share-icon
+							svg(viewbox='0 0 100 100')
+								use(xlink:href='#icon_linkedin')
 

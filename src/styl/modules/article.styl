@@ -1,0 +1,63 @@
+.article-body__container
+	padding-left r(9rem)
+	padding-right r(6rem)
+	
+.article
+	counter-reset h3
+	padding r(4rem) 0 r(10rem)
+	.video-section
+		margin r(6rem) 0
+		
+	h2
+		color blue
+		padding-top r(3rem)
+	h3
+		text-transform capitalize
+		fs(2.8rem)
+		margin-top r(3rem)
+		padding-bottom r(3rem)
+		position relative
+		&:before
+			content counter(h3)
+			counter-increment h3
+			position absolute
+			left r(-8rem)
+			fs(3.8rem)
+			color blue
+			size 4rem
+			font-family proxRegIt
+			top r(-0.6rem)
+			+below(1024px)
+				left r(-5rem)
+				
+	p
+		padding-bottom r(1.6rem)
+	hr
+		border-bottom 0px solid transparent
+		position relative
+		margin-bottom r(6rem)
+		padding-top r(3rem)
+		&:after
+			content ''
+			display block
+			height 1px
+			width 100%
+			background green vgradient5
+			position absolute
+			
+.unorder-list
+	fs(1.8rem)
+	padding r(1rem) 0 r(2.6rem)
+	li
+		padding r(1rem) 0 r(1rem) r(2.6rem)
+		position relative
+		&:before
+			content ''	
+			display inline-block
+			size r(1rem)
+			position absolute
+			background-color blue
+			left 0
+			top 0
+			bottom 0
+			margin auto

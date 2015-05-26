@@ -6,80 +6,80 @@ section.section.flow-box-slider-section.backgray-bg
 		component.flow-box-slider
 			each val, index in {1:'is-active',2:'is-next',3:'is-prev'}
 				.row.flow-box-slider-group(class='#{val}')
-					article.flow-box.flow-box--large(style='background: url(http://placehold.it/550x550) no-repeat')
-						.flow-box__gradient-bg
-							h4.flow-box__tag 
-								i.icon
-									svg(viewbox='0 0 100 100')
-										use(xlink:href='#icon_pdf')
-										image(src='img/symbols/icon_pdf-2x.png' width='12px' height='12px')
-								strong Article
-								|   |  Added for you on 12.14.14
-							.flow-box__content
-								.flow-box__title
-									h3 Healthcare Consumerism:
-									h5 The Rise of the Empowered Healthcare Consumer
-									.flow-box__CTA-description
-										p
-											strong A shift to individual healthcare.
-											| Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.
-								.flow-box__CTA
-									i.flow-box__CTA-icon.flow-box__CTA--left
-										svg.is-empty(viewbox='0 0 100 100')
-											use(xlink:href='#icon_star')
-											image(src='img/symbols/icon_star-2x.png' width='20px' height='20px')
-										svg.is-filled(viewbox='0 0 100 100')
-											use(xlink:href='#icon_star-filled')
-											image(src='img/symbols/icon_star-filled-2x.png' width='20px' height='20px')
-										span.flow-box__CTA__alt-text Save
-									i.flow-box__CTA-icon.flow-box__CTA--share.share-flyout__trigger.js-flow-box-flyout__trigger.interactive-svg
-										svg.is-empty(viewbox='0 0 100 100')
-											use(xlink:href='#icon_share')
-											image(src='img/symbols/icon_share-2x.png' width='20px' height='20px')
-										svg.is-filled(viewbox='0 0 100 100')
-											use(xlink:href='#icon_share-filled')
-											image(src='img/symbols/icon_share-filled-2x.png' width='20px' height='20px')
-										span.flow-box__CTA__alt-text Share
-									i.flow-box__CTA-icon.flow-box__CTA--right.interactive-svg
-										svg.is-empty(viewbox='0 0 100 100')
-											use(xlink:href='#icon_triangle')
-											image(src='img/symbols/icon_triangle-2x.png' width='20px' height='20px')
-										svg.is-filled(viewbox='0 0 100 100')
-											use(xlink:href='#icon_triangle-filled')
-											image(src='img/symbols/icon_triangle-filled-2x.png' width='20px' height='20px')
-										span.flow-box__CTA__alt-text View
+					a.flow-box.flow-box--large(href='/article.html' style='background: url(http://placehold.it/550x550) no-repeat')
+							.flow-box__gradient-bg
+								h4.flow-box__tag 
+									i.icon
+										svg(viewbox='0 0 100 100')
+											use(xlink:href='#icon_pdf')
+											image(src='img/symbols/icon_pdf-2x.png' width='12px' height='12px')
+									strong Article
+									|   |  Added for you on 12.14.14
+								.flow-box__content
+									.flow-box__title
+										h3 Healthcare Consumerism:
+										h5 The Rise of the Empowered Healthcare Consumer
+										.flow-box__CTA-description
+											p
+												strong A shift to individual healthcare.
+												| Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.
+									.flow-box__CTA
+										i.flow-box__CTA-icon.flow-box__CTA--left
+											svg.is-empty(viewbox='0 0 100 100')
+												use(xlink:href='#icon_star')
+												image(src='img/symbols/icon_star-2x.png' width='20px' height='20px')
+											svg.is-filled(viewbox='0 0 100 100')
+												use(xlink:href='#icon_star-filled')
+												image(src='img/symbols/icon_star-filled-2x.png' width='20px' height='20px')
+											span.flow-box__CTA__alt-text Save
+										i.flow-box__CTA-icon.flow-box__CTA--share.share-flyout__trigger.js-flow-box-flyout__trigger.interactive-svg
+											svg.is-empty(viewbox='0 0 100 100')
+												use(xlink:href='#icon_share')
+												image(src='img/symbols/icon_share-2x.png' width='20px' height='20px')
+											svg.is-filled(viewbox='0 0 100 100')
+												use(xlink:href='#icon_share-filled')
+												image(src='img/symbols/icon_share-filled-2x.png' width='20px' height='20px')
+											span.flow-box__CTA__alt-text Share
+										i.flow-box__CTA-icon.flow-box__CTA--right.interactive-svg
+											svg.is-empty(viewbox='0 0 100 100')
+												use(xlink:href='#icon_triangle')
+												image(src='img/symbols/icon_triangle-2x.png' width='20px' height='20px')
+											svg.is-filled(viewbox='0 0 100 100')
+												use(xlink:href='#icon_triangle-filled')
+												image(src='img/symbols/icon_triangle-filled-2x.png' width='20px' height='20px')
+											span.flow-box__CTA__alt-text View
 
 					div.flow-box__small-container
 						each val, index in [1,2]
-							article.flow-box(style='background: url(http://placehold.it/350x350) no-repeat')
-								.flow-box__gradient-bg
-									h4.flow-box__tag
-										i.icon
-											svg(viewbox='0 0 100 100'): use(xlink:href='#icon_pdf')
-										strong Article
+							a.flow-box(href='/article.html' style='background: url(http://placehold.it/350x350) no-repeat')
+									.flow-box__gradient-bg
+										h4.flow-box__tag
+											i.icon
+												svg(viewbox='0 0 100 100'): use(xlink:href='#icon_pdf')
+											strong Article
 
-									.flow-box__content
-										.flow-box__title
-											h2 A Systematic Approach To Optimizing Collateral
-										.flow-box__CTA-description.truncate
-											p A Systematic Approach To Optimizing Collateral
-										.flow-box__CTA
-											i.flow-box__CTA-icon.flow-box__CTA--left.interactive-svg
-												svg.is-empty(viewbox='0 0 100 100')
-													use(xlink:href='#icon_star')
-													image(src='img/symbols/icon_star-2x.png' width='20px' height='20px')
-												svg.is-filled(viewbox='0 0 100 100')
-													use(xlink:href='#icon_star-filled')
-													image(src='img/symbols/icon_star-filled-2x.png' width='20px' height='20px')
-												span.flow-box__CTA__alt-text Save
-											i.flow-box__CTA-icon.flow-box__CTA--right.interactive-svg
-												svg.is-empty(viewbox='0 0 100 100')
-													use(xlink:href='#icon_triangle')
-													image(src='img/symbols/icon_triangle-2x.png' width='20px' height='20px')
-												svg.is-filled(viewbox='0 0 100 100')
-													use(xlink:href='#icon_triangle-filled')
-													image(src='img/symbols/icon_triangle-filled-2x.png' width='20px' height='20px')
-												span.flow-box__CTA__alt-text View
+										.flow-box__content
+											.flow-box__title
+												h2 A Systematic Approach To Optimizing Collateral
+											.flow-box__CTA-description.truncate
+												p A Systematic Approach To Optimizing Collateral
+											.flow-box__CTA
+												i.flow-box__CTA-icon.flow-box__CTA--left.interactive-svg
+													svg.is-empty(viewbox='0 0 100 100')
+														use(xlink:href='#icon_star')
+														image(src='img/symbols/icon_star-2x.png' width='20px' height='20px')
+													svg.is-filled(viewbox='0 0 100 100')
+														use(xlink:href='#icon_star-filled')
+														image(src='img/symbols/icon_star-filled-2x.png' width='20px' height='20px')
+													span.flow-box__CTA__alt-text Save
+												i.flow-box__CTA-icon.flow-box__CTA--right.interactive-svg
+													svg.is-empty(viewbox='0 0 100 100')
+														use(xlink:href='#icon_triangle')
+														image(src='img/symbols/icon_triangle-2x.png' width='20px' height='20px')
+													svg.is-filled(viewbox='0 0 100 100')
+														use(xlink:href='#icon_triangle-filled')
+														image(src='img/symbols/icon_triangle-filled-2x.png' width='20px' height='20px')
+													span.flow-box__CTA__alt-text View
 
 			//- .row.flow-box-slider-group.is-next
 			//- 	article.flow-box.flow-box--large(style='background: url(http://placehold.it/550x550) no-repeat')

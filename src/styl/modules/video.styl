@@ -19,6 +19,10 @@
 ***/
 .video-section
     padding 0 !important
+    background-size cover !important
+    background-position 50% 50%
+    position relative
+    
 .video-module
     position: relative
     padding-bottom: 56.25%
@@ -56,7 +60,7 @@
             transition opacity 0.3s ease-out 1s, z-index 0s linear 1s
             z-index -999
 
-.video-module__overlay
+.video-module__radial-overlay
     position: absolute
     top: 0
     left: 0
@@ -66,9 +70,10 @@
     height: 100%
     opacity 1
     z-index: 1
+    transition opacity 0.1s ease-out
     background: black radial-gradient(at top, #ffffff 0%, #00031C 30%, #000000 50%) no-repeat
     background-position 50% -20%
-    transition opacity 0.1s ease-out
+    
 
 .video-module__center
     align()
@@ -81,10 +86,13 @@
         transition top 0.3s ease-out 0.3s, opacity 0.3s ease-out 0.3s
         top 0
         position: relative
+        fs(4rem)
+        line-height 1.2
+        font-family proxLight
     .play-button
-        size 14%
+        size 12%
         margin auto
-        margin-top 2%
+        margin-top 3%
         color white
         opacity 1
         transition opacity 0.3s ease-out 0.3s
