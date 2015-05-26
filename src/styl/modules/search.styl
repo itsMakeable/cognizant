@@ -317,15 +317,8 @@ div.search__input
     right r(11rem)
   &.cogv1_search__favorites 
     right r(11rem * 2)
-  +below(768px)
-    size r(6.4rem)
-    &.cogv1_search__share
-      display none
-    &.cogv1_search__download
-      right 0
-    &.cogv1_search__favorites 
-      right r(6.4rem)
-
+  
+    
 .cogv1_search__flyout
   background-color: white
   position: absolute
@@ -409,7 +402,7 @@ div.search__input
   &.is-blue
     background-color blue
   +below(768px)
-    width r(6.4rem * 2)
+    display none
   .search__share
     background transparent
     background-color transparent

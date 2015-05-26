@@ -3,6 +3,8 @@
 	background-size cover !important
 	background-position 50% 50% !important
 	position relative
+	+below(1024px)
+		padding r(12rem) 0 r(12rem) 0
 	h1
 		text-align left
 		padding-bottom r(5rem)
@@ -36,3 +38,18 @@
 	max-width r(71rem)
 	strong
 		display block
+
+.cogv1_article-header__CTA
+	margin-top 4rem
+			
+.cogv1_article-header-icon
+	display inline-block
+	margin-right 2rem
+	color blue
+	
+	svg
+		margin auto
+		size r(3.2rem)
+	span
+		text-align center
+		fs(1.6rem)

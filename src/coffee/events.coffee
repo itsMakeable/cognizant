@@ -135,7 +135,14 @@ $(document).on 'click', (event) ->
 $ ->
 	MKBL.flowBoxSliderSetup()
 	MKBL.setupContenteditable()
-	
+	new Waypoint
+		element: $('.cogv1_article-nav')
+		offset: '50%'
+		handler: (direction) ->
+			if direction == 'down'
+				$(@.element).addClass('is-scrolling')
+			else
+				$(@.element).removeClass('is-scrolling')
 
 $(window).on 'debouncedresize', ->
 	MKBL.equalheight('.main-header','.js-equal-height', 1024)

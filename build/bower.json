@@ -20,13 +20,18 @@
     "lodash": "~3.6.0",
     "velocity": "~1.2.2",
     "perfect-scrollbar": "~0.6.2",
-    "raphael": "~2.1.4"
+    "waypoints": "~3.1.1"
   },
   "overrides": {
     "perfect-scrollbar": {
       "main": [
         "js/min/perfect-scrollbar.jquery.min.js",
         "css/perfect-scrollbar.css"
+      ]
+    },
+    "waypoints": {
+      "main": [
+        "lib/jquery.waypoints.min.js"
       ]
     }
   }

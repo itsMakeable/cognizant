@@ -62,6 +62,17 @@ block content
 				p.cogv1_article-header__description
 					strong A shift to individual healthcare. 
 					| Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.Curabitur blandit tempus porttitor vestibulum id ligul.
+				//- .cogv1_article-header__CTA
+				//- 	.cogv1_article-header__favorites.cogv1_article-header-icon.interactive-svg
+				//- 		svg.is-empty(viewbox='0 0 100 100')
+				//- 			use(xlink:href='#icon_star')
+				//- 		svg.is-filled(viewbox='0 0 100 100')
+				//- 			use(xlink:href='#icon_star-filled')
+				//- 		span Save
+				//- 	.cogv1_article-header__download.cogv1_article-header-icon
+				//- 		svg(viewbox='0 0 100 100')
+				//- 			use(xlink:href='#icon_download')
+				//- 		span Download
 		component.container.main-header__search-container
 			.search-module.search-module--main
 				.search__icon__wrapper
@@ -155,29 +166,39 @@ block content
 							
 
 	main
-		section.article-data
+		section.cogv1_article-data
 			.container
 				.row
-					.article-data__column
+					.cogv1_article-data__column
 						h2 Executive Highlights
-						.article-data__highlight
+						.cogv1_article-data__highlight
 							i.icon
 								svg(viewbox='0 0 100 100')
 									use(xlink:href='#icon_share-filled')
 							p 140 character max You probably already know. In 2012, the U.S. spent 20% of its gross domestic product (or $3 trillion)
-						.article-data__highlight
+						.cogv1_article-data__highlight
 							i.icon
 								svg(viewbox='0 0 100 100')
 									use(xlink:href='#icon_share-filled')
 							p 140 character max. shareable highlights. Despite its world-class medical technology, the U.S. is grossly inefficient in terms of controlling costs
-					.article-data__column
-						h2 Popularity
-						img.article-data__graph(src="img/server-side-generated-graph.png", alt="")
-		article.article
+					//- .cogv1_article-data__column
+					//- 	h2 Popularity
+					//- 	img.cogv1_article-data__graph(src="img/server-side-generated-graph.png", alt="")
+				.cogv1_article-nav.cogv1_article-nav--prev
+					i.icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_caret')
+					span Prev
+				.cogv1_article-nav.cogv1_article-nav--next
+					i.icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_caret')
+					span Next
+		article.cogv1_article
 			.container
 				h2 Six Ways Analytics Can Improve Healthcare
 				hr
-			.container.article-body__container
+			.container.cogv1_article-body__container
 				h3 Better Collaboration
 				p Big data benefits healthcare, too. But only if medical providers know how to capture all patient data in a single place which helps them better interpret what the information is telling them. In other words, evidence-based medical decisions related to recent practitioner research, technical reports, clinical trial studies, expert views and patient characteristics (including those from their social Web site and app usage) to enable appropriate intervention at the point and time of care. Like all industries, healthcare-related data is growing at a rate of 35% per year. Analytics are required to effectively mine this data to improve health outcomes.
 				ul.unorder-list
@@ -194,7 +215,7 @@ block content
 				h2 Proportional Data Infographics
 				hr
 				img(src="img/server-side-generated-charts.png", alt="")
-			.container.article-body__container
+			.container.cogv1_article-body__container
 				p Our clients range from FTSE 300 companies, to large charitable organisations and some small local businesses who are striving to expand. Most of our clients use our Data Analysis service to inform their strategic decision making and their targets for the immediate, mid-term and long-term future. The data sources that we use for this type of analysis include customer enquiry data, sales figures, costs, market data and customer feedback.
 				h3 Better Collaboration
 				p We are authorised and regulated by the Financial Services Authority (FSA).
@@ -206,11 +227,11 @@ block content
 
 			include modules/video-module2
 
-			.container.article-body__container
+			.container.cogv1_article-body__container
 				h3 Better Collaboration
 				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestias earum vero iste exercitationem. Accusamus Dolore molestias earum vero iste exercitationem. Accusamus deserunt consequuntur vitae quidem ex, non assumenda nihil reprehenderit vero aut maxime. nostrum, deleniti!
 				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestias earum vero iste exercitationem. Accusamus deserunt consequuntur vitae quidem ex, non assumenda nihil reprehenderit vero aut maxime. nostrum, deleniti!
-				footer
+				footer.cogv1_article__footer
 					.row.share-icons-list
 						a.share-icon
 							svg(viewbox='0 0 100 100')

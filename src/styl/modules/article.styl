@@ -1,16 +1,15 @@
-.article-body__container
+.cogv1_article-body__container
 	padding-left r(9rem)
 	padding-right r(6rem)
 	
-.article
+.cogv1_article
 	counter-reset h3
-	padding r(4rem) 0 r(10rem)
+	padding r(3rem) 0 r(10rem)
 	.video-section
 		margin r(6rem) 0
-		
 	h2
 		color blue
-		padding-top r(3rem)
+		padding-top r(8rem)
 	h3
 		text-transform capitalize
 		fs(2.8rem)
@@ -29,7 +28,6 @@
 			top r(-0.6rem)
 			+below(1024px)
 				left r(-5rem)
-				
 	p
 		padding-bottom r(1.6rem)
 	hr
@@ -44,20 +42,45 @@
 			width 100%
 			background green vgradient5
 			position absolute
-			
-.unorder-list
-	fs(1.8rem)
-	padding r(1rem) 0 r(2.6rem)
-	li
-		padding r(1rem) 0 r(1rem) r(2.6rem)
-		position relative
-		&:before
-			content ''	
-			display inline-block
-			size r(1rem)
-			position absolute
-			background-color blue
-			left 0
-			top 0
-			bottom 0
-			margin auto
+
+.cogv1_article__footer
+	margin r(2rem) 0
+
+.cogv1_article-nav
+	position absolute
+	size 6rem
+	background-color green
+	bottom r(-8.6rem)
+	color white
+	svg
+		size 3rem
+		transform-origin 50% 50%
+		position absolute
+		top 0
+		bottom 0
+		margin auto
+	span 
+		color gray
+		text-align center
+		align(horizontal)
+		bottom r(-3rem)
+		fs(1.6rem)
+		font-family proxLight
+	&.is-scrolling
+		position fixed
+		top 0
+		bottom 0
+		margin auto
+		z-index 100
+.cogv1_article-nav--prev
+	left 0
+	background hgradient66
+	svg
+		transform rotate(180deg)
+		left 1.4rem
+
+.cogv1_article-nav--next
+	right 0
+	background hgradient66
+	svg
+		right 1.4rem

@@ -114,3 +114,20 @@ b
 	font-size inherit
 	line-height inherit
 	letter-spacing 0.03em
+
+.unorder-list
+	fs(1.8rem)
+	padding r(1rem) 0 r(2.6rem)
+	li
+		padding r(1rem) 0 r(1rem) r(2.6rem)
+		position relative
+		&:before
+			content ''	
+			display inline-block
+			size r(1rem)
+			position absolute
+			background-color blue
+			left 0
+			top 0
+			bottom 0
+			margin auto
