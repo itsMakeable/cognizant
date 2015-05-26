@@ -100,6 +100,10 @@ div
     +below(768px)
       fs(1.4rem)
       padding 0 r(8.6rem)
+      margin-right r(-8.6rem)
+    +below(341px)
+      padding-right r(1rem)
+      margin-right r(-1rem)
 
 div.search__input
   text-align left
@@ -140,12 +144,6 @@ div.search__input
   top 0
   z-index 1
   
-.search__icon
-  svg
-    size r(2.8rem)
-    align()
-    z-index: 1
-
 .search__icon__wrapper
   overflow: hidden
   width r(7.6rem)
@@ -154,14 +152,23 @@ div.search__input
   position absolute
   top 0
   z-index 1
-  
+
 .search__icon
   left 0
   z-index 11
   background green hgradient66
   transition all 0.4s ease-out
   transform translate(0%)
-  &:before
+  color white
+  &:hover
+    color white
+  svg
+    size r(2.8rem)
+    align()
+    z-index: 1
+
+.gradient
+  .search__icon:before
     content ''
     display block
     position absolute
@@ -273,7 +280,7 @@ div.search__input
 
 .search__icon--right
   right r(2rem)
-  size r(2.8rem)
+  size r(2.7rem)
   position absolute
 
 .search__CTA
@@ -294,6 +301,7 @@ div.search__input
     z-index 1
       
 .cogv1_search__right-icon
+  cursor pointer
   position absolute
   size r(11rem) r(6.4rem)
   top 0

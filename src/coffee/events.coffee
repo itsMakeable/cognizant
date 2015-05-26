@@ -50,6 +50,9 @@ $('.js-dropdown-option').on 'click',  ->
 	$this = $(this)
 	MKBL.contenteditableDropdownSelect($this)
 
+$('.interactive-svg').on 'click',  ->
+	MKBL.activationToggle($(this))
+
 $('.js-edit-profile').on 'click',  ->
 	MKBL.activationToggle($('.edit-profile-overlay'))
 

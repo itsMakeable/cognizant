@@ -35,19 +35,21 @@ gulp.task 'styl', ->
 			url:
     			name: 'embedurl'
 		})
-		.pipe $.rename('index.css')
+		.pipe $.rename('main.css')
 		# .pipe $.csscomb()
-		.pipe gulp.dest('./tmp/css')
-
-
-gulp.task 'css', ->
-	return gulp.src('./tmp/css/**/*.css')
-		.pipe $.plumber(errorHandler: onError)
-		.pipe $.concat('main.css')
-		.pipe $.csscomb()
+		# .pipe gulp.dest('./tmp/css')
 		.pipe $.bless()
-		.pipe gulp.dest('app')
+		.pipe gulp.dest('app/css')
 		.pipe browserSync.reload({stream:true})
+
+# gulp.task 'css', ->
+# 	return gulp.src('./tmp/css/**/*.css')
+# 		.pipe $.plumber(errorHandler: onError)
+# 		.pipe $.concat('main.css')
+# 		.pipe $.csscomb()
+# 		.pipe $.bless()
+# 		.pipe gulp.dest('app')
+# 		.pipe browserSync.reload({stream:true})
 
 
 gulp.task 'styleguide', ->
@@ -60,6 +62,7 @@ gulp.task 'styleguide', ->
 		]
 		extraJs: [ 
 			'build/styleguide/holder.min.js' 
+			'docs/styleguide/js/vendor.js', 
 			'docs/styleguide/js/main.js', 
 		]
 		templateJs: 'build/styleguide/styleguide.js'

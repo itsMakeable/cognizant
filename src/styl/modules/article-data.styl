@@ -1,0 +1,38 @@
+.article-data
+	background-color backgray
+	padding r(9rem) 0
+	
+.article-data__column
+	col(1/2)
+	cf()
+
+.article-data__graph
+	width r(38rem)
+	float right
+	margin-top r(2rem)
+		
+.article-data__highlight
+	padding 0 r(3rem)
+	margin r(4rem) 0
+	margin-left r(5rem)
+	border-left 1px solid gray
+	position relative
+	.icon
+		size r(2.2rem)
+		position absolute
+		left r(-5rem)
+		top r(2rem)
+		color gray
+		transition 0.3s ease
+		&:hover
+			color blue
+	&:before
+		content ''
+		display inline-block
+		position absolute
+		left r(-1.2rem)
+		top r(2rem)
+		size r(1.2rem) r(1.8rem)
+		background transparent url(unquote('data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSI0NzUuOSAxNTQuMyAxMiAxOCI+PHBhdGggZmlsbD0iI0YxRjFGMSIgc3Ryb2tlPSIjRDREMEQxIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNNDg3LjkgMTU0LjNsLTEwLjEgOSAxMC4xIDkiLz48L3N2Zz4=')) no-repeat
+		background-size cover
+		background-position 0% 0%

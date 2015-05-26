@@ -20,7 +20,7 @@ block content
 							use(xlink:href='#icon_settings')
 				
 			subcomponent.compact-profile-box__flyout.compact-profile-box__flyout--settings
-				.profile-box__indicator
+				.profile-box__indicator.triangle
 				header
 					p Settings
 					hr
@@ -29,7 +29,7 @@ block content
 				.profile-box__button
 					a(href="/").button--silent Log Out
 			subcomponent.compact-profile-box__flyout.compact-profile-box__flyout--notifications
-				.profile-box__indicator
+				.profile-box__indicator.triangle
 				header
 					p Recent Activity
 					hr
@@ -47,7 +47,7 @@ block content
 									use(xlink:href='#icon_caret')
 				button.button--silent View All
 
-	header.cogv1_article-header.color-bg(style='background: url("http://lorempixel.com/500/1250/technics") no-repeat;')
+	header.cogv1_article-header.color-bg(style='background: url("http://lorempixel.com/1250/500/technics") no-repeat;')
 		.cogv1_article-header__overlay
 		.container
 			.row
@@ -65,7 +65,7 @@ block content
 		component.container.main-header__search-container
 			.search-module.search-module--main
 				.search__icon__wrapper
-					.search__icon.gradient6reverse--horizontal
+					a.search__icon.gradient6reverse--horizontal
 						i.icon
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_search-article')
@@ -75,14 +75,19 @@ block content
 						use(xlink:href='#icon_triangle')
 				input.search__input(type='text', placeholder='Search Article for Keywords')
 				.cogv1_search__section-right.is-blue
-					.cogv1_search__favorites.cogv1_search__right-icon
-						svg(viewbox='0 0 100 100')
+					.cogv1_search__favorites.cogv1_search__right-icon.interactive-svg
+						svg.is-empty(viewbox='0 0 100 100')
 							use(xlink:href='#icon_star')
+						svg.is-filled(viewbox='0 0 100 100')
+							use(xlink:href='#icon_star-filled')
 					.cogv1_search__download.cogv1_search__right-icon
 						svg(viewbox='0 0 100 100')
 							use(xlink:href='#icon_download')
-					.cogv1_search__share.cogv1_search__right-icon.js-search-share-flyout__trigger
-						| <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="-1389 851 100 100"><g class="icon_share-filled"><circle class="fill" fill="transparent" cx="-1371" cy="901" r="13"/><circle class="fill" fill="transparent" cx="-1307" cy="868" r="13"/><circle class="fill" fill="transparent" cx="-1307" cy="933" r="13"/><path id="outer-path" fill="currentColor" d="M-1307.4 916.5c-5.4 0-10.2 2.6-13.2 6.6l-34.4-17.4c.4-1.5.7-3 .7-4.6s-.3-3.1-.7-4.6l34.4-17.4c3.1 4 7.8 6.6 13.2 6.6 9.3 0 16.8-7.5 16.8-16.8s-7.5-16.8-16.8-16.8-16.8 7.5-16.8 16.8c0 1.6.3 3.1.7 4.6l-34.4 17.4c-3.1-4-7.8-6.6-13.2-6.6-9.3 0-16.8 7.5-16.8 16.8s7.5 16.8 16.8 16.8c5.4 0 10.2-2.6 13.2-6.6l34.4 17.4c-.4 1.5-.7 3-.7 4.6 0 9.3 7.5 16.8 16.8 16.8s16.8-7.5 16.8-16.8-7.6-16.8-16.8-16.8zm0-58.1c5.8 0 10.4 4.7 10.4 10.5s-4.7 10.4-10.4 10.4c-5.8 0-10.4-4.7-10.4-10.4s4.6-10.5 10.4-10.5zm-63.8 53.1c-5.8 0-10.4-4.7-10.4-10.5s4.7-10.4 10.4-10.4c5.8 0 10.4 4.7 10.4 10.4.1 5.8-4.6 10.5-10.4 10.5zm63.8 32.2c-5.8 0-10.4-4.7-10.4-10.5s4.7-10.4 10.4-10.4c5.8 0 10.4 4.7 10.4 10.4 0 5.8-4.7 10.5-10.4 10.5z"/></g></svg>
+					.cogv1_search__share.cogv1_search__right-icon.js-search-share-flyout__trigger.interactive-svg
+						svg.is-empty(viewbox='0 0 100 100')
+							use(xlink:href='#icon_share')
+						svg.is-filled(viewbox='0 0 100 100')
+							use(xlink:href='#icon_share-filled')
 					subcomponent.search__share-flyout__wrapper
 						.search__share
 							.search__share-flyout.gradient5--vertical.share-flyout.js-share-flyout
@@ -149,4 +154,38 @@ block content
 							| Sign In with Linkedin
 							
 
-	section(style='height:1000px;')
+	main
+		section.article-data
+			.container
+				.row
+					.article-data__column
+						h2 Executive Highlights
+						.article-data__highlight
+							i.icon
+								svg(viewbox='0 0 100 100')
+									use(xlink:href='#icon_share-filled')
+							p 140 character max You probably already know. In 2012, the U.S. spent 20% of its gross domestic product (or $3 trillion)
+						.article-data__highlight
+							i.icon
+								svg(viewbox='0 0 100 100')
+									use(xlink:href='#icon_share-filled')
+							p 140 character max. shareable highlights. Despite its world-class medical technology, the U.S. is grossly inefficient in terms of controlling costs
+					.article-data__column
+						h2 Popularity
+						img.article-data__graph(src="img/server-side-generated-graph.png", alt="")
+		article
+			footer
+				.row.share-icons-list
+					a.share-icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_email')
+					a.share-icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_twitter')
+					a.share-icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_facebook')
+					a.share-icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_linkedin')
+

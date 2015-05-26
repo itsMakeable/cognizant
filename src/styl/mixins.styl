@@ -40,3 +40,17 @@ $abolute-cover
 	border-style: solid
 	border-width: r(1.3rem) r(1.3rem) r(1.3rem) 0
 	border-color: transparent backgray transparent transparent
+
+.interactive-svg
+	cursor pointer
+	svg
+		$abolute-cover
+	.is-filled
+		opacity 0
+		transition opacity 0.3s ease-out
+	&.is-active
+		.is-filled
+			opacity 1
+	&:hover
+		.is-filled
+			opacity 0.5

@@ -164,15 +164,10 @@
         position: absolute
         bottom 0
         size r(3rem)
-        .fill
-            fill transparent
-            transition 0.3s ease
+
     &:hover
         svg
             transform translateY(r(-1rem))
-            .fill
-                fill currentColor
-                opacity 0.5
         .flow-box__CTA__alt-text
             opacity 1
             top 100%
@@ -180,8 +175,7 @@
 
 .flyout-is-active
     .flow-box__CTA--share
-        .fill
-            fill currentColor
+        .is-filled
             opacity 1
 
 .flow-box__CTA--left

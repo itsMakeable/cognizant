@@ -43,7 +43,10 @@ $button
 	white-space: nowrap
 	letter-spacing 0.03em
 	+ .icon.question-mark
-		margin 0 -3.3rem 0 1rem
+		margin 0 r(-3.3rem) 0 r(1rem)
+		+below(420px)
+			display block
+			margin r(2rem) auto
 		
 .button--primary,
 a.button--primary

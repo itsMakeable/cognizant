@@ -8,7 +8,7 @@ html.no-js(lang='')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		link(rel='apple-touch-icon', href='apple-touch-icon.png')
 		//- Place favicon.ico in the root directory
-		link(rel='stylesheet', href='main.css')
+		link(rel='stylesheet', href='css/main.css')
 		script(src='http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js')
 		script.
 			// Register custom html tags
@@ -30,8 +30,8 @@ html.no-js(lang='')
 					|  browser. Please 
 					a(href='http://browsehappy.com/') upgrade your browser
 					|  to improve your experience.
-			nav
-				h6 Navigation provided by Cognizant
+			//- nav
+			//- 	h6 Navigation provided by Cognizant
 
 			block content
 			
@@ -55,13 +55,15 @@ html.no-js(lang='')
 										a(href="#", target="_blank") Cookie Policy
 										a(href="#", target="_blank") Safe Harbor
 										span ©2015 Cognizant, all rights reserved
-				.footer--bottom
-					h6 Footer provided by Cognizant
+				//- .footer--bottom
+				//- 	h6 Footer provided by Cognizant
 
 			block scripts
 			script.
 				head.load(
-					{ app: 'main.js' }, 
+					{ fonts: './css/font.css' }, 
+					{ vendor: './js/vendor.js' }, 
+					{ app: './js/app.js' }, 
 					function() {
 					// Async Image Loading
 					aload();

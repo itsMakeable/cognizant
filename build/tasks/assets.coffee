@@ -26,7 +26,8 @@ gulp.task 'font', ->
   ])
   	.pipe $.plumber(errorHandler: onError)
   	.pipe $.cache($.cssfont64())
-  	.pipe gulp.dest('./tmp/css')
+    .pipe $.concat('font.css')
+  	.pipe gulp.dest('./app/css/')
 
 
 gulp.task 'static', ->

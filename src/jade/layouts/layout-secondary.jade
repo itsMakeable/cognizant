@@ -8,7 +8,7 @@ html.no-js(lang='')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		link(rel='apple-touch-icon', href='apple-touch-icon.png')
 		//- Place favicon.ico in the root directory
-		link(rel='stylesheet', href='main.css')
+		link(rel='stylesheet', href='css/main.css')
 		script(src='http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js')
 		script.
 			// Register custom html tags
@@ -38,7 +38,9 @@ html.no-js(lang='')
 			block scripts
 			script.
 				head.load(
-					{ app: 'main.js' }, 
+					{ fonts: './css/font.css' }, 
+					{ vendor: './js/vendor.js' }, 
+					{ app: './js/app.js' }, 
 					function() {
 					// Async Image Loading
 					aload();
