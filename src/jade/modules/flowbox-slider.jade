@@ -6,7 +6,7 @@ section.section.flow-box-slider-section.backgray-bg
 		component.flow-box-slider
 			each val, index in {1:'is-active',2:'is-next',3:'is-prev'}
 				.row.flow-box-slider-group(class='#{val}')
-					a.flow-box.flow-box--large(href='/article.html' style='background: url(http://placehold.it/550x550) no-repeat')
+					.flow-box.flow-box--large(href='/article.html' style='background: url(http://placehold.it/550x550) no-repeat')
 							.flow-box__gradient-bg
 								h4.flow-box__tag 
 									i.icon
@@ -16,7 +16,7 @@ section.section.flow-box-slider-section.backgray-bg
 									strong Article
 									|   |  Added for you on 12.14.14
 								.flow-box__content
-									.flow-box__title
+									a.flow-box__title
 										h3 Healthcare Consumerism:
 										h5 The Rise of the Empowered Healthcare Consumer
 										.flow-box__CTA-description
@@ -24,7 +24,7 @@ section.section.flow-box-slider-section.backgray-bg
 												strong A shift to individual healthcare.
 												| Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.
 									.flow-box__CTA
-										i.flow-box__CTA-icon.flow-box__CTA--left
+										i.flow-box__CTA-icon.flow-box__CTA--left.interactive-svg
 											svg.is-empty(viewbox='0 0 100 100')
 												use(xlink:href='#icon_star')
 												image(src='img/symbols/icon_star-2x.png' width='20px' height='20px')
@@ -51,7 +51,7 @@ section.section.flow-box-slider-section.backgray-bg
 
 					div.flow-box__small-container
 						each val, index in [1,2]
-							a.flow-box(href='/article.html' style='background: url(http://placehold.it/350x350) no-repeat')
+							.flow-box(href='/article.html' style='background: url(http://placehold.it/350x350) no-repeat')
 									.flow-box__gradient-bg
 										h4.flow-box__tag
 											i.icon
@@ -59,7 +59,7 @@ section.section.flow-box-slider-section.backgray-bg
 											strong Article
 
 										.flow-box__content
-											.flow-box__title
+											a.flow-box__title
 												h2 A Systematic Approach To Optimizing Collateral
 											.flow-box__CTA-description.truncate
 												p A Systematic Approach To Optimizing Collateral

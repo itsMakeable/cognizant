@@ -35,10 +35,10 @@ $.fn.alterClass = (removals, additions) ->
   resizeTimeout = undefined
   $special = $event.special.debouncedresize =
     setup: ->
-      $(this).on 'resize', $special.handler
+      $(@).on 'resize', $special.handler
       return
     teardown: ->
-      $(this).off 'resize', $special.handler
+      $(@).off 'resize', $special.handler
       return
     handler: (event, execAsap) ->
       # Save the context
@@ -81,7 +81,7 @@ MKBL.equalheight = (container, eqHeightChildren, cutoff) ->
 		# $container = $(container)
 		$child = $(container).find(eqHeightChildren)
 		$child.each ->
-			$this = $(this)
+			$this = $(@)
 			if $this.outerHeight() > t
 				t_elem = this
 				t = $this.outerHeight()
@@ -319,7 +319,7 @@ MKBL.contenteditableDropdown = ($dropdown, $trigger) ->
 			easing: [ 300, 30 ],
 			delay: 0
 			complete: () ->
-				$(this).addClass('is-active')
+				$(@).addClass('is-active')
 	else
 		MKBL.activationOff($trigger)
 		$dropdown.velocity {height: 0},
@@ -327,7 +327,7 @@ MKBL.contenteditableDropdown = ($dropdown, $trigger) ->
 			easing: [ 300, 30 ],
 			delay: 0
 			complete: () ->
-				$(this).removeClass('is-active')
+				$(@).removeClass('is-active')
 
 MKBL.contenteditableMobileScroll = ($this) ->
 	$('html, body').animate { scrollTop: $this.position().top }, 'slow'
@@ -347,12 +347,12 @@ MKBL.contenteditableDropdownAutocomplete = ($this) ->
 
 		matchingLetters = null
 		$dropdown.find('.js-dropdown-option').each ->
-			matchingLetters = $(this).text()
+			matchingLetters = $(@).text()
 			matchingLetters = matchingLetters.replace(pattern, ($1) ->
 			  '<span>' + $1 + '</span>'
 			)
 			
-			$(this).html matchingLetters
+			$(@).html matchingLetters
 
 
 ###*
@@ -406,7 +406,7 @@ MKBL.endContenteditable = ->
 
 	MKBL.activationOff($('[contenteditable]'))
 	$('[contenteditable]').each ->
-		$this = $(this)
+		$this = $(@)
 		if $this.text() == ''
 			$this
 				.text($this.data('placeholder'))
@@ -435,7 +435,7 @@ MKBL.endContenteditable = ->
 ###
 MKBL.setupContenteditable = ->
 	$('[contenteditable]').each ->
-		$this = $(this).closest('.is-editable').find('.contenteditable__wrapper')
+		$this = $(@).closest('.is-editable').find('.contenteditable__wrapper')
 		if $(window).width()*0.7 > 840
 			maxWidth = 840
 		else
@@ -476,21 +476,30 @@ MKBL.activationOff = ($parent) ->
 	cssClass = cssClass || 'is-active'
 	$parent.removeClass(cssClass)
 
-MKBL.articleNavWaypoint = new Waypoint({
-	element: $('.cogv1_article-nav')
+MKBL.articleNavWaypoint = $('.cogv1_article-nav').waypoint
+	# element: $('.cogv1_article-nav')
 	offset: $(window).height() / 2
 	handler: (direction) ->
 		if direction == 'down'
-			$(@.element).addClass('is-scrolling').removeClass('is-bottom')
+			$(@.element)
+				.addClass('is-scrolling')
+				.removeClass('is-bottom')
 		else
-			$(@.element).removeClass('is-scrolling').removeClass('is-bottom')
-	})
-MKBL.articleNavBottomWaypoint = new Waypoint({
-	element: $('.cogv1_article__footer-nav')
+			$(@.element)
+				.removeClass('is-scrolling')
+				.removeClass('is-bottom')
+	
+
+MKBL.articleNavBottomWaypoint = $('.cogv1_article__footer-nav').waypoint
+	# element: $('.cogv1_article__footer-nav')
 	offset: 'bottom-in-view'
 	handler: (direction) ->
 		if direction == 'down'
-			$('.cogv1_article-nav').addClass('is-bottom').removeClass('is-scrolling')
+			$('.cogv1_article-nav')
+				.addClass('is-bottom')
+				.removeClass('is-scrolling')
 		else
-			$('.cogv1_article-nav').addClass('is-scrolling').removeClass('is-bottom')
-	})
+			$('.cogv1_article-nav')
+				.addClass('is-scrolling')
+				.removeClass('is-bottom')
+	

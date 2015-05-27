@@ -9,7 +9,7 @@ onError = (error) ->
 	$.util.log '======= ERROR. ========\n'
 	$.util.log error
 	
-gulp.task 'coffee', ->
+gulp.task 'coffee-watch', ->
 	gulp.src([
 		'src/coffee/**/**/*.coffee'
 	])
@@ -39,4 +39,5 @@ gulp.task 'js-watch', ->
 		.pipe gulp.dest 'app/js'
 		.pipe gulp.dest './docs/styleguide/js'
 
+gulp.task('coffee', ['coffee-watch'], browserSync.reload);
 gulp.task('js', ['js-watch'], browserSync.reload);

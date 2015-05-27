@@ -135,9 +135,10 @@ $(document).on 'click', (event) ->
 $ ->
 	MKBL.flowBoxSliderSetup()
 	MKBL.setupContenteditable()
-	if $(window).width() > 1024
+	if $(window).width() > 1024 and $('.cogv1_article-nav').length
 		MKBL.articleNavWaypoint
 		MKBL.articleNavBottomWaypoint
+		return
 
 $(window).on 'debouncedresize', ->
 	MKBL.equalheight('.main-header','.js-equal-height', 1024)
@@ -146,9 +147,10 @@ $(window).on 'debouncedresize', ->
 	MKBL.flowBoxSliderSetup()
 	$('.modal-module').addClass('is-hidden')
 	MKBL.setupContenteditable()
-	if $(window).width() > 1024
+	if $(window).width() > 1024 and $('.cogv1_article-nav').length
 		MKBL.articleNavWaypoint
 		MKBL.articleNavBottomWaypoint
+		return
 
 $(window).on 'load', ->
 	MKBL.equalheight('.main-header','.js-equal-height', 1024)

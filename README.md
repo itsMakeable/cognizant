@@ -50,6 +50,8 @@ $$$:
 
 If images or svg are not being processed as expected, run `gulp clear` to clear the cache.
 
+A JS requirement is [Head.js](http://headjs.com/) loading in the head of the document to provide specific classes relevatant to the browser in order to profive fallback css for certain things like gradients.
+
 Wireframes: http://wa7puw.axshare.com/#p=cover
 
 Each gradient SVG need to have a unique fill ID.

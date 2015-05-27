@@ -1,41 +1,22 @@
 section.section.generic-section.white-bg
 	.container
-		.content-list
-			header.content-list__header
-				h2 Digital Business
-				//- h3 Social Mobile Analytics Cloud
-				p: small  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat qui est minima quae, velit modi eos earum! Adipisci sunt, doloremque quisquam sint doloribus ullam debitis. Esse placeat voluptate temporibus excepturi.
-			.content-list__header-border
-			each val, index in [1,2,3]
-				article.content-list__items
-					.content-list__item
-						h4
-							| Article |  
-							i.icon
-								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_share-filled')
-							|  25k
-						p: strong: a(href='') It’s Time for Learning to Go Back to School
-						i.content-list__item-CTA
-							a(href='')
-								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_triangle-filled')
-			footer.content-list__footer
-				a.button--silent(href='#') View Digital Business
-		.content-list
-			header.content-list__header
-				h2 Code Halos&trade;
-				//- h3 Social Mobile Analytics Cloud
-				p: small  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat qui est minima quae, velit modi eos earum! Adipisci sunt, doloremque quisquam sint doloribus ullam debitis. Esse placeat voluptate temporibus excepturi.
-			.content-list__header-border
-			each val, index in [1,2,3]
-				article.content-list__items
-					.content-list__item
-						h4
-							| Article | 
-							i.icon
-								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_share-filled')
-							| 25k
-						p: strong It’s Time for Learning to Go Back to School
-						i.content-list__item-CTA
-							svg(viewbox='0 0 100 100'): use(xlink:href='#icon_triangle-filled')
-			footer.content-list__footer
-				a.button--silent(href='#') View Code Halos
+		each val, index in [1,2]
+			.content-list
+				header.content-list__header
+					h2 Digital Business
+					//- h3 Social Mobile Analytics Cloud
+					p: small  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat qui est minima quae, velit modi eos earum! Adipisci sunt, doloremque quisquam sint doloribus ullam debitis. Esse placeat voluptate temporibus excepturi.
+				.content-list__header-border
+				each val, index in [1,2,3]
+					article.content-list__items
+						.content-list__item
+							h4
+								i.icon
+									| <svg id="data_science" xmlns="http://www.w3.org/2000/svg" viewBox="8.8 -14.6 75.4 50.4"><linearGradient id="data-science" gradientUnits="userSpaceOnUse" x1="76.168" y1="-74.456" x2="95.128" y2="33.071" gradientTransform="matrix(.563 0 0 -.563 2.31 .145)"><stop offset="0" stop-color="#6DB33F"/><stop offset="1" stop-color="#72CDF4"/></linearGradient><path fill="url(#data-science)" d="M82.9 33.2h-3.7v-46.5c0-.7-.7-1.3-1.3-1.3h-10c-.7 0-1.3.7-1.3 1.3v46.5h-5V9.3c0-.7-.7-1.3-1.3-1.3h-10c-.7 0-1.3.7-1.3 1.3v23.9h-5V1.7C44 1 43.3.4 42.7.4h-10c-.7 0-1.3.7-1.3 1.3v31.5h-5V19.3c0-.7-.7-1.3-1.3-1.3h-10c-.7 0-1.3.7-1.3 1.3v13.9h-3.7c-.7 0-1.3.7-1.3 1.3 0 .7.7 1.3 1.3 1.3H82.9c.7 0 1.3-.7 1.3-1.3 0-.8-.4-1.3-1.3-1.3zm-66.5 0V20.6H24v12.6h-7.6zm17.6 0V3h7.6v30.2H34zm17.6 0V10.6h7.6v22.6h-7.6zm17.6 0V-12h7.6v45.2h-7.6z"/></svg>
+								| Article
+							p: strong: a(href='') It’s Time for Learning to Go Back to School
+							i.content-list__item-CTA
+								a(href='')
+									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_triangle-filled')
+				footer.content-list__footer
+					a.button--silent(href='#') View Digital Business

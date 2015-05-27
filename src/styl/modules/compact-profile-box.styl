@@ -69,7 +69,7 @@
   height 0
   overflow visible
   position relative
-  +below(540px)
+  +below(768px)
     padding 0
   
 .compact-profile-box-module
@@ -81,7 +81,7 @@
 .compact-profile-box-bar
   background-color: backgray
   color black
-  padding r(1.4rem) r(2rem) r(1rem)
+  padding r(0.6rem) r(2rem) r(0.6rem)
   text-align left
   margin 0 auto
   position relative
@@ -108,12 +108,13 @@
 .compact-profile-box__details
   float left
   line-height r(3.4rem)
-  +below(640px)
+  +below(1024px)
     .hide-small
       display none
         
 .compact-profile-box__aside
   float right
+  margin-right r(19.8rem)
   position relative
   .icon
     size r(4.8rem) r(3.5rem)
@@ -131,7 +132,7 @@
   position: absolute
   padding: r(2.6rem) r(3rem) r(1.8rem)
   width: r(33rem)
-  top: r(5.9rem)
+  top: r(4.7rem)
   right: 0
   max-height: r(39rem)
   text-align: center
@@ -159,9 +160,29 @@
     left auto
   &.compact-profile-box__flyout--settings
     .profile-box__indicator
-      right r(3.8rem)
+      right r(23.5rem)
   &.compact-profile-box__flyout--notifications
     .profile-box__indicator
-      right r(9.9em)
+      right r(29.5rem)
     
-    
+.compact-profile-box__button
+  background-color blue
+  color white
+  top 0
+  bottom 0
+  margin auto
+  right 0
+  width r(19.5rem)
+  position absolute
+  .search__smart-search
+    color inherit
+    right 0
+    left 0
+    width r(13rem)
+    border none
+  svg, p
+    display inline-block
+    vertical-align middle
+  svg
+    size r(2rem)
+    margin-right r(1rem)

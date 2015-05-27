@@ -27,7 +27,8 @@
 			size 4rem
 			font-family proxRegIt
 			top r(-0.6rem)
-			+below(1024px)
+			
+			+below(1140px)
 				left r(-5rem)
 	p
 		padding-bottom r(1.6rem)
@@ -189,7 +190,7 @@
 		p
 			display inline-block
 			height r(2.3rem)
-			margin-top r(1.6rem)
+			margin-top r(1.8rem)
 			@extend .truncated
 			position relative
 			padding-right 1rem
@@ -238,7 +239,11 @@
 .cogv1_article__related
 	background darkgreen linear-gradient(5deg, green 0%, darkblue 100%)
 	text-align center
-	padding-top r(4rem)
+	.header--section
+		padding r(5rem) 0 r(1rem)
+.cogv1_article__related--large
+	+below(768px)
+		display none
 	.container
 		background-color white
 		padding r(4rem) r(3rem) r(1rem) r(3rem)
@@ -247,22 +252,38 @@
 		col(1/3)
 		box-shadow 0 0 0 0 transparent
 		border 0px solid transparent
-		height r(34rem)
+		height r(30rem)
 		text-align left !important
 		+below(1024px)
 			col(1/2, cycle: 2)
 			&:nth-child(3)
 				display none
-		+below(640px)
-			col(1/1, uncycle: 2)
-			&:nth-child(2)
-				display none
+		// +below(640px)
+		// 	col(1/1, uncycle: 2)
+		// 	&:nth-child(2)
+		// 		display none
 	.flow-box__title
 		h2
 			max-height 92px
 	.flow-box__CTA-description
-		padding-top 
+		position absolute
+		bottom r(6rem)
 	.flow-box__tag
 		margin-left r(2.2rem)
 		display block
 		right r(2.2rem)
+
+.cogv1_article__related--small
+	.container
+		background-color white
+		margin-top r(2rem)
+		text-align left
+		padding r(1rem) r(4rem) 0
+		margin 0 3%
+		+below(540px)
+			padding r(1rem) r(2rem) 0
+			margin 0
+			
++above(768px)
+	.cogv1_article__related--small
+		display none
