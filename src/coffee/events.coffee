@@ -131,18 +131,13 @@ $(document).on 'click', (event) ->
 				setTimeout ->
 					$video.attr('src',videoURL)
 				, 1
-		
+
 $ ->
 	MKBL.flowBoxSliderSetup()
 	MKBL.setupContenteditable()
-	new Waypoint
-		element: $('.cogv1_article-nav')
-		offset: '50%'
-		handler: (direction) ->
-			if direction == 'down'
-				$(@.element).addClass('is-scrolling')
-			else
-				$(@.element).removeClass('is-scrolling')
+	if $(window).width() > 1024
+		MKBL.articleNavWaypoint
+		MKBL.articleNavBottomWaypoint
 
 $(window).on 'debouncedresize', ->
 	MKBL.equalheight('.main-header','.js-equal-height', 1024)
@@ -151,6 +146,9 @@ $(window).on 'debouncedresize', ->
 	MKBL.flowBoxSliderSetup()
 	$('.modal-module').addClass('is-hidden')
 	MKBL.setupContenteditable()
+	if $(window).width() > 1024
+		MKBL.articleNavWaypoint
+		MKBL.articleNavBottomWaypoint
 
 $(window).on 'load', ->
 	MKBL.equalheight('.main-header','.js-equal-height', 1024)

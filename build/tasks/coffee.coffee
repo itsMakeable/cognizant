@@ -31,10 +31,10 @@ gulp.task 'js-watch', ->
 			'tmp/js/vendor/*.js'
 			'tmp/js/*.js'
 		]))
-		.pipe($.accord('uglify-js', {
-			beautify: true
-			mangle: false
-		}))
+		# .pipe($.accord('uglify-js', {
+		# 	beautify: true
+		# 	mangle: false
+		# }))
 		.pipe $.concat 'vendor.js'
 		.pipe gulp.dest 'app/js'
 		.pipe gulp.dest './docs/styleguide/js'

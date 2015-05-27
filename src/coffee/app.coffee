@@ -475,3 +475,22 @@ MKBL.activationOn = ($parent, cssClass) ->
 MKBL.activationOff = ($parent) ->
 	cssClass = cssClass || 'is-active'
 	$parent.removeClass(cssClass)
+
+MKBL.articleNavWaypoint = new Waypoint({
+	element: $('.cogv1_article-nav')
+	offset: $(window).height() / 2
+	handler: (direction) ->
+		if direction == 'down'
+			$(@.element).addClass('is-scrolling').removeClass('is-bottom')
+		else
+			$(@.element).removeClass('is-scrolling').removeClass('is-bottom')
+	})
+MKBL.articleNavBottomWaypoint = new Waypoint({
+	element: $('.cogv1_article__footer-nav')
+	offset: 'bottom-in-view'
+	handler: (direction) ->
+		if direction == 'down'
+			$('.cogv1_article-nav').addClass('is-bottom').removeClass('is-scrolling')
+		else
+			$('.cogv1_article-nav').addClass('is-scrolling').removeClass('is-bottom')
+	})

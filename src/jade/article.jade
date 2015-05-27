@@ -184,17 +184,18 @@ block content
 					//- .cogv1_article-data__column
 					//- 	h2 Popularity
 					//- 	img.cogv1_article-data__graph(src="img/server-side-generated-graph.png", alt="")
-				.cogv1_article-nav.cogv1_article-nav--prev
-					i.icon
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_caret')
-					span Prev
-				.cogv1_article-nav.cogv1_article-nav--next
-					i.icon
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_caret')
-					span Next
+			
 		article.cogv1_article
+			.cogv1_article-nav.cogv1_article-nav--prev
+				i.icon
+					svg(viewbox='0 0 100 100')
+						use(xlink:href='#icon_caret')
+				span Prev
+			.cogv1_article-nav.cogv1_article-nav--next
+				i.icon
+					svg(viewbox='0 0 100 100')
+						use(xlink:href='#icon_caret')
+					span Next
 			.container
 				h2 Six Ways Analytics Can Improve Healthcare
 				hr
@@ -246,3 +247,60 @@ block content
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_linkedin')
 
+	
+			.cogv1_article__footer-nav
+				a.cogv1_article__footer-nav__button.cogv1_article__footer-nav__button--prev
+					i.icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_caret')
+				.container
+					.row
+						a.cogv1_article__footer-nav__text.cogv1_article__footer-nav__text--prev
+							p
+								strong Prev
+									span ious Search Result &ldquo;Server Storage&rdquo;
+								strong How Digital Is Quickly Reshaping Customer
+						.cogv1_article__footer-nav__divider
+						a.cogv1_article__footer-nav__text.cogv1_article__footer-nav__text--next
+							p
+								strong Next
+									span  Search Result &ldquo;Server Storage&rdquo;
+								strong How Digital Is Quickly Reshaping Customer
+				a.cogv1_article__footer-nav__button.cogv1_article__footer-nav__button--next
+					i.icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_caret')
+	footer.cogv1_article__related.color-bg
+			h2 Related Thinking
+			.container
+				.row
+					each val, index in [1,2,3]
+						a.flow-box(href='/article.html')
+							.flow-box__gradient-bg
+								h4.flow-box__tag
+									i.icon
+										svg(viewbox='0 0 100 100'): use(xlink:href='#icon_pdf')
+									strong Article
+
+								.flow-box__content
+									.flow-box__title
+										h2 A Systematic Approach To Optimizing Collateral
+									.flow-box__CTA-description
+										p: small Added for you on 11.22.14
+									.flow-box__CTA
+										i.flow-box__CTA-icon.flow-box__CTA--left.interactive-svg
+											svg.is-empty(viewbox='0 0 100 100')
+												use(xlink:href='#icon_star')
+												image(src='img/symbols/icon_star-2x.png' width='20px' height='20px')
+											svg.is-filled(viewbox='0 0 100 100')
+												use(xlink:href='#icon_star-filled')
+												image(src='img/symbols/icon_star-filled-2x.png' width='20px' height='20px')
+											span.flow-box__CTA__alt-text Save
+										i.flow-box__CTA-icon.flow-box__CTA--right.interactive-svg
+											svg.is-empty(viewbox='0 0 100 100')
+												use(xlink:href='#icon_triangle')
+												image(src='img/symbols/icon_triangle-2x.png' width='20px' height='20px')
+											svg.is-filled(viewbox='0 0 100 100')
+												use(xlink:href='#icon_triangle-filled')
+												image(src='img/symbols/icon_triangle-filled-2x.png' width='20px' height='20px')
+											span.flow-box__CTA__alt-text View

@@ -31,7 +31,7 @@
     },
     "waypoints": {
       "main": [
-        "lib/jquery.waypoints.min.js"
+        "lib/jquery.waypoints.js"
       ]
     }
   }
