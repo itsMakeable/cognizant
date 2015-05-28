@@ -1,6 +1,8 @@
 .cogv1_article-body__container
-	padding-left r(9rem)
-	padding-right r(6rem)
+	+above(768px)
+		padding-left r(9rem)
+		padding-right r(6rem)
+	
 	
 .cogv1_article
 	counter-reset h3
@@ -30,6 +32,8 @@
 			
 			+below(1140px)
 				left r(-5rem)
+		// +below(768px)
+			
 	p
 		padding-bottom r(1.6rem)
 	hr
@@ -120,7 +124,7 @@
 .cogv1_article__footer-nav
 	background-color backgray
 	padding r(4rem) 0 
-	margin-top r(10rem)
+	margin-top r(6rem)
 	position relative
 	+below(1024px)
 		padding 0
@@ -241,6 +245,8 @@
 	text-align center
 	.header--section
 		padding r(5rem) 0 r(1rem)
+		+below(1024)
+			padding-bottom r(2rem)
 .cogv1_article__related--large
 	+below(768px)
 		display none

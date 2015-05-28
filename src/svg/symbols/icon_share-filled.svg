@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px"
-	 viewBox="-1389 851 100 100" enable-background="new -1389 851 100 100" xml:space="preserve">
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-429 231 100 100"
+	 enable-background="new -429 231 100 100" xml:space="preserve">
 <g id="Page-1" sketch:type="MSPage">
 	<g id="icon_share-filled" sketch:type="MSArtboardGroup">
-		<circle class='fill' fill='currentColor' fill='transparent' sketch:type="MSShapeGroup" cx="-1371" cy="901" r="13">
+		<circle sketch:type="MSShapeGroup" fill='currentColor' cx="-400.7" cy="280.9" r="8.9">
 		</circle>
-		<circle class='fill' fill='currentColor' fill='transparent' sketch:type="MSShapeGroup" cx="-1307" cy="868" r="13">
+		<circle sketch:type="MSShapeGroup" fill='currentColor' cx="-356.9" cy="258.3" r="8.9">
 		</circle>
-		<circle class='fill' fill='currentColor' sketch:type="MSShapeGroup" cx="-1307" cy="933" r="13">
+		<circle sketch:type="MSShapeGroup" fill='currentColor' cx="-356.9" cy="302.8" r="8.9">
 		</circle>
-		<path id="outer-path" fill='currentColor' sketch:type="MSShapeGroup" d="M-1307.4,916.5c-5.4,0-10.2,2.6-13.2,6.6l-34.4-17.4c0.4-1.5,0.7-3,0.7-4.6
-			s-0.3-3.1-0.7-4.6l34.4-17.4c3.1,4,7.8,6.6,13.2,6.6c9.3,0,16.8-7.5,16.8-16.8s-7.5-16.8-16.8-16.8c-9.3,0-16.8,7.5-16.8,16.8
-			c0,1.6,0.3,3.1,0.7,4.6l-34.4,17.4c-3.1-4-7.8-6.6-13.2-6.6c-9.3,0-16.8,7.5-16.8,16.8c0,9.3,7.5,16.8,16.8,16.8
-			c5.4,0,10.2-2.6,13.2-6.6l34.4,17.4c-0.4,1.5-0.7,3-0.7,4.6c0,9.3,7.5,16.8,16.8,16.8c9.3,0,16.8-7.5,16.8-16.8
-			C-1290.6,924-1298.2,916.5-1307.4,916.5L-1307.4,916.5z M-1307.4,858.4c5.8,0,10.4,4.7,10.4,10.5s-4.7,10.4-10.4,10.4
-			c-5.8,0-10.4-4.7-10.4-10.4S-1313.2,858.4-1307.4,858.4L-1307.4,858.4z M-1371.2,911.5c-5.8,0-10.4-4.7-10.4-10.5
-			c0-5.8,4.7-10.4,10.4-10.4c5.8,0,10.4,4.7,10.4,10.4C-1360.7,906.8-1365.4,911.5-1371.2,911.5L-1371.2,911.5z M-1307.4,943.7
-			c-5.8,0-10.4-4.7-10.4-10.5c0-5.8,4.7-10.4,10.4-10.4c5.8,0,10.4,4.7,10.4,10.4C-1297,939-1301.7,943.7-1307.4,943.7
-			L-1307.4,943.7z"/>
+		<path id="outer-path" fill='currentColor' sketch:type="MSShapeGroup" d="M-357.2,291.5c-3.7,0-7,1.8-9,4.5l-23.6-11.9c0.3-1,0.5-2.1,0.5-3.2
+			s-0.2-2.1-0.5-3.2l23.6-11.9c2.1,2.7,5.3,4.5,9,4.5c6.4,0,11.5-5.1,11.5-11.5c0-6.4-5.1-11.5-11.5-11.5s-11.5,5.1-11.5,11.5
+			c0,1.1,0.2,2.1,0.5,3.2l-23.6,11.9c-2.1-2.7-5.3-4.5-9-4.5c-6.4,0-11.5,5.1-11.5,11.5s5.1,11.5,11.5,11.5c3.7,0,7-1.8,9-4.5
+			l23.6,11.9c-0.3,1-0.5,2.1-0.5,3.2c0,6.4,5.1,11.5,11.5,11.5s11.5-5.1,11.5-11.5C-345.7,296.7-350.9,291.5-357.2,291.5
+			L-357.2,291.5z M-357.2,251.8c4,0,7.1,3.2,7.1,7.2c0,4-3.2,7.1-7.1,7.1c-4,0-7.1-3.2-7.1-7.1S-361.2,251.8-357.2,251.8
+			L-357.2,251.8z M-400.9,288.1c-4,0-7.1-3.2-7.1-7.2c0-4,3.2-7.1,7.1-7.1c4,0,7.1,3.2,7.1,7.1
+			C-393.7,284.9-396.9,288.1-400.9,288.1L-400.9,288.1z M-357.2,310.2c-4,0-7.1-3.2-7.1-7.2s3.2-7.1,7.1-7.1c4,0,7.1,3.2,7.1,7.1
+			C-350.1,307-353.3,310.2-357.2,310.2L-357.2,310.2z"/>
 	</g>
 </g>
 </svg>
