@@ -56,6 +56,9 @@ $('.interactive-svg').on 'click',  ->
 $('.js-edit-profile').on 'click',  ->
 	MKBL.activationToggle($('.edit-profile-overlay'))
 
+$('.js-smart-search').on 'click',  ->
+	MKBL.activationToggle($('.smart-search-overlay'))
+
 $('.js-open-modal-module').on 'click',  ->
 	$this = $(this)
 	MKBL.modal($this)

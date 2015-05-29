@@ -1,0 +1,60 @@
+.fullscreen-overlay.smart-search-overlay
+	i.icon.fullscreen-overlay__icon.js-smart-search
+		svg(viewbox='0 0 100 100')
+			use(xlink:href='#icon_close')
+	.container
+		header.header--section
+			h1.inline-block.is-center.capitalize
+				i.icon
+					svg(viewbox='0 0 100 100')
+						use(xlink:href='#icon_search')
+				b Smart
+				| Search
+				sup &reg;
+	component.contenteditable-module.smart-search__option
+		.container
+			.contenteditable__text
+				h2
+					div.noneditable Search Latest Thinking in
+					div.is-editable.js-dropdown-option-parent.has-dropdown
+						.contenteditable__wrapper
+							div.js-dropdown-option-holder(contenteditable data-placeholder='All Industries') All Industries
+						i.icon.js-dropdown-trigger
+							svg(viewbox='0 0 100 100')
+								use(xlink:href='#icon_caret')
+						subcomponent.contenteditable-dropdown
+							ul
+								li.js-dropdown-option Search Suggestion
+								li.js-dropdown-option Another Suggestion
+								li.js-dropdown-option Yet Anonther Suggestion
+								li.js-dropdown-option Alternative Suggestion
+								li.js-dropdown-option Possible Suggestion
+								li.js-dropdown-option Consider this Suggestion
+								li.js-dropdown-option One More Suggestion
+	component.cogv1-smart-search
+		.container
+			.cogv1-smart-search__input-container
+				i.icon.cogv1-smart-search__icon
+					svg(viewbox='0 0 100 100')
+						use(xlink:href='#icon_search')
+				input.cogv1-smart-search__input(type="text")
+	component.cogv1-smart-search__results
+		.container
+			.row
+				each val, index in [1,2,3,4]
+					.cogv1-smart-search__result
+						i.icon.cogv1-smart-search__result-type
+							| <svg id="data_science" xmlns="http://www.w3.org/2000/svg" viewBox="1390 850 100 100"><linearGradient id="mobile-first" gradientUnits="userSpaceOnUse" x1="43.376" y1="9.624" x2="43.405" y2="9.462" gradientTransform="matrix(641.585 0 0 641.585 -26401.627 -5222.054)"><stop offset="0" stop-color="#6DB33F"/><stop offset="1" stop-color="#72CDF4"/></linearGradient><path fill="url(#mobile-first)" d="M1462.2 915.2c-1 0-1.6.8-1.6 1.6v12.9h-53.4v-59.8h53.2v3.8c0 1 .8 1.6 1.6 1.6 1 0 1.6-.8 1.6-1.6V860c0-5.6-4.6-9.9-9.9-9.9h-39.8c-5.6 0-9.9 4.6-9.9 9.9v80c0 5.6 4.6 9.9 9.9 9.9h40c5.6 0 9.9-4.6 9.9-9.9v-23.1c0-.9-.8-1.7-1.6-1.7zm-48.2-62h40c3.8 0 6.8 3 6.8 6.8v6.8h-53.4V860c-.2-3.8 2.8-6.8 6.6-6.8zm39.9 93.2h-40c-3.8 0-6.8-3-6.8-6.8v-6.8h53.2v6.8c.2 3.9-2.8 6.8-6.4 6.8zm-33.4-84.8c0-1 .8-1.6 1.6-1.6h23.3c1 0 1.6.8 1.6 1.6s-.8 1.6-1.6 1.6h-23.1c-1 0-1.8-.8-1.8-1.6zm13.4 73.2c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 6.7c-1 0-1.6-.8-1.6-1.6s.8-1.6 1.6-1.6 1.6.8 1.6 1.6-.8 1.6-1.6 1.6zm42.2-57.8v22.1c0 3.2-2.6 5.8-5.8 5.8h-29.1l-9.3 6.6c-.2.2-.6.2-1 .2-.6 0-1-.2-1.4-.8-.6-.8-.4-1.8.4-2.4l9.7-6.8h.2s.2 0 .4-.2h30.1c1.4 0 2.6-1.2 2.6-2.6v-21.9c0-1.4-1.2-2.6-2.6-2.6H1435c-1.4 0-2.6 1.2-2.6 2.6v22.1c0 1-.8 1.6-1.6 1.6-1 0-1.6-.8-1.6-1.6v-22.1c0-3.2 2.6-5.8 5.8-5.8h35.1c3.5.1 6 2.6 6 5.8z"/></svg>
+
+						p Article
+						h3 The Way to a True End-to-End Digital Experience  
+						p Hank Mardukkas   |   12.23.2014
+						i.icon.cogv1-smart-search__result-CTA
+							svg(viewbox='0 0 100 100')
+								use(xlink:href='#icon_caret--right')
+			.cogv1-smart-search__result-message
+				p: small: b Not what you're looking for? Leave Smart Search to see all of our Latest Thinking.
+				div
+					a.button--primary View All
+
+

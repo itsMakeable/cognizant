@@ -85,10 +85,21 @@
 
 .header--section
   padding r(6rem) 0
+  text-align center
+  .icon
+    color blue
+    size r(3.8rem)
+    position absolute
+    left r(-6rem)
+    top r(0.4rem)
+    margin auto
   h1
     color blue
     padding-bottom r(1rem)
     upcase()
+    position relative
+    &.capitalize
+      text-transform capitalize
   h1, h2, h3, h4, h5, h6, p
     text-align center
   p

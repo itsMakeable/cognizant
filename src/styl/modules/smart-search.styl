@@ -1,0 +1,62 @@
+.cogv1-smart-search__input-container
+	position relative
+	col(10/12, offset: 1/12)
+
+input[type=text].cogv1-smart-search__input
+	background-color backgray
+	padding r(1.9rem) r(6rem)
+	border-radius r(0.2rem)
+	fs(2.2rem)
+	font-family proxLight
+	
+.cogv1-smart-search__icon
+	size r(2.6rem)
+	color gray
+	position absolute
+	left r(2rem)
+	top 0
+	bottom 0
+	margin auto
+
+.contenteditable-module.smart-search__option
+	.contenteditable__text
+		margin-bottom r(1rem)
+
+.cogv1-smart-search__result
+	position relative
+	border-bottom 1px solid gray
+	padding r(2rem) 0 r(2rem) r(8.2rem)
+	col(10/12, offset: 1/12)
+	p
+		color gray
+		&:first-of-type
+			upcase()
+	h3
+		color darkblue
+		text-transform capitalize
+		fs(1.8rem)
+
+.cogv1-smart-search__result-type
+	size r(2.8rem)
+	position absolute
+	left r(1.8rem)
+	top r(2rem)
+	
+.cogv1-smart-search__result-CTA
+	position absolute
+	right r(2rem)
+	size r(2.8rem)
+	margin auto
+	color blue
+	top 0
+	bottom 0
+
+.cogv1-smart-search__result-message
+	text-align center
+	margin-top r(2.8rem)
+	.button--primary
+		margin-top r(2.8rem)
+	p
+		display inline-block
+		max-width r(42rem)
+		line-height 1
