@@ -6,7 +6,7 @@ section.section.flow-box-slider-section.backgray-bg
 		component.flow-box-slider
 			each val, index in {1:'is-active',2:'is-next',3:'is-prev'}
 				.row.flow-box-slider-group(class='#{val}')
-					.flow-box.flow-box--large(href='/article.html' style='background: url(http://placehold.it/550x550) no-repeat')
+					component.flow-box.flow-box--large(href='/article.html' style='background: url(http://placehold.it/550x550) no-repeat')
 							.flow-box__gradient-bg
 								h4.flow-box__tag 
 									i.icon
@@ -51,7 +51,7 @@ section.section.flow-box-slider-section.backgray-bg
 
 					div.flow-box__small-container
 						each val, index in [1,2]
-							.flow-box(href='/article.html' style='background: url(http://placehold.it/350x350) no-repeat')
+							component.flow-box(href='/article.html' style='background: url(http://placehold.it/350x350) no-repeat')
 									.flow-box__gradient-bg
 										h4.flow-box__tag
 											i.icon

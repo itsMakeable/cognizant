@@ -1,0 +1,118 @@
+extends layouts/layout-primary
+
+block content
+	component.container.compact-profile-box__container
+		.compact-profile-box-module
+			.compact-profile-box-bar
+				.compact-profile-box__profile-pic
+					img(src="http://placehold.it/20x20", alt="")
+				p.compact-profile-box__details
+					b Kyla Medina
+					span.hide-small &nbsp; | &nbsp;Information Technology &amp; Services
+				.compact-profile-box__aside
+					.compact-profile-box__notification
+						span 3
+					i.icon(data-flyout='notifications')
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_folders')
+					i.icon(data-flyout='settings')
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_settings')
+				.compact-profile-box__button
+					.icon.search__smart-search
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_search')
+						p <strong>Smart</strong>Search&reg;
+
+				
+			subcomponent.compact-profile-box__flyout.compact-profile-box__flyout--settings
+				.profile-box__indicator.triangle
+				header
+					p Settings
+					hr
+				.profile-box__button
+					button.button--silent.js-edit-profile Edit Info
+				.profile-box__button
+					a(href="/").button--silent Log Out
+			subcomponent.compact-profile-box__flyout.compact-profile-box__flyout--notifications
+				.profile-box__indicator.triangle
+				header
+					p Recent Activity
+					hr
+				.profile-box__list
+					each val, index in [1,2,3]
+						.profile-box__list-item
+							.profile-box__list-notification
+								span 1
+							p
+								strong
+									a(href='') Industry Friends
+							p Invited by Larry
+							i.icon.profile-box__list-CTA
+								svg(viewbox='0 0 100 100')
+									use(xlink:href='#icon_caret')
+				button.button--silent View All
+
+	header.cogv1_mini-header.color-bg.gradient3--vertical
+		.container
+			.cogv1_mini-header__center
+				h1 My Folders
+				p This is a subhead describing the My Folders section
+	main
+		section.cogv1_three-column-section.cogv1_overhang-section
+			.container
+				component.folder-module(style='background:url(http://www.cognizant.com/dotcom-images/Perspectives/twelve_ways_SMAC_hp.jpg) no-repeat')
+						.folder__overlay
+						.folder__content
+							p.folder__alert
+								span.folder__alert-number
+									span 1
+								span New Video Added
+
+							.folder__profile-pic
+								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_default')
+							.folder__data
+								p: strong Favorites
+								i.icon
+									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_files')
+								span 0
+								i.icon
+									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_collaborators')
+								span 0
+							.folder__CTA
+								i.folder__CTA-icon.folder__CTA--right
+									svg.is-empty(viewbox='0 0 100 100')
+										use(xlink:href='#icon_triangle')
+									svg.is-filled(viewbox='0 0 100 100')
+										use(xlink:href='#icon_triangle-filled')
+									span.folder__CTA__alt-text View
+				each val, index in [1,2,3,4,5]
+					component.folder-module(style='background:url(http://www.cognizant.com/dotcom-images/Perspectives/twelve_ways_SMAC_hp.jpg) no-repeat')
+						.folder__overlay
+						.folder__content
+							p.folder__alert
+								span.folder__alert-number
+									span 1
+								span New Video Added
+
+							.folder__profile-pic
+								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_default')
+							.folder__data
+								p: strong Favorites
+								i.icon
+									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_files')
+								span 22
+								i.icon
+									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_collaborators')
+								span 100
+							.folder__CTA
+								i.folder__CTA-icon.folder__CTA--left
+									svg.is-empty(viewbox='0 0 100 100')
+										use(xlink:href='#icon_exit')
+									span.folder__CTA__alt-text Leave
+								i.folder__CTA-icon.folder__CTA--right
+									svg.is-empty(viewbox='0 0 100 100')
+										use(xlink:href='#icon_triangle')
+									svg.is-filled(viewbox='0 0 100 100')
+										use(xlink:href='#icon_triangle-filled')
+									span.folder__CTA__alt-text View
