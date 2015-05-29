@@ -51,7 +51,7 @@ section.section.flow-box-slider-section.backgray-bg
 
 					div.flow-box__small-container
 						each val, index in [1,2]
-							component.flow-box(href='/article.html' style='background: url(http://placehold.it/350x350) no-repeat')
+							component.flow-box(style='background: url(http://placehold.it/350x350) no-repeat')
 									.flow-box__gradient-bg
 										h4.flow-box__tag
 											i.icon
@@ -59,7 +59,7 @@ section.section.flow-box-slider-section.backgray-bg
 											strong Article
 
 										.flow-box__content
-											a.flow-box__title
+											a.flow-box__title(href='/article.html')
 												h2 A Systematic Approach To Optimizing Collateral
 											.flow-box__CTA-description.truncate
 												p A Systematic Approach To Optimizing Collateral

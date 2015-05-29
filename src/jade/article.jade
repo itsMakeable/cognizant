@@ -1,57 +1,7 @@
 extends layouts/layout-primary
 
 block content
-	component.container.compact-profile-box__container
-		.compact-profile-box-module
-			.compact-profile-box-bar
-				.compact-profile-box__profile-pic
-					img(src="http://placehold.it/20x20", alt="")
-				p.compact-profile-box__details
-					b Kyla Medina
-					span.hide-small &nbsp; | &nbsp;Information Technology &amp; Services
-				.compact-profile-box__aside
-					.compact-profile-box__notification
-						span 3
-					i.icon(data-flyout='notifications')
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_folders')
-					i.icon(data-flyout='settings')
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_settings')
-				.compact-profile-box__button
-					.icon.search__smart-search
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_search')
-						p <strong>Smart</strong>Search&reg;
-
-				
-			subcomponent.compact-profile-box__flyout.compact-profile-box__flyout--settings
-				.profile-box__indicator.triangle
-				header
-					p Settings
-					hr
-				.profile-box__button
-					button.button--silent.js-edit-profile Edit Info
-				.profile-box__button
-					a(href="/").button--silent Log Out
-			subcomponent.compact-profile-box__flyout.compact-profile-box__flyout--notifications
-				.profile-box__indicator.triangle
-				header
-					p Recent Activity
-					hr
-				.profile-box__list
-					each val, index in [1,2,3]
-						.profile-box__list-item
-							.profile-box__list-notification
-								span 1
-							p
-								strong
-									a(href='') Industry Friends
-							p Invited by Larry
-							i.icon.profile-box__list-CTA
-								svg(viewbox='0 0 100 100')
-									use(xlink:href='#icon_caret')
-				button.button--silent View All
+	include modules/compact-profile-box
 
 	header.cogv1_article-header.color-bg.cogv1_has-overlay(style='background: url("http://lorempixel.com/1250/500/technics") no-repeat;')
 		.cogv1_article-header__overlay
@@ -233,30 +183,30 @@ block content
 				
 
 	
-			.cogv1_article__footer-nav
-				a.cogv1_article__footer-nav__button.cogv1_article__footer-nav__button--prev
-					i.icon
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_caret--left')
-							image(src='img/symbols/icon_caret--left.png' width='30px' height='30px')
-				.container
-					.row
-						a.cogv1_article__footer-nav__text.cogv1_article__footer-nav__text--prev
-							p
-								strong Prev
-									span ious Search Result &ldquo;Server Storage&rdquo;
-								strong How Digital Is Quickly Reshaping Customer
-						.cogv1_article__footer-nav__divider
-						a.cogv1_article__footer-nav__text.cogv1_article__footer-nav__text--next
-							p
-								strong Next
-									span  Search Result &ldquo;Server Storage&rdquo;
-								strong How Digital Is Quickly Reshaping Customer
-				a.cogv1_article__footer-nav__button.cogv1_article__footer-nav__button--next
-					i.icon
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_caret--right')
-							image(src='img/symbols/icon_caret--right.png' width='30px' height='30px')
+		component.cogv1_article__footer-nav.backgray-bg
+			a.cogv1_article__footer-nav__button.cogv1_article__footer-nav__button--prev
+				i.icon
+					svg(viewbox='0 0 100 100')
+						use(xlink:href='#icon_caret--left')
+						image(src='img/symbols/icon_caret--left.png' width='30px' height='30px')
+			.container
+				.row
+					a.cogv1_article__footer-nav__text.cogv1_article__footer-nav__text--prev
+						p
+							strong Prev
+								span ious Search Result &ldquo;Server Storage&rdquo;
+							strong How Digital Is Quickly Reshaping Customer
+					.cogv1_article__footer-nav__divider
+					a.cogv1_article__footer-nav__text.cogv1_article__footer-nav__text--next
+						p
+							strong Next
+								span  Search Result &ldquo;Server Storage&rdquo;
+							strong How Digital Is Quickly Reshaping Customer
+			a.cogv1_article__footer-nav__button.cogv1_article__footer-nav__button--next
+				i.icon
+					svg(viewbox='0 0 100 100')
+						use(xlink:href='#icon_caret--right')
+						image(src='img/symbols/icon_caret--right.png' width='30px' height='30px')
 	footer
 		.cogv1_article__related.color-bg
 			.header--section
@@ -265,7 +215,7 @@ block content
 				.container
 					.row
 						each val, index in [1,2,3]
-							.flow-box(href='/article.html')
+							.flow-box
 								.flow-box__gradient-bg
 									h4.flow-box__tag
 										i.icon
@@ -273,7 +223,7 @@ block content
 										strong Article
 
 									.flow-box__content
-										a.flow-box__title
+										a.flow-box__title(href='/article.html')
 											h2 A Systematic Approach To Optimizing Collateral Damage Control
 										.flow-box__CTA-description
 											p: small Added for you on 11.22.14

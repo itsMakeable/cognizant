@@ -476,30 +476,46 @@ MKBL.activationOff = ($parent) ->
 	cssClass = cssClass || 'is-active'
 	$parent.removeClass(cssClass)
 
-MKBL.articleNavWaypoint = $('.cogv1_article-nav').waypoint
-	# element: $('.cogv1_article-nav')
-	offset: $(window).height() / 2
-	handler: (direction) ->
-		if direction == 'down'
-			$(@.element)
-				.addClass('is-scrolling')
-				.removeClass('is-bottom')
-		else
-			$(@.element)
-				.removeClass('is-scrolling')
-				.removeClass('is-bottom')
-	
+MKBL.articleNavWaypoints = ->
+	MKBL.articleNavWaypoint = $('.cogv1_article-nav').waypoint
+		# element: $('.cogv1_article-nav')
+		offset: $(window).height() / 2
+		handler: (direction) ->
+			if direction == 'down'
+				$(@.element)
+					.addClass('is-scrolling')
+					.removeClass('is-bottom')
+			else
+				$(@.element)
+					.removeClass('is-scrolling')
+					.removeClass('is-bottom')
 
-MKBL.articleNavBottomWaypoint = $('.cogv1_article__footer-nav').waypoint
-	# element: $('.cogv1_article__footer-nav')
-	offset: ($(window).height() / 2) - $('.cogv1_article-nav').height()
-	handler: (direction) ->
-		if direction == 'down'
-			$('.cogv1_article-nav')
-				.addClass('is-bottom')
-				.removeClass('is-scrolling')
-		else
-			$('.cogv1_article-nav')
-				.addClass('is-scrolling')
-				.removeClass('is-bottom')
-	
+	MKBL.articleNavAlmostBottomWaypoint = $('.cogv1_article__footer-nav').waypoint
+		# element: $('.cogv1_article__footer-nav')
+		offset: ($(window).height() / 2) - ($('.cogv1_article-nav').height() * 2)
+		handler: (direction) ->
+			if direction == 'down'
+				$('.cogv1_article-nav')
+					.addClass('is-almost-bottom')
+			else
+				$('.cogv1_article-nav')
+					.removeClass('is-almost-bottom')	
+
+	MKBL.articleNavBottomWaypoint = $('.cogv1_article__footer-nav').waypoint
+		# element: $('.cogv1_article__footer-nav')
+		offset: ($(window).height() / 2) - $('.cogv1_article-nav').height()
+		handler: (direction) ->
+			if direction == 'down'
+				$('.cogv1_article__footer-nav__button').addClass('is-active')
+				$('.cogv1_article-nav')
+					.addClass('is-bottom')
+					.removeClass('is-scrolling')
+			else
+				$('.cogv1_article__footer-nav__button').removeClass('is-active')
+				$('.cogv1_article-nav')
+					.addClass('is-scrolling')
+					.removeClass('is-bottom')
+	MKBL.articleNavWaypoint
+	MKBL.articleNavAlmostBottomWaypoint
+	MKBL.articleNavBottomWaypoint
+	return

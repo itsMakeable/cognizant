@@ -1,12 +1,13 @@
 .cogv1_article-body__container
 	+above(768px)
 		padding-left r(9rem)
-		padding-right r(6rem)
+		padding-right r(9rem)
 	
 	
 .cogv1_article
 	counter-reset h3
 	padding-top r(3rem)
+	padding-bottom r(3rem)
 	position relative
 	.video-section
 		margin r(6rem) 0
@@ -79,6 +80,8 @@
 	z-index 100
 	transform-origin 0% 0%
 	transition opacity 0.3s ease-out, transform 0.3s cubic-bezier(.73,.49,.28,1.21)
+	&:hover
+		color white
 	svg
 		size 3rem
 		transform-origin 50% 50%
@@ -108,10 +111,13 @@
 				left 0
 			&.cogv1_article-nav--next
 				right 0
+			&.is-almost-bottom
+				span
+					display none
 		&.is-bottom
 			top auto
 			position absolute
-			bottom r(6.7rem)
+			bottom r(-12rem)
 			opacity 1
 			transform translateX(0rem) scaleY(2.116666667)
 			transition transform 0.1s linear
@@ -122,9 +128,7 @@
 // ARTICLE STATIONARY FOOTER NAV /////////////////////////
 
 .cogv1_article__footer-nav
-	background-color backgray
-	padding r(4rem) 0 
-	margin-top r(6rem)
+	padding r(3.9rem) 0 
 	position relative
 	+below(1024px)
 		padding 0
@@ -142,6 +146,12 @@
 	height 100%
 	color white
 	z-index 999
+	&:hover
+		color white
+	&.has-background
+		background green hgradient66
+		svg
+			display block
 	@media screen and (min-height: 1024px)
 		background green hgradient66
 	svg
@@ -151,9 +161,12 @@
 		top 0
 		bottom 0
 		margin auto
-		// display none
+		display none
 	+below(1024px)
 		size r(6rem)		
+	&.is-active
+		svg
+			display block
 		
 .cogv1_article__footer-nav__button--prev
 	left 0
