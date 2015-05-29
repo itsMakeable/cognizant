@@ -18,6 +18,17 @@
 		border-bottom 1px solid blue
 		padding-top r(1rem)
 		margin-bottom r(3rem)
+	.search__share-flyout__wrapper
+		display none
+	+above(768px)
+		.search__share-flyout__wrapper
+			display block
+		.share-icons-list
+			display none
+	a.share-icon
+		color blue
+		&:hover
+			color blue
 	
 
 .cogv1_article-header__tag
@@ -48,7 +59,6 @@
 	display inline-block
 	margin-right 2rem
 	color blue
-	
 	svg
 		margin auto
 		size r(3.2rem)

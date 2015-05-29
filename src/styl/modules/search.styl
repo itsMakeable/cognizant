@@ -200,7 +200,6 @@ div.search__input
   width r(6.4rem)
   background-color lightblue
   .share-flyout__trigger
-    // size r(6.4rem)
     position relative
     background-color blue
     transition background-color 0.2s ease
@@ -208,9 +207,10 @@ div.search__input
       background-color lightblue
       transition background-color 0.3s ease
     svg
-      size r(2.8rem)
-      align(vertical)
-      right r(2rem)
+      size r(3.2rem)
+      top r(1.6rem)
+      position absolute
+      right r(1.8rem)
       z-index: 1
 
 .search__share-flyout__wrapper
@@ -224,6 +224,8 @@ div.search__input
   transition all 0.4s ease-in
   &.has-padding
     padding-right r(6.4rem)
+  .is-filled
+    opacity 0
   
 .search__share-flyout.share-flyout
   transform translateX(100%)
@@ -241,6 +243,11 @@ div.search__input
     border-right 1px solid rgba(darkblue, 0.2)
 
 .search__share-flyout__wrapper.flyout-is-active
+  .is-filled
+    opacity 1
+  .share-flyout__trigger:hover
+    .is-filled
+      opacity 0.5
   .share-flyout__trigger
     background-color transparent
     transition background-color 0.3s ease 0.3s
@@ -317,55 +324,6 @@ div.search__input
     right r(11rem)
   &.cogv1_search__favorites 
     right r(11rem * 2)
-  
-    
-.cogv1_search__flyout
-  background-color: white
-  position: absolute
-  padding: r(2.2rem) r(3rem) r(1.8rem)
-  width: r(33rem)
-  right: 0
-  max-height: r(30rem)
-  text-align: center
-  opacity 0
-  z-index 99
-  top r(10.4rem)
-  transform translateY(0)
-  transition opacity 0.2s linear, transform 0.4s ease-out
-  box-shadow 0 1px 1px gray
-  color gray
-  cf()
-  +below(768px)
-    width 100%
-    box-shadow 0px 0px 1px gray
-  +between(660px, 768px)
-    .cogv1_search__flyout__section1
-      col(1/2)
-      text-align left
-  +below(660px)
-    .cogv1_search__flyout__section1
-      max-width r(33rem)
-      margin auto
-      text-align center
-    
-  .button--primary
-    margin r(1.4rem) auto
-  p
-    line-height 1.2
-    b
-      color black
-    small
-      line-height 1
-  &.is-active
-    opacity 1
-    transform translateY(-4rem)
-    transition opacity 0.2s ease, transform 0.3s ease-out-back
-  header
-    color black
-    text-align left
-    hr
-      border-bottom 1px solid gray
-      margin-bottom r(2rem)
     
 .cogv1_search__list-notification
   left r(-1.9rem)
@@ -390,44 +348,6 @@ div.search__input
   border-color: transparent white transparent transparent
   +below(768px)
     right r(9rem)
-    
-.cogv1_search__section-right
-  height r(6.4rem)
-  width r(11rem * 3)
-  overflow hidden
-  position absolute
-  right 0
-  top 0
-  transition background-color 0.2s ease
-  &.is-blue
-    background-color blue
-  +below(768px)
-    display none
-  .search__share
-    background transparent
-    background-color transparent
-    width 100%
-    svg
-      opacity 0
-  .search__share-flyout__wrapper
-    transform translateX(100%)
-  &.flyout-is-active
-    .cogv1_search__favorites,
-    .cogv1_search__download
-      opacity 0
-    .search__share
-      svg
-        opacity 1
-    .search__share-flyout__wrapper
-      transform translateX(0%)
-      transition 0.4s cubic-bezier(.73,.88,0,1.1)
-    .cogv1_search__share
-      z-index 999
-      width r(6.4rem)
-      .fill
-        fill white
-    .search__share-flyout
-      transform translateX(0%)
 
 .cogv1_search__flyout__add
   position relative

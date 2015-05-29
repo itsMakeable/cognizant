@@ -492,7 +492,7 @@ MKBL.articleNavWaypoint = $('.cogv1_article-nav').waypoint
 
 MKBL.articleNavBottomWaypoint = $('.cogv1_article__footer-nav').waypoint
 	# element: $('.cogv1_article__footer-nav')
-	offset: 'bottom-in-view'
+	offset: ($(window).height() / 2) - $('.cogv1_article-nav').height()
 	handler: (direction) ->
 		if direction == 'down'
 			$('.cogv1_article-nav')

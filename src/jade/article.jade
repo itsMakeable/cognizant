@@ -70,8 +70,10 @@ block content
 					| Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.Curabitur blandit tempus porttitor vestibulum id ligul.
 				.cogv1_article__footer
 					.row.share-icons-list
-						.share-icon
-							svg(viewbox='0 0 100 100')
+						.share-icon.interactive-svg
+							svg.is-empty(viewbox='0 0 100 100')
+								use(xlink:href='#icon_share')
+							svg.is-filled(viewbox='0 0 100 100')
 								use(xlink:href='#icon_share-filled')
 						a.share-icon
 							svg(viewbox='0 0 100 100')
@@ -85,17 +87,7 @@ block content
 						a.share-icon
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_linkedin')
-				//- .cogv1_article-header__CTA
-				//- 	.cogv1_article-header__favorites.cogv1_article-header-icon.interactive-svg
-				//- 		svg.is-empty(viewbox='0 0 100 100')
-				//- 			use(xlink:href='#icon_star')
-				//- 		svg.is-filled(viewbox='0 0 100 100')
-				//- 			use(xlink:href='#icon_star-filled')
-				//- 		span Save
-				//- 	.cogv1_article-header__download.cogv1_article-header-icon
-				//- 		svg(viewbox='0 0 100 100')
-				//- 			use(xlink:href='#icon_download')
-				//- 		span Download
+
 		component.container.main-header__search-container
 			.search-module.search-module--main
 				.search__icon__wrapper
@@ -108,116 +100,99 @@ block content
 					svg(viewbox='0 0 100 100')
 						use(xlink:href='#icon_triangle')
 				input.search__input(type='text', placeholder='Search Article for Keywords')
-				.cogv1_search__section-right.is-blue
-					.cogv1_search__favorites.cogv1_search__right-icon.interactive-svg
-						svg.is-empty(viewbox='0 0 100 100')
-							use(xlink:href='#icon_star')
-						svg.is-filled(viewbox='0 0 100 100')
-							use(xlink:href='#icon_star-filled')
-					.cogv1_search__download.cogv1_search__right-icon
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_download')
-					.cogv1_search__share.cogv1_search__right-icon.js-search-share-flyout__trigger.interactive-svg
-						svg.is-empty(viewbox='0 0 100 100')
-							use(xlink:href='#icon_share')
-						svg.is-filled(viewbox='0 0 100 100')
-							use(xlink:href='#icon_share-filled')
-					subcomponent.search__share-flyout__wrapper
-						.search__share
-							.search__share-flyout.gradient5--vertical.share-flyout.js-share-flyout
-								.share-flyout__icon
+
+				subcomponent.search__share-flyout__wrapper
+					.search__share
+						.share-flyout__trigger.js-share-flyout__trigger
+							svg.is-empty(viewbox='0 0 100 100')
+								use(xlink:href='#icon_share')
+							svg.is-filled(viewbox='0 0 100 100')
+								use(xlink:href='#icon_share-filled')
+						.search__share-flyout.gradient5--vertical.share-flyout.js-share-flyout
+							a.share-flyout__icon
+								i.icon
 									svg(viewbox='0 0 100 100')
 										use(xlink:href='#icon_email')
-								.share-flyout__icon
+							a.share-flyout__icon
+								i.icon
 									svg(viewbox='0 0 100 100')
 										use(xlink:href='#icon_twitter')
-								.share-flyout__icon
+							a.share-flyout__icon
+								i.icon
 									svg(viewbox='0 0 100 100')
 										use(xlink:href='#icon_facebook')
-								.share-flyout__icon
+							a.share-flyout__icon
+								i.icon
 									svg(viewbox='0 0 100 100')
 										use(xlink:href='#icon_linkedin')
-
-				//- subcomponent.search__share-flyout__wrapper
-				//- 	.search__share
-				//- 		.share-flyout__trigger.js-share-flyout__trigger
-				//- 			svg(width='46', height='46', viewbox='0 0 46 46', xmlns='http://www.w3.org/2000/svg')
-				//- 				title share
-				//- 				path(d='M14.22 19.716l17.25-8.784-17.25 8.784zm-.32 5.886l17.25 8.784-17.25-8.784zM43.08 8.11c0 3.374-2.735 6.11-6.11 6.11-3.374 0-6.11-2.736-6.11-6.11 0-3.375 2.736-6.11 6.11-6.11 3.375 0 6.11 2.735 6.11 6.11zM14.22 22.677c0 3.375-2.736 6.11-6.11 6.11-3.375 0-6.11-2.735-6.11-6.11 0-3.373 2.735-6.11 6.11-6.11 3.374 0 6.11 2.737 6.11 6.11zM43.08 37.224c0 3.376-2.735 6.11-6.11 6.11-3.374 0-6.11-2.734-6.11-6.11 0-3.373 2.736-6.11 6.11-6.11 3.375 0 6.11 2.737 6.11 6.11z', stroke='currentColor', stroke-width='2.813', fill='none', fill-rule='evenodd')
-				//- 		.search__share-flyout.gradient5--vertical.share-flyout.js-share-flyout
-				//- 			.share-flyout__icon
-				//- 				svg(viewbox='0 0 100 100')
-				//- 					use(xlink:href='#icon_email')
-				//- 			.share-flyout__icon
-				//- 				svg(viewbox='0 0 100 100')
-				//- 					use(xlink:href='#icon_twitter')
-				//- 			.share-flyout__icon
-				//- 				svg(viewbox='0 0 100 100')
-				//- 					use(xlink:href='#icon_facebook')
-				//- 			.share-flyout__icon
-				//- 				svg(viewbox='0 0 100 100')
-				//- 					use(xlink:href='#icon_linkedin')
 				
-				// THIS IS THE LOGGED IN FLYOUT
-				// subcomponent.cogv1_search__flyout.is-signed-in
-					.cogv1_search__flyout__indicator.triangle
-					header
-						p: small Save this article to your folders
-						hr
-					.cogv1_search__flyout__add
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_add')
-						h6 Create New Folder
-					ul
-						li.cogv1_search__flyout__list
-							p: b Folder Title
-						li.cogv1_search__flyout__list
-							p: b Folder Title
 
-				// THIS IS THE LOGGED OUT FLYOUT
-				subcomponent.cogv1_search__flyout.is-signed-out
-					.cogv1_search__flyout__indicator.triangle
-					.cogv1_search__flyout__section1
-						p: b Article marked as favorite
-						p: small Sign in with LinkedIn to organize your favourites and share them with colleagues in your network.
-					.cogv1_search__flyout__section2
-						a.button--primary.icon--left(href='/index-logged-in.html')
-							i.icon.icon-linkedin
-								svg(viewbox='0 0 100 100')
-									use(xlink:href='#icon_linkedin')
-							| Sign In with Linkedin
 							
 
 	main
-		section.cogv1_article-data
+		section.cogv1_article-subhead
 			.container
 				.row
-					.cogv1_article-data__column
+					.cogv1_article-subhead__column.left
 						h2 Executive Highlights
-						.cogv1_article-data__highlight
+						.cogv1_article-subhead__highlight
 							i.icon
 								svg(viewbox='0 0 100 100')
 									use(xlink:href='#icon_share-filled')
 							p 140 character max You probably already know. In 2012, the U.S. spent 20% of its gross domestic product (or $3 trillion)
-						.cogv1_article-data__highlight
+						.cogv1_article-subhead__highlight
 							i.icon
 								svg(viewbox='0 0 100 100')
 									use(xlink:href='#icon_share-filled')
 							p 140 character max. shareable highlights. Despite its world-class medical technology, the U.S. is grossly inefficient in terms of controlling costs
-					//- .cogv1_article-data__column
-					//- 	h2 Popularity
-					//- 	img.cogv1_article-data__graph(src="img/server-side-generated-graph.png", alt="")
+					.cogv1_article-subhead__column.right
+						.row
+							.cogv1_article-subhead__CTA.cogv1_article-subhead__save-article
+								i.icon.interactive-svg
+									svg.is-empty(viewbox='0 0 100 100')
+										use(xlink:href='#icon_star')
+									svg.is-filled(viewbox='0 0 100 100')
+										use(xlink:href='#icon_star-filled')
+								span Save Article
+							.cogv1_article-subhead__CTA.cogv1_article-subhead__download
+								i.icon
+									svg(viewbox='0 0 100 100')
+										use(xlink:href='#icon_download')
+								span Download
+						.row
+							// THIS IS THE LOGGED IN FLYOUT
+							subcomponent.cogv1_article__save.is-signed-in
+								.cogv1_article__save__add
+									i.icon
+										svg(viewbox='0 0 100 100')
+											use(xlink:href='#icon_add')
+									h6 Create New Folder
+								ul
+									li.cogv1_article__save__list
+										p: b Folder Title
+									li.cogv1_article__save__list.is-active
+										p: b Folder Title
+									li.cogv1_article__save__list
+										p: b Folder Title
+
+							//- // THIS IS THE LOGGED OUT FLYOUT
+							//- subcomponent.cogv1_article__save.is-signed-out
+							//- 	p: small: b Article marked as favorite
+							//- 	p: small 
+							//- 		a.link(href="") Sign in with LinkedIn
+							//- 		|  to organize your favourites and share them with colleagues in your network. 
+
 			
 		article.cogv1_article
 			.cogv1_article-nav.cogv1_article-nav--prev
 				i.icon
 					svg(viewbox='0 0 100 100')
-						use(xlink:href='#icon_caret')
+						use(xlink:href='#icon_caret--left')
 				span Prev
 			.cogv1_article-nav.cogv1_article-nav--next
 				i.icon
 					svg(viewbox='0 0 100 100')
-						use(xlink:href='#icon_caret')
+						use(xlink:href='#icon_caret--right')
 					span Next
 			.container
 				h2 Six Ways Analytics Can Improve Healthcare
@@ -262,7 +237,8 @@ block content
 				a.cogv1_article__footer-nav__button.cogv1_article__footer-nav__button--prev
 					i.icon
 						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_caret')
+							use(xlink:href='#icon_caret--left')
+							image(src='img/symbols/icon_caret--left.png' width='30px' height='30px')
 				.container
 					.row
 						a.cogv1_article__footer-nav__text.cogv1_article__footer-nav__text--prev
@@ -279,7 +255,8 @@ block content
 				a.cogv1_article__footer-nav__button.cogv1_article__footer-nav__button--next
 					i.icon
 						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_caret')
+							use(xlink:href='#icon_caret--right')
+							image(src='img/symbols/icon_caret--right.png' width='30px' height='30px')
 	footer
 		.cogv1_article__related.color-bg
 			.header--section

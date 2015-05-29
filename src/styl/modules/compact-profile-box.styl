@@ -81,7 +81,7 @@
 .compact-profile-box-bar
   background-color: backgray
   color black
-  padding r(0.6rem) r(2rem) r(0.6rem)
+  padding r(1rem) r(2rem) r(1rem)
   text-align left
   margin 0 auto
   position relative
@@ -102,24 +102,28 @@
 .compact-profile-box__notification
   @extend $notification-circle
   position absolute
-  left r(1rem)
+  left r(0.8rem)
   top r(-0.2rem)
 
 .compact-profile-box__details
   float left
-  line-height r(3.4rem)
+  line-height r(3.2rem)
   +below(1024px)
     .hide-small
       display none
+  +below(768px)
+    display none
         
 .compact-profile-box__aside
   float right
   margin-right r(19.8rem)
   position relative
+  +below(540px)
+    margin-right r(11.4rem)
   .icon
-    size r(4.8rem) r(3.5rem)
-    padding 0 r(1rem)
-    margin-left r(1rem)
+    size r(4.8rem) r(3rem)
+    padding r(0.4rem) r(1rem)
+    margin-left r(0.6rem)
     color blue
     display inline-block
     cursor pointer
@@ -132,7 +136,7 @@
   position: absolute
   padding: r(2.6rem) r(3rem) r(1.8rem)
   width: r(33rem)
-  top: r(4.7rem)
+  top: r(5.2rem)
   right: 0
   max-height: r(39rem)
   text-align: center
@@ -140,8 +144,9 @@
   opacity 0
   transform translateY(-100%)
   transition transform 0s linear 0.1s, opacity 0.1s linear
-  +below(420px)
+  +below(540px)
     width: 100%
+    
   &.is-active
     opacity 1
     transform translateY(0%)
@@ -161,9 +166,13 @@
   &.compact-profile-box__flyout--settings
     .profile-box__indicator
       right r(23.5rem)
+      +below(540px)
+        right r(15.2rem)
   &.compact-profile-box__flyout--notifications
     .profile-box__indicator
-      right r(29.5rem)
+      right r(29.1rem)
+      +below(540px)
+        right r(20.8rem)
     
 .compact-profile-box__button
   background-color blue
@@ -186,3 +195,10 @@
   svg
     size r(2rem)
     margin-right r(1rem)
+  +below(540px)
+    width r(11.4rem)
+    .search__smart-search
+      width r(8.3rem)
+      display block
+    svg
+      display none

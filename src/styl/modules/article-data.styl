@@ -1,30 +1,35 @@
-.cogv1_article-data
+.cogv1_article-subhead
 	background-color backgray
 	padding r(9rem) 0 r(6rem)
 	position relative
 	
-.cogv1_article-data__column
-	col(1/2)
+.cogv1_article-subhead__column
+	
 	cf()
+	&.left
+		col(7/12)
+	&.right
+		col(4/12)
+		float right
 	+below(1024px)
 		stack()
 
-.cogv1_article-data__graph
+.cogv1_article-subhead__graph
 	width r(38rem)
 	float right
 	margin-top r(2rem)
 		
-.cogv1_article-data__highlight
+.cogv1_article-subhead__highlight
 	padding 0 r(3rem)
 	margin r(4rem) 0
 	margin-left r(5rem)
 	border-left 1px solid gray
 	position relative
 	.icon
-		size r(2.2rem)
+		size r(3.2rem)
 		position absolute
 		left r(-5rem)
-		top r(2rem)
+		top r(1.4rem)
 		color gray
 		transition 0.3s ease
 		&:hover
@@ -39,3 +44,79 @@
 		background transparent url(unquote('data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSI0NzUuOSAxNTQuMyAxMiAxOCI+PHBhdGggZmlsbD0iI0YxRjFGMSIgc3Ryb2tlPSIjRDREMEQxIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNNDg3LjkgMTU0LjNsLTEwLjEgOSAxMC4xIDkiLz48L3N2Zz4=')) no-repeat
 		background-size cover
 		background-position 0% 0%
+
+.cogv1_article-subhead__CTA
+	color blue
+	display inline-block
+	fs(1.6rem)
+	&:first-of-type
+		margin-right 20%
+	.icon
+		size r(3rem)
+		margin-right r(1.6rem)
+		position relative
+	span
+		display inline-block
+		vertical-align middle
+
+.cogv1_article-subhead__download
+	.icon
+		position relative
+		top r(-0.4rem)
+
+.cogv1_article__save
+	padding-top: r(3rem)
+	max-height: r(30rem)
+	text-align: left
+	z-index 99
+	transition opacity 0.2s linear, transform 0.4s ease-out
+	color black
+	cf()
+	p small
+		a
+			font-family proxSbold
+		b
+			color heavymustard
+	&.is-active
+		opacity 1
+		transform translateY(-4rem)
+		transition opacity 0.2s ease, transform 0.3s ease-out-back
+		header
+			color black
+			text-align left
+		hr
+			border-bottom 1px solid gray
+			margin-bottom r(2rem)
+			
+.cogv1_article__save__add
+	color gray
+	margin-bottom r(1rem)
+	.icon
+		size r(3rem)
+		margin-right r(1rem)
+	h6
+		display inline-block
+		vertical-align middle
+
+.cogv1_article__save__list
+	text-indent r(4rem)
+	position relative
+	padding r(0.5rem) 0
+	line-height 1.4
+	&:before
+		content ''
+		size r(1rem)
+		background-color transparent
+		border 1px solid gray
+		display inline-block
+		position absolute
+		left r(1rem)
+		top 0
+		bottom 0
+		margin auto
+	&.is-active
+		&:before
+			background-color blue
+			border 1px solid blue
+		
+	

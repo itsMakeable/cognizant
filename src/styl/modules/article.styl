@@ -30,10 +30,10 @@
 			font-family proxRegIt
 			top r(-0.6rem)
 			
-			+below(1140px)
+			+below(1260px)
 				left r(-5rem)
-		// +below(768px)
-			
+		+below(768px)
+			text-indent r(5rem)
 	p
 		padding-bottom r(1.6rem)
 	hr
@@ -57,14 +57,15 @@
 
 .cogv1_article-nav--prev
 	left 0
-	transform translateX(-6rem)
+	@media screen and (max-height: 1024px)
+		transform translateX(-6rem)
 	svg
-		transform rotate(180deg)
 		left 1.4rem
 
 .cogv1_article-nav--next
 	right 0
-	transform translateX(6rem)
+	@media screen and (max-height: 1024px)
+		transform translateX(6rem)
 	svg
 		right 1.4rem
 		
@@ -72,14 +73,12 @@
 	position absolute
 	size r(6rem)
 	background green hgradient66
-	top r(-6rem)
+	top r(-3rem)
 	color white
-	opacity 0
 	margin auto
 	z-index 100
+	transform-origin 0% 0%
 	transition opacity 0.3s ease-out, transform 0.3s cubic-bezier(.73,.49,.28,1.21)
-	+below(1024px)
-		display none
 	svg
 		size 3rem
 		transform-origin 50% 50%
@@ -87,6 +86,7 @@
 		top 0
 		bottom 0
 		margin auto
+		transition 0s linear
 	span 
 		color gray
 		text-align center
@@ -94,31 +94,31 @@
 		bottom r(-3rem)
 		fs(1.6rem)
 		font-family proxLight
-	&.is-scrolling		
-		opacity 1
-		position fixed
-		bottom 0
-		transform translateX(0rem)
-		&.cogv1_article-nav--prev
-			left 0
-		&.cogv1_article-nav--next
-			right 0
-	&.is-bottom
-		// top auto
-		position fixed
-		bottom 0
-		opacity 1
-		// height r(12.7rem)
-		// transform translateX(0rem)
-		// background none
+	+below(1024px)
+		display none
+	@media screen and (max-height: 1024px)
+		opacity 0
+		&.is-scrolling
+			opacity 1
+			position fixed
+			bottom 0
+			transform translateX(0rem)
+			transition opacity 0.3s ease-out, transform 0.1s linear
+			&.cogv1_article-nav--prev
+				left 0
+			&.cogv1_article-nav--next
+				right 0
+		&.is-bottom
+			top auto
+			position absolute
+			bottom r(6.7rem)
+			opacity 1
+			transform translateX(0rem) scaleY(2.116666667)
+			transition transform 0.1s linear
+			svg, span
+				display none
 
-		&.cogv1_article-nav--prev
-			transform translateX(-6rem)
-		&.cogv1_article-nav--next
-			transform translateX(6rem)
-		// span
-		// 	display none
-		
+
 // ARTICLE STATIONARY FOOTER NAV /////////////////////////
 
 .cogv1_article__footer-nav
@@ -133,14 +133,17 @@
 		padding-bottom 0
 	svg
 		transform-origin 50% 50%
+		
 .cogv1_article__footer-nav__button
-	background green hgradient66
 	size r(6rem) r(12.7rem)
 	position absolute
 	top 0
 	bottom 0
 	height 100%
 	color white
+	z-index 999
+	@media screen and (min-height: 1024px)
+		background green hgradient66
 	svg
 		size 3rem
 		transform-origin 50% 50%
@@ -150,16 +153,11 @@
 		margin auto
 		// display none
 	+below(1024px)
-		size r(6rem)
-		// svg
-		// 	display inline-block
-	
-			
+		size r(6rem)		
 		
 .cogv1_article__footer-nav__button--prev
 	left 0
 	svg
-		transform rotate(180deg)
 		left 1.4rem
 .cogv1_article__footer-nav__button--next
 	right 0
@@ -178,7 +176,6 @@
 				upcase()
 			&:nth-child(2)
 				color darkblue
-	
 	&:hover
 		color gray
 		// p:nth-child(2)
@@ -205,13 +202,9 @@
 				display none
 		&.cogv1_article__footer-nav__text--prev
 			padding-left r(6rem)
-			// padding-right r(3rem)
-			// text-overflow: ellipsis
 			text-align left
 		&.cogv1_article__footer-nav__text--next
 			padding-right r(6rem)
-			// padding-left r(3rem)
-			// text-overflow: ellipsis
 			
 	+below(768px)
 		p
@@ -221,12 +214,6 @@
 			text-align left
 		&.cogv1_article__footer-nav__text--next
 			text-align right
-	// +between(640px, 768px)
-	// 	&.cogv1_article__footer-nav__text--prev,
-	// 	&.cogv1_article__footer-nav__text--next
-	// 		text-align center
-			
-	
 
 .cogv1_article__footer-nav__divider
 	width 1px
@@ -264,10 +251,6 @@
 			col(1/2, cycle: 2)
 			&:nth-child(3)
 				display none
-		// +below(640px)
-		// 	col(1/1, uncycle: 2)
-		// 	&:nth-child(2)
-		// 		display none
 	.flow-box__title
 		h2
 			max-height 92px

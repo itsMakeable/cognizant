@@ -64,13 +64,13 @@ $('.js-flow-box-flyout__trigger').on 'click',  ->
 	$parent = $(this).closest('.flow-box__CTA')
 	MKBL.activationToggle($parent)
 
-$('.js-search-share-flyout__trigger').on 'click',  ->
-	$parent = $(this).closest('.cogv1_search__section-right')
-	MKBL.activationToggle($parent, 'flyout-is-active')
+# $('.js-search-share-flyout__trigger').on 'click',  ->
+# 	$parent = $(this).closest('.cogv1_search__section-right')
+# 	MKBL.activationToggle($parent, 'flyout-is-active')
 
 $('.js-share-flyout__trigger').on 'click',  ->
 	$parent = $(this).closest('.search__share-flyout__wrapper')
-	MKBL.shareFlyout($parent)
+	MKBL.activationToggle($parent, 'flyout-is-active')
 
 $('.compact-profile-box__aside .icon').on 'click',  ->
 	$this = $(this)
@@ -92,6 +92,9 @@ $('.slider-nav__control').on 'click', ->
 		direction = 'next'
 
 	MKBL.flowBoxSlider($slider, $slides, $activeSlide, direction)
+
+$('.share-icons-list .interactive-svg').on 'click',  ->
+	MKBL.activationToggle($(this).closest('.share-icons-list'))
 
 $('.social-group__icon').on 'click',  ->
 	$this = $(this)
