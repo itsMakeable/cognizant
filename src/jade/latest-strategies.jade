@@ -1,0 +1,88 @@
+extends layouts/layout-primary
+
+block content
+	component.container.compact-profile-box__container
+		.compact-profile-box-module
+			.compact-profile-box-bar
+				.compact-profile-box__profile-pic
+					img(src="http://placehold.it/20x20", alt="")
+				p.compact-profile-box__details
+					b Kyla Medina
+					span.hide-small &nbsp; | &nbsp;Information Technology &amp; Services
+				.compact-profile-box__aside
+					.compact-profile-box__notification
+						span 3
+					i.icon(data-flyout='notifications')
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_folders')
+					i.icon(data-flyout='settings')
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_settings')
+				.compact-profile-box__button
+					.icon.search__smart-search
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_search')
+						p <strong>Smart</strong>Search&reg;
+
+				
+			subcomponent.compact-profile-box__flyout.compact-profile-box__flyout--settings
+				.profile-box__indicator.triangle
+				header
+					p Settings
+					hr
+				.profile-box__button
+					button.button--silent.js-edit-profile Edit Info
+				.profile-box__button
+					a(href="/").button--silent Log Out
+			subcomponent.compact-profile-box__flyout.compact-profile-box__flyout--notifications
+				.profile-box__indicator.triangle
+				header
+					p Recent Activity
+					hr
+				.profile-box__list
+					each val, index in [1,2,3]
+						.profile-box__list-item
+							.profile-box__list-notification
+								span 1
+							p
+								strong
+									a(href='') Industry Friends
+							p Invited by Larry
+							i.icon.profile-box__list-CTA
+								svg(viewbox='0 0 100 100')
+									use(xlink:href='#icon_caret')
+				button.button--silent View All
+
+	header.cogv1_mini-header.color-bg.gradient3--vertical
+		.container
+			.cogv1_mini-header__center
+				h1 Latest Strategies
+				p This is a subhead describing the Latest Strategies section
+	main
+		section.cogv1_three-column-section.cogv1_overhang-section.backgray-bg
+			.container
+				each val, index in [1,2,3,4,5,6]
+					component.flow-box
+						.flow-box__gradient-bg
+							.flow-box__content
+								a.flow-box__title
+									h2 A Systematic Approach To Optimizing Collateral
+								.flow-box__CTA-description.truncate
+									p A Systematic Approach To Optimizing Collateral
+								.flow-box__CTA
+									i.flow-box__CTA-icon.flow-box__CTA--left.interactive-svg
+										svg.is-empty(viewbox='0 0 100 100')
+											use(xlink:href='#icon_star')
+											image(src='img/symbols/icon_star-2x.png' width='20px' height='20px')
+										svg.is-filled(viewbox='0 0 100 100')
+											use(xlink:href='#icon_star-filled')
+											image(src='img/symbols/icon_star-filled-2x.png' width='20px' height='20px')
+										span.flow-box__CTA__alt-text Save
+									i.flow-box__CTA-icon.flow-box__CTA--right.interactive-svg
+										svg.is-empty(viewbox='0 0 100 100')
+											use(xlink:href='#icon_triangle')
+											image(src='img/symbols/icon_triangle-2x.png' width='20px' height='20px')
+										svg.is-filled(viewbox='0 0 100 100')
+											use(xlink:href='#icon_triangle-filled')
+											image(src='img/symbols/icon_triangle-filled-2x.png' width='20px' height='20px')
+										span.flow-box__CTA__alt-text View
