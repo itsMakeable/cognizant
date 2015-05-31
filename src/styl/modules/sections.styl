@@ -2,7 +2,7 @@
 // This is somewhat of a shame.css file http://csswizardry.com/2013/04/shame-css/
 /////////////////////////////////////////////////////////////////////////////
 .section
-  padding r(5rem) 0 
+  padding r(6rem) 0 
 
 .generic-section
   .header--section
@@ -35,7 +35,6 @@
 	background-attachment: fixed !important
 	background-size: cover !important
 	background-position: 50% 0% !important
-
 	.header--section
 		color white
 		h1,
@@ -94,7 +93,6 @@
 	// 	background-position: 0% 100% !important
 
 .cogv1_three-column-section
-	padding r(6rem) 0
 	.container
 		> div,
 		> component
@@ -116,3 +114,10 @@
 	padding-bottom 0 !important
 	.container
 		top r(-8rem)
+
+.alternating-rows-section
+	article
+		&:nth-child(2n)
+			background-color white
+		&:nth-child(2n+1)
+			background-color backgray

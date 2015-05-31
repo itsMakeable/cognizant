@@ -67,9 +67,9 @@ $('.js-flow-box-flyout__trigger').on 'click',  ->
 	$parent = $(this).closest('.flow-box__CTA')
 	MKBL.activationToggle($parent)
 
-# $('.js-search-share-flyout__trigger').on 'click',  ->
-# 	$parent = $(this).closest('.cogv1_search__section-right')
-# 	MKBL.activationToggle($parent, 'flyout-is-active')
+$('.js-search-share-flyout__trigger').on 'click',  ->
+	$parent = $(this).closest('.cogv1_search__section-right')
+	MKBL.activationToggle($parent, 'flyout-is-active')
 
 $('.js-share-flyout__trigger').on 'click',  ->
 	$parent = $(this).closest('.search__share-flyout__wrapper')

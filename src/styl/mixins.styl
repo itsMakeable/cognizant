@@ -34,6 +34,9 @@ $absolute-cover
 	left 0
 	margin auto
 
+.abs-center
+	@extend $absolute-cover
+
 .triangle
 	width: 0
 	height: 0
@@ -43,16 +46,19 @@ $absolute-cover
 
 .interactive-svg
 	cursor pointer
-	svg:first-of-type
+	svg
 		position absolute
-	.is-filled
+		transition opacity 0.1s ease-out, transform 0.2s ease-out
+	svg.is-filled
 		opacity 0
-		transition opacity 0.3s ease-out
+		
 	&.is-active
-		.is-filled
+		svg.is-filled
 			opacity 1
+			transition opacity 0.3s ease-out, transform 0.2s ease-out
 	&:hover
-		.is-filled
+		svg.is-filled
+			transition opacity 0.3s ease-out 0.1s, transform 0.2s ease-out
 			opacity 0.5
 
 .truncated

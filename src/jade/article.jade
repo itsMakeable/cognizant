@@ -14,29 +14,29 @@ block content
 				h1 The Rise of the Empowered Healthcare Consumer
 				p.cogv1_article-header__meta
 					| Hank Mardukkas   |   01.29.2014
-				hr
+				hr.blue
 				p.cogv1_article-header__description
 					strong A shift to individual healthcare. 
 					| Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.Curabitur blandit tempus porttitor vestibulum id ligul.
-				.cogv1_article__footer
-					.row.share-icons-list
-						.share-icon.interactive-svg
-							svg.is-empty(viewbox='0 0 100 100')
-								use(xlink:href='#icon_share')
-							svg.is-filled(viewbox='0 0 100 100')
-								use(xlink:href='#icon_share-filled')
-						a.share-icon
-							svg(viewbox='0 0 100 100')
-								use(xlink:href='#icon_email')
-						a.share-icon
-							svg(viewbox='0 0 100 100')
-								use(xlink:href='#icon_twitter')
-						a.share-icon
-							svg(viewbox='0 0 100 100')
-								use(xlink:href='#icon_facebook')
-						a.share-icon
-							svg(viewbox='0 0 100 100')
-								use(xlink:href='#icon_linkedin')
+				
+				.row.share-icons-list
+					.share-icon.interactive-svg
+						svg.is-empty(viewbox='0 0 100 100')
+							use(xlink:href='#icon_share')
+						svg.is-filled(viewbox='0 0 100 100')
+							use(xlink:href='#icon_share-filled')
+					a.share-icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_email')
+					a.share-icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_twitter')
+					a.share-icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_facebook')
+					a.share-icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_linkedin')
 
 		component.container.main-header__search-container
 			.search-module.search-module--main
@@ -112,6 +112,7 @@ block content
 						.row
 							// THIS IS THE LOGGED IN FLYOUT
 							subcomponent.cogv1_article__save.is-signed-in
+								.cogv1_article__save__indicator.triangle
 								.cogv1_article__save__add
 									i.icon
 										svg(viewbox='0 0 100 100')
@@ -127,6 +128,7 @@ block content
 
 							//- // THIS IS THE LOGGED OUT FLYOUT
 							//- subcomponent.cogv1_article__save.is-signed-out
+									.cogv1_article__save__indicator.triangle
 							//- 	p: small: b Article marked as favorite
 							//- 	p: small 
 							//- 		a.link(href="") Sign in with LinkedIn
