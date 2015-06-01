@@ -66,13 +66,23 @@
         .flow-box__content
             padding-top 0
         .flow-box__share-flyout-wrapper
-            left r(4rem)
+            left r(4.5rem)
             bottom r(0.4rem)
+        .flow-box__title
+            h3
+                transition color 0.2s ease
+            h4
+                transition color 0.3s ease
+            &:hover
+                h3
+                    color darkblue
+                h4
+                    color rgba(darkgray,0.8)
         .share-flyout__trigger,
         .share-flyout__trigger svg
             size r(3.5rem)
         .flow-box-flyout__icon.flow-box-flyout__icon
-            margin 0 r(0.2rem)
+            margin 0 r(0.4rem)
             size r(3.5rem)
             &:hover
                 opacity 1
@@ -194,18 +204,22 @@
     size r(3rem)
     overflow visible
     font-family proxLight
+    color blue
     svg
         position: absolute
         bottom 0
         size r(3rem)
+        transition transform 0.3s ease-out
 
     &:hover
         svg.is-empty,
         svg.is-filled
             transform translateY(r(-1rem))
+            color blue
         .flow-box__CTA__alt-text
             opacity 1
             top 100%
+            color blue
             transition opacity 0.1s cubic-bezier(.73,.88,0,1.1), top 0.3s cubic-bezier(.73,.88,0,1.1)
 
 .flyout-is-active

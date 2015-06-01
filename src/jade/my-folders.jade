@@ -1,6 +1,7 @@
 extends layouts/layout-primary
 
 block content
+	include modules/edit-profile-overlay
 	include modules/smart-search-overlay
 	include modules/compact-profile-box
 	
@@ -31,7 +32,7 @@ block content
 									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_collaborators')
 								span 0
 							.folder__CTA
-								i.folder__CTA-icon.folder__CTA--right
+								a.folder__CTA-icon.folder__CTA--right.interactive-svg(href='/folder.html')
 									svg.is-empty(viewbox='0 0 100 100')
 										use(xlink:href='#icon_triangle')
 									svg.is-filled(viewbox='0 0 100 100')
@@ -61,7 +62,7 @@ block content
 									svg.is-empty(viewbox='0 0 100 100')
 										use(xlink:href='#icon_exit')
 									span.folder__CTA__alt-text Leave
-								i.folder__CTA-icon.folder__CTA--right
+								a.folder__CTA-icon.folder__CTA--right.interactive-svg(href='/folder.html')
 									svg.is-empty(viewbox='0 0 100 100')
 										use(xlink:href='#icon_triangle')
 									svg.is-filled(viewbox='0 0 100 100')

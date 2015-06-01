@@ -29,7 +29,7 @@ a
     <button class='button--primary' disabled>Disabled</button>
 ***/
 $button
-	line-height r(4.2rem)
+	line-height r(4.8rem)
 	upcase()
 	min-width r(20.8rem)
 	fs(1.6rem)
@@ -125,6 +125,7 @@ a.button--silent
 	padding 0
 	margin r(2.4rem) 0
 	display inline-block
+	position relative
 	&:link
 		color blue
 	&:active
@@ -140,6 +141,13 @@ a.button--silent
 	&:hover
 		color darkblue !important
 		border-bottom 1px solid rgba(darkblue,0.2) !important
+	.icon
+		size (2rem)
+		position absolute
+		left  r(-3rem)
+		top r(-0.2rem)
+	&.has-icon--left
+		margin-left r(3rem)
 	&.is-white
 		color white
 		&:hover

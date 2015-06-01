@@ -71,6 +71,10 @@
   position relative
   +below(768px)
     padding 0
+  .button--primary
+    position absolute
+    right 0
+    top 0
   
 .compact-profile-box-module
   position relative
@@ -81,7 +85,7 @@
 .compact-profile-box-bar
   background-color: backgray
   color black
-  padding r(1rem) r(2rem) r(1rem)
+  padding r(0.8rem) r(2rem) r(0.8rem)
   text-align left
   margin 0 auto
   position relative
@@ -137,7 +141,7 @@
   box-shadow 0px 1px 2px rgba(240,240,240,0.5)
   padding: r(2.6rem) r(3rem) r(1.8rem)
   width: r(33rem)
-  top: r(5.2rem)
+  top: r(4.8rem)
   right: 0
   max-height: r(39rem)
   text-align: center
@@ -159,7 +163,7 @@
   .profile-box__list-item
     padding 0 0 r(2rem) r(1rem)
   .profile-box__indicator
-    top r(-1.8rem)
+    top r(-1.7rem)
     transform rotate(90deg)
     transform-origin 50% 50%
     border-color: transparent white transparent transparent
@@ -203,3 +207,13 @@
       display block
     svg
       display none
+    
+.compact-profile-box-module.no-button
+  .compact-profile-box__aside
+    margin-right r(1rem)
+  .compact-profile-box__flyout--settings
+    .profile-box__indicator.triangle
+      right r(4.8rem)
+  .compact-profile-box__flyout--notifications
+    .profile-box__indicator.triangle
+      right r(10.4rem)

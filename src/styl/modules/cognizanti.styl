@@ -1,0 +1,65 @@
+.cogv1_cognizanti-list__item
+	padding r(6rem) 0
+	.share-icons-list
+		position absolute
+		margin-left r(0rem)
+		left r(5rem)
+		width r(34rem)
+	
+.cogv1_cognizanti-list__item_left-col
+	col(4/12)
+	.cognizanti-list__img
+		margin auto
+		size r(21rem) r(33rem)
+	+below(940px)
+		display none
+
+.cogv1_cognizanti-list__item__icon
+	color blue
+	size r(2.8rem)
+	margin-top r(4rem)
+
+.cogv1_cognizanti-list__item__icon--left
+	left 0
+	display inline-block
+	float left
+	
+.cogv1_cognizanti-list__item__icon--right
+	right 0
+	top r(0.3rem)
+	position absolute
+
+.cogv1_cognizanti-list__item_right-col
+	col(8/12)
+	text-align left
+	h1
+		color blue
+		text-align left
+	h4
+		fs(2.8rem)
+	strong
+		color gray
+		upcase()
+		fs(1.6rem)
+	.gradient-hr
+		margin-top r(2rem)
+		margin-bottom r(2rem)
+	.cognizanti-list__img
+		display none
+		size r(11rem) r(16.5rem)
+		margin 0 r(2.8rem) r(0.5rem) 0
+	+below(940px)
+		stack()
+		.cognizanti-list__img
+			display inline-block
+			float left
+	+below(640px)
+		.cognizanti-list__img
+			size r(7rem) r(11rem)
+		h4 
+			fs(2.2rem)
+	+below(420px)
+		h4
+			margin-top r(4rem)
+		.share-icons-list
+			display none

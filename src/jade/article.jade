@@ -1,6 +1,7 @@
 extends layouts/layout-primary
 
 block content
+	include modules/smart-search-overlay
 	include modules/compact-profile-box
 
 	header.cogv1_article-header.color-bg.cogv1_has-overlay(style='background: url("http://lorempixel.com/1250/500/technics") no-repeat;')
@@ -97,7 +98,7 @@ block content
 							p 140 character max. shareable highlights. Despite its world-class medical technology, the U.S. is grossly inefficient in terms of controlling costs
 					.cogv1_article-subhead__column.right
 						.row
-							.cogv1_article-subhead__CTA.cogv1_article-subhead__save-article
+							.cogv1_article-subhead__CTA.cogv1_article-subhead__save-article.js-save-article
 								i.icon.interactive-svg
 									svg.is-empty(viewbox='0 0 100 100')
 										use(xlink:href='#icon_star')
@@ -114,10 +115,16 @@ block content
 							subcomponent.cogv1_article__save.is-signed-in
 								.cogv1_article__save__indicator.triangle
 								.cogv1_article__save__add
-									i.icon
-										svg(viewbox='0 0 100 100')
-											use(xlink:href='#icon_add')
-									h6 Create New Folder
+									.add-action.is-active
+										i.icon
+											svg(viewbox='0 0 100 100')
+												use(xlink:href='#icon_add')
+										h6 Create New Folder
+									.add-action
+										i.icon.icon_save-article
+											svg(viewbox='0 0 100 100')
+												use(xlink:href='#icon_save-article')
+										input(type='text').cogv1_article__save__input
 								ul
 									li.cogv1_article__save__list
 										p: b Folder Title
@@ -126,13 +133,13 @@ block content
 									li.cogv1_article__save__list
 										p: b Folder Title
 
-							//- // THIS IS THE LOGGED OUT FLYOUT
-							//- subcomponent.cogv1_article__save.is-signed-out
-									.cogv1_article__save__indicator.triangle
-							//- 	p: small: b Article marked as favorite
-							//- 	p: small 
-							//- 		a.link(href="") Sign in with LinkedIn
-							//- 		|  to organize your favourites and share them with colleagues in your network. 
+							// THIS IS THE LOGGED OUT FLYOUT
+							// subcomponent.cogv1_article__save.is-signed-out
+								.cogv1_article__save__indicator.triangle
+								p: small: b Article marked as favorite
+								p: small 
+									a.link(href="") Sign in with LinkedIn
+									|  to organize your favourites and share them with colleagues in your network. 
 
 			
 		article.cogv1_article

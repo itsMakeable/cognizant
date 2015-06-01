@@ -1,0 +1,119 @@
+extends layouts/layout-primary
+
+block content
+	include modules/edit-profile-overlay
+	include modules/smart-search-overlay
+	include modules/compact-profile-box--logged-out
+
+	header.cogv1_article-header.color-bg.cogv1_has-overlay(style='background: url("http://lorempixel.com/1250/500/technics") no-repeat;')
+		.cogv1_article-header__overlay
+		.container
+			.row
+				fieldset.cogv1_article-header__edit-title
+					label Edit Folder Name
+					input(type='text' value='The Rise of the Empowered Healthcare Consumer')
+				fieldset.cogv1_article-header__edit-desc
+					label Edit Folder Description
+					textarea(value='&ldquo;Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.Curabitur blandit tempus porttitor vestibulum id ligul.&rdquo;')
+				.button--silent.has-icon--left
+					i.icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_email')
+					| Ok
+				hr.green
+				p: strong 14 Collaborators
+				.cogv1_inline-photo-list
+					each val, index in [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+						img(src="http://api.randomuser.me/portraits/thumb/women/#{val}.jpg", alt="")
+				
+				.row.share-icons-list
+					.share-icon.interactive-svg
+						svg.is-empty(viewbox='0 0 100 100')
+							use(xlink:href='#icon_share')
+						svg.is-filled(viewbox='0 0 100 100')
+							use(xlink:href='#icon_share-filled')
+					a.share-icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_email')
+					a.share-icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_twitter')
+					a.share-icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_facebook')
+					a.share-icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_linkedin')
+
+		component.container.main-header__search-container
+			.search-module.search-module--main
+				.search__icon__wrapper
+					a.search__icon.gradient6reverse--horizontal
+						i.icon
+							svg(viewbox='0 0 100 100')
+								use(xlink:href='#icon_search-folders')
+				
+				i.icon.search__icon--right.search__CTA
+					svg(viewbox='0 0 100 100')
+						use(xlink:href='#icon_triangle')
+				input.search__input(type='text', placeholder='Search Article for Keywords')
+
+				subcomponent.search__share-flyout__wrapper
+					.search__share
+						.share-flyout__trigger.js-share-flyout__trigger
+							svg.is-empty(viewbox='0 0 100 100')
+								use(xlink:href='#icon_share')
+							svg.is-filled(viewbox='0 0 100 100')
+								use(xlink:href='#icon_share-filled')
+						.search__share-flyout.gradient5--vertical.share-flyout.js-share-flyout
+							a.share-flyout__icon
+								i.icon
+									svg(viewbox='0 0 100 100')
+										use(xlink:href='#icon_email')
+							a.share-flyout__icon
+								i.icon
+									svg(viewbox='0 0 100 100')
+										use(xlink:href='#icon_twitter')
+							a.share-flyout__icon
+								i.icon
+									svg(viewbox='0 0 100 100')
+										use(xlink:href='#icon_facebook')
+							a.share-flyout__icon
+								i.icon
+									svg(viewbox='0 0 100 100')
+										use(xlink:href='#icon_linkedin')
+
+	main
+		section.cogv1_three-column-section.backgray-bg.section
+			.container
+				each val, index in [1,2,3,4,5]
+					component.flow-box(style='background: url(http://placehold.it/550x550) no-repeat')
+						.flow-box__gradient-bg
+							h4.flow-box__tag 
+								i.icon
+									svg(viewbox='0 0 100 100')
+										use(xlink:href='#icon_pdf')
+										image(src='img/symbols/icon_pdf-2x.png' width='12px' height='12px')
+								strong Article
+							.flow-box__content
+								a.flow-box__title
+									h2 A Systematic Approach To Optimizing Collateral
+								.flow-box__CTA-description.truncate
+									p A Systematic Approach To Optimizing Collateral
+								.flow-box__CTA
+									i.flow-box__CTA-icon.flow-box__CTA--left.interactive-svg
+										svg.is-empty(viewbox='0 0 100 100')
+											use(xlink:href='#icon_star')
+											image(src='img/symbols/icon_star-2x.png' width='20px' height='20px')
+										svg.is-filled(viewbox='0 0 100 100')
+											use(xlink:href='#icon_star-filled')
+											image(src='img/symbols/icon_star-filled-2x.png' width='20px' height='20px')
+										span.flow-box__CTA__alt-text Save
+									a.flow-box__CTA-icon.flow-box__CTA--right.interactive-svg(href='/article.html')
+										svg.is-empty(viewbox='0 0 100 100')
+											use(xlink:href='#icon_triangle')
+											image(src='img/symbols/icon_triangle-2x.png' width='20px' height='20px')
+										svg.is-filled(viewbox='0 0 100 100')
+											use(xlink:href='#icon_triangle-filled')
+											image(src='img/symbols/icon_triangle-filled-2x.png' width='20px' height='20px')
+										span.flow-box__CTA__alt-text View

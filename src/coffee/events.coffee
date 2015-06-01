@@ -50,11 +50,19 @@ $('.js-dropdown-option').on 'click',  ->
 	$this = $(this)
 	MKBL.contenteditableDropdownSelect($this)
 
+$('.cogv1_article__save__add').on 'click',  ->
+	MKBL.activationToggle($('.cogv1_article__save__add > div'))
+	$('.add-action.is-active .cogv1_article__save__input').trigger('focus')
+
 $('.interactive-svg').on 'click',  ->
 	MKBL.activationToggle($(this))
 
 $('.js-edit-profile').on 'click',  ->
 	MKBL.activationToggle($('.edit-profile-overlay'))
+
+$('.js-save-article').on 'click',  ->
+	MKBL.activationToggle($('.cogv1_article__save'))
+	MKBL.activationToggle($('.cogv1_article-subhead__save-article .interactive-svg'))
 
 $('.js-smart-search').on 'click',  ->
 	MKBL.activationToggle($('.smart-search-overlay'))
@@ -141,6 +149,9 @@ $(document).on 'click', (event) ->
 $ ->
 	MKBL.flowBoxSliderSetup()
 	MKBL.setupContenteditable()
+	$('.cogv1-smart-search__results').perfectScrollbar({
+			suppressScrollX: true
+		})
 	if $(window).width() > 1024 and $('.cogv1_article-nav').length
 		MKBL.articleNavWaypoints()
 

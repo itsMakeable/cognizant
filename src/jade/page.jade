@@ -1,0 +1,59 @@
+extends layouts/layout-primary
+
+block content
+	include modules/compact-profile-box
+
+	header.cogv1_page-header.color-bg.cogv1_has-overlay(style='background: url("http://lorempixel.com/1250/500/technics") no-repeat;')
+		.cogv1_article-header__overlay
+		.container
+			.row
+				.hgroup
+					h1 Code Halos
+					h2 Recoding the Customer Experience
+				hr.blue
+				p.cogv1_article-header__description
+					| Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.Curabitur blandit tempus porttitor vestibulum id ligul.
+				div
+					a.button--tertiary View Code Halos
+
+	main
+		section
+			header.mini-header--section
+				.container
+					h2 Latest Thinking on Code Halos
+			.row.cogv1_three-column-section
+				.container
+					each val, index in [1,2,3,4,5,6]
+						component.flow-box(style='background: url(http://placehold.it/350x350) no-repeat')
+								.flow-box__gradient-bg
+									h4.flow-box__tag
+										i.icon
+											svg(viewbox='0 0 100 100'): use(xlink:href='#icon_pdf')
+										strong Article
+
+									.flow-box__content
+										a.flow-box__title(href='/article.html')
+											h2 A Systematic Approach To Optimizing Collateral
+										.flow-box__CTA-description.truncate
+											p A Systematic Approach To Optimizing Collateral
+										.flow-box__CTA
+											i.flow-box__CTA-icon.flow-box__CTA--left.interactive-svg
+												svg.is-empty(viewbox='0 0 100 100')
+													use(xlink:href='#icon_star')
+													image(src='img/symbols/icon_star-2x.png' width='20px' height='20px')
+												svg.is-filled(viewbox='0 0 100 100')
+													use(xlink:href='#icon_star-filled')
+													image(src='img/symbols/icon_star-filled-2x.png' width='20px' height='20px')
+												span.flow-box__CTA__alt-text Save
+											i.flow-box__CTA-icon.flow-box__CTA--right.interactive-svg
+												svg.is-empty(viewbox='0 0 100 100')
+													use(xlink:href='#icon_triangle')
+													image(src='img/symbols/icon_triangle-2x.png' width='20px' height='20px')
+												svg.is-filled(viewbox='0 0 100 100')
+													use(xlink:href='#icon_triangle-filled')
+													image(src='img/symbols/icon_triangle-filled-2x.png' width='20px' height='20px')
+												span.flow-box__CTA__alt-text View
+			.row.footer--section
+				.container
+					.button__container
+						a.button--silent(href='') VIEW ALL LATEST THINKING
