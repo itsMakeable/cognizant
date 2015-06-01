@@ -123,7 +123,9 @@
 			transition transform 0.1s linear
 			svg, span
 				display none
-
+.lt-ie10
+	.cogv1_article-nav
+		display none
 
 // ARTICLE STATIONARY FOOTER NAV /////////////////////////
 
@@ -137,7 +139,7 @@
 		padding-bottom 0
 	svg
 		transform-origin 50% 50%
-		
+	
 .cogv1_article__footer-nav__button
 	size r(6rem) r(12.7rem)
 	position absolute
@@ -171,11 +173,16 @@
 	&.is-active
 		svg
 			display block
+			
+.lt-ie10
+	.cogv1_article__footer-nav__button
+		background-color green
 		
 .cogv1_article__footer-nav__button--prev
 	left 0
 	svg
 		left 1.4rem
+		
 .cogv1_article__footer-nav__button--next
 	right 0
 	svg
@@ -242,6 +249,7 @@
 // FOOTER RELATED ARTICLES //////////////////////
 
 .cogv1_article__related
+	background-color darkgreen
 	background darkgreen linear-gradient(5deg, green 0%, darkblue 100%)
 	text-align center
 	.header--section

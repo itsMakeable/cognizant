@@ -93,7 +93,11 @@
     bottom 0
     +below(420px)
       width 100%
-
+      
+.lt-ie10
+  .compact-profile-box-module
+    max-width 100%
+    
 .compact-profile-box-bar
   background-color: backgray
   color black
@@ -125,7 +129,11 @@
 .compact-profile-box__details
   float left
   line-height r(3.2rem)
-
+  a
+    color black
+    transition 0.2s ease
+    &:hover
+      color darkblue
   +below(420px)
     opacity 0
         
@@ -198,12 +206,15 @@
   right 0
   width r(19.5rem)
   position absolute
+  cf()
   .search__smart-search
     color inherit
     right 0
     left 0
-    width r(15rem)
+    width r(16rem)
     border none
+  p
+    float right
   svg, p
     display inline-block
     vertical-align middle
