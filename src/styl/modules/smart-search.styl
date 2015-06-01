@@ -17,13 +17,20 @@ input[type=text].cogv1-smart-search__input
 	font-family proxLight		
 	
 .cogv1-smart-search__icon
-	size r(2.6rem)
+	size r(2.8rem)
 	color gray
 	position absolute
-	left r(2rem)
 	top 0
 	bottom 0
 	margin auto
+.cogv1-smart-search__icon--left
+	left r(2rem)
+.cogv1-smart-search__icon--right
+	right r(2rem)
+	opacity 0
+	transition 0.3s ease
+	&.is-active
+		opacity 1
 
 .contenteditable-module.smart-search__option
 	.contenteditable__text

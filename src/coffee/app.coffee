@@ -456,7 +456,7 @@ MKBL.setupContenteditable = ->
 
 
 MKBL.playVideo = (e, $this) ->
-	$parent = $this.closest('.video-module')
+	$parent = $this.closest('.video-section')
 	$video = $parent.find('iframe')
 
 	$parent.addClass('is-active')

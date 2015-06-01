@@ -5,6 +5,12 @@
 $('input').on 'touchstart', ->
 	$(this).focus()
 
+$('.cogv1-smart-search__input').on 'keyup',  ->
+	if $(this).val() != ''
+		MKBL.activationOn($('.cogv1-smart-search__icon--right'))
+	else
+		MKBL.activationOff($('.cogv1-smart-search__icon--right'))
+
 $('.search-module--main .search__input').on 'keyup',  ->
 	if $(this).val() != ''
 		MKBL.activationOn($('.search__CTA'))
@@ -144,9 +150,9 @@ $(document).on 'click', (event) ->
 	if !$(event.target).closest('.search-module .js-dropdown-trigger').length
 		MKBL.activationOff($('.search-module'))
 
-	if !$(event.target).closest('.js-video-play').length and !$(event.target).closest('.video-module').length
-		$('.video-module').removeClass('is-active')
-		$('.video-module').each ->
+	if !$(event.target).closest('.js-video-play').length and !$(event.target).closest('.video-section').length
+		$('.video-section').removeClass('is-active')
+		$('.video-section').each ->
 			if $(this).hasClass('is-active')
 				$video = $(this).find('iframe')
 				videoURL = $video.attr('src')

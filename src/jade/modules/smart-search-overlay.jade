@@ -34,10 +34,13 @@
 	component.cogv1-smart-search
 		.container
 			.cogv1-smart-search__input-container
-				i.icon.cogv1-smart-search__icon
+				i.icon.cogv1-smart-search__icon.cogv1-smart-search__icon--left
 					svg(viewbox='0 0 100 100')
 						use(xlink:href='#icon_search')
 				input.cogv1-smart-search__input(type="text")
+				i.icon.cogv1-smart-search__icon.cogv1-smart-search__icon--right
+					svg(viewbox='0 0 100 100')
+						use(xlink:href='#icon_triangle')
 	component.cogv1-smart-search__results
 		.container
 			.row
