@@ -123,6 +123,7 @@
     display inline-block
     margin-right r(1rem)
     vertical-align middle
+    fs(1.4rem)
             
 .folder__CTA-icon
   color blue
@@ -235,8 +236,8 @@
       &:nth-child(n+4)
         display none
 .gradient
-  .section.folder-module-section
-    &:nth-child(2n)
+  .alternating-color-section
+    .folder-module:nth-child(2n)
       .folder__overlay
         background-color green
         background vgradient2reverse

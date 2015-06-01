@@ -1,4 +1,4 @@
-section.section.folder-module-section.color-bg
+section.section.folder-module-section.alternating-color-section.color-bg
 	.container
 		header.header--section
 			h1 Your Folders
@@ -18,10 +18,10 @@ section.section.folder-module-section.color-bg
 							p: strong Favorites
 							i.icon
 								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_files')
-							span 0
+							span: strong 0
 							i.icon
 								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_collaborators')
-							span 0
+							span: strong 0
 						.folder__CTA
 							a.folder__CTA-icon.folder__CTA--right.interactive-svg(href='/folders.html')
 								svg.is-empty(viewbox='0 0 100 100')
@@ -42,13 +42,13 @@ section.section.folder-module-section.color-bg
 						.folder__profile-pic
 							svg(viewbox='0 0 100 100'): use(xlink:href='#icon_default')
 						.folder__data
-							p: strong Favorites
+							p Favorites
 							i.icon
 								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_files')
-							span 22
+							span: strong 22
 							i.icon
 								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_collaborators')
-							span 100
+							span: strong 100
 						.folder__CTA
 							i.folder__CTA-icon.folder__CTA--left
 								svg.is-empty(viewbox='0 0 100 100')

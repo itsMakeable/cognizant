@@ -39,8 +39,8 @@
     transition transform 0.4s cubic-bezier(.4,-0.17,.33,1)
     
     &:hover
-        .icon
-            opacity 0.7
+      .share-flyout__icon
+        opacity 0.7
             
 
 .share-flyout__trigger
@@ -56,14 +56,14 @@
     position relative
     color white
     size r(3.5rem)
+    cursor pointer
     .icon
         align()
         size 50%
         transition opacity 0.2s ease
     &:hover
         color white
-        .icon
-            opacity 1
+        opacity 1 !important
 
 .share-flyout__wrapper
   overflow hidden

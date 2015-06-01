@@ -9,7 +9,7 @@ block content
 				h1 My Folders
 				p This is a subhead describing the My Folders section
 	main
-		section.cogv1_three-column-section.cogv1_overhang-section
+		section.cogv1_three-column-section.cogv1_overhang-section.alternating-color-section
 			.container
 				component.folder-module(style='background:url(http://www.cognizant.com/dotcom-images/Perspectives/twelve_ways_SMAC_hp.jpg) no-repeat')
 						.folder__overlay
@@ -25,10 +25,10 @@ block content
 								p: strong Favorites
 								i.icon
 									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_files')
-								span 0
+								span: strong 0
 								i.icon
 									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_collaborators')
-								span 0
+								span: strong 0
 							.folder__CTA
 								a.folder__CTA-icon.folder__CTA--right.interactive-svg(href='/folder.html')
 									svg.is-empty(viewbox='0 0 100 100')
@@ -36,7 +36,7 @@ block content
 									svg.is-filled(viewbox='0 0 100 100')
 										use(xlink:href='#icon_triangle-filled')
 									span.folder__CTA__alt-text View
-				each val, index in [1,2,3,4,5]
+				each val, index in [1,2,3,4,5,6,7]
 					component.folder-module(style='background:url(http://www.cognizant.com/dotcom-images/Perspectives/twelve_ways_SMAC_hp.jpg) no-repeat')
 						.folder__overlay
 						.folder__content
@@ -48,13 +48,13 @@ block content
 							.folder__profile-pic
 								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_default')
 							.folder__data
-								p: strong Favorites
+								p Favorites
 								i.icon
 									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_files')
-								span 22
+								span: strong 22
 								i.icon
 									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_collaborators')
-								span 100
+								span: strong 100
 							.folder__CTA
 								i.folder__CTA-icon.folder__CTA--left
 									svg.is-empty(viewbox='0 0 100 100')
