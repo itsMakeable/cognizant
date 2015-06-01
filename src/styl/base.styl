@@ -2,13 +2,16 @@ html
 	font-size 62.5%
 	-webkit-font-smoothing initial
 	font-smoothing initial
-	text-rendering optimizeLegibility
+	// text-rendering optimizeLegibility
 	font-smooth always
 	-webkit-box-sizing border-box
 	-moz-box-sizing border-box
 	box-sizing border-box
 	font-family sans-serif
-
+	position relative
+	min-height 100%
+	overflow-x hidden
+	
 body,
 html
 	margin 0
@@ -25,7 +28,7 @@ body
 	// -webkit-user-select none
 	color black
 	transition opacity 0.3s ease
-	overflow-x hidden
+	height 100%
 	.velocity-animating
 		transition: none
 
@@ -113,3 +116,8 @@ subcomponent
 	display inline-block
 	.is-center
 		margin auto
+	
+.overlay-is-on
+	overflow hidden
+	height 100%
+	@extend $absolute-cover

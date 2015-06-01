@@ -65,20 +65,25 @@
       </div>
     </component>
 ***/
-.compact-profile-box__container
-  height 0
-  overflow visible
-  position relative
+// .compact-profile-box__container
+//   height 0
+//   overflow visible
+//   // position relative
   
-  +below(768px)
-    padding 0
+  
+.compact-profile-box-module
+  z-index 500
+  max-width r(109.2rem)
+  position fixed
+  left 0
+  right 0
+  margin auto
+  top 0
   .button--primary
     position absolute
     right 0
     top 0
-  
-.compact-profile-box-module
-  
+    bottom 0
   +above(1024px)
     &.show-for-small
       display none
@@ -89,16 +94,10 @@
   padding r(0.8rem) r(2rem) r(0.8rem)
   text-align left
   margin 0 auto
-  // position relative
-  margin auto
-  // width 100%
-  top 0
-  z-index 500
-  max-width r(109.2rem)
-  position fixed
-  left 0
-  right 0
+  position relative
+  z-index 999
   cf()
+  box-shadow: 1px 1px 2px 0px rgba(black,.2)
   
 .compact-profile-box__profile-pic
   size r(3.2rem)

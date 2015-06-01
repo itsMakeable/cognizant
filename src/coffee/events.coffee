@@ -59,6 +59,7 @@ $('.interactive-svg').on 'click',  ->
 
 $('.js-edit-profile').on 'click',  ->
 	MKBL.activationToggle($('.edit-profile-overlay'))
+	MKBL.overlay()
 
 $('.js-save-article').on 'click',  ->
 	MKBL.activationToggle($('.cogv1_article__save'))
@@ -66,6 +67,7 @@ $('.js-save-article').on 'click',  ->
 
 $('.js-smart-search').on 'click',  ->
 	MKBL.activationToggle($('.smart-search-overlay'))
+	MKBL.overlay()
 
 $('.js-open-modal-module').on 'click',  ->
 	$this = $(this)
@@ -149,9 +151,6 @@ $(document).on 'click', (event) ->
 $ ->
 	MKBL.flowBoxSliderSetup()
 	MKBL.setupContenteditable()
-	$('.cogv1-smart-search__results').perfectScrollbar({
-			suppressScrollX: true
-		})
 	if $(window).width() > 1024 and $('.cogv1_article-nav').length
 		MKBL.articleNavWaypoints()
 

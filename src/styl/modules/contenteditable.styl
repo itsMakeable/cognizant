@@ -70,6 +70,7 @@
   margin auto
   float none
   text-align: center
+  cf()
   h1
     fs(4.4rem)
     font-family proxLight
@@ -94,7 +95,7 @@
       bottom r(0.6rem)
     &:before
       background-color gray
-      width 100%
+      // width 100%
       z-index: 1
     &:after
       background: vgradient5
@@ -124,6 +125,11 @@
         margin-right r(4rem)
         +below(768px)
           margin-right r(3rem)
+      &:before,
+      &:after
+        right r(4rem)
+        +below(768px)
+          right r(3rem)
     .contenteditable-dropdown
       position absolute
       width 100%
