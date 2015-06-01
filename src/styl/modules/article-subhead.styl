@@ -143,6 +143,9 @@
 	.icon
 		size r(3rem)
 		margin-right r(1rem)
+		+below(1024px)
+			margin-left r(-0.9rem)
+
 	.icon_save-article
 		color blue
 		position absolute
@@ -172,12 +175,12 @@ textarea
 	line-height 1.6
 	&:before
 		content ''
-		size r(1rem)
+		size r(1.4rem)
 		background-color transparent
 		border 1px solid gray
 		display inline-block
 		position absolute
-		left r(1rem)
+		left r(0.7rem)
 		top 0
 		bottom 0
 		margin auto
@@ -185,7 +188,11 @@ textarea
 		&:before
 			background-color blue
 			border 1px solid blue
-
+	+below(1024px)
+		text-indent r(3rem)
+		&:before
+			left 0
+		
 .cogv1_article-subhead-flyout
 	transform translateX(-100%)
 	&.is-active
