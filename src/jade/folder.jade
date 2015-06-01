@@ -77,33 +77,39 @@ block content
 		section.cogv1_three-column-section.backgray-bg.section
 			.container
 				each val, index in [1,2,3,4,5]
-					component.flow-box(style='background: url(http://placehold.it/550x550) no-repeat')
-						.flow-box__gradient-bg
-							h4.flow-box__tag 
-								i.icon
-									svg(viewbox='0 0 100 100')
-										use(xlink:href='#icon_pdf')
-										image(src='img/symbols/icon_pdf-2x.png' width='12px' height='12px')
-								strong Article
-							.flow-box__content
-								a.flow-box__title
-									h2 A Systematic Approach To Optimizing Collateral
-								.flow-box__CTA-description.truncate
-									p A Systematic Approach To Optimizing Collateral
-								.flow-box__CTA
-									i.flow-box__CTA-icon.flow-box__CTA--left.interactive-svg
-										svg.is-empty(viewbox='0 0 100 100')
-											use(xlink:href='#icon_star')
-											image(src='img/symbols/icon_star-2x.png' width='20px' height='20px')
-										svg.is-filled(viewbox='0 0 100 100')
-											use(xlink:href='#icon_star-filled')
-											image(src='img/symbols/icon_star-filled-2x.png' width='20px' height='20px')
-										span.flow-box__CTA__alt-text Save
-									a.flow-box__CTA-icon.flow-box__CTA--right.interactive-svg(href='/article.html')
-										svg.is-empty(viewbox='0 0 100 100')
-											use(xlink:href='#icon_triangle')
-											image(src='img/symbols/icon_triangle-2x.png' width='20px' height='20px')
-										svg.is-filled(viewbox='0 0 100 100')
-											use(xlink:href='#icon_triangle-filled')
-											image(src='img/symbols/icon_triangle-filled-2x.png' width='20px' height='20px')
-										span.flow-box__CTA__alt-text View
+					component
+						subcomponent.flow-box-header
+							a.compact-profile-box__profile-pic(href='/index-logged-in.html')
+								img(src="http://placehold.it/20x20", alt="")
+							p.inline-block
+								b: a(href='/index-logged-in.html') Added by Kyla Medina
+						subcomponent.flow-box(style='background: url(http://placehold.it/550x550) no-repeat')
+							.flow-box__gradient-bg
+								h4.flow-box__tag 
+									i.icon
+										svg(viewbox='0 0 100 100')
+											use(xlink:href='#icon_pdf')
+											image(src='img/symbols/icon_pdf-2x.png' width='12px' height='12px')
+									strong Article
+								.flow-box__content
+									a.flow-box__title
+										h2 A Systematic Approach To Optimizing Collateral
+									.flow-box__CTA-description.truncate
+										p A Systematic Approach To Optimizing Collateral
+									.flow-box__CTA
+										i.flow-box__CTA-icon.flow-box__CTA--left.interactive-svg
+											svg.is-empty(viewbox='0 0 100 100')
+												use(xlink:href='#icon_star')
+												image(src='img/symbols/icon_star-2x.png' width='20px' height='20px')
+											svg.is-filled(viewbox='0 0 100 100')
+												use(xlink:href='#icon_star-filled')
+												image(src='img/symbols/icon_star-filled-2x.png' width='20px' height='20px')
+											span.flow-box__CTA__alt-text Save
+										a.flow-box__CTA-icon.flow-box__CTA--right.interactive-svg(href='/article.html')
+											svg.is-empty(viewbox='0 0 100 100')
+												use(xlink:href='#icon_triangle')
+												image(src='img/symbols/icon_triangle-2x.png' width='20px' height='20px')
+											svg.is-filled(viewbox='0 0 100 100')
+												use(xlink:href='#icon_triangle-filled')
+												image(src='img/symbols/icon_triangle-filled-2x.png' width='20px' height='20px')
+											span.flow-box__CTA__alt-text View

@@ -17,33 +17,15 @@ block content
 					a.button--silent.has-icon--left(href='/folder.html')
 						i.icon
 							svg(viewbox='0 0 100 100')
-								use(xlink:href='#icon_checkbox')
-					| Ok
+								use(xlink:href='#icon_check')
+						| Ok
 				hr.green
 				p: strong 14 Collaborators
 				.cogv1_inline-photo-list
 					each val, index in [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
 						img(src="http://api.randomuser.me/portraits/thumb/women/#{val}.jpg", alt="")
 				
-				.row.share-icons-list
-					.share-icon.interactive-svg
-						svg.is-empty(viewbox='0 0 100 100')
-							use(xlink:href='#icon_share')
-						svg.is-filled(viewbox='0 0 100 100')
-							use(xlink:href='#icon_share-filled')
-					a.share-icon
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_email')
-					a.share-icon
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_twitter')
-					a.share-icon
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_facebook')
-					a.share-icon
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_linkedin')
-
+			
 		component.container.main-header__search-container
 			.search-module.search-module--main
 				.search__icon__wrapper

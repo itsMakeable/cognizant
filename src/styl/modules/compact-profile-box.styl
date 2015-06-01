@@ -69,7 +69,14 @@
 //   height 0
 //   overflow visible
 //   // position relative
-  
+
+.compact-profile-box__container
+  +above(1024px)
+    .show-for-small
+      display none
+  +below(1024px)
+    .hide-small
+      display none
   
 .compact-profile-box-module
   z-index 500
@@ -84,10 +91,9 @@
     right 0
     top 0
     bottom 0
-  +above(1024px)
-    &.show-for-small
-      display none
-  
+    +below(420px)
+      width 100%
+
 .compact-profile-box-bar
   background-color: backgray
   color black
@@ -116,11 +122,9 @@
 .compact-profile-box__details
   float left
   line-height r(3.2rem)
-  +below(1024px)
-    .hide-small
-      display none
-  +below(768px)
-    display none
+
+  +below(420px)
+    opacity 0
         
 .compact-profile-box__aside
   float right
@@ -145,7 +149,7 @@
   box-shadow 0px 1px 2px rgba(240,240,240,0.5)
   padding: r(2.6rem) r(3rem) r(1.8rem)
   width: r(33rem)
-  top: r(4.8rem)
+  top: r(5rem)
   right: 0
   max-height: r(39rem)
   text-align: center
@@ -160,7 +164,7 @@
     opacity 1
     transform translateY(0%)
     transition transform 0.4s cubic-bezier(.73,.88,0,1.1) 0.1s, opacity 0.1s linear 0.1s, z-index 0s linear 0.45s
-    z-index: 501
+    z-index: 99999
   .profile-box__list-notification
     left r(-1.9rem)
     top r(0.1rem)
@@ -196,7 +200,7 @@
     color inherit
     right 0
     left 0
-    width r(13rem)
+    width r(15rem)
     border none
   svg, p
     display inline-block

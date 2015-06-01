@@ -90,10 +90,7 @@ MKBL.equalheight = (container, eqHeightChildren, cutoff) ->
 
 MKBL.overlay = ->
 	$('.cogv1-page').toggleClass('overlay-is-on')
-	# $('.cogv1-smart-search__results').perfectScrollbar({
-	# 		suppressScrollX: true
-	# 	})
-
+	
 ###*
  * This controls the social slider interaction
 ###

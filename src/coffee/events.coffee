@@ -35,6 +35,9 @@ $('.search-module').on 'click', '.js-dropdown-trigger',  ->
 	$parent = $(this).closest('.search-module')
 	MKBL.activationToggle($parent, 'is-active')
 
+$('.js-cogv1_icon-header__share-flyout__trigger, .article-mobile__share').on 'click',  ->
+	MKBL.activationToggle($(this).siblings('.js-share-flyout'))
+
 $('.js-dropdown-trigger').on 'click',  ->
 	$trigger = $(this)
 	if $(this).find('.contenteditable-dropdown').length
@@ -45,6 +48,11 @@ $('.js-dropdown-trigger').on 'click',  ->
 
 $('.cogv1_search__favorites').on 'click',  ->
 	MKBL.activationToggle($(this).closest('.cogv1_search__section-right').siblings('.cogv1_search__flyout'))
+
+$('.cogv1_article-subhead__highlight .js-share-flyout__trigger').on 'click',  ->
+	MKBL.activationToggle($(this))
+	MKBL.activationToggle($(this).siblings('.js-share-flyout'))
+	MKBL.activationToggle($(this).closest('.cogv1_article-subhead__highlight'))
 
 $('.js-dropdown-option').on 'click',  ->
 	$this = $(this)

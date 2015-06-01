@@ -2,8 +2,8 @@
 	background-color backgray
 	padding r(8rem) 0 r(6rem)
 	position relative
-	// +below(1024px)
-	// 	padding r(8rem) 0 r(2rem)
+	+below(1024px)
+		padding r(4rem) 0 0 0
 	
 .cogv1_article-subhead__column
 	cf()
@@ -16,12 +16,25 @@
 		&.left,
 		&.right
 			stack()
+			padding r(2rem) 0
 		
 .cogv1_article-subhead__highlight
 	padding 0 r(3rem)
 	margin r(4rem) 0 r(4rem) r(5rem)
 	border-left 1px solid gray
 	position relative
+	transition 0.3s ease 0.3s
+	p
+		transition 0.3s ease 0.3s
+	&.is-active
+		border-left 1px solid transparent
+		transition 0.3s ease 0s
+		p
+			opacity 0.1
+			transition 0.3s ease 0s
+		&:before
+			opacity 0
+			transition 0.3s ease 0s
 	.icon
 		size r(3.2rem)
 		position absolute
@@ -38,13 +51,14 @@
 		left r(-1.2rem)
 		top r(2rem)
 		size r(1.2rem) r(1.8rem)
+		transition 0.3s ease 0.3s
 		background transparent url(unquote('data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSI0NzUuOSAxNTQuMyAxMiAxOCI+PHBhdGggZmlsbD0iI0YxRjFGMSIgc3Ryb2tlPSIjRDREMEQxIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBkPSJNNDg3LjkgMTU0LjNsLTEwLjEgOSAxMC4xIDkiLz48L3N2Zz4=')) no-repeat
 		background-size cover
 		background-position 0% 0%
 
 .cogv1_article__save__indicator
 	position absolute
-	left r(4rem)
+	left r(3rem)
 	top r(-1.9rem)
 	transform rotate(90deg)
 	border-color: transparent white transparent transparent;
@@ -69,7 +83,6 @@
 		.icon
 			margin-right r(1rem)
 	+below(1024px)
-		position absolute
 		bottom r(-4rem)
 	
 .cogv1_article-subhead__download
@@ -79,20 +92,18 @@
 	+below(1024px)
 		position absolute
 		right 0
+		top 0
 
 .cogv1_article__save
 	padding-top: r(3rem)
 	max-height: r(30rem)
 	text-align: left
-	z-index 99
+	z-index -1
 	color black
 	cf()
 	transform translateY(r(3rem))
 	transition transform 0.3s ease-out, opacity 0.1s linear
 	opacity 0
-	&.is-active
-		opacity 1
-		transform translateX(0)
 	p small
 		a
 			font-family proxSbold
@@ -100,7 +111,8 @@
 			color heavymustard
 	&.is-active
 		opacity 1
-		transform translateY(0)
+		transform translateX(0)
+		z-index 99
 		transition opacity 0.2s ease, transform 0.3s ease-out-back
 		header
 			color black
@@ -111,14 +123,15 @@
 	+below(1024px)
 		background-color white
 		box-shadow 0px 1px 2px rgba(240,240,240,1)
-		z-index 99
 		position absolute
-		left r(-3.2rem)
-		top r(6rem)
-		transform translateY(-4rem)
+		left r(-2.2rem)
+		top r(2rem)
+		transform translateY(4rem)
 		padding r(3rem)
-		min-width (28rem)
-		max-width (32rem)
+		// min-width (28rem)
+		// max-width (32rem)
+		width 200%
+		right 0
 		
 .cogv1_article__save__add
 	color gray
@@ -147,7 +160,7 @@ input[type=number],
 input[type=password],
 textarea
 	&.cogv1_article__save__input
-		background-color backgray
+		background-color transparent
 		padding r(0.4rem) 0 r(0.5rem) r(4rem)
 		color blue
 		fs(1.8rem)
@@ -155,8 +168,8 @@ textarea
 .cogv1_article__save__list
 	text-indent r(4rem)
 	position relative
-	padding r(0.5rem) 0
-	line-height 1.4
+	padding r(0.8rem) 0
+	line-height 1.6
 	&:before
 		content ''
 		size r(1rem)
@@ -172,5 +185,16 @@ textarea
 		&:before
 			background-color blue
 			border 1px solid blue
-		
+
+.cogv1_article-subhead-flyout
+	transform translateX(-100%)
+	&.is-active
+		transform translateX(0)
+				
+.share-flyout__wrapper
+	top r(1rem)
+	z-index 1
+	left r(-1rem)
 	
+.cogv1_article-subhead__icon.share-flyout__icon
+	color blue

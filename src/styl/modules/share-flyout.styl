@@ -47,14 +47,15 @@
     z-index 10
     transition 0.05s linear 0s
     color white
-    &:hover
-      .fill
-        fill white
+    cursor pointer
+    &.is-active
+      color blue
 
 .share-flyout__icon
     display inline-block
     position relative
     color white
+    size r(3.5rem)
     .icon
         align()
         size 50%
@@ -64,4 +65,9 @@
         .icon
             opacity 1
 
-  
+.share-flyout__wrapper
+  overflow hidden
+  position absolute
+  &.is-active
+    .share-flyout
+      transform translateX(0)

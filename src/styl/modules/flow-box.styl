@@ -45,6 +45,8 @@
     border-left 1px solid #e3e3e3
     border-right 1px solid #e3e3e3
     text-align left
+    +below(1024px)
+        height r(28rem)
     h3
         font-family proxSbold
     .share-flyout__icon,
@@ -58,6 +60,7 @@
             line-height 1.2
             font-family proxReg
             padding-left r(7rem)
+            text-transform capitalize
         h4
             color gray
             upcase()
@@ -87,6 +90,10 @@
             &:hover
                 opacity 1
                 color blue
+        +below(540px)
+            h3
+                fs(2rem)
+                padding-left r(5rem)
 
 .flow-box__gradient-bg
     background: url(unquote('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAEFCAYAAAArGC1RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAINJREFUeNrs1csOgDAIRNGWvvT/P7i6NhgnIbi6Jt2cMMDCqu29y/NYcR4QBOPY71M9bH9Uvq7k9uxy5fDQ5J5BnDK6e54eLg8Puacen3J8xeJDXkmPj9iees8eqwy+tC0B9att8i02eVCNDdJ66vGMQRkfan5nIAiCIAiCIAh+4iXAALhLEmsq24dNAAAAAElFTkSuQmCC')) repeat-x
@@ -158,10 +165,11 @@
     &:hover
         color darkblue
     h2
-        max-height r(6.2rem)
+        max-height r(6rem)
         overflow hidden
-        +below(1024px)
-            fs(2.4rem)
+        fs(2.2rem)
+        +below(768px)
+            max-height r(8rem)
     h5
         max-height r(18.7rem)
         overflow hidden
@@ -210,7 +218,7 @@
         bottom 0
         size r(3rem)
         transition transform 0.3s ease-out
-
+.no-touch .flow-box__CTA-icon
     &:hover
         svg.is-empty,
         svg.is-filled
@@ -237,21 +245,25 @@
 
 .flow-box__CTA--share
     left r(7rem)
+    size r(4rem)
+    top r(1.6rem)
+    svg
+        size r(4rem)
     +below(768px)
        display none
 
 .flow-box__share-flyout-wrapper
     left r(12rem)
-    bottom 0
     position absolute
     overflow hidden
     width r(30rem)
-    height r(3rem)
+    // height r(3rem)
+    top r(1.6rem)
         
 .flow-box-flyout__icon.share-flyout__icon
     display inline-block
-    margin 0 r(1.6rem)
-    size r(3rem)
+    margin 0 r(1rem)
+    size r(4rem)
     svg
         transform none
         position static
@@ -390,3 +402,15 @@
     position absolute
     left 0
     top r(3.8rem)
+    +below(540px)
+        size(3.6rem)
+
+.flow-box-header
+    background-color white
+    padding r(1rem)
+    cf()
+    margin-bottom r(1rem)
+    overflow hidden
+    p
+        white-space nowrap
+        padding r(0.3rem) 0

@@ -95,9 +95,12 @@
     color blue
     size r(3.8rem)
     position absolute
-    left r(-6rem)
-    top r(0.4rem)
+    left r(-5rem)
+    top 0
     margin auto
+    +below(640px)
+      size r(2.8rem)
+      left r(-4rem)
   h1
     color blue
     padding-bottom r(1rem)
@@ -105,6 +108,8 @@
     position relative
     &.capitalize
       text-transform capitalize
+    +below(640px)
+      fs(2.8rem)
   h1, h2, h3, h4, h5, h6, p
     text-align center
   p
@@ -146,20 +151,66 @@
   left 0
   right 0
   
+// ICON HEADER ON LATEST STRATEGIES PAGE
+
 .cogv1_icon-header
   padding r(4rem) 0 0 0
-  .cogv1_icon-header__icon
-    size r(9rem) r(7.5rem)
-    padding-right r(2rem)
-    vertical-align bottom
-  .cogv1_icon-header__title
-    vertical-align middle
-  .cogv1_icon-header__icon,
-  .cogv1_icon-header__title
-    display table-cell
-    vertical-align middle
   h3
     color gray
   .gradient-hr
     margin-top r(2rem)
     margin-bottom r(2rem)
+    +below(960px)
+      margin-bottom r(4rem)
+    
+.cogv1_icon-header__icon
+  size r(9rem) r(7.5rem)
+  padding-right r(2rem)
+  vertical-align bottom
+  +between(540px,768px)
+    size r(12rem) r(10rem)
+  
+.cogv1_icon-header__title
+  vertical-align middle
+  
+.cogv1_icon-header__icon,
+.cogv1_icon-header__title
+  display table-cell
+  vertical-align middle
+  
+.cogv1_icon-header__share.share-flyout__trigger
+  color blue
+  size r(3.8rem)
+  position absolute
+  right 0
+  top r(-1rem)
+  bottom 0
+  margin auto
+  +below(960px)
+    top auto
+    bottom r(-1rem)
+
+.cogv1_icon-header__share-flyout-wrapper
+  position absolute
+  right r(3.8rem)
+  top r(-1rem)
+  bottom 0
+  margin auto
+  height r(3.8rem)
+  overflow hidden
+  +below(960px)
+    top auto
+    bottom r(-1rem)
+  &.is-active
+    .cogv1_icon-header-flyout
+      transform translateX(0%)
+    .cogv1_icon-header__share__icon.share-flyout__icon
+      opacity 1
+  
+.cogv1_icon-header-flyout
+  transform translateX(100%)
+  
+.cogv1_icon-header__share__icon.share-flyout__icon
+  color blue
+  size r(3.8rem)
+  opacity 0

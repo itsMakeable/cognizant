@@ -3,10 +3,10 @@ extends layouts/layout-primary
 block content
 	include modules/compact-profile-box
 
-	header.cogv1_mini-header.color-bg.gradient3--vertical
+	header.cogv1_mini-header.color-bg.gradient2--vertical--reverse
 		.container
 			.cogv1_mini-header__center
-				h1 Latest Strategies
+				h1.upcase Latest Strategies
 				p This is a subhead describing the Latest Strategies section
 	main
 		section.cogv1_three-column-section.cogv1_overhang-section.backgray-bg
@@ -55,4 +55,4 @@ block content
 										svg.is-filled(viewbox='0 0 100 100')
 											use(xlink:href='#icon_triangle-filled')
 											image(src='img/symbols/icon_triangle-filled-2x.png' width='20px' height='20px')
-										span.flow-box__CTA__alt-text View
+									span.flow-box__CTA__alt-text View

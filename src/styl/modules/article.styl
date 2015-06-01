@@ -77,7 +77,7 @@
 	top r(-3rem)
 	color white
 	margin auto
-	z-index 100
+	z-index 500
 	transform-origin 0% 0%
 	transition opacity 0.3s ease-out, transform 0.3s cubic-bezier(.73,.49,.28,1.21)
 	&:hover
@@ -148,6 +148,8 @@
 	z-index 999
 	&:hover
 		color white
+	+below(1024px)
+		background green hgradient66
 	&.has-background
 		background green hgradient66
 		svg
@@ -164,6 +166,8 @@
 		display none
 	+below(1024px)
 		size r(6rem)		
+		svg
+			display block
 	&.is-active
 		svg
 			display block
@@ -215,18 +219,15 @@
 				display none
 		&.cogv1_article__footer-nav__text--prev
 			padding-left r(6rem)
-			text-align left
+			text-align right
 		&.cogv1_article__footer-nav__text--next
 			padding-right r(6rem)
+			text-align left
 			
 	+below(768px)
 		p
 			strong:nth-child(2)
 				display none
-		&.cogv1_article__footer-nav__text--prev
-			text-align left
-		&.cogv1_article__footer-nav__text--next
-			text-align right
 
 .cogv1_article__footer-nav__divider
 	width 1px
@@ -289,3 +290,37 @@
 +above(768px)
 	.cogv1_article__related--small
 		display none
+
+.article-mobile__share.share-flyout__trigger
+	color blue
+	size r(3.8rem)
+	position absolute
+	left 0
+	top 0
+	bottom 0
+	margin auto
+	+above(768px)
+		display none
+
+.article-mobile__share-flyout-wrapper
+	position absolute
+	left r(5rem)
+	top r(-1rem)
+	bottom 0
+	margin auto
+	height r(3.8rem)
+	overflow hidden
+	&.is-active
+		.article-mobile__share-flyout
+			transform translateX(0%)
+		.article-mobile__share__icon.share-flyout__icon
+				opacity 1
+
+.article-mobile__share-flyout
+	transform translateX(-100%)
+
+.article-mobile__share__icon.share-flyout__icon
+	color blue
+	size r(3.8rem)
+	margin r(0.3rem) r(0.5rem)
+	opacity 0

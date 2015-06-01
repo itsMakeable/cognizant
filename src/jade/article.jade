@@ -19,24 +19,28 @@ block content
 					strong A shift to individual healthcare. 
 					| Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.Curabitur blandit tempus porttitor vestibulum id ligul.
 				
-				.row.share-icons-list
-					.share-icon.interactive-svg
+				.row
+					i.article-mobile__share.share-flyout__trigger.js-article-mobile__share-flyout__trigger.interactive-svg
 						svg.is-empty(viewbox='0 0 100 100')
 							use(xlink:href='#icon_share')
+							image(src='img/symbols/icon_share-2x.png' width='20px' height='20px')
 						svg.is-filled(viewbox='0 0 100 100')
 							use(xlink:href='#icon_share-filled')
-					a.share-icon
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_email')
-					a.share-icon
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_twitter')
-					a.share-icon
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_facebook')
-					a.share-icon
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_linkedin')
+							image(src='img/symbols/icon_share-filled-2x.png' width='20px' height='20px')
+					component.article-mobile__share-flyout-wrapper.js-share-flyout
+						.article-mobile__share-flyout.share-flyout
+							.article-mobile__share__icon.share-flyout__icon
+								svg(viewbox='0 0 100 100')
+									use(xlink:href='#icon_email')
+							.article-mobile__share__icon.share-flyout__icon
+								svg(viewbox='0 0 100 100')
+									use(xlink:href='#icon_twitter')
+							.article-mobile__share__icon.share-flyout__icon
+								svg(viewbox='0 0 100 100')
+									use(xlink:href='#icon_facebook')
+							.article-mobile__share__icon.share-flyout__icon
+								svg(viewbox='0 0 100 100')
+									use(xlink:href='#icon_linkedin')
 
 		component.container.main-header__search-container
 			.search-module.search-module--main
@@ -83,18 +87,6 @@ block content
 		section.cogv1_article-subhead
 			.container
 				.row
-					.cogv1_article-subhead__column.left
-						h2 Executive Highlights
-						.cogv1_article-subhead__highlight
-							i.icon
-								svg(viewbox='0 0 100 100')
-									use(xlink:href='#icon_share-filled')
-							p 140 character max You probably already know. In 2012, the U.S. spent 20% of its gross domestic product (or $3 trillion)
-						.cogv1_article-subhead__highlight
-							i.icon
-								svg(viewbox='0 0 100 100')
-									use(xlink:href='#icon_share-filled')
-							p 140 character max. shareable highlights. Despite its world-class medical technology, the U.S. is grossly inefficient in terms of controlling costs
 					.cogv1_article-subhead__column.right
 						.row
 							.cogv1_article-subhead__CTA.cogv1_article-subhead__save-article.js-save-article
@@ -122,7 +114,7 @@ block content
 									.add-action
 										i.icon.icon_save-article
 											svg(viewbox='0 0 100 100')
-												use(xlink:href='#icon_save-article')
+												use(xlink:href='#icon_check')
 										input(type='text').cogv1_article__save__input
 								ul
 									li.cogv1_article__save__list
@@ -139,7 +131,28 @@ block content
 								p: small 
 									a.link(href="") Sign in with LinkedIn
 									|  to organize your favourites and share them with colleagues in your network. 
-
+					.cogv1_article-subhead__column.left
+						h2 Executive Highlights
+						each val, index in [1,2]
+							.cogv1_article-subhead__highlight
+								i.icon.share-flyout__trigger.js-share-flyout__trigger
+									svg(viewbox='0 0 100 100')
+										use(xlink:href='#icon_share-filled')
+								component.cogv1_article-subhead-flyout-wrapper.js-share-flyout.share-flyout__wrapper
+									.cogv1_article-subhead-flyout.share-flyout
+										.cogv1_article-subhead__icon.share-flyout__icon
+											svg(viewbox='0 0 100 100')
+												use(xlink:href='#icon_email')
+										.cogv1_article-subhead__icon.share-flyout__icon
+											svg(viewbox='0 0 100 100')
+												use(xlink:href='#icon_twitter')
+										.cogv1_article-subhead__icon.share-flyout__icon
+											svg(viewbox='0 0 100 100')
+												use(xlink:href='#icon_facebook')
+										.cogv1_article-subhead__icon.share-flyout__icon
+											svg(viewbox='0 0 100 100')
+												use(xlink:href='#icon_linkedin')
+								p 140 character max You probably already know. In 2012, the U.S. spent 20% of its gross domestic product (or $3 trillion)
 			
 		article.cogv1_article
 			.cogv1_article-nav.cogv1_article-nav--prev
@@ -233,8 +246,8 @@ block content
 									.flow-box__content
 										a.flow-box__title(href='/article.html')
 											h2 A Systematic Approach To Optimizing Collateral Damage Control
-										.flow-box__CTA-description
-											p: small Added for you on 11.22.14
+										.flow-box__CTA-description.truncate
+											p: small Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui impedit provident aut ipsa, dolore perferendis blanditiis natus numquam! Qui cupiditate possimus odit dolor, in ea quasi culpa ad aut sint?
 										.flow-box__CTA
 											i.flow-box__CTA-icon.flow-box__CTA--left.interactive-svg
 												svg.is-empty(viewbox='0 0 100 100')
@@ -257,10 +270,11 @@ block content
 					each val, index in [1,2,3]
 						article.content-list__items
 							.content-list__item
-								h4
-									i.icon
-										| <svg id="data_science" xmlns="http://www.w3.org/2000/svg" viewBox="8.8 -14.6 75.4 50.4"><linearGradient id="data-science" gradientUnits="userSpaceOnUse" x1="76.168" y1="-74.456" x2="95.128" y2="33.071" gradientTransform="matrix(.563 0 0 -.563 2.31 .145)"><stop offset="0" stop-color="#6DB33F"/><stop offset="1" stop-color="#72CDF4"/></linearGradient><path fill="url(#data-science)" d="M82.9 33.2h-3.7v-46.5c0-.7-.7-1.3-1.3-1.3h-10c-.7 0-1.3.7-1.3 1.3v46.5h-5V9.3c0-.7-.7-1.3-1.3-1.3h-10c-.7 0-1.3.7-1.3 1.3v23.9h-5V1.7C44 1 43.3.4 42.7.4h-10c-.7 0-1.3.7-1.3 1.3v31.5h-5V19.3c0-.7-.7-1.3-1.3-1.3h-10c-.7 0-1.3.7-1.3 1.3v13.9h-3.7c-.7 0-1.3.7-1.3 1.3 0 .7.7 1.3 1.3 1.3H82.9c.7 0 1.3-.7 1.3-1.3 0-.8-.4-1.3-1.3-1.3zm-66.5 0V20.6H24v12.6h-7.6zm17.6 0V3h7.6v30.2H34zm17.6 0V10.6h7.6v22.6h-7.6zm17.6 0V-12h7.6v45.2h-7.6z"/></svg>
-									| Article
+								div
+									h4
+										i.icon
+											| <svg id="data_science" xmlns="http://www.w3.org/2000/svg" viewBox="8.8 -14.6 75.4 50.4"><linearGradient id="data-science" gradientUnits="userSpaceOnUse" x1="76.168" y1="-74.456" x2="95.128" y2="33.071" gradientTransform="matrix(.563 0 0 -.563 2.31 .145)"><stop offset="0" stop-color="#6DB33F"/><stop offset="1" stop-color="#72CDF4"/></linearGradient><path fill="url(#data-science)" d="M82.9 33.2h-3.7v-46.5c0-.7-.7-1.3-1.3-1.3h-10c-.7 0-1.3.7-1.3 1.3v46.5h-5V9.3c0-.7-.7-1.3-1.3-1.3h-10c-.7 0-1.3.7-1.3 1.3v23.9h-5V1.7C44 1 43.3.4 42.7.4h-10c-.7 0-1.3.7-1.3 1.3v31.5h-5V19.3c0-.7-.7-1.3-1.3-1.3h-10c-.7 0-1.3.7-1.3 1.3v13.9h-3.7c-.7 0-1.3.7-1.3 1.3 0 .7.7 1.3 1.3 1.3H82.9c.7 0 1.3-.7 1.3-1.3 0-.8-.4-1.3-1.3-1.3zm-66.5 0V20.6H24v12.6h-7.6zm17.6 0V3h7.6v30.2H34zm17.6 0V10.6h7.6v22.6h-7.6zm17.6 0V-12h7.6v45.2h-7.6z"/></svg>
+										| Article
 								p: strong: a(href='/article.html') It’s Time for Learning to Go Back to School
 								i.content-list__item-CTA
 									a(href='/article.html')

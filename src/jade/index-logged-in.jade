@@ -2,11 +2,11 @@ extends layouts/layout-primary
 
 block content
 	component.container.compact-profile-box__container
-		.compact-profile-box-module.show-for-small.no-button
+		.compact-profile-box-module.show-for-small
 			.compact-profile-box-bar
 				.compact-profile-box__profile-pic
 					img(src="http://placehold.it/20x20", alt="")
-				p.compact-profile-box__details
+				p.compact-profile-box__details.hide-small
 					b Kyla Medina
 					span.hide-small &nbsp; | &nbsp;Information Technology &amp; Services
 				.compact-profile-box__aside
@@ -18,7 +18,11 @@ block content
 					i.icon(data-flyout='settings')
 						svg(viewbox='0 0 100 100')
 							use(xlink:href='#icon_settings')
-				
+				.compact-profile-box__button.js-smart-search
+					.search__smart-search
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_search')
+						p <strong>Smart</strong>Search&reg;
 			subcomponent.compact-profile-box__flyout.compact-profile-box__flyout--settings
 				.profile-box__indicator.triangle
 				header

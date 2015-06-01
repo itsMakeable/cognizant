@@ -6,14 +6,15 @@
 	
 .cogv1-smart-search__input-container
 	position relative
-	col(10/12, offset: 1/12)
+	+above(1024px)
+		col(10/12, offset: 1/12)
 
 input[type=text].cogv1-smart-search__input
 	background-color backgray
 	padding r(1.9rem) r(6rem)
 	border-radius r(0.2rem)
 	fs(2.2rem)
-	font-family proxLight
+	font-family proxLight		
 	
 .cogv1-smart-search__icon
 	size r(2.6rem)
@@ -32,8 +33,11 @@ input[type=text].cogv1-smart-search__input
 	position relative
 	border-bottom 1px solid gray
 	padding r(2rem) 0 r(2rem) r(8.2rem)
-	col(10/12, offset: 1/12)
 	cf()
+	+above(1024px)
+		col(10/12, offset: 1/12)
+	+below(1024px)
+		padding r(2rem) 0 r(2rem) r(4rem)
 	p
 		color gray
 		&:first-of-type
@@ -42,12 +46,15 @@ input[type=text].cogv1-smart-search__input
 		color darkblue
 		text-transform capitalize
 		fs(1.8rem)
-
+		padding-right r(4rem)
+		
 .cogv1-smart-search__result-type
 	size r(2.8rem)
 	position absolute
 	left r(1.8rem)
 	top r(2rem)
+	+below(1024px)
+		left 0
 	
 .cogv1-smart-search__result-CTA
 	position absolute
@@ -57,6 +64,8 @@ input[type=text].cogv1-smart-search__input
 	color blue
 	top 0
 	bottom 0
+	+below(1024px)
+		right 0
 
 .cogv1-smart-search__result-message
 	text-align center
