@@ -13,8 +13,14 @@
 		
 .cogv1_inline-photo-list
 	margin-top r(2rem)
-	img
+	.icon
+		color gray
+		transition color 0.2s ease
+		&:hover
+			color blue
+	img, .icon
 		size r(4.4rem)
+		vertical-align middle
 		border-radius 50%
 		display inline-block
 		margin 0 r(0.5rem)

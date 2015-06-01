@@ -12,9 +12,18 @@ block content
 				h1 The Rise of the Empowered Healthcare Consumer
 				p.cogv1_article-header__description
 					| &ldquo;Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.Curabitur blandit tempus porttitor vestibulum id ligul.&rdquo;
+				div
+					a.button--silent.has-icon--left(href='/folder-edit.html')
+						i.icon
+							svg(viewbox='0 0 100 100')
+								use(xlink:href='#icon_email')
+						| Edit
 				hr.green
 				p: strong 14 Collaborators
 				.cogv1_inline-photo-list
+					i.icon
+						svg(viewbox='0 0 100 100')
+							use(xlink:href='#icon_add')
 					each val, index in [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
 						img(src="http://api.randomuser.me/portraits/thumb/women/#{val}.jpg", alt="")
 				
