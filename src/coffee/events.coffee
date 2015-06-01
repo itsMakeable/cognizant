@@ -135,6 +135,9 @@ $(document).on 'click', (event) ->
 	if !$(event.target).closest('.js-open-modal-module').length
 		$('.modal-module').addClass('is-hidden')
 		
+	if !$(event.target).closest('.compact-profile-box__aside').length
+		MKBL.activationOff($('.compact-profile-box__flyout'))
+		
 	if !$(event.target).closest('.js-dropdown-trigger').length
 		MKBL.activationOff($('.js-dropdown-trigger'))
 		$('.contenteditable-dropdown').velocity {height: 0}, 

@@ -163,7 +163,7 @@ div.search__input
   &:hover
     color white
   svg
-    size r(4rem)
+    size r(3rem)
     align()
     z-index: 1
 
@@ -288,17 +288,24 @@ div.search__input
 
 .search__icon--right
   right r(2rem)
-  size r(2.7rem)
-  position absolute
+  size r(2.8rem)
+  top 0
+  bottom 0
+  margin auto
+  z-index 1
+  color gray
+  &.search__icon-filter
+    top r(-6.4rem)
 
 .search__CTA
   align(vertical)
   right r(3rem)
   opacity 0
   transition 0.3s ease-out
-  color blue
-  +below(1024px)
+  color gray
+  +below(768px)
     display none
+    
   &.is-active
     right r(2rem)
     opacity 1
@@ -318,13 +325,6 @@ div.search__input
     size r(2.8rem)
     align()
     z-index: 1
-
-  &.cogv1_search__share
-    right 0
-  &.cogv1_search__download
-    right r(11rem)
-  &.cogv1_search__favorites 
-    right r(11rem * 2)
     
 .cogv1_search__list-notification
   left r(-1.9rem)
