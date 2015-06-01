@@ -69,6 +69,7 @@
   height 0
   overflow visible
   position relative
+  
   +below(768px)
     padding 0
   .button--primary
@@ -77,7 +78,7 @@
     top 0
   
 .compact-profile-box-module
-  position relative
+  
   +above(1024px)
     &.show-for-small
       display none
@@ -88,11 +89,15 @@
   padding r(0.8rem) r(2rem) r(0.8rem)
   text-align left
   margin 0 auto
-  position relative
+  // position relative
   margin auto
-  width 100%
+  // width 100%
   top 0
   z-index 500
+  max-width r(109.2rem)
+  position fixed
+  left 0
+  right 0
   cf()
   
 .compact-profile-box__profile-pic
