@@ -131,7 +131,7 @@ $('.js-video-play').on 'click', (e) ->
 	$this = $(this)
 	MKBL.playVideo(e, $this)
 
-$(document).on 'click', (event) ->
+$(document).on 'click touchstart', (event) ->
 	if !$(event.target).closest('.js-open-modal-module').length
 		$('.modal-module').addClass('is-hidden')
 		
