@@ -48,7 +48,7 @@ gulp.task 'browser-sync', ->
 	browserSync
 		port: 8088
 		open: false
-		tunnel: true
+		tunnel: false
 		online: true
 		ghostMode: false
 		logConnections: true

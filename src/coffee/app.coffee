@@ -59,6 +59,35 @@ $.fn.alterClass = (removals, additions) ->
   return
 ) jQuery
 
+# Check array for a value
+MKBL.checkArray = (needle) ->
+	if typeof Array::indexOf == 'function'
+		indexOf = Array::indexOf
+	else
+		indexOf = (needle) ->
+			i = -1
+			index = -1
+			i = 0
+			while i < @length
+				if @[i] == needle
+					index = i
+					break
+				i++
+			index
+
+	indexOf.call this, needle
+
+MKBL.searchFilter  = (input, list, keycode) ->
+	$input = $(input)
+	needle = $input.val().toUpperCase()
+	$(list).each ->
+		re = new RegExp(needle, 'gi')
+		haystack = $(this).text().toUpperCase()
+		results = []
+		#this is the results you want
+		while re.exec(haystack)
+		  results.push re.lastIndex
+		console.log results
 
 ###*
  * Converts matrix like rgba or transforms to an array
@@ -89,7 +118,7 @@ MKBL.equalheight = (container, eqHeightChildren, cutoff) ->
 		$child.css('min-height',t)
 
 MKBL.overlay = ->
-	$('.cogv1-page').toggleClass('overlay-is-on')
+	MKBL.activationToggle($('.cogv1-page'),'overlay-is-on')
 	
 ###*
  * This controls the social slider interaction

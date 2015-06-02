@@ -16,24 +16,6 @@ MKBL.listFilter = (input, list) ->
 				$('.mkbl-form-hint.is-select').addClass('is-displayed')
 				$('.mkbl-form-hint.is-input').removeClass('is-displayed')
 
-# Check array for a value
-MKBL.checkArray = (needle) ->
-	if typeof Array::indexOf == 'function'
-		indexOf = Array::indexOf
-	else
-		indexOf = (needle) ->
-			i = -1
-			index = -1
-			i = 0
-			while i < @length
-				if @[i] == needle
-					index = i
-					break
-				i++
-			index
-
-	indexOf.call this, needle
-
 
 MKBL.currentField = null
 MKBL.timeout = null

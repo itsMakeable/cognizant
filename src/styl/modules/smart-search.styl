@@ -83,3 +83,30 @@ input[type=text].cogv1-smart-search__input
 		display inline-block
 		max-width r(42rem)
 		line-height 1
+
+.cogv1-smart-search__dropdown
+	padding r(2rem) r(9rem)
+	background-color white
+	box-shadow 0px 2px 2px rgba(black,0.2)
+	position absolute
+	left r(0.1rem)
+	right r(0.1rem)
+	z-index 10
+	+above(1024px)
+		col(10/12, offset: 1/12)
+	.content-list__item-CTA
+		size r(2.8rem)
+		right -10%
+	.content-list__item
+		border-bottom 1px solid backgray
+		h4
+			color gray
+		p
+			color gray
+			padding-bottom 0
+			a
+				color darkgray
+				span
+					color blue
+		&:last-of-type
+			border-bottom 1px solid transparent

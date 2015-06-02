@@ -17,6 +17,10 @@ $('.search-module--main .search__input').on 'keyup',  ->
 	else
 		MKBL.activationOff($('.search__CTA'))
 
+$('.cogv1-smart-search__input').on 'keyup', (e) ->
+	keyCode = e.keyCode or e.which
+	MKBL.searchFilter($(this),$(this).closest('.cogv1-smart-search').find('.js-search-text'))
+
 $('[contenteditable]').on 'click',  ->
 	$this = $(this)
 	MKBL.prepareContenteditable($this)
