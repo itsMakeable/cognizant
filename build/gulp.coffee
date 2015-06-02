@@ -37,7 +37,6 @@ gulp.task 'default', (cb) ->
 		'static', 
 		'img', 
 		'svg',
-		'css',
 		'js',
 		'watch',
 		'styleguide'
