@@ -128,12 +128,14 @@
       &:before,
       &:after
         right r(4rem)
+        width calc(100% - 40px)
         +below(768px)
           right r(3rem)
+          width calc(100% - 30px)
     .contenteditable-dropdown
       position absolute
       width 100%
-      z-index: 10
+      z-index: 800
       top r(5.1rem)
       +below(768px)
         li

@@ -18,8 +18,12 @@ $('.search-module--main .search__input').on 'keyup',  ->
 		MKBL.activationOff($('.search__CTA'))
 
 $('.cogv1-smart-search__input').on 'keyup', (e) ->
-	keyCode = e.keyCode or e.which
-	MKBL.searchFilter($(this),$(this).closest('.cogv1-smart-search').find('.js-search-text'))
+	MKBL.activationOn($('.cogv1-smart-search__dropdown'))
+	MKBL.searchAutocomplete($(this), $('.cogv1-smart-search__dropdown .js-search-text'))
+	if !$('.cogv1-smart-search__dropdown .js-search-text').find('span').length
+		MKBL.activationOff($('.cogv1-smart-search__dropdown'))
+		MKBL.activationOn($('.cogv1-smart-search__results'))
+
 
 $('[contenteditable]').on 'click',  ->
 	$this = $(this)
@@ -55,6 +59,9 @@ $('.js-dropdown-trigger').on 'click',  ->
 	else
 		$dropdown = $(this).siblings('.contenteditable-dropdown')
 	MKBL.contenteditableDropdown($dropdown, $trigger)
+
+$('.cogv1-smart-search__icon--right').on 'click',  ->
+	MKBL.activationOn($('.cogv1-smart-search__results'))
 
 $('.cogv1_search__favorites').on 'click',  ->
 	MKBL.activationToggle($(this).closest('.cogv1_search__section-right').siblings('.cogv1_search__flyout'))
@@ -134,6 +141,9 @@ $('.social-group__icon').on 'click',  ->
 $('.js-video-play').on 'click', (e) ->
 	$this = $(this)
 	MKBL.playVideo(e, $this)
+
+$(document).on 'click', (event) ->
+	MKBL.activationOff($('.cogv1-smart-search__dropdown'))
 
 $(document).on 'click touchstart', (event) ->
 	if !$(event.target).closest('.js-open-modal-module').length

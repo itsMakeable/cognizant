@@ -6,7 +6,7 @@
 			[
 				"node_modules",
 				"design",
-				// "app",
+				"app",
 				"tmp",
 				"font"
 			],

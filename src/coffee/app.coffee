@@ -77,18 +77,6 @@ MKBL.checkArray = (needle) ->
 
 	indexOf.call this, needle
 
-MKBL.searchFilter  = (input, list, keycode) ->
-	$input = $(input)
-	needle = $input.val().toUpperCase()
-	$(list).each ->
-		re = new RegExp(needle, 'gi')
-		haystack = $(this).text().toUpperCase()
-		results = []
-		#this is the results you want
-		while re.exec(haystack)
-		  results.push re.lastIndex
-		console.log results
-
 ###*
  * Converts matrix like rgba or transforms to an array
 ###
@@ -363,7 +351,6 @@ MKBL.contenteditableDropdown = ($dropdown, $trigger) ->
 
 MKBL.contenteditableMobileScroll = ($this) ->
 	$('html, body').animate { scrollTop: $this.position().top }, 'slow'
-	console.log $this
 
 MKBL.contenteditableDropdownAutocomplete = ($this) ->
 	$trigger = $this.closest('.js-dropdown-option-parent').find('.js-dropdown-trigger')
@@ -386,6 +373,21 @@ MKBL.contenteditableDropdownAutocomplete = ($this) ->
 			
 			$(@).html matchingLetters
 
+MKBL.searchAutocomplete = ($input, $autoSuggestListItem) ->
+	searchInputText = $input.val().replace(/^\s+|\s+$/g, '')
+	if searchInputText != '' and searchInputText != ' '
+	  pattern = new RegExp(searchInputText, 'gi')
+	else
+		MKBL.activationOff($('.cogv1-smart-search__dropdown'))
+		MKBL.activationOn($('.cogv1-smart-search__results'))
+	matchingLetters = null
+	$autoSuggestListItem.each ->
+		matchingLetters = $(@).text()
+		matchingLetters = matchingLetters.replace(pattern, ($1) ->
+		  '<span>' + $1 + '</span>'
+		)
+		
+		$(@).html matchingLetters
 
 ###*
  * Fills the content editable section with the selected dropdown option

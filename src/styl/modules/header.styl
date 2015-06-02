@@ -85,6 +85,7 @@
 
 .mini-header--section
   padding r(3rem) 0
+  position relative
   h1, h2, h3, h4, h5, h6, p
     text-align center
     
@@ -137,6 +138,7 @@
   height r(30.8rem)
   background-size cover !important
   background-position 50% 50% !important
+  position relative
   .container
     position relative
     height inherit
@@ -150,6 +152,9 @@
   position absolute
   left 0
   right 0
+  +below(1140px)
+    left r(2rem)
+    right r(2rem)
   
 // ICON HEADER ON LATEST STRATEGIES PAGE
 
