@@ -55,10 +55,10 @@ gulp.task 'styl', ->
 gulp.task 'styleguide', ->
 	StyleGuide = require('styleguidejs')
 	sg = new StyleGuide
-	sg.addFile 'app/main.css'
+	sg.addFile 'app/css/main.css'
 	sg.render
 		extraCss: [ 
-
+			'app/css/font.css'
 		]
 		extraJs: [ 
 			'build/styleguide/holder.min.js' 
