@@ -55,7 +55,8 @@
 
 
 // ARTICLE FLOATING NAV /////////////////////////
-
+// This is highly specific to article pages ////
+///////////////////////////////////////////////
 .cogv1_article-nav--prev
 	left 0
 	@media screen and (max-height: 1024px)
@@ -127,124 +128,7 @@
 	.cogv1_article-nav
 		display none
 
-// ARTICLE STATIONARY FOOTER NAV /////////////////////////
 
-.cogv1_article__footer-nav
-	padding r(3.9rem) 0 
-	position relative
-	+below(1024px)
-		padding 0
-		height r(6rem)
-	p
-		padding-bottom 0
-	svg
-		transform-origin 50% 50%
-	
-.cogv1_article__footer-nav__button
-	size r(6rem) r(12.7rem)
-	position absolute
-	top 0
-	bottom 0
-	height 100%
-	color white
-	z-index 100
-	&:hover
-		color white
-	+below(1024px)
-		background green hgradient66
-	&.has-background
-		background green hgradient66
-		svg
-			display block
-	@media screen and (min-height: 1024px)
-		background green hgradient66
-	svg
-		size 3rem
-		transform-origin 50% 50%
-		position absolute
-		top 0
-		bottom 0
-		margin auto
-		display none
-	+below(1024px)
-		size r(6rem)		
-		svg
-			display block
-	&.is-active
-		svg
-			display block
-			
-.lt-ie10
-	.cogv1_article__footer-nav__button
-		background-color green
-		
-.cogv1_article__footer-nav__button--prev
-	left 0
-	svg
-		left 1.4rem
-		
-.cogv1_article__footer-nav__button--next
-	right 0
-	svg
-		right 1.4rem
-		
-.cogv1_article__footer-nav__text
-	col(1/2)
-	text-align center
-	color gray
-	p
-		strong
-			display block
-			&:nth-child(1)
-				fs(1.7rem)
-				upcase()
-			&:nth-child(2)
-				color darkblue
-	&:hover
-		color gray
-		// p:nth-child(2)
-		// 	color darkblue
-	&.cogv1_article__footer-nav__text--prev
-		text-align right
-		padding-right r(2rem)
-	&.cogv1_article__footer-nav__text--next
-		text-align left
-		float right
-		padding-left r(2rem)
-	+below(1024px)
-		p
-			display inline-block
-			height r(2.3rem)
-			margin-top r(1.8rem)
-			@extend .truncated
-			position relative
-			padding-right 1rem
-			strong
-				display inline-block
-				margin-right r(0.6rem)
-			span
-				display none
-		&.cogv1_article__footer-nav__text--prev
-			padding-left r(6rem)
-			text-align right
-		&.cogv1_article__footer-nav__text--next
-			padding-right r(6rem)
-			text-align left
-			
-	+below(768px)
-		p
-			strong:nth-child(2)
-				display none
-
-.cogv1_article__footer-nav__divider
-	width 1px
-	background-color gray
-	height r(6rem)
-	align()
-	+below(1024px)
-		height r(3rem)
-		top r(2.8rem)
-	// 	display none
 
 // FOOTER RELATED ARTICLES //////////////////////
 
@@ -299,6 +183,7 @@
 	.cogv1_article__related--small
 		display none
 
+// SHARING STYLES ON MOBILE FOR ARTICLES ////////
 .article-mobile__share.share-flyout__trigger
 	color blue
 	size r(3.8rem)

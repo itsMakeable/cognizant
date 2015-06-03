@@ -63,7 +63,7 @@ gulp.task 'styleguide', ->
 		extraJs: [ 
 			'build/styleguide/holder.min.js' 
 			'docs/styleguide/js/vendor.js', 
-			'docs/styleguide/js/app.js', 
+			'docs/styleguide/js/main.js', 
 		]
 		templateJs: 'build/styleguide/styleguide.js'
 		template: 'build/styleguide/index.jade'

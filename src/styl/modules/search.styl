@@ -1,77 +1,3 @@
-/*!**
-  title: Main Search with Share Flyout
-  section: Search
-  example: |
-    <component class="search-module search-module--main has-dropdown">
-      <div class="search__icon__wrapper">
-        <div class="search__icon gradient6reverse--horizontal">
-          <i>
-            <svg viewbox="0 0 100 100">
-              <use xlink:href="includes/symbols.svg#icon_search"></use>
-            </svg>
-          </i>
-        </div>
-      </div>
-      <div class="search__dropdown js-dropdown-option-parent">
-        <span data-default="All Industries" class="search__dropdown__active-selection js-dropdown-option-holder js-dropdown-trigger">All Industries
-        </span>
-        <i class="search__dropdown__icon js-dropdown-trigger">
-          <svg viewbox="0 0 100 100">
-            <use xlink:href="includes/symbols.svg#icon_caret"></use>
-          </svg>
-        </i>
-        <i class="icon search__icon--right search__icon-filter js-dropdown-trigger">
-          <svg viewbox="0 0 100 100">
-            <use xlink:href="includes/symbols.svg#icon_filter"></use>
-          </svg>
-        </i>
-        <subcomponent class="contenteditable-dropdown">
-          <ul>
-            <li class="js-dropdown-option">All Industries</li>
-            <li class="js-dropdown-option">Search Suggestion</li>
-            <li class="js-dropdown-option">Another Suggestion</li>
-            <li class="js-dropdown-option">Yet Anonther Suggestion</li>
-            <li class="js-dropdown-option">Alternative Suggestion</li>
-            <li class="js-dropdown-option">Possible Suggestion</li>
-            <li class="js-dropdown-option">Consider this Suggestion</li>
-            <li class="js-dropdown-option">One More Suggestion</li>
-          </ul>
-        </subcomponent>
-      </div>
-      <i class="icon search__icon--right search__CTA">
-        <svg viewbox="0 0 100 100">
-          <use xlink:href="includes/symbols.svg#icon_triangle"></use>
-        </svg>
-      </i>
-      <input type="text" placeholder="Search Within Folders" class="search__input">
-      <subcomponent class="search__share">
-        <div class="share-flyout__trigger js-share-flyout__trigger">
-        <svg width="46" height="46" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg"><title>share</title><path d="M14.22 19.716l17.25-8.784-17.25 8.784zm-.32 5.886l17.25 8.784-17.25-8.784zM43.08 8.11c0 3.374-2.735 6.11-6.11 6.11-3.374 0-6.11-2.736-6.11-6.11 0-3.375 2.736-6.11 6.11-6.11 3.375 0 6.11 2.735 6.11 6.11zM14.22 22.677c0 3.375-2.736 6.11-6.11 6.11-3.375 0-6.11-2.735-6.11-6.11 0-3.373 2.735-6.11 6.11-6.11 3.374 0 6.11 2.737 6.11 6.11zM43.08 37.224c0 3.376-2.735 6.11-6.11 6.11-3.374 0-6.11-2.734-6.11-6.11 0-3.373 2.736-6.11 6.11-6.11 3.375 0 6.11 2.737 6.11 6.11z" stroke="#000" stroke-width="2.813" fill="none" fill-rule="evenodd"/></svg>
-        </div>
-      <div class="search__share-flyout gradient5--horizontal share-flyout js-share-flyout is-right">
-        <div class="share-flyout__icon">
-          <svg viewBox="0 0 100 100">
-            <use xlink:href="includes/symbols.svg#icon_email"></use>
-          </svg>
-        </div>
-        <div class="share-flyout__icon">
-          <svg viewBox="0 0 100 100">
-            <use xlink:href="includes/symbols.svg#icon_twitter"></use>
-          </svg>
-        </div>
-        <div class="share-flyout__icon">
-          <svg viewBox="0 0 100 100">
-            <use xlink:href="includes/symbols.svg#icon_facebook"></use>
-          </svg>
-        </div>
-        <div class="share-flyout__icon">
-          <svg viewBox="0 0 100 100">
-            <use xlink:href="includes/symbols.svg#icon_linkedin"></use>
-          </svg>
-        </div>
-      </subcomponent>
-    </component>
-***/
 .search-module--main
   col(1/1)
   color white
@@ -81,13 +7,6 @@
 
 input,
 input[type=text],
-input[type=email],
-input[type=tel],
-input[type=url],
-input[type=search],
-input[type=number],
-input[type=password],
-textarea,
 div
   &.search__input
     padding 0 r(9.4rem)
@@ -97,6 +16,7 @@ div
     font-family proxReg
     background-color white
     width 100%
+    text-align left
     +below(768px)
       fs(1.4rem)
       padding 0 r(8.6rem)
@@ -166,7 +86,12 @@ div.search__input
     size r(3rem)
     align()
     z-index: 1
-
+    
+.ios5,
+.ios6
+  .search__icon:before
+    display none !important
+    
 .gradient
   .search__icon:before
     content ''
@@ -275,13 +200,6 @@ div.search__input
   .has-smartsearch 
     input,
     input[type=text],
-    input[type=email],
-    input[type=tel],
-    input[type=url],
-    input[type=search],
-    input[type=number],
-    input[type=password],
-    textarea,
     div
       &.search__input
         padding-left r(26rem)

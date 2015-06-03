@@ -3,25 +3,32 @@
   section: Profile Box
   example: |
     <component class="container compact-profile-box__container">
-      <div class="compact-profile-box-module" style='display:block;'>
-        <div class="compact-profile-box-bar">
-          <div class="compact-profile-box__profile-pic"><img src="http://placehold.it/20x20" alt=""></div>
-          <p class="compact-profile-box__details"><b>Kyla Medina</b><span class="hide-small">&nbsp; | &nbsp;Information Technology &amp; Services</span></p>
+      <div class="compact-profile-box-module">
+        <div class="compact-profile-box-bar"><a href="/index-logged-in.html" class="compact-profile-box__profile-pic"><img src="http://placehold.it/20x20" alt=""/></a>
+          <p class="compact-profile-box__details hide-small"><b><a href="/index-logged-in.html">Kyla Medina</a></b><span class="hide-small">&nbsp; | &nbsp;Information Technology &amp; Services</span></p>
           <div class="compact-profile-box__aside">
             <div class="compact-profile-box__notification"><span>3</span></div><i data-flyout="notifications" class="icon">
               <svg viewbox="0 0 100 100">
-                <use xlink:href="includes/symbols.svg#icon_folders"></use>
+                <use xlink:href="#icon_folders"></use>
               </svg></i><i data-flyout="settings" class="icon">
               <svg viewbox="0 0 100 100">
-                <use xlink:href="includes/symbols.svg#icon_settings"></use>
+                <use xlink:href="#icon_settings"></use>
               </svg></i>
+          </div>
+          <div class="compact-profile-box__button js-smart-search">
+            <div class="search__smart-search">
+              <svg viewbox="0 0 100 100">
+                <use xlink:href="#icon_search"></use>
+              </svg>
+              <p><strong>Smart</strong>Search&reg;</p>
+            </div>
           </div>
         </div>
         <subcomponent class="compact-profile-box__flyout compact-profile-box__flyout--settings">
-          <div class="profile-box__indicator"></div>
+          <div class="profile-box__indicator triangle"></div>
           <header>
             <p>Settings</p>
-            <hr>
+            <hr/>
           </header>
           <div class="profile-box__button">
             <button class="button--silent js-edit-profile">Edit Info</button>
@@ -29,10 +36,10 @@
           <div class="profile-box__button"><a href="/" class="button--silent">Log Out</a></div>
         </subcomponent>
         <subcomponent class="compact-profile-box__flyout compact-profile-box__flyout--notifications">
-          <div class="profile-box__indicator"></div>
+          <div class="profile-box__indicator triangle"></div>
           <header>
             <p>Recent Activity</p>
-            <hr>
+            <hr/>
           </header>
           <div class="profile-box__list">
             <div class="profile-box__list-item">
@@ -40,7 +47,7 @@
               <p><strong><a href="">Industry Friends</a></strong></p>
               <p>Invited by Larry</p><i class="icon profile-box__list-CTA">
                 <svg viewbox="0 0 100 100">
-                  <use xlink:href="includes/symbols.svg#icon_caret"></use>
+                  <use xlink:href="#icon_triangle--right"></use>
                 </svg></i>
             </div>
             <div class="profile-box__list-item">
@@ -48,7 +55,7 @@
               <p><strong><a href="">Industry Friends</a></strong></p>
               <p>Invited by Larry</p><i class="icon profile-box__list-CTA">
                 <svg viewbox="0 0 100 100">
-                  <use xlink:href="includes/symbols.svg#icon_caret"></use>
+                  <use xlink:href="#icon_triangle--right"></use>
                 </svg></i>
             </div>
             <div class="profile-box__list-item">
@@ -56,7 +63,7 @@
               <p><strong><a href="">Industry Friends</a></strong></p>
               <p>Invited by Larry</p><i class="icon profile-box__list-CTA">
                 <svg viewbox="0 0 100 100">
-                  <use xlink:href="includes/symbols.svg#icon_caret"></use>
+                  <use xlink:href="#icon_triangle--right"></use>
                 </svg></i>
             </div>
           </div>
@@ -65,10 +72,6 @@
       </div>
     </component>
 ***/
-// .compact-profile-box__container
-//   height 0
-//   overflow visible
-//   // position relative
 
 .compact-profile-box__container
   +above(1024px)
@@ -153,6 +156,8 @@
     transition 0.3s ease
     &:hover
       color darkblue
+    +below(420px)
+      margin-left r(0.2rem)
       
 .compact-profile-box__flyout
   background-color: rgba(253,253,253,1)

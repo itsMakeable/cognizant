@@ -2,7 +2,7 @@
     title: Folder
     section: Box Modules
     example: |
-      <a style="background:url(http://placehold.it/350x222) no-repeat" class="folder-module">
+      <component style="background:url(http://www.cognizant.com/dotcom-images/Perspectives/twelve_ways_SMAC_hp.jpg) no-repeat" class="folder-module">
         <div class="folder__overlay"></div>
         <div class="folder__content">
           <p class="folder__alert"><span class="folder__alert-number"><span>1</span></span><span>New Video Added</span></p>
@@ -12,26 +12,26 @@
             </svg>
           </div>
           <div class="folder__data">
-            <p><strong>Favorites</strong></p><i class="icon">
+            <p>Favorites</p><i class="icon">
               <svg viewbox="0 0 100 100">
                 <use xlink:href="#icon_files"></use>
-              </svg></i><span>22</span><i class="icon">
+              </svg></i><span><strong>22</strong></span><i class="icon">
               <svg viewbox="0 0 100 100">
                 <use xlink:href="#icon_collaborators"></use>
-              </svg></i><span>100</span>
+              </svg></i><span><strong>100</strong></span>
           </div>
-          <div class="folder__CTA"><i class="folder__CTA--left">
+          <div class="folder__CTA"><i class="folder__CTA-icon folder__CTA--left">
               <svg viewbox="0 0 100 100" class="is-empty">
                 <use xlink:href="#icon_exit"></use>
-              </svg></i><i class="folder__CTA--right">
+              </svg><span class="folder__CTA__alt-text">Leave</span></i><a href="/folder.html" class="folder__CTA-icon folder__CTA--right interactive-svg">
               <svg viewbox="0 0 100 100" class="is-empty">
                 <use xlink:href="#icon_triangle"></use>
               </svg>
               <svg viewbox="0 0 100 100" class="is-filled">
                 <use xlink:href="#icon_triangle-filled"></use>
-              </svg></i></div>
+              </svg><span class="folder__CTA__alt-text">View</span></a></div>
         </div>
-      </a>
+      </component>
 ***/
 .folder-module
   col(4/12)

@@ -377,9 +377,7 @@ MKBL.searchAutocomplete = ($input, $autoSuggestListItem) ->
 	searchInputText = $input.val().replace(/^\s+|\s+$/g, '')
 	if searchInputText != '' and searchInputText != ' '
 	  pattern = new RegExp(searchInputText, 'gi')
-	else
-		MKBL.activationOff($('.cogv1-smart-search__dropdown'))
-		MKBL.activationOn($('.cogv1-smart-search__results'))
+
 	matchingLetters = null
 	$autoSuggestListItem.each ->
 		matchingLetters = $(@).text()

@@ -6,7 +6,7 @@
     <component class="profile-box-module js-equal-height">
       <div class="profile-box">
         <div class="profile-box__default">
-          <div class="profile-box__profile-pic"><img src="http://placehold.it/110x110" alt=""></div><i class="profile-box__profile-icon">
+          <div class="profile-box__profile-pic"><img src="http://placehold.it/110x110" alt=""/></div><i class="profile-box__profile-icon">
             <svg viewbox="0 0 100 100">
               <use xlink:href="includes/symbols.svg#icon_linkedin"></use>
             </svg></i>
@@ -41,10 +41,10 @@
         </div>
       </div>
       <subcomponent class="profile-box-flyout profile-box-flyout--settings">
-        <div class="profile-box__indicator"></div>
+        <div class="profile-box__indicator triangle"></div>
         <header>
           <p>Settings</p>
-          <hr>
+          <hr/>
         </header>
         <div class="profile-box__button">
           <button class="button--silent js-edit-profile">Edit Info</button>
@@ -52,10 +52,10 @@
         <div class="profile-box__button"><a href="/" class="button--silent">Log Out</a></div>
       </subcomponent>
       <subcomponent class="profile-box-flyout profile-box-flyout--notifications">
-        <div class="profile-box__indicator"></div>
+        <div class="profile-box__indicator triangle"></div>
         <header>
           <p>Recent Activity</p>
-          <hr>
+          <hr/>
         </header>
         <div class="profile-box__list"><a class="profile-box__list-item">
             <div class="profile-box__list-notification"><span>1</span></div>
@@ -80,6 +80,12 @@
         <button class="button--silent">View All</button>
       </subcomponent>
     </component>
+    <div class="profile-box__headline-push js-equal-height">
+      <div class="headline-push__center">
+        <h4>Did you know?</h4>
+        <h5>This is a fact related to the user’s industry populated by demandbase.</h5>
+      </div>
+    </div>
 ***/
 .profile-box-module
   position relative
