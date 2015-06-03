@@ -91,8 +91,8 @@
   position relative
   float left
   +below(1024px)
-    display none
-  
+    display none !important
+
 .profile-box
   position relative
   width r(34rem)
@@ -293,9 +293,10 @@
       align(vertical)
   +below(1024px)
     stack()
-    height r(30rem) !important
+    min-height r(30rem) !important
     h4, h5
       text-align center
     .headline-push__center
       align(vertical)
-  
+  +below(540px)
+    min-height r(20rem) !important

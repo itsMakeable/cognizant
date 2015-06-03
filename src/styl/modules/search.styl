@@ -80,6 +80,8 @@ div.search__input
   transition all 0.4s ease-out
   transform translate(0%)
   color white
+  &.is-blue
+    background-color darkblue
   &:hover
     color white
   svg
@@ -93,25 +95,26 @@ div.search__input
     display none !important
     
 .gradient
-  .search__icon:before
-    content ''
-    display block
-    position absolute
-    right r(-1.3rem)
-    z-index: -1
-    top 0
-    bottom 0
-    margin auto
-    width 0
-    height 0
-    border-style solid
-    border-width r(1.3rem) 0 r(1.3rem) r(1.5rem)
-    border-color transparent transparent transparent #6db33f
-  &.is-blue
-    background-color darkblue
-    background darkblue vgradient3flat
+  .search__icon
     &:before
-      border-color transparent transparent transparent lightblue
+      content ''
+      display block
+      position absolute
+      right r(-1.3rem)
+      z-index: -1
+      top 0
+      bottom 0
+      margin auto
+      width 0
+      height 0
+      border-style solid
+      border-width r(1.3rem) 0 r(1.3rem) r(1.5rem)
+      border-color transparent transparent transparent #6db33f
+    &.is-blue
+      background-color darkblue
+      background darkblue vgradient3flat
+      &:before
+        border-color transparent transparent transparent lightblue
     
 .no-gradient,
 .lt-ie10

@@ -114,6 +114,11 @@ input[type=text].cogv1-smart-search__input
 		text-transform capitalize
 		fs(1.8rem)
 		padding-right r(4rem)
+		+below(420px)
+			max-height r(2.2rem)
+			white-space nowrap
+			overflow hidden
+			text-overflow: ellipsis
 		
 .cogv1-smart-search__result-type
 	size r(2.8rem)
@@ -210,6 +215,7 @@ input[type=text].cogv1-smart-search__input
 			
 	.cogv1-smart-search__results
 		text-align left
+		
 	.gradient-hr
 		margin r(2rem) 0
 		

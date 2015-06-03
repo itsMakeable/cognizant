@@ -1,3 +1,12 @@
+*
+	-webkit-tap-highlight-color rgba(0,0,0,0)
+	box-sizing inherit
+	&:before,
+	&:after
+		box-sizing inherit
+	&:focus
+		outline none
+		
 html
 	font-size 62.5%
 	-webkit-font-smoothing initial
@@ -11,11 +20,6 @@ html
 	min-height 100%
 	overflow-x hidden
 	
-img, svg, object, embed, video, iframe, audio, canvas
-	width 100%
-	display block
-	max-height 100%
-
 body
 	-webkit-touch-callout none
 	-webkit-text-size-adjust none
@@ -25,15 +29,6 @@ body
 	height 100%
 	.velocity-animating
 		transition: none
-
-*
-	-webkit-tap-highlight-color rgba(0,0,0,0)
-	box-sizing inherit
-	&:before,
-	&:after
-		box-sizing inherit
-	&:focus
-		outline none
 		
 i
 	display inline-block
@@ -42,35 +37,41 @@ i
 	img, image
 		width auto
 		margin auto
+
 a
 	cursor pointer
 	reset-link()
 	&:focus
 		outline: 0
 
-hr
-	border 0px solid transparent
-	border-top 0px solid transparent
-	background-color transparent
-	border-bottom 1px solid black
-	margin 0
-	padding 0
-	width 100%
-	height 1px
-	&.green
-		border-bottom 1px solid green
-	&.blue
-		border-bottom 1px solid blue
-
-main
-	position relative
-
-component,
-subcomponent
-	display block
-
 .cognizant-container
 	box-sizing border-box
+	hr
+		border 0px solid transparent
+		border-top 0px solid transparent
+		background-color transparent
+		border-bottom 1px solid black
+		margin 0
+		padding 0
+		width 100%
+		height 1px
+		&.green
+			border-bottom 1px solid green
+		&.blue
+			border-bottom 1px solid blue
+
+	main
+		position relative
+
+	component,
+	subcomponent
+		display block
+		
+	img, svg, object, embed, video, iframe, audio, canvas
+		width 100%
+		display block
+		max-height 100%
+		
 	ul
 		list-style none
 	
