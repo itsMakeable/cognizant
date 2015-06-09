@@ -19,9 +19,8 @@ gulp.task 'svgmin', ['clean:svg'], ->
 		.pipe gulp.dest 'app/svg/'
 		.pipe gulp.dest 'docs/styleguide/svg'
 	# gulp.src([
-	# 		'src/svg/symbols/*.svg'
-	# 		'src/svg/social-slider/*.svg'
-	# 	], {base: 'src/svg'})
+	# 		'src/svg/gradient-icons/*.svg'
+	# 	], {base: 'src/svg/gradient-icons'})
 	# 		.pipe $.raster {format: 'png', scale: 2}
 	# 		.pipe $.rename {extname: '.png', suffix: '-2x'}
 	# 		.pipe gulp.dest 'app/img/' 

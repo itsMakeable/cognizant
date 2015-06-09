@@ -33,6 +33,7 @@ input[type=text].cogv1-smart-search__input
 .cogv1-smart-search__icon--right
 	right r(2rem)
 	opacity 0
+	cursor pointer
 	&.is-active
 		opacity 1
 	
@@ -118,6 +119,12 @@ input[type=text].cogv1-smart-search__input
 		text-transform capitalize
 		fs(1.8rem)
 		padding-right r(4rem)
+		a
+			color black
+			&:visited,
+			&:hover,
+			&:link
+				color black
 		+below(420px)
 			max-height r(2.2rem)
 			white-space nowrap
