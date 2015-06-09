@@ -18,12 +18,17 @@ $('.search-module--main .search__input').on 'keyup',  ->
 		MKBL.activationOff($('.search__CTA'))
 
 $('.cogv1-smart-search__input').on 'keyup', (e) ->
+	console.log 'this'
 	MKBL.activationOn($('.cogv1-smart-search__dropdown'))
 	MKBL.searchAutocomplete($(this), $('.cogv1-smart-search__dropdown .js-search-text'))
 	if !$('.cogv1-smart-search__dropdown .js-search-text').find('span').length
 		MKBL.activationOff($('.cogv1-smart-search__dropdown'))
 		MKBL.activationOn($('.cogv1-smart-search__results'))
 
+
+$('.cogv1_article__save__list').on 'click',  ->
+	MKBL.activationOff($('.cogv1_article__save__list'))
+	MKBL.activationOn($(this))
 
 $('[contenteditable]').on 'click',  ->
 	$this = $(this)
@@ -199,4 +204,4 @@ $(window).on 'load', ->
 	MKBL.equalheight('.main-header','.js-equal-height', 1024)
 	MKBL.equalheight('.social-group__groups','.js-equal-height', 680)
 	MKBL.equalheight('.three-group__groups','.three-group__content', 940)
-	$('body').css('opacity',1)
+	# $('body').css('opacity',1)

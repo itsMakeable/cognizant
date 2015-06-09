@@ -50,8 +50,8 @@ block content
 								svg(viewbox='0 0 100 100')
 									use(xlink:href='#icon_triangle--right')
 				button.button--silent View All
-
-	header.main-header.color-bg.cogv1_has-overlay(style='background: url("http://lorempixel.com/1250/500/technics") no-repeat')
+	// You can add the class .cogv1_has-overlay to give the element below a dark overlay to make text more readable against a light background.
+	header.main-header.color-bg(style='background: white url("http://lorempixel.com/1250/500/technics") no-repeat')
 		.container
 			.row
 				component.profile-box-module.js-equal-height
@@ -60,8 +60,9 @@ block content
 							.profile-box__profile-pic
 								img(src='http://placehold.it/110x110', alt='')
 							i.profile-box__profile-icon
-								svg(viewbox='0 0 100 100')
-									use(xlink:href='#icon_linkedin')
+								img(src="img/icon_linkedin.png", alt="")
+								//- svg(viewbox='0 0 100 100')
+								//- 	use(xlink:href='#icon_linkedin')
 						.profile-box__aside
 							i.icon(data-flyout='settings')
 								svg(viewbox='0 0 100 100')

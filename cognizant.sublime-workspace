@@ -4,12 +4,116 @@
 		"selected_items":
 		[
 			[
-				"nth",
-				"nth-child"
+				"margin",
+				"margin-left"
+			],
+			[
+				"dark",
+				"darkgray"
+			],
+			[
+				"in",
+				"inline"
 			],
 			[
 				"bac",
+				"backgray"
+			],
+			[
+				"back",
+				"background	(flowbox-slider.jade)"
+			],
+			[
+				"trans",
+				"transparent	(compact-profile-box.styl)"
+			],
+			[
+				"text",
+				"text"
+			],
+			[
+				"touch",
+				"touchstart"
+			],
+			[
+				"backgr",
 				"background"
+			],
+			[
+				"tran",
+				"transparent"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"tex",
+				"text"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"hid",
+				"hidden"
+			],
+			[
+				"hr",
+				"href"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"backg",
+				"background"
+			],
+			[
+				"backgro",
+				"background-position"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"sol",
+				"solid"
+			],
+			[
+				"pro",
+				"proxReg"
+			],
+			[
+				"typ",
+				"type=\"text"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"mid",
+				"middle"
+			],
+			[
+				"dar",
+				"darkblue"
+			],
+			[
+				"ver",
+				"vertical"
+			],
+			[
+				"nth",
+				"nth-child"
 			],
 			[
 				"bl",
@@ -17,14 +121,6 @@
 			],
 			[
 				"bak",
-				"background-color"
-			],
-			[
-				"dar",
-				"darkgray"
-			],
-			[
-				"backgr",
 				"background-color"
 			],
 			[
@@ -36,24 +132,12 @@
 				"window"
 			],
 			[
-				"tran",
-				"translateX"
-			],
-			[
-				"trans",
-				"transforms"
-			],
-			[
 				"rel",
 				"relative"
 			],
 			[
 				"img",
 				"img"
-			],
-			[
-				"pro",
-				"proxRegIt"
 			],
 			[
 				"icon_tria",
@@ -76,10 +160,6 @@
 				"translateX"
 			],
 			[
-				"back",
-				"background-color"
-			],
-			[
 				"wid",
 				"width"
 			],
@@ -96,20 +176,12 @@
 				"height"
 			],
 			[
-				"pad",
-				"padding"
-			],
-			[
 				"translate",
 				"translateX"
 			],
 			[
 				"fol",
 				"folder__CTA"
-			],
-			[
-				"dark",
-				"darkblue"
 			],
 			[
 				"cur",
@@ -200,10 +272,6 @@
 				"inline-block"
 			],
 			[
-				"con",
-				"contenteditable"
-			],
-			[
 				"w",
 				"window"
 			],
@@ -272,10 +340,6 @@
 				"margin-bottom"
 			],
 			[
-				"text",
-				"text-align"
-			],
-			[
 				"qui",
 				"question-mark"
 			],
@@ -288,16 +352,8 @@
 				"append"
 			],
 			[
-				"ver",
-				"vertical-align"
-			],
-			[
 				"dis",
 				"display"
-			],
-			[
-				"in",
-				"inline"
 			],
 			[
 				"fon",
@@ -354,10 +410,6 @@
 			[
 				"min",
 				"min-height"
-			],
-			[
-				"marg",
-				"margin-top"
 			],
 			[
 				"zi",
@@ -452,14 +504,6 @@
 				"first-of-type"
 			],
 			[
-				"backg",
-				"background"
-			],
-			[
-				"backgro",
-				"background"
-			],
-			[
 				"ex",
 				"extends"
 			],
@@ -470,147 +514,11 @@
 			[
 				"ter",
 				"tertiarytaupe"
-			],
-			[
-				"ab",
-				"absolute"
-			],
-			[
-				"whi",
-				"white-space"
-			],
-			[
-				"tex",
-				"text-align"
-			],
-			[
-				"mon",
-				"montserrat"
-			],
-			[
-				"margin",
-				"margin-bottom"
-			],
-			[
-				"wrap",
-				"wrapper"
-			],
-			[
-				"hi",
-				"hidden"
-			],
-			[
-				"over",
-				"overflow"
-			],
-			[
-				"sec",
-				"select__cta"
-			],
-			[
-				"$ver",
-				"$vertical-align"
-			],
-			[
-				"ba",
-				"background-color"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "src/jade/article.jade",
-			"settings":
-			{
-				"buffer_size": 14439,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/coffee/events.coffee",
-			"settings":
-			{
-				"buffer_size": 4893,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/styl/modules/article.styl",
-			"settings":
-			{
-				"buffer_size": 4971,
-				"line_ending": "Unix",
-				"name": ".article"
-			}
-		},
-		{
-			"contents": "###*\n * COGNIZANT START APP.JS\n###\n\nMKBL = {}\n\n## plugin for jQuery :contains to be case-insensitive\n$.expr[':'].Contains = (a, i, m) ->\n	(a.textContent or a.innerText or '').toUpperCase().indexOf(m[3].toUpperCase()) >= 0\n	\n###*\n * Remove Classes based on partial matches\n * @param  {[type]} removals  classes you want to remove\n * @param  {[type]} additions classes you want to add\n###\n$.fn.alterClass = (removals, additions) ->\n	self = this\n	if removals.indexOf('*') == -1\n		# Use native jQuery methods if there is no wildcard matching\n		self.removeClass removals\n		return if !additions then self else self.addClass(additions)\n	patt = new RegExp('\\\\s' + removals.replace(/\\*/g, '[A-Za-z0-9-_]+').split(' ').join('\\\\s|\\\\s') + '\\\\s', 'g')\n	self.each (i, it) ->\n		cn = ' ' + it.className + ' '\n		while patt.test(cn)\n			cn = cn.replace(patt, ' ')\n		it.className = $.trim(cn)\n		return\n	if !additions then self else self.addClass(additions)\n\n\n(($) ->\n  $event = $.event\n  $special = undefined\n  resizeTimeout = undefined\n  $special = $event.special.debouncedresize =\n    setup: ->\n      $(this).on 'resize', $special.handler\n      return\n    teardown: ->\n      $(this).off 'resize', $special.handler\n      return\n    handler: (event, execAsap) ->\n      # Save the context\n      context = this\n      args = arguments\n\n      dispatch = ->\n        # set correct event type\n        event.type = 'debouncedresize'\n        $event.dispatch.apply context, args\n        return\n\n      if resizeTimeout\n        clearTimeout resizeTimeout\n      if execAsap then dispatch() else (resizeTimeout = setTimeout(dispatch, $special.threshold))\n      return\n    threshold: 150\n  return\n) jQuery\n\n\n###*\n * Converts matrix like rgba or transforms to an array\n###\nMKBL.matrixToArray = (str) ->\n  str.match /(-?[0-9\\.]+)/g\n\n###*\n * This creates equal height children relative to the parent\n * @param  {[type]} container        the container of the elements that will be equal height\n * @param  {[type]} eqHeightChildren the elements that will be equal height\n * @param  {[type]} cutoff           the window width cutoff for the elements to be equal height\n###\nMKBL.equalheight = (container, eqHeightChildren, cutoff) ->\n	if $(window).width() > cutoff\n		t = 0\n		# the height of the highest element (after the function runs)\n		t_elem = undefined\n		# the highest element (after the function runs)\n		# $container = $(container)\n		$child = $(container).find(eqHeightChildren)\n		$child.each ->\n			$this = $(this)\n			if $this.outerHeight() > t\n				t_elem = this\n				t = $this.outerHeight()\n				return t\n		$child.css('min-height',t)\n\n###*\n * This controls the social slider interaction\n###\nMKBL.socialSlider = ($this) ->\n	$caret = $('#js-social-caret')\n	$thisRelatedContent = $('.social-group__groups--text')	\n	$thisMobileRelatedContent = $('.social-group__groups--small .social-group__groups')\n	# Changes speed of the animation depeding on how far it has to go\n	thisIndex = $this.index()\n	prevIndex = $('.social-group__icon.is-active').index()	\n\n	$('.social-group__icon')\n		.removeClass('is-long-distance')\n		.removeClass('is-active')\n\n	$caret.removeClass('is-long-distance')\n	$thisRelatedContent.removeClass('is-long-distance')\n	if Math.abs(prevIndex - thisIndex) > 1 && $(window).outerWidth > 540\n		$this.addClass('is-long-distance')\n		$('.social-group__icon').eq(1).addClass('is-long-distance')\n		$caret.addClass('is-long-distance')\n		$thisRelatedContent.addClass('is-long-distance')\n\n	$this.addClass('is-active')\n	$thisRelatedContent.removeClass('is-active')\n	$thisMobileRelatedContent.removeClass('is-active')\n	$thisRelatedContent.eq(thisIndex).addClass('is-active')\n	$thisMobileRelatedContent.eq(thisIndex).addClass('is-active')\n	switch thisIndex\n		# When the new active icon is the left icon \n		when 0\n			$caret.removeClass('is-right').addClass('is-left')\n\n		# When the new active icon is the right icon\n		when 2\n			$caret.removeClass('is-left').addClass('is-right')\n\n		# When the new active icon is the middle icon\n		else \n			$caret.removeClass('is-right').removeClass('is-left')\n\n###*\n * [flowBoxSliderSetup description]\n * @return {[type]} [description]\n###\nMKBL.flowBoxSliderSetup = ->\n	numOfSlides = $('.flow-box-slider').find('.flow-box-slider-group').length\n	$slideIndicator = $('.slider-nav-indicator')\n	$slideIndicator.width((1/numOfSlides)*100 + '%')\n\n	###*\n	 * [flowBoxSlideAnimation description]\n	 * @param  {[type]} translation translation distance\n	 * @param  {[type]} duration    animation duration\n	 * @param  {[type]} delay       delay time\n	###\n	flowBoxSlideAnimation = (translation, duration, delay) ->\n		$slideIndicator.velocity({translateX: translation}, {\n				duration: duration || 900,\n				easing: [ 300, 28 ],\n				delay: delay || 150\n			})\n\n	###*\n	 * [flowBoxSlider description]\n	 * @param  {[type]} $slider      the parent slider element\n	 * @param  {[type]} $slides      the child slides\n	 * @param  {[type]} $activeSlide the slide that is visible\n	 * @param  {[type]} direction    the direction of the slide animation\n	###\n	MKBL.flowBoxSlider = ($slider, $slides, $activeSlide, direction) ->\n		$slideIndicator.setWidth = $slideIndicator.width()\n		$slideIndicator.position = Number(MKBL.matrixToArray($slideIndicator.css('transform'))[4])\n\n		if direction == 'next'\n			$slideNewActive = ($activeSlide.index() + 1) % numOfSlides\n\n			# If the slider is starting over from the begining \n			if $slideNewActive == 0\n				flowBoxSlideAnimation($slideIndicator.position += $slideIndicator.setWidth, 300, 1)\n				$slideIndicator.velocity({translateX: -$slideIndicator.setWidth}, {\n					duration: 0,\n					easing: \"linear\",\n					delay: 1\n				})\n				flowBoxSlideAnimation(0, 550, 1)\n			else\n				flowBoxSlideAnimation($slideIndicator.position += $slideIndicator.setWidth)\n\n		else\n			$slideNewActive = ($activeSlide.index() - 1) % numOfSlides\n			# If the slider is returning to the end slide\n			if $slideNewActive == -1\n				flowBoxSlideAnimation($slideIndicator.position -= $slideIndicator.setWidth, 300, 1)\n				$slideIndicator.velocity({translateX: ($slideIndicator.setWidth * (numOfSlides))}, {\n					duration: 0,\n					easing: \"linear\",\n					delay: 1\n				})\n				flowBoxSlideAnimation($slideIndicator.setWidth * (numOfSlides - 1), 550, 1)\n			else\n				flowBoxSlideAnimation($slideIndicator.position -= $slideIndicator.setWidth)\n\n		$slideNextIndex = ($slideNewActive + 1) % numOfSlides\n		$slidePrevIndex = ($slideNewActive - 1) % numOfSlides\n\n		# Deque\n		if (!$slider.hasClass('locked'))\n			$slider.addClass('locked')\n\n			$slides\n				.removeClass('is-active')\n				.removeClass('is-prev')\n				.removeClass('is-next')\n\n			$slides.eq($slideNewActive).addClass('is-active')\n			$slides.eq($slidePrevIndex).addClass('is-prev')\n			$slides.eq($slideNextIndex).addClass('is-next')\n\n			setTimeout ->\n				$slider.removeClass('locked')\n			, 750\n	return MKBL.flowBoxSlider\n\n###*\n * Flyout interaction for the mobile profile bar\n * @param  {[type]} $this       the icon being clicked\n * @param  {[type]} $flyoutType which flyout is being called?\n###\nMKBL.profileCompactFlyout = ($this, $flyoutType) ->\n	$module = $this.closest('.compact-profile-box-module')\n	$flyout = $module.find('.compact-profile-box__flyout--'+$flyoutType)\n	if $flyout.hasClass('is-active')\n		$('.compact-profile-box__flyout').removeClass('is-active')\n	else\n		$('.compact-profile-box__flyout').removeClass('is-active')\n		$flyout.addClass('is-active')\n\n###*\n * This controls the settings and message alert flyouts associated with the desktop profile box module\n * @param  {[type]} $this           the icon clicked\n * @param  {[type]} $flyoutType     which flyout is it?\n * @param  {[type]} $activeFlyout 	which flyout is currently active\n###\nMKBL.profileFlyout = ($this, $flyoutType) ->\n	$module = $this.closest('.profile-box-module')\n	$activeFlyout = $this.closest('.profile-box-module').find('.profile-box-flyout.is-holding')\n	$flyout = $this.closest('.profile-box-module').find('.profile-box-flyout--'+$flyoutType)\n	\n	if !$module.hasClass('is-animating')\n		if $flyout.hasClass('is-holding')\n			$module.addClass('is-animating')\n			$flyout.removeClass('is-active').removeClass('is-holding')\n			setTimeout ->\n				$flyout.addClass('is-closed')\n				$module.removeClass('is-animating')\n			, 1001\n			\n		else\n			$module.addClass('is-animating')\n			$activeFlyout.removeClass('is-active').removeClass('is-holding')\n			setTimeout ->\n				$activeFlyout.addClass('is-closed')\n			, 1001\n			\n			# if $activeFlyout.length > 0\n			# 	setTimeout ->\n			# 		$flyout.addClass('is-active').removeClass('is-closed')\n			# 	, 800\n			# 	setTimeout ->\n			# 		$flyout.addClass('is-holding').removeClass('is-active')\n			# 		$module.removeClass('is-animating')\n			# 	, 2001\n				\n			# else\n			$flyout.addClass('is-active').removeClass('is-closed')\n			setTimeout ->\n				$flyout.addClass('is-holding').removeClass('is-active')\n				$module.removeClass('is-animating')\n			, 1001\n\n			\n###*\n * Opens the modal\n * @param  {[type]} $this button that opened the modal\n###\nMKBL.modal = ($this) ->\n	$modal = $($this.data('modal-id').toString())\n	$tooltip = $modal.find('.modal-tip')\n\n	if $modal.hasClass('is-hidden')\n		$tooltip.css({\n			'left': $this.offset().left - ($(window).width() - $modal.outerWidth())/2\n			'right': 'auto'\n			})\n		# If there is enough space about the marker, add the tooptip above the marker, else add it below.\n		$modal.css({\n			'top': $this.offset().top - $modal.outerHeight() - 95\n			}).removeClass('is-reverse').removeClass('is-hidden')\n		$tooltip.css({\n			'bottom': '-1.3rem'\n			'top': 'auto'\n			})\n		$('html, body').animate { scrollTop: $modal.position().top }, 'slow'\n	else\n		$modal.addClass('is-hidden')\n		\n###*\n * Opens the dropdown for the content editable module\n * @param  {[type]} $dropdown the dropdown being called\n###\nMKBL.contenteditableDropdown = ($dropdown, $trigger) ->\n	$li = $dropdown.find('li')\n	dropdownHeight = $li.length * $li.outerHeight()\n	\n	if dropdownHeight > 342\n		dropdownHeight = 372\n		setTimeout ->\n			$dropdown.perfectScrollbar({\n				suppressScrollX: true\n			})\n		, 900\n\n	if $dropdown.height() == 0 or $dropdown.height() == null\n	# if !$dropdown.hasClass('is-active')\n		MKBL.activationOn($trigger)\n		$dropdown.velocity { height: dropdownHeight }, \n			duration: 600,\n			easing: [ 300, 30 ],\n			delay: 0\n			complete: () ->\n				$(this).addClass('is-active')\n	else\n		MKBL.activationOff($trigger)\n		$dropdown.velocity {height: 0},\n			duration: 600,\n			easing: [ 300, 30 ],\n			delay: 0\n			complete: () ->\n				$(this).removeClass('is-active')\n\nMKBL.contenteditableMobileScroll = ($this) ->\n	$('html, body').animate { scrollTop: $this.position().top }, 'slow'\n	console.log $this\n\nMKBL.contenteditableDropdownAutocomplete = ($this) ->\n	$trigger = $this.closest('.js-dropdown-option-parent').find('.js-dropdown-trigger')\n	if $this.closest('.js-dropdown-option-parent').find('.contenteditable-dropdown').length\n		$dropdown = $this.closest('.js-dropdown-option-parent').find('.contenteditable-dropdown')\n\n		if $dropdown.height() == 0 or $dropdown.height() == null\n			MKBL.contenteditableDropdown($dropdown, $trigger)\n\n		searchInputText = $this.html().replace(/^\\s+|\\s+$/g, '')\n		if searchInputText != '' and searchInputText != ' '\n		  pattern = new RegExp(searchInputText, 'gi')\n\n		matchingLetters = null\n		$dropdown.find('.js-dropdown-option').each ->\n			matchingLetters = $(this).text()\n			matchingLetters = matchingLetters.replace(pattern, ($1) ->\n			  '<span>' + $1 + '</span>'\n			)\n			\n			$(this).html matchingLetters\n\n\n###*\n * Fills the content editable section with the selected dropdown option\n * @param  {[type]} $this the button clicked\n###\nMKBL.contenteditableDropdownSelect = ($this) ->\n	if $(window).width()*0.7 > 840\n		maxWidth = 840\n	else\n		maxWidth = $(window).width()*0.7\n	$this.siblings().removeClass('is-active')\n	$this.addClass('is-active')\n	$contenteditableParent = $this.closest('.js-dropdown-option-parent')\n	$contenteditable = $this.closest('.js-dropdown-option-parent').find('[contenteditable]')\n\n	MKBL.activationOff($('js-dropdown-trigger'))\n\n	$contenteditableParent\n		.find('.js-dropdown-option-holder')\n		.text($this.text())\n\n	if $this.text() != $contenteditableParent.find('.js-dropdown-option-holder').data('default')\n		$contenteditableParent.addClass('is-filled')\n	else\n		$contenteditableParent.removeClass('is-filled')\n\n	if $contenteditable.prop('scrollWidth') < maxWidth\n		$contenteditable.css('min-width', '100px')\n		setTimeout ->\n			$contenteditable.css('min-width', $contenteditable.width())\n		, 900\n\n###*\n * animation for the content editable div on click\n * @param  {[type]} $this the content editable div\n###\nMKBL.prepareContenteditable = ($this) ->\n	$this.closest('.is-editable').addClass('is-active')\n	if !$this.closest('.is-editable').hasClass('is-filled')\n		$this.text('')\n\n###*\n * animation for leaving focus of the content editable div\n###\nMKBL.endContenteditable = ->\n	if $(window).width()*0.7 > 840\n			maxWidth = 840\n	else\n		maxWidth = $(window).width()*0.7\n\n	MKBL.activationOff($('[contenteditable]'))\n	$('[contenteditable]').each ->\n		$this = $(this)\n		if $this.text() == ''\n			$this\n				.text($this.data('placeholder'))\n				.closest('.is-editable')\n				.removeClass('is-filled')\n				.removeClass('is-active')\n			$this\n				.css('min-width', '100px')\n			setTimeout ->\n				$this.css('min-width', $this.width())\n			, 900\n		else \n			if $this.text() != $this.data('placeholder')\n				$this\n					.closest('.is-editable')\n					.addClass('is-filled')\n			if $this.prop('scrollWidth') < maxWidth and $this.css('min-width') != $this.width()\n				$this\n					.css('min-width', '100px')\n				setTimeout ->\n					$this.css('min-width', $this.width())\n				, 900\n\n###*\n * Sets up the content editable div on load\n###\nMKBL.setupContenteditable = ->\n	$('[contenteditable]').each ->\n		$this = $(this).closest('.is-editable').find('.contenteditable__wrapper')\n		if $(window).width()*0.7 > 840\n			maxWidth = 840\n		else\n			maxWidth = $(window).width()*0.7\n		$this\n			# .css('height', $this.outerHeight())\n			.css('max-width', maxWidth)\n			.perfectScrollbar()\n		if $this.outerWidth() < maxWidth\n			$this.css('min-width',$this.outerWidth())\n		else\n			$this.css('min-width', maxWidth)\n\n		$this.perfectScrollbar()\n\n\nMKBL.playVideo = (e, $this) ->\n	$parent = $this.closest('.video-module')\n	$video = $parent.find('iframe')\n\n	$parent.addClass('is-active')\n	setTimeout ->\n		$video[0].src += '&autoplay=1'\n	, 300\n\n	e.preventDefault()\n\nMKBL.activationToggle = ($parent, cssClass) ->\n	cssClass = cssClass || 'is-active'\n	$parent.toggleClass(cssClass)\n\nMKBL.activationOn = ($parent, cssClass) ->\n	cssClass = cssClass || 'is-active'\n	if !$parent.hasClass(cssClass)\n		$parent.addClass(cssClass)\n\nMKBL.activationOff = ($parent) ->\n	cssClass = cssClass || 'is-active'\n	$parent.removeClass(cssClass)\n\nMKBL.articleNavWaypoint = new Waypoint({\n	element: $('.cogv1_article-nav')\n	offset: $(window).height() / 2\n	handler: (direction) ->\n		if direction == 'down'\n			$(@.element).addClass('is-scrolling').removeClass('is-bottom')\n		else\n			$(@.element).removeClass('is-scrolling').removeClass('is-bottom')\n	})\n\nMKBL.articleNavBottomWaypoint = new Waypoint({\n	element: $('.cogv1_article__footer-nav')\n	offset: 'bottom-in-view'\n	handler: (direction) ->\n		if direction == 'down'\n			$('.cogv1_article-nav').addClass('is-bottom').removeClass('is-scrolling')\n		else\n			$('.cogv1_article-nav').addClass('is-scrolling').removeClass('is-bottom')\n	})",
-			"file": "src/coffee/app.coffee",
-			"file_size": 15381,
-			"file_write_time": 130771630100000000,
-			"settings":
-			{
-				"buffer_size": 15382,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/styl/buttons.styl",
-			"settings":
-			{
-				"buffer_size": 3668,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/jade/modules/flowbox-slider.jade",
-			"settings":
-			{
-				"buffer_size": 13458,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/styl/modules/header.styl",
-			"settings":
-			{
-				"buffer_size": 4039,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/jade/modules/video-module.jade",
-			"settings":
-			{
-				"buffer_size": 421,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "build/gulp.coffee",
-			"settings":
-			{
-				"buffer_size": 1668,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/styl/modules/video.styl",
-			"settings":
-			{
-				"buffer_size": 2569,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/styl/mixins.styl",
-			"settings":
-			{
-				"buffer_size": 962,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -674,54 +582,124 @@
 	"expanded_folders":
 	[
 		"/Users/Kyla/Sites/cognizant",
-		"/Users/Kyla/Sites/cognizant/app",
-		"/Users/Kyla/Sites/cognizant/app/js",
-		"/Users/Kyla/Sites/cognizant/src",
-		"/Users/Kyla/Sites/cognizant/tmp",
-		"/Users/Kyla/Sites/cognizant/tmp/js",
-		"/Users/Kyla/Sites/cognizant/tmp/js/vendor"
+		"/Users/Kyla/Sites/cognizant/node_modules/styleguidejs",
+		"/Users/Kyla/Sites/cognizant/node_modules/styleguidejs/lib"
 	],
 	"file_history":
 	[
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/flow-box.styl",
-		"/Users/Kyla/Sites/cognizant/build/bower.json",
-		"/Users/Kyla/Sites/cognizant/src/styl/gradients.styl",
-		"/Users/Kyla/Sites/cognizant/build/tasks/coffee.coffee",
+		"/Users/Kyla/Sites/cognizant/node_modules/styleguidejs/lib/htmlincludes.js",
 		"/Users/Kyla/Sites/cognizant/cognizant.sublime-project",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/article-data.styl",
-		"/Users/Kyla/Sites/cognizant/build/styleguide/index.jade",
-		"/Users/Kyla/Sites/cognizant/src/coffee/events.coffee",
-		"/Users/Kyla/Sites/cognizant/src/coffee/app.coffee",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/compact-profile-box.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/article-header.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/typography.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/base.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/header.styl",
-		"/Users/Kyla/Sites/cognizant/build/tasks/svg.coffee",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/article.styl",
-		"/Users/Kyla/Sites/cognizant/src/jade/modules/flowbox-slider.jade",
-		"/Users/Kyla/Sites/cognizant/src/jade/modules/video-module2.jade",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/social-group.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/search.styl",
-		"/Users/Kyla/Sites/cognizant/src/jade/index.jade",
+		"/Users/Kyla/Sites/cognizant/desc.mdown",
+		"/Users/Kyla/Sites/cognizant/src/jade/folder.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/article-nav.styl",
 		"/Users/Kyla/Sites/cognizant/src/styl/modules/video.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/slider-nav.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/smart-search.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/share-flyout.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/search.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/profile-box.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/modal.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/footer.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/compact-profile-box.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/folder.styl",
+		"/Users/Kyla/Sites/cognizant/build/gulp.coffee",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/flow-box.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/latest-strategy.jade",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/smart-search-overlay.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/content-list.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/banner-perspectives-app.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/header.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/settings.styl",
+		"/Users/Kyla/Sites/cognizant/build/tasks/styl.coffee",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/flowbox-slider.jade",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/folders-module.jade",
+		"/Users/Kyla/Sites/cognizant/build/styleguide/styleguide.js",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/compact-profile-box.jade",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/content-list.jade",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/folder-headerline.jade",
+		"/Users/Kyla/Sites/cognizant/src/jade/cognizanti.jade",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/headline-list.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/headline-list.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/includes/linkedin-modal.jade",
 		"/Users/Kyla/Sites/cognizant/src/jade/index-logged-in.jade",
 		"/Users/Kyla/Sites/cognizant/src/jade/modules/video-module.jade",
-		"/Users/Kyla/Sites/cognizant/build/gulp.coffee",
-		"/Users/Kyla/Sites/cognizant/src/styl/mixins.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/share-icons.styl",
-		"/Users/Kyla/Sites/cognizant/package.json",
-		"/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/cognizanti.styl",
 		"/Users/Kyla/Sites/cognizant/src/jade/article.jade",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/profile-box.styl",
-		"/Users/Kyla/Sites/cognizant/src/jade/modules/headline-list.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/article.styl",
+		"/Users/Kyla/Sites/cognizant/.gitignore",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/contenteditable.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/banner.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/layouts/layout-secondary.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/base.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/edit-profile-overlay.jade",
+		"/Users/Kyla/Sites/cognizant/src/jade/layouts/layout-primary.jade",
+		"/Users/Kyla/Sites/cognizant/build/bower.json",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/social-group.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/banner-cognizant-connections.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/typography.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/sections.styl",
+		"/Users/Kyla/Sites/cognizant/src/coffee/app.coffee",
+		"/Users/Kyla/Sites/cognizant/src/coffee/form.coffee",
+		"/Users/Kyla/Sites/cognizant/src/coffee/events.coffee",
+		"/Users/Kyla/Downloads/main.css",
+		"/Users/Kyla/Sites/cognizant/src/styl/index.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/search-results.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/buttons.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/index.jade",
+		"/Users/Kyla/Sites/cognizant/build/tasks/svg.coffee",
+		"/Users/Kyla/Sites/cognizant/.git/MERGE_MSG",
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_triangle-filled--left.svg",
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_triangle-filled--right.svg",
+		"/Users/Kyla/Sites/cognizant/src/jade/latest-strategies.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/grid.styl",
+		"/Users/Kyla/Sites/cognizant/app/svg/gradient-icons/icon_pdf.svg",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/three-group.jade",
+		"/Users/Kyla/Sites/cognizant/build/styleguide/index.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/mixins.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/gradients.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/article-header.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/page.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/article-subhead.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/my-folders.jade",
+		"/Users/Kyla/Sites/cognizant/src/jade/folder-logged-in.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/inputs.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/small-modules.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/share-icons.styl",
+		"/Users/Kyla/Sites/cognizant/src/jade/folder-edit.jade",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/compact-profile-box--logged-out.jade",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/fullscreen-overlay.styl",
+		"/Users/Kyla/Sites/cognizant/app/svg/gradient-icons/icon_create-folders.svg",
+		"/Users/Kyla/Sites/cognizant/src/svg/gradient-icons/icon_pdf.svg",
+		"/Users/Kyla/Sites/cognizant/app/svg/gradient-icons/icon_pdf-filled.svg",
+		"/Users/Kyla/Sites/cognizant/app/svg/gradient-icons/icon_data-science-filled.svg",
+		"/Users/Kyla/Sites/cognizant/src/svg/gradient-icons/icon_pdf-filled.svg",
+		"/Users/Kyla/Sites/cognizant/src/svg/gradient-icons/icon_data-science-filled.svg",
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_edit.svg",
+		"/Users/Kyla/Sites/cognizant/docs/styleguide/index.html",
+		"/Users/Kyla/Sites/cognizant/app/latest-strategies.html",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/article-data.styl",
+		"/Users/Kyla/Sites/cognizant/src/styl/modules/search-dropdown.styl",
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_share-filled.svg",
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_caret--right.svg",
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_caret--left.svg",
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_caret.svg",
+		"/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Kyla/Downloads/itsmakeable_com.sql",
+		"/Users/Kyla/Sites/cognizant/build/tasks/jade.coffee",
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_share.svg",
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_email.svg",
+		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_twitter.svg",
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_twitter.svg",
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_linkedin.svg",
+		"/Users/Kyla/Sites/cognizant/build/tasks/coffee.coffee",
+		"/Users/Kyla/Sites/cognizant/src/jade/modules/video-module2.jade",
+		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_playbutton.svg",
+		"/Users/Kyla/Sites/cognizant/app/js/app.js",
+		"/Users/Kyla/Sites/cognizant/README.md",
+		"/Users/Kyla/Sites/cognizant/package.json",
 		"/Users/Kyla/Sites/cognizant/src/jade/modules/form.jade",
 		"/Users/Kyla/Sites/cognizant/src/jade/modules/social-slider.jade",
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_star.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_share.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_share-filled.svg",
-		"/Users/Kyla/Sites/cognizant/src/styl/settings.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/share-flyout.styl",
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_filter.svg",
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_search.svg",
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_pdf.svg",
@@ -732,95 +710,24 @@
 		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_share-filled.svg",
 		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_share.svg",
 		"/Users/Kyla/Sites/cognizant/docs/styleguide/svg/symbols/icon_triangle.svg",
-		"/Users/Kyla/Sites/cognizant/src/jade/modules/banner-perspectives-app.jade",
-		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_linkedin.svg",
-		"/Users/Kyla/Sites/cognizant/src/jade/modules/banner-cognizant-connections.jade",
 		"/Users/Kyla/Sites/cognizant/build/tasks/assets.coffee",
-		"/Users/Kyla/Sites/cognizant/src/jade/layouts/layout-secondary.jade",
-		"/Users/Kyla/Sites/cognizant/build/tasks/styl.coffee",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/sections.styl",
-		"/Users/Kyla/Sites/cognizant/src/jade/layouts/layout-primary.jade",
-		"/Users/Kyla/Sites/cognizant/src/styl/buttons.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/inputs.styl",
 		"/Users/Kyla/Sites/cognizant/build/tasks/bower.coffee",
 		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_add.svg",
 		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_add.svg",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/modal.styl",
-		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_star-filled.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_triangle-filled.svg",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/search-dropdown.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/three-group.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/slider-nav.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/fullscreen-overlay.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/index.styl",
-		"/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/PlainTasks/PlainTasks (OSX).sublime-settings",
-		"/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/User/PlainTasks.sublime-settings",
-		"/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/PlainTasks/tasks-eighties-colored.hidden-tmTheme",
-		"/Users/Kyla/Sites/cognizant/build/cognizant.TODO",
-		"/Users/Kyla/Sites/cognizant/src/jade/modules/folders-module.jade",
-		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_create-folders.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_save-articles.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_searches.svg",
-		"/Users/Kyla/Sites/cognizant/README.md",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/folder.styl",
-		"/Users/Kyla/Sites/cognizant/src/jade/modules/edit-profile-overlay.jade",
-		"/Users/Kyla/Sites/cognizant/src/jade/modules/three-group.jade",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/contenteditable.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/content-list.styl",
-		"/Users/Kyla/Sites/cognizant/app/svg/icons/icon_change-centers.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_data-science.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_cognizanti.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_change-centers.svg",
-		"/Users/Kyla/Sites/cognizant/app/svg/icons/icon_data-science.svg",
-		"/Users/Kyla/Sites/cognizant/src/jade/modules/folder-headerline.jade",
-		"/Users/Kyla/Sites/cognizant/src/jade/modules/content-list.jade",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/headline-list.styl",
-		"/Users/Kyla/Sites/cognizant/src/jade/includes/linkedin-modal.jade",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/banner.styl",
-		"/Users/Kyla/Sites/cognizant/app/svg/icons/icon_cognizanti.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_decisive-infrastructure.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_future-of-work.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_global-sourcing.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_latest-thinking.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_mass-empowerment.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_mobile-first.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_smart-sourcing.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_value-webs.svg",
-		"/Users/Kyla/Sites/cognizant/src/svg/icons/icon_virtual-capital.svg",
-		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_smart-search.svg",
-		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_save-article.svg",
-		"/Users/Kyla/Sites/cognizant/app/svg/symbols/icon_create-folder.svg",
-		"/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/Gutter Color/GutterColor.sublime-settings",
-		"/Users/Kyla/Library/Application Support/Sublime Text 3/Packages/User/GutterColor.sublime-settings",
-		"/Users/Kyla/Sites/cognizant/app/index.html",
-		"/Users/Kyla/Sites/cognizant/app/index-logged-in.html",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/footer.styl",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/forms.styl",
-		"/Users/Kyla/.profile",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/flow-box-slider.styl",
-		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_close.svg",
-		"/Users/Kyla/Sites/cognizant/src/jade/edit-profile.jade",
-		"/Users/Kyla/Sites/cognizant/src/coffee/form.coffee",
-		"/Users/Kyla/Sites/cognizant/app/svg/icons/icon_mobile-first.svg",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/dropdown.styl",
-		"/Users/Kyla/Sites/kyla/src/coffee/plugins/smartresize.coffee",
-		"/Users/Kyla/Sites/cognizant/src/styl/modules/folder-section.styl",
-		"/Users/Kyla/Sites/cognizant-prototype/node_modules/gulp-imagemin/node_modules/imagemin/node_modules/imagemin-pngquant/node_modules/pngquant-bin/node_modules/bin-wrapper/node_modules/download/node_modules/vinyl-fs/node_modules/glob-stream/node_modules/unique-stream/node_modules/es6-set/node_modules/es5-ext/function/#/copy.js",
-		"/Users/Kyla/Sites/cognizant/src/jade/includes/index-include.jade",
-		"/Users/Kyla/Sites/cognizant/build/tasks/jade.coffee",
-		"/Users/Kyla/Sites/cognizant/src/jade/create-profile.jade",
-		"/Users/Kyla/Sites/cognizant/src/styl/animations.styl",
-		"/Users/Kyla/Sites/cognizant/tmp/js/zapp.js"
+		"/Users/Kyla/Sites/cognizant/src/svg/symbols/icon_star-filled.svg"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
 		"height": 106.0,
 		"where_history":
 		[
+			"*.jade",
+			"*.styl",
+			"*.jade",
 			"*.styl",
 			"*.jade",
 			"*.styl",
@@ -865,134 +772,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			".removeClass('is-bottom')",
-			"padding",
-			"truncate",
-			"crolling",
-			"2rem",
-			"“",
-			".arti",
-			"NavWaypoint()",
-			"$nav",
-			"MKBL.articleNav()",
-			"MKBL.articleNav",
-			"$(@.element).find('.cogv1_article-nav')",
-			"t)",
-			".find('.cogv1_article-nav')",
-			"@",
-			"lightblue",
-			"darkblue",
-			"search",
-			".cogv1_search__right",
-			".cogv1-",
-			".article",
-			"Error",
-			".share-flyout__icon",
-			"linkedin",
-			"1.2rem",
-			"__data",
-			"search__icon--right",
-			"profile-box__list-item",
-			"share",
-			"triangle",
-			"fill",
-			"12px",
-			"20px",
-			"20p",
-			"12px",
-			"12",
-			"search",
-			"html",
-			"url(svg/s",
-			"url(svg/",
-			"svg",
-			"main-header__search-container",
-			"search__input",
-			"raphael",
-			"(",
-			"unquote",
-			"cogv1_search__flyout",
-			"in",
-			"undefined",
-			"trig",
-			".share-flyout",
-			"0.4s cubic-bezier",
-			"ease-out",
-			".search__share-flyout__wrapper",
-			".search__share-flyout",
-			")\n",
-			"<g class=\"Page-1\">",
-			"class=\"Layer_1\" ",
-			"g id=\"",
+			", ",
+			"poke",
+			"title-im",
+			"height='38' width='110'",
+			"video-module__center",
+			":href=\"#",
+			"k:href=\"#",
+			"ink:href=\"#",
+			":href=\"#",
+			"image",
+			"ref=\"#",
+			"href=\"#",
+			":href=\"#",
+			"href=\"#",
+			".share-icons-list",
+			"href=\"#",
+			":href=\"#",
+			"href=\"#",
+			"f='')",
+			"href=\"#",
+			"\"",
+			"styleguide",
+			"href=\"#",
+			"includes/symbols.svg",
+			"href=\"#",
+			"image",
+			"img",
+			"header",
+			";",
+			"}",
+			" {",
+			"png/",
+			".png",
 			"svg",
 			"gradient",
-			"search__sha",
-			"trigger",
-			"1",
-			".search__icon__wrapper",
-			".search__share",
-			".profile-box__indicator",
-			"pro",
-			"indicator",
-			"2",
-			"6.4",
-			"6.4rem",
-			"profile-box__",
-			"compact-profile-box__",
-			"compact-",
-			"profile-box__",
-			"trigger",
-			"darkblue",
-			"wrapper",
-			"flyout",
-			"Flyout",
-			"__icon",
-			"search__share",
-			"  ",
-			"includes/symbols.svg",
-			"  ",
-			"svg(",
-			"svg",
-			"  ",
-			".cogv1_article-header",
-			"cogv1",
-			"mkbl_",
-			"rem",
-			"px",
-			"rem",
-			"em",
-			"rem",
-			"px",
-			"#f99157",
-			"--section",
-			">\n",
-			"SVGID_1_",
-			"c",
-			"SVGID_1_",
-			"Page-1_1_",
-			"SVGID_1_",
-			"data",
+			"input",
+			"grad",
+			"$this",
+			"dropdownHeight",
+			"contenteditableDropdown",
+			"js-result",
+			"&:af",
+			"button",
+			"results",
+			"section",
+			")\n",
+			"right r(4rem)",
 			"has-drop",
-			"headline-list__item-title",
-			"data",
+			"fade",
+			"input",
+			"header",
+			"href=''",
 			"0",
-			"box-shadow",
-			"share-flyout__icon",
-			"2.2",
-			"content",
-			"h4",
-			"console",
-			"MKBL.activationOn",
-			"5%",
-			"console",
-			"cubic-bezier(.73,.88,0,1.02)",
-			"ease-out",
-			"trigger",
-			"folder",
-			"xlink:href=\"#",
-			"-6.2",
-			"-",
-			"top"
+			"min",
+			"searchArr",
+			"stringArr",
+			"string",
+			"$(this)",
+			"MKBL.checkArray",
+			"filter",
+			"Filter",
+			"filter",
+			"contains",
+			"fly",
+			".cogv1_page-header",
+			"10rem",
+			"    &.push-left\n      right r(4rem)",
+			"&.push-left\n      right r(4rem)",
+			"search__icon--right",
+			"cogv1_article__save",
+			"darkgreen",
+			"smart",
+			".compact-profile-box__profile-pic",
+			"triangle-right",
+			"filter",
+			"right",
+			"FLY",
+			"fly",
+			".search__CTA",
+			"add-ac",
+			"0.2s",
+			"save",
+			"article-mobile__share",
+			"fs(",
+			"1.4",
+			"pro",
+			"flow-box__title",
+			"title",
+			"cogv1_article__save__input",
+			"input",
+			"flyout",
+			"FLYOUT",
+			"flyout",
+			"footer",
+			"4rem",
+			".flow-box__CTA--share",
+			".flow-box__CTA--",
+			".flow-box__CTA--share",
+			"share",
+			"header-",
+			"img",
+			".cogv1_article-header__edit-title",
+			"edit",
+			"icon_caret",
+			"ttom r(-3rem)",
+			"+below(1024px)",
+			"+below(768px)\n",
+			"+below(768px)",
+			"+below(640px)",
+			"overlay",
+			"cogv1_icon-header__share",
+			"  ",
+			"cogv1_icon-header__share",
+			".flow-box-flyout",
+			".cogv1_icon-header__title",
+			"SVGID_2_",
+			"SVGID_5_",
+			"SVGID_4_",
+			"SVGID_3_",
+			"SVGID_2_",
+			"SVGID_5_",
+			"SVGID_4_",
+			"SVGID_3_",
+			"SVGID_2_",
+			"SVGID_1_",
+			"bottom -1px",
+			"has-dropd",
+			"overlay"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1000,6 +907,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"$absolute-cover",
 			"align(vertical)",
 			"align()",
 			"<b>WOOF</b>tale",
@@ -1023,1442 +931,19 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/jade/article.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14439,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								12196,
-								12196
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"history_list_is_closing": true,
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 6773.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/coffee/events.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4893,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4643,
-								4643
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"history_list_is_closing": true,
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2445.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/styl/modules/article.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4971,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3691,
-								3691
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_name": ".article",
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"history_list_is_closing": true,
-							"syntax": "Packages/Stylus/Stylus.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 3067.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/coffee/app.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 15382,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								15052,
-								15052
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 10303.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/styl/buttons.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3668,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1353,
-								1353
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 847.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/jade/modules/flowbox-slider.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 13458,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2966,
-								2966
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"history_list_is_closing": true,
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1644.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "src/styl/modules/header.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4039,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3115,
-								3115
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"history_list_is_closing": true,
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 833.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "src/jade/modules/video-module.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 421,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								421,
-								421
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "build/gulp.coffee",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1668,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1241,
-								1241
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 813.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				}
 			]
 		},
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 9,
-					"file": "src/styl/modules/video.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2569,
-						"regions":
-						{
-							"gutter_color_1001":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/rgba(0,0,0,0.5).png",
-								"regions":
-								[
-									[
-										913,
-										913
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1849":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#ffffff.png",
-								"regions":
-								[
-									[
-										1933,
-										2010
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1918":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#ffffff.png",
-								"regions":
-								[
-									[
-										1933,
-										2021
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_1933":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#ffffff.png",
-								"regions":
-								[
-									[
-										1933,
-										2026
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2037":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#ffffff.png",
-								"regions":
-								[
-									[
-										1964,
-										2057
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2078":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#ffffff.png",
-								"regions":
-								[
-									[
-										1933,
-										2026
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_2090":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#ffffff.png",
-								"regions":
-								[
-									[
-										1933,
-										2026
-									]
-								],
-								"scope": "gutter_color"
-							}
-						},
-						"selection":
-						[
-							[
-								1866,
-								1866
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"history_list_is_closing": true,
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1320.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/styl/modules/article.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4971,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2023,
-								1995
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_name": ".article",
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"history_list_is_closing": true,
-							"syntax": "Packages/Stylus/Stylus.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1363.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 0,
-					"file": "src/jade/article.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14439,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								12465,
-								12465
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"history_list_is_closing": true,
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 6724.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "src/styl/mixins.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 962,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								834,
-								834
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/styl/buttons.styl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3668,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								443,
-								443
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"syntax": "Packages/Stylus/Stylus.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/jade/modules/flowbox-slider.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 13458,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2624,
-								2600
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content"
-							],
-							"history_list_is_closing": true,
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 876.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 32.0
 	},
 	"input":
 	{
@@ -2484,7 +969,7 @@
 		"cols":
 		[
 			0.0,
-			0.372591178125,
+			0.896356404984,
 			1.0
 		],
 		"rows":
@@ -2502,7 +987,7 @@
 	"project": "cognizant.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 60.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -2512,516 +997,516 @@
 		"selected_items":
 		[
 			[
-				"mix",
-				"src/styl/mixins.styl"
-			],
-			[
-				"flow",
-				"src/styl/modules/flow-box.styl"
-			],
-			[
-				"gra",
-				"src/styl/gradients.styl"
-			],
-			[
-				"",
-				"src/styl/modules/article.styl"
-			],
-			[
-				"app",
-				"src/coffee/app.coffee"
-			],
-			[
-				"flo",
-				"src/styl/modules/flow-box.styl"
-			],
-			[
-				"button",
-				"src/styl/buttons.styl"
-			],
-			[
-				"slider",
-				"src/jade/modules/flowbox-slider.jade"
+				"co",
+				"cognizant.sublime-project"
 			],
 			[
 				"art",
-				"src/jade/article.jade"
+				"src/styl/modules/article.styl"
+			],
+			[
+				"nav",
+				"src/styl/modules/article-nav.styl"
 			],
 			[
 				"com",
 				"src/styl/modules/compact-profile-box.styl"
 			],
 			[
-				"gu",
-				"build/gulp.coffee"
-			],
-			[
-				"coff",
-				"build/tasks/coffee.coffee"
-			],
-			[
-				"co",
-				"cognizant.sublime-project"
-			],
-			[
-				"bow",
-				"build/bower.json"
-			],
-			[
-				"in",
-				"build/styleguide/index.jade"
-			],
-			[
-				"eve",
-				"src/coffee/events.coffee"
-			],
-			[
-				"gul",
-				"build/gulp.coffee"
-			],
-			[
-				"ev",
-				"src/coffee/events.coffee"
-			],
-			[
-				"soc",
-				"src/styl/modules/social-group.styl"
-			],
-			[
-				"ad",
-				"src/styl/modules/article-data.styl"
-			],
-			[
-				"ar",
-				"src/styl/modules/article.styl"
-			],
-			[
-				"ba",
-				"src/styl/base.styl"
-			],
-			[
-				"a",
-				"src/jade/article.jade"
-			],
-			[
-				"sear",
-				"src/styl/modules/search.styl"
-			],
-			[
-				"typ",
-				"src/styl/typography.styl"
-			],
-			[
-				"log",
-				"src/jade/index-logged-in.jade"
-			],
-			[
-				"ind",
-				"src/jade/index.jade"
-			],
-			[
-				"inde",
-				"src/jade/index.jade"
-			],
-			[
 				"hea",
 				"src/styl/modules/header.styl"
-			],
-			[
-				"artic",
-				"src/styl/modules/article-header.styl"
-			],
-			[
-				"but",
-				"src/styl/buttons.styl"
-			],
-			[
-				"v",
-				"src/jade/modules/video-module2.jade"
-			],
-			[
-				"ty",
-				"src/styl/typography.styl"
-			],
-			[
-				"mi",
-				"src/styl/mixins.styl"
-			],
-			[
-				"vid",
-				"src/jade/modules/video-module.jade"
-			],
-			[
-				"vi",
-				"src/styl/modules/video.styl"
-			],
-			[
-				"vide",
-				"src/styl/modules/video.styl"
-			],
-			[
-				"butt",
-				"src/styl/buttons.styl"
-			],
-			[
-				"base",
-				"src/styl/base.styl"
-			],
-			[
-				"pack",
-				"package.json"
-			],
-			[
-				"svg",
-				"build/tasks/svg.coffee"
-			],
-			[
-				"gulp",
-				"build/gulp.coffee"
-			],
-			[
-				"slid",
-				"src/jade/modules/flowbox-slider.jade"
-			],
-			[
-				"search",
-				"src/styl/modules/search.styl"
-			],
-			[
-				"pr",
-				"src/styl/modules/profile-box.styl"
-			],
-			[
-				"header",
-				"src/styl/modules/header.styl"
-			],
-			[
-				"ser",
-				"src/styl/modules/search.styl"
-			],
-			[
-				"mis",
-				"src/styl/mixins.styl"
-			],
-			[
-				"share-fi",
-				"src/svg/symbols/icon_share-filled.svg"
-			],
-			[
-				"share",
-				"src/svg/symbols/icon_share.svg"
-			],
-			[
-				"set",
-				"src/styl/settings.styl"
-			],
-			[
-				"star",
-				"src/svg/symbols/icon_star.svg"
-			],
-			[
-				"sae",
-				"src/styl/modules/search.styl"
-			],
-			[
-				"head",
-				"src/jade/modules/headline-list.jade"
-			],
-			[
-				"form",
-				"src/jade/modules/form.jade"
-			],
-			[
-				"pd",
-				"src/svg/symbols/icon_pdf.svg"
-			],
-			[
-				"sv",
-				"build/tasks/svg.coffee"
-			],
-			[
-				"tri",
-				"src/svg/symbols/icon_triangle.svg"
-			],
-			[
-				"pdf",
-				"src/svg/symbols/icon_pdf.svg"
-			],
-			[
-				"saer",
-				"src/svg/symbols/icon_search.svg"
-			],
-			[
-				"index",
-				"src/jade/index.jade"
-			],
-			[
-				"fil",
-				"src/svg/symbols/icon_filter.svg"
-			],
-			[
-				"icon_lin",
-				"src/svg/symbols/icon_linkedin.svg"
-			],
-			[
-				"styl",
-				"build/tasks/styl.coffee"
-			],
-			[
-				"sec",
-				"src/styl/modules/sections.styl"
-			],
-			[
-				"social",
-				"src/jade/modules/social-slider.jade"
-			],
-			[
-				"la",
-				"src/jade/layouts/layout-primary.jade"
-			],
-			[
-				"cof",
-				"build/tasks/coffee.coffee"
-			],
-			[
-				"s",
-				"build/tasks/styl.coffee"
-			],
-			[
-				"st",
-				"build/tasks/styl.coffee"
-			],
-			[
-				"ass",
-				"build/tasks/assets.coffee"
-			],
-			[
-				"prof",
-				"src/styl/modules/profile-box.styl"
-			],
-			[
-				"lay",
-				"src/jade/layouts/layout-primary.jade"
-			],
-			[
-				"buton",
-				"src/styl/buttons.styl"
-			],
-			[
-				"bann",
-				"src/jade/modules/banner-perspectives-app.jade"
-			],
-			[
-				"add",
-				"src/svg/symbols/icon_add.svg"
 			],
 			[
 				"pro",
 				"src/styl/modules/profile-box.styl"
 			],
 			[
-				"fla",
-				"src/jade/modules/flowbox-slider.jade"
-			],
-			[
-				"fl",
-				"src/styl/modules/flow-box.styl"
-			],
-			[
-				"even",
-				"src/coffee/events.coffee"
-			],
-			[
-				"tp",
-				"src/styl/typography.styl"
-			],
-			[
-				"fly",
-				"src/styl/modules/share-flyout.styl"
-			],
-			[
-				"lo",
-				"src/jade/index-logged-in.jade"
-			],
-			[
-				"t",
-				"src/styl/typography.styl"
-			],
-			[
-				"he",
-				"src/styl/modules/header.styl"
-			],
-			[
-				"logg",
-				"src/jade/index-logged-in.jade"
-			],
-			[
-				"ban",
-				"src/jade/modules/banner-perspectives-app.jade"
-			],
-			[
-				"ful",
-				"src/styl/modules/fullscreen-overlay.styl"
-			],
-			[
-				"gr",
-				"src/jade/modules/three-group.jade"
-			],
-			[
-				"cogn",
-				"app/svg/icons/icon_cognizanti.svg"
-			],
-			[
-				"linke",
-				"src/jade/includes/linkedin-modal.jade"
-			],
-			[
-				"lon",
-				"src/jade/index-logged-in.jade"
-			],
-			[
-				"link",
-				"src/jade/includes/linkedin-modal.jade"
-			],
-			[
-				"re",
-				"README.md"
-			],
-			[
-				"fol",
-				"src/styl/modules/folder.styl"
-			],
-			[
-				"fold",
-				"src/styl/modules/folder.styl"
-			],
-			[
-				"gro",
-				"src/jade/modules/three-group.jade"
-			],
-			[
-				"cogni",
-				"app/svg/icons/icon_cognizanti.svg"
-			],
-			[
-				"grou",
-				"src/jade/modules/three-group.jade"
-			],
-			[
-				"con",
-				"src/styl/modules/contenteditable.styl"
-			],
-			[
-				"fu",
-				"src/styl/modules/fullscreen-overlay.styl"
-			],
-			[
-				"over",
-				"src/jade/modules/edit-profile-overlay.jade"
-			],
-			[
-				"nav",
-				"src/styl/modules/slider-nav.styl"
-			],
-			[
-				"cont",
-				"src/styl/modules/contenteditable.styl"
-			],
-			[
-				"section",
-				"src/styl/modules/sections.styl"
-			],
-			[
-				"mod",
-				"src/jade/includes/linkedin-modal.jade"
-			],
-			[
-				"contne",
-				"src/jade/modules/content-list.jade"
-			],
-			[
-				"inp",
-				"src/styl/inputs.styl"
+				"set",
+				"src/styl/settings.styl"
 			],
 			[
 				"folder",
-				"src/jade/modules/folder-headerline.jade"
+				"src/styl/modules/folder.styl"
+			],
+			[
+				"head",
+				"src/styl/modules/headline-list.styl"
+			],
+			[
+				"profil",
+				"src/styl/modules/profile-box.styl"
+			],
+			[
+				"smar",
+				"src/styl/modules/smart-search.styl"
+			],
+			[
+				"lay",
+				"src/jade/layouts/layout-secondary.jade"
+			],
+			[
+				"cont",
+				"src/styl/modules/content-list.styl"
+			],
+			[
+				"bann",
+				"src/styl/modules/banner.styl"
+			],
+			[
+				"per",
+				"src/jade/modules/banner-perspectives-app.jade"
+			],
+			[
+				"prof",
+				"src/styl/modules/profile-box.styl"
 			],
 			[
 				"bas",
 				"src/styl/base.styl"
 			],
 			[
-				"banner",
-				"src/styl/modules/banner.styl"
+				"cogniz",
+				"src/styl/modules/cognizanti.styl"
 			],
 			[
-				"soci",
-				"src/styl/modules/social-group.styl"
+				"vd",
+				"src/styl/modules/video.styl"
 			],
 			[
-				"se",
-				"src/styl/modules/sections.styl"
+				"vido",
+				"src/jade/modules/video-module.jade"
 			],
 			[
-				"prfo",
-				"src/styl/modules/profile-box.styl"
+				"sear",
+				"src/styl/modules/search.styl"
 			],
 			[
-				"logi",
-				"app/index-logged-in.html"
+				"logg",
+				"src/jade/index-logged-in.jade"
 			],
 			[
-				"sh",
-				"src/styl/modules/share-flyout.styl"
-			],
-			[
-				"edit",
-				"src/styl/modules/contenteditable.styl"
+				"mod",
+				"src/styl/modules/modal.styl"
 			],
 			[
 				"foot",
 				"src/styl/modules/footer.styl"
 			],
 			[
-				"thre",
-				"src/styl/modules/three-group.styl"
+				"con",
+				"src/styl/modules/contenteditable.styl"
 			],
 			[
-				"for",
-				"src/jade/modules/form.jade"
+				"shrae",
+				"src/styl/modules/share-flyout.styl"
+			],
+			[
+				"ar",
+				"src/jade/article.jade"
+			],
+			[
+				"vide",
+				"src/jade/modules/video-module.jade"
+			],
+			[
+				"sma",
+				"src/jade/modules/smart-search-overlay.jade"
+			],
+			[
+				"lind",
+				"src/jade/includes/linkedin-modal.jade"
+			],
+			[
+				"prim",
+				"src/jade/layouts/layout-primary.jade"
+			],
+			[
+				"edi",
+				"src/jade/modules/edit-profile-overlay.jade"
+			],
+			[
+				"lat",
+				"src/jade/latest-strategy.jade"
+			],
+			[
+				"ba",
+				"src/styl/base.styl"
+			],
+			[
+				"lis",
+				"src/jade/modules/content-list.jade"
 			],
 			[
 				"cog",
-				"cognizant.sublime-project"
+				"src/styl/modules/cognizanti.styl"
 			],
 			[
-				"ee",
-				"src/coffee/events.coffee"
+				"gu",
+				"build/gulp.coffee"
+			],
+			[
+				"fold",
+				"src/styl/modules/folder.styl"
+			],
+			[
+				"flow",
+				"src/jade/modules/flowbox-slider.jade"
+			],
+			[
+				"box",
+				"src/styl/modules/flow-box.styl"
+			],
+			[
+				"sty",
+				"build/tasks/styl.coffee"
+			],
+			[
+				"gul",
+				"build/gulp.coffee"
+			],
+			[
+				"ban",
+				"src/jade/modules/banner-cognizant-connections.jade"
+			],
+			[
+				"la",
+				"src/jade/layouts/layout-primary.jade"
+			],
+			[
+				"base",
+				"src/styl/base.styl"
 			],
 			[
 				"searc",
 				"src/styl/modules/search.styl"
 			],
 			[
-				"sea",
-				"src/styl/modules/search.styl"
+				"folder-m",
+				"src/jade/modules/folders-module.jade"
 			],
 			[
-				"buto",
+				"in",
+				"src/styl/index.styl"
+			],
+			[
+				"svg",
+				"build/tasks/svg.coffee"
+			],
+			[
+				"vid",
+				"src/jade/modules/video-module.jade"
+			],
+			[
+				"banner",
+				"src/jade/modules/banner-perspectives-app.jade"
+			],
+			[
+				"ind",
+				"src/jade/index.jade"
+			],
+			[
+				"eve",
+				"src/coffee/events.coffee"
+			],
+			[
+				"even",
+				"src/coffee/events.coffee"
+			],
+			[
+				"app",
+				"src/coffee/app.coffee"
+			],
+			[
+				"button",
 				"src/styl/buttons.styl"
 			],
 			[
-				"fle",
+				"ty",
+				"src/styl/typography.styl"
+			],
+			[
+				"header",
+				"src/styl/modules/header.styl"
+			],
+			[
+				"sect",
+				"src/styl/modules/sections.styl"
+			],
+			[
+				"resu",
+				"src/jade/search-results.jade"
+			],
+			[
+				"grid",
+				"src/styl/grid.styl"
+			],
+			[
+				"flw",
+				"src/styl/modules/flow-box.styl"
+			],
+			[
+				"flo",
+				"src/styl/modules/flow-box.styl"
+			],
+			[
+				"",
+				"src/jade/folder.jade"
+			],
+			[
+				"three",
+				"src/jade/modules/three-group.jade"
+			],
+			[
+				"sec",
+				"src/styl/modules/sections.styl"
+			],
+			[
+				"ap",
+				"src/coffee/app.coffee"
+			],
+			[
+				"sett",
+				"src/styl/settings.styl"
+			],
+			[
+				"slid",
 				"src/jade/modules/flowbox-slider.jade"
+			],
+			[
+				"form",
+				"src/coffee/form.coffee"
+			],
+			[
+				"event",
+				"src/coffee/events.coffee"
+			],
+			[
+				"conte",
+				"src/styl/modules/content-list.styl"
+			],
+			[
+				"contn",
+				"src/jade/modules/content-list.jade"
+			],
+			[
+				"sm",
+				"src/jade/modules/smart-search-overlay.jade"
+			],
+			[
+				"page",
+				"src/jade/page.jade"
+			],
+			[
+				"fl",
+				"src/styl/modules/flow-box.styl"
+			],
+			[
+				"sub",
+				"src/styl/modules/article-subhead.styl"
+			],
+			[
+				"ser",
+				"src/styl/modules/search.styl"
+			],
+			[
+				"section",
+				"src/styl/modules/sections.styl"
+			],
+			[
+				"arti",
+				"src/styl/modules/article-subhead.styl"
+			],
+			[
+				"my",
+				"src/jade/my-folders.jade"
+			],
+			[
+				"share",
+				"src/styl/modules/share-flyout.styl"
+			],
+			[
+				"su",
+				"src/styl/modules/article-subhead.styl"
+			],
+			[
+				"smarrc",
+				"src/jade/modules/smart-search-overlay.jade"
+			],
+			[
+				"search",
+				"src/styl/modules/search.styl"
+			],
+			[
+				"compca",
+				"src/styl/modules/compact-profile-box.styl"
+			],
+			[
+				"conten",
+				"src/styl/modules/content-list.styl"
 			],
 			[
 				"profi",
 				"src/styl/modules/profile-box.styl"
 			],
 			[
-				"ap",
-				"src/coffee/app.coffee"
+				"mi",
+				"src/styl/mixins.styl"
+			],
+			[
+				"slider",
+				"src/jade/modules/flowbox-slider.jade"
+			],
+			[
+				"over",
+				"src/styl/modules/fullscreen-overlay.styl"
+			],
+			[
+				"log",
+				"src/jade/index-logged-in.jade"
+			],
+			[
+				"ed",
+				"src/jade/folder-edit.jade"
+			],
+			[
+				"smal",
+				"src/styl/modules/small-modules.styl"
+			],
+			[
+				"grade",
+				"src/styl/gradients.styl"
+			],
+			[
+				"stra",
+				"src/jade/latest-strategies.jade"
+			],
+			[
+				"mix",
+				"src/styl/mixins.styl"
+			],
+			[
+				"ev",
+				"src/coffee/events.coffee"
+			],
+			[
+				"heade",
+				"src/styl/modules/header.styl"
+			],
+			[
+				"last",
+				"src/jade/latest-strategies.jade"
+			],
+			[
+				"pd",
+				"src/svg/gradient-icons/icon_pdf.svg"
+			],
+			[
+				"pdf",
+				"app/svg/gradient-icons/icon_pdf.svg"
+			],
+			[
+				"cotne",
+				"src/styl/modules/content-list.styl"
+			],
+			[
+				"gri",
+				"src/styl/grid.styl"
+			],
+			[
+				"comp",
+				"src/styl/modules/compact-profile-box.styl"
+			],
+			[
+				"buton",
+				"src/styl/buttons.styl"
+			],
+			[
+				"edit",
+				"src/jade/modules/edit-profile-overlay.jade"
+			],
+			[
+				"evene",
+				"src/coffee/events.coffee"
+			],
+			[
+				"full",
+				"src/styl/modules/fullscreen-overlay.styl"
+			],
+			[
+				"fol",
+				"src/jade/folder-edit.jade"
+			],
+			[
+				"tp",
+				"src/styl/typography.styl"
+			],
+			[
+				"gr",
+				"src/styl/grid.styl"
+			],
+			[
+				"compa",
+				"src/styl/modules/compact-profile-box.styl"
+			],
+			[
+				"inde",
+				"src/jade/index.jade"
+			],
+			[
+				"ht",
+				"docs/styleguide/index.html"
+			],
+			[
+				"subhe",
+				"src/styl/modules/article-subhead.styl"
+			],
+			[
+				"boe",
+				"build/bower.json"
+			],
+			[
+				"str",
+				"src/jade/latest-strategies.jade"
+			],
+			[
+				"social-l",
+				"src/styl/modules/social-group.styl"
+			],
+			[
+				"foo",
+				"src/styl/modules/footer.styl"
+			],
+			[
+				"pa",
+				"src/jade/page.jade"
+			],
+			[
+				"dat",
+				"src/styl/modules/article-data.styl"
+			],
+			[
+				"typ",
+				"src/styl/typography.styl"
+			],
+			[
+				"but",
+				"src/styl/buttons.styl"
+			],
+			[
+				"late",
+				"src/jade/latest-strategies.jade"
+			],
+			[
+				"m",
+				"src/jade/my-folders.jade"
+			],
+			[
+				"lates",
+				"src/jade/latest-strategies.jade"
+			],
+			[
+				"he",
+				"src/styl/modules/header.styl"
 			]
 		],
 		"width": 0.0
@@ -3044,7 +1529,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
@@ -3052,7 +1537,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 319.0,
+	"side_bar_width": 305.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

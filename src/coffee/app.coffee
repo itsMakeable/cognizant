@@ -547,7 +547,4 @@ MKBL.articleNavWaypoints = ->
 				$('.cogv1_article-nav')
 					.addClass('is-scrolling')
 					.removeClass('is-bottom')
-	MKBL.articleNavWaypoint
-	MKBL.articleNavAlmostBottomWaypoint
-	MKBL.articleNavBottomWaypoint
 	return

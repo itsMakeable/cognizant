@@ -1,7 +1,8 @@
 extends layouts/layout-primary
 
 block content
-	header.main-header.gradient1--horizontal.color-bg.cogv1_has-overlay(style='background: url("http://lorempixel.com/1250/500/technics") no-repeat')
+	// You can add the class .cogv1_has-overlay to give the header a dark overlay to make text more readable against a light background.
+	header.main-header.gradient1--horizontal.color-bg(style='background: white url("http://lorempixel.com/1250/500/technics") no-repeat')
 		.container
 			h1 Explore our 
 				span.nowrap industry-leading
@@ -15,10 +16,9 @@ block content
 			div.main-header__button-container
 				a.button--primary.icon--left(href='/index-logged-in.html')
 					i.icon.icon-linkedin
-						//- img(src="img/symbols/icon_linkedin-2x.png", alt="")
-						svg(viewbox='0 0 100 100')
-							use(xlink:href='#icon_linkedin')
-							image(src='img/symbols/icon_linkedin-2x.png' width='30px' height='30px')
+						img(src="img/icon_linkedin.png", alt="")
+						//- svg(viewbox='0 0 100 100')
+						//- 	use(xlink:href='#icon_linkedin')
 					| Sign In with Linkedin
 				i.js-open-modal-module.icon.question-mark(data-modal-id='#modal-1')
 					svg(viewbox='0 0 100 100')
@@ -35,7 +35,7 @@ block content
 								use(xlink:href='#icon_search')
 								image(src='img/symbols/icon_search-2x.png' width='30px' height='30px')
 				.search__dropdown.js-dropdown-option-parent
-					span.search__dropdown__active-selection.js-dropdown-option-holder.js-dropdown-trigger(data-default='All Industries') All Industries
+					span.search__dropdown__active-selection.js-dropdown-option-holder.js-dropdown-trigger.truncated(data-default='All Industries') All Industries
 					i.search__dropdown__icon.js-dropdown-trigger
 						svg(viewbox='0 0 100 100')
 							use(xlink:href='#icon_caret--right')

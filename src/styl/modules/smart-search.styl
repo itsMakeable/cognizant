@@ -27,10 +27,14 @@ input[type=text].cogv1-smart-search__input
 	top 0
 	bottom 0
 	margin auto
+	
 .cogv1-smart-search__icon--left
 	left r(2rem)
 .cogv1-smart-search__icon--right
 	right r(2rem)
+	opacity 0
+	&.is-active
+		opacity 1
 	
 .smart-search-overlay
 	+below(540px)
