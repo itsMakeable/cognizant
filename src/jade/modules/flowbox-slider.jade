@@ -7,6 +7,36 @@ section.section.flow-box-slider-section.backgray-bg
 			each val, index in {1:'is-active',2:'is-next',3:'is-prev'}
 				.row.flow-box-slider-group(class='#{val}')
 					component.flow-box.flow-box--large(style='background: url(http://placehold.it/550x550) no-repeat')
+							.flow-box__folder-save
+								.flow-box__folder-save-wrapper
+									p Save this article to your folders
+									hr
+									subcomponent.cogv1_article__save.is-signed-in
+										
+										.cogv1_article__save__add
+											.add-action.is-active
+												i.icon
+													svg(viewbox='0 0 100 100')
+														use(xlink:href='#icon_add')
+												h6 Create New Folder
+											.add-action
+												i.icon.icon_save-article.js-toggle-save-overlay
+													svg(viewbox='0 0 100 100')
+														use(xlink:href='#icon_check')
+												input(type='text').cogv1_article__save__input
+										ul
+											each val, index in [1,2,3]
+												li.cogv1_article__save__list.js-toggle-save-overlay
+													p: b Folder Title
+									.flow-box__CTA
+										i.flow-box__CTA-icon.flow-box__CTA--left.is-active.js-toggle-save-overlay
+											svg.is-empty(viewbox='0 0 100 100')
+												use(xlink:href='#icon_star')
+												
+											svg.is-filled(viewbox='0 0 100 100')
+												use(xlink:href='#icon_star-filled')
+												
+											span.flow-box__CTA__alt-text Save
 							.flow-box__gradient-bg
 								h4.flow-box__tag 
 									i.icon
@@ -24,7 +54,7 @@ section.section.flow-box-slider-section.backgray-bg
 												strong A shift to individual healthcare.
 												| Healthcare consumers are gaining control over how and with whom — they spend their healthcare dollars.
 									.flow-box__CTA
-										i.flow-box__CTA-icon.flow-box__CTA--left.interactive-svg
+										i.flow-box__CTA-icon.flow-box__CTA--left.interactive-svg.js-toggle-save-overlay
 											svg.is-empty(viewbox='0 0 100 100')
 												use(xlink:href='#icon_star')
 												
@@ -66,6 +96,36 @@ section.section.flow-box-slider-section.backgray-bg
 					div.flow-box__small-container
 						each val, index in [1,2]
 							component.flow-box(style='background: url(http://placehold.it/350x350) no-repeat')
+									.flow-box__folder-save
+										.flow-box__folder-save-wrapper
+											p: small Save this article to your folders
+											hr
+											subcomponent.cogv1_article__save.is-signed-in
+												
+												.cogv1_article__save__add
+													.add-action.is-active
+														i.icon
+															svg(viewbox='0 0 100 100')
+																use(xlink:href='#icon_add')
+														h6 Create New Folder
+													.add-action
+														i.icon.icon_save-article.js-toggle-save-overlay
+															svg(viewbox='0 0 100 100')
+																use(xlink:href='#icon_check')
+														input(type='text').cogv1_article__save__input
+												ul
+													each val, index in [1,2,3]
+														li.cogv1_article__save__list.js-toggle-save-overlay
+															p: b Folder Title
+											.flow-box__CTA
+												i.flow-box__CTA-icon.flow-box__CTA--left.interactive-svg.is-active
+													svg.is-empty(viewbox='0 0 100 100')
+														use(xlink:href='#icon_star')
+														
+													svg.is-filled(viewbox='0 0 100 100')
+														use(xlink:href='#icon_star-filled')
+														
+													span.flow-box__CTA__alt-text Save
 									.flow-box__gradient-bg
 										h4.flow-box__tag
 											i.icon
@@ -80,7 +140,7 @@ section.section.flow-box-slider-section.backgray-bg
 											.flow-box__CTA-description.truncate
 												p A Systematic Approach To Optimizing Collateral
 											.flow-box__CTA
-												i.flow-box__CTA-icon.flow-box__CTA--left.interactive-svg
+												i.flow-box__CTA-icon.flow-box__CTA--left.interactive-svg.js-toggle-save-overlay
 													svg.is-empty(viewbox='0 0 100 100')
 														use(xlink:href='#icon_star')
 														

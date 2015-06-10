@@ -32,11 +32,9 @@ gulp.task 'styl', ->
 			include: ['src/styl']
 			# url: true
 			compress: false
-			url:
-    			name: 'embedurl'
 		})
 		.pipe $.rename('main.css')
-		# .pipe $.csscomb()
+		.pipe $.csscomb()
 		# .pipe gulp.dest('./tmp/css')
 		.pipe $.bless()
 		.pipe gulp.dest('app/css')

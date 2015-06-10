@@ -138,9 +138,10 @@
 		
 .cogv1_article__save__add
 	color gray
-	margin-bottom r(1rem)
+	margin-bottom r(0.6rem)
 	.add-action
 		display none
+		position relative
 		&.is-active
 			display block
 	.icon
@@ -148,11 +149,12 @@
 		margin-right r(1rem)
 		+below(1024px)
 			margin-left r(-0.9rem)
-
 	.icon_save-article
 		color blue
 		position absolute
-		top r(3.1rem)
+		transition 0.2s ease
+		&:hover
+			color darkblue
 	h6
 		display inline-block
 		vertical-align middle
@@ -175,7 +177,7 @@ textarea
 .cogv1_article__save__list
 	text-indent r(4rem)
 	position relative
-	padding r(0.8rem) 0
+	padding r(0.6rem) 0
 	line-height 1.6
 	&:before
 		content ''

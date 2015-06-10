@@ -181,12 +181,11 @@ MKBL.flowBoxSliderSetup = ->
 	MKBL.flowBoxSlider = ($slider, $slides, $activeSlide, direction) ->
 		$slideIndicator.setWidth = $slideIndicator.width()
 		$slideIndicator.position = Number(MKBL.matrixToArray($slideIndicator.css('transform'))[4])
-
 		if direction == 'next'
 			$slideNewActive = ($activeSlide.index() + 1) % numOfSlides
-
 			# If the slider is starting over from the begining 
 			if $slideNewActive == 0
+				
 				flowBoxSlideAnimation($slideIndicator.position += $slideIndicator.setWidth, 300, 1)
 				$slideIndicator.velocity({translateX: -$slideIndicator.setWidth}, {
 					duration: 0,
@@ -230,7 +229,7 @@ MKBL.flowBoxSliderSetup = ->
 			setTimeout ->
 				$slider.removeClass('locked')
 			, 750
-	return MKBL.flowBoxSlider
+	# return MKBL.flowBoxSlider
 
 ###*
  * Flyout interaction for the mobile profile bar
@@ -485,6 +484,7 @@ MKBL.setupContenteditable = ->
 
 
 MKBL.playVideo = (e, $this) ->
+	console.log 'this'
 	$parent = $this.closest('.video-section')
 	$video = $parent.find('iframe')
 
@@ -495,9 +495,22 @@ MKBL.playVideo = (e, $this) ->
 
 	e.preventDefault()
 
+MKBL.stopVideo = (e, $this) ->
+	$video = $($this).find('iframe')
+	videoURL = $video.attr('src')
+	console.log videoURL
+	videoURL.replace("&autoplay=1", "")
+	$video.attr('src','')
+	setTimeout ->
+		$video.attr('src',videoURL)
+	, 1
+
+	e.preventDefault()
+
 MKBL.activationToggle = ($parent, cssClass) ->
 	cssClass = cssClass || 'is-active'
 	$parent.toggleClass(cssClass)
+	
 
 MKBL.activationOn = ($parent, cssClass) ->
 	cssClass = cssClass || 'is-active'

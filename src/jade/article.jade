@@ -47,8 +47,9 @@ block content
 				.search__icon__wrapper
 					a.search__icon.gradient6reverse--horizontal
 						i.icon
-							svg(viewbox='0 0 100 100')
-								use(xlink:href='#icon_search-article')
+							img(src="icon_search-article.png", alt="")
+							//- svg(viewbox='0 0 100 100')
+							//- 	use(xlink:href='#icon_search-article')
 				
 				i.icon.search__icon--right.search__CTA.push-left
 					svg(viewbox='0 0 100 100')
@@ -207,24 +208,24 @@ block content
 	
 		component.cogv1_article__footer-nav.backgray-bg
 			a.cogv1_article__footer-nav__button.cogv1_article__footer-nav__button--prev
-				i.icon
+				a.icon(href='')
 					svg(viewbox='0 0 100 100')
 						use(xlink:href='#icon_caret--left')
 			.container
 				.row
-					a.cogv1_article__footer-nav__text.cogv1_article__footer-nav__text--prev
+					a.cogv1_article__footer-nav__text.cogv1_article__footer-nav__text--prev(href='')
 						p
 							strong Prev
 								span ious Search Result &ldquo;Server Storage&rdquo;
 							strong How Digital Is Quickly Reshaping Customer
 					.cogv1_article__footer-nav__divider
-					a.cogv1_article__footer-nav__text.cogv1_article__footer-nav__text--next
+					a.cogv1_article__footer-nav__text.cogv1_article__footer-nav__text--next(href='')
 						p
 							strong Next
 								span  Search Result &ldquo;Server Storage&rdquo;
 							strong How Digital Is Quickly Reshaping Customer
 			a.cogv1_article__footer-nav__button.cogv1_article__footer-nav__button--next
-				i.icon
+				a.icon(href='')
 					svg(viewbox='0 0 100 100')
 						use(xlink:href='#icon_caret--right')
 	footer
@@ -236,6 +237,37 @@ block content
 					.row
 						each val, index in [1,2,3]
 							.flow-box
+								.flow-box__folder-save
+									.flow-box__folder-save-wrapper
+										p: small Save this article to your folders
+										hr
+										subcomponent.cogv1_article__save.is-signed-in
+											
+											.cogv1_article__save__add
+												.add-action.is-active
+													i.icon
+														svg(viewbox='0 0 100 100')
+															use(xlink:href='#icon_add')
+													h6 Create New Folder
+												.add-action
+													i.icon.icon_save-article.js-toggle-save-overlay
+														svg(viewbox='0 0 100 100')
+															use(xlink:href='#icon_check')
+													input(type='text').cogv1_article__save__input
+											ul
+												each val, index in [1,2,3]
+													li.cogv1_article__save__list.js-toggle-save-overlay
+														p: b Folder Title
+						
+										.flow-box__CTA
+											i.flow-box__CTA-icon.flow-box__CTA--left.interactive-svg.is-active
+												svg.is-empty(viewbox='0 0 100 100')
+													use(xlink:href='#icon_star')
+													
+												svg.is-filled(viewbox='0 0 100 100')
+													use(xlink:href='#icon_star-filled')
+													
+												span.flow-box__CTA__alt-text Save
 								.flow-box__gradient-bg
 									h4.flow-box__tag
 										i.icon
@@ -248,7 +280,7 @@ block content
 										.flow-box__CTA-description.truncate
 											p: small Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui impedit provident aut ipsa, dolore perferendis blanditiis natus numquam! Qui cupiditate possimus odit dolor, in ea quasi culpa ad aut sint?
 										.flow-box__CTA
-											i.flow-box__CTA-icon.flow-box__CTA--left.interactive-svg
+											i.flow-box__CTA-icon.flow-box__CTA--left.interactive-svg.js-toggle-save-overlay
 												svg.is-empty(viewbox='0 0 100 100')
 													use(xlink:href='#icon_star')
 													

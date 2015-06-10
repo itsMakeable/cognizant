@@ -34,7 +34,7 @@ gulp.task 'static', ->
   return gulp.src(['src/static/**'], { base: 'src/static/'})
   	.pipe gulp.dest('app/')
 
-gulp.task 'cson', ->
-  gulp.src([ 'src/cson/*.cson' ])
-    .pipe $.cson()
-    .pipe gulp.dest('app')
+# gulp.task 'cson', ->
+#   gulp.src([ 'src/cson/*.cson' ])
+#     .pipe $.cson()
+#     .pipe gulp.dest('app')

@@ -2,8 +2,9 @@ component.section.black-bg.video-section.cogv1_has-overlay(style='background: ur
 	.container
 		.video-module
 			.video-module__center.js-video-play
+				// The class .video__message can be an SVG, IMG, or TEXT. The class handles all these situations.
 				.video__message Aenean lacinia bibendum nulla sed consec tetur isa Etiam porta sem malesuad magna mollis euismod.
 				svg.play-button(viewbox='0 0 100 100')
 					use(xlink:href='#icon_playbutton')
 					image(src='img/symbols/icon_playbutton-2x.png' width='40px' height='40px')
-			iframe(width='650', height='400', src='https://www.youtube.com/embed/XYwiDJ7UWHo?rel=0&enablejsapi=1', frameborder='0', allowfullscreen='')
+			iframe(width='650', height='400', data-aload='https://www.youtube.com/embed/XYwiDJ7UWHo?rel=0&enablejsapi=1', src="javascript:false", frameborder='0', allowfullscreen='')

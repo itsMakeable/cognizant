@@ -40,8 +40,6 @@ gulp.task 'default', (cb) ->
 		'js',
 		'watch',
 		'styleguide'
-		->
-
 
 gulp.task 'browser-sync', ->
 	app = browserSync.create('app')
@@ -49,7 +47,7 @@ gulp.task 'browser-sync', ->
 	app.init
 		port: 8088
 		open: false
-		tunnel: true
+		tunnel: false
 		online: true
 		ghostMode: false
 		logConnections: true

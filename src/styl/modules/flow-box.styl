@@ -177,7 +177,8 @@
     color blue
     position absolute
     bottom 0
-    width 100%
+    left 0
+    right 0
     height r(5rem)
     border-top 1px solid currentColor
     cf()
@@ -463,3 +464,36 @@
     transition opacity 0.2s ease
     &.is-faded
         opacity 0.5
+        
+
+
+// This is for when a article is saved while logged in.
+.flow-box__folder-save
+    background-color white
+    @extend $absolute-cover
+    padding r(2.2rem)
+    opacity 0
+    z-index -999
+    transition opacity 0.3s ease, z-index 0s linear 0.3s
+    &.is-active
+        opacity 1
+        z-index 999
+        transition opacity 0.3s ease 0.05s, z-index 0s linear 0s
+    p
+        color darkgray
+    hr
+        border-bottom 1px solid gray
+        padding-top r(0.6rem)
+        margin-bottom 0
+    .cogv1_article__save
+        padding-top 0
+        transform translateY(r(1.6rem))
+        max-height r(10rem)
+        overflow scroll
+    .cogv1_article__save
+        opacity 1
+    .flow-box__folder-save-wrapper
+        height 100%
+        width 100%
+        position relative
+        

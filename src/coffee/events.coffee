@@ -80,9 +80,24 @@ $('.js-dropdown-option').on 'click',  ->
 	$this = $(this)
 	MKBL.contenteditableDropdownSelect($this)
 
-$('.cogv1_article__save__add').on 'click',  ->
-	MKBL.activationToggle($('.cogv1_article__save__add > div'))
+$('.cogv1_article__save__add').on 'click', (e) ->
+	e.preventDefault()
+	e.stopPropagation()
+	MKBL.activationToggle($(this).children('.add-action'))
 	$('.add-action.is-active .cogv1_article__save__input').trigger('focus')
+
+# $('.js-toggle-save-overlay').on 'click',  ->
+# 	if $(this).hasClass('interactive-svg') and !$(this).hasClass('is-active') 
+# 		MKBL.activationToggle($(this).closest('.flow-box').find('.flow-box__folder-save'))
+# 		console.log '1'
+
+# 	else if $(this).hasClass('interactive-svg') and $(this).hasClass('is-active') 
+# 		console.log '2'
+# 		if $(this).closest('.flow-box').find('.flow-box__folder-save').hasClass('is-active')
+# 			console.log '3'
+# 			MKBL.activationOff($(this).closest('.flow-box').find('.flow-box__folder-save'))
+# 	else
+# 		MKBL.activationToggle($(this).closest('.flow-box').find('.flow-box__folder-save'))
 
 $('.interactive-svg').on 'click',  ->
 	MKBL.activationToggle($(this))
@@ -128,7 +143,7 @@ $('.profile-box__aside .icon').on 'click',  ->
 $('.slider-nav__control').on 'click', ->
 	$slider = $(this).closest('.flow-box-slider')
 	$slides = $slider.find('.flow-box-slider-group')
-	$activeSlide = $slider.find('.is-active')
+	$activeSlide = $slider.find('.flow-box-slider-group.is-active')
 
 	direction = 'prev'
 	if $(this).hasClass('is-right')
@@ -174,15 +189,8 @@ $(document).on 'click touchstart', (event) ->
 
 	if !$(event.target).closest('.js-video-play').length and !$(event.target).closest('.video-section').length
 		$('.video-section').removeClass('is-active')
-		$('.video-section').each ->
-			if $(this).hasClass('is-active')
-				$video = $(this).find('iframe')
-				videoURL = $video.attr('src')
-				videoURL.replace("&autoplay=1", "")
-				$video.attr('src','')
-				setTimeout ->
-					$video.attr('src',videoURL)
-				, 1
+		$('.video-section.is-active').each ->
+			MKBL.stopVideo(e, $(this))
 
 $ ->
 	MKBL.flowBoxSliderSetup()

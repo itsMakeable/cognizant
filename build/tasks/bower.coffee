@@ -13,8 +13,6 @@ gulp.task 'install', ->
 		.pipe $.install()
 
 gulp.task 'bower', ->
-	jsFilter = $.filter(['**/*.js'])
-	cssFilter = $.filter(['**/*.css'])
 	files = require('main-bower-files')();
 	gulp.src(files)
 		.pipe $.plumber(errorHandler: onError)
