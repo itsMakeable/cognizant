@@ -390,23 +390,25 @@ MKBL.searchAutocomplete = ($input, $autoSuggestListItem) ->
  * Fills the content editable section with the selected dropdown option
  * @param  {[type]} $this the button clicked
 ###
-MKBL.contenteditableDropdownSelect = ($this) ->
+MKBL.contenteditableDropdownSelect = ($selectedOption) ->
 	if $(window).width()*0.7 > 840
 		maxWidth = 840
 	else
 		maxWidth = $(window).width()*0.7
-	$this.siblings().removeClass('is-active')
-	$this.addClass('is-active')
-	$contenteditableParent = $this.closest('.js-dropdown-option-parent')
-	$contenteditable = $this.closest('.js-dropdown-option-parent').find('[contenteditable]')
+	$selectedOption.siblings().removeClass('is-active')
+	$selectedOption.addClass('is-active')
+	$contenteditableParent = $selectedOption.closest('.js-dropdown-option-parent')
+	$contenteditable = $selectedOption.closest('.js-dropdown-option-parent').find('[contenteditable]')
 
 	MKBL.activationOff($('js-dropdown-trigger'))
 
-	$contenteditableParent
-		.find('.js-dropdown-option-holder')
-		.text($this.text())
+	$contenteditableParent.find('.js-dropdown-option-holder').each ->
+		if $(this).is('input')
+			$(this).val($selectedOption.text())
+		else
+			$(this).text($selectedOption.text())
 
-	if $this.text() != $contenteditableParent.find('.js-dropdown-option-holder').data('default')
+	if $selectedOption.text() != $contenteditableParent.find('.js-dropdown-option-holder').data('default')
 		$contenteditableParent.addClass('is-filled')
 	else
 		$contenteditableParent.removeClass('is-filled')
@@ -438,6 +440,7 @@ MKBL.endContenteditable = ->
 	MKBL.activationOff($('[contenteditable]'))
 	$('[contenteditable]').each ->
 		$this = $(@)
+		$this.siblings('input.hidden').val($this.text())
 		if $this.text() == ''
 			$this
 				.text($this.data('placeholder'))

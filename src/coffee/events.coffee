@@ -86,18 +86,10 @@ $('.cogv1_article__save__add').on 'click', (e) ->
 	MKBL.activationToggle($(this).children('.add-action'))
 	$('.add-action.is-active .cogv1_article__save__input').trigger('focus')
 
-# $('.js-toggle-save-overlay').on 'click',  ->
-# 	if $(this).hasClass('interactive-svg') and !$(this).hasClass('is-active') 
-# 		MKBL.activationToggle($(this).closest('.flow-box').find('.flow-box__folder-save'))
-# 		console.log '1'
-
-# 	else if $(this).hasClass('interactive-svg') and $(this).hasClass('is-active') 
-# 		console.log '2'
-# 		if $(this).closest('.flow-box').find('.flow-box__folder-save').hasClass('is-active')
-# 			console.log '3'
-# 			MKBL.activationOff($(this).closest('.flow-box').find('.flow-box__folder-save'))
-# 	else
-# 		MKBL.activationToggle($(this).closest('.flow-box').find('.flow-box__folder-save'))
+$('.js-toggle-save-overlay').on 'click',  ->
+	MKBL.activationToggle($(this).closest('.flow-box').find('.flow-box__folder-save'))
+	if $(this).hasClass('js-toggle-save-overlay__icon')
+		MKBL.activationOff($(this).closest('.flow-box').find('.flow-box__content .js-toggle-save-overlay'))
 
 $('.interactive-svg').on 'click',  ->
 	MKBL.activationToggle($(this))

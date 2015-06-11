@@ -42,47 +42,24 @@ gulp.task 'default', (cb) ->
 		'styleguide'
 
 gulp.task 'browser-sync', ->
-	app = browserSync.create('app')
-	docs = browserSync.create('docs')
-	app.init
+	browserSync 
+		# proxy: 'localhost:3000'
 		port: 8088
 		open: false
 		tunnel: false
 		online: true
-		ghostMode: false
 		logConnections: true
-		notify: false
-		files: {
-			'app/**/*'
-		}
-		server: {
-			baseDir: [
-				'app'
-			]
-		}
-	docs.init
-		port: 1111
-		open: false
-		tunnel: false
-		online: true
-		ghostMode: false
-		logConnections: false
-		notify: false
-		injectChanges: false
-		codeSync: false
-		ui: false
 		snippetOptions:
-		    rule:
-		        match: /<body>/i,
-		        fn: (snippet, match) ->
-		            return snippet + match;
-		files: {
+			rule:
+				match: /<browsersync>/i,
+				fn: (snippet, match) ->
+					return snippet + match;
+		files: [ 
+			'app/**/*',
 			'docs/styleguide/**/*'
-		}
+		]
 		server: {
-			baseDir: [
-				'docs/styleguide'
-			]
+			baseDir: ['app','docs']
 		}
 
 

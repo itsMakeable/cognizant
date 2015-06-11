@@ -15,6 +15,7 @@
 					div.is-editable.js-dropdown-option-parent.has-dropdown
 						.contenteditable__wrapper
 							div.js-dropdown-option-holder(contenteditable data-placeholder='Occupation') Occupation
+							input.hidden.js-dropdown-option-holder
 						i.icon.js-dropdown-trigger
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_caret')
@@ -33,6 +34,7 @@
 					div.is-editable.js-dropdown-option-parent.has-dropdown
 						.contenteditable__wrapper
 							div.js-dropdown-option-holder(contenteditable data-placeholder='Industry') Industry
+							input.hidden.js-dropdown-option-holder
 						i.icon.js-dropdown-trigger
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_caret')
@@ -49,11 +51,12 @@
 					div.is-editable
 						.contenteditable__wrapper
 							div(contenteditable data-placeholder='Workplace') Workplace
-				
+							input.hidden
 					div.noneditable  in 
 					div.is-editable
 						.contenteditable__wrapper
 							div(contenteditable data-placeholder='Zip Code / City') Zip Code / City
+							input.hidden
 					span.noneditable .
 			.contenteditable__button-box
 				a.button--primary(href='') Continue
