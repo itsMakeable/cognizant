@@ -22,7 +22,7 @@ gulp.task 'coffee-watch', ->
 		.pipe $.accord('coffee-script')
 		.pipe $.jshint()
 		.pipe $.jshint.reporter(stylish)
-		.pipe gulp.dest('./app/js')
+		.pipe gulp.dest './app/js'
 
 gulp.task 'js-watch', ->
 	gulp.src(['./tmp/js/vendor/*.js','./tmp/js/*.js'])
@@ -37,7 +37,6 @@ gulp.task 'js-watch', ->
 		# }))
 		.pipe $.concat 'vendor.js'
 		.pipe gulp.dest 'app/js'
-		.pipe gulp.dest './docs/styleguide/js'
 
 gulp.task('coffee', ['coffee-watch'], browserSync.reload);
 gulp.task('js', ['js-watch'], browserSync.reload);
