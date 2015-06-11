@@ -47,9 +47,9 @@ You will need to have Node, Git, Bower, and Gulp installed globally and availabl
 
 6. Make sure you inside the project folder. `cd cognizant`
 
-7. Install Bower Front-End Components: `bower i`
+7. Install Bower Front-End Components: `bower install`
 
-8. Install Node Build Components: `npm i`
+8. Install Node Build Components: `npm install`
 
 9. Run `gulp`. This will run all build tasks and start an auto-reloading server.
 
