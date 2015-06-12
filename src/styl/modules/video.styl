@@ -2,17 +2,57 @@
   title: Video Component
   section: Video
   example: |
-    <component class="section black-bg video-section">
+    <component class="video-section">
       <div class="container">
         <div class="video-module">
           <div class="video-module__radial-overlay">
-            <div class="video-module__center js-video-play"><img src="svg/coderules.svg" alt="" class="video__message"/>
+            <div class="video-module__center js-video-play">
+              <!-- The class .video__message can be an SVG, IMG, or TEXT. The class handles all these situations.--><img src="svg/coderules.svg" alt="" class="video__message"/>
               <svg viewbox="0 0 100 100" class="play-button">
                 <use xlink:href="includes/symbols.svg#icon_playbutton"></use>
               </svg>
             </div>
           </div>
-          <iframe width="650" height="400" src="https://www.youtube.com/embed/XYwiDJ7UWHo?rel=0&amp;enablejsapi=1" frameborder="0" allowfullscreen=""></iframe>
+          <iframe width="650" height="400" data-aload="https://www.youtube.com/embed/XYwiDJ7UWHo?rel=0&amp;enablejsapi=1" src="javascript:false" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </component>
+***/
+/*!**
+  title: Video Component With Text
+  section: Video
+  example: |
+    <component class="video-section">
+      <div class="container">
+        <div class="video-module">
+          <div class="video-module__radial-overlay">
+            <div class="video-module__center js-video-play">
+              <!-- The class .video__message can be an SVG, IMG, or TEXT. The class handles all these situations.--><div class="video__message">Aenean lacinia bibendum nulla sed consec tetur isa Etiam porta sem malesuad magna mollis euismod.</div>
+              <svg viewbox="0 0 100 100" class="play-button">
+                <use xlink:href="includes/symbols.svg#icon_playbutton"></use>
+              </svg>
+            </div>
+          </div>
+          <iframe width="650" height="400" data-aload="https://www.youtube.com/embed/XYwiDJ7UWHo?rel=0&amp;enablejsapi=1" src="javascript:false" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </component>
+***/
+/*!**
+  title: Video Component Alternative Theme
+  section: Video
+  example: |
+    <component style="background: url('img/FPO-image.jpg') no-repeat" class="section video-section photo-theme">
+      <div class="container">
+        <div class="video-module">
+          <div class="video-module__radial-overlay">
+            <div class="video-module__center js-video-play"><img src="svg/coderules.svg" alt="" class="video__message"/>
+              <svg viewbox="0 0 100 100" class="play-button">
+                <use xlink:href="#icon_playbutton"></use>
+              </svg>
+            </div>
+          </div>
+          <iframe width="650" height="400" data-aload="https://www.youtube.com/embed/XYwiDJ7UWHo?rel=0&amp;enablejsapi=1" src="javascript:false" frameborder="0" allowfullscreen=""></iframe>
         </div>
       </div>
     </component>
@@ -24,9 +64,11 @@
     background-position 50% 50%
     position relative
     &.photo-theme
-        background url('https://unsplash.imgix.net/photo-1429041966141-44d228a42775?dpr=2&fit=crop&fm=jpg&h=700&q=75&w=1050') no-repeat
+        @extend .cogv1_has-overlay
         .video-module__radial-overlay
             background none
+        &:before
+            background-color rgba(0,0,0,0.8)
     
 .video-module
     position: relative
@@ -95,6 +137,7 @@
     text-align center
     z-index: 1
     min-height r(10rem)
+    color white
     .video__message
         transition top 0.3s ease-out 0.3s, opacity 0.3s ease-out 0.3s
         top 0
@@ -103,6 +146,7 @@
         line-height 1.2
         font-family proxLight
         min-height r(10rem)
+        color white
         +below(1024px)
             fs(2.8rem)
         +below(640px)
