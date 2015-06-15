@@ -30,7 +30,8 @@ gulp.task 'watch', ['browser-sync'], ->
 	gulp.watch [ './tmp/js/**/*.js' ], ['js']
 
 gulp.task 'default', (cb) ->
-	runSequence 'coffee',
+	runSequence 'clear',
+		'coffee',
 		'styl',
 		'jade',
 		'font',
