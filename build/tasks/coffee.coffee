@@ -15,28 +15,34 @@ gulp.task 'coffee-watch', ->
 	])
 		.pipe $.plumber(errorHandler: onError)
 		.pipe($.order([
-			'**/plugins/*'
-			'**/app.coffee'
+			'src/coffee/app.coffee'
 		]))
 		.pipe $.concat('app.js')
 		.pipe $.accord('coffee-script')
 		.pipe $.jshint()
 		.pipe $.jshint.reporter(stylish)
 		.pipe gulp.dest './app/js'
+		.pipe($.accord('uglify-js', {
+			beautify: false
+			mangle: false
+		}))
+		.pipe $.rename 'app.min.js'
+		.pipe gulp.dest './app/js'
 
 gulp.task 'js-watch', ->
-	gulp.src(['./tmp/js/vendor/*.js','./tmp/js/*.js'])
+	gulp.src(['./src/js/*.js'])
 		.pipe $.plumber(errorHandler: onError)
 		.pipe($.order([
-			'tmp/js/vendor/*.js'
-			'tmp/js/*.js'
+			'src/js/jquery.js'
 		]))
-		# .pipe($.accord('uglify-js', {
-		# 	beautify: true
-		# 	mangle: false
-		# }))
 		.pipe $.concat 'vendor.js'
 		.pipe gulp.dest 'app/js'
+		.pipe($.accord('uglify-js', {
+			beautify: false
+			mangle: false
+		}))
+		.pipe $.rename 'vendor.min.js'
+		.pipe gulp.dest './app/js'
 
 gulp.task('coffee', ['coffee-watch'], browserSync.reload);
 gulp.task('js', ['js-watch'], browserSync.reload);

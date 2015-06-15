@@ -1,0 +1,11 @@
+component.section.video-section
+	.container
+		.video-module
+			.video-module__radial-overlay
+				.video-module__center.js-video-play
+					// The class .video__message can be an SVG, IMG, or TEXT. The class handles all these situations.
+					img.video__message(src="svg/coderules.svg", alt="")
+					//- img.video__message(src="img/coderules@2x.png", alt="")
+					svg.play-button(viewbox='0 0 100 100')
+						use(xlink:href='#icon_playbutton')
+			iframe(width='650', height='400', data-aload='https://www.youtube.com/embed/XYwiDJ7UWHo?rel=0&enablejsapi=1', src="javascript:false", frameborder='0', allowfullscreen='')

@@ -64,6 +64,16 @@
         &:hover
             color lightblue
             border-bottom 1px solid rgba(lightblue,0.2)
+    &.theme-2
+        +above(960px)
+            .banner__text
+                col(9/12)
+                float right
+            .banner__CTA
+                float left
+                margin-right 0
+                padding-left 3.8%
+            
     +below(960px)
         .app-store-button
             display inline-block

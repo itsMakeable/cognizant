@@ -32,7 +32,7 @@ gulp.task 'watch', ['browser-sync'], ->
 gulp.task 'default', (cb) ->
 	runSequence 'coffee',
 		'styl',
-		'bower',
+		# 'bower',
 		'jade',
 		'font',
 		'static', 

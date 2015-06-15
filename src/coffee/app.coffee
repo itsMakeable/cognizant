@@ -229,7 +229,7 @@ MKBL.flowBoxSliderSetup = ->
 			setTimeout ->
 				$slider.removeClass('locked')
 			, 750
-	# return MKBL.flowBoxSlider
+	return MKBL.flowBoxSlider
 
 ###*
  * Flyout interaction for the mobile profile bar
@@ -272,16 +272,6 @@ MKBL.profileFlyout = ($this, $flyoutType) ->
 				$activeFlyout.addClass('is-closed')
 			, 1001
 			
-			# if $activeFlyout.length > 0
-			# 	setTimeout ->
-			# 		$flyout.addClass('is-active').removeClass('is-closed')
-			# 	, 800
-			# 	setTimeout ->
-			# 		$flyout.addClass('is-holding').removeClass('is-active')
-			# 		$module.removeClass('is-animating')
-			# 	, 2001
-				
-			# else
 			$flyout.addClass('is-active').removeClass('is-closed')
 			setTimeout ->
 				$flyout.addClass('is-holding').removeClass('is-active')
