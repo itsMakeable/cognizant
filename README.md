@@ -35,25 +35,19 @@ You will need to have Node, Git, Bower, and Gulp installed globally and availabl
 	* on Windows: Follow the instructions here: http://blog.teamtreehouse.com/install-node-js-npm-windows
   
 2. Test Node `node -v.` This will return the version installed.
-
-3. Install git
-	* on a Mac: `brew i git`
-	* on Windows: Here is a tutorial https://www.youtube.com/watch?v=albr1o7Z1nw
   
-4. If not already installed globally, install gulp and bower:
-`npm i gulp bower -g`
+3. If not already installed globally, install gulp and bower:
+`npm i gulp -g`
 
-5. Test to check they were installed properlly. `gulp -v` and `bower -v`. Both of these will return the version installed.
+4. Test to check it was installed properlly and in your path. `gulp -v`. This will return the version installed.
 
-6. Make sure you inside the project folder. `cd cognizant`
+5. Make sure you inside the project folder. `cd cognizant`
 
-7. Install Bower Front-End Components: `bower install`
+6. Install Node Build Components: `npm install`
 
-8. Install Node Build Components: `npm install`
+7. Run `gulp`. This will run all build tasks and start an auto-reloading server.
 
-9. Run `gulp`. This will run all build tasks and start an auto-reloading server.
-
-10. Open http://localhost:8088 and http://localhost:8088/styleguide in your browser.
+8. Open http://localhost:8088 and http://localhost:8088/styleguide in your browser.
 
 
 ## Notes
