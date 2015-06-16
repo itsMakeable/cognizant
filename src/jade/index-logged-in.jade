@@ -51,7 +51,7 @@ block content
 									use(xlink:href='#icon_triangle--right')
 				button.button--silent View All
 	// You can add the class .cogv1_has-overlay to give the element below a dark overlay to make text more readable against a light background.
-	header.main-header.color-bg(data-aload style='background: white url("http://lorempixel.com/1250/500/technics") no-repeat')
+	header.main-header.color-bg.cogv1_has-overlay(data-aload style='background: white url("http://lorempixel.com/1250/500/technics") no-repeat')
 		.container
 			.row
 				component.profile-box-module.js-equal-height
@@ -74,8 +74,8 @@ block content
 									use(xlink:href='#icon_folders')
 						.profile-box__text
 							h3 Good Morning
-							h2.truncated FirstNameOnlyPlease!
-							p VP, Healthcare IT Services
+							h2.truncated(data-text='FirstNameOnlyPlease') FirstNameOnlyPlease!
+							p.truncated VP, Healthcare IT Services
 						.profile-box__data
 							div
 								i.icon

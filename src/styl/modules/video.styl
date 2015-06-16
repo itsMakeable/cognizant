@@ -42,13 +42,34 @@
   title: Video Component Alternative Theme
   section: Video
   example: |
-    <component style="background: url('img/FPO-image.jpg') no-repeat" class="section video-section photo-theme">
+    <component style="background: url(img/FPO-image.jpg) no-repeat;background-position: 60% 60%; position: absolute; width: 100%" class="section video-section photo-theme">
       <div class="container">
         <div class="video-module">
           <div class="video-module__radial-overlay">
-            <div class="video-module__center js-video-play"><img src="svg/coderules.svg" alt="" class="video__message"/>
+            <div class="video-module__center js-video-play">
+              <!-- The class .video__message can be an SVG, IMG, or TEXT. The class handles all these situations.--><img src="svg/coderules.svg" alt="" class="video__message"/>
               <svg viewbox="0 0 100 100" class="play-button">
-                <use xlink:href="#icon_playbutton"></use>
+                <use xlink:href="includes/symbols.svg#icon_playbutton"></use>
+              </svg>
+            </div>
+          </div>
+          <iframe width="650" height="400" data-aload="https://www.youtube.com/embed/XYwiDJ7UWHo?rel=0&amp;enablejsapi=1" src="javascript:false" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </component>
+***/
+/*!**
+  title: Video Component Alternative Theme
+  section: Video
+  example: |
+    <component style="background: url(img/FPO-image.jpg) no-repeat;background-position: 60% 60%; position: absolute; width: 100%" class="section video-section photo-theme">
+      <div class="container">
+        <div class="video-module">
+          <div class="video-module__radial-overlay">
+            <div class="video-module__center js-video-play">
+              <!-- The class .video__message can be an SVG, IMG, or TEXT. The class handles all these situations.--><div class="video__message">Aenean lacinia bibendum nulla sed consec tetur isa Etiam porta sem malesuad magna mollis euismod.</div>
+              <svg viewbox="0 0 100 100" class="play-button">
+                <use xlink:href="includes/symbols.svg#icon_playbutton"></use>
               </svg>
             </div>
           </div>

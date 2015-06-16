@@ -2,8 +2,29 @@
   title: Perspectives Banner
   section: Banner Modules
   example: |
+   <section class="section color-bg">
+     <component style="background: url('img/banner-blue-bg@2x.jpg') repeat" class="banner-module">
+       <div class="banner__text">
+         <div class="banner__center text-center">
+           <h4>Stay Agile with our
+             <wbr/>Industry-Leading&nbsp;Insight.
+           </h4><img src="img/perspectives-ad.png" alt=""/>
+         </div>
+       </div>
+       <div class="banner__CTA">
+         <div class="banner__center">
+           <h4>Download our new <br/>Perspectives&nbsp;App</h4><a href="" class="app-store-button"><img src="svg/apple_app_icon.svg" alt=""/></a><a href="" class="app-store-button"><img src="svg/googleplay_app_icon.svg" alt=""/></a>
+         </div>
+       </div>
+     </component>
+   </section>
+***/
+/*!**
+  title: Perspectives Banner White and Reverse Theme
+  section: Banner Modules
+  example: |
     <section class="section color-bg">
-      <component style="background: url('img/banner-blue-bg@2x.png') repeat" class="banner-module">
+      <component style="background: url('img/banner-white-bg@2x.jpg') repeat" class="banner-module reverse-theme white-theme">
         <div class="banner__text">
           <div class="banner__center">
             <h4>Stay Agile with our
@@ -24,7 +45,7 @@
   section: Banner Modules
   example: |
     <section class="section color-bg">
-      <component style="background: url('img/banner-bg@2x.png') repeat" class="banner-module">
+      <component style="background: url('img/banner-green-bg@2x.png') repeat" class="banner-module">
         <div class="banner__text">
           <div class="banner__center">
             <h4>Join Cognizant Connections</h4>
@@ -64,16 +85,18 @@
         &:hover
             color lightblue
             border-bottom 1px solid rgba(lightblue,0.2)
-    &.theme-2
+    &.reverse-theme
         +above(960px)
             .banner__text
-                col(9/12)
                 float right
+                text-align center
             .banner__CTA
+                col(3/12, offset: 1/12)
                 float left
                 margin-right 0
                 padding-left 3.8%
-            
+    &.white-theme
+        color black
     +below(960px)
         .app-store-button
             display inline-block
@@ -89,6 +112,7 @@
     img
         max-width r(54rem)
         margin r(2rem) auto 0 auto
+        display block
     +below(960px)
         img
             margin-bottom r(2rem)

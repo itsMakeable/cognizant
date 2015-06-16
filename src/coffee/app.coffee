@@ -231,6 +231,12 @@ MKBL.flowBoxSliderSetup = ->
 			, 750
 	return MKBL.flowBoxSlider
 
+MKBL.reduceFontSize = ($el) ->
+	if $el.length and $el.text() != ''
+		fs = parseFloat($el.css('font-size'))
+		while $el[0].scrollWidth > $el.width()
+			fs--
+			$el.css('font-size', fs + 'px')
 ###*
  * Flyout interaction for the mobile profile bar
  * @param  {[type]} $this       the icon being clicked
@@ -311,7 +317,7 @@ MKBL.modal = ($this) ->
 MKBL.contenteditableDropdown = ($dropdown, $trigger) ->
 	$li = $dropdown.find('li')
 	dropdownHeight = $li.length * $li.outerHeight()
-	
+
 	if dropdownHeight > 342
 		dropdownHeight = 372
 		setTimeout ->
@@ -385,8 +391,8 @@ MKBL.contenteditableDropdownSelect = ($selectedOption) ->
 		maxWidth = 840
 	else
 		maxWidth = $(window).width()*0.7
-	$selectedOption.siblings().removeClass('is-active')
-	$selectedOption.addClass('is-active')
+	# $selectedOption.siblings().removeClass('is-active')
+	# $selectedOption.addClass('is-active')
 	$contenteditableParent = $selectedOption.closest('.js-dropdown-option-parent')
 	$contenteditable = $selectedOption.closest('.js-dropdown-option-parent').find('[contenteditable]')
 
@@ -395,6 +401,7 @@ MKBL.contenteditableDropdownSelect = ($selectedOption) ->
 	$contenteditableParent.find('.js-dropdown-option-holder').each ->
 		if $(this).is('input')
 			$(this).val($selectedOption.text())
+			
 		else
 			$(this).text($selectedOption.text())
 
@@ -408,6 +415,11 @@ MKBL.contenteditableDropdownSelect = ($selectedOption) ->
 		setTimeout ->
 			$contenteditable.css('min-width', $contenteditable.width())
 		, 900
+
+	$contenteditableParent.find('.js-dropdown-option').each ->
+		$(@).find('span').each (index) ->
+			text = $(this).text()
+			$(this).replaceWith text
 
 ###*
  * animation for the content editable div on click
@@ -431,6 +443,7 @@ MKBL.endContenteditable = ->
 	$('[contenteditable]').each ->
 		$this = $(@)
 		$this.siblings('input.hidden').val($this.text())
+		
 		if $this.text() == ''
 			$this
 				.text($this.data('placeholder'))
@@ -444,6 +457,7 @@ MKBL.endContenteditable = ->
 			, 900
 		else 
 			if $this.text() != $this.data('placeholder')
+				
 				$this
 					.closest('.is-editable')
 					.addClass('is-filled')
@@ -477,7 +491,6 @@ MKBL.setupContenteditable = ->
 
 
 MKBL.playVideo = (e, $this) ->
-	console.log 'this'
 	$parent = $this.closest('.video-section')
 	$video = $parent.find('iframe')
 
@@ -491,7 +504,6 @@ MKBL.playVideo = (e, $this) ->
 MKBL.stopVideo = (e, $this) ->
 	$video = $($this).find('iframe')
 	videoURL = $video.attr('src')
-	console.log videoURL
 	videoURL.replace("&autoplay=1", "")
 	$video.attr('src','')
 	setTimeout ->

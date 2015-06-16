@@ -12,14 +12,14 @@
 				| Search
 				sup &reg;
 	component.contenteditable-module.smart-search__option
-		.container
+		form.container
 			.contenteditable__text
 				h2
 					div.noneditable Search Latest Thinking&nbsp;in
 					div.is-editable.js-dropdown-option-parent.has-dropdown
 						.contenteditable__wrapper
 							div.js-dropdown-option-holder(contenteditable data-placeholder='All Industries') Healthcare
-							input.hidden.js-dropdown-option-holder
+							input.hidden.js-dropdown-option-holder(name='Industries')
 						i.icon.js-dropdown-trigger
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_caret')

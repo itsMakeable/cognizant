@@ -206,10 +206,13 @@
 .chrome,
 .safari
   .contenteditable-module
+    h1 [contenteditable],
     h2 [contenteditable]
       background: rgba(gray,0.5) 
       -webkit-background-clip: text
       -webkit-text-fill-color: transparent
+    h1 .is-filled [contenteditable],
+    h1 .is-active [contenteditable],
     h2 .is-filled [contenteditable],
     h2 .is-active [contenteditable]
       background: vgradient5

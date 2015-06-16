@@ -8,14 +8,14 @@
 			h1 Edit Your Profile
 			p Information about editing your profile infromation. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 	component.contenteditable-module
-		.container
+		form.container
 			.contenteditable__text
 				h1
 					div.noneditable I'm a(n) 
 					div.is-editable.js-dropdown-option-parent.has-dropdown
 						.contenteditable__wrapper
 							div.js-dropdown-option-holder(contenteditable data-placeholder='Occupation') Occupation
-							input.hidden.js-dropdown-option-holder
+							input.hidden.js-dropdown-option-holder(name='Occupation')
 						i.icon.js-dropdown-trigger
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_caret')
@@ -34,7 +34,7 @@
 					div.is-editable.js-dropdown-option-parent.has-dropdown
 						.contenteditable__wrapper
 							div.js-dropdown-option-holder(contenteditable data-placeholder='Industry') Industry
-							input.hidden.js-dropdown-option-holder
+							input.hidden.js-dropdown-option-holder(name='Industry')
 						i.icon.js-dropdown-trigger
 							svg(viewbox='0 0 100 100')
 								use(xlink:href='#icon_caret')
@@ -51,12 +51,12 @@
 					div.is-editable
 						.contenteditable__wrapper
 							div(contenteditable data-placeholder='Workplace') Workplace
-							input.hidden
+							input.hidden(name='Workplace')
 					div.noneditable  in 
 					div.is-editable
 						.contenteditable__wrapper
 							div(contenteditable data-placeholder='Zip Code / City') Zip Code / City
-							input.hidden
+							input.hidden(name='Zip')
 					span.noneditable .
 			.contenteditable__button-box
-				a.button--primary(href='') Continue
+				button.button--primary Continue

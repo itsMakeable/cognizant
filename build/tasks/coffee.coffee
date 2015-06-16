@@ -22,25 +22,25 @@ gulp.task 'coffee-watch', ->
 		.pipe $.jshint()
 		.pipe $.jshint.reporter(stylish)
 		.pipe gulp.dest './app/js'
-		.pipe($.accord('uglify-js', {
+		.pipe $.accord 'uglify-js', {
 			beautify: false
 			mangle: false
-		}))
+		}
 		.pipe $.rename 'app.min.js'
 		.pipe gulp.dest './app/js'
 
 gulp.task 'js-watch', ->
 	gulp.src(['./src/js/*.js'])
 		.pipe $.plumber(errorHandler: onError)
-		.pipe($.order([
+		.pipe $.order([
 			'src/js/jquery.js'
-		]))
+		])
 		.pipe $.concat 'vendor.js'
 		.pipe gulp.dest 'app/js'
-		.pipe($.accord('uglify-js', {
+		.pipe $.accord 'uglify-js', {
 			beautify: false
 			mangle: false
-		}))
+		}
 		.pipe $.rename 'vendor.min.js'
 		.pipe gulp.dest './app/js'
 

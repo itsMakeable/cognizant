@@ -18,7 +18,6 @@ $('.search-module--main .search__input').on 'keyup',  ->
 		MKBL.activationOff($('.search__CTA'))
 
 $('.cogv1-smart-search__input').on 'keyup', (e) ->
-	console.log 'this'
 	MKBL.activationOn($('.cogv1-smart-search__dropdown'))
 	MKBL.searchAutocomplete($(this), $('.cogv1-smart-search__dropdown .js-search-text'))
 	if !$('.cogv1-smart-search__dropdown .js-search-text').find('span').length
@@ -183,12 +182,13 @@ $(document).on 'click touchstart', (event) ->
 		$('.video-section').removeClass('is-active')
 		$('.video-section.is-active').each ->
 			MKBL.stopVideo(e, $(this))
-
 $ ->
 	MKBL.flowBoxSliderSetup()
 	MKBL.setupContenteditable()
 	if $(window).width() > 1024 and $('.cogv1_article-nav').length
 		MKBL.articleNavWaypoints()
+
+	MKBL.reduceFontSize($('.profile-box__text h2'))
 
 $(window).on 'debouncedresize', ->
 	MKBL.equalheight('.main-header','.js-equal-height', 1024)
