@@ -231,6 +231,31 @@ MKBL.flowBoxSliderSetup = ->
 			, 750
 	return MKBL.flowBoxSlider
 
+MKBL.hoverScrollText = ($el) ->
+	if $el.length and $el.text() != ''
+		if $el[0].scrollWidth > $el.width()
+			if !$el.hasClass('velocity-animating')
+				if !$el.hasClass('is-active')
+					$el.velocity {left: $el.width() - $el[0].scrollWidth},
+						duration: 2000,
+						easing: [ 300, 30 ],
+						delay: 0
+						begin: () ->
+							$(@).addClass('is-active')
+					$el.velocity {left: 0},
+						duration: 2000,
+						easing: [ 300, 30 ],
+						delay: 2000
+						complete: () ->
+							$(@).removeClass('is-active')
+				else
+					$el.velocity {left: 0},
+						duration: 2000,
+						easing: [ 300, 30 ],
+						delay: 0
+						complete: () ->
+							$(@).removeClass('is-active')
+
 MKBL.reduceFontSize = ($el) ->
 	if $el.length and $el.text() != ''
 		fs = parseFloat($el.css('font-size'))
@@ -315,7 +340,7 @@ MKBL.modal = ($this) ->
  * @param  {[type]} $dropdown the dropdown being called
 ###
 MKBL.contenteditableDropdown = ($dropdown, $trigger) ->
-	$li = $dropdown.find('li')
+	$li = $dropdown.find('li').not($('.hidden'))
 	dropdownHeight = $li.length * $li.outerHeight()
 
 	if dropdownHeight > 342
@@ -325,9 +350,8 @@ MKBL.contenteditableDropdown = ($dropdown, $trigger) ->
 				suppressScrollX: true
 			})
 		, 900
-
-	if $dropdown.height() == 0 or $dropdown.height() == null
-	# if !$dropdown.hasClass('is-active')
+	console.log $li.length
+	if $li.length
 		MKBL.activationOn($trigger)
 		$dropdown.velocity { height: dropdownHeight }, 
 			duration: 600,
@@ -367,6 +391,13 @@ MKBL.contenteditableDropdownAutocomplete = ($this) ->
 			)
 			
 			$(@).html matchingLetters
+			if !$(@).children('span').length
+				$(@).addClass('hidden')
+			else
+				$(@).removeClass('hidden')
+		setTimeout ->
+			MKBL.contenteditableDropdown($dropdown, $trigger) 
+		, 1
 
 MKBL.searchAutocomplete = ($input, $autoSuggestListItem) ->
 	searchInputText = $input.val().replace(/^\s+|\s+$/g, '')

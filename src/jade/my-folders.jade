@@ -20,7 +20,7 @@ block content
 								span New Video Added
 
 							.folder__profile-pic
-								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_default')
+								img(src="img/icon_default.png", alt="")
 							.folder__data
 								p: strong Favorites
 								i.icon
@@ -38,6 +38,15 @@ block content
 									span.folder__CTA__alt-text View
 				each val, index in [1,2,3,4,5,6,7]
 					component.folder-module(style='background:url(http://www.cognizant.com/dotcom-images/Perspectives/twelve_ways_SMAC_hp.jpg) no-repeat')
+						.folder__leave-overlay
+							.center
+								p: small Are you sure you want to leave the folder
+									br
+									b Insider's Club?
+								button.button--primary.js-toggle-overlay
+									| No, Don't Leave
+								button.button--silent.js-toggle-overlay
+									| Leave Folder
 						.folder__overlay
 						.folder__content
 							p.folder__alert
@@ -46,7 +55,7 @@ block content
 								span New Video Added
 
 							.folder__profile-pic
-								svg(viewbox='0 0 100 100'): use(xlink:href='#icon_default')
+								img(src="img/icon_default.png", alt="")
 							.folder__data
 								p Favorites
 								i.icon
@@ -56,7 +65,7 @@ block content
 									svg(viewbox='0 0 100 100'): use(xlink:href='#icon_collaborators')
 								span: strong 100
 							.folder__CTA
-								i.folder__CTA-icon.folder__CTA--left
+								i.folder__CTA-icon.folder__CTA--left.js-toggle-overlay
 									svg.is-empty(viewbox='0 0 100 100')
 										use(xlink:href='#icon_exit')
 									span.folder__CTA__alt-text Leave

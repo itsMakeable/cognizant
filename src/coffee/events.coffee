@@ -25,6 +25,23 @@ $('.cogv1-smart-search__input').on 'keyup', (e) ->
 		MKBL.activationOn($('.cogv1-smart-search__results'))
 
 
+$('.profile-box__text p').on 'mouseenter',  ->
+	MKBL.hoverScrollText($(this))
+
+$('.profile-box__text p').on 'mouseleave',  ->
+	if !$(this).hasClass('velocity-animating')
+		$(this).velocity {left: 0},
+			duration: 2000,
+			easing: [ 300, 30 ],
+			delay: 0
+			complete: () ->
+				$(@).removeClass('is-active').removeClass('is-scrolling')
+
+
+$('.folder-module .js-toggle-overlay').on 'click',  ->
+	console.log $(this).closest('.folder-module').find('.folder__leave-overlay')
+	MKBL.activationToggle($(this).closest('.folder-module').find('.folder__leave-overlay'))
+
 $('.cogv1_article__save__list').on 'click',  ->
 	MKBL.activationOff($('.cogv1_article__save__list'))
 	MKBL.activationOn($(this))
@@ -85,10 +102,21 @@ $('.cogv1_article__save__add').on 'click', (e) ->
 	MKBL.activationToggle($(this).children('.add-action'))
 	$('.add-action.is-active .cogv1_article__save__input').trigger('focus')
 
-$('.js-toggle-save-overlay').on 'click',  ->
+$('.flow-box__folder-save .js-toggle-save-overlay').on 'click',  ->
 	MKBL.activationToggle($(this).closest('.flow-box').find('.flow-box__folder-save'))
-	if $(this).hasClass('js-toggle-save-overlay__icon')
-		MKBL.activationOff($(this).closest('.flow-box').find('.flow-box__content .js-toggle-save-overlay'))
+	MKBL.activationOn($(this).closest('.flow-box').find('.flow-box__folder-save .flow-box__CTA--left'))
+$('.flow-box__gradient-bg .js-toggle-save-overlay').on 'click',  ->
+	if $(this).hasClass('is-active')
+		#
+	else
+		MKBL.activationToggle($(this).closest('.flow-box').find('.flow-box__folder-save'))
+		MKBL.activationOn($(this).closest('.flow-box').find('.flow-box__folder-save .flow-box__CTA--left'))
+		if $(this).hasClass('js-toggle-save-overlay__icon')
+			MKBL.activationOff($(this).closest('.flow-box').find('.flow-box__content .js-toggle-save-overlay'))
+
+$('.flow-box__folder-save .flow-box__CTA-icon').on 'click',  ->
+	MKBL.activationOff($(this).closest('.flow-box').find('.flow-box__folder-save'))
+	MKBL.activationOff($(this).closest('.flow-box').find('.js-toggle-save-overlay'))
 
 $('.interactive-svg').on 'click',  ->
 	MKBL.activationToggle($(this))

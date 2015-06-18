@@ -235,4 +235,20 @@
       .folder__overlay
         background-color darkgreen
         background vgradient2reverse
-    
+  
+.folder__leave-overlay
+  background-color white
+  @extend $absolute-cover
+  opacity 0
+  z-index -100
+  text-align center
+  color darkgray
+  transition opacity 0.3s ease, z-index 0s linear 0.3s
+  &.is-active
+    z-index 100
+    opacity 1
+    transition opacity 0.3s ease, z-index 0s linear
+  .button--primary
+    margin-top 3%
+  .center
+    width 100%
