@@ -342,7 +342,6 @@ MKBL.modal = ($this) ->
 MKBL.contenteditableDropdown = ($dropdown, $trigger) ->
 	$li = $dropdown.find('li').not($('.hidden'))
 	dropdownHeight = $li.length * $li.outerHeight()
-
 	if dropdownHeight > 342
 		dropdownHeight = 372
 		setTimeout ->
@@ -350,7 +349,6 @@ MKBL.contenteditableDropdown = ($dropdown, $trigger) ->
 				suppressScrollX: true
 			})
 		, 900
-	console.log $li.length
 	if $li.length
 		MKBL.activationOn($trigger)
 		$dropdown.velocity { height: dropdownHeight }, 
@@ -391,13 +389,6 @@ MKBL.contenteditableDropdownAutocomplete = ($this) ->
 			)
 			
 			$(@).html matchingLetters
-			if !$(@).children('span').length
-				$(@).addClass('hidden')
-			else
-				$(@).removeClass('hidden')
-		setTimeout ->
-			MKBL.contenteditableDropdown($dropdown, $trigger) 
-		, 1
 
 MKBL.searchAutocomplete = ($input, $autoSuggestListItem) ->
 	searchInputText = $input.val().replace(/^\s+|\s+$/g, '')
