@@ -12,7 +12,6 @@ section.section.flow-box-slider-section.backgray-bg
 									p Save this article to your folders
 									hr
 									subcomponent.cogv1_article__save.is-signed-in
-										
 										.cogv1_article__save__add
 											.add-action.is-active
 												i.icon
@@ -20,14 +19,15 @@ section.section.flow-box-slider-section.backgray-bg
 														use(xlink:href='#icon_add')
 												h6 Create New Folder
 											.add-action
-												i.icon.icon_save-article.js-toggle-save-overlay
+												i.icon.icon_save-article
 													svg(viewbox='0 0 100 100')
 														use(xlink:href='#icon_check')
 												input(type='text').cogv1_article__save__input
 										ul
 											each val, index in [1,2,3]
-												li.cogv1_article__save__list.js-toggle-save-overlay
+												li.cogv1_article__save__list
 													p: b Folder Title
+										button.button--silent.js-toggle-save-overlay Save
 									.flow-box__CTA
 										i.flow-box__CTA-icon.flow-box__CTA--left.is-active.js-toggle-save-overlay.js-toggle-save-overlay__icon
 											svg.is-empty(viewbox='0 0 100 100')
