@@ -43,8 +43,7 @@ $('.folder-module .js-toggle-overlay').on 'click',  ->
 	MKBL.activationToggle($(this).closest('.folder-module').find('.folder__leave-overlay'))
 
 $('.cogv1_article__save__list').on 'click',  ->
-	MKBL.activationOff($('.cogv1_article__save__list'))
-	MKBL.activationOn($(this))
+	MKBL.activationToggle($(this))
 
 $('[contenteditable]').on 'click',  ->
 	$this = $(this)
@@ -105,6 +104,8 @@ $('.cogv1_article__save__add').on 'click', (e) ->
 $('.flow-box__folder-save .js-toggle-save-overlay').on 'click',  ->
 	MKBL.activationToggle($(this).closest('.flow-box').find('.flow-box__folder-save'))
 	MKBL.activationOn($(this).closest('.flow-box').find('.flow-box__folder-save .flow-box__CTA--left'))
+	MKBL.activationToggle($(this).closest('.cogv1_article__save').find('.cogv1_article__save__add .add-action'))
+	$('.cogv1_article__save__add').find('.add-action input').val('')
 $('.flow-box__gradient-bg .js-toggle-save-overlay').on 'click',  ->
 	if $(this).hasClass('is-active')
 		#
